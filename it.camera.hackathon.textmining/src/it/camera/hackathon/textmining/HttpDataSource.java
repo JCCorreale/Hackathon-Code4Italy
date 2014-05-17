@@ -17,7 +17,7 @@ public class HttpDataSource implements IStringDataSource {
 		
 	}
 	
-	protected void performRequest(OutputStream os) {
+	protected void performRequest() {
 		
 	}
 
@@ -25,7 +25,7 @@ public class HttpDataSource implements IStringDataSource {
 	public String getData() {
 		try {
 			setupConnection();
-			performRequest(connection.getOutputStream());
+			performRequest();
 			
 			BufferedReader read = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 			

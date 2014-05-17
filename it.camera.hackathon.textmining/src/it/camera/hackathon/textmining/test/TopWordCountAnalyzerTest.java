@@ -14,7 +14,6 @@ import it.camera.hackathon.textmining.IWordComparer;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.IWordFilter;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
-import it.camera.hackathon.textmining.WordCountResult;
 import it.camera.hackathon.textmining.WordCounter;
 
 import org.junit.BeforeClass;
