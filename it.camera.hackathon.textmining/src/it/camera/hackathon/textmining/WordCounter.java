@@ -30,6 +30,9 @@ public class WordCounter implements IWordCounter {
 	}
 	
 	private void checkWord(String currentWord) {
+		if("".equals(currentWord))
+			return;
+		
 		if(!_wordFilter.accept(currentWord))
 			return;
 		
