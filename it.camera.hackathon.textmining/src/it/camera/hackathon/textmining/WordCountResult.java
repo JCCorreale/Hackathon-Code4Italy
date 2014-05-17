@@ -12,7 +12,7 @@ public class WordCountResult implements IWordCountResult {
 	
 	@Override
 	public String[] getWords() {
-		return (String[]) _map.keySet().toArray();
+		return (String[])_map.keySet().toArray(new String[0]);
 	}
 
 	@Override
@@ -21,5 +21,4 @@ public class WordCountResult implements IWordCountResult {
 			return _map.get(word);
 		return 0;
 	}
-
 }
