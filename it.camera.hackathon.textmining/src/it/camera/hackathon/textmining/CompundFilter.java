@@ -1,16 +1,26 @@
 package it.camera.hackathon.textmining;
 
-
 public class CompundFilter<T> implements IFilter<T> {
 
-	public CompundFilter() {
-		// TODO Auto-generated constructor stub
+	private IFilter<T>[] innerFilters;
+	
+	public CompundFilter(IFilter<T>... filters)
+	{
+		if (filters.length == 0)
+			throw new IllegalArgumentException("Please give me a filter T_T");
+		
+		innerFilters = filters;
 	}
 
 	@Override
 	public boolean accept(T value) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		for(IFilter<T> filter : innerFilters)
+		{
+			if (!filter.accept(value))
+				return false;
+		}
+		
+		return true;
 	}
-
 }

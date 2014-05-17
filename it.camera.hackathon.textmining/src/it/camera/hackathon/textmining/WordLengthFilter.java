@@ -1,15 +1,16 @@
 package it.camera.hackathon.textmining;
 
-public class WordLengthFilter<T> implements IFilter<T> {
+public class WordLengthFilter implements IWordFilter {
 
-	public WordLengthFilter() {
-		// TODO Auto-generated constructor stub
+	private int minLength;
+	
+	public WordLengthFilter(int minLength) 
+	{
+		this.minLength = minLength;
 	}
 
 	@Override
-	public boolean accept(T value) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean accept(String value) {
+		return value.length() >= minLength;
 	}
-
 }
