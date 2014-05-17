@@ -14,5 +14,4 @@ public class HtmlRemoverTest
 	{
 		assertEquals(HtmlRemover.text(TEST), "Licensed under the Apache License, Version 2.0 (the \"License\");");
 	}
-
 }
