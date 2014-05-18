@@ -22,7 +22,7 @@ public class TextMining {
 	public static void main(String[] args)
 	{
 		// gets the input
-		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Textalyser\\PDL 676.htm";
+		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PDL 676.htm";
 		IDataSource<String> source = new TextFileDataSource(filename);
 		String html = source.getData();
 		
@@ -51,6 +51,8 @@ public class TextMining {
 		
 		// creates an IDocument instance from the retrieved data
 		IDocument document = buildDocument(topWords, counter.getAcceptedWordCount());
+		
+		// TODO
 		
 		// prints the top words
 		//Utils.printWordEntries(topWords);
