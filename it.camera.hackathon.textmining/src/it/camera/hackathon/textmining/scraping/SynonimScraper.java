@@ -45,7 +45,7 @@ public class SynonimScraper
 	
 	public static void main(String[] args)
 	{
-		for(String s : FindSynonims("asini"))
+		for(String s : FindSynonims("cretini"))
 		{
 			System.out.println(s);
 		}

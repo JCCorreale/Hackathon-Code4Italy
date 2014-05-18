@@ -19,7 +19,6 @@ public class HtmlRemoverTest
 	public void testSpace()
 	{
 		String html = "<table class=\"sparql\" border=\"1\"><tr><th>lastEdit</th></tr><tr><td>20080429</td></tr></table>";
-		String watch;
-		assertEquals(watch = HtmlRemover.text(html), "lastEdit 20080429");
+		assertEquals(HtmlRemover.text(html), "lastEdit 20080429");
 	}
 }
