@@ -15,7 +15,7 @@ public class SynonimScraper
 			UserAgent userAgent = new UserAgent();
 			userAgent.visit("http://trovami.altervista.org/it/sinonimi/"+s);
 			
-			for(Element el : userAgent.doc.findFirst("<li>").findEach("<a>"))
+			for(Element el : userAgent.doc.findEach("<li>").findEach("<a>"))
 			{
 				res.add(el.innerText()); 
 			}
@@ -30,5 +30,11 @@ public class SynonimScraper
 	public static boolean areSynonims(String s1, String s2)
 	{
 		return FindSynonims(s1).contains(s2) && FindSynonims(s2).contains(s1);
+	}
+	
+	public static void main(String[] args)
+	{
+		for(String ssss : FindSynonims("esordio"))
+			System.out.println(ssss);
 	}
 }
