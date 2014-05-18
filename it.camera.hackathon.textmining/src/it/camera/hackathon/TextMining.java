@@ -62,9 +62,15 @@ public class TextMining {
 		return wordCounter;
 	}
 	
+	/**
+	 * Replaces synonyms with single TERMS (each related to a single CONCEPT).
+	 * @param topWords
+	 * @return
+	 */
 	private static List<Entry<ITerm, Integer>> getTerms(List<Entry<String, Integer>> topWords)
 	{
 		List<Entry<ITerm, Integer>> terms = new ArrayList<Entry<ITerm, Integer>>();
+		
 		
 		return terms;
 	}
