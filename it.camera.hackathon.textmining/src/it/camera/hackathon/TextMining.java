@@ -1,5 +1,6 @@
 package it.camera.hackathon;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
 
@@ -9,6 +10,8 @@ import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.TextFileDataSource;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.IDocument;
+import it.camera.hackathon.textmining.clustering.ITerm;
+import it.camera.hackathon.textmining.scraping.SynonimScraper;
 
 public class TextMining {
 
@@ -36,14 +39,19 @@ public class TextMining {
 		System.out.println("Retrieving the first " + topWordsCount + " top words...\n");
 		TopWordsCountAnalyzer analyzer = new TopWordsCountAnalyzer();
 		List<Entry<String, Integer>> topWords = analyzer.getSortedWords(topWordsCount, result);
-		
-		// TODO Synoms Detection
+
+		// prints synonyms for the top words
+//		SynonimScraper synonimScraper = new SynonimScraper();
+//		for (Entry<String, Integer> entry : topWords)
+//		{
+//			System.out.println(entry.getKey() + " " + entry.getValue() + synonimScraper.FindSynonims(entry.getKey()));
+//		}
 		
 		// creates an IDocument instance from the retrieved data
 		IDocument document = buildDocument(topWords, counter.getAcceptedWordCount());
 		
 		// prints the top words
-		Utils.printWordEntries(topWords);
+		//Utils.printWordEntries(topWords);
 	}
 	
 	private static TextMiningWordCounter buildWordCounter()
@@ -54,8 +62,17 @@ public class TextMining {
 		return wordCounter;
 	}
 	
+	private static List<Entry<ITerm, Integer>> getTerms(List<Entry<String, Integer>> topWords)
+	{
+		List<Entry<ITerm, Integer>> terms = new ArrayList<Entry<ITerm, Integer>>();
+		
+		return terms;
+	}
+	
 	private static IDocument buildDocument(List<Entry<String, Integer>> topWords, int totalWords)
 	{
+		List<Entry<ITerm, Integer>> terms = getTerms(topWords);
+		
 		// TODO
 		return null;
 	}

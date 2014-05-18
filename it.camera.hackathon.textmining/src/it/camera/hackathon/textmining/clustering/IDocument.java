@@ -25,4 +25,6 @@ public interface IDocument extends Iterable<ITerm>
 	public float getWeightedFrequency(ITerm term);
 
 	public float getWeightedFrequency(String term);
+	
+	public int getTotalTermsCount();
 }

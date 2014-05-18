@@ -95,10 +95,12 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 	private class InMemoryDocument implements IDocument
 	{
 		private Map<ITerm, Integer> frequencies;
+		private int totalTermsCount;
 		
 		public InMemoryDocument()
 		{
 			frequencies = new HashMap<ITerm, Integer>();
+			totalTermsCount = 0;
 		}
 
 		@Override
@@ -123,6 +125,9 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 		
 		@Override
 		public int getFrequency(ITerm term) {
+			if (!frequencies.containsKey(term))
+				return 0;
+			
 			return frequencies.get(term);
 		}
 
@@ -148,41 +153,72 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 			else return 0.0f;
 		}
 		
+		@Override
 		public float getWeightedFrequency(String term) {
 			return getWeightedFrequency(new Term(term));
+		}
+		
+		@Override
+		public int getTotalTermsCount()
+		{
+			return totalTermsCount;
 		}
 		
 		// "PRIVATE" METHODS
 		
 		public void addTerm(ITerm term) {
-			frequencies.put(term, 1);
+			if (!frequencies.containsKey(term))
+				frequencies.put(term, 1);
+			else
+				frequencies.put(term, frequencies.get(term) + 1);
+			
+			totalTermsCount++;
 		}
 
 		public void addTerm(ITerm term, int frequency) {
 			if (frequency < 1)
 				throw new IllegalArgumentException("frequency < 1");
 			
-			frequencies.put(term, frequency);
+			if (!frequencies.containsKey(term))
+				frequencies.put(term, frequency);
+			else
+				frequencies.put(term, frequencies.get(term) + frequency);
+			
+			totalTermsCount += frequency;
 		}
 
 		public void removeTerm(ITerm term) {
-			frequencies.remove(term);
+			if (frequencies.containsKey(term))
+			{
+				totalTermsCount -= frequencies.get(term);
+				frequencies.remove(term);
+			}
 		}
 
 		public void setFrequency(ITerm term, int frequency) {
+			if (frequency < 1)
+				throw new IllegalArgumentException("frequency < 1");
+			if (!frequencies.containsKey(term))
+				throw new IllegalArgumentException("term not found");
+			
+			int prevFrequency = frequencies.get(term);
 			frequencies.put(term, frequency);
+			totalTermsCount += (frequency - prevFrequency);
 		}
 		
 		public void incFrequency(ITerm term) {
 			frequencies.put(term, frequencies.get(term) + 1);
+			totalTermsCount ++;
 		}
 
 		public void decFrequency(ITerm term) {
 			int curFreq = frequencies.get(term);
 			if (curFreq > 1)
+			{
 				frequencies.put(term, curFreq - 1);
-			else
-				throw new IllegalArgumentException("curFreq <= 1, use removeTerm() to perform this operation");
-		}	
+				totalTermsCount--;
+			}
+			else throw new IllegalArgumentException("curFreq <= 1, use removeTerm() to perform this operation");
+		}
 	}
 }
