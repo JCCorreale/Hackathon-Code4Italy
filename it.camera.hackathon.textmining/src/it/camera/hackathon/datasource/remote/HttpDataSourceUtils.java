@@ -1,11 +1,12 @@
 package it.camera.hackathon.datasource.remote;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
 public class HttpDataSourceUtils {
-	// TODO Escape caratteri sensibili
 	public static String getGetParamters(Map<String, String> map) {
 		StringBuilder sb = new StringBuilder();
 		
@@ -18,11 +19,15 @@ public class HttpDataSourceUtils {
 		Iterator<Entry<String, String>> iterator = map.entrySet().iterator();
 		
 		entry = iterator.next();
-		sb.append(entry.getKey() + "=" + entry.getValue());
-		
-		while(iterator.hasNext()) {
-			entry = iterator.next();
-			sb.append("&" + entry.getKey() + "=" + entry.getValue());
+		try {
+			sb.append(entry.getKey() + "=" + URLEncoder.encode(entry.getValue(), "UTF-8"));
+			
+			while(iterator.hasNext()) {
+				entry = iterator.next();
+				sb.append("&" + entry.getKey() + "=" + URLEncoder.encode(entry.getValue(), "UTF-8"));
+			}
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
 		}
 		
 		return sb.toString();
