@@ -16,7 +16,6 @@ public class LineValueParser implements IParser<String[]> {
 		
 		String line = read.readLine();
 		while(line != null) {
-			System.out.println(line);
 			res.add(line);
 			line = read.readLine();
 		}

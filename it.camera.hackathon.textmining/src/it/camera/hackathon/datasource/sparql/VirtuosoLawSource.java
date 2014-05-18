@@ -4,13 +4,16 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import it.camera.hackathon.datasource.IDataProvider;
 import it.camera.hackathon.datasource.IDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource.HttpGetRequestConfiguration;
 import it.camera.hackathon.datasource.sparql.query.LawsQuery;
+import it.camera.hackathon.datasource.sparql.query.LimitedQuery;
+import it.camera.hackathon.datasource.sparql.query.LimitedQuery.LimitedQueryConfiguration;
 import it.camera.hackathon.parsing.LineValueParser;
 
-public class VirtuosoLawSource implements IDataSource<String[]> {
+public class VirtuosoLawSource implements IDataProvider<String[], LimitedQueryConfiguration>, IDataSource<String[]> {
 	
 	// Sorgente su cui effettuare le query
 	private HttpGetDataSource<String[]> source;
@@ -22,6 +25,22 @@ public class VirtuosoLawSource implements IDataSource<String[]> {
 	@Override
 	public String[] getData() {
 		String[] data = this.source.getData(buildConfiguration(new LawsQuery()));
+		
+		return filterData(data);
+	}
+
+	@Override
+	public String[] getData(LimitedQueryConfiguration args)
+			throws IllegalArgumentException {
+		if(args == null)
+			return this.getData();
+		
+		String[] data = this.source.getData(buildConfiguration(new LimitedQuery(new LawsQuery(), args)));
+
+		return filterData(data);
+	}
+	
+	private String[] filterData(String[] data) {
 		return Arrays.copyOfRange(data, 1, data.length); // removes header
 	}
 	
@@ -37,5 +56,4 @@ public class VirtuosoLawSource implements IDataSource<String[]> {
 		
 		return new HttpGetRequestConfiguration<>(param, header);
 	}
-
 }

@@ -14,6 +14,10 @@ public class ActContentByDateQuery implements IQuery {
 		return actRevisionDate;
 	}
 
+	public ActContentByDateQuery(ActContentByDateConfiguration conf) {
+		this(conf.getActUrl(), conf.getActRevisionDate());
+	}
+	
 	public ActContentByDateQuery(String url, String date) {
 		actUrl = url;
 		actRevisionDate = date;
@@ -24,8 +28,29 @@ public class ActContentByDateQuery implements IQuery {
 		return  "SELECT DISTINCT ?finalContent " +
 				"WHERE { " +
 				"<" + actUrl + "> ocd:rif_versioneTestoAtto ?descrTestoAtto. " +
-				"?descrTestoAtto dc:date <" + actUrl + ">. " +
+				"?descrTestoAtto dc:date " + actRevisionDate + ". " +
 				"?descrTestoAtto <http://purl.org/dc/terms/isReferencedBy> ?finalContent. " +
 				"}";
+	}
+	
+	public class ActContentByDateConfiguration {
+		private String actUrl;
+		private String actRevisionDate;
+		
+		public String getActUrl() {
+			return actUrl;
+		}
+
+		public String getActRevisionDate() {
+			return actRevisionDate;
+		}
+		
+		public ActContentByDateConfiguration(String actUrl, String actRevisionDate) {
+			if(actUrl == null || actRevisionDate == null)
+				throw new IllegalArgumentException();
+			
+			this.actUrl = actUrl;
+			this.actRevisionDate = actRevisionDate;
+		}
 	}
 }
