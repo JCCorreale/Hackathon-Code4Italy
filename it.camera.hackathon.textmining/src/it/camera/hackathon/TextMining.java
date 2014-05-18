@@ -65,7 +65,7 @@ public class TextMining {
 		// TODO
 		
 		// prints the top words
-		//Utils.printWordEntries(topWords);
+		//Utils.printMap(topWords);
 	}
 	
 	private static String[] getStopWords()
