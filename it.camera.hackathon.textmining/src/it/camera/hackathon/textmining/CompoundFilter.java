@@ -4,6 +4,7 @@ public class CompoundFilter<T> implements IFilter<T> {
 
 	private IFilter<T>[] innerFilters;
 	
+	@SafeVarargs
 	public CompoundFilter(IFilter<T>... filters)
 	{
 		if (filters.length == 0)
