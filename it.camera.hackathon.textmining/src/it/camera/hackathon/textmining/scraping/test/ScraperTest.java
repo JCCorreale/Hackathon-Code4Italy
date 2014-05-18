@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ScraperTest 
 {
-	public static String mucca = "mucca", vacca ="vacca", stronzo = "stronzo";
+	public static String mucca = "mucca", vacca ="vacca", stronzo = "stronzo", dicembre = "dicembre";
 	
 	@Test
 	public void testSearchForSynonims() 
@@ -37,5 +37,11 @@ public class ScraperTest
 	public void testFalseSynonims2() 
 	{
 		assertFalse(SynonimScraper.areSynonims(stronzo, vacca));
+	}
+	
+	@Test
+	public void testNoSynonims() 
+	{
+		assertTrue(SynonimScraper.FindSynonims(dicembre).isEmpty());
 	}
 }
