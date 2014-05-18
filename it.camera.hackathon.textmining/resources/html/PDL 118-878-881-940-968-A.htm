@@ -1,0 +1,448 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0003640&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0003640&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0003640' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 118-878-881-940-968-A</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 118-878-881-940-968-A</B>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>PROPOSTE DI LEGGE </B></CENTER>
+
+<P><CENTER><B>n. 118, </B>d'iniziativa dei deputati</CENTER>
+
+<P><CENTER><B>MOGHERINI, SERENI, VILLECCO CALIPARI, POLLASTRINI, ROBERTA AGOSTINI, CENNI, BINI, BORGHI, CARRA, CARRESCIA, CHAOUKI, CIMBRO, COPPOLA, COSCIA, MARCO DI MAIO, D'INCECCO, FEDI, CINZIA MARIA FONTANA, GADDA, GASPARINI, GHIZZONI, GIULIANI, IACONO, INCERTI, IORI, KYENGE, LA MARCA, LENZI, LODOLINI, MAESTRI, MALPEZZI, MANZI, MARIANI, MARZANO, MIOTTO, MORETTI, MURER, QUARTAPELLE PROCOPIO, RAMPI, RUBINATO, SCUVERA, TENTORI, TIDEI, VELO </B></CENTER>
+
+
+<P><CENTER>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</CENTER>
+
+<P><CENTER><I>Presentata il 15 marzo 2013</I></CENTER>
+
+<P><CENTER><B>n. 878, </B>d'iniziativa dei deputati</CENTER>
+
+<P><CENTER><B>SPADONI, DI VITA, AGOSTINELLI, ALBERTI, ARTINI, BALDASSARRE, BARBANTI, BARONI, BASILIO, BATTELLI, BECHIS, BENEDETTI, MASSIMILIANO BERNINI, PAOLO BERNINI, NICOLA BIANCHI, BONAFEDE, BRESCIA, BRUGNEROTTO, BUSINAROLO, BUSTO, CANCELLERI, CARIELLO, CARINELLI, CASO, CASTELLI, CATALANO, CECCONI, CHIMIENTI, CIPRINI, COLLETTI, COLONNESE, COMINARDI, CORDA, COZZOLINO, CRIPPA, CURR&#210;, DA VILLA, DADONE, DAGA, DALL'OSSO, D'AMBROSIO, DE LORENZIS, DE ROSA, DEL GROSSO, DELLA VALLE, DELL'ORCO, DI BATTISTA, DI BENEDETTO, LUIGI DI MAIO, MANLIO DI STEFANO,  </B></CENTER>
+
+
+<P><HR ALIGN=LEFT WIDTH=50><FONT SIZE=-1><B>NOTA: La III Commissione permanente (Affari esteri e comunitari), il 21 maggio 2013, ha deliberato di riferire favorevolmente sul testo unificato delle proposte di legge nn. 118, 878, 881, 940 e 968. In pari data, la Commissione ha chiesto di essere autorizzata a riferire oralmente. Per i testi delle proposte di legge si vedano i relativi stampati.</B> 
+</FONT>
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DIENI, D'INC&#192;, D'UVA, FANTINATI, FERRARESI, FICO, FRACCARO, FRUSONE, FURNARI, GAGNARLI, GALLINELLA, LUIGI GALLO, SILVIA GIORDANO, GRANDE, GRILLO, CRISTIAN IANNUZZI, L'ABBATE, LABRIOLA, LIUZZI, LOMBARDI, LOREFICE, LUPO, MANNINO, MANTERO, MARZANA, MICILLO, MUCCI, NESCI, NUTI, PARENTELA, PESCO, PETRAROLI, PINNA, PISANO, PRODANI, RIZZETTO, RIZZO, PAOLO NICOL&#210; ROMANO, ROSTELLATO, RUOCCO, SARTI, SCAGLIUSI, SEGONI, SIBILIA, SORIAL, SPESSOTTO, TACCONI, TERZONI, TOFALO, TONINELLI, TRIPIEDI, TURCO, VACCA, SIMONE VALENTE, VALLASCAS, VIGNAROLI, VILLAROSA, ZACCAGNINI, ZOLEZZI</B></CENTER>
+
+<P><CENTER>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</CENTER>
+
+<P><CENTER><I>Presentata il 6 maggio 2013  </I></CENTER>
+
+<P><CENTER><B>n. 881, </B>d'iniziativa dei deputati</CENTER>
+
+<P><CENTER><B>MIGLIORE, SCOTTO, CLAUDIO FAVA, NICCHI, AIELLO, PIAZZONI, AIRAUDO, BOCCADUTRI, FRANCO BORDO, COSTANTINO,  DI SALVO, DURANTI, DANIELE FARINA, FERRARA, FRATOIANNI, GIANCARLO GIORDANO, KRONBICHLER, LACQUANITI, LAVAGNO, MARCON, MATARRELLI, MELILLA, NARDI, PAGLIA, PALAZZOTTO, PANNARALE, PELLEGRINO, PILOZZI, PIRAS, PLACIDO, QUARANTA, RAGOSTA, RICCIATTI, SANNICANDRO, ZAN, ZARATTI</B></CENTER>
+
+<P><CENTER>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</CENTER>
+
+<P><CENTER><I>Presentata il 6 maggio 2013</I></CENTER>
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER><B>n. 940, </B>d'iniziativa dei deputati</CENTER>
+
+<P><CENTER><B>BERGAMINI, CARFAGNA, GELMINI, CENTEMERO, MILANATO</B></CENTER> 
+
+<P><CENTER>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</CENTER>
+
+<P><CENTER><I>Presentata il 14 maggio 2013</I></CENTER>
+
+<P><CENTER>e</CENTER>
+
+<P><CENTER><B>n. 968, d'iniziativa del deputato GIORGIA MELONI</B></CENTER> 
+
+<P><CENTER>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</CENTER>
+
+<P><CENTER><I>Presentata il 16 maggio 2013</I></CENTER>
+
+<P><CENTER>(Relatore: <B>CARFAGNA</B>)</CENTER>
+
+<!NuovaPag. 4><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER><DIV align="right"><A NAME="PP"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> PARERE DELLA I COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari costituzionali, della Presidenza del Consiglio e interni)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La I Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il testo unificato delle proposte di legge n. 118 ed abbinate;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che la violenza contro le donne costituisce un'intollerabile violazione dei diritti umani, alla luce dei principi sanciti dalla Convenzione delle Nazioni Unite sull'eliminazione di ogni forma di discriminazione contro le donne e dal suo Protocollo Opzionale, dal Protocollo per prevenire, reprimere e punire la tratta di persone, in particolare donne e bambini, addizionale alla Convenzione delle Nazioni Unite contro la criminalit&#224; organizzata transnazionale, dalla Convenzione europea per la salvaguardia dei diritti dell'uomo e delle libert&#224; fondamentali e dal suo protocollo n. 12 in materia di non discriminazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che la Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica dell'11 maggio 2011 (cosiddetta Convenzione di Istanbul) &#232; il primo strumento internazionale giuridicamente vincolante volto a creare un quadro normativo completo a tutela delle donne contro qualsiasi forma di violenza;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato che la questione della violenza contro le donne in Italia &#232; stata all'attenzione del Comitato per l'eliminazione della discriminazione contro le donne, costituito nell'ambito delle Nazioni Unite, che, nella sessione del luglio 2011, ha svolto le sue osservazioni conclusive sulla situazione delle donne in Italia, nonch&#233; del Consiglio per i diritti umani delle Nazioni Unite, con il rapporto della relatrice speciale sulla violenza contro le donne, le sue cause e conseguenze, Rashida Manjoo, presentato il 15 giugno 2012;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineata la necessit&#224; di dare attuazione a tutte le raccomandazioni rivolte al nostro Paese nelle citate osservazioni conclusive del Comitato per l'eliminazione della discriminazione contro le donne e nel suddetto rapporto della relatrice speciale sulla violenza contro le donne;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, in particolare, che sia il Comitato per l'eliminazione della discriminazione contro le donne che la relatrice speciale sulla violenza contro le donne hanno raccomandato una rapida ratifica della Convenzione di Istanbul;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che la Convenzione mira ad apprestare una forma di tutela completa per le donne, intervenendo non solo sul piano della repressione, ma anche su quello della prevenzione, dell'assistenza, della sensibilizzazione culturale e dell'educazione, avuto riguardo anche a situazioni di particolare vulnerabilit&#224;, legate a fattori quali l'et&#224;, le condizioni di salute o la disabilit&#224;, lo <I>status</I> di migrante;
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che l'articolo 5 sancisce l'obbligo degli Stati di astenersi da qualsiasi atto che costituisca una forma di violenza nei confronti delle donne e di garantire che le autorit&#224;, i funzionari, i rappresentati statali, le istituzioni e tutti i soggetti pubblici si comportino in conformit&#224; a tale obbligo e che appare in proposito opportuno assicurare che i pubblici ufficiali, e, in particolare, i funzionari e gli addetti delle forze dell'ordine e del settore giudiziario e medico siano specificamente formati per affrontare tutte le forme di violenza contro le donne;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che una delle principali criticit&#224; dell'attuale sistema di contrasto alla violenza di genere in Italia &#232; l'assenza di un quadro legislativo nazionale organico di riferimento e di sostegno finanziario e che la Convenzione costituir&#224; al riguardo un importante punto di riferimento per la realizzazione di politiche efficaci;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ritenuta in particolare la necessit&#224; di adottare un Piano d'azione per il contrasto alla violenza ed alle molestie, dotato delle occorrenti risorse finanziarie, che preveda efficaci misure di prevenzione e di tutela della vittima e garantisca la certezza e l'adeguatezza delle pene;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che non sussiste allo stato un sistema di monitoraggio e di raccolta dei dati sulle forme di violenza contro le donne, inclusa la violenza domestica, e che appare necessaria l'istituzione di uno specifico organismo di coordinamento, come previsto dall'articolo 10 della Convenzione; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che l'articolo 70 della Convenzione in oggetto invita i Parlamenti nazionali al controllo concreto delle misure adottate per l'attuazione della Convenzione e che tale adempimento appare indispensabile; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato che il raggiungimento dell'uguaglianza di genere <I>de jure</I> e <I>de facto </I>&#232; un elemento chiave per prevenire la violenza contro le donne;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata la coerenza della Convenzione oggetto di ratifica con i principi della Costituzione, ed in particolare con l'articolo 2 che &#171;riconosce e garantisce i diritti inviolabili dell'uomo, sia come singolo sia nelle formazioni sociali ove si svolge la sua personalit&#224;&#187;, e con l'articolo 3 per cui &#171;Tutti i cittadini hanno pari dignit&#224; sociale e sono eguali davanti alla legge, senza distinzione di sesso, di razza, di lingua, di religione, di opinioni politiche, di condizioni personali e sociali&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamato altres&#236; l'articolo 32 della Costituzione, che tutela la salute,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER><!PP>PARERE DELLA II COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Giustizia)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La II Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il provvedimento in oggetto;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata la necessit&#224; che, in seguito alla ratifica della Convenzione, il Parlamento svolga una attenta analisi dello stato di attuazione delle disposizioni normative interne contro la violenza sulle donne, al fine di dare una compiuta, adeguata nonch&#233; urgente attuazione alla Convenzione in esame,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P><BR><CENTER><!PP>PARERE DELLA V COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Bilancio, tesoro e programmazione)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La V Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il testo unificato recante ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011 (n. 118 e abbinate);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;premesso che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la Convenzione in oggetto si prefigge di creare un quadro normativo completo per proteggere le donne contro qualsiasi forma di violenza, grazie a misure di prevenzione, di tutela in sede giudiziaria e di sostegno alle vittime;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in questo quadro, l'articolo 5, paragrafo 2, prevede che le Parti adottano le misure legislative e di altro tipo necessarie per esercitare la debita diligenza nel prevenire, indagare, punire i responsabili e risarcire le vittime di atti di violenza commessi da soggetti non statali che rientrano nel campo di applicazione della Convenzione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;numerose disposizioni contenute nella Convenzione hanno pertanto carattere programmatico e dovranno essere attuate progressivamente previa adozione delle citate misure legislative;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'attuazione delle misure previste dalla Convenzione sar&#224; oggetto di monitoraggio secondo la procedura di cui all'articolo 68 della medesima Convenzione;
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto dei chiarimenti del Governo secondo il quale:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gli eventuali nuovi o maggiori oneri derivanti da tali misure legislative saranno quantificabili solo all'atto dell'adozione delle misure stesse, allorquando sar&#224; determinata l'esatta configurazione delle fattispecie eventualmente onerose e ne sar&#224; prevista la necessaria copertura finanziaria;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;appare necessario introdurre un'apposita clausola di invarianza finanziaria concernente l'attuazione amministrativa delle iniziative previste dalla Convenzione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente condizione, volte a garantire il rispetto dell'articolo 81, quarto comma, della Costituzione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dopo l'articolo 2, aggiungere il seguente: &#171;Art. 2-<I>bis</I>. &#8211; <I>(Clausola di neutralit&#224; finanziaria).</I> &#8211; 1. Le misure amministrative necessarie all'attuazione ed esecuzione della Convenzione di cui all'articolo 1 sono assicurate con le risorse umane, strumentali e finanziarie disponibili a legislazione vigente&#187;.
+
+<P><BR><CENTER><!PP>PARERE DELLA VII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Cultura, scienza e istruzione)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La VII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il testo unificato delle proposte di legge n. 118 e abbinate, recante ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti osservazioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> si istituisca un tavolo interministeriale al fine di affrontare il femminicidio e la violenza contro le donne da tutti i punti di vista e di predisporre progetti coordinati, sostenuti da un piano adeguato di risorse, per tutto il territorio nazionale che garantiscano maggiore incisivit&#224; nel contrasto alla violenza di genere;
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> si sostenga un Osservatorio nazionale permanente sulla violenza alle donne che predisponga e tenga aggiornati i dati relativi ai fenomeni di violenza sulle donne, provenienti da soggetti pubblici e privati, accessibili anche ai fini della ricerca e dell'elaborazione di interventi di prevenzione e di contrasto alla violenza, e che monitori e valuti i programmi esistenti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> si adottino le opportune iniziative volte a promuovere, nell'esercizio dell'attivit&#224; giornalistica, nei messaggi pubblicitari, nei palinsesti e nelle trasmissioni di radio e televisione, il rispetto della dignit&#224; delle donne e della soggettivit&#224; femminile, nonch&#233; a prevenire ogni forma di discriminazione di genere o di femminicidio;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>d)</I> si sostenga la promozione dell'inserimento nei programmi scolastici di ogni ordine e grado dell'educazione all'affettivit&#224; e di corsi universitari sulla parit&#224; di genere, al fine di sensibilizzare, informare, formare gli studenti e prevenire la violenza nei confronti delle donne, la discriminazione di genere e il femminicidio e promuovere la soggettivit&#224; femminile;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>e)</I> si presenti alle Camere annualmente una relazione del Governo sullo stato di attuazione delle normative e delle iniziative poste in atto da tutti i soggetti coinvolti.
+
+<P><BR><CENTER><!PP>PARERE DELLA XII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari sociali)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La XII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti competenza, il testo unificato delle proposte di legge n. 118 e abbinate, recante &#171;Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ravvisata l'esigenza di addivenire in tempi brevi all'approvazione della legge di ratifica della Convenzione in oggetto, in linea con quanto la Commissione affari sociali ha precedentemente sostenuto, in occasione dell'approvazione della risoluzione unitaria Murer ed altri n. 8-00181, avvenuta il 6 giugno 2012, con la quale si impegnava il Governo, tra l'altro, ad accelerare l&#8217;<I>iter</I> per l'adesione alla predetta Convenzione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato altres&#236; che, a seguito dell'approvazione della legge di ratifica da parte del Parlamento, si dovr&#224; poi procedere tempestivamente all'adozione delle misure legislative o di altro tipo necessarie al fine di dare attuazione a quanto previsto dalla richiamata Convenzione, soprattutto &#8211; per quanto concerne le competenze della 
+
+<!NuovaPag. 9><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 9 <hr width=30%></hr></center><br></td></tr></DIV>
+
+Commissione affari sociali &#8211; in materia di protezione e sostegno alle donne vittime di violenza o alle vittime di violenza domestica, di cui al capitolo IV della Convenzione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+
+<!NuovaPag. 10><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 10 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><DIV align="right"><A NAME="PD"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> TESTO UNIFICATO</CENTER>
+<CENTER>
+della Commissione</CENTER>
+
+<P><CENTER><B>Ratifica ed esecuzione della Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011</B></CENTER>
+
+<P><CENTER><!E3>Art. 1.</CENTER>
+<CENTER><I>(Autorizzazione alla ratifica).</I></CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;1. Il Presidente della Repubblica &#232; autorizzato a ratificare la Convenzione del Consiglio d'Europa sulla prevenzione e la lotta contro la violenza nei confronti delle donne e la violenza domestica, fatta a Istanbul l'11 maggio 2011 e sottoscritta dall'Italia il 27 settembre 2012, di seguito denominata &#171;Convenzione&#187;.
+
+<P><CENTER><!E3>Art. 2.</CENTER>
+<CENTER><I>(Ordine di esecuzione).</I></CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;1. Piena ed intera esecuzione &#232; data alla Convenzione a decorrere dalla data della sua entrata in vigore, in conformit&#224; a quanto disposto dall'articolo 75 della Convenzione.
+
+<P><CENTER><!E3>Art. 3.</CENTER>
+<CENTER><I>(Clausola di neutralit&#224; finanziaria).</I></CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;1. Le misure amministrative necessarie all'attuazione e all'esecuzione della Convenzione sono assicurate con le risorse umane, strumentali e finanziarie disponibili a legislazione vigente.
+
+<P><CENTER><!E3>Art. 4.</CENTER>
+<CENTER><I>(Entrata in vigore).</I></CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;1. La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella <I>Gazzetta Ufficiale</I>.
+
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

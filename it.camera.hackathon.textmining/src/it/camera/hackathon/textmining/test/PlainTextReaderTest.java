@@ -1,5 +1,6 @@
 package it.camera.hackathon.textmining.test;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
@@ -18,6 +19,8 @@ import org.junit.Test;
 
 public class PlainTextReaderTest {
 
+	String filename = "resources/text" + File.separator + "PlainText";
+	
 	public static WordCounter wc = null;
 	
 	@BeforeClass
@@ -52,7 +55,6 @@ public class PlainTextReaderTest {
 	@Test
 	public void testWordCounter() throws IOException 
 	{
-		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PlainText";
 		String text = Utils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);
@@ -66,7 +68,6 @@ public class PlainTextReaderTest {
 	@Test
 	public void testTopWordsCount() throws IOException 
 	{
-		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PlainText";
 		String text = Utils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);

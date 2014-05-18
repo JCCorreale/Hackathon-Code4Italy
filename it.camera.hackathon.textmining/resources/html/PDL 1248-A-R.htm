@@ -1,0 +1,279 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0007610&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0007610&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0007610' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 1248-A-R</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 1248-A/R</B>
+<BR>&nbsp;&nbsp;&nbsp;<B>ERRATA CORRIGE</B>
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+
+
+<P><CENTER><B>DISEGNO DI LEGGE </B></CENTER>
+
+<P><CENTER>presentato dal presidente del consiglio dei ministri</CENTER>
+<CENTER><B>(LETTA)</B></CENTER>
+<CENTER>dal vicepresidente del consiglio dei ministri e ministro dell'interno</CENTER>
+<CENTER><B>(ALFANO)</B></CENTER>
+<CENTER>dal ministro dello sviluppo economico</CENTER>
+<CENTER><B>(ZANONATO)</B></CENTER>
+<CENTER>dal ministro per la pubblica amministrazione e la semplificazione</CENTER>
+<CENTER><B>(D'ALIA)</B></CENTER>
+<CENTER>dal ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(SACCOMANNI)</B></CENTER>
+<CENTER>dal ministro delle infrastrutture e dei trasporti</CENTER>
+<CENTER><B>(LUPI)</B></CENTER>
+<CENTER>e dal ministro della giustizia</CENTER>
+<CENTER><B>(CANCELLIERI)</B></CENTER>
+<CENTER>di concerto con il ministro dell'ambiente  e della tutela del territorio e del mare</CENTER>
+<CENTER><B>(ORLANDO)</B></CENTER>
+<CENTER>con il ministro per i beni e le attivit&#224; culturali</CENTER>
+<CENTER><B>(BRAY)</B></CENTER>
+<CENTER>con il ministro delle politiche agricole alimentari e forestali</CENTER>
+<CENTER><B>(DE GIROLAMO)</B></CENTER>
+<CENTER>con il ministro della difesa</CENTER>
+<CENTER><B>(MAURO)</B></CENTER>
+<CENTER>con il ministro dell'istruzione, dell'universit&#224; e della ricerca</CENTER>
+<CENTER><B>(CARROZZA)</B></CENTER>
+<CENTER>con il ministro del lavoro e delle politiche sociali</CENTER>
+<CENTER><B>(GIOVANNINI)</B> 
+
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV></CENTER>
+<CENTER>con il ministro per gli affari europei</CENTER>
+<CENTER><B>(MOAVERO MILANESI)</B></CENTER>
+<CENTER>con il ministro degli affari esteri</CENTER>
+<CENTER><B>(BONINO)</B></CENTER>
+<CENTER>con il ministro della salute</CENTER>
+<CENTER><B>(LORENZIN)</B></CENTER>
+<CENTER>con il ministro per gli affari regionali e le autonomie</CENTER>
+<CENTER><B>(DELRIO)</B></CENTER>
+<CENTER>con il ministro per la coesione territoriale</CENTER>
+<CENTER><B>(TRIGILIA)</B></CENTER>
+<CENTER>con il ministro per l'integrazione</CENTER>
+<CENTER><B>(KYENGE)</B></CENTER>
+<CENTER>e con il ministro per le pari opportunit&#224;, lo sport e le politiche giovanili</CENTER>
+<CENTER><B>(IDEM)</B></CENTER>
+<CENTER>Conversione in legge del decreto-legge 21 giugno 2013, n. 69, recante disposizioni urgenti per il rilancio dell'economia</CENTER>
+
+<P><CENTER><I>Presentato il 21 giugno 2013  </I></CENTER>
+
+<P><CENTER>(Relatori per la maggioranza: <B>SISTO, </B><I>per la I Commissione</I>;</CENTER>
+<CENTER><B>BOCCIA, </B><I>per la V Commissione</I>)</CENTER>
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;A pagina 34:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alle righe dalla sesta all'ottava, le parole: &#171;da adottare entro il 31 dicembre 2013 e da aggiornare con cadenza almeno triennale,&#187; devono intendersi sostituite dalle seguenti: &#171;da adottare entro il 31 dicembre 2013,&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alle righe quindicesima e sedicesima, le parole: &#171;Nelle pendenza del termine per l'adozione della deliberazione di cui al primo periodo&#187; devono intendersi sostituite dalle seguenti: &#171;Nelle more dell'adozione della deliberazione di cui al primo periodo e comunque, in sua assenza, fino al 30 giugno 2014,&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;A pagina 245, all'articolo 30, comma 1, lettera <I>f)</I>, capoverso &#171;Art. 23-<I>bis</I>&#187;, comma 4, del decreto-legge, nel testo modificato dalle Commissioni:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alle righe dalla settima alla nona, le parole: &#171;<B>da adottare entro il 31 dicembre 2013 e da aggiornare con cadenza almeno triennale,</B> &#187; devono intendersi sostituite dalle seguenti: &#171;<B>da adottare entro il 31 dicembre 2013,</B> &#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alle righe sedicesima e diciassettesima, le parole: &#171;<B>Nella pendenza del termine per l'adozione della deliberazione di cui al primo periodo</B> &#187; devono intendersi sostituite dalle seguenti: &#171;<B>Nelle more dell'adozione della deliberazione di cui al primo periodo e comunque, in sua assenza, fino al 30 giugno 2014,</B> &#187;.
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

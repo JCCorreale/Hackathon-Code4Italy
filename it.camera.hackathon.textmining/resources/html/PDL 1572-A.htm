@@ -1,0 +1,837 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0010490&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0010490&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0010490' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 1572-A</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 1572-A</B>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>1573-A</B>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DISEGNO DI LEGGE</B></CENTER>
+
+<P><CENTER><B>n. 1572</B></CENTER>
+
+<P><CENTER><B>APPROVATO DAL SENATO DELLA REPUBBLICA</B></CENTER>
+<CENTER><I>l'11 settembre 2013 (v. stampato Senato n. 888)</I></CENTER>
+
+<P><CENTER>presentato dal ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(SACCOMANNI)</B></CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012</CENTER>
+
+<P><CENTER><I>Trasmesso dal Presidente del Senato della Repubblica  l'11 settembre 2013</I></CENTER>
+
+<P><HR ALIGN=LEFT WIDTH=50><FONT SIZE=-1><B>NOTA: La V Commissione permanente (Bilancio, tesoro e programmazione), il 26 settembre 2013, ha deliberato di riferire favorevolmente sui disegni di legge nn. 1572 e 1573 nel testo trasmesso dal Senato della Repubblica.
+<BR>In pari data, la Commissione ha chiesto di essere autorizzata a riferire oralmente.
+<BR>Il presente stampato contiene le relazioni delle Commissioni permanenti I (Affari costituzionali, della Presidenza del Consiglio e interni), II (Giustizia), III (Affari esteri e comunitari), IV (Difesa), VI (Finanze), VII (Cultura, scienza e istruzione), VIII (Ambiente, territorio e lavori pubblici), IX (Trasporti, poste e telecomunicazioni), X (Attivit&#224; produttive, commercio e turismo), XI (Lavoro pubblico e privato), XII (Affari sociali), XIII (Agricoltura) e XIV (Politiche dell'Unione europea).
+<BR>Per il testo dei disegni di legge si rinvia agli stampati nn. 1572 e 1573.</B>
+</FONT>
+
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>e</CENTER>
+
+<P><CENTER><B>DISEGNO DI LEGGE</B></CENTER>
+
+<P><CENTER><B>n. 1573</B></CENTER>
+
+<P><CENTER><B>APPROVATO DAL SENATO DELLA REPUBBLICA</B></CENTER>
+<CENTER><I>l'11 settembre 2013 (v. stampato Senato n. 889)</I></CENTER>
+
+<P><CENTER>presentato dal ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(SACCOMANNI)</B></CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013</CENTER>
+
+<P><CENTER>
+<I>Trasmesso dal Presidente del Senato della Repubblica  l'11 settembre 2013</I></CENTER>
+
+<P><CENTER>(Relatore: <B>RUGHETTI</B>)</CENTER>
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER><!RC><DIV align="right"><A NAME="RC"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> RELAZIONI DELLE COMMISSIONI PERMANENTI 
+
+<!NuovaPag. 4><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+&#160;&#160;&#160;&#160;</CENTER>
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>I COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari costituzionali, della Presidenza del Consiglio e interni)</CENTER>
+
+<P><CENTER>(Relatore: Maria Elena BOSCHI)</CENTER>
+
+<P><CENTER><B>RELAZIONE</B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 8: Stato di previsione del Ministero dell'interno</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La I Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di propria competenza, il disegno di legge del Governo C. 1572, approvato dal Senato, concernente il rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, per le parti di propria competenza, il disegno di legge del Governo C. 1573, approvato dal Senato, recante disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;viste, in particolare, la Tabella n. 8, recante lo stato di previsione del Ministero dell'interno, e, limitatamente alle parti di competenza, la Tabella n. 2, recante lo stato di previsione del Ministero dell'economia e delle finanze,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>II COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Giustizia)</CENTER>
+
+<P><CENTER>(Relatore: Franco VAZIO)</CENTER>
+
+<P><CENTER><B>RELAZIONE</B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 5: Stato di previsione del Ministero della giustizia</CENTER>
+
+<P><CENTER>Tabella 10: Stato di previsione del Ministero  delle infrastrutture e dei trasporti (limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La II Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per la parte di propria competenza, il disegno di legge recante &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, per la parte di propria competenza, il disegno di legge recante &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, relativamente alla Tabella n. 2, limitatamente alle parti di competenza, alla Tabella n. 5 e alla Tabella n. 10, limitatamente alle parti di competenza;
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>III COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari esteri e comunitari)</CENTER>
+
+<P><CENTER>(Relatore: Vincenzo AMENDOLA)</CENTER>
+
+<P><CENTER><B>RELAZIONE</B></CENTER>
+<CENTER> sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 6: Stato di previsione del Ministero degli affari esteri</CENTER>
+
+<P>&#160;&#160;&#160;&#160;La III Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, ai sensi dell'articolo 119, comma 8 del Regolamento, per le parti di propria competenza, il disegno di legge C. 1572, approvato dal Senato, recante &#171;Rendiconto generale dell'Amministrazione dello Stato per l'anno finanziario 2012&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rinnovata la preoccupazione circa il <I>trend</I> negativo dell'incidenza percentuale delle risorse destinate al Ministero degli affari esteri, ben al di sotto di quella che si registra per i paesi europei comparabili all'Italia;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che il consueto incremento in sede di rendiconto delle previsioni di spesa di competenza del Ministero degli affari esteri introduce un seppur parziale riequilibrio, senza per&#242; consentirne un'adeguata programmazione e finalizzazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalato positivamente il parziale reintegro di alcuni capitoli di spesa per interventi di cooperazione allo sviluppo, con particolare riferimento ai contributi volontari alle Organizzazioni internazionali, nonch&#233; alle Banche e Fondi di sviluppo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ravvisata l'opportunit&#224; di continuare a ridurre i costi di funzionamento delle strutture che formano la rete estera, con particolare riferimento ai canoni di locazione ed agli oneri di manutenzione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;osservato che le raccomandazioni della Corte dei conti relative alla rendicontazione delle spese afferenti alla cooperazione 
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+allo sviluppo potrebbero essere utilmente prese in considerazione nell'ormai improcrastinabile riforma della legge n. 49 del 1987;
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, ai sensi dell'articolo 119, comma 8, del Regolamento, per le parti di propria competenza, il disegno di legge C. 1573, approvato dal Senato, recante: &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, in relazione alla tabella 6;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che lo stato di previsione del Ministero degli affari esteri continua ad essere sottoposto a tagli lineari, come da ultimo avvenuto con il decreto-legge n. 102 del 2013, in modo tale da indebolire concretamente l'azione internazionale del Paese;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;auspicata la prosecuzione della valutazione della <I>spending review</I> nell'esame della Relazione sullo stato della spesa, sull'efficacia nell'allocazione delle risorse e sul grado di efficienza dell'azione amministrativa svolta dal Ministero degli affari esteri;
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 9><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 9 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>IV COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Difesa)</CENTER>
+
+<P><CENTER>(Relatore: Elio Massimo PALMIZIO)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 11: Stato di previsione del Ministero della difesa</CENTER>
+
+<P>&#160;&#160;&#160;&#160;La IV Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, ai sensi dell'articolo 119, comma 8, del Regolamento, il disegno di legge recante &#171;Rendiconto generale dell'Amministrazione dello Stato per l'anno finanziario 2012&#187;, relativamente alla parte di propria competenza,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il conto consuntivo del Ministero della difesa per il 2012 reca stanziamenti definitivi di competenza per complessivi 22.328,6 milioni di euro, con un incremento di circa 2.366,5 milioni di euro rispetto alle previsioni iniziali e di 1.483,8 milioni rispetto alle previsioni assestate;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'importo relativo alle autorizzazioni definitive di cassa &#232; di 23.196,4 milioni di euro, mentre nel bilancio di previsione risultava pari a 20.324,7 milioni di euro;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'incidenza percentuale delle risorse per la difesa sul bilancio dello Stato &#232; stata pari al 4,2 per cento, con un decremento pari allo 0,2 per cento rispetto al precedente esercizio finanziario;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il raffronto relativo all'accumulo dei residui passivi evidenzia per il 2012 valori percentuali di <I>performance</I> tendenzialmente positivi, tenuto conto che la massa spendibile corrisponde a 25.759,4 milioni di euro e il coefficiente di realizzazione passa dall'84,06 per cento all'82,3 per cento;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;e premesso, inoltre, che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'urgenza di riqualificare la spesa nel settore della Difesa, come invocato 
+
+<!NuovaPag. 10><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 10 <hr width=30%></hr></center><br></td></tr></DIV>
+
+dalla Corte dei conti, &#232; obiettivo che va di pari passo all'impegno per la realizzazione di un modello integrato di difesa europea, capace di consentire il duplice risultato della riduzione dei costi e il conseguimento di un dispositivo integrato pienamente funzionale alle esigenze di difesa e sicurezza, da affrontare e risolvere attraverso un multilateralismo efficace, pur nel pieno rispetto della specificit&#224; dello strumento militare;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;conseguentemente, negli impegni di spesa per i programmi d'armamento, caratterizzati secondo la Corte dei conti da un elevato grado di irrigidimento negli anni 2013-2015 su valori finanziari molto elevati, si deve contemperarne la compatibilit&#224; con le esigenze di bilancio e valutare la sostenibilit&#224; di interventi integrati in sede di organizzazioni internazionali della difesa, anche alla luce di quanto potr&#224; emergere dall'indagine conoscitiva in corso di svolgimento sui sistemi d'arma destinati alla difesa in vista del Consiglio europeo di dicembre 2013, per realizzare un contenimento della spesa anche grazie ad un pi&#249; deciso impegno nella promozione di convergenze produttive nel settore degli armamenti al livello europeo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sempre nell'urgenza di razionalizzare la spesa nel settore della Difesa, &#232; divenuta improcrastinabile una valutazione in ordine alla alienazione dei beni della difesa da tempo non utilizzati per finalit&#224; istituzionali e, data la riassegnazione alla Difesa ad oggi di un importo pari a soli 3,6 milioni di euro circa derivanti dalla vendita di un numero assai esiguo di alloggi di servizio rispetto al patrimonio alienabile, &#232; altres&#236; indifferibile l'adozione da parte dell'Amministrazione di nuovi criteri per la definizione del prezzo di vendita, delle condizioni per i conduttori e dell'entit&#224; del canone di mercato, anche al fine di superare il contenzioso amministrativo sulla base di accordi stragiudiziali;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in tema di socialit&#224; interna a favore degli appartenenti alle Forze Armate, si auspicano impegni a favore degli organi di protezione sociale, delle iniziative connesse e degli asili nido in ragione della specificit&#224; dell'impiego, delle esigenze di mobilit&#224; e dei provvedimenti in materia di blocco stipendiale e di armonizzazione previdenziale;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#232; necessario un impegno concreto e mirato sul tema degli Enti vigilati dal Ministero della difesa, per dare seguito alle linee tracciate dalla Corte dei conti con riferimento, in particolare, all'Agenzia Industrie Difesa e alla Difesa Servizi S.p.A. e da conseguire mediante uno specifico approfondimento;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamata, infine, la valenza che assume il provvedimento in vista della revisione dello strumento militare, in attuazione della legge n. 244 del 2012, che, come evidenziato nella Relazione della Corte dei conti, dovr&#224; avvenire secondo modi e tempi compatibili con l'urgente esigenza di riduzione della spesa,
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente osservazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nell'urgenza di razionalizzare la spesa nel settore della Difesa, secondo quanto segnalato anche dalla Corte dei Conti, valuti la Commissione di merito l'opportunit&#224; che da parte dell'Amministrazione della difesa si proceda senza ritardo ad una valutazione sull'alienazione dei beni della difesa da tempo non utilizzati per finalit&#224; istituzionali, provvedendo ad un'opportuna rimodulazione dei vincoli urbanistici da parte degli enti locali, incrementando e salvaguardando gli alloggi di servizio e, dati gli insoddisfacenti risultati ad oggi conseguiti in termini finanziari dalla vendita di alloggi di servizio rispetto al patrimonio alienabile, adottando nuovi criteri per la definizione del prezzo di vendita, delle condizioni per i conduttori e dell'entit&#224; del canone di mercato, anche al fine di superare il contenzioso amministrativo sulla base di accordi stragiudiziali.
+
+<!NuovaPag. 11><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 11 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, ai sensi dell'articolo 119, comma 8, del Regolamento, il disegno di legge recante: &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, relativamente alla Tabella n. 11 recante lo stato di previsione del Ministero della difesa,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;per effetto delle variazioni intervenute in dipendenza di atti amministrativi e di quelle proposte con il disegno di legge in esame, le previsioni assestate di competenza risultano pari a 21.677,9 milioni di euro e le autorizzazioni di cassa ammontano a 22.152,3 milioni di euro, determinando dunque un incremento di 975,6 milioni di euro per le previsioni di competenza e di 950,3 milioni di euro per le autorizzazioni di cassa;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;le variazioni, gi&#224; introdotte in bilancio, derivate da provvedimenti legislativi hanno riguardato principalmente il fondo per le missioni internazionali (+832 milioni di euro);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il complesso delle variazioni apportate dal disegno di legge di assestamento incrementa il volume dei residui di 129,23 milioni di euro rispetto alla valutazione iniziale, con un ammontare, al 1<sup>o</sup> gennaio 2013, di 4.081 milioni, ripartiti tra parte corrente e conto capitale in ragione, rispettivamente, di +254,92 e -125,68 milioni di euro;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineato che devono trovare adeguata considerazione anche le problematiche relative ai finanziamenti da destinare alle associazioni combattentistiche, stante il meritorio operato sociale da esse svolto,
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente osservazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;valuti la Commissione di merito l'opportunit&#224; che si prevedano opportuni finanziamenti alle associazioni combattentistiche, come gi&#224; previsto per le associazioni d'arma.
+
+<!NuovaPag. 12><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 12 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>VI COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Finanze)</CENTER>
+
+<P><CENTER>(Relatore: Michele PELILLO)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 1: Stato di previsione dell'entrata</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;La VI Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di propria competenza, il disegno di legge C. 1572, approvato dal Senato, recante il &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato come sul rendiconto per l'esercizio finanziario 2012 continuino a riflettersi gli effetti negativi sull'economia e sulla finanza pubblica italiana causati dalla crisi finanziaria ed economica che coinvolge l'intera economia mondiale ed in particolare l'economia europea, in un contesto nel quale, peraltro, secondo le previsioni, cominciano ad evidenziarsi segnali di ripresa che dovranno comunque essere confermati e rafforzati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato come le entrate finali abbiano registrato nel 2012, in termini di competenza, un aumento di 24 miliardi rispetto al dato consuntivo relativo al 2011, legato al sensibile aumento delle entrate tributarie (+11.038 milioni, pari al 2,4 per cento) e, soprattutto, delle entrate extratributarie, per le quali risulta un incremento del 12,8 per cento, pari a 8.378 milioni;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalato inoltre, in termini di cassa, come nel 2012 i versamenti in entrata abbiano raggiunto la somma di 711,5 miliardi, 
+
+<!NuovaPag. 13><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 13 <hr width=30%></hr></center><br></td></tr></DIV>
+
+in aumento di circa il 4,5 per cento (+19 miliardi) rispetto agli incassi dell'esercizio 2011, a causa dell'aumento del gettito riconducibile sia alle entrate tributarie (per 10,4 miliardi, pari a +2,5 per cento) sia alle entrate extratributarie e alle entrate per alienazione ed ammortamento di beni patrimoniali e per riscossione di crediti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato come il provvedimento evidenzi un rapporto tra entrate complessive e PIL pari al 48,1 per cento, in forte aumento rispetto all'anno precedente, nel quale tale dato si attestava al 46,6, con una conseguente crescita della pressione fiscale, che &#232; passata dal 42,6 per cento in rapporto al PIL nel 2011 al 44 per cento del PIL nel 2012, a causa della crescita, pari al 3,1 per cento, delle entrate correnti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato come la gestione delle entrate tributarie in termini di accertamenti, segnali, in dettaglio, rispetto all'esercizio finanziario 2011, un aumento del gettito delle imposte sul patrimonio e sul reddito (+9.611 milioni, circa il 4,0 per cento), delle imposte sulla produzione, sui consumi e doganali di 6.212 milioni (+17,2 per cento), e delle entrate dei monopoli (+0,7 per cento), a fronte di una riduzione, in termini di competenza, del gettito delle tasse e imposte sugli affari (-4.189 milioni, pari a &#8211;2,7 per cento) e delle entrate derivanti da lotto, lotterie ed altre attivit&#224; di gioco (-5,4 per cento);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, con riferimento alla gestione dei residui attivi, l'incremento del dato relativo ai residui complessivi, che sono passati da un valore pari a 215,2 miliardi al 1<sup>o</sup> gennaio 2012, ad un valore pari a 243,3 miliardi al 31 dicembre 2012, dovuto all'emergere, nel corso del 2012, di 97,8 miliardi di residui di nuova formazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato, con riferimento al settore dei Monopoli, come l'articolo 8 del disegno di legge riguardi l'Amministrazione autonoma dei Monopoli di Stato (AAMS), la quale dall'esercizio 2013 non figura pi&#249; nei documenti contabili essendo stata incorporata nell'Agenzia delle dogane, con decorrenza dal 1<sup>o</sup> dicembre 2012, ai sensi dell'articolo 23-<I>quater</I> del decreto-legge n. 95 del 2012;
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, per le parti di propria competenza, il disegno di legge C. 1573, approvato dal Senato, recante &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato innanzitutto come il provvedimento in esame proponga, in termini di competenza e al lordo delle regolazioni debitorie, una diminuzione di oltre 6,9 miliardi delle entrate complessive, determinata dal combinato disposto di un incremento di 2,1 miliardi di euro delle entrate extratributarie, di un incremento di 5,4 miliardi delle emissioni di titoli di Stato e di una diminuzione delle entrate tributarie pari 14,5 miliardi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineato, in particolare, come il disegno di legge rechi una proposta di riduzione delle entrate finali su base annua per complessivi 12.356 milioni di euro, risultante sostanzialmente da una diminuzione delle entrate del comparto tributario pari a 14.521 milioni e da un aumento delle entrate extratributarie pari a 2.088 milioni;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato, in dettaglio, come, nell'ambito delle entrate tributarie, si registri una diminuzione delle entrate relative all'IVA (-10.548 milioni), alle imposte di registro, di bollo e sostitutive (-2.711 milioni), all'accisa sui prodotti energetici (-4.178 milioni), all'accisa su altri prodotti (-710 milioni), alle imposte sui generi di Monopolio (-24 milioni), alle lotterie ed altri giochi (-343 milioni), e alle altre imposte indirette (-1.802 milioni), mentre si segnala un incremento delle entrate relative all'IRPEF (+2.803 milioni), all'IRES (+1.599 milioni), alle imposte sostitutive (+1.471 milioni) e alle altre imposte dirette (+275 milioni);
+
+<!NuovaPag. 14><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 14 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato quindi come l'aumento delle entrate extratributarie sia sostanzialmente dovuto al riversamento allo stato di previsione dell'entrata delle disponibilit&#224; esistenti sulle contabilit&#224; speciali intestate alla soppressa Azienda autonoma dei Monopoli di Stato (AAMS), la quale &#232; stata incorporata nell'Agenzia delle dogane ai sensi dell'articolo 23-<I>quater</I> del decreto-legge n. 95 del 2012;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato come le variazioni proposte dal provvedimento alle previsioni di bilancio relative alle entrate tributarie scontino doverosamente l'adeguamento al quadro macro-economico per l'anno corrente, assunto a base nell'elaborazione delle stime contenute nel Documento di Economia e Finanza 2013, tenendo inoltre conto dell'andamento effettivo del gettito;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineato come il Governo, nel corso dell'esame del provvedimento al Senato, abbia rilevato come la diminuzione delle entrate prevista nel provvedimento, derivante principalmente dalle minori entrate tributarie, non determini la necessit&#224; di ulteriori modificazioni, in quanto, sulla base del monitoraggio dell'andamento del gettito nei primi sette mesi del 2013, le entrate tributarie contabilizzate nel bilancio, proiettate su base annua, risultano nel complesso sostanzialmente in linea con quelle contenute nel disegno di legge di assestamento;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, infatti, come il monitoraggio delle entrate mostri, fino al mese di luglio 2013, una crescita del gettito dell'1,1 per cento (+1.059 milioni di euro), ascrivibile essenzialmente agli incrementi delle ritenute sui redditi dei dipendenti del settore pubblico, agli effetti dei conguagli fiscali e dei versamenti in autoliquidazione, che hanno consentito di compensare la lieve flessione delle ritenute sui redditi dei dipendenti del settore privato;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato, in particolare, come nei primi sette mesi del 2013 il gettito dell'IRES versata in autoliquidazione abbia segnato una crescita assai significativa rispetto all'anno precedente, pari al 12,8 per cento (+1.965 milioni di euro), soprattutto per effetto di consistenti versamenti effettuati da parte di grandi contribuenti del settore bancario e assicurativo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamato altres&#236; il positivo andamento, nel predetto periodo, delle altre imposte dirette, dovuto soprattutto al buon andamento dell'imposta sostitutiva su ritenute, interessi e altri redditi di capitale (+1.063 milioni di euro), sui redditi di capitale e sulle plusvalenze (+872 milioni di euro), sul valore dell'attivo dei fondi pensione (+441 milioni di euro), sulle riserve matematiche dei rami vita (+841 milioni di euro) e sul riallineamento dei valori di bilancio relativi ad attivit&#224; immateriali (aumentato di 1.863 milioni di euro rispetto al corrispondente periodo del 2012), nonch&#233; alla crescita significativa del gettito riferito all'imposta di bollo, che ha registrato un incremento del 27,9 per cento (+1.344 milioni di euro);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalato inoltre come, fino al luglio 2013, si sia registrato un rallentamento della dinamica negativa del gettito IVA sugli scambi interni che ha caratterizzato i primi mesi dell'anno, testimoniato dal positivo andamento del gettito dell'imposta nei mesi di giugno (+4,5 per cento) e di luglio (+1,2 per cento), rispetto al 2012;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto di come le variazioni apportate dal disegno di legge allo stato di previsione del Ministero dell'economia e delle finanze, per quanto concerne i profili di competenza della Commissione Finanze, relativi principalmente a programmi di spesa contenuti nei centri di responsabilit&#224; &#171;Dipartimento delle finanze&#187; e &#171;Guardia di finanza&#187;, non risultino significative;
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 15><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 15 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>VII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Cultura, scienza e istruzione)</CENTER>
+
+<P><CENTER>(Relatore: Umberto D'OTTAVIO)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 3: Stato di previsione del Ministero dello sviluppo economico (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 7: Stato di previsione del Ministero dell'istruzione,  dell'universit&#224; e della ricerca</CENTER>
+
+<P><CENTER>Tabella 13: Stato di previsione del Ministero per i beni  e le attivit&#224; culturali</CENTER>
+
+<P>&#160;&#160;&#160;&#160;La VII Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato per le parti di competenza il disegno di legge n. 1572, approvato dal Senato, recante rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 e le annesse Tabelle;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nella consapevolezza che il rendiconto fotografa una situazione e una serie di provvedimenti di cui non si pu&#242; che prendere atto, sottolinea e fa proprie le osservazioni gi&#224; evidenziate dalla Corte dei Conti nella sua relazione sul rendiconto generale dello Stato per l'esercizio finanziario 2012;
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato per le parti di competenza il disegno di legge n. 1573, approvato dal 
+
+<!NuovaPag. 16><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 16 <hr width=30%></hr></center><br></td></tr></DIV>
+
+Senato, recante disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che &#232; in corso la discussione per la conversione in legge sia del decreto-legge n. 104 del 2013, recante misure urgenti in materia di istruzione, universit&#224; e ricerca, sia del decreto-legge n. 91 del 2013, recante disposizioni urgenti per la tutela, la valorizzazione e il rilancio dei beni e delle attivit&#224; culturali e del turismo, e che le linee in essi espresse riaffermano l'intenzione di porre fine al taglio delle risorse destinate ai suddetti settori;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;verificato che il disegno di legge recante disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013 propone di aumentare lo stanziamento sia di competenza che di cassa per tutte le parti di interesse della Commissione;
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 17><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 17 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>VIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Ambiente, territorio e lavori pubblici)</CENTER>
+
+<P><CENTER>(Relatore: Giovanna SANNA)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 9: Stato di previsione del Ministero dell'ambiente  e della tutela del territorio e del mare</CENTER>
+<CENTER>Tabella 10: Stato di previsione del Ministero delle infrastrutture  e dei trasporti</CENTER>
+<CENTER>(limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;L'VIII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, relativamente alle parti di propria competenza, il disegno di legge n. 1572, concernente il rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;secondo quanto rilevato dalla relazione della Corte dei conti, con riferimento ai dati del Ministero delle infrastrutture e dei trasporti, nel 2012 l'andamento discendente della spesa in conto capitale riscontrato in passato appare interrotto, passando da 4,8 a 5,7 miliardi in termini di stanziamenti definitivi, e da 4,6 a 5,4 miliardi in termini di impegni lordi, incremento segnatamente riscontrabile nell'ambito delle infrastrutture strategiche;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;relativamente al programma 14.10 (Opere strategiche, edilizia statale ed interventi speciali e per pubbliche calamit&#224;), 
+
+<!NuovaPag. 18><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 18 <hr width=30%></hr></center><br></td></tr></DIV>
+
+che assorbe da solo buona parte (69 per cento) dello stanziamento del MIT per la missione 14 (Infrastrutture pubbliche e logistica), va comunque rilevato che si registra un aumento, rispetto al 2011, dei residui finali del 2012, che ammontano a 2.469 milioni di euro;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;con riguardo alla missione 19 (Casa e assetto urbanistico) viene confermata la flessione iniziata nel 2011 degli stanziamenti definitivi di competenza che, secondo quanto affermato dalla Corte dei conti, conseguirebbe verosimilmente alla scarsa ed incerta realizzazione degli obiettivi della missione e dei programmi individuati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gli stanziamenti destinati al Ministero dell'ambiente e della tutela del territorio e del mare, pur registrando una consistente variazione in aumento rispetto all'importo iniziale, fanno comunque registrare uno stanziamento definitivo di competenza in netta diminuzione rispetto agli esercizi precedenti (2010 e 2011): si tratta di diminuzioni che hanno inciso in particolare sulla missione 18 (Sviluppo sostenibile e tutela del territorio e dell'ambiente) che assorbe circa l'82 per cento di tutto lo stanziamento del Ministero e, in particolare, proprio sul programma 12, che riguarda, tra l'altro, il trattamento e lo smaltimento dei rifiuti e le bonifiche dei siti inquinati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;valutato che, in via generale, appare necessario che si provveda a migliorare le <I>performance</I> di spesa al fine di accelerare lo smaltimento dei residui: ci&#242; vale, ad esempio, per i residui di stanziamento per le spese infrastrutturali e per le spese relative al Ministero dell'ambiente e della tutela del territorio e del mare,
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, relativamente alle parti di propria competenza, il disegno di legge n. 1573, concernente l'assestamento del bilancio dello Stato e dei bilanci delle amministrazioni autonome per l'anno finanziario 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che il disegno di legge provvede ad incrementare le previsioni iniziali della missione 18 (Sviluppo sostenibile e tutela del territorio e dell'ambiente), che sconta comunque una diminuzione rispetto al precedente esercizio, e che in tale missione insiste il programma 18.12 (Tutela e conservazione del territorio e delle risorse idriche, trattamento e smaltimento rifiuti, bonifiche) comprensivo anche dei capitoli di spesa riguardanti la tutela del rischio idrogeologico, sul quale appare necessario reperire ulteriori risorse finanziarie in vista della presentazione del prossimo disegno di legge di bilancio attesa la rilevanza degli interventi da finanziare e della situazione del territorio nazionale,
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 19><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 19 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>IX COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Trasporti, poste e telecomunicazioni)</CENTER>
+
+<P><CENTER>(Relatore: Alberto PAGANI)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 3: Stato di previsione del Ministero dello sviluppo economico (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 10: Stato di previsione del Ministero delle infrastrutture  e dei trasporti</CENTER>
+<CENTER>(limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La IX Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge C. 1572 Governo, approvato dal Senato, recante il Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012, relativamente alle parti di propria competenza,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Esaminato per i profili di competenza, il disegno di legge C. 1573 Governo, approvato dal Senato, recante &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, con riferimento alla Tabella n. 3, recante lo stato di previsione del Ministero dello sviluppo economico, limitatamente alle parti di competenza, e alla Tabella n. 10, recante lo stato di previsione del Ministero delle infrastrutture e dei trasporti, limitatamente alle parti di competenza,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 20><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 20 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>X COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Attivit&#224; produttive, commercio e turismo)</CENTER>
+
+<P><CENTER>(Relatore: Luigi TARANTO)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 3: Stato di previsione del Ministero dello sviluppo economico  (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 7: Stato di previsione del Ministero dell'istruzione,  dell'universit&#224; e della ricerca  (limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La X Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge (C. 1572 Governo, approvato dal Senato), recante il &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;, relativamente alle parti di propria competenza, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;richiamato quanto segnalato dalla Corte dei Conti nella <I>Relazione sul rendiconto generale dello Stato per l'esercizio finanziario 2012</I> laddove si osserva come, nel corso dell'anno, l'attivit&#224; del Ministero dello sviluppo economico a sostegno dei comparti produttivi sia stata segnata, da un lato, dai vincoli stringenti della finanza pubblica e, dall'altro, dalla necessit&#224; di &#171;recuperare i ritardi accumulati nella revisione e nell'adeguamento della strumentazione a disposizione dell'operatore pubblico, proprio in un momento in cui maggiore sarebbe stata la necessit&#224; di poter contare, a risorse limitate, su strumenti efficienti e collaudati&#187;
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato il disegno di legge C. 1573 Governo, approvato dal Senato, recante 
+
+<!NuovaPag. 21><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 21 <hr width=30%></hr></center><br></td></tr></DIV>
+
+&#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, con riferimento alla Tabella 2, recante lo stato di previsione del Ministero dell'economia e delle finanze, limitatamente alle parti di competenza, alla Tabella n. 3, recante lo stato di previsione del Ministero dello sviluppo economico, limitatamente alle parti di competenza, e alla Tabella n. 7, recante lo stato di previsione del Ministero dell'istruzione, dell'universit&#224; e della ricerca, limitatamente alle parti di competenza;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalando la necessit&#224;, ai fini dell'accelerazione e della qualificazione della spesa secondo un disegno di mobilitazione strategica delle risorse di volta in volta disponibili a sostegno dell'attivit&#224; di impresa, con particolare riguardo alla operativit&#224; del Fondo per la crescita disponibile, di operare con la massima tempestivit&#224; nella definizione dei provvedimenti di natura amministrativa previsti ai fini della effettiva operativit&#224; delle disposizioni legislative;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalando altres&#236; la necessit&#224; di osservare scrupolosamente le disposizioni di cui alla legge 11 novembre 2011, n. 180, con particolare riferimento a quelle di cui ai Capi II, relativo ai rapporti con le istituzioni, e III, concernente disposizioni in materia di micro, piccole e medie imprese e di politiche pubbliche, e, in specie, alle previsioni dell'articolo 16 sulle politiche pubbliche a favore della competitivit&#224;,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 22><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 22 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>XI COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Lavoro pubblico e privato)</CENTER>
+
+<P><CENTER>(Relatore: Teresa BELLANOVA)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 4: Stato di previsione del Ministero del lavoro e delle politiche sociali  (limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La XI Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di competenza, il disegno di legge C. 1572, recante &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato il disegno di legge C. 1573, &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187; con riferimento alla Tabella n. 2, recante lo Stato di previsione del Ministero dell'economia e delle finanze, limitatamente alle parti di competenza, e alla Tabella n. 4, recante lo Stato di previsione del Ministero del lavoro e delle politiche sociali, limitatamente alle parti di competenza,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 23><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 23 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>XII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari sociali)</CENTER>
+
+<P><CENTER>(Relatore: Giovanni MONCHIERO)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 4: Stato di previsione del Ministero del lavoro e delle politiche sociali  (limitatamente alle parti di competenza)</CENTER>
+
+<P><CENTER>Tabella 14: Stato di previsione del Ministero della salute</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La XII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, ai sensi dell'articolo 119, comma 8, del Regolamento, il disegno di legge C. 1572 Governo, recante: &#171;Rendiconto generale dell'Amministrazione dello Stato per l'anno finanziario 2012&#187;,
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, ai sensi dell'articolo 119, comma 8, del Regolamento, il disegno di legge C. 1573 Governo, approvato dal Senato, recante: &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187;, relativamente alla tabella n. 2: stato di previsione del Ministero dell'economia e delle finanze (limitatamente alle parti di competenza); alla tabella n. 4: stato di previsione del Ministero del lavoro e delle politiche sociali (limitatamente alle parti di competenza) e alla tabella n. 14: stato di previsione del Ministero della salute.
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<!NuovaPag. 24><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 24 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>XIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Agricoltura)</CENTER>
+
+<P><CENTER>(Relatore: Alessandra TERROSI)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 12: Stato di previsione del Ministero delle politiche agricole  alimentari e forestali</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La XIII Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge recante &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;, per le parti di competenza (C. 1572 Governo, approvato dal Senato),
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE.</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato il disegno di legge C. 1573 Governo, approvato dal Senato, recante disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013, con riferimento alla tabella n. 12 &#8211; stato di previsione del Ministero delle politiche agricole alimentari e forestali,
+
+<P><CENTER>DELIBERA DI RIFERIRE  FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti osservazioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1) nel quadro delle politiche finalizzate alla revisione della spesa pubblica &#8211; che si deve sviluppare attraverso l'analisi e la valutazione della spesa finalizzata al contenimento della spesa, e in particolare di quella corrente, favorendo al contempo una riqualificazione della stessa e un'allocazione 
+
+<!NuovaPag. 25><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 25 <hr width=30%></hr></center><br></td></tr></DIV>
+
+pi&#249; efficiente delle risorse &#8211; si sottolinea l'esigenza di un forte impegno anche da parte del Ministero delle politiche agricole alimentari e forestali per la riorganizzazione delle modalit&#224; organizzative e operative delle strutture ministeriali, degli enti e delle societ&#224; controllate, attraverso la valorizzazione delle risorse interne e il contenimento degli incarichi e delle consulenze a soggetti esterni all'amministrazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2) &#232; necessario garantire che, accanto alle attivit&#224; volte al contenimento e alla riqualificazione della spesa, la gestione amministrativa sia rivolta al pieno, effettivo ed efficace utilizzo delle risorse spendibili. A tal fine, si segnala la necessit&#224; intervenire sulle cause dell'eccessiva formazione di residui passivi, individuabili tra l'altro, secondo la Corte dei conti, nello slittamento dei pagamenti, negli interventi legislativi non supportati da progetti di fattibilit&#224;, nella complessit&#224; delle procedure amministrative, in schemi contabili obsoleti nonch&#233; in comportamenti gestionali impropri;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3) appare necessario dare piena applicazione alla normativa vigente in materia di quote latte, con particolare riferimento all'effettiva riscossione degli importi dovuti a titolo di prelievo supplementare, al fine di evitare censure da parte dell'Unione europea e di tutelare i produttori che si sono messi in regola. Si sottolinea, in proposito, che il decreto-legge n. 5 del 2009, da un lato, intendeva porre le premesse per evitare alla radice il fenomeno degli esuberi produttivi ed evitare conseguentemente le trattenute annue dell'Unione europea a carico dell'Italia a titolo di prelievo, trattenute che vanno a svantaggio dell'intera agricoltura italiana, e, dall'altro, intendeva risolvere il problema dell'accumulo del debito relativo alle multe, concedendo ai cosiddetti splafonatori una nuova possibilit&#224; di regolarizzazione e di rientro nella legalit&#224;, a determinate condizioni.
+
+<!NuovaPag. 26><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 26 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>XIV COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Politiche dell'Unione europea)</CENTER>
+
+<P><CENTER>(Relatore: Paolo TANCREDI)</CENTER>
+
+<P><CENTER><B>RELAZIONE </B></CENTER>
+<CENTER>sui</CENTER>
+<CENTER>DISEGNI DI LEGGE</CENTER>
+
+<P><CENTER>Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012 (1572)</CENTER>
+
+<P><CENTER>Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome  per l'anno finanziario 2013 (1573)</CENTER>
+
+<P><CENTER>Tabella 2: Stato di previsione del Ministero dell'economia e delle finanze  (limitatamente alle parti di competenza)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;La XIV Commissione, 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di propria competenza, il disegno di legge C. 1572 Governo, approvato dal Senato, &#171;Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2012&#187;;
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Esaminato, per le parti di propria competenza, il disegno di legge C. 1573 Governo, approvato dal Senato, &#171;Disposizioni per l'assestamento del bilancio dello Stato e dei bilanci delle Amministrazioni autonome per l'anno finanziario 2013&#187; e la Tabella n. 2: Stato di previsione del Ministero dell'economia e delle finanze per l'anno 2012 (limitatamente alle parti di competenza),
+
+<P><CENTER>DELIBERA DI RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

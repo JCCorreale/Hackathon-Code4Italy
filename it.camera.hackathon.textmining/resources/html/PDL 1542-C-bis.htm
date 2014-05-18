@@ -1,0 +1,331 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0019390&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0019390&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0019390' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL  1542-C-bis</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N.  1542-C</B>-<I>bis</I>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DISEGNO DI LEGGE</B></CENTER>
+
+<P><CENTER><B>APPROVATO DALLA CAMERA DEI DEPUTATI 
+</B></CENTER>
+<CENTER><I>il 21 dicembre 2013 (v. stampato Senato n. 1212)</I></CENTER>
+
+<P><CENTER><B>MODIFICATO DAL SENATO DELLA REPUBBLICA 
+</B></CENTER>
+<CENTER><I>il 26 marzo 2014</I></CENTER>
+
+<P><CENTER>presentato dal presidente del consiglio dei ministri</CENTER>
+<CENTER><B>(LETTA)</B></CENTER>
+
+<P><CENTER>dal ministro dell'interno</CENTER>
+<CENTER><B>(ALFANO)</B></CENTER>
+
+<P><CENTER>dal ministro per gli affari regionali e le autonomie</CENTER>
+<CENTER><B>(DELRIO)</B></CENTER>
+
+<P><CENTER>dal ministro per le riforme costituzionali</CENTER>
+<CENTER><B>(QUAGLIARIELLO)</B></CENTER>
+
+<P><CENTER>di concerto con il ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(SACCOMANNI)</B></CENTER>
+
+<P><CENTER>e con il ministro per la pubblica amministrazione e la semplificazione</CENTER>
+<CENTER><B>(D'ALIA)</B></CENTER>
+
+<P><CENTER>Disposizioni sulle citt&#224; metropolitane, sulle province,  sulle unioni e fusioni di comuni</CENTER>
+
+<P><CENTER><I>Trasmesso dal Presidente del Senato della Repubblica  il 27 marzo 2014</I></CENTER>
+
+<P><CENTER>(<I>Relatore di minoranza:</I> <B>Matteo BRAGANTINI</B>)</CENTER>
+
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;Onorevoli Colleghi! &#8211; Il testo approvato dalla maggioranza nelle Commissioni non pu&#242; ritenersi in alcun modo soddisfacente. Il provvedimento, cos&#236; come formulato &#232; privo di una visione strategica e programmatica, incapace di fornire ai cittadini prospettive di medio-lungo periodo fondate sul rilancio del Paese attraverso una politica seria di razionalizzazione della spesa pubblica e di efficientamento della pubblica amministrazione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Dopo la sentenza della Corte Costituzionale, che ha censurato gli interventi normativi sulle Province operati dal precedente Governo, ci saremmo aspettati che il nuovo esecutivo avviasse una nuova fase di riflessione e di confronto, per segnare una netta discontinuit&#224; con i provvedimenti censurati, sia nella forma che nella sostanza, e per ripristinare la leale collaborazione istituzionale, seguendo la raccomandazione inviata all'Italia dal Consiglio d'Europa nel marzo 2013.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Si insiste, invece, nella strada &#8211; dimostratasi errata &#8211; di emanare provvedimenti di dubbia costituzionalit&#224;, non per risolvere i problemi del Paese, ma per &#171;dare segnali&#187;. Non a caso i testi e le
+<BR>relazioni che li accompagnano hanno contenuti formali e sostanziali che delegittimano le Province, quali istituzioni della Repubblica e gli amministratori che le rappresentano.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Quello che troppo spesso si trascura, invece, &#232; che siamo da oltre un anno alle prese con un caos istituzionale che ha determinato gravi danni per i cittadini, che si sono visti tagliare le risorse destinate alla scuola, alle strade, alla formazione, alla difesa del suolo, all'occupazione e al lavoro, proprio a causa delle norme che tendono a svuotare le istituzioni provinciali.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Prima di entrare nel merito del disegno di legge in esame &#232; necessario avanzare alcune considerazioni sul tema. La Consulta il 3 luglio ha dichiarato l'illegittimit&#224; costituzionale della riforma delle Province.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Secondo la Consulta, &#171;il decreto-legge, atto destinato a fronteggiare casi straordinari di necessit&#224; e urgenza, &#232; strumento normativo non utilizzabile per realizzare una riforma organica e di sistema quale quella prevista dalle norme censurate nel presente giudizio&#187;. Per questo motivo, la Corte costituzionale, in camera di consiglio &#171;ha dichiarato l'illegittimit&#224; costituzionale: dell'articolo 23, commi 4, 14, 15, 16, 17, 18, 19, 20, 21 bis del decreto-legge del 6 dicembre 2011, n. 201, convertito con modificazioni dall'articolo 1, comma 1, della legge 22 dicembre 2011, n. 214; degli artt. 17 e 18 del decreto-legge 6 luglio 2012 n. 95, convertito con modificazioni, dall'articolo 1, comma 1, della legge 7 agosto 2012, n. 135 per violazione dell'articolo 77 Costituzione, in relazione agli artt. 117, secondo comma lett. p) e 133, primo comma Costituzione&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Nella XVI legislatura una delle questioni su cui si &#232; incentrato il dibattito politico &#232; stata, proprio, la riforma del sistema provinciale. In Parlamento si &#232; discusso prima la soppressione delle province, poi la riforma del sistema elettorale e poi il trasferimento della competenza a disciplinarle dallo Stato alle regioni.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;L'iter di riordino delle Province nelle Regioni a statuto ordinario prende l'avvio con l'articolo 23 (commi n. 14-21) del Decreto-legge 6 dicembre 2011, n. 201, recante disposizioni urgenti per la crescita, l'equit&#224; e il consolidamento dei conti pubblici (c.d. &#171;Salva Italia&#187;) convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214. Il provvedimento, tra le diverse misure volte al contenimento della spesa pubblica, dispone una profonda riforma del sistema delle Province: ad esse sono affidate esclusivamente funzioni di indirizzo politico e di coordinamento. Si dispone inoltre la riduzione del numero dei consiglieri provinciali e la loro elezione indiretta da parte dei consigli comunali.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Il provvedimento &#232; stato fatto oggetto di ricorsi per illegittimit&#224; costituzionale da 
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+parte di diverse Regioni, ma la Corte Costituzionale, con decreto del 5 novembre 2012, ha disposto il rinvio a nuovo ruolo dell'udienza sui ricorsi. Il Presidente della Consulta ha ritenuto di non entrare nel merito di una materia ancora in evoluzione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;La riforma &#232; proseguita con il Decreto-Legge 6 luglio 2012, n. 95, disposizioni urgenti per la revisione della spesa pubblica con invarianza dei servizi ai cittadini convertito, con modificazioni, dalla Legge 7 agosto 2012, n. 135, che, agli artt. 17 e 18, prevede il riordino delle Province, sulla base di requisiti minimi demo-territoriali, e l'istituzione delle citt&#224; metropolitane; anche sugli artt. 17 e 18 del Decreto-Legge n. 95/2012. Alcune Regioni (Calabria, Campania, Friuli-Venezia Giulia, Lazio, Lombardia, Molise, Piemonte, Sardegna, Veneto) hanno presentato ricorso alla Corte costituzionale.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Con deliberazione del Consiglio dei Ministri 20 luglio 2012 &#171;Determinazione dei criteri per il riordino delle province, a norma dell'articolo 17, comma 2, del Decreto-Legge 6/7/2012, n. 95&#187; sono stati determinati i requisiti minimi che le Province devono possedere. Il Decreto-Legge 5 novembre 2012, n. 188 &#171;Disposizioni urgenti in materia di Province e Citt&#224; metropolitane&#187; aveva disegnato il nuovo assetto delle Province nelle Regioni a statuto ordinario anche sulla base delle proposte avanzate dalle stesse Regioni. Il procedimento di riordino conteneva l'elenco delle Province delle Regioni a statuto ordinario come sarebbero dovute risultare a decorrere dal 1<sup>o</sup> gennaio 2014: anche a seguito delle dimissioni rassegnate dal Presidente del Consiglio, in data 10 dicembre 2012 la Commissione Affari Costituzionali del Senato decide di interrompere l'esame del disegno di legge di conversione del decreto legge 5 novembre 2012 n. 188.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Con l'articolo 1, comma 115, della Legge 24 dicembre 2012, n. 228, disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (Legge di stabilit&#224; 2013), l'applicazione delle disposizioni previste dal Decreto-legge c.d. &#171;Salva Italia&#187;, relative alla riforma delle Province, &#232; sospesa fino al 31 dicembre 2013, al fine di consentire la riforma organica della rappresentanza locale e di garantire il conseguimento dei risparmi previsti. Il processo di riordino delle Province viene pertanto &#171;congelato&#187; e per tutto il 2013 si garantisce la continuit&#224; delle funzioni provinciali.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Da ultimo,il Governo non ha affrontato il gravissimo vuoto aperto dai commissariamenti illegittimi delle Province a seguito della pubblicazione della sentenza della Corte, ma ha riproposto anche nella legge di stabilit&#224;, la proroga delle gestioni commissariali esistenti, impedendo in questo modo la rielezione degli organi di governo delle Province da parte dei cittadini.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Tutto ci&#242;, in violazione delle disposizioni dell'articolo 1 della Costituzione, che dispone in modo chiaro, la sovranit&#224; appartiene al popolo e il popolo esercita tale sovranit&#224; nelle forme e nei limiti previsti dalla stessa Costituzione. Il riconoscimento del diritto di voto e le sue caratteristiche, enunciate nel secondo comma dell'articolo 48, concorrono pertanto alla definizione dello Stato come Stato democratico. Attraverso di esso si realizza, infatti, principio di organizzazione che caratterizza ogni democrazia, in forza del quale ogni decisione deve essere direttamente o indirettamente ricondotta alle scelte compiute del popolo, detentore della sovranit&#224;. Il principio fondamentale della rappresentanza elettorale sancito nella nostra Costituzione &#232; garantito anche dal diritto dell'Unione Europea. Il Trattato di Lisbona riunisce in un apposito titolo (Titolo II del TUE &#171;Disposizioni relative ai principi democratici&#187;) le disposizioni intese a conferire maggiore visibilit&#224; al principio democratico insito nel funzionamento dell'Unione. Tale principio viene affermato e specificato nelle sue diverse configurazioni: la democrazia come rappresentanza e la democrazia come partecipazione all'attivit&#224; pubblica.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Questo modo di agire ha creato una situazione paradossale, basti pensare che ad oggi in ben tre disegni di legge del Governo, di cui uno costituzionale, all'esame del parlamento, si affronta il tema delle province.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;La soppressione delle province non accompagnata da una riforma costituzionale capace di riorganizzarne in modo organico competenze e funzioni potrebbe causare anche danni irreparabili per il bene comune 
+
+<!NuovaPag. 4><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+del Paese. Si immagini ad esempio a cosa potrebbe accadere in riferimento all'organizzazione dell'Expo 2015, che vede l'attuale provincia di Milano coinvolta a pieno titolo nella complessa organizzazione dell'evento.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;&#200; stato dimostrato inoltra in modo inconfutabile come la soppressione delle province non comporterebbe per la spesa pubblica risparmi degni di nota.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Una soppressione delle province sic et simpliciter potrebbe paralizzare l'esercizio delle funzioni cosiddette di &#171;area vasta&#187;, le quali rimarrebbero sospese fra il livello regionale e quello comunale. In questo modo si sta procedendo unicamente allo svuotamento delle funzioni delle Province che porter&#224; ad un aumento a livello esponenziale dei disservizi e dei costi totali per l'esercizio delle funzioni pubbliche.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le funzioni storicamente attribuite alle Province si riferiscono a servizi essenziali diretti al territorio e alle comunit&#224;, oltre che ai singoli cittadini, e sono state ad esse assegnate perch&#233; potessero essere gestite in maniera pi&#249; razionale proprio per l'inerenza al territorio, elemento costitutivo essenziale di questo ente di area vasta, anche in connessione con i Comuni di minore dimensione per popolazione e superficie territoriale. Una scelta oggi irrinunciabile, se si considera che in questi anni le Province non solo sono riuscite a rendere pi&#249; efficienti i servizi, ma hanno anche utilizzato virtuosamente le risorse pubbliche, come dimostra, da ultimo, la vicenda dei pagamenti alle imprese.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Merita infatti ricordare che ad oggi le Province sono l'unico comparto pubblico che pu&#242; certificare il pagamento di oltre l'87 per cento dei debiti pregressi, come consentito dal decreto legge n. 35/13. Fin dai 30 giorni successivi all'emanazione del decreto legge hanno smaltito il 70 per cento degli spazi finanziari fino ad allora concessi, in linea con gli obblighi comunitari sui tempi di pagamento.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le Regioni non possono essere obbligate a trasferire alle Unioni di comuni le funzioni amministrative che rientrano nella sfera di disciplina di loro competenza. Se si porter&#224; a termine lo spostamento delle funzioni sui Comuni e sulle Unioni di comuni, che non hanno strutture tecniche per gestirle, le diseconomie saranno evidenti e le difficolt&#224; delle amministrazioni bloccheranno qualunque percorso di maggiore virtuosit&#224; nella gestione dei servizi.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Come ha gi&#224; evidenziato la ricerca della Universit&#224; Bocconi del 6 dicembre 2011 il trasferimento di funzioni dalle province verso i Comuni non migliora l'efficienza del sistema: &#171;Il confronto con i livelli di efficienza dei comuni, mediamente inferiori a quelli delle province, mette in evidenza i rischi di un trasferimento di funzioni verso il basso. Proprio questo aspetto, invece, indica che la via dell'efficientamento pu&#242; essere percorsa in senso inverso, valorizzando la funzione di assistenza che le province possono attuare nei confronti dei comuni e degli enti locali del territorio&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Si passer&#224;, infatti, dagli attuali 107 enti di area vasta ad una moltiplicazione di enti (gi&#224; oggi ci sono oltre 370 Unioni che non coprono tutto il territorio nazionale) con l'indebolimento della capacit&#224; amministrativa, come ci insegna la scienza dell'amministrazione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Questa scelta &#232; compiuta in un quadro di totale assenza di certezza circa il numero e la dimensione demografica delle Unioni dei comuni che dovranno subentrare nelle funzioni provinciali: allo stato attuale infatti le 370 Unioni di comuni interessano 1881 comuni su oltre 8000 e solo 7,7 milioni di abitanti su circa 60 milioni.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Si tratta dunque di una realt&#224; assolutamente parziale e frammentata, che non appare idonea ad ereditare le funzioni di area vasta tipicamente provinciali.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Questa scelta &#232; errata soprattutto per quelle funzioni di area vasta che non possono essere gestite al meglio qualora frammentate. Ci&#242; &#232; evidente in particolare per la gestione degli edifici scolastici delle scuole superiori: spostare la gestione dei 5000 edifici scolastici dalle Province alle Unioni di Comuni diminuir&#224; la capacit&#224; di razionalizzare la rete scolastica e di conseguire economie di scala, moltiplicher&#224; i centri di spesa e le centrali di committenza, aumenter&#224; i costi di gestione corrente (utenze, riscaldamento) e i costi degli investimenti.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Lo stesso ragionamento &#232; facilmente replicabile ad altre funzioni delle Province, 
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+nelle quali in questi anni si &#232; operato un investimento consistente sul piano delle risorse finanziarie e strumentali e del personale impiegato.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Ma anche ove le funzioni provinciali fossero assunte dalle Regioni le inefficienze sarebbero evidenti.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Infatti, la Regione non &#232; un ente preposto all'erogazione di funzioni amministrative e servizi in connessione con il territorio, bens&#236; un ente di legislazione e pianificazione. Per ricevere le funzioni provinciali, perci&#242;, le Regioni dovrebbero riorganizzarsi profondamente. Ma il passaggio alle Regioni determinerebbe, un aumento dei costi, in primo luogo di quelli relativi al personale, vista la differenza del trattamento stipendiale tra il personale provinciale e regionale; in secondo luogo, attraverso una ulteriore proliferazione di enti strumentali, agenzie e societ&#224; regionali che &#232; stata oggetto di una valutazione critica della Corte dei Conti nella sua &#171;Relazione sulla gestione finanziaria delle Regioni.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Relativamente all'impostazione delle norme sulle Unioni di comuni, infine, occorre ricordare che da pi&#249; parti &#8211; e dalla stessa Corte costituzionale &#8211; &#232; stato osservato che la normativa sull'associazionismo comunale &#232; competenza del legislatore regionale e deve tenere conto delle specificit&#224; regionali, poich&#233; l'articolazione dei comuni &#232; molto differente da regione a regione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le disposizioni del disegno di legge introducono ulteriori norme ordinamentali sulle Unioni di comuni senza superare la confusa e contraddittoria legislazione nazionale in materia che sta creando molti problemi tra i piccoli Comuni e senza incentivare seriamente i processi di associazionismo obbligatorio per l'esercizio delle funzioni fondamentali o, in alternativa le fusioni tra comuni.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;&#200; importante, inoltre, ricordare che nel corso delle audizioni che la Commissione Affari Costituzionali della Camera dei Deputati ha svolto in ordine al presente ddl, la Corte dei Conti ha depositato un documento nel quale, dopo aver rappresentato il contesto di riferimento e gli obiettivi del ddl stesso, ha individuato alcuni punti di criticit&#224; &#8211; sul versante sia istituzionale, ma soprattutto sul versante finanziario &#8211; che offrono importanti spunti di riflessioni.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Nell'inquadrare il contesto di riferimento la Corte ha affermato che &#171;non si pu&#242; ritenere che il progetto centri l'obiettivo del riordino dell'intervento pubblico sul territorio e della semplificazione dell'intermediazione pubblica in applicazione dei principi di sussidiariet&#224;, efficacia ed efficienza&#187;. Le perplessit&#224; della Corte, che comunque sottolinea la necessit&#224; di ridisegno delle competenze e delle strutture di governo del territorio verso una razionalizzazione per garantire riduzioni di spesa, sono correlate alla &#171;ricerca del modello pi&#249; efficiente per allocare le funzioni del territorio, che dovrebbe tendere ad evitare duplicazioni di funzioni e che dovrebbe estendersi anche all'attivit&#224; degli organismi partecipati ai quali sovente &#232; affidata la gestione dei servizi pubblici e delle funzioni strumentali&#187;, &#171;circa 5.500 enti che, dall'analisi della Corte nell'ultimo referto al Parlamento sulla finanza degli enti locali, si rivelano, in molti casi, come fonte di perdite per gli enti istituzionali&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Entrando nel merito dei singoli aspetti disciplinati dal ddl, la Corte poi si sofferma sull'attuazione delle Citt&#224; metropolitane, sottolineando anche in questo caso perplessit&#224; in ordine alla chiarezza di ruoli e compiti e alle potenziali maggiori spese connesse a questa scarsa chiarezza.
+<BR>&#171;tuttavia, l'istituzione delle citt&#224; metropolitane e la ridefinizione delle funzioni delle province determinano la coesistenza di due enti di area vasta con compiti che in una certa misura e per determinati aspetti, quali il coordinamento dell'azione degli enti locali, potrebbero non sfuggire al rischio di sovrapposizione&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Ed ancora &#171;Incombe il rischio che la provvisoriet&#224; degli a assetti istituzionali conseguenti alle innovazioni del d.d.l. in esame possa conoscere tempi di trascinamento non brevi; in tal caso la prolungata coesistenza di aree metropolitane e di Province risulterebbe foriera di maggiori oneri&#187;
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Venendo poi alla questione pi&#249; strettamente connessa alla revisione delle Province, la Corte dei Conti osserva che &#171;la finalit&#224; di fondo di tale innovazione dovrebbe essere incentrata sulla prevista riduzione di spesa. Al riguardo &#232; da notare 
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+che negli ultimi anni la finanza provinciale ha subito un progressivo ridimensionamento in qualche modo legato ad un latente processo di revisione del loro ruolo. In tale contesto le restrizioni finanziarie hanno spinto le Province ad avviare una attenta revisione della spesa&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Nel merito dei risparmi potenziali ottenibili dalla riduzione tout court delle spese afferenti alla funzione 1 di amministrazione generale e controllo, come riportato in audizione dal Ministro Delrio secondo studi del Ministero Affari Regionali, la Corte osserva che &#171;allo stato, tuttavia &#232; difficile determinare quale possano essere gli effettivi risparmi oltre a quelli gi&#224; rappresentati, sia perch&#233; le poste contabili afferenti alla Funzione 1 costituiscono un coacervo di voci di spesa indifferenziate dalle quali &#232; obiettivamente problematico enucleare quanto interessa ai fini di questa disamina (a parte la spesa per il personale che &#232; ineliminabile) sia perch&#233; l'analisi sconta soluzioni operative di attuazione del disegno di legge attualmente non conosciute&#187;
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Ed infine &#171;La relazione tecnica, infatti,afferma che la riforma non comporta oneri, ma &#232; ragionevole ipotizzare, almeno nella fase di transizione, che il trasferimento di personale e funzioni ad altri enti territoriali, con il loro subentro in tutti i rapporti, abbia un costo sia in termini economici, sia in termini organizzativi&#187;
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Il testo dell'articolato in esame come approvato dal Senato, introduce una scadenza degli organi elettivi anticipata rispetto alla scadenza naturale, modificando il comma 325 della Legge 147/2013, che invece prevedeva la scadenza al 30 giugno 2014 degli organi elettivi coincidente con la loro scadenza naturale. Impone l'esercizio provvisorio di bilancio ai sensi dell'articolo 163, comma 2, del D.Lgs. 267/2000 all'Ente anche nel caso in cui il bilancio sia stato formalmente approvato in violazione dei principi contenuti nel predetto articolo 163, commi 1 e 2, del D.Lgs. 267/2000.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Il presente disegno di legge, inoltre, da un lato azzera ogni forma di indennit&#224; a favore del Presidente e della Giunta provinciale, chiamati ad assumersi responsabilit&#224; gestionali nella fase transitoria e dall'altro lato allo stesso tempo impone al Presidente uscente di assumere anche i poteri decisionali spettanti al Consiglio provinciale.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Ai sensi dell'articolo 1 della Costituzione la sovranit&#224; appartiene al popolo e il popolo esercita tale sovranit&#224; nelle forme e nei limiti previsti dalla stessa Costituzione. Il riconoscimento del diritto di voto e le sue caratteristiche, enunciate nel secondo comma dell'articolo 48, concorrono pertanto alla definizione dello Stato come Stato democratico. Attraverso di esso si realizza, infatti, principio di organizzazione che caratterizza ogni democrazia, in forza del quale ogni decisione deve essere direttamente o indirettamente ricondotta alle scelte compiute dal popolo, detentore della sovranit&#224;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Il principio fondamentale della rappresentanza elettorale sancito nella nostra Costituzione &#232; garantito anche dal diritto dell'Unione Europea. Il Trattato di Lisbona riunisce in un apposito titolo (Titolo II del TUE &#171;Disposizioni relative ai principi democratici&#187;) le disposizioni intese a conferire maggiore visibilit&#224; al principio democratico insito nel funzionamento dell'Unione. Tale principio viene affermato e specificato nelle sue diverse configurazioni: la democrazia come rappresentanza e la democrazia come partecipazione all'attivit&#224; pubblica.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;&#200; evidente, quindi come le disposizioni introdotte dal presente disegno di legge siano in contrasto con il principio costituzionale della rappresentanza politica, che &#232; al centro del sistema di democrazia rappresentativa, e violino il principio della garanzia della volont&#224; dei cittadini espressa attraverso il voto, che costituisce il principale strumento di manifestazione della sovranit&#224; popolare, secondo l'articolo 1, secondo comma, Costituzione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le disposizioni succitate previste nell'articolato del disegno di legge in esame appaiono, quindi, chiaramente elusive del giudicato costituzionale, ed in contrasto con quanto deciso nella sentenza n. 48 del 2003 della Corte costituzionale: in base a questa pronuncia, infatti, &#171;la durata degli organi elettivi locali, fissata dalla legge, non &#232; liberamente disponibile&#187;. Infatti, &#171;vi &#232; un diritto degli enti elettivi e dei loro rappresentanti eletti al compimento del mandato conferito nelle elezioni come 
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+aspetto della struttura rappresentativa degli Enti, che coinvolge anche i rispettivi corpi elettorali&#187;. Di conseguenza, sempre citando le parole della Corte, &#171;le ipotesi eccezionali di abbreviazione del mandato elettivo debbono essere preventivamente stabilite in via generale dal legislatore&#187;, sicch&#233; &#171;non pu&#242; essere una legge provvedimento, disancorata da presupposti stabiliti in via legislativa, a disporre della durata degli organi elettivi&#187;.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Da ultimo, il presente disegno di legge aumenta &#8211; rispetto alla legislazione vigente (articolo 16, comma 17 del decreto-legge n. 138 del 2011) &#8211; da 6 a 10 il numero dei consiglieri comunali per i Comuni fino a 3.000 abitanti; da 7 a 12 il numero dei consiglieri comunali per i Comuni da 3.000 a 5000 abitanti; da 10 a 12 il numero dei consiglieri comunali per i Comuni da 5.000 a 10.000 abitanti, senza prevedere alcuna norma transitoria rispetto alle prossime elezioni amministrative indette per il 25 maggio 2014. La tornata amministrativa del maggio 2014 investe all'incirca 2.350 Comuni fino a 3.000 abitanti; circa 680 Comuni da 3.000 a 5.000 abitanti; circa 640 Comuni da 5.000 a 10.000 abitanti. I Comuni sopra ricordati rientrano nella categoria dei Comuni fino a 15.000 abitanti, per i quali la normativa vigente (articolo 71, comma 3 del decreto legislativo n. 267 del 2000, Testo unico degli enti locali) prescrive che ciascuna candidatura a sindaco sia collegata ad una lista, la quale deve comprendere un numero di candidati non superiore al numero dei consiglieri da eleggere e non inferiore ai tre quarti. La lista va presentata con apposita dichiarazione scritta. La dichiarazione di presentazione della lista dei candidati a consigliere e delle collegate candidature a sindaco deve essere sottoscritta (per i Comuni sopra 1.000 abitanti) da un numero di elettori (graduato rispetto alla &#171;taglia&#187; dei Comuni, dall'articolo 3 della legge n. 81 del 1993).
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le sottoscrizioni sono nulle se anteriori al centottantesimo giorno precedente il termine finale per la presentazione delle candidature (articolo 14, comma 3 della legge n. 53 del 1990).
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;La presentazione delle liste deve essere effettuata dalle ore 8 del trentesimo giorno alle ore 12 del ventinovesimo giorno, antecedenti la data di votazione (cos&#236; l'articolo 28 e 32 del decreto del d.P.R. n. 570 del 1960, Testo unico delle leggi per la composizione e la elezione degli organi delle Amministrazioni comunali).
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Riguardo le sottoscrizioni, vale, inoltre, rammentare una giurisprudenza amministrativa orientata verso un &#171;collegamento&#187; tra lista indicante i nominativi dei candidati e la sottoscrizione &#8211; talch&#233; una variazione dei nominativi della lista importa nullit&#224; della sottoscrizione. &#200; ovvio quindi che le disposizioni introdotte mettono a rischio il normale svolgimento delle prossime elezioni amministrative e si presentano quindi rispetto agli effetti che produrranno manifestamente incostituzionali ai sensi del dettato costituzionale di cui ex articoli 3 e 48 della Costituzione.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Si evidenza l'irragionevolezza della norma del presente disegno di legge che prevede per i comuni interessati dall'aumento del numero dei consiglieri comunali e degli assessori la garanzia dell'invarianza di spesa. I comuni che andranno al voto a maggio hanno gi&#224; deliberato il bilancio di previsione, quindi, il nuovo consiglio comunale e la giunta si troveranno sic et sempliciter nella condizione di avere delle spese maggiori rispetto a quelle preventivate e dovranno provvedere ad un assestamento, producendo nei fatti una rimodulazione delle poste di bilancio che potrebbe ripercuotersi su servizi essenziali.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Avviandomi alle conclusioni, al fine di adempiere ad una riforma capace da un lato di razionalizzare la spesa pubblica e dall'altro lato di non paralizzare il Paese &#232; necessario attribuire alla responsabilit&#224; delle singole regioni il compito di disciplinare le modalit&#224; di esercizio delle funzioni di area vasta, tenendo conto dei connotati particolari del proprio territorio. Ad esempio, potranno essere considerati indici quali l'assetto istituzionale (numero dei comuni), la densit&#224; di popolazione, gli aspetti morfologici e fattori socio-economici.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Le riforme costituzionali in materia dovranno riguardare anche la semplificazione complessiva dell'amministrazione locale, regionale e statale, imponendo a tutti gli enti territoriali di sopprimere enti, agenzie ed organismi, comunque denominati 
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+e proibendo di istituirne di nuovi al fine di svolgere funzioni di governo di area vasta.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Noi riteniamo poi gravissimo che anche questa volta si sia persa l'occasione di sopprimere le prefetture. Le competenze amministrative che le varie leggi hanno attribuito al prefetto sono state in buona parte assorbite dai decreti legislativi che hanno trasferito funzioni gi&#224; dello Stato alle regioni. Ci&#242; nondimeno il prefetto non ha perso le funzioni di longa manus del potere politico e amministrativo centrale. Luigi Einaudi nel 1944 afferm&#242; che la figura del prefetto si presentava come ostacolo a un ordinamento veramente democratico. Le competenze frammentate e generiche, peraltro accompagnate da una competenza generale sulla tutela dell'ordine pubblico attraverso la possibilit&#224; di un uso in via immediata della forza pubblica stessa, fanno del prefetto uno strumento di autorit&#224; coercitiva con una forte valenza politica. Bench&#233; il Ministro dell'interno non si avvalga pi&#249; della facolt&#224; di nominare i cosiddetti &#171;prefetti politici&#187; fino a un massimo dei due quinti dei prefetti, questa figura rappresenta di fatto il sistema politico commistivo le cui linee di forza passano attraverso Ministeri e Governo. &#200; innegabile che, avendo il prefetto facolt&#224; di fornire un servizio di ordine pubblico con ampi poteri di discrezionalit&#224;, la leva, anche psicologica, dell'autorit&#224; dell'ordine pubblico pu&#242; dimostrarsi un fattore determinante per condizionare politicamente le autorit&#224; locali. Conseguentemente, il prefetto &#232; in netta contrapposizione con le esigenze di decentramento dello Stato a favore delle autonomie locali che sono portatrici di interessi di diversa natura.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Per questa ragione in un'ottica di riforma dello Stato in senso federale, ovvero di distinzione tra le attribuzioni in capo allo Stato, alle regioni e agli altri enti locali, il prefetto &#232; una figura della pubblica amministrazione che deve necessariamente essere abolita.
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;Noi riteniamo, quindi, che il luogo dove affrontare in modo razionale la riorganizzazione degli enti locali territoriali, deve essere quello delle gi&#224; programmate riforme costituzionali, affidando direttamente alle competenze regionali la riorganizzazione di nuove forme associative per l'esercizio delle funzioni di governo di area vasta nonch&#233; la relativa soppressione di tutti gli enti intermedi.
+<p align="right">Matteo Bragantini,
+<BR><I>Relatore di minoranza</I>.
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

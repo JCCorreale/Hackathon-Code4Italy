@@ -1,0 +1,1852 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0005470&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0005470&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0005470' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 1012-A</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 1012-A</B>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B><!DC><br>DISEGNO DI LEGGE </B></CENTER>
+
+<P><CENTER>presentato dal presidente del consiglio dei ministri</CENTER>
+<CENTER><B>(LETTA)</B></CENTER> 
+
+
+<P><CENTER>dal ministro dell'interno</CENTER>
+<CENTER><B>(ALFANO)</B></CENTER>
+
+<P><CENTER>dal ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(SACCOMANNI)</B></CENTER> 
+
+<P><CENTER>e dal ministro del lavoro e delle politiche sociali</CENTER>
+<CENTER><B>(GIOVANNINI)</B></CENTER> 
+
+
+<P><CENTER>Conversione in legge del decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo</CENTER>
+
+<P><CENTER><I>Presentato il 21 maggio 2013</I></CENTER>
+
+
+<P><CENTER>(Relatori per la maggioranza: <B>CAPEZZONE</B>, <I>per la VI Commissione; </I><B>DAMIANO</B>, <I>per la XI Commissione</I>)</CENTER>
+
+
+<P><HR ALIGN=LEFT WIDTH=50><FONT SIZE=-1><B>NOTA: Le Commissioni permanenti VI (Finanze) e XI (Lavoro pubblico e privato), il 12 giugno 2013, hanno deliberato di riferire favorevolmente sul testo del disegno di legge. In pari data, le Commissioni hanno chiesto di essere autorizzate a riferire oralmente.</B>
+</FONT>
+
+
+
+<P><DIV align="right"><A NAME="PP"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> 
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER>PARERE DEL COMITATO PER LA LEGISLAZIONE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Il Comitato per la legislazione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge n. 1012 e rilevato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sotto il profilo dell'omogeneit&#224; del contenuto:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il provvedimento si compone di 4 articoli (cui si aggiunge l'articolo 5 che dispone in merito all'entrata in vigore) e reca disposizioni che intervengono su tre distinti ambiti materiali: quello tributario (sul quale incidono gli articoli 1 e 2, in materia di imposta municipale propria); quello del contenimento dei costi dell'attivit&#224; politica (sul quale interviene l'articolo 3 in materia di trattamenti economici dei ministri) e, infine, quello lavoristico (trattato dall'articolo 4, che, peraltro, disciplina tre distinti aspetti della materia, intervenendo in tema di ammortizzatori sociali in deroga; di contratti di solidariet&#224; e di contratti di lavoro subordinato a tempo determinato); i suddetti interventi, solo indirettamente e formalisticamente, potrebbero dirsi unificati &#8211; come afferma la relazione illustrativa &#8211; dalla finalit&#224; di affrontare &#171;la contingente situazione economica e finanziaria e le sue conseguenze occupazionali&#187;. Peraltro, l'intervento volto all&#8217;&#171;eliminazione degli stipendi dei Parlamentari membri del Governo&#187;, pur figurando nell'intestazione del decreto-legge, non risulta menzionato nel preambolo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sotto il profilo dei rapporti con la normativa vigente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il decreto-legge, laddove interviene sull'ordinamento vigente al fine di introdurvi una disciplina di carattere temporale (riferita generalmente all'anno 2013), correttamente, sul piano della tecnica normativa utilizzata, si astiene dal ricorso alla tecnica della novellazione, precisando l'ambito temporale di applicazione della disciplina introdotta; alcuni difetti di coordinamento con l'ordinamento vigente si riscontrano invece laddove il decreto-legge opera interventi a regime, i quali talvolta non assumono la forma della novella; ci&#242; si riscontra, ad esempio, all'articolo 3, che dispone il divieto di cumulo tra trattamento economico dei ministri e quello loro spettante a titolo di indennit&#224; parlamentare ovvero a titolo di stipendio (qualora si tratti di dipendenti pubblici che ricoprano cariche elettive e abbiano optato per la conservazione del trattamento economico in godimento presso l'amministrazione di appartenenza), senza tuttavia novellare sul punto l'articolo 2 della legge n. 212 del 1952, che reca la disciplina generale in materia di trattamento economico dei ministri; analogamente, all'articolo 4, comma 5, &#232; presente una proroga non testuale di un termine (di scadenza dei contratti di lavoro a tempo determinato stipulati &#171;per garantire l'operativit&#224; degli sportelli unici per l'immigrazione nei compiti di accoglienza e integrazione e degli uffici immigrazione delle Questure nel completamento delle procedure di emersione del lavoro irregolare&#187;) originariamente fissato dall'articolo 2, comma 6, del decreto-legge 29 dicembre 2010, n. 225, e poi 
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+prorogato di semestre in semestre, sempre in via non testuale, dai decreti-legge n. 216 del 2011 e n. 79 del 2012 e, da ultimo, dall'articolo 1, comma 410, primo periodo della legge n. 228 del 2012 &#8211; Legge di stabilit&#224; 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il provvedimento si connota inoltre per il ricorso ad una tecnica normativa &#8211; che si rinviene in molti dei provvedimenti d'urgenza adottati nello scorcio finale della passata legislatura e riscontrabile agli articoli 1 e 4 del decreto-legge &#8211; consistente nell'introduzione, nell'ambito dei suddetti articoli, di una sorta di preambolo esplicativo, nel quale, in assenza di disposizioni immediatamente precettive, vengono indicati i principi ispiratori di una successiva disciplina riformatrice (v. articolo 1, comma 1, alinea), ovvero dove vengono indicate, in modo esteso, le ragioni sottese all'adozione delle disposizioni in questione (v. articolo 4, comma 1, alinea). Parzialmente privo di un'autonoma portata normativa risulta anche l'articolo 2, che si compone di due periodi, il primo dei quali si limita a dettare indirizzi al legislatore per la successiva riforma dell'imposta municipale propria, mentre il secondo, facendo sistema con l'articolo 1, comma 1, alinea, individua il termine entro il quale tale riforma deve essere realizzata, pena la riapplicazione della normativa a regime; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sul piano delle procedure parlamentari di formazione delle leggi:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il decreto-legge, all'articolo 1, comma 2, interviene sul limite massimo di ricorso all'anticipazione di tesoreria da parte dei Comuni, limite che &#232; stato gi&#224; modificato, con riguardo al 2013, dall'articolo 1, comma 9, del decreto-legge n. 35 del 2013, recante disposizioni urgenti per il pagamento dei debiti scaduti della pubblica amministrazione, approvato in prima lettura alla Camera (C. 676) ed attualmente all'esame del Senato (S. 662); da tale circostanza consegue evidentemente una potenziale sovrapposizione di fonti normative, non conforme alle esigenze di riordino normativo e di razionale svolgimento delle procedure parlamentari di conversione dei decreti legge e suscettibile di generare incertezza sull'individuazione della disciplina concretamente applicabile;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sul piano dei rapporti con le fonti subordinate:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il provvedimento, all'articolo 4, comma 2, demanda ad un decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro dell'economia e delle finanze, da adottare previa acquisizione del parere della Conferenza Stato-Regioni e sentite le parti sociali, la determinazione dei criteri di concessione degli ammortizzatori in deroga alla normativa vigente, limitandosi ad indicare gli ambiti di intervento dell'adottando decreto ed attribuendo ad una fonte secondaria del diritto il compito di stabilire i criteri di concessione degli ammortizzatori in deroga anche con riferimento &#171;ai limiti di durata e reiterazione delle prestazioni (...) alle tipologie di datori di lavoro e lavoratori beneficiari&#187;;
+
+<!NuovaPag. 4><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sul piano del coordinamento interno al testo:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il decreto-legge, mentre nel titolo contiene un puntuale riferimento all&#8217;&#171;eliminazione degli stipendi dei parlamentari membri del Governo&#187;, nella rubrica dell'articolo 3, che disciplina la materia in questione, pi&#249; genericamente ricorre alla seguente formulazione: &#171;contenimento delle spese relative all'esercizio dell'attivit&#224; politica&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;infine, il disegno di legge non &#232; provvisto della relazione sull'analisi tecnico-normativa (ATN), n&#233; della relazione sull'analisi di impatto della regolamentazione (AIR); alla relazione di accompagnamento al disegno di legge di conversione &#232; allegata una tautologica dichiarazione di esenzione dall'obbligo di redigerla;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ritiene che, per la conformit&#224; ai parametri stabiliti dall'articolo 16-<I>bis </I>e 96-<I>bis </I>del Regolamento, debba essere rispettata la seguente condizione:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sotto il profilo della chiarezza e della propriet&#224; della formulazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;per quanto detto in premessa, agli articoli 1, comma 1, alinea 4, comma 1, alinea, e all'articolo 2, comma 1, primo periodo, sia verificata la portata normativa delle disposizioni da essi recate, contestualmente provvedendo ad unificare in un unico contesto normativo le previsioni dell'articolo 1, comma 1, alinea, e dell'articolo 2, comma 1, secondo periodo, al fine di chiarire sin dal principio il termine finale di operativit&#224; della sospensione del versamento dell'imposta municipale unica nel caso di mancata adozione della riforma di cui all'articolo 1.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Il Comitato osserva altres&#236; quanto segue:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>sotto il profilo dell'efficacia del testo per la semplificazione e il riordinamento della legislazione vigente:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;per quanto detto in premessa, all'articolo 3, comma 1 &#8211; che interviene sul trattamento economico dei membri del Governo &#8211; si dovrebbe riformulare la disposizione ivi contenuta in termini di novella all'articolo 2 della legge n. 212 del 1952, che reca la disciplina generale della materia;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'articolo 4, comma 2 &#8211; che demanda ad un decreto ministeriale la determinazione dei criteri di concessione degli ammortizzatori in deroga alla normativa vigente, limitandosi ad indicare gli ambiti di intervento dell'adottando decreto &#8211; valutino le Commissioni, anche alla luce del quadro normativo vigente, se non sia opportuno integrare la disciplina di cui all'oggetto quanto meno definendone l'ambito soggettivo e quello oggettivo di applicazione; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'articolo 4, comma 5, che proroga in via non testuale il termine di scadenza dei contratti di lavoro a tempo determinato stipulati ai sensi dell'articolo 2, comma 6, del decreto-legge 29 dicembre 2010, n. 225, si dovrebbe riformulare la disciplina in oggetto in termini di novella a tale ultima disposizione.
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Il Comitato raccomanda infine quanto segue:
+<BR>&#160;&#160;&#160;&#160;&#160;&#160;<I>sotto il profilo della specificit&#224; e omogeneit&#224; di contenuto:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;anche alla luce della sentenza n. 22 del 2012 della Corte Costituzionale, che, richiamando quanto gi&#224; statuito nelle sentenze n. 171 del 2007 e n. 128 del 2008, ha individuato, &#171;tra gli indici alla stregua dei quali verificare se risulti evidente o meno la carenza del requisito della straordinariet&#224; del caso di necessit&#224; e d'urgenza di provvedere, la evidente estraneit&#224; della norma censurata rispetto alla materia disciplinata da altre disposizioni del decreto legge in cui &#232; inserita&#187;, nonch&#233; rispetto al titolo del decreto e al preambolo &#8211; ove il legislatore intenda introdurre nell'ordinamento singole discipline che presentino profili autonomi di necessit&#224; e di urgenza, abbia cura di adottare &#171;atti normativi urgenti del potere esecutivo distinti e separati&#187;, evitando &#171;la commistione e la sovrapposizione, nello stesso atto normativo, di oggetti e finalit&#224; eterogenei, in ragione di presupposti, a loro volta, eterogenei&#187;.
+
+<P><BR><CENTER><!PP>PARERE DELLA I COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari costituzionali, della Presidenza del Consiglio e interni)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La I Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il testo del disegno di legge n. 1012 Governo &#171;Conversione in legge del decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che le disposizioni da esso recate sono, in particolare, riconducibili alle materie &#171;sistema tributario e contabile dello Stato&#187;, &#171;previdenza sociale&#187; e &#171;ordinamento e organizzazione amministrativa dello Stato e degli enti pubblici nazionali&#187;, che le lettere <I>e), o)</I> e <I>g)</I> del secondo comma dell'articolo 117 della Costituzione attribuiscono alla competenza legislativa esclusiva dello Stato;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tenuto conto che talune disposizioni investono altres&#236; la materia &#171;tutela e sicurezza del lavoro&#187;, che l'articolo 117, terzo comma, della Costituzione attribuisce alla potest&#224; legislativa concorrente tra lo Stato e le regioni;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato che, ai sensi dell'articolo 119 della Costituzione, i comuni, le province, le citt&#224; metropolitane e le regioni hanno autonomia finanziaria di entrata e di spesa e risorse autonome. Stabiliscono e applicano tributi ed entrate propri, in armonia con la Costituzione e secondo i principi di coordinamento della finanza 
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+pubblica e del sistema tributario. Dispongono di compartecipazioni al gettito di tributi erariali riferibile al loro territorio;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tenuto conto che l'articolo 2 stabilisce che la riforma della disciplina dell'imposizione fiscale sul patrimonio immobiliare dovr&#224; essere attuata nel rispetto &#171;degli obiettivi programmatici primari&#187; indicati nel Documento di economia e finanza 2013, come risultante dalle relative risoluzioni parlamentari e, in ogni caso, in coerenza con gli impegni assunti in ambito europeo. In caso di mancata adozione della riforma entro il 31 agosto 2013, continuer&#224; ad applicarsi la disciplina vigente in materia di imposizione fiscale del patrimonio immobiliare e, a tal fine, il termine di versamento della prima rata dell'IMU viene fissato al 16 settembre 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, riguardo all'articolo 2, come sarebbe utile che fosse ulteriormente specificato se con la locuzione &#171;rispetto degli obiettivi programmatici primari&#187;, si intenda fare riferimento all'Obiettivo di bilancio di Medio Termine, rilevante ai fini della nuova disciplina del Patto di stabilit&#224; e crescita, che per l'Italia &#232; rappresentato dal pareggio di bilancio in termini strutturali nel periodo previsionale 2013-2015;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato che l'articolo 3 stabilisce &#8211; per i membri del Governo che sono anche parlamentari &#8211; il divieto di cumulo del trattamento stipendiale spettante in quanto componenti l'Esecutivo con l'indennit&#224; parlamentare o con il trattamento economico in godimento se dipendenti pubblici;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata, preliminarmente, la necessit&#224; &#8211; al medesimo articolo 3 &#8211; di richiamare espressamente anche la categoria dei viceministri, in quanto pienamente equiparata a quella dei sottosegretari;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato altres&#236; come la disposizione faccia riferimento ai soli membri del Governo che sono anche parlamentari mentre non si applica nel caso in cui gli stessi non siano parlamentari, nonostante questi ultimi percepiscano &#8211; in base a quanto stabilito dall'articolo 1 della legge n. 418 del 1999 &#8211; un trattamento economico che cumula allo stipendio da ministro o da sottosegretario una speciale indennit&#224;, pari a quella spettante ai membri del Parlamento, al netto degli oneri previdenziali e assistenziali;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato che, come emerge anche dai lavori preparatori della suddetta legge n. 418 del 1999 (atto Camera n. 4836 - XIII legislatura) nell'intervento del relatore nella seduta dell'Assemblea del 21 settembre 1998, la <I>ratio</I> della suddetta legge fosse quella di superare una &#171;evidente ingiustizia retributiva tra i membri del Governo che sono anche parlamentari e che quindi cumulano le due indennit&#224; e quelli che non lo sono. Ci&#242; &#232; irragionevole perch&#233;, come &#232; noto, ministri e sottosegretari non parlamentari hanno gli stessi obblighi di seguire i lavori parlamentari che hanno i loro colleghi che fanno parte del Parlamento e i primi vengono cos&#236; retribuiti con indennit&#224; decisamente inferiori e non adeguate ai livelli di responsabilit&#224; attribuiti alla funzione&#187;;
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, al riguardo, che il principio di uguaglianza, sancito dall'articolo 3 della Costituzione, &#232; principio generale che condiziona tutto l'ordinamento nella sua obiettiva struttura (sentenza della Corte costituzionale n. 25/1966), nonch&#233; &#171;canone di coerenza [...] nel campo delle norme di diritto&#187; (sentenza n. 204/1982);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ricordato, altres&#236;, che la lettura che la giurisprudenza della Corte costituzionale ha dato del principio di eguaglianza, ha portato ad enucleare anche un generale principio di &#171;ragionevolezza&#187;, alla luce del quale la legge deve regolare in maniera uguale situazioni uguali ed in maniera razionalmente diversa situazioni diverse, con la conseguenza che la disparit&#224; di trattamento trova giustificazione nella diversit&#224; delle situazioni disciplinate: &#171;il principio di eguaglianza &#232; violato anche quando la legge, senza un ragionevole motivo, faccia un trattamento diverso ai cittadini che si trovino in eguali situazioni&#187; (sentenza n. 15/1960), poich&#233; &#171;l'articolo 3 della Costituzione vieta disparit&#224; di trattamento di situazioni simili e discriminazioni irragionevoli&#187; (sentenza n. 96/1980). Cos&#236;, il principio &#171;deve assicurare ad ognuno eguaglianza di trattamento, quando eguali siano le condizioni soggettive ed oggettive alle quali le norme giuridiche si riferiscono per la loro applicazione&#187; (sentenza n. 3/1957), con la conseguenza che il principio risulta violato &#171;quando, di fronte a situazioni obiettivamente omogenee, si ha una disciplina giuridica differenziata determinando discriminazioni arbitrarie ed ingiustificate&#187; (sentenza n. 111/1981),
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti condizioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1) all'articolo 3 &#232; necessario valutare, alla luce dei principi di eguaglianza e di ragionevolezza, se le previsioni &#8211; che attualmente si riferiscono ai soli membri del Governo che sono anche parlamentari &#8211; debbano trovare applicazione anche nel caso in cui gli stessi non siano parlamentari, considerato che questi ultimi percepiscono, in base a quanto stabilito dall'articolo 1 della legge n. 418 del 1999, un trattamento economico che cumula allo stipendio da ministro o da sottosegretario una speciale indennit&#224;, pari a quella spettante ai membri del Parlamento, al netto degli oneri previdenziali e assistenziali;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2) &#232; necessario &#8211; al medesimo articolo 3 &#8211; richiamare espressamente la categoria dei viceministri, di cui all'articolo 10, comma 3, della legge n. 400 del 1988, come modificato dalla legge n. 81 del 2001, in quanto pienamente equiparata a quella dei sottosegretari;
+
+<P><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;e con la seguente osservazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'articolo 2 valutino le Commissioni di merito l'esigenza di specificare espressamente cosa si intenda con la locuzione &#171;rispetto degli obiettivi programmatici primari&#187;.
+
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER><!PP>PARERE DELLA V COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Bilancio, Tesoro e Programmazione)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La V Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge di conversione in legge del decreto legge n. 54 del 2013, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo (C. 1012);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto dei chiarimenti forniti dal Governo, secondo il quale:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la stima di 18,2 milioni di euro relativa agli oneri per interessi di cui all'articolo 1, comma 3, risulta prudenziale, in quanto ipotizza che l'intera platea dei comuni ricorra al limite massimo di anticipazione, ed &#232; pertanto da ritenersi superiore alle effettive necessit&#224; di spesa;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il fondo per interventi strutturali di politica economica e l'accantonamento relativo allo stato di previsione del Ministero dell'economia e delle finanze del fondo speciale di parte corrente, dei quali si prevede l'utilizzo, ai sensi dell'articolo 1, comma 3, recano le necessarie disponibilit&#224;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;i risparmi di spesa derivanti dalle disposizioni relative al trattamento stipendiale dei membri del Governo sono stati determinati sulla base della compagine governativa attualmente in carica e del trattamento economico come disciplinato dal presente provvedimento, nonch&#233; dell'ammontare degli stanziamenti destinati ai suddetti trattamenti risultanti dalla legge di bilancio relativa al triennio 2013-2015; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'utilizzo del fondo destinato al finanziamento degli sgravi contributivi sui salari di secondo livello, ai sensi dell'articolo 4, comma 1, lettera <I>a)</I>, non pregiudica l'attuazione dei predetti sgravi contributivi dal momento che tale attuazione potr&#224; avvenire solo nei limiti delle somme che residuano nel fondo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la formulazione della disposizione di cui all'articolo 4, comma 1, lettera <I>c)</I>, numero 1, risulta esaustiva, anche alla luce del contenuto della relazione tecnica, in quanto indica la quota delle entrate derivanti dalle sanzioni amministrative irrogate dall'Autorit&#224; garante della concorrenza e del mercato non riassegnate che devono restare acquisite all'entrata del bilancio dello Stato;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'utilizzo del fondo derivante dalle sanzioni amministrative irrogate dall'Autorit&#224; garante della concorrenza e del mercato da destinare ad iniziative a favore dei consumatori, ai sensi dell'articolo 4, comma 1, lettera <I>c)</I>, numero 1, non pregiudica gli interventi gi&#224; previsti a legislazione vigente a valere sulle medesime risorse;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'utilizzo delle disponibilit&#224; di cui all'articolo 5 della legge n. 7 del 2009, ai sensi dell'articolo 4, comma 1, lettera <I>c)</I>, numero 2, risulta coerente con quanto convenuto dal Governo in merito all'opportunit&#224; 
+
+<!NuovaPag. 9><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 9 <hr width=30%></hr></center><br></td></tr></DIV>
+
+di non dar luogo ad alcun pagamento connesso all'esecuzione del trattato ratificato con la suddetta legge n. 7 del 2009, a seguito degli eventi verificatisi in Libia nel corso del 2011 e della risoluzione 1973/2011 del Consiglio di sicurezza dell'ONU;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'utilizzo del fondo per lo sviluppo e la coesione del quale &#232; previsto l'utilizzo con finalit&#224; di copertura, ai sensi dell'articolo 4, comma 1, lettera <I>c)</I>, numero 3, non pregiudica gli interventi gi&#224; previsti a legislazione vigente a valere sulle medesime risorse, in quanto, come indicato nella relazione tecnica, il CIPE dovr&#224; provvedere alla riprogrammazione degli interventi, e non comporta una dequalificazione della spesa, posto che quote significative del medesimo fondo gi&#224; possono essere assegnate ad interventi di parte corrente;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'INPS provveder&#224; ai compiti di monitoraggio, anche preventivo, della spesa relativa alla concessione degli ammortizzatori in deroga di cui all'articolo 4, comma 2, nell'ambito delle risorse umane, strumentali e finanziarie disponibili a legislazione vigente, e, tuttavia, appare, comunque, opportuno integrare la relativa clausola di neutralit&#224; finanziaria, conformemente alla prassi contabile vigente;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;le risorse di cui all'articolo 4, comma 3, in materia di contratti di solidariet&#224;, sono iscritte nel capitolo 2230 dello stato di previsione del Ministero del lavoro e delle politiche sociali relativo al fondo sociale per l'occupazione e la formazione, e sono state riassegnate all'entrata in considerazione del fatto che si tratta di somme per le quali, negli anni dal 2008 al 2012, non &#232; intervenuta l'emanazione del decreto di ammissione al contributo di solidariet&#224; sulla base delle domande presentate dalle aziende interessate; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la proroga al 31 dicembre 2013 dei contratti per il personale a tempo determinato in servizio nelle pubbliche amministrazioni di cui all'articolo 4, comma 4, nonch&#233; di quelli relativi al personale impiegato presso gli sportelli unici per l'immigrazione di cui al comma 5 del medesimo articolo 4, non pu&#242; dare adito alla richiesta di trasformazione dei relativi rapporti di lavoro da tempo determinato a tempo indeterminato, potendo tale trasformazione avvenire soltanto nel rispetto della programmazione triennale del fabbisogno di personale, attraverso le modalit&#224; puntualmente disciplinate dall'articolo 401, comma 1, della legge n. 228 del 2012;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gli effetti finanziari derivanti dalla riassegnazione delle risorse del Fondo di rotazione per la solidariet&#224; alle vittime dei reati di tipo mafioso, delle richieste estorsive e dell'usura, accertate secondo le procedure di cui all'articolo 5, comma 1, del decreto-legge n. 79 del 2012, come previsto ai sensi dell'articolo 4, comma 5, saranno computati in bilancio solo al momento del versamento all'entrata delle citate risorse e, pertanto, non possono essere evidenziati nel prospetto riepilogativo degli effetti finanziari; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il prospetto riepilogativo degli effetti finanziari tiene conto esclusivamente delle innovazioni normative apportate dal provvedimento legislativo al quale &#232; allegato; 
+
+<!NuovaPag. 10><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 10 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata, comunque, l'opportunit&#224; per il futuro, al fine di garantire una maggiore trasparenza, di evidenziare dettagliatamente, nella relazione tecnica, non solo gli effetti finanziari derivanti dal provvedimento legislativo a cui essa si riferisce, ma anche quelli concernenti norme vigenti strettamente connesse al primo, anche in virt&#249; di procedure amministrative;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata altres&#236; l'opportunit&#224; di introdurre all'articolo 4, comma 3, una espressa clausola di compensazione degli effetti finanziari in termini di fabbisogno e di indebitamento netto derivanti dall'utilizzo delle somme iscritte in conto residui e destinate al finanziamento dei contratti di solidariet&#224;,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti condizioni, volte a garantire il rispetto dell'articolo 81, quarto comma, della Costituzione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>all'articolo 4, comma 2, aggiungere, in fine, le seguenti parole:</I> e, comunque, senza nuovi o maggiori oneri a carico della finanza pubblica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>all'articolo 4, comma 3, aggiungere, in fine, il seguente periodo:</I> Alla compensazione degli effetti finanziari in termini di fabbisogno e di indebitamento derivanti dal presente comma, pari a 57.635.541 euro per l'anno 2013, si provvede mediante corrispondente utilizzo delle minori spese e delle maggiori entrate recate dal presente decreto&#187;.
+
+<P><BR><CENTER><!PP>PARERE DELLA VIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Ambiente, territorio e lavori pubblici)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La VIII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di competenza, il decreto-legge n. 54 del 2013, recante &#171;Interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo&#187;,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<!NuovaPag. 11><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 11 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti osservazioni:</I>
+
+<P><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> valutino le Commissioni l'opportunit&#224; di modificare l'articolo 1, comma 1, nel senso di estendere la sospensione dell'acconto IMU agli immobili affittati con contratti a canone concordato, aggiungendo dopo la lettera <I>c)</I> del citato comma 1, la seguente lettera &#171;d) unit&#224; immobiliari locate ai sensi dell'articolo 2, comma 3, della legge 9 dicembre 1998, n. 431;
+
+<P><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> valutino le Commissioni di merito l'opportunit&#224; che la futura riforma della disciplina fiscale sul patrimonio immobiliare, che dovr&#224; comprendere la disciplina del tributo comunale sui rifiuti e sui servizi, non depotenzi l'utilizzo della tariffa a fini di una corretta gestione dei rifiuti.
+
+<P><BR><CENTER><!PP>PARERE DELLA X COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Attivit&#224; produttive, commercio e turismo)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La X Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il testo del disegno di legge di conversione in legge del decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo (C. 1012 Governo);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;elaborazioni e stime rese note dalle associazioni imprenditoriali stimano, per il 2012, tra gli 8 ed i 9 miliardi di euro il gettito IMU a carico degli immobili strumentali per l'esercizio dell'attivit&#224; d'impresa e, conseguentemente, in oltre 4 miliardi di euro il gettito aggiuntivo rispetto all'ICI;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la misura del suddetto gettito &#232; il risultato dell'effetto combinato della maggiore aliquota base IMU (0,76 per cento) rispetto all'aliquota media ICI (0,64 per cento) e della rivalutazione dei moltiplicatori catastali (ad esempio, da 34 a 55 per negozi e botteghe, da 50 a 80 per uffici e studi privati, da 100 a 140 per laboratori artigianali, da 50 a 65 per capannoni industriali ed alberghi);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;come segnalato dalla COPAFF (Commissione Tecnica Paritetica per il Federalismo Fiscale), l'acconto di giugno a carico delle imprese risulter&#224; pi&#249; gravoso di quella dello scorso anno per l'aumento ulteriore del moltiplicatore relativo al gruppo catastale D (da 60 a 65) e per la determinazione della prima rata non pi&#249; ad aliquota standard, ma sulla base di aliquote e detrazioni vigenti nei 
+
+<!NuovaPag. 12><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 12 <hr width=30%></hr></center><br></td></tr></DIV>
+
+dodici mesi dell'anno precedente, lasso di tempo in cui il 50 per cento dei comuni ha aumentato l'aliquota, il 45,8 per cento non l'ha variata e meno del 2 per cento ha proceduto a riduzioni;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il Governo, con il decreto in esame, ha opportunamente finalizzato la sospensione del versamento della rata di giugno dell'IMU relativa alla gran parte delle abitazioni principali alla riforma della disciplina dell'imposizione fiscale sul patrimonio immobiliare, inclusa la disciplina della TARES, che dovr&#224; intervenire entro il prossimo 31 agosto e nel rispetto degli obiettivi programmatici di finanza pubblica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il Governo ha altres&#236; indicato tra i principi della suddetta riforma la riconsiderazione della potest&#224; impositiva a livello statale e locale e la deducibilit&#224;, ai fini della determinazione del reddito d'impresa, dell'IMU relativa agli immobili utilizzati per attivit&#224; produttive;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tale deducibilit&#224; risulta del tutto coerente con la natura di fattori della produzione dei suddetti immobili e con il conseguente inquadramento della tassazione a loro carico nella categoria dei costi inerenti alla produzione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;va altres&#236; ricordato che, nel passaggio dall'ICI all'IMU, gli immobili produttivi, ad eccezione di quelli produttivi di reddito fondiario non dati in locazione, non hanno beneficiato, a differenza di quanto accaduto per le altre categorie di immobili, dell'esclusione dalla tassazione ai fini delle imposte sui redditi (IRPEF e relative addizionali);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;va sottolineato tuttavia che la deducibilit&#224; ai fini della determinazione del reddito d'impresa andrebbe estesa all'IRAP per consentire un alleggerimento del gravame anche nei confronti di aziende incapienti, perch&#233; non in utile;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la COPAFF, anche sulla scorta di tale argomento, ha sottolineato la necessit&#224; di intervenire in favore degli immobili strumentali delle imprese, &#171;usciti penalizzati dalla riforma IMU&#187;, non per via di deducibilit&#224;, ma &#171;attraverso un intervento diretto di sgravio sui parametri dell'IMU (aliquote e moltiplicatori dei valori catastali)&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;al riguardo, va altres&#236; ricordato che l'impianto normativo del primo schema di decreto legislativo sul &#171;federalismo fiscale municipale&#187; prevedeva, per gli immobili strumentali delle imprese, il dimezzamento obbligatorio dell'aliquota base IMU;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ritenuto altres&#236; necessario affrontare questioni quali l'IMU gravante sugli immobili invenduti delle imprese edili;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato che per il necessario rifinanziamento della CIGD, la copertura attinge anche al Fondo per il finanziamento degli sgravi contributivi finalizzati all'incentivazione della contrattazione di secondo livello ed alle risorse di pertinenza dei Fondi Paritetici Interprofessionali nazionali per la formazione continua;
+
+<!NuovaPag. 13><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 13 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di esprimere
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti condizioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1) provvedano le Commissioni di merito a valutare l'integrazione delle previsioni del Governo in materia di principi di riforma dell'imposizione fiscale sugli immobili strumentali all'esercizio dell'attivit&#224; d'impresa: <I>a)</I> estendendo anche all'IRAP la deducibilit&#224; IMU; <I>b)</I> segnalando anche la possibilit&#224; di un intervento diretto di sgravio sui parametri IMU (aliquote e valori catastali); <I>c)</I> esplicitamente richiamando, tra gli ambiti di riforma, la disciplina in materia di immobili invenduti delle imprese edili;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2) provvedano altres&#236; le Commissioni di merito a prevedere la sospensione dell'aumento ulteriore del moltiplicatore per il gruppo catastale D (da 60 a 65) fino alla definizione della riforma complessiva dell'imposizione fiscale sugli immobili;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>e con la seguente osservazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;valutino le Commissioni di merito se il ricorso, ai fini della copertura del rifinanziamento della CGID, al fondo per la decontribuzione del salario di secondo livello non pregiudichi interventi previsti a legislazione vigente e se il ricorso alle risorse destinate alla formazione continua, derivanti dalla contribuzione versata dalle imprese, non infici l'operativit&#224; dei Fondi interprofessionali.
+
+<P><BR><CENTER><!PP>PARERE DELLA XIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Agricoltura)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La XIII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per i profili di competenza, il disegno di legge di conversione in legge del decreto-legge n. 54 del 2013, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo (C. 1012 Governo);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>premesso che:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il decreto-legge n. 54 ha disposto la sospensione della prima rata dell'imposta municipale unica (IMU) per il 2013 nelle more di una complessiva riforma della disciplina dell'imposizione fiscale sul patrimonio immobiliare, per la quale detta alcuni principi direttivi;
+
+<!NuovaPag. 14><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 14 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la sospensione della prima rata riguarda anche terreni agricoli e fabbricati rurali di cui all'articolo 13, commi 4, 5 e 8, del decreto-legge n. 201 del 2011, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ai sensi della nuova disciplina dell'IMU sperimentale, recata dal citato decreto-legge n. 201 risultano assoggettati ad imposta sia i terreni agricoli sia i fabbricati rurali, che scontano l'IMU nelle modalit&#224; ordinarie se si tratta di fabbricati ad uso abitativo, mentre per i fabbricati rurali strumentali &#232; prevista un'aliquota ridotta allo 0,2 per cento, con facolt&#224; dei comuni di diminuirla ulteriormente fino allo 0,1 per cento. Per effetto delle modifiche apportate alla disciplina dell'IMU dal decreto-legge n. 16 del 2002, &#232; stato delineato un regime specifico anche per i terreni agricoli, con misure distinte per i terreni posseduti e condotti dai coltivatori diretti e imprenditori agricoli professionali iscritti nella previdenza agricola;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il mondo agricolo ha da tempo posto in evidenza come il nuovo trattamento fiscale di cui alla richiamata normativa non consideri adeguatamente il ruolo che l'imprenditore agricolo svolge e le caratteristiche dei beni prodotti; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in effetti, il settore primario necessita di regole che tengano conto della sua specificit&#224;, caratterizzata da una forte immobilizzazione di capitali a bassa redditivit&#224; e della circostanza che i beni in questione costituiscono gli strumenti essenziali per l'esercizio dell'impresa agricola e non possono, pertanto, essere considerati solo come ricchezza accumulata; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;anche per tali considerazioni, l'articolo 13, comma 8, del decreto-legge n. 201 del 2011, aveva previsto che, con decreto del Presidente del Consiglio dei ministri da emanare entro il 10 dicembre 2012, si doveva provvedere, sulla base dell'andamento del gettito derivante dal pagamento della prima rata dell'IMU, alla modifica dell'aliquota da applicare ai fabbricati strumentali agricoli ed ai terreni in modo da garantire che il gettito complessivo non superasse per l'anno 2012 gli ammontari previsti dal Ministero dell'economia e delle finanze rispettivamente per i fabbricati rurali ad uso strumentale e per i terreni; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in base alle stime di gettito, desumibili dalla documentazione presentata dal Governo, l'IMU prevista per i fabbricati &#232; stata stimata pari a circa 121 milioni di euro, mentre quella per i terreni ha subito un &#171;aggravio&#187; pari a circa 89 milioni di euro; complessivamente pertanto, il settore agricolo doveva &#171;contribuire&#187; per circa 210 milioni di euro; al contrario, l'aggravio effettivo, sulla base dei dati del Ministero dell'economia e delle finanze, risulterebbe essere superiore o comunque pari ad almeno 255 milioni di euro, complessivamente per terreni e fabbricati. Tuttavia, il Governo non ha dato seguito alla disposizione sopra citata;
+
+<!NuovaPag. 15><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 15 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>considerato altres&#236; che:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il decreto-legge n. 54 reca il rifinanziamento degli ammortizzatori sociali in deroga per l'anno 2013, demandando ad un decreto del Ministro del lavoro e delle politiche sociali la fissazione dei criteri per la concessione degli ammortizzatori stessi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nel comparto ittico si rileva una grave carenza in ordine alle tutele sociali dei lavoratori, nonostante l'interruzione delle attivit&#224; sia spesso dovuta a cause indipendenti dalla volont&#224; del datore di lavoro (le avverse condizioni meteomarine, il fermo biologico); 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esprime
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente condizione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;si estenda ai lavoratori imbarcati su imbarcazioni adibite alla pesca marittima, ivi compresi i soci lavoratori di cooperative della piccola pesca e gli armatori della piccola pesca, gli ammortizzatori sociali e le forme di sostegno al reddito previste in tutti i casi di disoccupazione involontaria;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>e con le seguenti osservazioni:</I>
+
+<P><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> in relazione alla imposta municipale unica (IMU), si segnala l'esigenza di dare applicazione all'articolo 13, comma 8, del decreto-legge n. 201 del 2011, verificando il gettito realizzato e quindi la sussistenza dei presupposti per una revisione dell'aliquota da applicare ai fabbricati strumentali agricoli ed ai terreni in modo da garantire che il gettito complessivo non superi per l'anno 2012 gli ammontari previsti dal Ministero dell'economia e delle finanze;
+
+<P><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> in considerazione dell'estrema difficolt&#224; in cui versa il settore primario, si segnala la necessit&#224; di introdurre, nell'ambito della complessiva riforma della disciplina dell'imposizione sul patrimonio immobiliare, l'esenzione in ordine agli oneri fiscali gravanti sui fabbricati rurali strumentali e sui terreni agricoli, tenuto conto della specificit&#224; dei suddetti beni che rappresentano gli strumenti di lavoro delle imprese agricole.
+
+<P><BR><CENTER><!PP>PARERE DELLA XIV COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Politiche dell'Unione europea)</CENTER>
+
+<P><CENTER>PARERE FAVOREVOLE</CENTER>
+
+
+
+
+
+<!NuovaPag. 16><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 16 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<TABLE BORDER>
+
+
+<TR><TD VALIGN="TOP" Width=50%><P><CENTER>&#160;&#160;&#160;&#160;</CENTER>
+<CENTER><!DC><br>TESTO</CENTER>
+<CENTER>del disegno di legge</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER>&#160;&#160;&#160;&#160;</CENTER>
+<CENTER><DIV align="right"><A NAME="DC"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> TESTO</CENTER>
+<CENTER>delle Commissioni</CENTER>
+
+<TR><TD VALIGN="TOP" Width=50%><P><CENTER><B>Conversione in legge del decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo.</B></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><B>Conversione in legge, con modificazioni, del decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo.</B></CENTER>
+
+<TR><TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Art. 1.</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Art. 1.</CENTER>
+
+<TR><TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;1. &#200; convertito in legge il decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;1. Il decreto-legge 21 maggio 2013, n. 54, recante interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo, <B>&#232; convertito in legge con le modificazioni riportate in allegato alla presente legge.</B>
+
+<TR><TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;2. La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella <I>Gazzetta Ufficiale</I>.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;2. <I>Identico.</I></TABLE>
+
+
+
+<P><!AL><DIV align="right"><A NAME="AL1"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV>
+
+
+<!NuovaPag. 17><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 17 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+
+<P>Allegato
+
+<P><CENTER>MODIFICAZIONI APPORTATE DALLE COMMISSIONI</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 3:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 1, dopo la parola:</I> &#171;Ministro&#187; <I>sono aggiunte le seguenti:</I> &#171;, Vice Ministro&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 4:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 2 sono aggiunte, in fine, le seguenti parole:</I> &#171;e, comunque, senza nuovi o maggiori oneri a carico della finanza pubblica&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 3 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;3-<I>bis.</I> Alla compensazione degli effetti finanziari, in termini di fabbisogno e di indebitamento, derivanti dal comma 3 del presente articolo, pari a 57.635.541 euro per l'anno 2013, si provvede mediante corrispondente utilizzo delle minori spese e delle maggiori entrate recate dal presente decreto&#187;.
+
+
+
+
+<!NuovaPag. 18-19><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 18-19 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><TABLE BORDER=0 cellpadding="10" cellspacing="0"> 
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!DL><br><I>Decreto-legge 21 maggio 2013, n. 54, pubblicato nella </I>Gazzetta Ufficiale<I> n. 117 del 21 maggio 2013.</I></CENTER>
+
+<TD VALIGN="TOP" Width=50%>&nbsp;
+
+
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER>Testo del decreto-legge</CENTER>
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><DIV align="right"><A NAME="DL"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> Testo del decreto-legge comprendente le modificazioni  apportate dalle Commissioni</CENTER>
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><B>Interventi urgenti in tema di sospensione dell'imposta municipale propria, di rifinanziamento di ammortizzatori sociali in deroga, di proroga in materia di lavoro a tempo determinato presso le pubbliche amministrazioni e di eliminazione degli stipendi dei parlamentari membri del Governo.</B></CENTER>  
+
+
+
+<P><CENTER>IL PRESIDENTE DELLA REPUBBLICA</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Visti gli articoli 77 e 87 della Costituzione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Considerata la straordinaria necessit&#224; ed urgenza di provvedere in materia di pagamento dell'imposta municipale propria di cui all'articolo 13 del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, e successive modificazioni, conseguente alla contingente situazione economico- finanziaria del Paese;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Considerate le particolari ragioni di urgenza, connesse alla contingente situazione economico-finanziaria ed occupazionale del Paese, che impongono l'adozione di misure di sostegno al lavoro e di potenziamento degli ammortizzatori sociali per fare fronte alla perdurante situazione di crisi dei settori produttivi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Vista la deliberazione del Consiglio dei Ministri, adottata nella riunione del 17 maggio 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sulla proposta del Presidente del Consiglio dei Ministri, del Ministro dell'interno, del Ministro dell'economia e delle finanze e del Ministro del lavoro e delle politiche sociali;
+
+<P><CENTER>emana</CENTER>
+<CENTER>il seguente decreto-legge:</CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 1.</CENTER>
+<CENTER><I>(Disposizioni in materia di imposta municipale propria).</I></CENTER>
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 1.</CENTER>
+<CENTER><I>(Disposizioni in materia di imposta municipale propria).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Nelle more di una complessiva riforma della disciplina dell'imposizione fiscale sul patrimonio immobiliare, ivi compresa la
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+
+
+
+
+
+<!NuovaPag. 20-21> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 20-21<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">disciplina del tributo comunale sui rifiuti e sui servizi, volta, in particolare, a riconsiderare l'articolazione della potest&#224; impositiva a livello statale e locale, e la deducibilit&#224; ai fini della determinazione del reddito di impresa dell'imposta municipale propria relativa agli immobili utilizzati per attivit&#224; produttive, per l'anno 2013 il versamento della prima rata dell'imposta municipale propria di cui all'articolo 13 del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, &#232; sospeso per le seguenti categorie di immobili:
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> abitazione principale e relative pertinenze, esclusi i fabbricati classificati nelle categorie catastali A/1, A/8 e A/9; 
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> unit&#224; immobiliari appartenenti alle cooperative edilizie a propriet&#224; indivisa, adibite ad abitazione principale e relative pertinenze dei soci assegnatari, nonch&#233; alloggi regolarmente assegnati dagli Istituti autonomi per le case popolari (IACP) o dagli enti di edilizia residenziale pubblica, comunque denominati, aventi le stesse finalit&#224; degli IACP, istituiti in attuazione dell'articolo 93 del decreto del Presidente della Repubblica 24 luglio 1977, n. 616;
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> terreni agricoli e fabbricati rurali di cui all'articolo 13, commi 4, 5 e 8, del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, e successive modificazioni. 
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Il limite massimo di ricorso all'anticipazione di tesoreria di cui all'articolo 222 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, come modificato, per l'anno 2013, dall'articolo 1, comma 9, del decreto-legge 8 aprile 2013, n. 35, &#232; ulteriormente incrementato fino al 30 settembre 2013, di un importo, come risultante per ciascun comune, dall'allegato A, pari al cinquanta per cento:
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> del gettito relativo all'anno 2012 dell'imposta municipale propria ad aliquota di base o maggiorata se deliberata dai comuni, per l'anno medesimo con riferimento alle abitazioni principali e relative pertinenze;
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> del gettito relativo all'anno 2012 dell'imposta municipale propria, comprensivo delle variazioni deliberate dai comuni per l'anno medesimo, con riferimento agli immobili di cui alla lettera <I>b)</I> e <I>c)</I> del comma 1.
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Gli oneri per interessi a carico dei comuni per l'attivazione delle maggiori anticipazioni di tesoreria sono rimborsati a ciascun comune dal Ministero dell'interno, con modalit&#224; e termini fissati con decreto del Ministero dell'interno, da adottare entro 20 giorni dalla data di entrata in vigore del presente decreto.
+
+<TD VALIGN="TOP" Width=50%>
+
+
+
+
+<!NuovaPag. 22-23> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 22-23<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. All'onere di cui al comma 3, pari a 18,2 milioni di euro per l'anno 2013 si provvede, quanto a 12,5 milioni di euro mediante corrispondente riduzione del fondo di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307, quanto a 600.000 euro mediante utilizzo dei risparmi derivanti dall'articolo 3 e quanto a 5,1 milioni di euro mediante corrispondente riduzione dello stanziamento del fondo speciale di parte corrente iscritto, ai fini del bilancio triennale 2013-2015, nell'ambito del programma &#171;Fondi di riserva e speciali&#187; della missione &#171;Fondi da ripartire&#187; dello stato di previsione del Ministero dell'economia e delle finanze per l'anno 2013, allo scopo parzialmente utilizzando l'accantonamento relativo al medesimo Ministero.
+
+<TD VALIGN="TOP" Width=50%>
+
+<!NuovaPag. 24-25> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 24-25<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 2.</CENTER>
+<CENTER><I>(Clausola di salvaguardia).</I></CENTER>
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 2.</CENTER>
+<CENTER><I>(Clausola di salvaguardia).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. La riforma di cui all'articolo 1 dovr&#224; essere attuata nel rispetto degli obiettivi programmatici primari indicati nel Documento di economia e finanza 2013 come risultante dalle relative risoluzioni parlamentari e, in ogni caso, in coerenza con gli impegni assunti dall'Italia in ambito europeo. In caso di mancata adozione della riforma entro la data del 31 agosto 2013, continua ad applicarsi la disciplina vigente e il termine di versamento della prima rata dell'imposta municipale propria degli immobili di cui al medesimo articolo 1 &#232; fissato al 16 settembre 2013.
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 26-27> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 26-27<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 3.</CENTER>
+<CENTER><I>(Contenimento delle spese relative all'esercizio dell'attivit&#224; politica).</I></CENTER>
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 3.</CENTER>
+<CENTER><I>(Contenimento delle spese relative all'esercizio dell'attivit&#224; politica).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. I membri del Parlamento, che assumono le funzioni di Presidente del Consiglio dei ministri, Ministro o Sottosegretario di Stato, non possono cumulare il trattamento stipendiale previsto dall'articolo 2 della legge 8 aprile 1952, n. 212, con l'indennit&#224; spettante ai parlamentari ai sensi della legge 31 ottobre 1965, n. 1261, ovvero con il trattamento economico in godimento per il quale abbiano eventualmente optato, in quanto dipendenti pubblici, ai sensi dell'articolo 68 del decreto legislativo 30 marzo 2001, n. 165.
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. I membri del Parlamento, che assumono le funzioni di Presidente del Consiglio dei ministri, Ministro, <B>Vice Ministro</B> o Sottosegretario di Stato, non possono cumulare il trattamento stipendiale previsto dall'articolo 2 della legge 8 aprile 1952, n. 212, con l'indennit&#224; spettante ai parlamentari ai sensi della legge 31 ottobre 1965, n. 1261, ovvero con il trattamento economico in godimento per il quale abbiano eventualmente optato, in quanto dipendenti pubblici, ai sensi dell'articolo 68 del decreto legislativo 30 marzo 2001, n. 165.
+
+
+
+
+<!NuovaPag. 28-29> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 28-29<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 4.</CENTER>
+<CENTER><I>(Disposizioni in materia di ammortizzatori sociali in deroga, di contratti di solidariet&#224; e di contratti di lavoro subordinato a tempo determinato).</I></CENTER>
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 4.</CENTER>
+<CENTER><I>(Disposizioni in materia di ammortizzatori sociali in deroga, di contratti di solidariet&#224; e di contratti di lavoro subordinato a tempo determinato).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. In considerazione del perdurare della crisi occupazionale e della prioritaria esigenza di assicurare adeguata tutela del reddito dei lavoratori in modo tale da garantire il perseguimento della coesione sociale, ferme restando le risorse gi&#224; destinate dall'articolo 2, comma 65, della legge 28 giugno 2012, n. 92, e successive modificazioni, e dall'articolo 1, comma 253, della legge 24 dicembre 2012, n. 228, mediante riprogrammazione dei programmi cofinanziati dai Fondi strutturali comunitari 2007/2013 oggetto del Piano di azione e coesione, al fine di consentire, in vista dell'attuazione del monitoraggio di cui al comma 2, un primo, immediato rifinanziamento degli ammortizzatori sociali in deroga di cui all'articolo 2, commi 64, 65 e 66, della legge 28 giugno 2012, n. 92, e rilevata l'eccezionalit&#224; della situazione di emergenza occupazionale che richiede il reperimento di risorse al predetto fine, anche tramite la ridestinazione di somme gi&#224; diversamente finalizzate dalla legislazione vigente, si dispone quanto segue:
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> l'autorizzazione di spesa di cui all'articolo 1, comma 7, del decreto-legge 20 maggio 1993, n. 148, convertito, con modificazioni, dalla legge 19 luglio 1993, n. 236, confluita nel Fondo sociale per l'occupazione e la formazione, di cui all'articolo 18, comma 1, lettera <I>a)</I>, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2, &#232; incrementata, per l'anno 2013, di 250 milioni di euro per essere destinata al rifinanziamento dei predetti ammortizzatori sociali in deroga, con corrispondente riduzione per l'anno 2013 del Fondo di cui all'ultimo periodo dell'articolo 1, comma 68, della legge 24 dicembre 2007, n. 247, in considerazione dei tempi necessari per il perfezionamento del procedimento concessivo dei relativi benefici contributivi;
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> il comma 255 dell'articolo 1 della legge 24 dicembre 2012, n. 228, &#232; sostituito dal seguente: &#171;<I>255</I>. Le risorse derivanti dall'aumento contributivo di cui all'articolo 25 della legge 21 dicembre 1978, n. 845, per l'anno 2013 sono versate dall'INPS per un importo pari a 246 milioni di euro per l'anno 2013 al bilancio dello Stato per la successiva riassegnazione al Fondo sociale per l'occupazione e la formazione di cui all'articolo 18, comma 1, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2, ai fini del finanziamento degli ammortizzatori sociali in deroga di cui all'articolo 2, commi 64, 65 e 66 della legge 28 giugno 2012, n. 92.&#187;;
+
+<TD VALIGN="TOP" Width=50%>
+
+<!NuovaPag. 30-31> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 30-31<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> l'autorizzazione di spesa di cui all'articolo 1, comma 7, del decreto-legge 20 maggio 1993, n. 148, convertito, con modificazioni, dalla legge 19 luglio 1993, n. 236, confluita nel Fondo sociale per l'occupazione e la formazione, di cui all'articolo 18, comma 1, lettera <I>a)</I>, del decreto-legge 29 novembre 2008, n. 185, convertito, con modificazioni, dalla legge 28 gennaio 2009, n. 2, &#232; ulteriormente incrementata, per l'anno 2013, di 219 milioni di euro derivanti dai seguenti interventi:
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1) le somme versate entro il 15 maggio 2013 all'entrata del bilancio dello Stato ai sensi dell'articolo 148, comma 1, della legge 23 dicembre 2000, n. 388, non riassegnate alla data di entrata in vigore del presente decreto restano acquisite all'entrata del bilancio dello Stato; il Fondo di cui all'articolo 148, comma 2, della legge 23 dicembre 2000, n. 388, &#232; ridotto per l'anno 2013 di 10 milioni di euro;
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2) per l'anno 2013 le disponibilit&#224; di cui all'articolo 5 della legge 6 febbraio 2009, n. 7, sono versate all'entrata del bilancio dello stato per un importo di 100 milioni di euro;
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3) l'autorizzazione di spesa di cui all'articolo 61 della legge 27 dicembre 2002, n. 289, e successive modificazioni &#232; ridotta di 100 milioni di euro per l'anno 2013.
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Con decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro dell'economia e delle finanze, da adottare entro 30 giorni dalla data di entrata in vigore del presente decreto, acquisito il parere della Conferenza permanente per i rapporti tra lo Stato, le regioni e le province autonome di Trento e di Bolzano e sentite le parti sociali, sono determinati, nel rispetto degli equilibri di bilancio programmati, criteri di concessione degli ammortizzatori in deroga alla normativa vigente, con particolare riguardo ai termini di presentazione, a pena di decadenza, delle relative domande, alle causali di concessione, ai limiti di durata e reiterazione delle prestazioni anche in relazione alla continuazione rispetto ad altre prestazioni di sostegno del reddito, alle tipologie di datori di lavoro e lavoratori beneficiari. Allo scopo di verificare gli andamenti di spesa, l'Inps, sulla base dei decreti di concessione inviati telematicamente dal Ministero del lavoro e delle politiche sociali e dalle regioni, effettua un monitoraggio anche preventivo della spesa, rendendolo disponibile al Ministero del lavoro e delle politiche sociali ed al Ministero dell'economia e delle finanze. All'attuazione di quanto previsto dal presente comma l'Inps provvede con le risorse finanziarie, umane e strumentali disponibili a legislazione vigente.
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Con decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro dell'economia e delle finanze, da adottare entro 30 giorni dalla data di entrata in vigore del presente decreto, acquisito il parere della Conferenza permanente per i rapporti tra lo Stato, le regioni e le province autonome di Trento e di Bolzano e sentite le parti sociali, sono determinati, nel rispetto degli equilibri di bilancio programmati, criteri di concessione degli ammortizzatori in deroga alla normativa vigente, con particolare riguardo ai termini di presentazione, a pena di decadenza, delle relative domande, alle causali di concessione, ai limiti di durata e reiterazione delle prestazioni anche in relazione alla continuazione rispetto ad altre prestazioni di sostegno del reddito, alle tipologie di datori di lavoro e lavoratori beneficiari. Allo scopo di verificare gli andamenti di spesa, l'Inps, sulla base dei decreti di concessione inviati telematicamente dal Ministero del lavoro e delle politiche sociali e dalle regioni, effettua un monitoraggio anche preventivo della spesa, rendendolo disponibile al Ministero del lavoro e delle politiche sociali ed al Ministero dell'economia e delle finanze. All'attuazione di quanto previsto dal presente comma l'Inps provvede con le risorse finanziarie, umane e strumentali disponibili a legislazione vigente<B> e, comunque, senza nuovi o maggiori oneri a carico della finanza pubblica.</B>
+
+<!NuovaPag. 32-33> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 32-33<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Al comma 405 dell'articolo 1 della legge 24 dicembre 2012, n. 228, &#232; aggiunto, in fine, il seguente periodo: &#171;Le somme gi&#224; impegnate per il finanziamento dei contratti di solidariet&#224; di cui all'articolo 5, commi 5 e 8, del decreto-legge 20 maggio 1993, n. 148, convertito, con modificazioni, dalla legge 19 luglio 1993, n. 236 e non ancora pagate, sono mantenute nel conto dei residui per l'importo di 57.635.541 euro per essere versate, nell'anno 2013, all'entrata del bilancio dello Stato, ai fini della successiva riassegnazione nello stato di previsione del Ministero del lavoro e delle politiche sociali, per essere destinate alle medesime finalit&#224;.&#187;.
+
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <I>Identico.</I> 
+
+<TR>
+
+<TD VALIGN="top" style="border-right:1px solid black" width="50%"><B>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3-<I>bis.</I> Alla compensazione degli effetti finanziari, in termini di fabbisogno e di indebitamento, derivanti dal comma 3 del presente articolo, pari a 57.635.541 euro per l'anno 2013, si provvede mediante corrispondente utilizzo delle minori spese e delle maggiori entrate recate dal presente decreto.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. All'articolo 1, comma 400, della legge 24 dicembre 2012, n. 228, le parole: &#171;31 luglio 2013&#187; sono sostituite dalle seguenti: &#171;31 dicembre 2013&#187;.
+
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <I>Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. Il termine di cui all'articolo 1, comma 410, primo periodo, della legge 24 dicembre 2012, n. 228, &#232; prorogato al 31 dicembre 2013, fermo restando quanto disposto dall'articolo 2, comma 6 del decreto-legge 29 dicembre 2010, n. 225, convertito, con modificazioni, dalla legge 26 febbraio 2011, n. 10. A tale fine, con le procedure di cui all'articolo 5, comma 1, del decreto-legge 20 giugno 2012, n. 79, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 131, una somma pari a euro 9.943.590,96 per l'anno 2013 &#232; assegnata all'apposito programma dello stato di previsione del Ministero dell'interno.
+
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <I>Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. Il Ministro dell'economia e delle finanze &#232; autorizzato ad apportare con proprio decreto le occorrenti variazioni di bilancio per l'attuazione del presente decreto.
+
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <I>Identico.</I>
+
+<!NuovaPag. 34-35> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 34-35<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 5.</CENTER>
+<CENTER><I>(Entrata in vigore).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Il presente decreto entra in vigore il giorno successivo a quello della sua pubblicazione nella <I>Gazzetta Ufficiale</I> della Repubblica italiana e sar&#224; presentato alle Camere per la conversione in legge.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Il presente decreto, munito del sigillo dello Stato, sar&#224; inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana. &#200; fatto obbligo a chiunque spetti di osservarlo e di farlo osservare.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dato a Roma, add&#236; 21 maggio 2013.
+
+
+
+<P><CENTER>NAPOLITANO</CENTER>
+
+
+
+
+<P>Letta, <I>Presidente del Consiglio dei Ministri.</I>
+<BR>Alfano, <I>Ministro dell'interno.</I>
+<BR>Saccomanni, <I>Ministro dell'economia e delle finanze.</I>
+<BR>Giovannini, <I>Ministro del lavoro e delle politiche sociali.</I>
+
+<P>Visto, <I>il Guardasigilli:</I> Cancellieri.</TABLE>
+
+
+
+
+<P><!AL><DIV align="right"><A NAME="AL2"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV>
+
+
+<!NuovaPag. 36><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 36 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+
+<P><I>L'allegato A al decreto-legge &#232; pubblicato di seguito nel testo del Governo,  al quale le Commissioni non hanno apportato modificazioni.</I>
+
+
+
+
+
+
+<!NuovaPag. 37><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 37 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n037.jpg"></CENTER>
+
+
+
+<!NuovaPag. 38><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 38 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n038.jpg"></CENTER>
+
+
+
+<!NuovaPag. 39><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 39 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n039.jpg"></CENTER>
+
+
+
+<!NuovaPag. 40><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 40 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n040.jpg"></CENTER>
+
+
+
+<!NuovaPag. 41><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 41 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n041.jpg"></CENTER>
+
+
+
+<!NuovaPag. 42><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 42 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n042.jpg"></CENTER>
+
+
+
+<!NuovaPag. 43><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 43 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n043.jpg"></CENTER>
+
+
+
+<!NuovaPag. 44><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 44 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n044.jpg"></CENTER>
+
+
+
+<!NuovaPag. 45><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 45 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n045.jpg"></CENTER>
+
+
+
+<!NuovaPag. 46><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 46 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n046.jpg"></CENTER>
+
+
+
+<!NuovaPag. 47><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 47 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n047.jpg"></CENTER>
+
+
+
+<!NuovaPag. 48><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 48 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n048.jpg"></CENTER>
+
+
+
+<!NuovaPag. 49><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 49 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n049.jpg"></CENTER>
+
+
+
+<!NuovaPag. 50><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 50 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n050.jpg"></CENTER>
+
+
+
+<!NuovaPag. 51><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 51 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n051.jpg"></CENTER>
+
+
+
+<!NuovaPag. 52><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 52 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n052.jpg"></CENTER>
+
+
+
+<!NuovaPag. 53><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 53 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n053.jpg"></CENTER>
+
+
+
+<!NuovaPag. 54><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 54 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n054.jpg"></CENTER>
+
+
+
+<!NuovaPag. 55><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 55 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n055.jpg"></CENTER>
+
+
+
+<!NuovaPag. 56><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 56 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n056.jpg"></CENTER>
+
+
+
+<!NuovaPag. 57><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 57 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n057.jpg"></CENTER>
+
+
+
+<!NuovaPag. 58><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 58 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n058.jpg"></CENTER>
+
+
+
+<!NuovaPag. 59><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 59 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n059.jpg"></CENTER>
+
+
+
+<!NuovaPag. 60><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 60 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n060.jpg"></CENTER>
+
+
+
+<!NuovaPag. 61><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 61 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n061.jpg"></CENTER>
+
+
+
+<!NuovaPag. 62><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 62 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n062.jpg"></CENTER>
+
+
+
+<!NuovaPag. 63><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 63 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n063.jpg"></CENTER>
+
+
+
+<!NuovaPag. 64><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 64 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n064.jpg"></CENTER>
+
+
+
+<!NuovaPag. 65><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 65 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n065.jpg"></CENTER>
+
+
+
+<!NuovaPag. 66><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 66 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n066.jpg"></CENTER>
+
+
+
+<!NuovaPag. 67><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 67 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n067.jpg"></CENTER>
+
+
+
+<!NuovaPag. 68><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 68 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n068.jpg"></CENTER>
+
+
+
+<!NuovaPag. 69><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 69 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n069.jpg"></CENTER>
+
+
+
+<!NuovaPag. 70><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 70 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n070.jpg"></CENTER>
+
+
+
+<!NuovaPag. 71><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 71 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n071.jpg"></CENTER>
+
+
+
+<!NuovaPag. 72><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 72 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n072.jpg"></CENTER>
+
+
+
+<!NuovaPag. 73><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 73 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n073.jpg"></CENTER>
+
+
+
+<!NuovaPag. 74><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 74 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n074.jpg"></CENTER>
+
+
+
+<!NuovaPag. 75><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 75 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n075.jpg"></CENTER>
+
+
+
+<!NuovaPag. 76><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 76 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n076.jpg"></CENTER>
+
+
+
+<!NuovaPag. 77><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 77 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n077.jpg"></CENTER>
+
+
+
+<!NuovaPag. 78><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 78 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n078.jpg"></CENTER>
+
+
+
+<!NuovaPag. 79><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 79 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n079.jpg"></CENTER>
+
+
+
+<!NuovaPag. 80><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 80 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n080.jpg"></CENTER>
+
+
+
+<!NuovaPag. 81><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 81 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n081.jpg"></CENTER>
+
+
+
+<!NuovaPag. 82><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 82 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n082.jpg"></CENTER>
+
+
+
+<!NuovaPag. 83><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 83 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n083.jpg"></CENTER>
+
+
+
+<!NuovaPag. 84><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 84 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n084.jpg"></CENTER>
+
+
+
+<!NuovaPag. 85><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 85 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n085.jpg"></CENTER>
+
+
+
+<!NuovaPag. 86><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 86 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n086.jpg"></CENTER>
+
+
+
+<!NuovaPag. 87><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 87 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n087.jpg"></CENTER>
+
+
+
+<!NuovaPag. 88><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 88 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n088.jpg"></CENTER>
+
+
+
+<!NuovaPag. 89><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 89 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n089.jpg"></CENTER>
+
+
+
+<!NuovaPag. 90><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 90 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n090.jpg"></CENTER>
+
+
+
+<!NuovaPag. 91><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 91 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n091.jpg"></CENTER>
+
+
+
+<!NuovaPag. 92><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 92 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n092.jpg"></CENTER>
+
+
+
+<!NuovaPag. 93><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 93 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n093.jpg"></CENTER>
+
+
+
+<!NuovaPag. 94><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 94 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n094.jpg"></CENTER>
+
+
+
+<!NuovaPag. 95><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 95 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n095.jpg"></CENTER>
+
+
+
+<!NuovaPag. 96><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 96 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n096.jpg"></CENTER>
+
+
+
+<!NuovaPag. 97><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 97 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n097.jpg"></CENTER>
+
+
+
+<!NuovaPag. 98><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 98 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n098.jpg"></CENTER>
+
+
+
+<!NuovaPag. 99><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 99 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n099.jpg"></CENTER>
+
+
+
+<!NuovaPag. 100><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 100 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n100.jpg"></CENTER>
+
+
+
+<!NuovaPag. 101><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 101 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n101.jpg"></CENTER>
+
+
+
+<!NuovaPag. 102><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 102 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n102.jpg"></CENTER>
+
+
+
+<!NuovaPag. 103><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 103 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n103.jpg"></CENTER>
+
+
+
+<!NuovaPag. 104><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 104 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n104.jpg"></CENTER>
+
+
+
+<!NuovaPag. 105><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 105 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n105.jpg"></CENTER>
+
+
+
+<!NuovaPag. 106><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 106 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n106.jpg"></CENTER>
+
+
+
+<!NuovaPag. 107><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 107 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n107.jpg"></CENTER>
+
+
+
+<!NuovaPag. 108><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 108 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n108.jpg"></CENTER>
+
+
+
+<!NuovaPag. 109><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 109 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n109.jpg"></CENTER>
+
+
+
+<!NuovaPag. 110><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 110 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n110.jpg"></CENTER>
+
+
+
+<!NuovaPag. 111><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 111 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n111.jpg"></CENTER>
+
+
+
+<!NuovaPag. 112><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 112 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n112.jpg"></CENTER>
+
+
+
+<!NuovaPag. 113><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 113 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n113.jpg"></CENTER>
+
+
+
+<!NuovaPag. 114><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 114 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n114.jpg"></CENTER>
+
+
+
+<!NuovaPag. 115><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 115 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n115.jpg"></CENTER>
+
+
+
+<!NuovaPag. 116><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 116 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n116.jpg"></CENTER>
+
+
+
+<!NuovaPag. 117><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 117 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n117.jpg"></CENTER>
+
+
+
+<!NuovaPag. 118><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 118 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n118.jpg"></CENTER>
+
+
+
+<!NuovaPag. 119><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 119 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n119.jpg"></CENTER>
+
+
+
+<!NuovaPag. 120><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 120 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n120.jpg"></CENTER>
+
+
+
+<!NuovaPag. 121><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 121 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n121.jpg"></CENTER>
+
+
+
+<!NuovaPag. 122><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 122 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n122.jpg"></CENTER>
+
+
+
+<!NuovaPag. 123><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 123 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n123.jpg"></CENTER>
+
+
+
+<!NuovaPag. 124><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 124 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n124.jpg"></CENTER>
+
+
+
+<!NuovaPag. 125><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 125 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n125.jpg"></CENTER>
+
+
+
+<!NuovaPag. 126><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 126 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n126.jpg"></CENTER>
+
+
+
+<!NuovaPag. 127><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 127 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n127.jpg"></CENTER>
+
+
+
+<!NuovaPag. 128><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 128 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n128.jpg"></CENTER>
+
+
+
+<!NuovaPag. 129><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 129 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n129.jpg"></CENTER>
+
+
+
+<!NuovaPag. 130><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 130 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n130.jpg"></CENTER>
+
+
+
+<!NuovaPag. 131><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 131 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n131.jpg"></CENTER>
+
+
+
+<!NuovaPag. 132><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 132 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n132.jpg"></CENTER>
+
+
+
+<!NuovaPag. 133><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 133 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n133.jpg"></CENTER>
+
+
+
+<!NuovaPag. 134><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 134 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n134.jpg"></CENTER>
+
+
+
+<!NuovaPag. 135><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 135 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n135.jpg"></CENTER>
+
+
+
+<!NuovaPag. 136><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 136 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n136.jpg"></CENTER>
+
+
+
+<!NuovaPag. 137><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 137 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n137.jpg"></CENTER>
+
+
+
+<!NuovaPag. 138><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 138 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n138.jpg"></CENTER>
+
+
+
+<!NuovaPag. 139><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 139 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n139.jpg"></CENTER>
+
+
+
+<!NuovaPag. 140><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 140 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n140.jpg"></CENTER>
+
+
+
+<!NuovaPag. 141><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 141 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n141.jpg"></CENTER>
+
+
+
+<!NuovaPag. 142><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 142 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n142.jpg"></CENTER>
+
+
+
+<!NuovaPag. 143><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 143 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n143.jpg"></CENTER>
+
+
+
+<!NuovaPag. 144><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 144 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n144.jpg"></CENTER>
+
+
+
+<!NuovaPag. 145><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 145 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n145.jpg"></CENTER>
+
+
+
+<!NuovaPag. 146><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 146 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>
+<IMG SRC="immagine.asp?NomeFile=17PDL0005470n146.jpg"></CENTER>
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

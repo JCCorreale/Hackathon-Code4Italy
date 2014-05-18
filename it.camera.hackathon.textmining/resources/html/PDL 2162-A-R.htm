@@ -1,0 +1,1651 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0019650&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0019650&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0019650' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 2162-A-R</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 2162-A/R</B>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DISEGNO DI LEGGE </B></CENTER>
+
+<P><CENTER>presentato dal presidente del consiglio dei ministri</CENTER>
+<CENTER><B>(RENZI)</B></CENTER>
+<CENTER>dal ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(PADOAN)</B></CENTER>
+<CENTER>dal ministro dell'interno</CENTER>
+<CENTER><B>(ALFANO)</B></CENTER>
+<CENTER>e dal ministro dell'istruzione, dell'universit&#224; e della ricerca</CENTER>
+<CENTER><B>(GIANNINI)</B></CENTER>
+
+<P><CENTER>Conversione in legge del decreto-legge 6 marzo 2014, n. 16, recante disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche</CENTER>
+
+<P><CENTER><I>Presentato il 6 marzo 2014</I></CENTER>
+
+<P><CENTER>(Relatori per la maggioranza: <B>MELILLI</B>, <I>per la V Commissione</I>;</CENTER>
+<CENTER><B>BERNARDO</B>,<I> per la VI Commissione</I>)</CENTER>
+
+
+<P><HR ALIGN=LEFT WIDTH=50><FONT SIZE=-1><B>&#160;&#160;&#160;&#160;NOTA: Il presente stampato riporta il testo approvato il 9 aprile 2014 dalle Commissioni permanenti V (Bilancio, tesoro e programmazione) e VI (Finanze), a seguito del rinvio deliberato dall'Assemblea nella seduta dello stesso giorno.
+
+<BR>Per i pareri espressi e per il testo approvato nel corso dell'esame in sede referente anteriormente al rinvio deliberato dall'Assemblea si veda lo stampato n. 2162-A.</B>
+</FONT>
+
+
+
+
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+<P>
+<TABLE BORDER=0 cellpadding="10" cellspacing="0">
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!DC><br>Testo</CENTER>
+<CENTER>del disegno di legge</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><DIV align="right"><A NAME="DC"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> Testo</CENTER>
+<CENTER>delle Commissioni</CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><B>Conversione in legge del decreto-legge 6 marzo 2014, n. 16, recante disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche.</B></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><B>Conversione in legge, con modificazioni, del decreto-legge 6 marzo 2014, n. 16, recante disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche.</B></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Art. 1.</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Art. 1.</CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;1. &#200; convertito in legge il decreto-legge 6 marzo 2014, n. 16, recante disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;1. Il decreto-legge 6 marzo 2014, n. 16, recante disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche, &#232; convertito in legge <B>con le modificazioni riportate in allegato alla presente legge</B>.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;2. Restano validi gli atti e i provvedimenti adottati e sono fatti salvi gli effetti prodottisi e i rapporti giuridici sorti sulla base dei decreti-legge 31 ottobre 2013, n. 126, recante misure finanziarie urgenti in favore di regioni ed enti locali ed interventi localizzati nel territorio, e 30 dicembre 2013, n. 151, recante disposizioni di carattere finanziario indifferibili finalizzate a garantire la funzionalit&#224; di enti locali, la realizzazione di misure in tema di infrastrutture, trasporti ed opere pubbliche nonch&#233; a consentire interventi in favore di popolazioni colpite da calamit&#224; naturali.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;2. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;3. La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella <I>Gazzetta Ufficiale.</I> 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;3. <I>Identico.</I></TABLE> 
+
+
+
+<!NuovaPag. 3> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 3<hr width=30%></hr></center></td></tr>
+
+<P><!AL><DIV align="right"><A NAME="AL1"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV>
+
+
+
+<P>Allegato
+
+<P><CENTER>MODIFICAZIONI APPORTATE DALLE COMMISSIONI</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 1:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 1:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera </I>a)<I>, dopo le parole:</I> &#171;equivalenti&#187; <I>sono inserite le seguenti:</I> &#171;o inferiori&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>la lettera</I> b) <I>&#232; sostituita dalla seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>b)</I> il comma 688 &#232; sostituito dal seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>688</I>. Il versamento della TASI &#232; effettuato, in deroga all'articolo 52 del decreto legislativo n. 446 del 1997, secondo le disposizioni di cui all'articolo 17 del decreto legislativo 9 luglio 1997, n. 241, ovvero tramite apposito bollettino di conto corrente postale al quale si applicano le disposizioni di cui al citato articolo 17, in quanto compatibili. Il versamento della TARI e della tariffa di natura corrispettiva di cui ai commi 667 e 668 &#232; effettuato secondo le disposizioni di cui all'articolo 17 del decreto legislativo n. 241 del 1997, nonch&#232; tramite bollettino di conto corrente postale ovvero tramite le altre modalit&#224; di pagamento offerte dai servizi elettronici di incasso e di pagamento interbancari e postali. Con decreto del Direttore generale del Dipartimento delle finanze del Ministero dell'economia e delle finanze, sono stabilite le modalit&#224; per la rendicontazione e trasmissione dei dati di riscossione, distintamente per ogni contribuente, da parte dei soggetti che provvedono alla riscossione, ai comuni e al sistema informativo del Ministero dell'economia e delle finanze. Il comune stabilisce le scadenze di pagamento della TARI, prevedendo di norma almeno due rate a scadenza semestrale e in modo anche differenziato con riferimento alla TASI. Il versamento della TASI &#232; effettuato nei termini individuati dall'articolo 9, comma 3, del decreto legislativo 14 marzo 2011, n. 23. &#200; consentito il pagamento della TARI e della TASI in unica soluzione entro il 16 giugno di ciascun anno. Il versamento della prima rata della TASI &#232; eseguito sulla base dell'aliquota e delle detrazioni dei dodici mesi dell'anno precedente; il versamento della rata a saldo dell'imposta dovuta per l'intero anno &#232; eseguito, a conguaglio, sulla base degli atti pubblicati nel sito informatico di cui all'articolo 1, comma 3, del decreto legislativo 28 settembre 1998, n. 360, e successive modificazioni, alla data del 28 ottobre di ciascun anno di imposta; a tal fine il comune &#232; tenuto ad effettuare l'invio, esclusivamente in via telematica, delle deliberazioni di approvazione delle aliquote e delle detrazioni, nonch&#233; dei regolamenti della TASI, entro il 21 ottobre dello stesso anno mediante inserimento del testo degli stessi nell'apposita sezione del Portale del federalismo fiscale, per la pubblicazione nel sito informatico di cui al citato decreto legislativo n. 360 del 1998; in caso di mancata pubblicazione entro il termine del 
+
+<!NuovaPag. 4><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+28 ottobre, si applicano gli atti adottati per l'anno precedente. L'efficacia delle deliberazioni e dei regolamenti decorre dalla data di pubblicazione degli stessi nel predetto sito informatico. I comuni sono, altres&#236;, tenuti ad inserire nella suddetta sezione gli elementi risultanti dalle delibere, secondo le indicazioni stabilite dal Ministero dell'economia e delle finanze &#8211; Dipartimento delle finanze, sentita l'Associazione nazionale dei comuni italiani. Per gli immobili diversi dall'abitazione principale, per il primo anno di applicazione della TASI, il versamento della prima rata &#232; effettuato con riferimento all'aliquota di base di cui al comma 676, qualora il comune non abbia deliberato una diversa aliquota entro il 31 maggio 2014, e il versamento della rata a saldo dell'imposta dovuta per l'intero anno &#232; eseguito a conguaglio sulla base delle deliberazioni del consiglio comunale fermo restando il rispetto delle modalit&#224; e dei termini indicati nei periodi precedenti. Per gli immobili adibiti ad abitazione principale, per il primo anno di applicazione della TASI, il versamento dell'imposta &#232; effettuato in un'unica rata, entro il termine del 16 dicembre 2014, salvo il caso in cui alla data del 31 maggio 2014 sia pubblicata nel sito informatico di cui al citato decreto legislativo n. 360 del 1998 la deliberazione di approvazione delle aliquote e delle detrazioni, determinando in questo caso le relative modalit&#224; ed aliquote. Ai fini di quanto previsto dai due periodi precedenti, il comune &#232; tenuto ad effettuare l'invio, esclusivamente in via telematica, della predetta deliberazione, entro il 23 maggio 2014, mediante inserimento del testo della stessa nell'apposita sezione del Portale del federalismo fiscale&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera </I>c) <I>&#232; inserita la seguente:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>c-bis)</I> dopo il comma 728 &#232; inserito il seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>728-bis</I>. A decorrere dall'anno d'imposta 2013, per i beni immobili sui quali sono costituiti diritti di godimento a tempo parziale, di cui all'articolo 69, comma 1, lettera <I>a)</I>, del codice del consumo, di cui al decreto legislativo 6 settembre 2005, n. 206, il versamento dell'imposta municipale propria &#232; effettuato da chi amministra il bene. Questi &#232; autorizzato a prelevare l'importo necessario al pagamento dell'imposta municipale propria dalle disponibilit&#224; finanziarie comuni attribuendo le quote al singolo titolare dei diritti con addebito nel rendiconto annuale&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 1 &#232; inserito il seguente:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis.</I> Per l'anno 2013, in deroga a quanto stabilito dall'articolo 14, comma 8, primo periodo, del decreto legislativo 14 marzo 2011, n. 23, sono valide le delibere di istituzione o variazione dell'addizionale comunale all'imposta sul reddito delle persone fisiche approvate entro i termini di legge e comunicate entro il 31 dicembre 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 3, dopo il primo periodo &#232; inserito il seguente</I>: &#171;Sono altres&#236; esclusi i rifugi alpini non custoditi, i punti d'appoggio e i bivacchi&#187;;
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 4, secondo periodo, le parole:</I> &#171;Ministero dell'economia e delle finanze, di concerto con il Ministero dell'interno&#187; <I>sono sostituite dalle seguenti:</I> &#171;Ministro dell'economia e delle finanze, di concerto con il Ministro dell'interno&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 2:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 1:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>all'alinea, la parola:</I> &#171;appartate&#187; <I>&#232; sostituita dalla seguente:</I> &#171;apportate&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera</I> a)<I> &#232; inserita la seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>a-bis)</I> dopo il comma 568 sono inseriti i seguenti:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>568-bis.</I> Le pubbliche amministrazioni locali indicate nell'elenco di cui all'articolo 1, comma 3, della legge 31 dicembre 2009, n. 196, e le loro societ&#224; controllate direttamente o indirettamente possono procedere:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> allo scioglimento della societ&#224; controllata direttamente o indirettamente. Se lo scioglimento &#232; in corso ovvero &#232; deliberato entro e non oltre dodici mesi dalla data di entrata in vigore della presente disposizione, gli atti e le operazioni posti in essere in favore di pubbliche amministrazioni in seguito allo scioglimento della societ&#224; sono esenti da imposizione fiscale, incluse le imposte sui redditi e l'imposta regionale sulle attivit&#224; produttive, e ad eccezione dell'imposta sul valore aggiunto. Le imposte di registro, ipotecarie e catastali si applicano in misura fissa. In tal caso i dipendenti in forza alla data di entrata in vigore della presente disposizione sono ammessi di diritto alle procedure di cui ai commi da 563 a 568 del presente articolo. Ove lo scioglimento riguardi una societ&#224; controllata indirettamente, le plusvalenze realizzate in capo alla societ&#224; controllante non concorrono alla formazione del reddito e del valore della produzione netta e le minusvalenze sono deducibili nell'esercizio in cui sono realizzate e nei quattro successivi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> all'alienazione, a condizione che questa avvenga con procedura a evidenza pubblica deliberata entro e non oltre dodici mesi ovvero sia in corso alla data di entrata in vigore della presente disposizione, delle partecipazioni detenute alla data di entrata in vigore della presente disposizione e alla contestuale assegnazione del servizio per cinque anni a decorrere dal 1<sup>o</sup> gennaio 2014. In caso di societ&#224; mista al socio privato detentore di una quota di almeno il 30 per cento alla data di entrata in vigore della presente disposizione deve essere riconosciuto il diritto di prelazione. Ai fini delle imposte sui redditi e dell'imposta regionale sulle attivit&#224; produttive, le plusvalenze non concorrono alla formazione del reddito e del valore della produzione netta e le minusvalenze sono deducibili nell'esercizio in cui sono realizzate e nei quattro successivi.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>568-ter</I>. Il personale in esubero delle societ&#224; di cui al comma 563 che, dopo l'applicazione dei commi 565, 566, 567 e 568, risulti privo di occupazione, ha titolo di precedenza, a parit&#224; di requisiti, per 
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+l'impiego nell'ambito di missioni afferenti a contratti di somministrazione di lavoro stipulati, per esigenze temporanee o straordinarie, proprie o di loro enti strumentali, dalle stesse pubbliche amministrazioni&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera</I> c), <I>le parole</I>: &#171;entro il 31 marzo 2014&#187; <I>sono sostituite dalle seguenti</I>: &#171;entro il 31 maggio 2014&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera</I> c)<I> sono inserite le seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>c-bis)</I> al comma 621, secondo periodo, le parole: &#8220;entro il 30 giugno 2014&#8221; sono sostituite dalle seguenti: &#8220;entro il 31 ottobre 2014&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c-ter)</I> al comma 622, le parole: &#8220;Entro il 30 giugno 2014&#8221; sono sostituite dalle seguenti: &#8220;Entro il 31 ottobre 2014&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera</I> d), <I>le parole:</I> &#171;15 aprile 2014&#187; <I>sono sostituite dalle seguenti:</I> &#171;15 giugno 2014&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera </I>d)<I> &#232; inserita la seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>d-bis)</I> al comma 645 &#232; aggiunto, in fine, il seguente periodo: &#8220;L'utilizzo delle superfici catastali per il calcolo della TARI decorre dal 1<sup>o</sup> gennaio successivo alla data di emanazione di un apposito provvedimento del Direttore dell'Agenzia delle entrate, previo accordo da sancire in sede di Conferenza Stato-citt&#224; ed autonomie locali, che attesta l'avvenuta completa attuazione delle disposizioni di cui al comma 647&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>la lettera </I>e)<I> &#232; sostituita dalla seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>e)</I> al comma 649, il secondo periodo &#232; sostituito dai seguenti: &#8220;Per i produttori di rifiuti speciali assimilati agli urbani, nella determinazione della TARI, il comune disciplina con proprio regolamento riduzioni della quota variabile del tributo proporzionali alle quantit&#224; di rifiuti speciali assimilati che il produttore dimostra di aver avviato al riciclo, direttamente o tramite soggetti autorizzati. Con il medesimo regolamento il comune individua le aree di produzione di rifiuti speciali non assimilabili e i magazzini di materie prime e di merci funzionalmente ed esclusivamente collegati all'esercizio di dette attivit&#224; produttive, ai quali si estende il divieto di assimilazione. Al conferimento al servizio pubblico di raccolta dei rifiuti urbani di rifiuti speciali non assimilati, in assenza di convenzione con il comune o con l'ente gestore del servizio, si applicano le sanzioni di cui all'articolo 256, comma 2, del decreto legislativo 3 aprile 2006, n. 152&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera </I>e)<I> sono inserite le seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>e-bis)</I> al comma 652 &#232; aggiunto, in fine, il seguente periodo: &#8220;Nelle more della revisione del regolamento di cui al decreto del Presidente della Repubblica 27 aprile 1999, n. 158, al fine di semplificare l'individuazione dei coefficienti relativi alla graduazione delle tariffe il comune pu&#242; prevedere per gli anni 2014 e 2015 l'adozione dei coefficienti di cui all'allegato 1, tabelle 2, 3a, 3b, 4a e 4b, del citato regolamento di cui al decreto del Presidente della 
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+Repubblica n. 158 del 1999, inferiori ai minimi o superiori ai massimi ivi indicati del 50 per cento e pu&#242; altres&#236; non considerare i coefficienti di cui alle tabelle 1a e 1b del medesimo allegato 1&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>e-ter)</I> il comma 660 &#232; sostituito dal seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>660.</I> Il comune pu&#242; deliberare, con regolamento di cui all'articolo 52 del citato decreto legislativo n. 446 del 1997, ulteriori riduzioni ed esenzioni rispetto a quelle previste dalle lettere da <I>a)</I> a <I>e)</I> del comma 659. La relativa copertura pu&#242; essere disposta attraverso apposite autorizzazioni di spesa e deve essere assicurata attraverso il ricorso a risorse derivanti dalla fiscalit&#224; generale del comune&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>e-quater)</I> il comma 661 &#232; abrogato&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera</I> h)<I>, la parola:</I> &#171;soppressa&#187; <I>&#232; sostituita dalla seguente:</I> &#171;abrogata&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 1 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis</I>. All'articolo 1 del decreto-legge 30 novembre 2013, n. 133, convertito, con modificazioni, dalla legge 29 gennaio 2014, n. 5, il comma 12-<I>bis</I> &#232; abrogato&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Dopo l'articolo 2 &#232; inserito il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Art. 2-<I>bis.</I> &#8211; <I>(Bilancio di previsione).</I> &#8211; 1. Il termine per la deliberazione del bilancio annuale di previsione 2014 degli enti locali, di cui all'articolo 151 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, &#232; ulteriormente differito al 31 luglio 2014&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 3:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>il comma 2 &#232; sostituito dal seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;2. All'articolo 1 della legge 27 dicembre 2013, n. 147, il comma 573 &#232; sostituito dai seguenti:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>573.</I> Per l'esercizio 2014, gli enti locali che hanno avuto il diniego d'approvazione da parte del consiglio comunale del piano di riequilibrio finanziario, come previsto dall'articolo 243-<I>quater</I>, comma 7, del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, e che non abbiano dichiarato il dissesto finanziario ai sensi dell'articolo 246 del medesimo testo unico, possono riproporre, entro il termine perentorio di centoventi giorni dalla data di entrata in vigore della presente disposizione, la procedura di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I> del testo unico, qualora sia stato certificato, nell'ultimo rendiconto approvato, che l'ente non si trova nella condizione di deficitariet&#224; strutturale, di cui all'articolo 242 del testo unico, secondo i parametri indicati nel decreto del Ministro 
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+dell'interno previsto dallo stesso articolo 242. In pendenza del termine di centoventi giorni non trova applicazione l'articolo 243-<I>bis</I>, comma 3, del citato testo unico.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>573-bis.</I> Per l'esercizio 2014, agli enti locali che abbiano presentato, nel 2013, i piani di riequilibrio finanziario previsti dall'articolo 243-<I>bis</I> del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, per i quali sia intervenuta una deliberazione di diniego da parte della competente sezione regionale della Corte dei conti, ovvero dalle sezioni riunite, &#232; data facolt&#224; di riproporre un nuovo piano di riequilibrio, previa deliberazione consiliare, entro il termine perentorio di centoventi giorni giorni dalla data di entrata in vigore della presente disposizione. Tale facolt&#224; &#232; subordinata all'avvenuto conseguimento di un miglioramento, inteso sia come aumento dell'avanzo di amministrazione che come diminuzione del disavanzo di amministrazione, registrato nell'ultimo rendiconto approvato. Nelle more del termine previsto per la presentazione del nuovo piano di riequilibrio, e sino alla conclusione della relativa procedura, non si applica l'articolo 243<I>-quater,</I> comma 7, del predetto testo unico.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>573-ter.</I> Nelle more del termine previsto per la presentazione del nuovo piano di riequilibrio di cui ai commi 573 e 573-<I>bis</I>, e sino alla conclusione della relativa procedura, le procedure esecutive, intraprese nei confronti dell'ente, sono sospese&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 2 &#232; inserito il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;2-<I>bis</I>. Al comma 10-<I>bis</I> dell'articolo 1 del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, dopo le parole: &#8220;anche se riconosciuti in bilancio in data successiva&#8221; sono inserite le seguenti: &#8220;, ivi inclusi quelli contenuti nel piano di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I> del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, approvato con delibera della Sezione regionale di controllo della Corte dei conti&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>il comma 3 &#232; sostituito dal seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;3. All'articolo 243-<I>bis</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, sono apportate le seguenti modificazioni:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> al comma 1, l'ultimo periodo &#232; sostituito dal seguente: &#8220;La predetta procedura non pu&#242; essere iniziata qualora sia decorso il termine assegnato dal prefetto, con lettera notificata ai singoli consiglieri, per la deliberazione del dissesto, di cui all'articolo 6, comma 2, del decreto legislativo 6 settembre 2011, n. 149&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> dopo il comma 9 &#232; aggiunto il seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>9-bis</I>. In deroga al comma 8, lettera <I>g)</I>, e al comma 9, lettera <I>d)</I>, del presente articolo e all'articolo 243-<I>ter</I>, i comuni che fanno ricorso alla procedura di riequilibrio finanziario pluriennale prevista dal presente articolo possono contrarre mutui, oltre i limiti di cui al comma 1 dell'articolo 204, necessari alla copertura di spese di investimento relative a progetti ed interventi che garantiscano l'ottenimento 
+
+<!NuovaPag. 9><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 9 <hr width=30%></hr></center><br></td></tr></DIV>
+
+di risparmi di gestione funzionali al raggiungimento degli obiettivi fissati nel piano di riequilibrio finanziario pluriennale, per un importo non superiore alle quote di capitale dei mutui e dei prestiti obbligazionari precedentemente contratti ed emessi, rimborsate nell'esercizio precedente&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 3 sono inseriti i seguenti:</I> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;3-<I>bis.</I> Al comma 5 dell'articolo 243-<I>bis</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, le parole: &#8220;60 giorni&#8221; sono sostituite dalle seguenti: &#8220;90 giorni&#8221;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3-<I>ter.</I> All'articolo 243-<I>quater</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, dopo il comma 7 sono aggiunti i seguenti:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8220;<I>7-bis.</I> Qualora, durante la fase di attuazione del piano, dovesse emergere, in sede di monitoraggio, un grado di raggiungimento degli obiettivi intermedi superiore rispetto a quello previsto, &#232; riconosciuta all'ente locale la facolt&#224; di proporre una rimodulazione dello stesso, anche in termini di riduzione della durata del piano medesimo. Tale proposta, corredata del parere positivo dell'organo di revisione economico-finanziaria dell'ente, deve essere presentata direttamente alla competente Sezione regionale di controllo della Corte dei conti. Si applicano i commi 3, 4 e 5.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>7-ter.</I> In caso di esito positivo della procedura di cui al comma 7-<I>bis</I>, l'ente locale provvede a rimodulare il piano di riequilibrio approvato, in funzione della minore durata dello stesso. Restano in ogni caso fermi gli obblighi posti a carico dell'organo di revisione economico-finanziaria previsti dal comma 6&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3-<I>quater</I>. Dopo l'articolo 243<I>-quinquies</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, &#232; inserito il seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Art. 243-<I>sexies.  (Pagamento di debiti). &#8211; 1.</I> In considerazione dell'esigenza di dare prioritario impulso all'economia in attuazione dell'articolo 41 della Costituzione, le risorse provenienti dal Fondo di rotazione di cui all'articolo 243-<I>ter</I> sono destinate esclusivamente al pagamento dei debiti presenti nel piano di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I>.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>2.</I> Non sono ammessi atti di sequestro o di pignoramento sulle risorse di cui al comma 1&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 4, capoverso 1-</I>ter:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al primo periodo, dopo le parole:</I> &#171;di riduzione&#187; <I>sono inserite le seguenti:</I> &#171;di almeno il 20 per cento&#187;; 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al secondo periodo, dopo le parole</I>: &#171;Fino al raggiungimento dell'equilibrio&#187; <I>sono inserite le seguenti</I>: &#171;e per i tre esercizi successivi&#187;;
+
+<!NuovaPag. 10><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 10 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 4 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;4-<I>bis.</I> Ai fini dell'attuazione dei piani di riequilibrio pluriennale di cui all'articolo 243-<I>quater</I>, commi 1 e 3, del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, e del piano triennale per la riduzione del disavanzo e per il riequilibrio strutturale di bilancio di cui all'articolo 16, comma 2, del presente decreto, le societ&#224; controllate dagli enti locali interessati da tali piani applicano le disposizioni di cui all'articolo 1, comma 563, della legge 27 dicembre 2013, n. 147, anche in deroga al principio della coerenza con il rispettivo ordinamento professionale&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Dopo l'articolo 3 &#232; inserito il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Art. 3-<I>bis.</I> &#8211; <I>(Fondo svalutazione crediti).</I> &#8211; 1. Per l'anno 2014 il fondo svalutazione crediti di cui all'articolo 6, comma 17, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, e all'articolo 1, comma 17, del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, non pu&#242; essere inferiore al 20 per cento dei residui attivi, di cui ai titoli primo e terzo dell'entrata, aventi anzianit&#224; superiore a cinque anni&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 4:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 1:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al secondo periodo, le parole:</I> &#171;devono obbligatoriamente adottare&#187; <I>sono sostituite dalla seguente:</I> &#171;adottano&#187; <I>e le parole:</I> &#171;nella misura&#187; <I>sono sostituite dalle seguenti:</I> &#171;in misura&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al sesto periodo, dopo le parole:</I> &#171;enti locali trasmettono&#187; <I>sono inserite le seguenti:</I> &#171;entro il 31 maggio di ciascun anno&#187;<I> e sono aggiunte, in fine, le seguenti parole:</I> &#171;ovvero delle misure di cui al terzo periodo&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>il comma 3 &#232; sostituito dal seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;3. Fermo restando l'obbligo di recupero previsto dai commi 1 e 2, non si applicano le disposizioni di cui al quinto periodo del comma 3-<I>quinquies</I> dell'articolo 40 del decreto legislativo 30 marzo 2001, n. 165, agli atti di costituzione e di utilizzo dei fondi, comunque costituiti, per la contrattazione decentrata adottati anteriormente ai termini di adeguamento previsti dall'articolo 65 del decreto legislativo 27 ottobre 2009, n. 150, e successive modificazioni, che non abbiano comportato il riconoscimento giudiziale della responsabilit&#224; erariale, adottati dalle regioni e dagli enti locali che hanno rispettato il patto di stabilit&#224; interno, la vigente disciplina in materia di spese e assunzione di personale, nonch&#233; le disposizioni di cui all'articolo 9, commi 1, 2-<I>bis</I>, 21 e 28, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122, e successive modificazioni&#187;;
+
+<!NuovaPag. 11><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 11 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 3 sono aggiunti i seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;3-<I>bis.</I> Al fine di prevenire l'insorgere di contenziosi a carico delle amministrazioni coinvolte, le regioni e gli enti locali che, nel periodo 2010-2013, hanno attivato, anche attraverso l'utilizzo dei propri organismi partecipati, anche superando i vincoli previsti dalla normativa vigente in materia di contenimento complessivo della spesa di personale limitatamente alla parte di spesa coperta dai finanziamenti regionali, iniziative di politica attiva del lavoro finalizzate alla creazione di soluzioni occupazionali a tempo determinato dei lavoratori di cui all'articolo 2, comma 1, del decreto legislativo 28 febbraio 2000, n. 81, e all'articolo 3, comma 1, del decreto legislativo 7 agosto 1997, n. 280, possono, limitatamente al medesimo periodo, provvedere al pagamento delle competenze retributive maturate, nel rispetto del patto di stabilit&#224; interno e nei limiti delle disponibilit&#224; finanziarie, garantendo comunque la salvaguardia degli equilibri di bilancio, senza che ci&#242; determini l'applicazione delle sanzioni previste dalla legislazione vigente.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3-<I>ter.</I> Le disposizioni di cui al comma 3-<I>bis</I> sono limitate ai soli aspetti retributivi e non possono in alcun modo comportare il consolidamento delle posizioni lavorative acquisite in violazione dei vincoli di finanza pubblica.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3-<I>quater.</I> Resta fermo quanto previsto dall'articolo 4, comma 8, del decreto-legge 31 agosto 2013, n. 101, convertito, con modificazioni, dalla legge 30 ottobre 2013, n. 125, e dall'articolo 1, comma 209, della legge 27 dicembre 2013, n. 147&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 7, al comma 1, capoverso 729-</I>ter<I>, le parole:</I> &#171;di natura non regolamentare&#187; <I>sono soppresse.</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 10, al comma 1, primo periodo, le parole:</I> &#171;con decreto ministeriale del 4 maggio 2012&#187; <I>sono sostituite dalle seguenti:</I> &#171;con decreto del Ministro dell'interno 4 maggio 2012, pubblicato nella <I>Gazzetta Ufficiale</I> n. 145 del 23 giugno 2012&#187;<I>.</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 11, al comma 1, capoverso 3, secondo periodo, le parole:</I> &#171;Il rapporto e la relazione di fine legislatura sono pubblicati&#187; <I>sono sostituite dalle seguenti:</I> &#171;La relazione di fine mandato &#232; pubblicata&#187; <I>e le parole</I>: &#171;in fine&#187; <I>sono soppresse.</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 12:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>il comma 1 &#232; sostituito dal seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1. All'articolo 15, comma 3, del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, le parole: &#8220;successivi alla&#8221; sono sostituite dalle seguenti: &#8220;decorrenti dalla&#8221;&#187;;
+
+<!NuovaPag. 12><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 12 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 1 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis.</I> Le somme iscritte nel conto dei residui per l'anno 2014 sul fondo istituito dall'articolo 41, comma 16-<I>sexiesdecies</I>.1, secondo periodo, del decreto-legge 30 dicembre 2008, n. 207, convertito, con modificazioni, dalla legge 27 febbraio 2009, n. 14, sono destinate alla regione Emilia-Romagna quale contributo straordinario di 2 milioni di euro da impiegare per il finanziamento di interventi di completamento del passaggio dei comuni di San Leo, Pennabilli, Novafeltria, Sant'Agata Feltria, Talamello, Casteldelci e Maiolo dalla regione Marche, provincia di Pesaro-Urbino, alla regione Emilia-Romagna, provincia di Rimini&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 14, al comma 1, lettera</I> b)<I>, capoverso, le parole:</I> &#171;sono stabilite mediante intesa in Conferenza Stato Citt&#224; e autonomie locali entro e non oltre 15 marzo 2014&#187; <I>sono sostituite dalle seguenti:</I> &#171;sono stabiliti mediante intesa in sede di Conferenza Stato-citt&#224; ed autonomie locali, da adottare entro il 15 aprile 2014&#187;<I>.</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 15:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 1 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis.</I> In vista della futura trasformazione delle province in enti di secondo livello, nel caso in cui il comparto province consegua l'obiettivo di patto di stabilit&#224; interno ad esso complessivamente assegnato per l'anno 2013, la sanzione di cui all'articolo 31, comma 26, lettera <I>a)</I>, della legge 12 novembre 2011, n. 183, si applica alle province che non rispettano il patto per l'anno 2013 nel senso che l'ente medesimo &#232; assoggettato alla riduzione del fondo sperimentale di riequilibrio in misura pari alla differenza tra il risultato registrato e l'obiettivo programmatico e comunque per un importo non superiore al 3 per cento delle entrate correnti registrate nell'ultimo consuntivo&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>la rubrica &#232; sostituita dalla seguente: </I>&#171;Disposizioni in materia di province&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 16:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 1, le parole: &#171;</I>entro 90 giorni&#187; <I>sono sostituite dalle seguenti: &#171;</I>entro 120 giorni&#187;, <I>le parole: &#171;</I>e alle Camere&#187; <I>sono sostituite dalle seguenti: &#171;</I>, alle Camere e alla Corte dei conti&#187; <I>e dopo le parole: &#171;</I>negli anni precedenti&#187; <I>sono inserite le seguenti</I>: <I>&#171;</I>, anche con riferimento alle societ&#224; controllate e partecipate da Roma Capitale&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 2:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>all'alinea, le parole:</I> &#171;e alle Camere&#187; <I>sono sostituite dalle seguenti: &#171;</I>, alle Camere e alla Corte dei conti&#187;;
+
+<!NuovaPag. 13><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 13 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera</I> a) <I>sono inserite le seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>a-bis)</I> operare la ricognizione di tutte le societ&#224; controllate e partecipate da Roma Capitale, evidenziando il numero dei consiglieri e degli amministratori, nonch&#233; le somme complessivamente erogate a ciascuno di essi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a-ter</I>) avviare un piano rafforzato di lotta all'evasione tributaria e tariffaria&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera</I> c)<I>, dopo le parole:</I> &#171;esistenti&#187; <I>sono inserite le seguenti:</I> &#171;, ivi inclusa la mobilit&#224; interaziendale,&#187; <I>e sono aggiunte, in fine, le seguenti parole</I>: &#171;, nonch&#233; lo strumento del distacco di cui all'articolo 30 del decreto legislativo 10 settembre 2003, n. 276. Il distacco e l'utilizzo di dirigenti e personale possono avvenire esclusivamente nei limiti della spesa consolidata accertata con riferimento all'anno precedente nel quadro degli accordi che saranno adottati con le organizzazioni sindacali&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>alla lettera</I> e)<I>, dopo le parole:</I> &#171;riequilibrio finanziario del comune,&#187; <I>sono inserite le seguenti:</I> &#171;alla fusione delle societ&#224; partecipate che svolgono funzioni omogenee,&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo la lettera</I> e) <I>&#232; aggiunta la seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>e-bis)</I> responsabilizzare i dirigenti delle societ&#224; partecipate, legando le indennit&#224; di risultato a specifici obiettivi di bilancio&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 3, primo periodo, le parole:</I> &#171;e dei piani pluriennali di cui al terzo periodo del comma 5&#187; <I>sono sostituite dalle seguenti</I>: &#171;del presente articolo e dei piani pluriennali di cui al sesto periodo del comma 196-<I>bis</I> dell'articolo 2 della legge 23 dicembre 2009, n. 191, introdotto dal comma 5 del presente articolo,&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>il comma 4 &#232; sostituito dai seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;4. Con decreto del Presidente del Consiglio dei ministri, su proposta del Ministro dell'interno, di concerto con il Ministro dell'economia e delle finanze, sentita l'Amministrazione capitolina, &#232; approvato il piano triennale di cui al comma 2 entro sessanta giorni dalla data di trasmissione del medesimo al Ministero dell'interno, al Ministero dell'economia e delle finanze e alle Camere. Solo al fine di reperire le risorse volte a realizzare gli obiettivi del piano, il comune di Roma Capitale pu&#242; utilizzare le entrate straordinarie, comprese le eventuali sanzioni ad esse collegate, per il riequilibrio di parte corrente, in deroga all'articolo 162 del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4-<I>bis</I>. Roma Capitale provvede alle eventuali variazioni del bilancio di previsione in coerenza con il piano triennale approvato dalla giunta, nonch&#233; con il decreto del Presidente del Consiglio dei ministri emanato successivamente ai sensi del comma 4.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4-<I>ter.</I> Con decreto del Presidente del Consiglio dei ministri, su proposta del Ministro dell'interno, di concerto con il Ministro dell'economia e delle finanze, sentita l'Amministrazione capitolina, sono 
+
+<!NuovaPag. 14><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 14 <hr width=30%></hr></center><br></td></tr></DIV>
+
+approvate, previo parere del tavolo di cui al comma 3, a condizione che siano prive di effetti sui saldi della finanza pubblica, modifiche al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4-<I>quater</I>. All'articolo 1, comma 10-<I>bis</I>, primo periodo, del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, sono aggiunte, in fine, le seguenti parole: &#8220;, ivi inclusi quelli contenuti nel piano di cui al comma 2 dell'articolo 16 del decreto-legge 6 marzo 2014, n. 16&#8221;&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 5:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al primo periodo, dopo le parole:</I> &#171;obbligazioni od oneri del Comune di Roma&#187; <I>sono inserite le seguenti</I>: &#171;, ivi inclusi gli oneri derivanti dalle procedure di cui all'articolo 42-<I>bis</I> del testo unico di cui al decreto del Presidente della Repubblica 8 giugno 2001, n. 327,&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al quarto periodo, le parole:</I> &#171;del presente decreto&#187; <I>sono sostituite dalle seguenti:</I> &#171;della presente disposizione&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 5 sono aggiunti i seguenti:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;5-<I>bis</I>. Al fine di contribuire al superamento della crisi in atto nel ciclo di gestione integrata dei rifiuti nel territorio di Roma Capitale, per assicurare l'attuazione degli interventi previsti dal Protocollo d'intesa &#8220;Patto per Roma&#8221; del 4 agosto 2012, previa validazione da parte del Ministero dell'ambiente e della tutela del territorio e del mare del programma di lavoro triennale &#8220;Raccolta differenziata&#8221;, ivi previsto, opportunamente rimodulato sulla base delle risorse rese disponibili, sono finalizzate:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> nel limite di 6,5 milioni di euro per il 2014 e di 7,5 milioni di euro per il 2015, le risorse iscritte in bilancio, per i medesimi esercizi, ai sensi dell'articolo 10, comma 1, del decreto legislativo 31 marzo 1998, n. 112;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> nel limite di 5,5 milioni di euro per il 2014 e di 3 milioni di euro per il 2015, le risorse finanziarie disponibili nello stato di previsione del Ministero dell'ambiente e della tutela del territorio e del mare, per i medesimi esercizi, a valere sull'autorizzazione di spesa recata dall'articolo 2, comma 323, della legge 24 dicembre 2007, n. 244.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5-<I>ter.</I> Alla compensazione degli effetti finanziari in termini di fabbisogno e di indebitamento netto derivanti dall'attuazione del comma 5-<I>bis</I>, lettera <I>a),</I> pari a 6,5 milioni di euro per il 2014 e a 7,5 milioni di euro per il 2015, si provvede mediante corrispondente utilizzo del Fondo per la compensazione degli effetti finanziari non previsti a legislazione vigente conseguenti all'attualizzazione di contributi pluriennali, di cui all'articolo 6, comma 2, del decreto-legge 7 ottobre 2008, n. 154, convertito, con modificazioni, dalla legge 4 dicembre 2008, n. 189, e successive modificazioni&#187;.
+
+<!NuovaPag. 15><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 15 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 17:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 2, secondo periodo, le parole:</I> &#171;e 23 milioni annui a decorrere dal 2015&#187; <I>sono sostituite dalle seguenti:</I> &#171;e di 23 milioni di euro annui a decorrere dall'anno 2015&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 4 &#232; inserito il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;4-<I>bis.</I> Al fine di consentire la prosecuzione degli interventi sulla rete ferroviaria nazionale e l'attuazione dei relativi programmi di investimento, fino alla conclusione della procedura di approvazione del contratto di programma-parte investimenti 2012-2016, da effettuare entro il termine massimo del 30 giugno 2014, i rapporti tra lo Stato e il gestore dell'infrastruttura sono regolati, nel rispetto degli equilibri di finanza pubblica, sulla base di quanto stabilito dal contratto di programma 2007-2011&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 5, primo periodo, le parole:</I> &#171;legge 7 dicembre 2012, n. 212&#187; <I>sono sostituite dalle seguenti:</I> &#171;legge 7 dicembre 2012, n. 213&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 18, dopo il comma 1 &#232; aggiunto il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis</I>. Per i mutui contratti dagli enti locali antecedentemente al 1<sup>o</sup> gennaio 2005 con oneri a totale carico dello Stato, ivi compresi quelli in cui &#232; l'ente locale a pagare le rate di ammortamento con obbligo da parte dello Stato di rimborsare le rate medesime, il comma 76 dell'articolo 1 della legge 30 dicembre 2004, n. 311, si interpreta nel senso che l'ente locale beneficiario pu&#242; iscrivere il ricavato dei predetti mutui nelle entrate per trasferimenti in conto capitale, con vincolo di destinazione agli investimenti. Considerati validi gli effetti di quanto operato fino al 31 dicembre 2013, a decorrere dall'anno 2014, nel caso di iscrizione del ricavato dei mutui di cui al primo periodo tra le entrate per trasferimenti in conto capitale con vincolo di destinazione agli investimenti, il rimborso da parte dello Stato delle relative rate di ammortamento non &#232; considerato tra le entrate finali rilevanti ai fini del patto di stabilit&#224; interno&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 19:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>dopo il comma 1 &#232; inserito il seguente:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;1-<I>bis.</I> All'articolo 18, comma 8-<I>bis</I>, del decreto-legge 21 giugno 2013, n. 69, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 98, sono apportate le seguenti modificazioni:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> al primo periodo, dopo le parole: &#8220;degli anni 2014, 2015 e 2016&#8221; sono inserite le seguenti: &#8220;, in relazione all'articolo 2, comma 329, della legge 24 dicembre 2007, n. 244,&#8221;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> al secondo periodo, le parole: &#8220;nonch&#233; degli istituti cui sono affidate tali attivit&#224;&#8221; sono soppresse&#187;;
+
+<!NuovaPag. 16><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 16 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>al comma 2, dopo le parole:</I> &#171;28 febbraio 2014&#187; <I>sono inserite le seguenti:</I> &#171;, ovunque ricorrono,&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>All'articolo 20, al comma 2, dopo le parole:</I> &#171;e n. 11 del 17 luglio 2009&#187; <I>sono inserite le seguenti:</I> &#171;, pubblicati, rispettivamente, nella <I>Gazzetta Ufficiale</I> n. 89 del 17 aprile 2009 e n. 173 del 28 luglio 2009,&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Dopo l'articolo 20 &#232; inserito il seguente</I>:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Art. 20-<I>bis. &#8211; (Finanziamento del Fondo per le emergenze nazionali).</I> &#8211; 1. Al comma 120 dell'articolo 1 della legge 27 dicembre 2013, n. 147, dopo le parole: &#8220;programmazione 2007-2013,&#8221; sono inserite le seguenti: &#8220;una quota di 50 milioni di euro a valere sulla quota nazionale &#232; destinata al Fondo per le emergenze nazionali istituito presso la Presidenza del Consiglio dei ministri, di cui alla legge 24 febbraio 1992, n. 225, e&#8221; e dopo le parole: &#8220;dall'anno 2009&#8221; sono aggiunte le seguenti: &#8220;individuati con provvedimento del Capo del Dipartimento della protezione civile&#8221;&#187;.
+
+<!NuovaPag. 17><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 17 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DECRETO-LEGGE 6 MARZO 2014, N. 16</B></CENTER>
+
+
+
+<!NuovaPag. 18-19><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 18-19 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+<P>
+<TABLE BORDER=0 cellpadding="10" cellspacing="0">
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><!DL><br><I>Decreto-legge 6 marzo 2014, n. 16, pubblicato nella </I>Gazzetta Ufficiale <I>n. 54 del 6 marzo 2014.</I>
+
+<TD VALIGN="TOP" Width=50%>&#160;
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER>Testo del decreto-legge</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><DIV align="right"><A NAME="DL"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> Testo del decreto-legge comprendente le modificazioni  apportate dalle Commissioni</CENTER>
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><B>Disposizioni urgenti in materia di finanza locale, nonch&#233; misure volte a garantire la funzionalit&#224; dei servizi svolti nelle istituzioni scolastiche.</B></CENTER>
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER>IL PRESIDENTE DELLA REPUBBLICA</CENTER>
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Visti gli articoli 77 e 87 della Costituzione;
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Considerata la straordinaria necessit&#224; ed urgenza di adottare disposizioni in materia di finanza locale, misure volte a consentire il superamento di situazioni di crisi finanziaria degli enti territoriali, nonch&#233; per garantire l'equilibrio di bilancio e la stabilit&#224; finanziaria dei medesimi;
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Considerata, altres&#236;, la necessit&#224; ed urgenza di fronteggiare l'emergenza occupazionale nel settore della scuola;
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Vista la deliberazione del Consiglio dei Ministri, adottata nella riunione del 28 febbraio 2014;
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sulla proposta del Presidente del Consiglio dei Ministri, del Ministro dell'economia e delle finanze, del Ministro dell'interno e del Ministro dell'istruzione, dell'universit&#224; e della ricerca;
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER>emana</CENTER>
+<CENTER>il seguente decreto-legge:</CENTER>
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 1.</CENTER>
+<CENTER><I>(Disposizioni in materia di TARI e TASI).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 1.</CENTER>
+<CENTER><I>(Disposizioni in materia di TARI e TASI).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. All'articolo 1, della legge 27 dicembre 2013, n. 147 sono apportate le seguenti modifiche:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico:</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> al comma 677 &#232; aggiunto, in fine, il seguente periodo &#171;Per lo stesso anno 2014, nella determinazione delle aliquote TASI possono essere superati i limiti stabiliti nel primo e nel secondo periodo, per un ammontare complessivamente non superiore allo 0,8 per mille a condizione che siano finanziate, relativamente alle abitazioni principali e alle unit&#224; immobiliari ad esse equiparate di cui all'articolo 13, comma 2, del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, detrazioni d'imposta o altre misure, tali da generare effetti sul carico di imposta 
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> al comma 677 &#232; aggiunto, in fine, il seguente periodo &#171;Per lo stesso anno 2014, nella determinazione delle aliquote TASI possono essere superati i limiti stabiliti nel primo e nel secondo periodo, per un ammontare complessivamente non superiore allo 0,8 per mille a condizione che siano finanziate, relativamente alle abitazioni principali e alle unit&#224; immobiliari ad esse equiparate di cui all'articolo 13, comma 2, del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, detrazioni d'imposta o altre misure, tali da generare effetti sul carico di imposta 
+
+<!NuovaPag. 20-21> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 20-21<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">TASI equivalenti a quelli determinatisi con riferimento all'IMU relativamente alla stessa tipologia di immobili, anche tenendo conto di quanto previsto dall'articolo 13 del citato decreto-legge n. 201, del 2011;
+<TD VALIGN="TOP" Width=50%>TASI equivalenti <B>o inferiori</B> a quelli determinatisi con riferimento all'IMU relativamente alla stessa tipologia di immobili, anche tenendo conto di quanto previsto dall'articolo 13 del citato decreto-legge n. 201, del 2011;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> il comma 688 &#232; sostituito dal seguente: &#171;<I>688.</I> Il versamento della TASI &#232; effettuato, in deroga all'articolo 52 del decreto legislativo n. 446 del 1997, secondo le disposizioni di cui all'articolo 17 del decreto legislativo 9 luglio 1997, n. 241, nonch&#233;, tramite apposito bollettino di conto corrente postale al quale si applicano le disposizioni di cui al citato articolo 17, in quanto compatibili. Il versamento della TARI e della tariffa di natura corrispettiva di cui ai commi 667 e 668, &#232; effettuato secondo le disposizioni di cui all'articolo 17 del decreto legislativo n. 241 del 1997 ovvero tramite le altre modalit&#224; di pagamento offerte dai servizi elettronici di incasso e di pagamento interbancari e postali. Con decreto del Direttore generale del Dipartimento delle finanze del Ministero dell'economia e delle finanze, sono stabilite le modalit&#224; per la rendicontazione e trasmissione dei dati di riscossione, distintamente per ogni contribuente, da parte dei soggetti che provvedono alla riscossione, ai comuni e al sistema informativo del Ministero dell'economia e delle finanze. Il comune stabilisce le scadenze di pagamento della TARI e della TASI, prevedendo di norma almeno due rate a scadenza semestrale e in modo anche differenziato con riferimento <B>alla TARI e</B> alla TASI. &#200; consentito il pagamento in unica soluzione entro il 16 giugno di ciascun anno.&#187;;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> il comma 688 &#232; sostituito dal seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>688. </I>Il versamento della TASI &#232; effettuato, in deroga all'articolo 52 del decreto legislativo n. 446 del 1997, secondo le disposizioni di cui all'articolo 17 del decreto legislativo 9 luglio 1997, n. 241, <B>ovvero</B> tramite apposito bollettino di conto corrente postale al quale si applicano le disposizioni di cui al citato articolo 17, in quanto compatibili. Il versamento della TARI e della tariffa di natura corrispettiva di cui ai commi 667 e 668 &#232; effettuato secondo le disposizioni di cui all'articolo 17 del decreto legislativo n. 241 del 1997, <B>nonch&#233; tramite bollettino di conto corrente postale</B> ovvero tramite le altre modalit&#224; di pagamento offerte dai servizi elettronici di incasso e di pagamento interbancari e postali. Con decreto del Direttore generale del Dipartimento delle finanze del Ministero dell'economia e delle finanze, sono stabilite le modalit&#224; per la rendicontazione e trasmissione dei dati di riscossione, distintamente per ogni contribuente, da parte dei soggetti che provvedono alla riscossione, ai comuni e al sistema informativo del Ministero dell'economia e delle finanze. Il comune stabilisce le scadenze di pagamento della TARI, prevedendo di norma almeno due rate a scadenza semestrale e in modo anche differenziato con riferimento alla TASI.<B> Il versamento della TASI &#232; effettuato nei termini individuati dall'articolo 9, comma 3, del decreto legislativo 14 marzo 2011, n. 23.</B> &#200; consentito il pagamento<B> della TARI e della TASI </B>in unica soluzione entro il 16 giugno di ciascun anno.<B> Il versamento della prima rata della TASI &#232; eseguito sulla base dell'aliquota e delle detrazioni dei dodici mesi dell'anno precedente; il versamento della rata a saldo dell'imposta dovuta per l'intero anno &#232; eseguito, a conguaglio, sulla base degli atti pubblicati nel sito informatico di cui all'articolo 1, comma 3, del decreto legislativo 28 settembre 1998, n. 360, e successive modificazioni, alla data del 28 ottobre di ciascun anno di imposta; a tal fine il comune &#232; tenuto ad effettuare l'invio, esclusivamente in via telematica, delle deliberazioni di approvazione delle aliquote e delle detrazioni, nonch&#233; dei regolamenti della TASI, entro il 21 ottobre dello stesso anno mediante inserimento del testo degli stessi nell'apposita sezione del Portale del federalismo fiscale, per la pubblicazione nel sito informatico di cui al citato decreto legislativo n. 360 del 1998; in caso di mancata pubblicazione entro il termine del 28 ottobre, si applicano gli atti adottati per l'anno precedente. L'efficacia delle deliberazioni e dei regolamenti decorre dalla data di pubblicazione degli stessi nel predetto sito informatico. I comuni sono, altres&#236;, tenuti ad inserire nella suddetta sezione gli elementi risultanti dalle delibere, secondo le indicazioni stabilite dal Ministero dell'economia e delle finanze &#8211; Dipartimento delle finanze, sentita l'Associazione</B> 
+
+<!NuovaPag. 22-23> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 22-23<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%><B>nazionale dei comuni italiani. Per gli immobili diversi dall'abitazione principale, per il primo anno di applicazione della TASI, il versamento della prima rata &#232; effettuato con riferimento all'aliquota di base di cui al comma 676, qualora il comune non abbia deliberato una diversa aliquota entro il 31 maggio 2014, e il versamento della rata a saldo dell'imposta dovuta per l'intero anno &#232; eseguito a conguaglio sulla base delle deliberazioni del consiglio comunale fermo restando il rispetto delle modalit&#224; e dei termini indicati nei periodi precedenti. Per gli immobili adibiti ad abitazione principale, per il primo anno di applicazione della TASI, il versamento dell'imposta &#232; effettuato in un'unica rata, entro il termine del 16 dicembre 2014, salvo il caso in cui alla data del 31 maggio 2014 sia pubblicata nel sito informatico di cui al citato decreto legislativo n. 360 del 1998 la deliberazione di approvazione delle aliquote e delle detrazioni, determinando in questo caso le relative modalit&#224; ed aliquote. Ai fini di quanto previsto dai due periodi precedenti, il comune &#232; tenuto ad effettuare l'invio, esclusivamente in via telematica, della predetta deliberazione, entro il 23 maggio 2014, mediante inserimento del testo della stessa nell'apposita sezione del Portale del federalismo fiscale&#187;.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c)</I> il comma 691 &#232; sostituito dal seguente: &#171;<I>691.</I> I comuni possono, in deroga all'articolo 52 del decreto legislativo n. 446 del 1997, affidare, fino alla scadenza del relativo contratto, la gestione dell'accertamento e della riscossione della TARI, anche nel caso di adozione della tariffa di cui ai commi 667 e 668, ai soggetti ai quali, alla data del 31 dicembre 2013, risulta affidato il servizio di gestione dei rifiuti o di accertamento e riscossione del tributo comunale sui rifiuti e sui servizi di cui all'articolo 14 del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214.&#187;;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c) identica;</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>c-bis)</I> dopo il comma 728 &#232; inserito il seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>728-bis.</I> A decorrere dall'anno d'imposta 2013, per i beni immobili sui quali sono costituiti diritti di godimento a tempo parziale, di cui all'articolo 69, comma 1, lettera <I>a)</I>, del codice del consumo, di cui al decreto legislativo 6 settembre 2005, n. 206, il versamento dell'imposta municipale propria &#232; effettuato da chi amministra il bene. Questi &#232; autorizzato a prelevare l'importo necessario al pagamento dell'imposta municipale propria dalle disponibilit&#224; finanziarie comuni attribuendo le quote al singolo titolare dei diritti con addebito nel rendiconto annuale&#187;.</B> 
+
+<!NuovaPag. 24-25> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 24-25<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d)</I> il comma 731 &#232; sostituito dal seguente: &#171;<I>731.</I> Per l'anno 2014, &#232; attribuito ai comuni un contributo di 625 milioni di euro. Con decreto del Ministro dell'economia e delle finanze, di concerto con il Ministro dell'interno, &#232; stabilita, secondo una metodologia adottata sentita la Conferenza Stato citt&#224; ed autonomie locali, la quota del contributo di cui al periodo precedente di spettanza di ciascun comune, tenendo conto dei gettiti <I>standard</I> ed effettivi dell'IMU e della TASI.&#187;.
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d) identica.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis. </I>Per l'anno 2013, in deroga a quanto stabilito dall'articolo 14, comma 8, primo periodo, del decreto legislativo 14 marzo 2011, n. 23, sono valide le delibere di istituzione o variazione dell'addizionale comunale all'imposta sul reddito delle persone fisiche approvate entro i termini di legge e comunicate entro il 31 dicembre 2013.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. All'onere di cui al comma 1, lettera <I>d)</I> si provvede, quanto a 118,156 milioni di euro mediante corrispondente riduzione della dotazione del Fondo di cui all'articolo 7-<I>quinquies</I>, comma 1, del decreto-legge 10 febbraio 2009, n. 5, convertito, con modificazioni, dalla legge 9 aprile 2009, n. 33 e quanto a 6,844 milioni di euro mediante corrispondente riduzione del Fondo per interventi strutturali di politica economica, di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <I>Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Sono esenti dal tributo per i servizi indivisibili (TASI) gli immobili posseduti dallo Stato, nonch&#233; gli immobili posseduti, nel proprio territorio, dalle regioni, dalle province, dai comuni, dalle comunit&#224; montane, dai consorzi fra detti enti, ove non soppressi, dagli enti del servizio sanitario nazionale, destinati esclusivamente ai compiti istituzionali. Si applicano, inoltre, le esenzioni previste dall'articolo 7, comma 1, lettere <I>b), c), d), e), f),</I> ed <I>i)</I> del decreto legislativo 30 dicembre 1992, n. 504; ai fini dell'applicazione della lettera <I>i)</I> resta ferma l'applicazione delle disposizioni di cui all'articolo 91-<I>bis</I> del decreto-legge 24 gennaio 2012, n. 1, convertito, con modificazioni, dalla legge 24 marzo 2012, n. 27 e successive modificazioni. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Sono esenti dal tributo per i servizi indivisibili (TASI) gli immobili posseduti dallo Stato, nonch&#233; gli immobili posseduti, nel proprio territorio, dalle regioni, dalle province, dai comuni, dalle comunit&#224; montane, dai consorzi fra detti enti, ove non soppressi, dagli enti del servizio sanitario nazionale, destinati esclusivamente ai compiti istituzionali. <B>Sono altres&#236; esclusi i rifugi alpini non custoditi, i punti di appoggio e i bivacchi.</B> Si applicano, inoltre, le esenzioni previste dall'articolo 7, comma 1, lettere <I>b), c), d), e), f),</I> ed <I>i)</I> del decreto legislativo 30 dicembre 1992, n. 504; ai fini dell'applicazione della lettera <I>i)</I> resta ferma l'applicazione delle disposizioni di cui all'articolo 91-<I>bis</I> del decreto-legge 24 gennaio 2012, n. 1, convertito, con modificazioni, dalla legge 24 marzo 2012, n. 27 e successive modificazioni. 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. Le procedure di cui ai commi da 722 a 727 dell'articolo 1 della legge 27 dicembre 2013, n. 147, si applicano a tutti i tributi locali. Con decreto del Ministero dell'economia e delle finanze, di concerto con il Ministero dell'interno, sentita la Conferenza Stato citt&#224; ed autonomie locali, sono stabilite le modalit&#224; applicative delle predette disposizioni.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. Le procedure di cui ai commi da 722 a 727 dell'articolo 1 della legge 27 dicembre 2013, n. 147, si applicano a tutti i tributi locali. Con decreto del <B>Ministro</B> dell'economia e delle finanze, di concerto con il <B>Ministro</B> dell'interno, sentita la Conferenza Stato citt&#224; ed autonomie locali, sono stabilite le modalit&#224; applicative delle predette disposizioni.
+
+<!NuovaPag. 26-27> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 26-27<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 2.</CENTER>
+<CENTER><I>(Ulteriori modificazioni alla legge 27 dicembre 2013, n. 147).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 2.</CENTER>
+<CENTER><I>(Ulteriori modificazioni alla legge 27 dicembre 2013, n. 147).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. All'articolo 1 della legge 27 dicembre 2013, n. 147 sono appartate le seguenti modificazioni:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. All'articolo 1 della legge 27 dicembre 2013, n. 147 sono <B>apportate</B> le seguenti modificazioni:
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> il comma 33 &#232; abrogato;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a) identica;</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a-bis)</I> dopo il comma 568 sono inseriti i seguenti:</B> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>&#171;<I>568-bis.</I> Le pubbliche amministrazioni locali indicate nell'elenco di cui all'articolo 1, comma 3, della legge 31 dicembre 2009, n. 196 e le loro societ&#224; controllate direttamente o indirettamente possono procedere:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> allo scioglimento della societ&#224; controllata direttamente o indirettamente. Se lo scioglimento &#232; in corso ovvero &#232; deliberato entro e non oltre dodici mesi dalla data di entrata in vigore della presente disposizione, gli atti e le operazioni posti in essere in favore di pubbliche amministrazioni in seguito allo scioglimento della societ&#224; sono esenti da imposizione fiscale, incluse le imposte sui redditi e l'imposta regionale sulle attivit&#224; produttive, e ad eccezione dell'imposta sul valore aggiunto. Le imposte di registro, ipotecarie e catastali si applicano in misura fissa. In tal caso i dipendenti in forza alla data di entrata in vigore della presente disposizione sono ammessi di diritto alle procedure di cui ai commi da 563 a 568 del presente articolo. Ove lo scioglimento riguardi una societ&#224; controllata indirettamente, le plusvalenze realizzate in capo alla societ&#224; controllante non concorrono alla formazione del reddito e del valore della produzione netta e le minusvalenze sono deducibili nell'esercizio in cui sono realizzate e nei quattro successivi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> all'alienazione, a condizione che questa avvenga con procedura a evidenza pubblica deliberata entro e non oltre dodici mesi ovvero sia in corso alla data di entrata in vigore della presente disposizione, delle partecipazioni detenute alla data di entrata in vigore della presente disposizione e alla contestuale assegnazione del servizio per cinque anni a decorrere dal 1<sup>o</sup> gennaio 2014. In caso di societ&#224; mista al socio privato detentore di una quota di almeno il 30 per cento alla data di entrata in vigore della presente disposizione deve essere riconosciuto il diritto di prelazione. Ai fini delle imposte sui redditi e dell'imposta regionale sulle attivit&#224; produttive, le plusvalenze non concorrono alla formazione del reddito e del valore della produzione netta e le minusvalenze sono deducibili nell'esercizio in cui sono realizzate e nei quattro successivi.</B>
+
+<!NuovaPag. 28-29> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 28-29<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>568-ter.</I> Il personale in esubero delle societ&#224; di cui al comma 563 che, dopo l'applicazione dei commi 565, 566, 567 e 568, risulti privo di occupazione, ha titolo di precedenza, a parit&#224; di requisiti, per l'impiego nell'ambito di missioni afferenti a contratti di somministrazione di lavoro stipulati, per esigenze temporanee o straordinarie, proprie o di loro enti strumentali, dalle stesse pubbliche amministrazioni&#187;;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> al comma 569 le parole: &#171;quattro mesi&#187; sono sostituite dalle seguenti: &#171;dodici mesi&#187;.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b) identica;</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c)</I> al comma 620 le parole &#171;Entro il 28 febbraio 2014&#187; sono sostituite dalle seguenti &#171;entro il 31 marzo 2014&#187;;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c)</I> al comma 620 le parole &#171;Entro il 28 febbraio 2014&#187; sono sostituite dalle seguenti &#171;entro il 31 <B>maggio</B> 2014&#187;;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>c-bis)</I> al comma 621, secondo periodo, le parole: &#171;entro il 30 giugno 2014&#187; sono sostituite dalle seguenti: &#171;entro il 31 ottobre 2014&#187;;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>c-ter)</I> al comma 622, le parole: &#171;Entro il 30 giugno 2014&#187; sono sostituite dalle seguenti: &#171;Entro il 31 ottobre 2014&#187;;</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d)</I> al comma 623 le parole &#171;Entro il 28 febbraio 2014&#187; sono sostituite dalle seguenti &#171;entro il 31 marzo 2014&#187; e le parole &#171;15 marzo 2014&#187; sono sostituite dalle seguenti &#171;15 aprile 2014&#187;;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d)</I> al comma 623 le parole &#171;Entro il 28 febbraio 2014&#187; sono sostituite dalle seguenti &#171;entro il 31 marzo 2014&#187; e le parole &#171;15 marzo 2014&#187; sono sostituite dalle seguenti &#171;15 <B>giugno</B> 2014&#187;; 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>d-bis) </I>al comma 645 &#232; aggiunto, in fine, il seguente periodo: &#171;L'utilizzo delle superfici catastali per il calcolo della TARI decorre dal 1<sup>o</sup> gennaio successivo alla data di emanazione di un apposito provvedimento del Direttore dell'Agenzia delle entrate, previo accordo da sancire in sede di Conferenza Stato-citt&#224; ed autonomie locali, che attesta l'avvenuta completa attuazione delle disposizioni di cui al comma 647&#187;;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;e)</I> al comma 649 l'ultimo periodo &#232; soppresso;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>e)</I></B> al comma 649<B>, il secondo </B>periodo<B> &#232; sostituito dai seguenti: &#171;Per i produttori di rifiuti speciali assimilati agli urbani, nella determinazione della TARI, il comune disciplina con proprio regolamento riduzioni della quota variabile del tributo proporzionali alle quantit&#224; di rifiuti speciali assimilati che il produttore dimostra di aver avviato al riciclo, direttamente o tramite soggetti autorizzati. Con il medesimo regolamento il comune individua le aree di produzione di rifiuti speciali non assimilabili e i magazzini di materie prime e di merci funzionalmente ed esclusivamente collegati all'esercizio di dette attivit&#224; produttive, ai quali si estende il divieto di assimilazione. Al conferimento al servizio pubblico di raccolta dei rifiuti urbani di rifiuti speciali non assimilati, in assenza di convenzione con il comune o con l'ente gestore del servizio, si applicano le sanzioni di cui all'articolo 256, comma 2, del decreto legislativo 3 aprile 2006, n. 152&#187;;</B> 
+
+<!NuovaPag. 30-31> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 30-31<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>e-bis)</I> al comma 652 &#232; aggiunto, in fine, il seguente periodo: &#171;Nelle more della revisione del regolamento di cui al decreto del Presidente della Repubblica 27 aprile 1999, n. 158, al fine di semplificare l'individuazione dei coefficienti relativi alla graduazione delle tariffe il comune pu&#242; prevedere per gli anni 2014 e 2015 l'adozione dei coefficienti di cui all'allegato 1, tabelle 2, 3a, 3b, 4a e 4b, del citato regolamento di cui al decreto del Presidente della Repubblica n. 158 del 1999, inferiori ai minimi o superiori ai massimi ivi indicati del 50 per cento e pu&#242; altres&#236; non considerare i coefficienti di cui alle tabelle 1a e 1b del medesimo allegato 1&#187;;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>e-ter) </I>il comma 660 &#232; sostituito dal seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>660.</I> Il comune pu&#242; deliberare, con regolamento di cui all'articolo 52 del citato decreto legislativo n. 446 del 1997, ulteriori riduzioni ed esenzioni rispetto a quelle previste dalle lettere da <I>a) </I>a <I>e) </I>del comma 659. La relativa copertura pu&#242; essere disposta attraverso apposite autorizzazioni di spesa e deve essere assicurata attraverso il ricorso a risorse derivanti dalla fiscalit&#224; generale del comune&#187;;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>e-quater)</I> il comma 661 &#232; abrogato;</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;f)</I> il comma 669 &#232; sostituito dal seguente &#171;<I>669</I>. Il presupposto impositivo della TASI &#232; il possesso o la detenzione, a qualsiasi titolo, di fabbricati, ivi compresa l'abitazione principale, e di aree edificabili, come definiti ai sensi dell'imposta municipale propria, ad eccezione, in ogni caso, dei terreni agricoli.&#187;;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;f) identica;</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;g)</I> il comma 670 &#232; abrogato;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;g) identica;</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;h)</I> al comma 679 la lettera <I>f)</I> &#232; soppressa.
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;h)</I> al comma 679 la lettera <I>f)</I> &#232; <B>abrogata</B>.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis. </I>All'articolo 1 del decreto-legge 30 novembre 2013, n. 133, convertito, con modificazioni, dalla legge 29 gennaio 2014, n. 5, il comma 12-<I>bis </I>&#232; abrogato.</B>
+
+<!NuovaPag. 32-33> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 32-33<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><B><!E3>Articolo 2-<I>bis.</I></B></CENTER>
+<CENTER><B><I>(Bilancio di previsione).</I></B></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1. Il termine per la deliberazione del bilancio annuale di previsione 2014 degli enti locali, di cui all'articolo 151 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, &#232; ulteriormente differito al 31 luglio 2014.</B>
+
+<!NuovaPag. 34-35> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 34-35<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 3.</CENTER>
+<CENTER><I>(Disposizioni per gli enti locali in difficolt&#224; finanziarie).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 3.</CENTER>
+<CENTER><I>(Disposizioni per gli enti locali in difficolt&#224; finanziarie).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Al comma 5, dell'articolo 243-<I>quater</I>, del decreto legislativo 18 agosto 2000, n. 267, dopo il primo periodo &#232; aggiunto il seguente: 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Fino alla scadenza del termine per impugnare e, nel caso di presentazione del ricorso, sino alla relativa decisione, le procedure esecutive intraprese nei confronti dell'ente sono sospese&#187;.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. All'articolo 1 della legge 27 dicembre 2013, n. 147, dopo il comma 573 &#232; inserito il seguente:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. All'articolo 1 della legge 27 dicembre 2013, n. 147, il comma 573 <B>&#232; sostituito dai seguenti:</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>&#171;<I>573.</I> Per l'esercizio 2014, gli enti locali che hanno avuto il diniego d'approvazione da parte del consiglio comunale del piano di riequilibrio finanziario, come previsto dall'articolo 243-<I>quater</I>, comma 7, del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, e che non abbiano dichiarato il dissesto finanziario ai sensi dell'articolo 246 del medesimo testo unico possono riproporre, entro il termine perentorio di centoventi giorni dalla data di entrata in vigore della presente disposizione, la procedura di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I> del testo unico, qualora sia stato certificato, nell'ultimo rendiconto approvato, che l'ente non si trova nella condizione di deficitariet&#224; strutturale, di cui all'articolo 242 del testo unico, secondo i parametri indicati nel decreto del Ministro dell'interno previsto dallo stesso articolo 242. In pendenza del termine di centoventi giorni non trova applicazione l'articolo 243-<I>bis</I>, comma 3, del citato testo unico.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>573-bis.</I> Per l'esercizio 2014, agli enti locali che abbiano presentato, nel 2013, i piani di riequilibrio finanziario previsti dall'articolo 243-<I>bis</I> del Testo Unico di cui al decreto legislativo 18 agosto 2000 n. 267, per i quali sia intervenuta una deliberazione di diniego da parte della competente Sezione regionale della Corte dei Conti, &#232; data facolt&#224; di riproporre un nuovo piano di riequilibrio, previa deliberazione consiliare, entro il termine perentorio di novanta giorni dalla comunicazione del diniego. Tale facolt&#224; &#232; subordinata all'avvenuto conseguimento di un miglioramento, inteso sia come aumento dell'avanzo di amministrazione che come diminuzione del disavanzo di amministrazione, registrato nell'ultimo rendiconto approvato. Nelle more del termine previsto per presentazione del nuovo piano di riequilibrio, e sino alla conclusione della relativa procedura, non si applica l'articolo 243-<I>quater</I>, comma 7, del predetto Testo Unico.&#187;.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>573-bis.</I> Per l'esercizio 2014, agli enti locali che abbiano presentato, nel 2013, i piani di riequilibrio finanziario previsti dall'articolo 243-<I>bis</I> del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, per i quali sia intervenuta una deliberazione di diniego da parte della competente sezione regionale della Corte dei conti, <B>ovvero dalle sezioni riunite,</B> &#232; data facolt&#224; di riproporre un nuovo piano di riequilibrio, previa deliberazione consiliare, entro il termine perentorio di<B> centoventi</B> giorni dalla<B> data di entrata in vigore della presente disposizione.</B> Tale facolt&#224; &#232; subordinata all'avvenuto conseguimento di un miglioramento, inteso sia come aumento dell'avanzo di amministrazione che come diminuzione del disavanzo di amministrazione, registrato nell'ultimo rendiconto approvato. Nelle more del termine previsto per la presentazione del nuovo piano di riequilibrio, e sino alla conclusione della relativa procedura, non si applica l'articolo 243<I>-quater</I>, comma 7, del predetto testo unico.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>573-ter.</I> Nelle more del termine previsto per la presentazione del nuovo piano di riequilibrio di cui ai commi 573 e 573-<I>bis</I>, e sino alla conclusione della relativa procedura, le procedure esecutive, intraprese nei confronti dell'ente, sono sospese&#187;.</B> 
+
+<!NuovaPag. 36-37> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 36-37<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>2-<I>bis.</I> Al comma 10-<I>bis</I> dell'articolo 1 del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, dopo le parole: &#171;anche se riconosciuti in bilancio in data successiva&#187; sono inserite le seguenti: &#171;, ivi inclusi quelli contenuti nel piano di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I> del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, approvato con delibera della Sezione regionale di controllo della Corte dei conti&#187;.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. All'articolo 243-<I>bis</I>, comma 1, del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000 n. 267, l'ultimo periodo &#232; sostituito con il seguente: &#171;La predetta procedura non pu&#242; essere iniziata qualora sia decorso il termine assegnato dal Prefetto, con lettera notificata ai singoli consiglieri, per la deliberazione del dissesto, di cui all'articolo 6, comma 2, del decreto legislativo 6 settembre 2011, n. 149.&#187;.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. All'articolo 243-<I>bis</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267,<B> sono apportate le seguenti modificazioni:</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a)</I> al </B>comma 1, l'ultimo periodo &#232; sostituito dal seguente: &#171;La predetta procedura non pu&#242; essere iniziata qualora sia decorso il termine assegnato dal prefetto, con lettera notificata ai singoli consiglieri, per la deliberazione del dissesto, di cui all'articolo 6, comma 2, del decreto legislativo 6 settembre 2011, n. 149&#187;<B>;</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>b)</I> dopo il comma 9 &#232; aggiunto il seguente:</B> 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>&#171;<I>9-bis.</I> In deroga al comma 8, lettera <I>g)</I>, e al comma 9, lettera <I>d)</I>, del presente articolo e all'articolo 243-<I>ter</I>, i comuni che fanno ricorso alla procedura di riequilibrio finanziario pluriennale prevista dal presente articolo possono contrarre mutui, oltre i limiti di cui al comma 1 dell'articolo 204, necessari alla copertura di spese di investimento relative a progetti ed interventi che garantiscano l'ottenimento di risparmi di gestione funzionali al raggiungimento degli obiettivi fissati nel piano di riequilibrio finanziario pluriennale, per un importo non superiore alle quote di capitale dei mutui e dei prestiti obbligazionari precedentemente contratti ed emessi, rimborsate nell'esercizio precedente&#187;.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>bis.</I> Al comma 5 dell'articolo 243-<I>bis</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, le parole: &#171;60 giorni&#187; sono sostituite dalle seguenti: &#171;90 giorni&#187;.</B>
+
+<!NuovaPag. 38-39> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 38-39<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>ter.</I> All'articolo 243-<I>quater</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, dopo il comma 7 sono aggiunti i seguenti:</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>&#171;<I>7-bis.</I> Qualora, durante la fase di attuazione del piano, dovesse emergere, in sede di monitoraggio, un grado di raggiungimento degli obiettivi intermedi superiore rispetto a quello previsto, &#232; riconosciuta all'ente locale la facolt&#224; di proporre una rimodulazione dello stesso, anche in termini di riduzione della durata del piano medesimo. Tale proposta, corredata del parere positivo dell'organo di revisione economico-finanziaria dell'ente, deve essere presentata direttamente alla competente Sezione regionale di controllo della Corte dei conti. Si applicano i commi 3, 4 e 5.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>7-ter.</I> In caso di esito positivo della procedura di cui al comma 7-<I>bis</I>, l'ente locale provvede a rimodulare il piano di riequilibrio approvato, in funzione della minore durata dello stesso. Restano in ogni caso fermi gli obblighi posti a carico dell'organo di revisione economico-finanziaria previsti dal comma 6&#187;.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>quater.</I> Dopo l'articolo 243<I>-quinquies</I> del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, &#232; inserito il seguente:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;Art. 243-<I>sexies. (Pagamento di debiti). &#8211; 1.</I> In considerazione dell'esigenza di dare prioritario impulso all'economia in attuazione dell'articolo 41 della Costituzione, le risorse provenienti dal Fondo di rotazione di cui all'articolo 243-<I>ter</I> sono destinate esclusivamente al pagamento dei debiti presenti nel piano di riequilibrio finanziario pluriennale di cui all'articolo 243-<I>bis</I>.</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>2.</I> Non sono ammessi atti di sequestro o di pignoramento sulle risorse di cui al comma 1&#187;.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. All'articolo 259 del testo unico delle leggi sull'ordinamento degli enti locali di cui al decreto legislativo 18 agosto 2000, n. 267, dopo il comma 1-<I>bis</I> &#232; inserito il seguente:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <I>Identico:</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>1-ter.</I> Nei comuni con popolazione superiore a 20.000 abitanti, nel caso in cui il riequilibrio del bilancio sia significativamente condizionato dall'esito delle misure di riduzione dei costi dei servizi, nonch&#233; dalla razionalizzazione di tutti gli organismi e societ&#224; partecipati, laddove presenti, i cui costi incidono sul bilancio dell'ente, l'ente pu&#242; raggiungere l'equilibrio, in deroga alle norme vigenti, entro l'esercizio in cui si completa la riorganizzazione dei servizi comunali e la razionalizzazione di tutti gli organismi partecipati, e comunque entro tre anni, compreso quello in cui &#232; stato deliberato il dissesto. Fino al raggiungimento dell'equilibrio, l'organo di revisione economico-finanziaria dell'ente trasmette al Ministero dell'interno, entro 30 giorni dalla scadenza di ciascun esercizio, una relazione sull'efficacia delle misure adottate e sugli obiettivi raggiunti nell'esercizio.&#187;.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>1-ter.</I> Nei comuni con popolazione superiore a 20.000 abitanti, nel caso in cui il riequilibrio del bilancio sia significativamente condizionato dall'esito delle misure di riduzione <B>di almeno il 20 per cento</B> dei costi dei servizi, nonch&#233; dalla razionalizzazione di tutti gli organismi e societ&#224; partecipati, laddove presenti, i cui costi incidono sul bilancio dell'ente, l'ente pu&#242; raggiungere l'equilibrio, in deroga alle norme vigenti, entro l'esercizio in cui si completa la riorganizzazione dei servizi comunali e la razionalizzazione di tutti gli organismi partecipati, e comunque entro tre anni, compreso quello in cui &#232; stato deliberato il dissesto. Fino al raggiungimento dell'equilibrio<B> e per i tre esercizi successivi</B>, l'organo di revisione economico-finanziaria dell'ente trasmette al Ministero dell'interno, entro 30 giorni dalla scadenza di ciascun esercizio, una relazione sull'efficacia delle misure adottate e sugli obiettivi raggiunti nell'esercizio.&#187;.
+
+<!NuovaPag. 40-41> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 40-41<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>4-<I>bis.</I> Ai fini dell'attuazione dei piani di riequilibrio pluriennale di cui all'articolo 243-<I>quater</I>, commi 1 e 3, del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267, e del piano triennale per la riduzione del disavanzo e per il riequilibrio strutturale di bilancio di cui all'articolo 16, comma 2, del presente decreto, le societ&#224; controllate dagli enti locali interessati da tali piani applicano le disposizioni di cui all'articolo 1, comma 563, della legge 27 dicembre 2013, n. 147, anche in deroga al principio della coerenza con il rispettivo ordinamento professionale.</B>
+
+<!NuovaPag. 42-43> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 42-43<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><B><!E3>Articolo 3-<I>bis.</I></B></CENTER>
+<CENTER><B><I>(Fondo svalutazione crediti).</I></B></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1. Per l'anno 2014 il fondo svalutazione crediti di cui all'articolo 6, comma 17, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, e all'articolo 1, comma 17, del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, non pu&#242; essere inferiore al 20 per cento dei residui attivi, di cui ai titoli primo e terzo dell'entrata, aventi anzianit&#224; superiore a cinque anni.</B>
+
+<!NuovaPag. 44-45> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 44-45<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 4.</CENTER>
+<CENTER><I>(Misure conseguenti al mancato rispetto di vincoli finanziari  posti alla contrattazione integrativa e all'utilizzo dei relativi fondi).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 4.</CENTER>
+<CENTER><I>(Misure conseguenti al mancato rispetto di vincoli finanziari  posti alla contrattazione integrativa e all'utilizzo dei relativi fondi).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Le regioni e gli enti locali che non hanno rispettato i vincoli finanziari posti alla contrattazione collettiva integrativa sono obbligati a recuperare integralmente, a valere sulle risorse finanziarie a questa destinate, rispettivamente al personale dirigenziale e non dirigenziale, le somme indebitamente erogate mediante il graduale riassorbimento delle stesse, con quote annuali e per un numero massimo di annualit&#224; corrispondente a quelle in cui si &#232; verificato il superamento di tali vincoli. Nei predetti casi, le regioni devono obbligatoriamente adottare misure di contenimento della spesa per il personale, ulteriori rispetto a quelle gi&#224; previste dalla vigente normativa, mediante l'attuazione di piani di riorganizzazione finalizzati alla razionalizzazione e allo snellimento delle strutture burocratico-amministrative, anche attraverso accorpamenti di uffici con la contestuale riduzione delle dotazioni organiche del personale dirigenziale in misura non inferiore al 20 per cento e della spesa complessiva del personale non dirigenziale nella misura non inferiore al 10 per cento. Gli enti locali adottano le misure di razionalizzazione organizzativa garantendo in ogni caso la riduzione delle dotazioni organiche entro i parametri definiti dal decreto di cui all'articolo 263, comma 2, del decreto legislativo 18 agosto 2000, n. 267. Al fine di conseguire l'effettivo contenimento della spesa, alle unit&#224; di personale eventualmente risultanti in soprannumero all'esito dei predetti piani obbligatori di riorganizzazione si applicano le disposizioni previste dall'articolo 2, commi 11 e 12, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, nei limiti temporali della vigenza della predetta norma. Le cessazioni dal servizio conseguenti alle misure di cui al precedente periodo non possono essere calcolate come risparmio utile per definire l'ammontare delle disponibilit&#224; finanziarie da destinare alle assunzioni o il numero delle unit&#224; sostituibili in relazione alle limitazioni del <I>turn over</I>. Le Regioni e gli enti locali trasmettono alla Presidenza del Consiglio dei Ministri &#8211; Dipartimento della funzione pubblica, al Ministero dell'economia e delle finanze &#8211; Dipartimento della Ragioneria generale dello Stato e al Ministero dell'interno &#8211; Dipartimento per gli affari interni e territoriali, ai fini del relativo monitoraggio, una relazione illustrativa ed una relazione tecnico-finanziaria che, con riferimento al mancato rispetto dei vincoli finanziari, dia conto dell'adozione dei piani obbligatori di riorganizzazione e delle specifiche misure previste dai medesimi per il contenimento della spesa per il personale.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Le regioni e gli enti locali che non hanno rispettato i vincoli finanziari posti alla contrattazione collettiva integrativa sono obbligati a recuperare integralmente, a valere sulle risorse finanziarie a questa destinate, rispettivamente al personale dirigenziale e non dirigenziale, le somme indebitamente erogate mediante il graduale riassorbimento delle stesse, con quote annuali e per un numero massimo di annualit&#224; corrispondente a quelle in cui si &#232; verificato il superamento di tali vincoli. Nei predetti casi, le regioni <B>adottano</B> misure di contenimento della spesa per il personale, ulteriori rispetto a quelle gi&#224; previste dalla vigente normativa, mediante l'attuazione di piani di riorganizzazione finalizzati alla razionalizzazione e allo snellimento delle strutture burocratico-amministrative, anche attraverso accorpamenti di uffici con la contestuale riduzione delle dotazioni organiche del personale dirigenziale in misura non inferiore al 20 per cento e della spesa complessiva del personale non dirigenziale <B>in</B> misura non inferiore al 10 per cento. Gli enti locali adottano le misure di razionalizzazione organizzativa garantendo in ogni caso la riduzione delle dotazioni organiche entro i parametri definiti dal decreto di cui all'articolo 263, comma 2, del decreto legislativo 18 agosto 2000, n. 267. Al fine di conseguire l'effettivo contenimento della spesa, alle unit&#224; di personale eventualmente risultanti in soprannumero all'esito dei predetti piani obbligatori di riorganizzazione si applicano le disposizioni previste dall'articolo 2, commi 11 e 12, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, nei limiti temporali della vigenza della predetta norma. Le cessazioni dal servizio conseguenti alle misure di cui al precedente periodo non possono essere calcolate come risparmio utile per definire l'ammontare delle disponibilit&#224; finanziarie da destinare alle assunzioni o il numero delle unit&#224; sostituibili in relazione alle limitazioni del <I>turn over</I>. Le Regioni e gli enti locali trasmettono <B>entro il 31 maggio di ciascun anno</B> alla Presidenza del Consiglio dei Ministri &#8211; Dipartimento della funzione pubblica, al Ministero dell'economia e delle finanze &#8211; Dipartimento della Ragioneria generale dello Stato e al Ministero dell'interno &#8211; Dipartimento per gli affari interni e territoriali, ai fini del relativo monitoraggio, una relazione illustrativa ed una relazione tecnico-finanziaria che, con riferimento al mancato rispetto dei vincoli finanziari, dia conto dell'adozione dei piani obbligatori di riorganizzazione e delle specifiche misure previste dai medesimi per il contenimento della spesa per il personale <B>ovvero delle misure di cui al terzo periodo</B>.
+
+<!NuovaPag. 46-47> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 46-47<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Le regioni e gli enti locali che hanno rispettato il patto di stabilit&#224; interno possono compensare le somme da recuperare di cui al primo periodo del comma 1, anche attraverso l'utilizzo dei risparmi effettivamente derivanti dalle misure di razionalizzazione organizzativa di cui al secondo e terzo periodo del comma 1 nonch&#233; di quelli derivanti dall'attuazione dell'articolo 16, commi 4 e 5, del decreto-legge 6 luglio 2011, n. 98, convertito, con modificazioni, dalla legge 15 luglio 2011, n. 111. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <I>Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Fermo restando quanto previsto dai commi 1 e 2, non si applicano le disposizioni di cui al quinto periodo del comma 3-<I>quinquies</I> dell'articolo 40 del decreto legislativo 30 marzo 2001, n. 165 agli atti di utilizzo dei fondi per la contrattazione decentrata adottati anteriormente ai termini di adeguamento previsti dall'articolo 65 del decreto legislativo 27 ottobre 2009, n. 150, che non abbiano comportato <B>n&#233; il superamento dei vincoli finanziari per la costituzione dei medesimi fondi n&#233;</B> il riconoscimento giudiziale della responsabilit&#224; erariale, adottati dalle regioni e dagli enti locali che hanno rispettato il patto di stabilit&#224; interno, la vigente disciplina in materia di spese ed assunzione di personale nonch&#233; le disposizioni di cui all'articolo 9 del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Fermo restando <B>l'obbligo di recupero</B> previsto dai commi 1 e 2, non si applicano le disposizioni di cui al quinto periodo del comma 3-<I>quinquies</I> dell'articolo 40 del decreto legislativo 30 marzo 2001, n. 165 agli atti <B>di costituzione e</B> di utilizzo dei fondi<B>, comunque costituiti,</B> per la contrattazione decentrata adottati anteriormente ai termini di adeguamento previsti dall'articolo 65 del decreto legislativo 27 ottobre 2009, n. 150, <B>e successive modificazioni,</B> che non abbiano comportato il riconoscimento giudiziale della responsabilit&#224; erariale, adottati dalle regioni e dagli enti locali che hanno rispettato il patto di stabilit&#224; interno, la vigente disciplina in materia di spese e assunzione di personale nonch&#233; le disposizioni di cui all'articolo 9<B>, commi 1, 2-<I>bis</I>, 21 e 28,</B> del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122<B>, e successive modificazioni</B>. 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>bis.</I> Al fine di prevenire l'insorgere di contenziosi a carico delle amministrazioni coinvolte, le regioni e gli enti locali che, nel periodo 2010-2013, hanno attivato, anche attraverso l'utilizzo dei propri organismi partecipati, anche superando i vincoli previsti dalla normativa vigente in materia di contenimento complessivo della spesa di personale limitatamente alla parte di spesa coperta dai finanziamenti regionali, iniziative di politica attiva del lavoro finalizzate alla creazione di soluzioni occupazionali a tempo determinato dei lavoratori di cui all'articolo 2, comma 1, del decreto legislativo 28 febbraio 2000, n. 81, e all'articolo 3, comma 1, del decreto legislativo 7 agosto 1997, n. 280, possono, limitatamente al medesimo periodo, provvedere al pagamento delle competenze retributive maturate, nel rispetto del patto di stabilit&#224; interno e nei limiti delle disponibilit&#224; finanziarie, garantendo comunque la salvaguardia degli equilibri di bilancio, senza che ci&#242; determini l'applicazione delle sanzioni previste dalla legislazione vigente.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>ter.</I> Le disposizioni di cui al comma 3-<I>bis</I> sono limitate ai soli aspetti retributivi e non possono in alcun modo comportare il consolidamento delle posizioni lavorative acquisite in violazione dei vincoli di finanza pubblica.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>3-<I>quater.</I> Resta fermo quanto previsto dall'articolo 4, comma 8, del decreto-legge 31 agosto 2013, n. 101, convertito, con modificazioni, dalla legge 30 ottobre 2013, n. 125, e dall'articolo 1, comma 209, della legge 27 dicembre 2013, n. 147.</B> 
+
+<!NuovaPag. 48-49> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 48-49<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 5.</CENTER>
+<CENTER><I>(Mutui enti locali).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 5.</CENTER>
+<CENTER><I>(Mutui enti locali).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Al fine di favorire gli investimenti degli enti locali, per gli anni 2014 e 2015, i medesimi enti possono assumere nuovi mutui e accedere ad altre forme di finanziamento reperibili sul mercato, oltre i limiti di cui al comma 1 dell'articolo 204 del decreto legislativo 18 agosto 2000, n. 267, per un importo non superiore alle quote di capitale dei mutui e dei prestiti obbligazionari precedentemente contratti ed emessi rimborsate nell'esercizio precedente.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 50-51> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 50-51<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 6.</CENTER>
+<CENTER><I>(Contabilizzazione IMU).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 6.</CENTER>
+<CENTER><I>(Contabilizzazione IMU).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Ai fini della contabilizzazione delle regolazioni finanziarie di cui all'articolo 1, comma 380-<I>ter</I>, lettera <I>a)</I> della legge 24 dicembre 2012, n. 228, i Comuni iscrivono la quota dell'imposta municipale propria al netto dell'importo versato all'entrata del bilancio dello Stato. Per uniformarsi a tale principio, i comuni possono effettuare eventuali rettifiche contabili per l'esercizio 2013, in sede di approvazione del rendiconto di cui all'articolo 227 del decreto legislativo 18 agosto 2000, n. 267.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 52-53> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 52-53<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 7.</CENTER>
+<CENTER><I>(Verifica gettito IMU anno 2013).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 7.</CENTER>
+<CENTER><I>(Verifica gettito IMU anno 2013).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Alla legge 27 dicembre 2013, n. 147 dopo il comma 729 sono inseriti i seguenti:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico:</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>729-bis.</I> Al fine di assicurare la pi&#249; precisa ripartizione del fondo di solidariet&#224; comunale, ferme restando le dotazioni del fondo previste a legislazione vigente, entro il mese di marzo 2014 il Ministero dell'economia e delle finanze provvede, sulla base di una metodologia adottata sentita la Conferenza Stato citt&#224; ed autonomie locali, alla verifica del gettito dell'imposta municipale propria dell'anno 2013, con particolare riferimento alla distribuzione degli incassi relativi ai fabbricati di categoria D. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>729-bis. Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>729-ter.</I> Con decreto <B>di natura non regolamentare</B> del Ministero dell'interno, di concerto con il Ministero dell'economia e delle finanze da emanarsi entro il 31 marzo 2014 previa intesa presso la Conferenza Stato-citt&#224; e autonomie locali, sono determinate le variazioni delle assegnazioni del fondo di solidariet&#224; comunale per l'anno 2013, derivanti dalla verifica di cui al comma 729-<I>bis.</I> 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>729-ter.</I> Con decreto del Ministero dell'interno, di concerto con il Ministero dell'economia e delle finanze da emanarsi entro il 31 marzo 2014 previa intesa presso la Conferenza Stato-citt&#224; e autonomie locali, sono determinate le variazioni delle assegnazioni del fondo di solidariet&#224; comunale per l'anno 2013, derivanti dalla verifica di cui al comma 729-<I>bis.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>729-quater.</I> In conseguenza delle variazioni relative all'annualit&#224; 2013, di cui al comma 729-<I>ter</I>, per i soli comuni interessati, il termine previsto dall'articolo 227, del decreto legislativo n. 267 del 2000 &#232; differito al 30 giugno 2014. Nel caso in cui, all'esito delle verifiche di cui al comma 729-<I>bis</I>, il Comune sia tenuto a versare ulteriori importi al fondo di solidariet&#224; comunale, in assenza di impegni di spesa gi&#224; contabilizzati dal comune stesso a tale titolo, tali somme possono essere imputate quale apposito impegno di spesa sull'annualit&#224; 2014.&#187;.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>729-quater. Identico.</I>&#187;.
+
+<!NuovaPag. 54-55> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 54-55<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 8.</CENTER>
+<CENTER><I>(Anticipazione pagamento fondo di solidariet&#224; 2014).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 8.</CENTER>
+<CENTER><I>(Anticipazione pagamento fondo di solidariet&#224; 2014).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Entro il 15 marzo 2014 il Ministero dell'interno eroga ai comuni delle Regioni a statuto ordinario ed ai comuni della Regione Siciliana e della Regione Sardegna un importo, a titolo di anticipo su quanto spettante per l'anno 2014 a titolo di Fondo di solidariet&#224; comunale. L'importo dell'attribuzione &#232; pari, per ciascun comune, al 20 per cento di quanto spettante per l'anno 2013 a titolo di fondo di solidariet&#224; comunale. Ai fini di cui al presente comma si considerano validi i dati relativi agli importi spettanti pubblicati sul sito <I>internet</I> del Ministero dell'interno alla data del 31 dicembre 2013.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 56-57> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 56-57<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 9.</CENTER>
+<CENTER><I>(Disposizioni in materia di contributo ordinario  spettante agli enti locali).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 9.</CENTER>
+<CENTER><I>(Disposizioni in materia di contributo ordinario  spettante agli enti locali).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. A decorrere dall'anno 2014, l'ammontare delle riduzioni di risorse di cui al comma 183 dell'articolo 2 della legge 23 dicembre 2009 n. 191 &#232; fissato in 7 milioni di euro per le province e in 118 milioni di euro per i comuni, da applicarsi, a tutti gli enti, in proporzione alla popolazione residente. Sono soppressi il quinto e sesto periodo del comma 183 dell'articolo 2 della legge 23 dicembre 2009 n. 191.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 58-59> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 58-59<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 10.</CENTER>
+<CENTER><I>(Proroga delle modalit&#224; di riparto alle province  del fondo sperimentale di riequilibrio).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 10.</CENTER>
+<CENTER><I>(Proroga delle modalit&#224; di riparto alle province  del fondo sperimentale di riequilibrio).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Per l'anno 2014, sono confermate le modalit&#224; di riparto alle province del fondo sperimentale di riequilibrio gi&#224; adottate con decreto ministeriale del 4 maggio 2012. Alla ricognizione delle risorse da ripartire per l'anno 2014 a ciascuna provincia si provvede con decreto del Ministero dell'interno, di concerto con il Ministero dell'economia e delle finanze. Salvo quanto previsto dal comma 2 dell'articolo 20, sono parimenti confermate, le riduzioni di risorse per la revisione della spesa di cui all'articolo 16, comma 7, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, secondo gli importi indicati nell'allegato 1 al presente decreto.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Per l'anno 2014, sono confermate le modalit&#224; di riparto alle province del fondo sperimentale di riequilibrio gi&#224; adottate con decreto <B>del Ministro dell'interno </B>4 maggio 2012<B>, pubblicato nella <I>Gazzetta Ufficiale</I> n. 145 del 23 giugno 2012</B>. Alla ricognizione delle risorse da ripartire per l'anno 2014 a ciascuna provincia si provvede con decreto del Ministero dell'interno, di concerto con il Ministero dell'economia e delle finanze. Salvo quanto previsto dal comma 2 dell'articolo 20, sono parimenti confermate, le riduzioni di risorse per la revisione della spesa di cui all'articolo 16, comma 7, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, secondo gli importi indicati nell'allegato 1 al presente decreto.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Per l'anno 2014 i trasferimenti erariali non oggetto di fiscalizzazione corrisposti dal Ministero dell'interno in favore delle province appartenenti alla regione Siciliana e alla regione Sardegna sono determinati in base alle disposizioni recate dall'articolo 4, comma 6, del decreto-legge 2 marzo 2012, n. 16, convertito, con modificazioni, dalla legge 26 aprile 2012, n. 44, e alle modifiche dei fondi successivamente intervenute.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <I>Identico.</I>
+
+<!NuovaPag. 60-61> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 60-61<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 11.</CENTER>
+<CENTER><I>(Relazione fine mandato Sindaci e Presidenti delle province).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 11.</CENTER>
+<CENTER><I>(Relazione fine mandato Sindaci e Presidenti delle province).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. I commi 2, 3, 3-<I>bis</I>, dell'articolo 4, del decreto legislativo 6 settembre 2011, n. 149, sono sostituiti dai seguenti:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico:</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>2.</I> La relazione di fine mandato, redatta dal responsabile del servizio finanziario o dal segretario generale, &#232; sottoscritta dal presidente della provincia o dal sindaco non oltre il sessantesimo giorno antecedente la data di scadenza del mandato. Entro e non oltre quindici giorni dopo la sottoscrizione della relazione, essa deve risultare certificata dall'organo di revisione dell'ente locale e, nei tre giorni successivi la relazione e la certificazione devono essere trasmesse dal presidente della provincia o dal sindaco alla sezione regionale di controllo della Corte dei conti. La relazione di fine mandato e la certificazione sono pubblicate sul sito istituzionale della provincia o del comune da parte del presidente della provincia o del sindaco entro i sette giorni successivi alla data di certificazione effettuata dall'organo di revisione dell'ente locale, con l'indicazione della data di trasmissione alla sezione regionale di controllo della Corte dei conti. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#171;<I>2. Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>3.</I> In caso di scioglimento anticipato del Consiglio comunale o provinciale, la sottoscrizione della relazione e la certificazione da parte degli organi di controllo interno avvengono entro venti giorni dal provvedimento di indizione delle elezioni e, nei tre giorni successivi la relazione e la certificazione sono trasmesse dal presidente della provincia o dal sindaco alla sezione regionale di controllo della Corte dei conti. Il rapporto e la relazione di fine legislatura sono pubblicati <B>in fine</B> sul sito istituzionale della provincia o del comune entro e non oltre i sette giorni successivi alla data di certificazione effettuata dall'organo di revisione dell'ente locale, con l'indicazione della data di trasmissione alla sezione regionale di controllo della Corte dei conti.&#187;.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>3.</I> In caso di scioglimento anticipato del Consiglio comunale o provinciale, la sottoscrizione della relazione e la certificazione da parte degli organi di controllo interno avvengono entro venti giorni dal provvedimento di indizione delle elezioni e, nei tre giorni successivi la relazione e la certificazione sono trasmesse dal presidente della provincia o dal sindaco alla sezione regionale di controllo della Corte dei conti. <B>La relazione di fine mandato &#232; pubblicata</B> sul sito istituzionale della provincia o del comune entro e non oltre i sette giorni successivi alla data di certificazione effettuata dall'organo di revisione dell'ente locale, con l'indicazione della data di trasmissione alla sezione regionale di controllo della Corte dei conti.&#187;.
+
+<!NuovaPag. 62-63> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 62-63<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 12.</CENTER>
+<CENTER><I>(Contributo straordinario).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 12.</CENTER>
+<CENTER><I>(Contributo straordinario).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Il contributo straordinario di cui all'articolo 15, comma 3, del testo unico delle leggi sull'ordinamento degli enti locali di cui al decreto legislativo 18 agosto 2000, n. 267 &#232; erogato a decorrere dall'anno successivo alla decorrenza della fusione prevista dal decreto regionale istitutivo. Per le sole fusioni che decorrono dal mese di gennaio dell'anno successivo alla loro istituzione, il contributo straordinario decennale viene erogato dallo stesso anno di decorrenza della fusione.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <B>All&#8217;</B>articolo 15, comma 3, del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267,<B> le parole: &#171;successivi alla&#187; sono sostituite dalle seguenti: &#171;decorrenti dalla&#187;.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis.</I> Le somme iscritte nel conto dei residui per l'anno 2014 sul fondo istituito dall'articolo 41, comma 16-<I>sexiesdecies</I>.1, secondo periodo, del decreto-legge 30 dicembre 2008, n. 207, convertito, con modificazioni, dalla legge 27 febbraio 2009, n. 14, sono destinate alla regione Emilia-Romagna quale contributo straordinario di 2 milioni di euro da impiegare per il finanziamento di interventi di completamento del passaggio dei comuni di San Leo, Pennabilli, Novafeltria, Sant'Agata Feltria, Talamello, Casteldelci e Maiolo dalla regione Marche, provincia di Pesaro-Urbino, alla regione Emilia-Romagna, provincia di Rimini.</B>
+
+<!NuovaPag. 64-65> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 64-65<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 13.</CENTER>
+<CENTER><I>(Isole minori).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 13.</CENTER>
+<CENTER><I>(Isole minori).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Il finanziamento attribuito al Comune di Lampedusa e Linosa a valere sul Fondo di sviluppo delle isole minori, per le annualit&#224; 2008 e 2009, pari a euro 1.421.021,13 viene interamente erogato e destinato alla realizzazione di interventi urgenti del Comune destinati a far fronte alla situazione di emergenza connessa all'accoglienza dei profughi e ai bisogni primari della comunit&#224; isolana.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>Identico.</I>
+
+<!NuovaPag. 66-67> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 66-67<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 14.</CENTER>
+<CENTER><I>(Applicazione fabbisogni </I>standard<I> per il riparto  del Fondo di solidariet&#224; comunale).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 14.</CENTER>
+<CENTER><I>(Applicazione fabbisogni </I>standard<I> per il riparto  del Fondo di solidariet&#224; comunale).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. All'articolo 1, della legge 24 dicembre 2012, n. 228, sono apportate le seguenti modificazioni:
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico:</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> il comma 380-<I>quater</I> &#232; sostituito dal seguente: &#171;<I>380-quater.</I> Con riferimento ai comuni delle regioni a statuto ordinario, il 10 per cento dell'importo attribuito a titolo di Fondo di solidariet&#224; comunale di cui al comma 380-<I>ter </I>&#232; accantonato per essere redistribuito, con il decreto del Presidente del Consiglio dei ministri di cui alla lettera <I>b)</I> del medesimo comma 380-<I>ter</I>, tra i comuni sulla base delle capacit&#224; fiscali nonch&#233; dei fabbisogni <I>standard </I>approvati dalla Commissione tecnica paritetica per l'attuazione del federalismo fiscale di cui all'articolo 4 della legge 5 maggio 2009, n. 42, entro il 31 dicembre dell'anno precedente a quello di riferimento. Per la quota del Fondo di solidariet&#224; comunale attribuita con il criterio di cui al periodo precedente non operano i criteri di cui alla lettera <I>b)</I> del predetto comma 380-<I>ter.</I>&#187;;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a) identica</I>; 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> dopo il comma 380-<I>quater</I> &#232; inserito il seguente: &#171;<I>380-quinquies.</I> Ai fini dell'applicazione del comma 380-<I>quater</I>, le modalit&#224; e i criteri di attuazione sono stabilite mediante intesa in Conferenza Stato Citt&#224; e autonomie locali entro e non oltre 15 marzo 2014. In caso di mancata intesa, le risorse corrispondenti sono distribuite per l'anno 2014 con la medesima metodologia applicata per il riparto del fondo di solidariet&#224; di cui al comma 380-<I>ter</I> e, a decorrere dall'anno 2015, in base alle disposizioni del predetto comma 380-<I>quater.</I>&#187;.
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> dopo il comma 380-<I>quater</I> &#232; inserito il seguente: &#171;<I>380-quinquies.</I> Ai fini dell'applicazione del comma 380-<I>quater</I>, le modalit&#224; e i criteri di attuazione sono <B>stabiliti</B> mediante intesa in <B>sede di</B> Conferenza Stato<B>-citt&#224; ed</B> autonomie locali<B>, da adottare entro il 15 aprile </B>2014. In caso di mancata intesa, le risorse corrispondenti sono distribuite per l'anno 2014 con la medesima metodologia applicata per il riparto del fondo di solidariet&#224; di cui al comma 380-<I>ter</I> e, a decorrere dall'anno 2015, in base alle disposizioni del predetto comma 380-<I>quater.</I>&#187;.
+
+<!NuovaPag. 68-69> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 68-69<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 15.</CENTER>
+<CENTER><I>(Province di nuova istituzione).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 15.</CENTER>
+<CENTER><B><I>(Disposizioni in materia di </I></B><I>province<B>).</B></I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Alla fine del comma 23 dell'articolo 31 della legge 12 novembre 2011, n. 183 &#232; aggiunto il seguente periodo: &#171;Ai fini del presente comma sono considerate le amministrazioni provinciali interessate nel 2009 dallo scorporo di province di nuova istituzione.&#187;.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis.</I> In vista della futura trasformazione delle province in enti di secondo livello, nel caso in cui il comparto province consegua l'obiettivo di patto di stabilit&#224; interno ad esso complessivamente assegnato per l'anno 2013, la sanzione di cui all'articolo 31, comma 26, lettera <I>a),</I> della legge 12 novembre 2011, n. 183, si applica alle province che non rispettano il patto per l'anno 2013 nel senso che l'ente medesimo &#232; assoggettato alla riduzione del fondo sperimentale di riequilibrio in misura pari alla differenza tra il risultato registrato e l'obiettivo programmatico e comunque per un importo non superiore al 3 per cento delle entrate correnti registrate nell'ultimo consuntivo.</B>
+
+<!NuovaPag. 70-71> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 70-71<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 16.</CENTER>
+<CENTER><I>(Disposizioni concernenti Roma Capitale).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 16.</CENTER>
+<CENTER><I>(Disposizioni concernenti Roma Capitale).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Roma Capitale, entro 90 giorni dalla data di entrata in vigore del presente decreto, trasmette al Ministero dell'interno, al Ministero dell'economia e delle finanze e alle Camere un rapporto che evidenzi le cause della formazione del disavanzo di bilancio di parte corrente negli anni precedenti, nonch&#233; l'entit&#224; e la natura della massa debitoria da trasferire alla gestione commissariale ai sensi del comma 5.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Roma Capitale, entro <B>120</B> giorni dalla data di entrata in vigore del presente decreto, trasmette al Ministero dell'interno, al Ministero dell'economia e delle finanze<B>,</B> alle Camere e <B>alla Corte dei conti</B> un rapporto che evidenzi le cause della formazione del disavanzo di bilancio di parte corrente negli anni precedenti, <B>anche con riferimento alle societ&#224; controllate e partecipate da Roma Capitale</B>, nonch&#233; l'entit&#224; e la natura della massa debitoria da trasferire alla gestione commissariale ai sensi del comma 5.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Roma Capitale trasmette contestualmente al Ministero dell'interno, al Ministero dell'economia e delle finanze e alle Camere un piano triennale per la riduzione del disavanzo e per il riequilibrio strutturale di bilancio al cui interno sono indicate le misure per il contenimento dei costi e la valorizzazione degli attivi di Roma Capitale prevedendo a tali fini l'adozione di specifiche azioni amministrative volte a:
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Roma Capitale trasmette contestualmente al Ministero dell'interno, al Ministero dell'economia e delle finanze<B>,</B> alle Camere e <B>alla Corte dei conti</B> un piano triennale per la riduzione del disavanzo e per il riequilibrio strutturale di bilancio al cui interno sono indicate le misure per il contenimento dei costi e la valorizzazione degli attivi di Roma Capitale prevedendo a tali fini l'adozione di specifiche azioni amministrative volte a:
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a)</I> applicare le disposizioni finanziarie e di bilancio, nonch&#233; i vincoli in materia di acquisto di beni e servizi e di assunzioni di personale, previsti dalla legge 27 dicembre 2013, n. 147, a tutte le societ&#224; controllate con esclusione di quelle quotate nei mercati regolamentati; 
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a) identica;</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a-bis)</I> operare la ricognizione di tutte le societ&#224; controllate e partecipate da Roma Capitale, evidenziando il numero dei consiglieri e degli amministratori, nonch&#233; le somme complessivamente erogate a ciascuno di essi;</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a-ter)</I> avviare un piano rafforzato di lotta all'evasione tributaria e tariffaria;</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b)</I> operare la ricognizione dei costi unitari della fornitura dei servizi pubblici locali e adottare misure per riportare tali costi ai livelli <I>standard</I> dei grandi comuni italiani;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b) identica;</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c)</I> operare una ricognizione dei fabbisogni di personale nelle societ&#224; partecipate, prevedendo per quelle in perdita il necessario riequilibrio con l'utilizzo degli strumenti legislativi e contrattuali esistenti, nel quadro degli accordi con le organizzazioni sindacali;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> operare una ricognizione dei fabbisogni di personale nelle societ&#224; partecipate, prevedendo per quelle in perdita il necessario riequilibrio con l'utilizzo degli strumenti legislativi e contrattuali esistenti<B>, ivi inclusa la mobilit&#224; interaziendale,</B> nel quadro degli accordi con le organizzazioni sindacali, <B>nonch&#233; lo strumento del distacco di cui all'articolo 30 del decreto legislativo 10 settembre 2003, n. 276. Il distacco e l'utilizzo di dirigenti e personale possono avvenire esclusivamente nei limiti della spesa consolidata accertata con riferimento all'anno precedente nel quadro degli accordi che saranno adottati con le organizzazioni sindacali</B>; 
+
+<!NuovaPag. 72-73> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 72-73<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d)</I> adottare modelli innovativi per la gestione dei servizi di trasporto pubblico locale, di raccolta dei rifiuti e di spazzamento delle strade, anche ricorrendo alla liberalizzazione;
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d) identica;</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;e)</I> procedere, ove necessario per perseguire il riequilibrio finanziario del comune, alla dismissione o alla messa in liquidazione delle societ&#224; partecipate che non risultino avere come fine sociale attivit&#224; di servizio pubblico, nonch&#233; alla valorizzazione e dismissione di quote del patrimonio immobiliare del comune.
+<TD VALIGN="TOP" Width=50%><I>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;e)</I> procedere, ove necessario per perseguire il riequilibrio finanziario del comune, <B>alla fusione delle societ&#224; partecipate che svolgono funzioni omogenee,</B> alla dismissione o alla messa in liquidazione delle societ&#224; partecipate che non risultino avere come fine sociale attivit&#224; di servizio pubblico, nonch&#233; alla valorizzazione e dismissione di quote del patrimonio immobiliare del comune<B>;</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>e-bis)</I> responsabilizzare i dirigenti delle societ&#224; partecipate, legando le indennit&#224; di risultato a specifici obiettivi di bilancio.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Il tavolo di raccordo interistituzionale di cui all'articolo 14, comma 3, del decreto legislativo 18 aprile 2012, n. 61, esprime parere obbligatorio sulla predisposizione del piano triennale di cui al comma 2 e dei piani pluriennali di cui al terzo periodo del comma 5 e ne verifica l'attuazione, tenendo anche conto dei maggiori oneri connessi al ruolo di Capitale della Repubblica ove gi&#224; determinati ai sensi dell'articolo 2 del decreto legislativo 18 aprile 2012, n. 61. Ove i maggiori oneri siano determinati successivamente alla approvazione del piano ai sensi del comma 4, il tavolo di cui al primo periodo esprime il proprio parere ai fini della eventuale revisione del piano stesso.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Il tavolo di raccordo interistituzionale di cui all'articolo 14, comma 3, del decreto legislativo 18 aprile 2012, n. 61, esprime parere obbligatorio sulla predisposizione del piano triennale di cui al comma 2 <B>del presente articolo </B>e dei piani pluriennali di cui al <B>sesto periodo del comma 196-<I>bis</I> dell'articolo 2 della legge 23 dicembre 2009, n. 191, introdotto dal </B>comma 5 <B>del presente articolo,</B> e ne verifica l'attuazione, tenendo anche conto dei maggiori oneri connessi al ruolo di Capitale della Repubblica ove gi&#224; determinati ai sensi dell'articolo 2 del decreto legislativo 18 aprile 2012, n. 61. Ove i maggiori oneri siano determinati successivamente alla approvazione del piano ai sensi del comma 4, il tavolo di cui al primo periodo esprime il proprio parere ai fini della eventuale revisione del piano stesso.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. Con decreto del Presidente del Consiglio dei Ministri, da adottarsi entro 60 giorni dalla data di trasmissione del piano di cui al comma 2, su proposta del Ministro dell'interno, di concerto con il Ministro dell'economia e delle finanze, sentita l'Amministrazione capitolina, &#232; approvato il piano triennale di cui al comma 2 e sono determinati la natura e l'entit&#224; della massa debitoria.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. Con decreto del Presidente del Consiglio dei <B>m</B>inistri, su proposta del Ministro dell'interno, di concerto con il Ministro dell'economia e delle finanze, sentita l'Amministrazione capitolina, &#232; approvato il piano triennale di cui al comma 2 entro <B>sessanta</B> giorni dalla data di trasmissione del <B>medesimo al Ministero dell'interno, al Ministero dell'economia e delle finanze e alle Camere. Solo al fine di reperire le risorse volte a realizzare gli obiettivi del piano, il comune di Roma Capitale pu&#242; utilizzare le entrate straordinarie, comprese le eventuali sanzioni ad esse collegate, per il riequilibrio di parte corrente, in deroga all'articolo 162 del testo unico di cui al decreto legislativo 18 agosto 2000, n. 267.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>4-<I>bis.</I> Roma Capitale provvede alle eventuali variazioni del bilancio di previsione in coerenza con il piano triennale approvato dalla giunta, nonch&#233; con il decreto del Presidente del Consiglio dei ministri emanato successivamente ai sensi del comma 4.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>4-<I>ter.</I> Con decreto del Presidente del Consiglio dei ministri, su proposta del Ministro dell'interno, di concerto con il Ministro dell'economia e delle finanze, sentita l'Amministrazione capitolina, sono approvate, previo parere del tavolo di cui al comma 3, a condizione che siano prive di effetti sui saldi della finanza pubblica, modifiche al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis,</I> del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122.</B>
+
+<!NuovaPag. 74-75> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 74-75<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>4-<I>quater.</I> All'articolo 1, comma 10-<I>bis</I>, primo periodo, del decreto-legge 8 aprile 2013, n. 35, convertito, con modificazioni, dalla legge 6 giugno 2013, n. 64, sono aggiunte, in fine, le seguenti parole: &#171;, ivi inclusi quelli contenuti nel piano di cui al comma 2 dell'articolo 16 del decreto-legge 6 marzo 2014, n. 16.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. Al comma 196-<I>bis</I> dell'articolo 2 della legge 23 dicembre 2009, n. 191, sono aggiunti, in fine, i seguenti periodi: &#171;Il medesimo Commissario straordinario &#232; autorizzato ad inserire, per un importo complessivo massimo di 30 milioni di euro, nella massa passiva di cui al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122, le eventuali ulteriori partite debitorie rivenienti da obbligazioni od oneri del comune di Roma anteriori al 28 aprile 2008, alla cui individuazione si procede con determinazioni dirigenziali, assunte con l'attestazione dell'avvenuta assistenza giuridico amministrativa del Segretario comunale. Roma Capitale pu&#242; riacquisire l'esclusiva titolarit&#224; di crediti, inseriti nella massa attiva di cui al documento predisposto ai sensi del citato articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, verso le societ&#224; dalla medesima partecipate anche compensando totalmente o parzialmente gli stessi con partite a debito inserite nella massa passiva di cui al citato documento. Roma Capitale &#232; autorizzata ad avvalersi di appositi piani pluriennali per il rientro dai crediti verso le proprie partecipate cos&#236; riacquisiti. Il medesimo Commissario straordinario &#232; autorizzato, altres&#236;, ad inserire nella massa passiva di cui al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122, le somme introitate dalla gestione commissariale in forza del contratto di servizio di cui all'articolo 5 del Decreto del Presidente del Consiglio dei Ministri in data 5 dicembre 2008, in attuazione di quanto previsto dall'articolo 16, comma 12-<I>octies</I>, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, ai fini del loro reintegro a favore di Roma Capitale, dedotte le somme a qualsiasi titolo inserite, dal 31 ottobre 2013 fino alla data di entrata in vigore del presente decreto, nella medesima massa ed al fine del loro reintegro a favore di Roma Capitale e che, pertanto, restano nella disponibilit&#224; della stessa. Le somme di cui ai periodi precedenti non sono considerate tra le entrate finali di cui all'articolo 31, comma 3, della legge 12 novembre 2011, n. 183, rilevanti ai fini del patto di stabilit&#224; interno.&#187;.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. Al comma 196-<I>bis</I> dell'articolo 2 della legge 23 dicembre 2009, n. 191, sono aggiunti, in fine, i seguenti periodi: &#171;Il medesimo Commissario straordinario &#232; autorizzato ad inserire, per un importo complessivo massimo di 30 milioni di euro, nella massa passiva di cui al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122, le eventuali ulteriori partite debitorie rivenienti da obbligazioni od oneri del comune di Roma<B>, ivi inclusi gli oneri derivanti dalle procedure di cui all'articolo 42-<I>bis</I> del testo unico di cui al decreto del Presidente della Repubblica 8 giugno 2001, n. 327,</B> anteriori al 28 aprile 2008, alla cui individuazione si procede con determinazioni dirigenziali, assunte con l'attestazione dell'avvenuta assistenza giuridico amministrativa del Segretario comunale. Roma Capitale pu&#242; riacquisire l'esclusiva titolarit&#224; di crediti, inseriti nella massa attiva di cui al documento predisposto ai sensi del citato articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, verso le societ&#224; dalla medesima partecipate anche compensando totalmente o parzialmente gli stessi con partite a debito inserite nella massa passiva di cui al citato documento. Roma Capitale &#232; autorizzata ad avvalersi di appositi piani pluriennali per il rientro dai crediti verso le proprie partecipate cos&#236; riacquisiti. Il medesimo Commissario straordinario &#232; autorizzato, altres&#236;, ad inserire nella massa passiva di cui al documento predisposto ai sensi dell'articolo 14, comma 13-<I>bis</I>, del decreto-legge 31 maggio 2010, n. 78, convertito, con modificazioni, dalla legge 30 luglio 2010, n. 122, le somme introitate dalla gestione commissariale in forza del contratto di servizio di cui all'articolo 5 del Decreto del Presidente del Consiglio dei Ministri in data 5 dicembre 2008, in attuazione di quanto previsto dall'articolo 16, comma 12-<I>octies</I>, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, ai fini del loro reintegro a favore di Roma Capitale, dedotte le somme a qualsiasi titolo inserite, dal 31 ottobre 2013 fino alla data di entrata in vigore <B>della </B>presente <B>disposizione</B>, nella medesima massa ed al fine del loro reintegro a favore di Roma Capitale e che, pertanto, restano nella disponibilit&#224; della stessa. Le somme di cui ai periodi precedenti non sono considerate tra le entrate finali di cui all'articolo 31, comma 3, della legge 12 novembre 2011, n. 183, rilevanti ai fini del patto di stabilit&#224; interno.&#187;.
+
+<!NuovaPag. 76-77> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 76-77<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>5-<I>bis.</I> Al fine di contribuire al superamento della crisi in atto nel ciclo di gestione integrata dei rifiuti nel territorio di Roma Capitale, per assicurare l'attuazione degli interventi previsti dal Protocollo d'intesa &#171;Patto per Roma&#187; del 4 agosto 2012, previa validazione da parte del Ministero dell'ambiente e della tutela del territorio e del mare del programma di lavoro triennale &#171;Raccolta differenziata&#187;, ivi previsto, opportunamente rimodulato sulla base delle risorse rese disponibili, sono finalizzate:</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a) </I>nel limite di 6,5 milioni di euro per il 2014 e di 7,5 milioni di euro per il 2015, le risorse iscritte in bilancio, per i medesimi esercizi, ai sensi dell'articolo 10, comma 1, del decreto legislativo 31 marzo 1998, n. 112;</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>b) </I>nel limite di 5,5 milioni di euro per il 2014 e di 3 milioni di euro per il 2015, le risorse finanziarie disponibili nello stato di previsione del Ministero dell'ambiente e della tutela del territorio e del mare, per i medesimi esercizi, a valere sull'autorizzazione di spesa recata dall'articolo 2, comma 323, della legge 24 dicembre 2007, n. 244.</B>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>5-<I>ter.</I> Alla compensazione degli effetti finanziari in termini di fabbisogno e di indebitamento netto derivanti dall'attuazione del comma 5-<I>bis</I>, lettera <I>a),</I> pari a 6,5 milioni di euro per il 2014 e a 7,5 milioni di euro per il 2015, si provvede mediante corrispondente utilizzo del Fondo per la compensazione degli effetti finanziari non previsti a legislazione vigente conseguenti all'attualizzazione di contributi pluriennali, di cui all'articolo 6, comma 2, del decreto-legge 7 ottobre 2008, n. 154, convertito, con modificazioni, dalla legge 4 dicembre 2008, n. 189, e successive modificazioni.</B>
+
+<!NuovaPag. 78-79> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 78-79<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 17.</CENTER>
+<CENTER><I>(Disposizioni in materia di trasporto ferroviario  nelle regioni a statuto speciale).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 17.</CENTER>
+<CENTER><I>(Disposizioni in materia di trasporto ferroviario  nelle regioni a statuto speciale).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Per favorire il completamento del passaggio delle competenze relative al trasporto pubblico locale ferroviario tra lo Stato e la Regione Valle d'Aosta, ai sensi dell'articolo 2 del decreto legislativo 26 ottobre 2010, n. 194, del conseguente Accordo fra lo Stato e la Regione Valle d'Aosta stipulato in data 11 novembre 2010 come recepito dall'articolo 1, comma 160, della legge 13 dicembre 2010, n. 220, lo Stato concorre con il pagamento diretto a Trenitalia dell'importo di 13,4 milioni di euro, nell'anno 2014, per corrispettivo dei servizi resi nel periodo gennaio-luglio 2014.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Qualora l'intesa tra lo Stato e la Regione Valle d'Aosta di cui all'articolo 1, comma 515, della legge 27 dicembre 2013 n. 147 non sia raggiunta entro il 30 giugno 2014, e comunque il trasferimento delle funzioni non sia completato entro il 31 luglio 2014, al fine di non aggravare la posizione debitoria nei confronti del gestore del servizio ferroviario, lo stesso provvede alla riduzione del servizio, garantendo l'effettuazione dei servizi minimi essenziali. Resta fermo che il pagamento del servizio a decorrere dal 31 luglio 2014 a carico della Regione Valle d'Aosta &#232; escluso dal patto di stabilit&#224; interno nel limite di 9,6 milioni di euro per l'anno 2014 e 23 milioni annui a decorrere dal 2015.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Qualora l'intesa tra lo Stato e la Regione Valle d'Aosta di cui all'articolo 1, comma 515, della legge 27 dicembre 2013 n. 147 non sia raggiunta entro il 30 giugno 2014, e comunque il trasferimento delle funzioni non sia completato entro il 31 luglio 2014, al fine di non aggravare la posizione debitoria nei confronti del gestore del servizio ferroviario, lo stesso provvede alla riduzione del servizio, garantendo l'effettuazione dei servizi minimi essenziali. Resta fermo che il pagamento del servizio a decorrere dal 31 luglio 2014 a carico della Regione Valle d'Aosta &#232; escluso dal patto di stabilit&#224; interno nel limite di 9,6 milioni di euro per l'anno 2014 e <B>di </B>23 milioni <B>di euro</B> annui a decorrere <B>dall'anno</B> 2015.
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. Agli oneri derivanti dall'attuazione del comma 1, pari a 13,4 milioni di euro per l'anno 2014, si provvede, quanto a 4 milioni di euro, mediante corrispondente riduzione dello stanziamento del fondo speciale di parte corrente iscritto, ai fini del bilancio triennale 2014-2016, nell'ambito del programma &#171;Fondi di riserva e speciali&#187; della missione &#171;Fondi da ripartire&#187; dello stato di previsione del Ministero dell'economia e delle finanze per l'anno 2014, allo scopo parzialmente utilizzando l'accantonamento relativo al medesimo Ministero e, quanto a 9,4 milioni di euro, mediante corrispondente riduzione del Fondo per interventi strutturali di politica economica, di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <I>Identico.</I> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. Il Ministero dell'economia e delle Finanze &#232; altres&#236; autorizzato, nelle more del trasferimento completo delle competenze alle Regioni a Statuto Speciale e dei servizi indivisi, a corrispondere a Trenitalia, sulla base della clausola di continuit&#224;, le somme impegnate per l'anno 2013 per le prestazioni rese. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <I>Identico.</I>
+
+<!NuovaPag. 80-81> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 80-81<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>4-<I>bis.</I> Al fine di consentire la prosecuzione degli interventi sulla rete ferroviaria nazionale e l'attuazione dei relativi programmi di investimento, fino alla conclusione della procedura di approvazione del contratto di programma-parte investimenti 2012-2016, da effettuare entro il termine massimo del 30 giugno 2014, i rapporti tra lo Stato e il gestore dell'infrastruttura sono regolati, nel rispetto degli equilibri di finanza pubblica, sulla base di quanto stabilito dal contratto di programma 2007-2011.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. Al fine di consentire l'avvio dell'esecuzione del piano di rientro di cui all'articolo 16, comma 5, del decreto-legge 22 giugno 2012, n. 83, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 134, a decorrere dalla data di entrata in vigore del presente decreto-legge e fino al 30 giugno 2014, non &#232; consentito intraprendere e proseguire azioni esecutive, anche concorsuali, nei confronti delle societ&#224; di cui all'articolo 16, comma 7, del citato decreto-legge n. 83 del 2012, n&#233; sulle risorse di cui all'articolo 11, comma 13, del decreto-legge 28 giugno 2013, n. 76, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 99, all'articolo 16, comma 9, del citato decreto-legge n. 83 del 2012, nonch&#233; all'articolo 1, comma 9-<I>bis</I>, del decreto-legge 10 ottobre 2012, n. 174, convertito, con modificazioni, dalla legge 7 dicembre 2012, n. 212, destinate alla Regione Campania. I pignoramenti eventualmente eseguiti non vincolano gli enti debitori e i terzi pignorati, i quali possono disporre delle somme per le finalit&#224; istituzionali delle societ&#224; di cui al primo periodo. 
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. Al fine di consentire l'avvio dell'esecuzione del piano di rientro di cui all'articolo 16, comma 5, del decreto-legge 22 giugno 2012, n. 83, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 134, a decorrere dalla data di entrata in vigore del presente decreto-legge e fino al 30 giugno 2014, non &#232; consentito intraprendere e proseguire azioni esecutive, anche concorsuali, nei confronti delle societ&#224; di cui all'articolo 16, comma 7, del citato decreto-legge n. 83 del 2012, n&#233; sulle risorse di cui all'articolo 11, comma 13, del decreto-legge 28 giugno 2013, n. 76, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 99, all'articolo 16, comma 9, del citato decreto-legge n. 83 del 2012, nonch&#233; all'articolo 1, comma 9-<I>bis</I>, del decreto-legge 10 ottobre 2012, n. 174, convertito, con modificazioni, dalla legge 7 dicembre 2012, n. <B>213</B>, destinate alla Regione Campania. I pignoramenti eventualmente eseguiti non vincolano gli enti debitori e i terzi pignorati, i quali possono disporre delle somme per le finalit&#224; istituzionali delle societ&#224; di cui al primo periodo.
+
+<!NuovaPag. 82-83> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 82-83<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 18.</CENTER>
+<CENTER><I>(Disposizioni in favore dei comuni assegnatari di contributi pluriennali di cui all'articolo 6 della legge 29 novembre 1984, n. 798).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 18.</CENTER>
+<CENTER><I>(Disposizioni in favore dei comuni assegnatari di contributi pluriennali di cui all'articolo 6 della legge 29 novembre 1984, n. 798).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Per l'anno 2014, ai comuni assegnatari di contributi pluriennali stanziati per le finalit&#224; di cui all'articolo 6, della legge 29 novembre 1984, n. 798, che non hanno raggiunto l'obiettivo del patto di stabilit&#224; interno non si applica la sanzione di cui al comma 26, lettera <I>d)</I>, dell'articolo 31 della legge 12 novembre 2011, n. 183 e, la sanzione di cui al comma 26, lettera <I>a)</I>, del citato articolo 31, si applica nel senso che l'ente medesimo &#232; assoggettato ad una riduzione del fondo di solidariet&#224; comunale in misura pari alla differenza tra il risultato registrato e l'obiettivo programmatico predeterminato e comunque per un importo non superiore al 3 per cento delle entrate correnti registrate nell'ultimo consuntivo. In caso di incapienza dei predetti fondi, gli enti locali sono tenuti a versare all'entrata del bilancio dello Stato le somme residue.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis.</I> Per i mutui contratti dagli enti locali antecedentemente al 1<sup>o</sup> gennaio 2005 con oneri a totale carico dello Stato, ivi compresi quelli in cui &#232; l'ente locale a pagare le rate di ammortamento con obbligo da parte dello Stato di rimborsare le rate medesime, il comma 76 dell'articolo 1 della legge 30 dicembre 2004, n. 311, si interpreta nel senso che l'ente locale beneficiario pu&#242; iscrivere il ricavato dei predetti mutui nelle entrate per trasferimenti in conto capitale, con vincolo di destinazione agli investimenti. Considerati validi gli effetti di quanto operato fino al 31 dicembre 2013, a decorrere dall'anno 2014, nel caso di iscrizione del ricavato dei mutui di cui al primo periodo tra le entrate per trasferimenti in conto capitale con vincolo di destinazione agli investimenti, il rimborso da parte dello Stato delle relative rate di ammortamento non &#232; considerato tra le entrate finali rilevanti ai fini del patto di stabilit&#224; interno.</B>
+
+<!NuovaPag. 84-85> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 84-85<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 19.</CENTER>
+<CENTER><I>(Disposizioni in materia di servizi di pulizia e ausiliari nelle scuole  e di edilizia scolastica).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 19.</CENTER>
+<CENTER><I>(Disposizioni in materia di servizi di pulizia e ausiliari nelle scuole  e di edilizia scolastica).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Il termine del 28 febbraio 2014, di cui all'articolo 1, comma 748, della legge 27 dicembre 2013, n. 147, sia nei territori nei quali non &#232; attiva la convenzione Consip per l'acquisto dei servizi di pulizia e ausiliari nelle scuole, sia nei territori in cui la suddetta convenzione &#232; attiva, &#232; prorogato al 31 marzo 2014, in deroga al limite di spesa di cui all'articolo 58, comma 5, del decreto-legge 21 giugno 2013, n. 69, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 98. A tal fine il limite di spesa di cui al medesimo articolo 1 comma 748, terzo periodo, &#232; incrementato di euro 20 milioni per l'esercizio finanziario 2014. Al relativo onere si provvede mediante corrispondente riduzione dell'autorizzazione di spesa di cui all'articolo 4 della legge 18 dicembre 1997, n. 440.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1-<I>bis.</I> All'articolo 18, comma 8-<I>bis</I>, del decreto-legge 21 giugno 2013, n. 69, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 98, sono apportate le seguenti modificazioni:</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>a)</I> al primo periodo, dopo le parole: &#171;degli anni 2014, 2015 e 2016&#187; sono inserite le seguenti: &#171;, in relazione all'articolo 2, comma 329, della legge 24 dicembre 2007, n. 244,&#187;;</B>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B><I>b)</I> al secondo periodo, le parole: &#171;nonch&#233; degli istituti cui sono affidate tali attivit&#224;&#187; sono soppresse.</B> 
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. All'articolo 18, comma 8-<I>quinquies</I>, del decreto-legge 21 giugno 2013, n. 69, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 98, le parole &#171;28 febbraio 2014&#187; sono sostituite dalle seguenti: &#171;30 aprile 2014&#187;.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. All'articolo 18, comma 8-<I>quinquies</I>, del decreto-legge 21 giugno 2013, n. 69, convertito, con modificazioni, dalla legge 9 agosto 2013, n. 98, le parole &#171;28 febbraio 2014&#187;<B>, ovunque ricorrono,</B> sono sostituite dalle seguenti: &#171;30 aprile 2014&#187;.
+
+<!NuovaPag. 86-87> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 86-87<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 20.</CENTER>
+<CENTER><I>(Ulteriori disposizioni per favorire il superamento delle conseguenze del sisma nella regione Abruzzo dell'aprile 2009).</I></CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER><!E3>Articolo 20.</CENTER>
+<CENTER><I>(Ulteriori disposizioni per favorire il superamento delle conseguenze del sisma nella regione Abruzzo dell'aprile 2009).</I></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Con riferimento all'esercizio finanziario 2013, nei confronti del comune dell'Aquila non si applicano le misure di cui al comma 26 dell'articolo 31 della legge 12 novembre 2011, n. 183, e successive modificazioni, n&#233; le ulteriori misure sanzionatorie previste dalle vigenti disposizioni in materia di patto di stabilit&#224; interno.
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <I>Identico.</I>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Al fine di concorrere ad assicurare la stabilit&#224; dell'equilibrio finanziario nel comune dell'Aquila, negli altri comuni del cratere di cui ai decreti del commissario delegato n. 3 del 16 aprile 2009 e n. 11 del 17 luglio 2009 e nella provincia dell'Aquila, per l'anno 2014 nei confronti di detti enti non si applicano le riduzioni recate dall'articolo 16, commi 6 e 7, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, fermo restando il complessivo importo delle riduzioni previste.
+<TD VALIGN="TOP" Width=50%>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. Al fine di concorrere ad assicurare la stabilit&#224; dell'equilibrio finanziario nel comune dell'Aquila, negli altri comuni del cratere di cui ai decreti del commissario delegato n. 3 del 16 aprile 2009 e n. 11 del 17 luglio 2009<B>, pubblicati, rispettivamente, nella <I>Gazzetta Ufficiale</I> n. 89 del 17 aprile 2009 e n. 173 del 28 luglio 2009,</B> e nella provincia dell'Aquila, per l'anno 2014 nei confronti di detti enti non si applicano le riduzioni recate dall'articolo 16, commi 6 e 7, del decreto-legge 6 luglio 2012, n. 95, convertito, con modificazioni, dalla legge 7 agosto 2012, n. 135, fermo restando il complessivo importo delle riduzioni previste.
+
+<!NuovaPag. 88-89> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 88-89<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P><CENTER><B><!E3>Articolo 20-<I>bis.</I></B></CENTER>
+<CENTER><B><I>(Finanziamento del Fondo per le emergenze nazionali).</I></B></CENTER>
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">
+
+
+
+<TD VALIGN="TOP" Width=50%><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<B>1. Al comma 120 dell'articolo 1 della legge 27 dicembre 2013, n. 147, dopo le parole: &#171;programmazione 2007-2013,&#187; sono inserite le seguenti: &#171;una quota di 50 milioni di euro a valere sulla quota nazionale &#232; destinata al Fondo per le emergenze nazionali istituito presso la Presidenza del Consiglio dei ministri, di cui alla legge 24 febbraio 1992, n. 225, e&#187; e dopo le parole: &#171;dall'anno 2009&#187; sono aggiunte le seguenti: &#171;individuati con provvedimento del Capo del Dipartimento della protezione civile&#187;.</B>
+
+<!NuovaPag. 90-91> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 90-91<hr width=30%></hr></center></td></tr>
+
+
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER><!E3>Articolo 21.</CENTER>
+<CENTER><I>(Entrata in vigore).</I></CENTER>
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. Il presente decreto entra in vigore il giorno stesso della sua pubblicazione nella <I>Gazzetta Ufficiale </I>della Repubblica italiana e sar&#224; presentato alle Camere per la conversione in legge.
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Il presente decreto, munito del sigillo dello Stato, sar&#224; inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana. &#200; fatto obbligo a chiunque spetti di osservarlo e di farlo osservare.
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dato a Roma, add&#236; 6 marzo 2014. 
+<TD VALIGN="TOP" Width=50%>&#160;
+
+<TR><TD VALIGN="top" style="border-right:1px solid black" width="50%"><P><CENTER>NAPOLITANO</CENTER>
+
+<P>Renzi, <I>Presidente del Consiglio dei Ministri.</I>
+<BR>Padoan, <I>Ministro dell'economia e delle finanze.</I>
+<BR>Alfano, <I>Ministro dell'interno.</I>
+<BR>Giannini, <I>Ministro dell'istruzione, dell'universit&#224; e della ricerca.</I>
+
+<P>Visto, <I>il Guardasigilli:</I> Orlando.
+<TD VALIGN="TOP" Width=50%>&#160;</TABLE>
+
+
+<!NuovaPag. 92> <tr class="CambioPagina"><td colspan="2"><center><hr width=30%></hr>Pag. 92<hr width=30%></hr></center></td></tr>
+
+<P><!AL><DIV align="right"><A NAME="AL2"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV>
+
+
+<P>ALLEGATO 1
+<BR><I>(Articolo 10, comma 1)</I>
+
+<P>
+<TABLE BORDER>
+
+<TR><TD VALIGN="TOP" Width=50%><P><CENTER>Provincia</CENTER>
+<TD VALIGN="TOP" Width=50%><P><CENTER>Anno 2014</CENTER>
+
+<TR><TD VALIGN="TOP" Width=50%>AGRIGENTO 
+<TD VALIGN="TOP" Width=50%>6.309.436
+
+<TR><TD VALIGN="TOP" Width=50%>ALESSANDRIA 
+<TD VALIGN="TOP" Width=50%>11.090.439
+
+<TR><TD VALIGN="TOP" Width=50%>ANCONA 
+<TD VALIGN="TOP" Width=50%>10.613.324
+
+<TR><TD VALIGN="TOP" Width=50%>AREZZO 
+<TD VALIGN="TOP" Width=50%>8.732.333
+
+<TR><TD VALIGN="TOP" Width=50%>ASCOLI PICENO 
+<TD VALIGN="TOP" Width=50%>4.929.274
+
+<TR><TD VALIGN="TOP" Width=50%>ASTI 
+<TD VALIGN="TOP" Width=50%>5.370.186
+
+<TR><TD VALIGN="TOP" Width=50%>AVELLINO 
+<TD VALIGN="TOP" Width=50%>7.962.256
+
+<TR><TD VALIGN="TOP" Width=50%>BARI 
+<TD VALIGN="TOP" Width=50%>30.125.857
+
+<TR><TD VALIGN="TOP" Width=50%>BARLETTA-ANDRIA-TRANI 
+<TD VALIGN="TOP" Width=50%>7.243.728
+
+<TR><TD VALIGN="TOP" Width=50%>BELLUNO 
+<TD VALIGN="TOP" Width=50%>5.160.365
+
+<TR><TD VALIGN="TOP" Width=50%>BENEVENTO 
+<TD VALIGN="TOP" Width=50%>6.967.338
+
+<TR><TD VALIGN="TOP" Width=50%>BERGAMO 
+<TD VALIGN="TOP" Width=50%>15.187.126
+
+<TR><TD VALIGN="TOP" Width=50%>BIELLA 
+<TD VALIGN="TOP" Width=50%>4.764.707
+
+<TR><TD VALIGN="TOP" Width=50%>BOLOGNA 
+<TD VALIGN="TOP" Width=50%>20.018.556
+
+<TR><TD VALIGN="TOP" Width=50%>BRESCIA 
+<TD VALIGN="TOP" Width=50%>21.228.877
+
+<TR><TD VALIGN="TOP" Width=50%>BRINDISI 
+<TD VALIGN="TOP" Width=50%>9.966.073
+
+<TR><TD VALIGN="TOP" Width=50%>CAGLIARI 
+<TD VALIGN="TOP" Width=50%>16.619.769
+
+<TR><TD VALIGN="TOP" Width=50%>CALTANISSETTA 
+<TD VALIGN="TOP" Width=50%>5.416.452
+
+<TR><TD VALIGN="TOP" Width=50%>CAMPOBASSO 
+<TD VALIGN="TOP" Width=50%>8.190.033
+
+<TR><TD VALIGN="TOP" Width=50%>CARBONIA-IGLESIAS 
+<TD VALIGN="TOP" Width=50%>3.861.369
+
+<TR><TD VALIGN="TOP" Width=50%>CASERTA 
+<TD VALIGN="TOP" Width=50%>17.682.418
+
+<TR><TD VALIGN="TOP" Width=50%>CATANIA 
+<TD VALIGN="TOP" Width=50%>26.605.724
+
+<TR><TD VALIGN="TOP" Width=50%>CATANZARO 
+<TD VALIGN="TOP" Width=50%>14.005.792
+
+<TR><TD VALIGN="TOP" Width=50%>CHIETI 
+<TD VALIGN="TOP" Width=50%>7.757.366
+
+<TR><TD VALIGN="TOP" Width=50%>COMO 
+<TD VALIGN="TOP" Width=50%>11.176.134
+
+<TR><TD VALIGN="TOP" Width=50%>COSENZA 
+<TD VALIGN="TOP" Width=50%>14.905.603
+
+<TR><TD VALIGN="TOP" Width=50%>CREMONA 
+<TD VALIGN="TOP" Width=50%>7.137.419
+
+<TR><TD VALIGN="TOP" Width=50%>CROTONE 
+<TD VALIGN="TOP" Width=50%>5.599.452
+
+<TR><TD VALIGN="TOP" Width=50%>CUNEO 
+<TD VALIGN="TOP" Width=50%>14.190.484
+
+
+<TR><TD width="50%" colspan="2">
+
+<!NuovaPag. 93><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 93 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<TR><TD VALIGN="TOP" Width=50%>ENNA 
+<TD VALIGN="TOP" Width=50%>3.312.504
+
+<TR><TD VALIGN="TOP" Width=50%>FERMO 
+<TD VALIGN="TOP" Width=50%>2.960.207
+
+<TR><TD VALIGN="TOP" Width=50%>FERRARA 
+<TD VALIGN="TOP" Width=50%>5.953.442
+
+<TR><TD VALIGN="TOP" Width=50%>FIRENZE 
+<TD VALIGN="TOP" Width=50%>24.018.671
+
+<TR><TD VALIGN="TOP" Width=50%>FOGGIA 
+<TD VALIGN="TOP" Width=50%>12.315.090
+
+<TR><TD VALIGN="TOP" Width=50%>FORL&#204;-CESENA 
+<TD VALIGN="TOP" Width=50%>7.460.049
+
+<TR><TD VALIGN="TOP" Width=50%>FROSINONE 
+<TD VALIGN="TOP" Width=50%>16.998.042
+
+<TR><TD VALIGN="TOP" Width=50%>GENOVA 
+<TD VALIGN="TOP" Width=50%>20.257.707
+
+<TR><TD VALIGN="TOP" Width=50%>GROSSETO 
+<TD VALIGN="TOP" Width=50%>6.266.195
+
+<TR><TD VALIGN="TOP" Width=50%>IMPERIA 
+<TD VALIGN="TOP" Width=50%>4.904.282
+
+<TR><TD VALIGN="TOP" Width=50%>ISERNIA 
+<TD VALIGN="TOP" Width=50%>3.691.583
+
+<TR><TD VALIGN="TOP" Width=50%>LA SPEZIA 
+<TD VALIGN="TOP" Width=50%>5.118.081
+
+<TR><TD VALIGN="TOP" Width=50%>LATINA 
+<TD VALIGN="TOP" Width=50%>13.346.321
+
+<TR><TD VALIGN="TOP" Width=50%>LECCE 
+<TD VALIGN="TOP" Width=50%>15.482.196
+
+<TR><TD VALIGN="TOP" Width=50%>LECCO 
+<TD VALIGN="TOP" Width=50%>7.960.884
+
+<TR><TD VALIGN="TOP" Width=50%>LIVORNO 
+<TD VALIGN="TOP" Width=50%>7.575.953
+
+<TR><TD VALIGN="TOP" Width=50%>LODI 
+<TD VALIGN="TOP" Width=50%>5.363.183
+
+<TR><TD VALIGN="TOP" Width=50%>LUCCA 
+<TD VALIGN="TOP" Width=50%>10.780.136
+
+<TR><TD VALIGN="TOP" Width=50%>MACERATA 
+<TD VALIGN="TOP" Width=50%>7.163.679
+
+<TR><TD VALIGN="TOP" Width=50%>MANTOVA 
+<TD VALIGN="TOP" Width=50%>9.244.508
+
+<TR><TD VALIGN="TOP" Width=50%>MASSA 
+<TD VALIGN="TOP" Width=50%>4.919.702
+
+<TR><TD VALIGN="TOP" Width=50%>MATERA 
+<TD VALIGN="TOP" Width=50%>4.154.843
+
+<TR><TD VALIGN="TOP" Width=50%>MEDIO CAMPIDANO 
+<TD VALIGN="TOP" Width=50%>3.613.485
+
+<TR><TD VALIGN="TOP" Width=50%>MESSINA 
+<TD VALIGN="TOP" Width=50%>10.428.821
+
+<TR><TD VALIGN="TOP" Width=50%>MILANO 
+<TD VALIGN="TOP" Width=50%>53.848.308
+
+<TR><TD VALIGN="TOP" Width=50%>MODENA 
+<TD VALIGN="TOP" Width=50%>11.069.091
+
+<TR><TD VALIGN="TOP" Width=50%>MONZA E DELLA BRIANZA 
+<TD VALIGN="TOP" Width=50%>8.799.152
+
+<TR><TD VALIGN="TOP" Width=50%>NAPOLI 
+<TD VALIGN="TOP" Width=50%>43.732.934
+
+<TR><TD VALIGN="TOP" Width=50%>NOVARA 
+<TD VALIGN="TOP" Width=50%>8.548.660
+
+<TR><TD VALIGN="TOP" Width=50%>NUORO 
+<TD VALIGN="TOP" Width=50%>5.241.107
+
+<TR><TD VALIGN="TOP" Width=50%>OGLIASTRA 
+<TD VALIGN="TOP" Width=50%>2.433.739
+
+<TR><TD VALIGN="TOP" Width=50%>OLBIA-TEMPIO 
+<TD VALIGN="TOP" Width=50%>5.206.277
+
+
+<TR><TD width="50%" colspan="2">
+
+<!NuovaPag. 94><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 94 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<TR><TD VALIGN="TOP" Width=50%>ORISTANO 
+<TD VALIGN="TOP" Width=50%>5.354.321
+
+<TR><TD VALIGN="TOP" Width=50%>PADOVA 
+<TD VALIGN="TOP" Width=50%>14.266.771
+
+<TR><TD VALIGN="TOP" Width=50%>PALERMO 
+<TD VALIGN="TOP" Width=50%>25.861.029
+
+<TR><TD VALIGN="TOP" Width=50%>PARMA 
+<TD VALIGN="TOP" Width=50%>8.985.546
+
+<TR><TD VALIGN="TOP" Width=50%>PAVIA 
+<TD VALIGN="TOP" Width=50%>13.449.267
+
+<TR><TD VALIGN="TOP" Width=50%>PERUGIA 
+<TD VALIGN="TOP" Width=50%>12.939.020
+
+<TR><TD VALIGN="TOP" Width=50%>PESARO E URBINO 
+<TD VALIGN="TOP" Width=50%>10.785.563
+
+<TR><TD VALIGN="TOP" Width=50%>PESCARA 
+<TD VALIGN="TOP" Width=50%>5.946.576
+
+<TR><TD VALIGN="TOP" Width=50%>PIACENZA 
+<TD VALIGN="TOP" Width=50%>8.476.195
+
+<TR><TD VALIGN="TOP" Width=50%>PISA 
+<TD VALIGN="TOP" Width=50%>12.682.941
+
+<TR><TD VALIGN="TOP" Width=50%>PISTOIA 
+<TD VALIGN="TOP" Width=50%>4.742.177
+
+<TR><TD VALIGN="TOP" Width=50%>POTENZA 
+<TD VALIGN="TOP" Width=50%>16.020.608
+
+<TR><TD VALIGN="TOP" Width=50%>PRATO 
+<TD VALIGN="TOP" Width=50%>6.381.401
+
+<TR><TD VALIGN="TOP" Width=50%>RAGUSA 
+<TD VALIGN="TOP" Width=50%>6.071.930
+
+<TR><TD VALIGN="TOP" Width=50%>RAVENNA 
+<TD VALIGN="TOP" Width=50%>6.282.730
+
+<TR><TD VALIGN="TOP" Width=50%>REGGIO CALABRIA 
+<TD VALIGN="TOP" Width=50%>12.823.780
+
+<TR><TD VALIGN="TOP" Width=50%>REGGIO EMILIA 
+<TD VALIGN="TOP" Width=50%>9.927.689
+
+<TR><TD VALIGN="TOP" Width=50%>RIETI 
+<TD VALIGN="TOP" Width=50%>6.573.931
+
+<TR><TD VALIGN="TOP" Width=50%>RIMINI 
+<TD VALIGN="TOP" Width=50%>6.733.372
+
+<TR><TD VALIGN="TOP" Width=50%>ROMA 
+<TD VALIGN="TOP" Width=50%>79.332.441
+
+<TR><TD VALIGN="TOP" Width=50%>ROVIGO 
+<TD VALIGN="TOP" Width=50%>4.033.488
+
+<TR><TD VALIGN="TOP" Width=50%>SALERNO 
+<TD VALIGN="TOP" Width=50%>28.283.796
+
+<TR><TD VALIGN="TOP" Width=50%>SASSARI 
+<TD VALIGN="TOP" Width=50%>9.027.167
+
+<TR><TD VALIGN="TOP" Width=50%>SAVONA 
+<TD VALIGN="TOP" Width=50%>6.856.430
+
+<TR><TD VALIGN="TOP" Width=50%>SIENA 
+<TD VALIGN="TOP" Width=50%>10.561.909
+
+<TR><TD VALIGN="TOP" Width=50%>SIRACUSA 
+<TD VALIGN="TOP" Width=50%>10.452.508
+
+<TR><TD VALIGN="TOP" Width=50%>SONDRIO 
+<TD VALIGN="TOP" Width=50%>4.370.112
+
+<TR><TD VALIGN="TOP" Width=50%>TARANTO 
+<TD VALIGN="TOP" Width=50%>12.101.354
+
+<TR><TD VALIGN="TOP" Width=50%>TERAMO 
+<TD VALIGN="TOP" Width=50%>5.641.401
+
+<TR><TD VALIGN="TOP" Width=50%>TERNI 
+<TD VALIGN="TOP" Width=50%>4.749.010
+
+<TR><TD VALIGN="TOP" Width=50%>TORINO 
+<TD VALIGN="TOP" Width=50%>39.391.981
+
+<TR><TD VALIGN="TOP" Width=50%>TRAPANI 
+<TD VALIGN="TOP" Width=50%>8.055.923
+
+
+<TR><TD width="50%" colspan="2">
+
+<!NuovaPag. 95><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 95 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<TR><TD VALIGN="TOP" Width=50%>TREVISO 
+<TD VALIGN="TOP" Width=50%>15.246.615
+
+<TR><TD VALIGN="TOP" Width=50%>VARESE 
+<TD VALIGN="TOP" Width=50%>15.433.375
+
+<TR><TD VALIGN="TOP" Width=50%>VENEZIA 
+<TD VALIGN="TOP" Width=50%>15.941.283
+
+<TR><TD VALIGN="TOP" Width=50%>VERBANO-CUSIO-OSSOLA 
+<TD VALIGN="TOP" Width=50%>6.793.328
+
+<TR><TD VALIGN="TOP" Width=50%>VERCELLI 
+<TD VALIGN="TOP" Width=50%>6.101.547
+
+<TR><TD VALIGN="TOP" Width=50%>VERONA 
+<TD VALIGN="TOP" Width=50%>13.604.320
+
+<TR><TD VALIGN="TOP" Width=50%>VIBO VALENTIA 
+<TD VALIGN="TOP" Width=50%>5.139.635
+
+<TR><TD VALIGN="TOP" Width=50%>VICENZA 
+<TD VALIGN="TOP" Width=50%>15.008.825
+
+<TR><TD VALIGN="TOP" Width=50%>VITERBO 
+<TD VALIGN="TOP" Width=50%>8.581.983</TABLE>
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+

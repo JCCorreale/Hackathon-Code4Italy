@@ -1,0 +1,655 @@
+
+<html>
+	<head>
+		<script language="javascript">
+			var bolConPagine;			
+			bolConPagine = false;
+
+			function flippa(param)
+			{			
+				if (param == 1) 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(0)'><font color='#800000'>Mostra n. pagina</font></a>"
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()
+				} 
+				else 
+				{
+					mostranasc.innerHTML = "<a href='javascript:flippa(1)'><font color='#800000'>Nascondi n. pagina</font></a>"
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}					
+			}
+			
+			function flippaRif(param)
+			{
+				if (param == 1) 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(0)'><font color='#800000'>Mostra riferimenti nnomrativi</font></a>"
+					frmStampa.mostraRif.value='false';	
+					MostraRif()
+				} 
+				else 
+				{
+					mostraRif.innerHTML = "<a href='javascript:flippaRif(1)'><font color='#800000'>Nascondi riferimenti normativi</font></a>"
+					frmStampa.mostraRif.value='true';	
+					NascondiRif()		
+				}					
+			}
+			
+			function TestaFlag(param)
+			{
+				if (mostra[0].checked == true) 
+				{
+					frmStampa.mostraP.value='true';	
+					MostraPagina()		
+				}
+				if (mostra[1].checked == true) 
+				{
+					frmStampa.mostraP.value='false';	
+					NascondiPagina()		
+				}
+			}
+			
+			function MostraPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;				
+				newStyle = "conpagine";				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{ 
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function NascondiPagina()
+			{
+	 			var i, a, main; 
+				var newStyle;
+				bolConPagine = !bolConPagine;				
+				newStyle = "nopagine";
+				
+	 			for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) 
+	 			{
+	 				if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) 
+					{ 
+						a.disabled = true; 
+						if(a.getAttribute("title") == newStyle) 
+							a.disabled = false; 
+					} 
+				} 
+			}
+
+			function MostraRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0008210&MostraRif=false"
+			}
+
+			function NascondiRif()
+			{
+				document.location = "apritelecomando.asp?codice=17PDL0008210&MostraRif=true"
+			}
+		</SCRIPT>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link REL="STYLESHEET" TYPE="text/css" HREF="/css/home2.css">
+		<link rel="STYLESHEET" media="print" type="text/css" href="/_dati/leg17/lavori/schedela/css/stylestampa.css">
+		<style>
+			.CambioPagina{
+				display:none;
+			}
+		</style>
+	</head>
+	<body onLoad="MostraPagina()" 	>
+		
+			<form NAME=frmStampa METHOD=GET TARGET="_new" ACTION="apriTelecomando_wai.asp">
+				<INPUT TYPE=HIDDEN NAME=codice value='17PDL0008210' />
+				<INPUT TYPE=HIDDEN NAME=stampa value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraP value='true' />
+				<INPUT TYPE=HIDDEN NAME=mostraRif value='false' />
+			</FORM>
+			<div name="contenuto">	
+				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							
+						</td>
+						<td align="right">
+							<table style="display:none;">
+								<tr>
+									
+									    <td align="center" bgcolor="#eeeeee" width="110">
+										    <P align="center" style="font-family:verdana; font-size:8pt">
+											    <span id="mostranasc">
+												    <a href="javascript:flippa(1)"><font color="#aa0000">Nascondi n. pagina</font></a>
+											    </span>
+										    </P>
+									    </td>
+									
+									
+									<td width="1">
+									</td>	
+									<td align="right" bgcolor="#eeeeee">
+										<A id=linkStampa href="javascript:frmStampa.submit()">
+											<font color="#aa0000" style="font-size:8pt">Stampa</font>
+										</A>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+				<HR width="100%" color="#000080"></hr>
+			<HTML>
+<HEAD>
+<TITLE>PDL 1327-A</TITLE>
+</HEAD>
+<STYLE rel="alternate stylesheet" TYPE="text/css" title="conpagine">.CambioPagina
+{}.CambioPaginaBlank
+{}</STYLE>
+<STYLE rel="stylesheet" TYPE="text/css" title="nopagine">.CambioPagina{	display: none; height:0px }.CambioPaginaBlank{	display: none; height:0px }</STYLE>
+<SCRIPT language="javascript">function scopriNumeriPagina(){ var i, a, main; for(i=0; (a = document.getElementsByTagName("STYLE")[i]); i++) { if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) { a.disabled = true; if(a.getAttribute("title") == "conpagine") a.disabled = false; } } }</SCRIPT>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<P><CENTER><!FR><A NAME="FR"></A>XVII LEGISLATURA</CENTER>
+
+<P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=100%>
+
+
+
+<P>
+
+<TR>
+<TD WIDTH="72%" VALIGN="top">
+<DIV align=right><FONT SIZE=+3>CAMERA DEI DEPUTATI</FONT>
+</DIV><BR>
+</TD>
+<TD WIDTH="28%" VALIGN="top">
+&nbsp;&nbsp;&nbsp;<B>N. 1327-A</B>
+
+</TD></TR></TABLE></CENTER>
+<HR><BR>
+
+
+<!NuovaPag. 1><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 1 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+
+<P><CENTER><B>DISEGNO DI LEGGE </B></CENTER>
+
+<P><CENTER><B>APPROVATO DAL SENATO DELLA REPUBBLICA 
+</B></CENTER>
+<CENTER><I>l'8 luglio 2013 (v. stampato Senato n. 588)</I></CENTER>
+
+<P><CENTER>presentato dal ministro per gli affari europei</CENTER>
+<CENTER><B>(MOAVERO MILANESI)</B></CENTER> 
+
+<P><CENTER>di concerto con il ministro dell'interno</CENTER>
+<CENTER><B>(CANCELLIERI)</B></CENTER> 
+
+<P><CENTER>con il ministro del lavoro e delle politiche sociali</CENTER>
+<CENTER><B>(FORNERO)</B></CENTER> 
+
+<P><CENTER>con il ministro per la pubblica amministrazione e la semplificazione</CENTER>
+<CENTER><B>(PATRONI GRIFFI)</B></CENTER> 
+
+<P><CENTER>con il ministro dello sviluppo economico e ministro delle infrastrutture e dei trasporti</CENTER>
+<CENTER><B>(PASSERA)</B></CENTER> 
+
+<P><CENTER>con il ministro per gli affari regionali, il turismo e lo sport</CENTER>
+<CENTER><B>(GNUDI)</B></CENTER> 
+
+<P><CENTER>con il ministro della difesa</CENTER>
+<CENTER><B>(DI PAOLA)</B></CENTER> 
+
+<P><CENTER>con il ministro dell'economia e delle finanze</CENTER>
+<CENTER><B>(GRILLI)</B></CENTER> 
+
+<P><CENTER>con il ministro delle politiche agricole alimentari e forestali</CENTER>
+<CENTER><B>(CATANIA)</B></CENTER> 
+
+<P><CENTER>con il ministro della salute</CENTER>
+<CENTER><B>(BALDUZZI)</B></CENTER>
+
+<P><HR ALIGN=LEFT WIDTH=50><FONT SIZE=-1><B>Il presente stampato contiene le relazioni approvate, ai sensi dell'articolo 126-<I>ter</I>, comma 2, del regolamento, dalle Commissioni permanenti sul disegno di legge n. 1327. La XIV Commissione permanente (Politiche dell'Unione europea), il 30 luglio 2013, ha deliberato di riferire favorevolmente sul disegno di legge, nel testo trasmesso dal Senato. In pari data la Commissione ha chiesto di essere autorizzata a riferire oralmente. Per il testo del disegno di legge si rinvia allo stampato n. 1327.</B></FONT>
+
+<!NuovaPag. 2><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 2 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>con il ministro dell'ambiente e della tutela del territorio e del mare</CENTER>
+<CENTER><B>(CLINI)</B></CENTER>
+
+<P><CENTER>e con il ministro della giustizia</CENTER>
+<CENTER><B>(SEVERINO DI BENEDETTO)</B></CENTER>
+
+<P><CENTER>Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013</CENTER>
+
+<P><CENTER><I>Trasmesso dal Presidente del Senato della Repubblica il 9 luglio 2013</I></CENTER>
+
+<P><CENTER>(Relatore: <B>ALLI</B>)</CENTER>
+
+<!NuovaPag. 3><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 3 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><BR><CENTER><B><!RC><DIV align="right"><A NAME="RC"></A><A HREF="#"><img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/></A><BR></DIV> RELAZIONI DELLE COMMISSIONI PERMANENTI</B></CENTER>
+
+
+<P><!NuovaPagb. 4><DIV class="CambioPaginaBlank">&nbsp;<br><center><hr width=30%></hr>Pag. 4 <hr width=30%></hr></center><br></td></tr></DIV>
+
+<!NuovaPag. 5><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 5 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+<P><CENTER>RELAZIONE DELLA I COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari costituzionali, della Presidenza del Consiglio e interni)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La I Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per gli aspetti di propria competenza, il disegno di legge C. 1327 Governo, approvato dal Senato, recante &#171;Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013&#187;,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 6><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 6 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA II COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Giustizia)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La II Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge C. 1327 Governo, approvato dal Senato, recante Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che l'articolo 25, comma 1, lettera <I>h)</I>, capoverso, desta perplessit&#224; laddove prevede una deroga all'applicazione della disciplina generale successoria, con specifico riferimento alla successione degli eredi nel debito relativo al risarcimento del danno ambientale,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente osservazione</I>:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'articolo 25, comma 1, lettera <I>h)</I>, capoverso, valuti la Commissione di merito l'opportunit&#224; di sopprimere le parole &#171;nei limiti del loro effettivo arricchimento&#187;.
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+<!NuovaPag. 7><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 7 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA III COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari esteri e comunitari)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La III Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato per le parti di propria competenza il disegno di legge europea 2013, approvato dal Senato e trasmesso alla Camera il 9 luglio 2013;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che l'articolo 6 riallinea le disposizioni di cui al decreto legislativo n. 208 del 2011 a quelle della direttiva 2009/81/CE in materia di esclusione dalle procedure comunitarie degli appalti nei settori della difesa e della sicurezza limitatamente ai casi in cui siano vigenti accordi internazionali conclusi con la partecipazione di almeno uno Stato terzo,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE 
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</CENTER>
+
+<!NuovaPag. 8><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 8 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA IV COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Difesa)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La IV Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per la parte di propria competenza, il disegno di legge recante &#171;Disposizioni per l'adempimento di obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013&#187; (C. 1327 Governo, approvato dal Senato),
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che nel provvedimento, secondo quanto previsto dall'articolo 30 della citata legge n. 234, sono inserite le disposizioni finalizzate a porre rimedio ai casi di non corretto recepimento della normativa dell'Unione europea nell'ordinamento nazionale,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che l'articolo 6 mira a prevenire l'avvio di una procedura d'infrazione per erroneo recepimento della direttiva 2009/81/CE in materia di coordinamento delle procedure per l'aggiudicazione di taluni appalti di lavori, di forniture e di servizi nel settore della difesa e della sicurezza, novellando la norma del decreto legislativo n. 208 del 2011 al fine di sostituire il riferimento contenuto nella richiamata disposizione agli &#171;Stati membri&#187; con quello, ritenuto maggiormente aderente alla direttiva 2009/81/UE, ai &#171;Paesi terzi&#187;,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 9><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 9 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA V COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Bilancio, tesoro e programmazione)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La V Commissione bilancio, tesoro e programmazione, esaminato il disegno di legge recante delega al Governo per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013 (C. 1327 Governo, approvato dal Senato);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto dei chiarimenti forniti dal Governo secondo cui:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;le minori entrate ascrivibili alle modifiche alla disciplina dell'imposta erariale sugli aeromobili di cui all'articolo 8 appaiono di trascurabile entit&#224;, sia alla luce dei dati contenuti nel disegno di legge di approvazione del rendiconto 2012, sia in quanto l'imposta gi&#224; versata di cui viene eventualmente richiesto il rimborso deve essere scomputata da quella dovuta all'atto del successivo rinnovo del certificato di revisione dell'aeronavigabilit&#224; ovvero deve essere restituita solo qualora il contribuente non risulti pi&#249; tenuto al pagamento dell'imposta;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la cessazione dei contratti di affidamento del servizio di accertamento e riscossione dell'imposta comunale sulla pubblicit&#224;, di cui all'articolo 10, anche in considerazione del congruo termine ivi previsto, non ha riflessi negativi sulle entrate degli enti locali interessati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'utilizzo con finalit&#224; di copertura del fondo nazionale per le politiche sociali, di cui all'articolo 13, non comprometter&#224; la realizzazione delle iniziative e dei programmi gi&#224; previsti a legislazione vigente a valere sulle risorse del suddetto fondo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'attuazione delle disposizioni in materia di adeguamento della normativa nazionale al regolamento (UE) n. 528 del 2012 in materia di biocidi, di cui all'articolo 15, potr&#224; provvedersi nell'ambito delle risorse umane, finanziarie e strumentali disponibili a legislazione vigente e comunque senza nuovi o maggiori oneri per la finanza pubblica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;all'articolo 20, recante modifiche al decreto legislativo n. 117 del 2008, in materia di gestione dei rifiuti delle industrie estrattive, l'assolvimento dei nuovi obblighi informativi dell'autorit&#224; competente &#8211; mediante la messa a disposizione del proprio sito e la possibilit&#224; da parte dell'autorit&#224; stessa di assumersi gli obblighi dell'operatore in caso di inadempienza di quest'ultimo attraverso una specifica garanzia finanziaria da questi prestata &#8211; potr&#224; avvenire senza nuovi o maggiori oneri per la finanza pubblica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;i compiti di ricerca di metodi di riciclaggio ecocompatibili e con un buon rapporto di costi-efficacia per tutti i tipi di pile da accumulatori, di cui all'articolo 21, possono essere effettivamente svolti nell'ambito delle risorse umane, finanziarie e strumentali disponibili a legislazione vigente e comunque senza nuovi o maggiori oneri per la finanza pubblica;
+
+<!NuovaPag. 10><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 10 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;agli eventuali oneri derivanti dalla tutela risarcitoria contro i danni all'ambiente, di cui all'articolo 25, si pu&#242; provvedere nell'ambito delle risorse gi&#224; stanziate in bilancio, e, in caso di pagamento dei soggetti obbligati, le risorse acquisite potranno essere utilizzate, in coerenza con il relativo profili temporale, per la realizzazione delle misure di riparazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;i compiti attribuiti alle regioni, alle province autonome, all'ISPRA e agli altri enti pubblici di ricerca coinvolti dalle modifiche alla legge n. 157 del 1992, recante norme per la protezione della fauna selvatica omeoterma e per il prelievo venatorio, di cui all'articolo 26, non determinano nuovi o maggiori oneri per la finanza pubblica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;agli oneri derivanti dall'eventuale istituzione delle nuove sezioni delle Commissioni territoriali per il riconoscimento della protezione internazionale di cui all'articolo 30 si provveder&#224; mediante utilizzo delle risorse di cui all'articolo 1, comma 12, della legge n. 94 del 2009, che riserva il 50 per cento del gettito complessivo del contributo per le istanze in materia di cittadinanza al Dipartimento per le libert&#224; civili e l'immigrazione del Ministero dell'interno per i procedimenti in materia di immigrazione, asilo e cittadinanza;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alle disposizioni in materia di strumenti derivati OTC e repertori di dati sulle negoziazioni di cui all'articolo 33 potr&#224; essere data attuazione nell'ambito delle risorse umane, finanziarie e strumentali disponibili a legislazione vigente e comunque senza nuovi o maggiori oneri per la finanza pubblica,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 11><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 11 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA VI COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Finanze)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La VI Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per gli aspetti di competenza, il disegno di legge C. 1327, approvato dal Senato, &#171;Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato come quest'anno si applichi per la prima volta il nuovo meccanismo di adeguamento della normativa italiana all'ordinamento dell'Unione europea previsto dalla legge n. 234 del 2012, la quale ha introdotto una riforma organica delle norme che regolano la partecipazione dell'Italia alla formazione e all'attuazione della normativa e delle politiche dell'Unione europea, sdoppiando la legge comunitaria annuale precedentemente prevista dalla legge n. 11 del 2005 in due distinti provvedimenti: il disegno di legge di delegazione europea e il disegno di legge europea;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;segnalato come, in ragione della mancata approvazione, nella scorsa Legislatura, dei disegni di legge comunitaria 2011 e 2012, i relativi contenuti sono stati riproposti all'interno dei predetti due nuovi strumenti normativi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato come, a seguito della mancata approvazione, appena richiamata, dei disegni di legge comunitaria 2011 e 2012, appare prioritario velocizzare, nei limiti del possibile, l&#8217;<I>iter</I> parlamentare di approvazione definitiva del disegno di legge, al fine di consentire la chiusura delle procedure di infrazione avviate nei confronti dell'Italia sui profili affrontati dal provvedimento ed evitare la comminazione di sanzioni pecuniarie nei confronti del Paese;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineato, con riferimento agli aspetti del provvedimento di competenza della Commissione Finanze, come gli articoli 8, 9, 10 del disegno di legge, relativi, rispettivamente, all'applicazione dell'imposta sugli aeromobili ai velivoli non immatricolati nel Registro Aeronautico Nazionale tenuto dall'Ente nazionale aviazione civile (ENAC), alla disciplina nazionale in materia di monitoraggio fiscale ed all'estensione dei rapporti di concessione del servizio di accertamento e di riscossione dell'imposta comunale sulla pubblicit&#224; e dei diritti sulle pubbliche affissioni anche ad altre entrate, rispondano all'esigenza di evitare, in tali ambiti, contrasti, evidenziati dalla Commissione europea, tra norme nazionali e previsioni comunitarie;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;evidenziato altres&#236; come l'articolo 33, il quale contiene una serie di modifiche e integrazioni al decreto legislativo n. 58 del 1998, recante il testo unico delle disposizioni in materia di intermediazione finanziaria (TUF), dia attuazione alle disposizioni del regolamento (UE) n. 648/2012 relativo agli strumenti derivati <I>over the counter</I> (OTC), alle controparti centrali e ai repertori di dati sulle negoziazioni (cosiddetto regolamento EMIR &#8211; <I>European Market Infrastructure 
+
+<!NuovaPag. 12><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 12 <hr width=30%></hr></center><br></td></tr></DIV>
+
+Regulation)</I>, allo scopo di ridurre i rischi connessi al mercato dei predetti strumenti derivati <I>over the counter,</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 13><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 13 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA VII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Cultura, scienza e istruzione)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La VII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;premesso che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la legge 24 dicembre 2012, n. 234 ha innovato, sostituendola integralmente, la legge n. 11 del 2005, introducendo una riforma organica delle norme che regolano la partecipazione dell'Italia alla formazione e all'attuazione della normativa europea, anche in ragione delle modifiche intervenute nell'assetto dell'Unione europea a seguito dell'entrata in vigore del Trattato di Lisbona;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a seguito di tale legge, che ha riorganizzato il processo di recepimento della normativa europea e ha sdoppiato la precedente &#171;legge comunitaria annuale&#187;, vengono esaminati per la prima volta in Parlamento due distinti provvedimenti in esame e cio&#232;: la legge di delegazione europea (il cui contenuto &#232; limitato alle disposizioni di delega necessarie per il recepimento delle direttive comunitarie) e la legge europea, che, pi&#249; in generale, contiene disposizioni volte a garantire l'adeguamento dell'ordinamento interno all'ordinamento europeo, con particolare riguardo ai casi di non corretto recepimento della normativa comunitaria;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;come previsto dalla citata legge n. 234, il Governo ha quindi presentato al Senato due disegni di legge, uno recante la delega al Governo per il recepimento delle direttive europee e l'attuazione di altri atti dell'Unione europea (legge di delegazione europea 2013 &#8211; A.S. 587), l'altro recante disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea (legge europea 2013 &#8211; A.S. 588);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;viene segnalato l'obiettivo di scongiurare l'avvio di procedure di infrazione o di porre rimedio a procedure gi&#224; avviate con l'approvazione in tempi celeri di tali provvedimenti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a seguito della trasmissione di tali provvedimenti da parte del Senato, spetta ora alla Camera esaminare i disegni di legge in esame;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;per quanto riguarda l'esame del disegno di legge europea 2013 (C.1327), l'esame &#8211; secondo le procedure previste dall'articolo 126-<I>ter</I> del Regolamento &#8211; presso ciascuna Commissione riguarda esclusivamente gli ambiti di propria competenza, si fa presente che l'articolo 3 di questo disegno di legge, ed in particolare il comma 3, concernente disposizioni relative alla libera prestazione e all'esercizio stabile dell'attivit&#224; di guida turistica da parte di cittadini dell'Unione europea, appare attenere ad aspetti di competenza anche della VII Commissione cultura;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 3 del disegno di legge in esame &#232; volto a risolvere le contestazioni sollevate nell'ambito del caso EU Pilot 4277/12/MARK <I>(c.d. pre-infrazione)</I>, prevedendo che le guide turistiche, abilitate ad 
+
+<!NuovaPag. 14><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 14 <hr width=30%></hr></center><br></td></tr></DIV>
+
+esercitare la professione in altri Stati membri, possano operare in regime di libera prestazione di servizi sul territorio nazionale;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nello specifico, il medesimo articolo 3, al comma 1, prevede che l'abilitazione alla professione di guida turistica sia valida su tutto il territorio nazionale e che il riconoscimento della qualifica professionale conseguita da un cittadino dell'Unione europea in un altro Stato membro abbia efficacia su tutto il territorio nazionale;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lo stesso articolo 3, al comma 2, dispone inoltre che, fermo restando quanto previsto dal decreto legislativo n. 206 del 2007, recante attuazione della direttiva 2005/36/CE relativa al riconoscimento delle qualifiche professionali, nonch&#233; della direttiva 2006/100/CE che adegua determinate direttive sulla libera circolazione delle persone a seguito dell'adesione di Bulgaria e Romania, i cittadini dell'Unione europea abilitati allo svolgimento dell'attivit&#224; di guida turistica nell'ambito dell'ordinamento giuridico di un altro Stato membro operano in regime di libera prestazione dei servizi, senza necessit&#224; di alcuna autorizzazione n&#233; abilitazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il medesimo articolo 3, al comma 3, sempre, infine, dispone che, con decreto del Ministro dei beni e delle attivit&#224; culturali e del turismo, sentita la Conferenza unificata, da adottare entro novanta giorni dalla data di entrata in vigore della presente legge, sono individuati i siti di particolare interesse storico, artistico o archeologico per i quali occorre una specifica abilitazione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 15><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 15 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA VIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Ambiente, territorio e lavori pubblici)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La VIII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge C. 1327 Governo, approvato dal Senato, recante &#171;Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione Europea &#8211; Legge europea 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto dell'elevato numero di procedure d'infrazione aperte ufficialmente nei confronti dell'Italia, delle quali la maggior parte afferiscono a settori di competenza del Ministero dell'ambiente e, in misura minore, ad ambiti rientranti nella responsabilit&#224; del Ministero delle infrastrutture e dei trasporti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevata la necessit&#224; di procedere in tempi rapidissimi a una sostanziale riduzione dell'elevato numero di procedure di infrazione europea e quindi l'indifferibilit&#224; dell'approvazione in via definitiva dei provvedimenti di adeguamento dell'ordinamento nazionale a quello europeo in modo da consentire al Governo di fornire una risposta tempestiva e adeguata alle richiamate procedure di infrazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato peraltro che gli interventi di cui agli articolo 23 in materia di assoggettabilit&#224; alla procedura di valutazione di impatto ambientale e 25 in materia di tutela risarcitoria contro i danni ambientali, pur apprezzabili, appaiono insufficienti a conseguire i due obiettivi inseparabili di un pieno adeguamento dell'ordinamento interno al quadro europeo e del miglioramento dei livelli di tutela ambientale;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sottolineata quindi l'opportunit&#224; di impegnare il Governo ad assumere iniziative normative in tempi ravvicinati al fine di introdurre modifiche al codice dell'ambiente tese a garantire pi&#249; elevati livelli di tutela ambientale nel rispetto comunque del quadro normativo europeo ed in particolare relativamente alla disciplina sui rifiuti, alla Valutazione di Impatto Ambientale, alla Valutazione Ambientale Strategica ed ai controlli ambientali;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 22 mira a introdurre semplificazioni nella disciplina sul ritiro dei Rifiuti di Apparecchiature Elettriche e Elettroniche (RAEE) al fine di agevolare la raccolta dei RAEE da parte dei distributori, eliminando ogni appesantimento burocratico o procedurale, in modo da cercare di aumentare in modo rilevante i risultati di tale canale di raccolta;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;la previsione &#8211; al medesimo articolo 22 &#8211; di una frequenza mensile dell'obbligo per i negozianti di trasportare i RAEE ai centri di raccolta non sembra muoversi nella direzione della semplificazione, comportando un aggravio dei costi per i negozianti medesimi, che non determina alcun vantaggio ambientale, anche in considerazione della 
+
+<!NuovaPag. 16><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 16 <hr width=30%></hr></center><br></td></tr></DIV>
+
+determinazione nella norma delle quantit&#224; massime di RAEE che possono essere gestite dai distributori e delle caratteristiche fisiche dei luoghi in cui tali RAEE sono raggruppati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;andrebbe quindi pi&#249; opportunamente valutata l'opportunit&#224; di prevedere in luogo della frequenza mensile del trasporto dei RAEE presso i centri di raccolta una frequenza trimestrale;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nell'ambito del recepimento della direttiva 2012/19/UE sui RAEE andrebbe implementato un sistema che registri, ai fini del raggiungimento degli obiettivi di raccolta e di riciclaggio, anche i RAEE che vengono conferiti direttamente agli impianti autorizzati per il trattamento, eventualmente anche dai comuni o dai rivenditori che li hanno raccolti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 22, comma 2, lettera <I>c)</I>, sembra prevedere che il distributore possa attivare un solo sito di raggruppamento RAEE non tenendo conto della realt&#224; operativa e logistica delle imprese distributive che non sarebbero messe nelle condizioni di operare nell'attivit&#224; di ritiro &#171;uno contro uno&#187;, soprattutto con riferimento alle consegne a domicilio dei consumatori;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;andrebbe pi&#249; opportunamente valutato il raggruppamento presso pi&#249; luoghi esterni rispondendo cos&#236; non soltanto ad una logica di efficienza e di economicit&#224; delle attivit&#224; logistiche ma anche a un minore impatto ambientale delle operazioni di ritiro,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 17><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 17 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA IX COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Trasporti, poste e telecomunicazioni)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La IX Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge recante Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013 (C. 1327 Governo, approvato dal Senato),
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+
+<!NuovaPag. 18><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 18 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA X COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Attivit&#224; produttive, commercio e turismo)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La X Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge C 1327, recante &#171;Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia alle Comunit&#224; europee &#8211; Legge europea 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che esso costituisce una novit&#224; derivante dall'aggiornamento degli strumenti a disposizione del legislatore nazionale per l'adeguamento dell'ordinamento nazionale alla disciplina dell'Unione europea;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in particolare, lo strumento della legge europea &#232; finalizzato a porre rimedio ai casi di non corretto recepimento della normativa dell'Unione europea nell'ordinamento nazionale che hanno dato luogo a procedure di pre-infrazione o di infrazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;le soluzioni normative adottate allo scopo, spesso frutto di complessi negoziati con le istituzioni europee, devono assumere in ogni caso l'obiettivo di non provocare ingiustificati pregiudizi o penalizzazioni per il sistema economico nazionale, gi&#224; duramente provato dalla crisi economico/finanziaria che si trascina da diversi anni;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tali considerazioni valgono soprattutto per l'articolo 3, recante disposizioni per la libera prestazione dell'attivit&#224; di guida turistica che, cos&#236; come formulato, istituisce un'abilitazione alla professione di guida turistica valida su tutto il territorio nazionale che si presta ad essere interpretata nel senso di limitarsi a consentire alle guide turistiche di altri Stati membri di effettuare visite guidate in tutta Italia, senza accertarne le competenze e senza verificarne l'effettiva professione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 3 sottopone, infatti, indebitamente le guide turistiche italiane alla cosiddetta direttiva servizi 2006/123/CE, scelta che non appare pienamente condivisibile posto che da pi&#249; parti si ritiene che le professioni e quindi le guide turistiche ricadano sotto la disciplina della c.d. direttiva 2005/36/CE sulle qualifiche professionali che &#232; in fase di revisione, e tale approccio finisce con il consentire lo svolgimento dell'attivit&#224; di guida turistica alle guide provenienti da altri Stati membri, in regime di libera prestazione dei servizi, senza necessit&#224; di alcuna abilitazione;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;quanto all'articolo 17, la procedura di infrazione n. 2009/4583 relativa alla direttiva 2000/13/CE, come modificata dalla direttiva 2003/89/CE, &#232; stata archiviata dalla Commissione europea il 28 settembre 2011, presumibilmente alla luce della circolare 22 luglio 2010, n. 5107, del MISE, pubblicata sulla G.U. n. 175 del 29 luglio 2010, che ha chiarito l'interpretazione in senso conforme alla direttiva delle disposizioni nazionali contestate dalla Commissione europea; ci&#242; nondimeno, l'articolo 17 sembra inteso, per ragioni di certezza del diritto, a inserire, a livello di fonte primaria, l'innovazione interpretativa 
+
+<!NuovaPag. 19><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 19 <hr width=30%></hr></center><br></td></tr></DIV>
+
+richiesta dalla Commissione: tuttavia con l'attuale formulazione l'obbligo di indicare in etichetta la presenza di allergeni alimentari &#232; modulato in maniera contrastante col mantenimento dell'esenzione prevista dalla normativa comunitaria per formaggi, burro, yogurt ed altri derivati del latte,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti osservazioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> in relazione all'articolo 3 si tenga conto della peculiarit&#224; del nostro Paese, il cui patrimonio storico, artistico, archeologico e culturale costituisce un <I>unicum</I> a livello internazionale e presenta una variet&#224; di situazioni e realt&#224; che non ha confronti in Europa, evitando lo svilimento del livello qualitativo delle prestazioni rese ai turisti e ai visitatori dalla guide italiane e la perdita di un numero insostenibile di posti di lavoro; si provveda inoltre, nel pi&#249; breve tempo possibile, a una revisione organica e complessiva della disciplina relativa all'esercizio della professione di guida turistica, che non si limiti ai profili oggetto dell'articolo 3, assicurando la valorizzazione e la tutela del patrimonio storico e artistico nazionale, nonch&#233; la tutela del turista e del fruitore dei beni culturali, e riconoscendo, sulla base della nuova direttiva qualifiche in fase di modificazione, la specifica e peculiare professionalit&#224; delle guide italiane. Si raccomanda, infine, la massima attenzione, in sede di emanazione del decreto di cui al comma 3 dell'articolo 3, al fine di preservare la figura della guida turistica abilitata in Italia quale custode del patrimonio storico, artistico e culturale nazionale, adottando disposizioni che consentano di non confondere la guida turistica con l'accompagnatore turistico;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> si accerti che le disposizioni di cui all'articolo 4, che prevedono l'incremento delle risorse del fondo nazionale di garanzia per il consumatore di pacchetto turistico attraverso l'aumento dal 2 al 4 per cento della quota dell'ammontare del premio delle polizze di assicurazione obbligatoria, siano adeguate allo scopo, ferma restando la necessit&#224; di evitare un aggravio dei costi sostenuti dai consumatori;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> con riferimento alle disposizioni di cui all'articolo 17, si valuti se la formulazione prevista sia adeguata ad evitare equivoci in sede interpretativa ovvero se non sia opportuno integrare il testo precisando che l'indicazione non &#232; necessaria anche qualora la denominazione di vendita sia comunque identificativa della presenza dell'ingrediente allergenico, secondo quanto stabilito dalle linee guida della Commissione europea del 25 novembre 2005.
+
+
+<!NuovaPag. 20><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 20 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA XI COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Lavoro pubblico e privato)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La XI Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato il disegno di legge C. 1327 (Legge europea 2013),
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerato che esso reca disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preso atto con favore delle norme di competenza della Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato, in particolare, che l'articolo 11 apporta alcune modifiche al decreto legislativo n. 271 del 1999, recante l'adeguamento della normativa sulla sicurezza e salute dei lavoratori marittimi a bordo delle navi mercantili da pesca nazionali,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;valutato poi favorevolmente &#8211; in considerazione della diffusione crescente, nel Paese, dei rapporti di lavoro a tempo determinato &#8211; l'articolo 12, che contempla la rilevanza dei contratti a tempo determinato, al fine di rendere concretamente esigibili talune prerogative riconosciute ai lavoratori dallo Statuto dei lavoratori, in particolare in relazione alla determinazione delle soglie occupazionali necessarie per lo svolgimento dell'attivit&#224; sindacale,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rilevato che l'articolo 13 estende l'ambito di applicazione dell'istituto dell'assegno per il nucleo familiare con almeno tre figli minori, riconoscendone il diritto alla fruizione anche ai cittadini di Paesi terzi (rispetto all'Unione europea) e incentivando cos&#236; la presenza delle famiglie dei cittadini di Paesi terzi, un fenomeno in controtendenza rispetto alla denatalit&#224; che caratterizza le societ&#224; del &#171;vecchio continente&#187;,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con le seguenti osservazioni:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>a)</I> si auspica che sulla materia della salute e sicurezza sui luoghi di lavoro per i lavoratori marittimi e, pi&#249; in generale, del settore dei trasporti, possa essere conferita quanto prima una apposita delega al Governo, che consenta di rendere finalmente operative, a tutela della specificit&#224; di tali categorie di lavoratori, le misure introdotte dal testo unico di cui al decreto legislativo n. 81 del 2008, ai fini del suo coordinamento con le discipline di settore vigenti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>b)</I> con riferimento all'articolo 3, relativo all'esercizio dell'attivit&#224; di guida turistica, trattandosi di affrontare un tema delicato legato al lavoro di numerose figure professionali, si auspica che ogni possibile questione problematica sia risolta nell'ambito del decreto ministeriale di cui al comma 3 del citato articolo 3, che dovr&#224; individuare i siti 
+
+<!NuovaPag. 21><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 21 <hr width=30%></hr></center><br></td></tr></DIV>
+
+di particolare rilievo per i quali sar&#224; necessaria una specifica abilitazione, al fine di salvaguardare la professionalit&#224; insita nell'attivit&#224; di guida turistica;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>c)</I> nell'attuazione della direttiva di cui all'articolo 11, si osserva l'esigenza di chiarire quali normative siano applicate al personale, che lavora sulle navi, sprovvisto del libretto di navigazione, nonch&#233; di definire le deroghe all'orario di lavoro per i viaggi di breve durata, facendo riferimento alle definizioni contenute nella Convenzione OIL n. 133, sull'alloggio dell'equipaggio a bordo delle navi;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>d)</I> si segnala l'esigenza di valutare con attenzione le modalit&#224; individuate per la copertura degli oneri derivanti dall'attuazione dell'articolo 13, atteso che, alla lettera <I>c)</I>, comma 2, di tale articolo, si prevede un'ulteriore riduzione del Fondo nazionale per le politiche sociali, istituito dalla legge n. 449 del 1997; a tal fine, si rileva che la scelta di attingere a questa forma di copertura rende ulteriormente urgente il rifinanziamento del Fondo.
+
+
+<!NuovaPag. 22><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 22 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA XII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Affari sociali)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La XII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per le parti di propria competenza, il disegno di legge europea 2013 (C. 1327 Governo, approvato dal Senato);
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;considerate, in particolare, le disposizioni recate rispettivamente dagli articoli 14 &#8211; che opera una revisione delle sanzioni relative alla disciplina in materia di protezione delle galline ovaiole e di registrazione dei relativi stabilimenti di allevamento; 15 &#8211; che detta disposizioni per l'adeguamento dell'ordinamento interno alla normativa europea in materia di biocidi; 16 &#8211; che reca alcune norme tese a garantire l'applicabilit&#224; del regolamento n. 1223/2009 del Parlamento europeo e del Consiglio, del 30 novembre 2009, relativo ai prodotti cosmetici; 17 &#8211; che modifica il decreto legislativo n. 109 del 1992, recante la disciplina nazionale in tema di etichettatura, presentazione e pubblicit&#224; dei prodotti alimentari, al fine di evitare incertezze da parte degli operatori sull'obbligo di indicare in etichetta la presenza di allergeni alimentari,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<I>con la seguente osservazione:</I>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;valuti la Commissione di merito l'opportunit&#224; di prevedere, al comma 5 del suddetto articolo 16, un termine per la emanazione del decreto del Ministro della salute ivi previsto, nonch&#233; la esclusione della sperimentazione e l'importazione di materie prime testate su animali.
+
+
+<!NuovaPag. 23><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 23 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P><CENTER>RELAZIONE DELLA XIII COMMISSIONE PERMANENTE</CENTER>
+<CENTER>(Agricoltura)</CENTER>
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;La XIII Commissione,
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;esaminato, per la parte di competenza, il disegno di legge C. 1327 Governo, approvato dal Senato: &#171;Disposizioni per l'adempimento degli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea &#8211; Legge europea 2013&#187;;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;premesso che:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;il disegno di legge europea 2013 ricomprende tutte le norme, diverse da quelle che conferiscono le deleghe, necessarie ad eliminare disposizioni statali vigenti in contrasto con gli obblighi derivanti dall'appartenenza dell'Italia all'Unione europea oppure finalizzate a prevenire l'apertura di procedure d'infrazione o ad agevolarne la chiusura, se esistenti;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in tali circostanze il provvedimento provvede a sanare alcuni contrasti provocati da norme nazionali rispetto alle corrispondenti norme europee, tra le quali si segnalano le seguenti, riguardanti materie di competenza della XIII Commissione e in ogni caso di interesse per il comparto primario:
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 14, inteso a risolvere la procedura di infrazione 2011/2231, che opera una revisione delle sanzioni relative alla disciplina in materia di protezione delle galline ovaiole e di registrazione dei relativi stabilimenti di allevamento; l'inasprimento &#232; finalizzato a sanare la procedura di infrazione gi&#224; in corso e a incentivare gli allevatori al rispetto delle norme;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 17, che modifica il decreto legislativo n. 109 del 1992, che reca la disciplina nazionale in tema di etichettatura, presentazione e pubblicit&#224; dei prodotti alimentari; tale normativa, in materia di allergeni, ha creato in passato problemi di interpretazione in sede comunitaria, con la conseguente apertura di una procedura di infrazione, archiviata nel 2011, anche alla luce di provvedimenti chiarificatori adottati dal Governo; la modifica &#232; pertanto diretta ad evitare incertezze da parte degli operatori sull'obbligo di indicare in etichetta la presenza di allergeni alimentari, obbligo che viene confermato esclusivamente se tali ingredienti non figurano nella denominazione di vendita del prodotto finito;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 24, il quale introduce una serie di modifiche al testo unico ambientale (decreto legislativo n. 152 del 2006), al fine di superare le contestazioni mosse nell'ambito della procedura di infrazione 2007/4680 per il non corretto recepimento della direttiva 2000/60/CE, che istituisce un quadro per l'azione comunitaria in materia di acque. Specifiche disposizioni riguardano, inoltre, l'inquinamento da nitrati di origine agricola relativamente alle zone vulnerabili e ai programmi di azione per la tutela e il risanamento delle acque dall'inquinamento causato dai predetti nitrati;
+
+<!NuovaPag. 24><DIV class="CambioPagina">&nbsp;<br><center><hr width=30%></hr>Pag. 24 <hr width=30%></hr></center><br></td></tr></DIV>
+
+
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 26, che d&#224; attuazione a quanto richiesto dalla Corte di giustizia europea con la sentenza di condanna dell'Italia del 15 luglio 2010 nella causa C/573/08 (procedura di infrazione 2006/2131). In tal occasione, &#232; stata rilevata la non corretta applicazione nell'ordinamento interno della direttiva 2009/147/CE (cosiddetta direttiva uccelli) con riferimento, prevalentemente, alla necessit&#224; di istituire le rotte di migrazione per tutte le specie dell'avifauna e all'introduzione di un meccanismo che renda pi&#249; stringente l'adozione delle delibere sul prelievo in deroga e pi&#249; efficace il controllo di legittimit&#224;, attraverso l'adozione delle stesse delibere con atto amministrativo;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l'articolo 27, il quale abroga l'articolo 36, comma 7-quater, del decreto legge 18 ottobre 2012 n. 179, convertito in legge, con modificazioni, dalla legge 17 dicembre 2012, n. 221, che disponeva una deroga, valida dodici mesi, in materia di protezione delle acque dall'inquinamento provocato da nitrati di origine agricola, prevista in attesa dell'aggiornamento regionale dei piani relativi alle zone vulnerabili per inquinamento da nitrati. La disposizione mira a sanare la procedura di infrazione 2013/2032 della Commissione europea per la violazione della direttiva 91/676/CEE, relativa alla protezione delle acque dall'inquinamento provocato da nitrati;
+
+<P>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;delibera di
+
+<P><CENTER>RIFERIRE FAVOREVOLMENTE.</CENTER>
+
+</BODY>
+</HTML>
+
+
+			<hr width="100%" color="#000080" />
+			<table border="0" width="100%">
+				<tr>
+					<td>
+						
+					</td>
+					
+						<td align="right">
+							<a HREF="#">
+								<img src="http://tenderinter.intra.camera.it/img/common/t_tornasu.gif" border="0" alt="torna su"/>
+							</a>
+						</td>
+						
+				</tr>
+			</table>
+			<br/>
+		</div>
+			
+	</body>
+</html>
+
+
