@@ -74,6 +74,8 @@ public class TextMining {
 		
 		Map<Atto, List<ITerm>> attoTerms = analyser.getData(null); // TODO
 		
+		
+		//ValueComparator comparator =  new ValueComparator(attoTerms);
 		// prints the top words
 		//Utils.printMap(topWords);
 	}
@@ -85,14 +87,6 @@ public class TextMining {
 	
 	private static ITermsDisambiguator getTermsDisambiguator()
 	{
-		ITermsDisambiguator dummyDisambiguator = new ITermsDisambiguator() {
-			@Override
-			public Map<String, Integer> getDisambiguatedTerms(
-					List<Entry<String, Integer>> terms) {
-				return Utils.entryListToMap(terms);
-			}
-		};
-		
 		return new TermsDisambiguator();
 	}
 	

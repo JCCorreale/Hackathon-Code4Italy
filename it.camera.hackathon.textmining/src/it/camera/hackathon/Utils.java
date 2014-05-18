@@ -8,10 +8,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.AbstractMap.SimpleEntry;
 import java.util.Map.Entry;
 
 public final class Utils {
@@ -61,5 +65,51 @@ public final class Utils {
 			list.add(new AbstractMap.SimpleEntry<String, Integer>(key, map.get(key)));
 		}
 		return list;
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static Map sortMapAscending(Map unsortMap) 
+	{	 
+		List list = new LinkedList(unsortMap.entrySet());
+
+		Collections.sort(list, new Comparator() {
+			public int compare(Object o1, Object o2) {
+				return ((Comparable) ((Map.Entry) (o1)).getValue())
+                                       .compareTo(((Map.Entry) (o2)).getValue());
+			}
+		});
+ 
+		// ricreo la mappa dalla lista (la LinkedHashMap preserva l'ordine d'inserimento)
+		Map sortedMap = new LinkedHashMap();
+		for (Iterator it = list.iterator(); it.hasNext();) 
+		{
+			Map.Entry entry = (Map.Entry) it.next();
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+		return sortedMap;
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static Map sortMapDescending(Map unsortMap) 
+	{	 
+		List list = new LinkedList(unsortMap.entrySet());
+
+		Collections.sort(list, new Comparator() {
+			public int compare(Object o1, Object o2) {
+				return ((Comparable) ((Map.Entry) (o1)).getValue())
+                                       .compareTo(((Map.Entry) (o2)).getValue());
+			}
+		});
+		
+		Collections.reverse(list);
+		
+		// ricreo la mappa dalla lista (la LinkedHashMap preserva l'ordine d'inserimento)
+		Map sortedMap = new LinkedHashMap();
+		for (Iterator it = list.iterator(); it.hasNext();) 
+		{
+			Map.Entry entry = (Map.Entry) it.next();
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+		return sortedMap;
 	}
 }

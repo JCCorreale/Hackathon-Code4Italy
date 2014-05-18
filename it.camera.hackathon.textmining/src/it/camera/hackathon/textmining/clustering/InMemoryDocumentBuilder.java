@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import it.camera.hackathon.Utils;
+
 /**
  * Builds a Document that is stored in-memory.
  * @author JCC
@@ -143,14 +145,18 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 			return map;
 		}
 
+		@SuppressWarnings("unchecked")
 		@Override
-		public Map<ITerm, Float> getWeightedFrequencyByTerm() {
+		public Map<ITerm, Float> getWeightedFrequencyByTerm()
+		{
 			HashMap<ITerm, Float> map = new HashMap<ITerm, Float>();
+			
 			for (ITerm term : frequencies.keySet())
 			{
 				map.put(term, getWeightedFrequency(term));
 			}
-			return map;
+			
+			return Utils.sortMapDescending(map);
 		}
 		
 		@Override
