@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.sparql;
+package it.camera.hackathon.datasource.sparql;
 
 import it.camera.hackathon.datasource.IDataProvider;
 
