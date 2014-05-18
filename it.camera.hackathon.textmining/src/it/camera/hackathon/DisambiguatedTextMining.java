@@ -16,8 +16,9 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
+import it.camera.opendata.model.Atto;
 
-public class TextMining {
+public class DisambiguatedTextMining {
 
 	// preprocessing defaults
 	private static int topWordsCount = 20;
@@ -73,8 +74,6 @@ public class TextMining {
 		
 		//Map<Atto, List<ITerm>> attoTerms = analyser.getData(null); // TODO
 		
-		
-		//ValueComparator comparator =  new ValueComparator(attoTerms);
 		// prints the top words
 		//Utils.printMap(topWords);
 	}
@@ -94,8 +93,8 @@ public class TextMining {
 			}
 		};
 		
-		//return new TermsDisambiguator();
-		return dummyDisambiguator;
+		return new TermsDisambiguator();
+		//return dummyDisambiguator;
 	}
 	
 	private static String[] getStopWords()
