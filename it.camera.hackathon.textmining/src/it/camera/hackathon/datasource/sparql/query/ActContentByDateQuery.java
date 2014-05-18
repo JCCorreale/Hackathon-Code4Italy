@@ -21,7 +21,7 @@ public class ActContentByDateQuery implements IQuery {
 	
 	@Override
 	public String toString() {
-		return  "SELECT ?finalContent " +
+		return  "SELECT DISTINCT ?finalContent " +
 				"WHERE { " +
 				"<" + actUrl + "> ocd:rif_versioneTestoAtto ?descrTestoAtto. " +
 				"?descrTestoAtto dc:date <" + actUrl + ">. " +

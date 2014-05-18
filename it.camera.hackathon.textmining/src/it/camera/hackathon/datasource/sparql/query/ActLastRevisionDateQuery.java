@@ -14,9 +14,9 @@ public class ActLastRevisionDateQuery implements IQuery {
 	}
 	
 	public String toString() {
-		return 	"SELECT ( MAX(?dataTestoAtto) AS ?lastEdit ) " + 
-				"WHERE { " +
-				actUrl + " ocd:rif_versioneTestoAtto ?descrTestoAtto. " +
+		return 	"SELECT DISTINCT ( MAX(?dataTestoAtto) AS ?lastEdit ) " + 
+				"WHERE { <" +
+				actUrl + "> ocd:rif_versioneTestoAtto ?descrTestoAtto. " +
 				"?descrTestoAtto dc:date ?dataTestoAtto. " +
 				"}";
 	}

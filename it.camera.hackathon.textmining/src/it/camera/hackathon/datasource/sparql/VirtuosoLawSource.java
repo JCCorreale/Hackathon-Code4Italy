@@ -1,5 +1,6 @@
 package it.camera.hackathon.datasource.sparql;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,18 +10,19 @@ import it.camera.hackathon.datasource.remote.HttpGetDataSource.HttpGetRequestCon
 import it.camera.hackathon.datasource.sparql.query.LawsQuery;
 import it.camera.hackathon.parsing.LineValueParser;
 
-public class VirtuosoActSource implements IDataSource<String[]> {
+public class VirtuosoLawSource implements IDataSource<String[]> {
 	
 	// Sorgente su cui effettuare le query
 	private HttpGetDataSource<String[]> source;
 	
-	public VirtuosoActSource(String url) {
+	public VirtuosoLawSource(String url) {
 		this.source = new HttpGetDataSource<String[]>(url, new LineValueParser());
 	}
 	
 	@Override
 	public String[] getData() {
-		return this.source.getData(buildConfiguration(new LawsQuery()));
+		String[] data = this.source.getData(buildConfiguration(new LawsQuery()));
+		return Arrays.copyOfRange(data, 1, data.length); // removes header
 	}
 	
 	private HttpGetRequestConfiguration<String[]> buildConfiguration(IQuery query) {
