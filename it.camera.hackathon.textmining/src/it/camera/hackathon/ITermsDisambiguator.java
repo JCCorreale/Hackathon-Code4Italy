@@ -8,5 +8,5 @@ import java.util.Map.Entry;
 
 public interface ITermsDisambiguator 
 {
-	public Map<ITerm, Integer> getDisambiguatedTerms(List<Entry<ITerm, Integer>> terms);
+	public Map<String, Integer> getDisambiguatedTerms(List<Entry<String, Integer>> terms);
 }

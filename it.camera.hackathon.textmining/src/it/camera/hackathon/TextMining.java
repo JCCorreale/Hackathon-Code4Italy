@@ -1,9 +1,9 @@
 package it.camera.hackathon;
 
 import java.util.AbstractMap;
-import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 
 import it.camera.hackathon.datasource.IDataSource;
@@ -16,7 +16,6 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
-import it.camera.hackathon.textmining.scraping.SynonimScraper;
 
 public class TextMining {
 
@@ -35,8 +34,6 @@ public class TextMining {
 		System.out.println("Removing HTML tags...");
 		String plainText = HtmlRemover.text(html);
 		
-		// TODO Stemmer?
-		
 		// counts the occurence
 		System.out.println("Counting word occurences (may take a while!)...");
 		TextMiningWordCounter counter = buildWordCounter();
@@ -54,9 +51,13 @@ public class TextMining {
 //			System.out.println(entry.getKey() + " " + entry.getValue() + synonimScraper.FindSynonims(entry.getKey()));
 //		}
 		
+		ITermsDisambiguator disambiguator = getTermsDisambiguator();
+		topWords = Utils.mapToEntryList(disambiguator.getDisambiguatedTerms(topWords));
+		
 		// creates an IDocument instance from the retrieved data
 		IDocument document = buildDocument(topWords, counter.getAcceptedWordCount());
 		
+		// prints some stat about the document
 		System.out.println("\n\nFrequency by term:\n");
 		Utils.printMap(document.getFrequencyByTerm());
 		System.out.println("\n\nWeighted frequency by term:\n");
@@ -66,6 +67,24 @@ public class TextMining {
 		
 		// prints the top words
 		//Utils.printMap(topWords);
+	}
+	
+	private static IDocumentAnalyser getDocumentsAnalyser()
+	{
+		return new DocumentAnalyser();
+	}
+	
+	private static ITermsDisambiguator getTermsDisambiguator()
+	{
+		ITermsDisambiguator dummyDisambiguator = new ITermsDisambiguator() {
+			@Override
+			public Map<String, Integer> getDisambiguatedTerms(
+					List<Entry<String, Integer>> terms) {
+				return Utils.entryListToMap(terms);
+			}
+		};
+		
+		return dummyDisambiguator;
 	}
 	
 	private static String[] getStopWords()
