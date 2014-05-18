@@ -2,7 +2,6 @@ package it.camera.hackathon.textmining.scraping;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.jaunt.*;
 
 public class SynonimScraper 
@@ -17,8 +16,12 @@ public class SynonimScraper
 		{
 			UserAgent userAgent = new UserAgent();
 			userAgent.visit(URL+s);
+			
 			if(userAgent.doc.findFirst("<form>").nextNonDescendantNode().nextNonDescendantNode().nextNonDescendantNode().toString().equals(ERROR_MESSAGE))
-					return res;
+			{
+				return res;
+			}
+			
 			for(Element el : userAgent.doc.findEach("<li>").findEach("<a>"))
 			{
 				res.add(el.innerText()); 
@@ -34,5 +37,13 @@ public class SynonimScraper
 	public static boolean areSynonims(String s1, String s2)
 	{
 		return FindSynonims(s1).contains(s2) && FindSynonims(s2).contains(s1);
+	}
+	
+	public static void main(String[] args)
+	{
+		for(String s : FindSynonims("asino"))
+		{
+			System.out.println(s);
+		}
 	}
 }
