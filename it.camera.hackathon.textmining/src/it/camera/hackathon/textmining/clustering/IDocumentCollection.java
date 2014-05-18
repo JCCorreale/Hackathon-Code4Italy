@@ -6,6 +6,16 @@ public interface IDocumentCollection
 {
 	public Map<IDocument, Float> getFrequencyByDocument(ITerm term);
 	
+	public Map<IDocument, Float> getIDFByDocument(ITerm term);
+	
+	public Map<IDocument, Float> getTFIDFByDocument(ITerm term);
+	
+	public float GetFrequenciesCosine(IDocument d1, IDocument d2);
+	
+	public float GetIDFCosine(IDocument d1, IDocument d2);
+	
+	public float GetTFIDFCosine(IDocument d1, IDocument d2);
+	
 	/**
 	 * Si definisce idf(t) = log10[N/df(t)], dove
 	 * N è il numero di documenti nel dataset
@@ -23,5 +33,5 @@ public interface IDocumentCollection
 	 */
 	public float getTFIDF(ITerm term);
 	
-	public int getDocumentCount();
+	public int getDocumentsCount();
 }

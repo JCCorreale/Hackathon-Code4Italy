@@ -104,6 +104,16 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 		}
 
 		@Override
+		public boolean contains(ITerm term) {
+			return frequencies.containsKey(term);
+		}
+
+		@Override
+		public boolean contains(String term) {
+			return contains(new Term(term));
+		}
+
+		@Override
 		public Iterator<ITerm> iterator() {
 			return frequencies.keySet().iterator();
 		}

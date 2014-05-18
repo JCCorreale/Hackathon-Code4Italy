@@ -2,6 +2,10 @@ package it.camera.hackathon.textmining.clustering;
 
 public interface IDocument extends Iterable<ITerm>
 {
+	public boolean contains(ITerm term);
+	
+	public boolean contains(String term);
+	
 	public ITerm getTerm(String term);
 	
 	public ITerm[] getTerms();
