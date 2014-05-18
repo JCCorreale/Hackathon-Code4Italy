@@ -1,7 +1,6 @@
 package it.camera.hackathon.textmining.scraping.test;
 
 import static org.junit.Assert.*;
-import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.scraping.SynonimScraper;
 
 import org.junit.Test;
