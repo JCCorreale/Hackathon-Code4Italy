@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class WordCounter implements IWordCounter {
 
-	private ICharFilter _charFilter;
-	private IWordFilter _wordFilter;
-	private IWordComparer _wordComparer;
+	protected ICharFilter _charFilter;
+	protected IWordFilter _wordFilter;
+	protected IWordComparer _wordComparer;
 	
 	protected Map<String, Integer> _map = new HashMap<String, Integer>();
 	

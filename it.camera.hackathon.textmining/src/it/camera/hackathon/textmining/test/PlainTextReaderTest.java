@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map.Entry;
 
+import it.camera.hackathon.Utils;
 import it.camera.hackathon.textmining.ICharFilter;
 import it.camera.hackathon.textmining.IWordComparer;
 import it.camera.hackathon.textmining.IWordCountResult;
@@ -50,17 +51,11 @@ public class PlainTextReaderTest {
 		wc = new WordCounter(cf, wf, comparator);
 	}
 	
-	static String readFile(String path, Charset encoding) throws IOException 
-	{
-		byte[] encoded = Files.readAllBytes(Paths.get(path));
-		return new String(encoded, encoding);
-	}
-	
 	@Test
 	public void testWordCounter() throws IOException 
 	{
 		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PlainText";
-		String text = readFile(filename, Charset.defaultCharset());
+		String text = Utils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);
 		
@@ -74,7 +69,7 @@ public class PlainTextReaderTest {
 	public void testTopWordsCount() throws IOException 
 	{
 		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PlainText";
-		String text = readFile(filename, Charset.defaultCharset());
+		String text = Utils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);
 		
