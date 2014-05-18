@@ -8,6 +8,6 @@ import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.opendata.model.Atto;
 
-public interface IDataAnalyser extends IDataProvider<Map<Atto, List<ITerm>>, Iterable<IDocument>> {
+public interface IDocumentAnalyser extends IDataProvider<Map<Atto, List<ITerm>>, Iterable<IDocument>> {
 	
 }
