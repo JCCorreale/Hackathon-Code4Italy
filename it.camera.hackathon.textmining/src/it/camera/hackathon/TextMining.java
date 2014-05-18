@@ -26,7 +26,7 @@ public class TextMining {
 	public static void main(String[] args)
 	{
 		// gets the input
-		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Hackathon-Code4Italy\\it.camera.hackathon.textmining\\PDL 676.htm";
+		String filename = "PDL 676.htm";
 		IDataSource<String> source = new TextFileDataSource(filename);
 		String html = source.getData();
 		
@@ -84,7 +84,7 @@ public class TextMining {
 			}
 		};
 		
-		return dummyDisambiguator;
+		return new TermsDisambiguator();
 	}
 	
 	private static String[] getStopWords()
