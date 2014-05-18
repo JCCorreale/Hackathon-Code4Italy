@@ -1,5 +1,7 @@
 package it.camera.hackathon.textmining.clustering;
 
+import java.util.Map;
+
 public interface IDocument extends Iterable<ITerm>
 {
 	public boolean contains(ITerm term);
@@ -9,6 +11,10 @@ public interface IDocument extends Iterable<ITerm>
 	public ITerm getTerm(String term);
 	
 	public ITerm[] getTerms();
+	
+	public Map<ITerm, Integer> getFrequencyByTerm();
+	
+	public Map<ITerm, Float> getWeightedFrequencyByTerm();
 	
 	/**
 	 * Le term frequency tf(t,d) di un termine t in un documento d è il numero di occorrenze di t in d.

@@ -9,6 +9,11 @@ package it.camera.hackathon.textmining.clustering;
  */
 public class Term implements ITerm {
 	
+	public static Term fromString(String term)
+	{
+		return new Term(term);
+	}
+	
 	private String term;
 	private IConcept concept;
 
@@ -38,11 +43,10 @@ public class Term implements ITerm {
 	public IConcept getConcept() {
 		return this.concept;
 	}
-	
+
 	@Override
-	public String toString()
-	{
-		return this.term;
+	public int compareTo(ITerm arg0) {
+		return this.term.compareTo(arg0.getString());
 	}
 	
 	public boolean equals(Object obj)
@@ -53,5 +57,11 @@ public class Term implements ITerm {
 	public int hashCode()
 	{
 		return this.term.hashCode();
+	}
+
+	@Override
+	public String toString()
+	{
+		return this.term;
 	}
 }

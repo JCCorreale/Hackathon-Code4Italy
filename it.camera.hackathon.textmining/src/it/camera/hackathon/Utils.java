@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Map;
 import java.util.Map.Entry;
 
 public final class Utils {
@@ -19,11 +20,19 @@ public final class Utils {
 		return new String(encoded, encoding);
 	}
 	
-	public static void printWordEntries(Iterable<Entry<String, Integer>> wordEntries)
+	public static void printMap(Iterable<Entry<?, ?>> entries)
 	{
-		for (Entry<String, Integer> entry : wordEntries)
+		for (Entry<?, ?> entry : entries)
 		{
 			System.out.println(entry.getKey() + " " + entry.getValue());
+		}
+	}
+	
+	public static void printMap(Map<?, ?> map)
+	{
+		for (Object key : map.keySet())
+		{
+			System.out.println(key + " " + map.get(key));
 		}
 	}
 }

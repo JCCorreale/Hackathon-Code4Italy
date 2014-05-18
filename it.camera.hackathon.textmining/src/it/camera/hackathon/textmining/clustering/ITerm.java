@@ -8,7 +8,7 @@ package it.camera.hackathon.textmining.clustering;
  * @author JCC
  *
  */
-public interface ITerm 
+public interface ITerm extends Comparable<ITerm>
 {
 	public String getString();
 	
