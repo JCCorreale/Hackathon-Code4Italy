@@ -35,8 +35,13 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		return new DocumentCollection(docs.toArray(new IDocument[0]));
 	}
 	
-	public AttoDocumentAnalyser() 
+	private float minTfIdf;
+	private int maxTerms;
+	
+	public AttoDocumentAnalyser(float minTfIdf, int maxTerms) 
 	{
+		this.minTfIdf = minTfIdf;
+		this.maxTerms = maxTerms;
 	}
 	
 	private List<ITerm> getTFIDFSortedTerms(Map<ITerm, Float> tfIdfs) {
@@ -52,7 +57,7 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 				{
 					if (termsTFIDF.get(i).getValue() > entry.getValue())
 					{
-						// TODO
+						termsTFIDF.add(i, entry);
 					}
 				}
 				
@@ -81,8 +86,13 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 			// the TF-IDF for each term of the data set, calculated for the document doc
 			Map<ITerm, Float> tfIdfs = docs.getTFIDFByTerm(doc);
 			List<ITerm> sortedTerms = getTFIDFSortedTerms(tfIdfs);
-			
-			
+			for (ITerm term : sortedTerms)
+			{
+				if (tfIdfs.get(term) > this.minTfIdf)
+					attoTerms.get(atto).add(term);
+				if (attoTerms.get(atto).size() == this.maxTerms)
+					break;
+			}
 		}
 		return attoTerms;
 	}

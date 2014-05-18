@@ -16,12 +16,17 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
+import it.camera.opendata.model.Atto;
 
 public class TextMining {
 
+	// preprocessing defaults
 	private static int topWordsCount = 30;
 	private static int minWordLength = 3;
 	private static String delimiters = " ',;.:/()[]<>";
+	// analysis defaults
+	private static float minTfIdf = 2.0f;
+	private static int maxTerms = 5;
 	
 	public static void main(String[] args)
 	{
@@ -63,15 +68,19 @@ public class TextMining {
 		System.out.println("\n\nWeighted frequency by term:\n");
 		Utils.printMap(document.getWeightedFrequencyByTerm());
 		
-		// TODO
+		AttoDocumentAnalyser analyser = getDocumentsAnalyser();
+		
+		// TODO Aggregate Documents
+		
+		Map<Atto, List<ITerm>> attoTerms = analyser.getData(null); // TODO
 		
 		// prints the top words
 		//Utils.printMap(topWords);
 	}
 	
-	private static IAttoDocumentAnalyser getDocumentsAnalyser()
+	private static AttoDocumentAnalyser getDocumentsAnalyser()
 	{
-		return new AttoDocumentAnalyser();
+		return new AttoDocumentAnalyser(minTfIdf, maxTerms);
 	}
 	
 	private static ITermsDisambiguator getTermsDisambiguator()
