@@ -134,6 +134,26 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 		}
 		
 		@Override
+		public Map<ITerm, Integer> getFrequencyByTerm() {
+			HashMap<ITerm, Integer> map = new HashMap<ITerm, Integer>();
+			for (ITerm term : frequencies.keySet())
+			{
+				map.put(term, getFrequency(term));
+			}
+			return map;
+		}
+
+		@Override
+		public Map<ITerm, Float> getWeightedFrequencyByTerm() {
+			HashMap<ITerm, Float> map = new HashMap<ITerm, Float>();
+			for (ITerm term : frequencies.keySet())
+			{
+				map.put(term, getWeightedFrequency(term));
+			}
+			return map;
+		}
+		
+		@Override
 		public int getFrequency(ITerm term) {
 			if (!frequencies.containsKey(term))
 				return 0;

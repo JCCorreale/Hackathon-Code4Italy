@@ -27,7 +27,8 @@ public class TextMiningWordCounter extends WordCounter {
 		return new WordFilterWithCounter(
 				new CompoundWordFilter(
 					new StopWordFilter(stopWords, defaultWordComparer),
-					new LengthWordFilter(minLength)));
+					new LengthWordFilter(minLength),
+					new NumericStringFilter()));
 	}
 	
 	// INSTANCE FIELDS
@@ -102,6 +103,18 @@ public class TextMiningWordCounter extends WordCounter {
 			if (accepted)
 				count++;
 			return accepted;
+		}
+	}
+	
+	private static class NumericStringFilter implements IWordFilter
+	{
+		@Override
+		public boolean accept(String value) {
+			for (char c : value.toCharArray())
+				if (Character.isDigit(c))
+					return false;
+			
+			return true;
 		}
 	}
 }

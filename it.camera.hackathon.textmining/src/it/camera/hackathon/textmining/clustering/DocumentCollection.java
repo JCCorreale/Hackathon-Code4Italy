@@ -1,52 +1,125 @@
 package it.camera.hackathon.textmining.clustering;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class DocumentCollection implements IDocumentCollection {
 
 	private Set<IDocument> documents;
+	private SortedSet<ITerm> allTerms;
 	
-	public DocumentCollection() {
+	public DocumentCollection(IDocument... documents) {
 		this.documents = new HashSet<IDocument>();
-	}
-
-	@Override
-	public Map<IDocument, Float> getFrequencyByDocument(ITerm term) {
-		HashMap<IDocument, Float> frequencies = new HashMap<IDocument, Float>();
-		// TODO
-		return null;
+		this.allTerms = new TreeSet<ITerm>();
+		for (IDocument doc : documents)
+		{
+			this.documents.add(doc);
+			for (ITerm term : doc.getTerms())
+				this.allTerms.add(term);
+		}
 	}
 	
+	@Override
+	public IDocument[] getContainingDocuments(ITerm term)
+	{
+		List<IDocument> docs = new ArrayList<IDocument>();
+		for (IDocument doc : this.documents)
+		{
+			if (doc.contains(term))
+				docs.add(doc);
+		}
+		return docs.toArray(new IDocument[0]);
+	}
+	
+	@Override
+	public IDocument[] getContainingDocuments(String term)
+	{
+		return getContainingDocuments(new Term(term));
+	}
+	
+	@Override
+	public int getContainingDocumentsCount(ITerm term)
+	{
+		return getContainingDocuments(term).length;
+	}
+	
+	@Override
+	public int getContainingDocumentsCount(String term)
+	{
+		return getContainingDocuments(new Term(term)).length;
+	}
 
 	@Override
-	public Map<IDocument, Float> getIDFByDocument(ITerm term) {
-		// TODO Auto-generated method stub
-		return null;
+	public Map<IDocument, Integer> getFrequencyByDocument(ITerm term) {
+		HashMap<IDocument, Integer> frequencies = new HashMap<IDocument, Integer>();
+		for (IDocument doc : this.documents)
+		{
+			frequencies.put(doc, doc.getFrequency(term));
+		}
+		return frequencies;
+	}
+	
+	@Override
+	public Map<IDocument, Float> getWeightedFrequencyByDocument(ITerm term) {
+		HashMap<IDocument, Float> frequencies = new HashMap<IDocument, Float>();
+		for (IDocument doc : this.documents)
+		{
+			frequencies.put(doc, doc.getWeightedFrequency(term));
+		}
+		return frequencies;
+	}
+	
+	@Override
+	public Map<ITerm, Float> getIDFByTerm() {
+		HashMap<ITerm, Float> idfs = new HashMap<ITerm, Float>();
+		for (ITerm term : this.allTerms)
+		{
+			idfs.put(term, this.getIDF(term));
+		}
+		return idfs;
 	}
 
 	@Override
 	public Map<IDocument, Float> getTFIDFByDocument(ITerm term) {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<IDocument, Float> tfidfs = new HashMap<IDocument, Float>();
+		for (IDocument doc : this.documents)
+		{
+			tfidfs.put(doc, this.getTFIDF(term, doc));
+		}
+		return tfidfs;
+	}
+	
+	@Override
+	public Map<ITerm, Float> getTFIDFByTerm(IDocument doc)
+	{
+		HashMap<ITerm, Float> tfidfs = new HashMap<ITerm, Float>();
+		for (ITerm term : this.allTerms)
+		{
+			tfidfs.put(term, this.getTFIDF(term, doc));
+		}
+		return tfidfs;
 	}
 
 	@Override
-	public float GetFrequenciesCosine(IDocument d1, IDocument d2) {
+	public float getFrequenciesCosine(IDocument d1, IDocument d2) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public float GetIDFCosine(IDocument d1, IDocument d2) {
+	public float getIDFCosine(IDocument d1, IDocument d2) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public float GetTFIDFCosine(IDocument d1, IDocument d2) {
+	public float getTFIDFCosine(IDocument d1, IDocument d2) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -60,8 +133,9 @@ public class DocumentCollection implements IDocumentCollection {
 	 */
 	@Override
 	public float getIDF(ITerm term) {
-		// TODO Auto-generated method stub
-		return 0;
+		int n = this.getDocumentsCount();
+		int df = this.getContainingDocumentsCount(term);
+		return (float)Math.log10(n/df);
 	}
 
 	/**
@@ -71,13 +145,35 @@ public class DocumentCollection implements IDocumentCollection {
 	 * @return
 	 */
 	@Override
-	public float getTFIDF(ITerm term) {
-		// TODO Auto-generated method stub
-		return 0;
+	public float getTFIDF(ITerm term, IDocument doc) {
+		int n = this.getDocumentsCount();
+		float tf = doc.getFrequency(term);
+		float df = this.getContainingDocumentsCount(term);
+		return (float)(
+				Math.log(1 + tf) *
+				Math.log(n / df));
 	}
-
+	
+	@Override
+	public IDocument[] getDocuments()
+	{
+		return this.documents.toArray(new IDocument[0]);
+	}
+	
 	@Override
 	public int getDocumentsCount() {
 		return this.documents.size();
+	}
+	
+	@Override
+	public ITerm[] getAllTerms()
+	{
+		return this.allTerms.toArray(new ITerm[0]);
+	}
+	
+	@Override
+	public int getAllTermsCount()
+	{
+		return this.allTerms.size();
 	}
 }
