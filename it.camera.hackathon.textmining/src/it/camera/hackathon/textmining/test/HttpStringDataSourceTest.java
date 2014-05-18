@@ -23,7 +23,7 @@ public class HttpStringDataSourceTest {
 		Map<String, String> params= new HashMap<String, String>();
 		Map<String, String> header = new HashMap<String, String>();
 		
-		String actual = ds.getData(new HttpGetRequestConfiguration<String>(params, header));
+		String actual = ds.getData(new HttpGetRequestConfiguration(params, header));
 		
 		assertEquals(TEST, actual);
 	}

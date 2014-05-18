@@ -25,9 +25,9 @@ public class HttpGetRequestTest {
 		params.put("param1", "value1");
 		params.put("param2", "value2");
 		
-		HttpGetRequestConfiguration<String> conf = new HttpGetRequestConfiguration<String>(params, headerConf);
+		HttpGetRequestConfiguration conf = new HttpGetRequestConfiguration(params, headerConf);
 		
-		IDataProvider<String, HttpGetRequestConfiguration<String>> ds = new HttpGetDataSource<String>(URL_TARGET, new StringParser());
+		IDataProvider<String, HttpGetRequestConfiguration> ds = new HttpGetDataSource<String>(URL_TARGET, new StringParser());
 		System.out.println("Received: '" + ds.getData(conf) + "'");
 	}
 

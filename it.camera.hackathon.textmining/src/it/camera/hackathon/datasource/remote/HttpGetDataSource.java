@@ -10,7 +10,7 @@ import java.net.URL;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.HttpGetRequestConfiguration<T>> {
+public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.HttpGetRequestConfiguration> {
 
 	IParser<T> parser;
 	String baseUrl;
@@ -24,7 +24,7 @@ public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.Ht
 	}
 	
 	@Override
-	protected HttpURLConnection getConnection(HttpGetRequestConfiguration<T> conf) {
+	protected HttpURLConnection getConnection(HttpGetRequestConfiguration conf) {
 		try {
 			HttpURLConnection conn = (HttpURLConnection) new URL(baseUrl + HttpDataSourceUtils.getGetParamters(conf.getParameters())).openConnection();
 			conn.setRequestMethod("GET");
@@ -48,13 +48,13 @@ public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.Ht
 		return null;
 	}
 
-	private void applyHeader(HttpURLConnection conn, HttpGetRequestConfiguration<T> conf) {
+	private void applyHeader(HttpURLConnection conn, HttpGetRequestConfiguration conf) {
 		for(Entry<String, String> e : conf.getHeaderConfiguration().entrySet()) {
 			conn.setRequestProperty(e.getKey(), e.getValue());
 		}
 	}
 	
-	public static class HttpGetRequestConfiguration<T> {
+	public static class HttpGetRequestConfiguration {
 
 		private Map<String, String> headerConf;
 		private Map<String, String> params;

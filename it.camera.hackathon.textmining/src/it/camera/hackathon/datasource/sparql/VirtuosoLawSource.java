@@ -44,7 +44,7 @@ public class VirtuosoLawSource implements IDataProvider<String[], LimitedQueryCo
 		return Arrays.copyOfRange(data, 1, data.length); // removes header
 	}
 	
-	private HttpGetRequestConfiguration<String[]> buildConfiguration(IQuery query) {
+	private HttpGetRequestConfiguration buildConfiguration(IQuery query) {
 		Map<String, String> param = new HashMap<String, String>();
 		param.put("format", "text/csv");
 		param.put("timeout", "0");
@@ -54,6 +54,6 @@ public class VirtuosoLawSource implements IDataProvider<String[], LimitedQueryCo
 		
 		Map<String, String> header = new HashMap<String, String>();
 		
-		return new HttpGetRequestConfiguration<>(param, header);
+		return new HttpGetRequestConfiguration(param, header);
 	}
 }

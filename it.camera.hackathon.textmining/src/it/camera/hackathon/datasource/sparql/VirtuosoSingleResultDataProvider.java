@@ -29,7 +29,7 @@ public class VirtuosoSingleResultDataProvider implements ISparqlDataProvider<Str
 		return data[1];
 	}
 	
-	private HttpGetRequestConfiguration<String[]> buildConfiguration(IQuery query) {
+	private HttpGetRequestConfiguration buildConfiguration(IQuery query) {
 		Map<String, String> param = new HashMap<String, String>();
 		param.put("format", format);
 		param.put("timeout", "0");
@@ -41,6 +41,6 @@ public class VirtuosoSingleResultDataProvider implements ISparqlDataProvider<Str
 		
 		Map<String, String> header = new HashMap<String, String>();
 		
-		return new HttpGetRequestConfiguration<>(param, header);
+		return new HttpGetRequestConfiguration(param, header);
 	}
 }
