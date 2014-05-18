@@ -13,4 +13,9 @@ public class Atto {
 		
 		this.iri = iri;
 	}
+	
+	public boolean equals(Object obj)
+	{
+		return obj instanceof Atto && ((Atto)obj).iri.equals(this.iri);
+	}
 }

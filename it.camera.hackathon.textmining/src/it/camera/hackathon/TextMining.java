@@ -69,9 +69,9 @@ public class TextMining {
 		//Utils.printMap(topWords);
 	}
 	
-	private static IDocumentAnalyser getDocumentsAnalyser()
+	private static IAttoDocumentAnalyser getDocumentsAnalyser()
 	{
-		return new DocumentAnalyser();
+		return new AttoDocumentAnalyser();
 	}
 	
 	private static ITermsDisambiguator getTermsDisambiguator()

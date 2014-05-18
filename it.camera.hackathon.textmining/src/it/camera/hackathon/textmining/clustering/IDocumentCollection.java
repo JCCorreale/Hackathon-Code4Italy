@@ -20,6 +20,11 @@ public interface IDocumentCollection
 	
 	public Map<IDocument, Float> getTFIDFByDocument(ITerm term);
 	
+	/**
+	 * Calculated over all terms in the data set.
+	 * @param doc
+	 * @return
+	 */
 	public Map<ITerm, Float> getTFIDFByTerm(IDocument doc);
 	
 	public float getFrequenciesCosine(IDocument d1, IDocument d2);
