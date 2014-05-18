@@ -3,8 +3,8 @@ package it.camera.hackathon;
 import java.util.List;
 import java.util.Map.Entry;
 
+import it.camera.hackathon.datasource.IDataSource;
 import it.camera.hackathon.textmining.HtmlRemover;
-import it.camera.hackathon.textmining.IStringDataSource;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.TextFileDataSource;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
@@ -20,7 +20,7 @@ public class TextMining {
 	{
 		// gets the input
 		String filename = "C:\\Users\\JCC\\workspace\\java\\hackathon\\Textalyser\\PDL 676.htm";
-		IStringDataSource source = new TextFileDataSource(filename);
+		IDataSource<String> source = new TextFileDataSource(filename);
 		String html = source.getData();
 		
 		// removes HTML

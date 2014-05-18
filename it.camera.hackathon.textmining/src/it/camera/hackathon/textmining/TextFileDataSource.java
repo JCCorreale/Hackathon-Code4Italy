@@ -1,5 +1,7 @@
 package it.camera.hackathon.textmining;
 
+import it.camera.hackathon.datasource.IDataSource;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +16,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class TextFileDataSource implements IStringDataSource {
+public class TextFileDataSource implements IDataSource<String> {
 	
 	private File file;
 	
