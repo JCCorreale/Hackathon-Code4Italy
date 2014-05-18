@@ -9,12 +9,22 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+/**
+ * This implementation assumes that the documents are completely defined when they're passed to the constructor
+ * (no event from IDocument is handled). This class may not work properly if the documents are changed after they're
+ * passed to the constructor.
+ * @author JCC
+ *
+ */
 public class DocumentCollection implements IDocumentCollection {
 
 	private Set<IDocument> documents;
 	private SortedSet<ITerm> allTerms;
 	
 	public DocumentCollection(IDocument... documents) {
+		if (documents.length < 1)
+			throw new IllegalArgumentException("documents.length < 1");
+		
 		this.documents = new HashSet<IDocument>();
 		this.allTerms = new TreeSet<ITerm>();
 		for (IDocument doc : documents)
