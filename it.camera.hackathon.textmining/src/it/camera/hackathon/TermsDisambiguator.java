@@ -1,5 +1,6 @@
 package it.camera.hackathon;
 
+import it.camera.hackathon.textmining.scraping.SynonimScraper;
 import it.camera.hackathon.textmining.stemming.StemmingUtils;
 
 import java.util.HashMap;
@@ -18,7 +19,17 @@ public class TermsDisambiguator implements ITermsDisambiguator
 			String search = "";
 			for(String res : result.keySet())
 			{
-				if(StemmingUtils.Stem(e.getKey()).equals(StemmingUtils.Stem(res)))
+				if
+				(	// Raggruppa parole con stessa radice (stemmed words)
+					StemmingUtils.Stem(e.getKey()).equals(StemmingUtils.Stem(res))
+				)
+				{
+					search = res;
+				}
+				else if
+				(	// Raggruppa parole sinonime (fa controllo solo se non hanno stessa radice, per diminuire passaggi)
+					SynonimScraper.areSynonims(e.getKey(),res)
+				)
 				{
 					search = res;
 				}
