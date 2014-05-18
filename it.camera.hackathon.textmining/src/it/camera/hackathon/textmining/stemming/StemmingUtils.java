@@ -1,13 +1,10 @@
 package it.camera.hackathon.textmining.stemming;
 
-import org.tartarus.snowball.SnowballStemmer;
-import org.tartarus.snowball.ext.italianStemmer;
-
 public class StemmingUtils 
 {
 	public static String Stem(String s)
 	{
-		SnowballStemmer stemmer = (SnowballStemmer) new italianStemmer();
+		ItalianStemmer stemmer = new ItalianStemmer();
 		stemmer.setCurrent(s);
 		stemmer.stem();
 		return stemmer.getCurrent();
