@@ -1,7 +1,7 @@
 package it.camera.hackathon;
 
+import it.camera.hackathon.dictionary.SynonimsDictionary;
 import it.camera.hackathon.stemming.StemmingUtils;
-import it.camera.hackathon.textmining.scraping.SynonimScraper;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +10,8 @@ import java.util.Map.Entry;
 
 public class TermsDisambiguator implements ITermsDisambiguator 
 {
+	private SynonimsDictionary dictionary = new SynonimsDictionary();
+	
 	@Override
 	public Map<String, Integer> getDisambiguatedTerms(List<Entry<String, Integer>> terms) 
 	{
@@ -28,7 +30,7 @@ public class TermsDisambiguator implements ITermsDisambiguator
 				}
 				else if
 				(	// Raggruppa parole sinonime (fa controllo solo se non hanno stessa radice, per diminuire passaggi)
-					SynonimScraper.areSynonims(e.getKey(),res)
+					dictionary.areSynonims(e.getKey(), res)
 				)
 				{
 					search = res;
