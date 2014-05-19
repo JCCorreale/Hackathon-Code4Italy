@@ -18,12 +18,12 @@ public class TermsDisambiguator implements ITermsDisambiguator
 		Map<String, Integer> result = new HashMap<String, Integer>();
 		for(Entry<String, Integer> e : terms)
 		{
-			String search = "";
+			String search = null;
 			for(String res : result.keySet())
 			{
 				if
 				(	// Raggruppa parole con stessa radice (stemmed words)
-					StemmingUtils.Stem(e.getKey()).equals(StemmingUtils.Stem(res))
+					StemmingUtils.SameRoot(e.getKey(), res)
 				)
 				{
 					search = res;
@@ -36,10 +36,13 @@ public class TermsDisambiguator implements ITermsDisambiguator
 					search = res;
 				}
 			}
-			if(search!="")
+			
+			// se ha trovato termini con cui raggruppare, somma i risultati
+			if(search != null)
 			{
-				result.put(search, e.getValue()+result.get(search));
+				result.put(search, e.getValue() + result.get(search));
 			}
+			// altrimenti inserisci nuovo record nei risultati
 			else
 			{
 				result.put(e.getKey(), e.getValue());

@@ -125,6 +125,7 @@ public final class Utils {
 	}
 	*/
 	
+	@SuppressWarnings("rawtypes")
 	public static class EntryValueComparator implements Comparator<Entry<?, ? extends Comparable>>
 	{
 		private boolean ascending;
@@ -139,8 +140,10 @@ public final class Utils {
 			this(true);
 		}
 		
+		@SuppressWarnings({ "unchecked" })
 		@Override
-		public int compare(Entry<?, ? extends Comparable> entry1, Entry<?, ? extends Comparable> entry2) {
+		public int compare(Entry<?, ? extends Comparable> entry1, Entry<?, ? extends Comparable> entry2)
+		{
 			return entry1.getValue().compareTo(entry2.getValue()) * (ascending? 1 : -1);
 		}
 	}

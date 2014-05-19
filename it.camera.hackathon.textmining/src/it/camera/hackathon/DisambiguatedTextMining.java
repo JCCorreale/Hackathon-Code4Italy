@@ -3,7 +3,6 @@ package it.camera.hackathon;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 
 import it.camera.hackathon.datasource.IDataSource;
@@ -16,10 +15,9 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
-import it.camera.opendata.model.Atto;
 
-public class DisambiguatedTextMining {
-
+public class DisambiguatedTextMining 
+{
 	// preprocessing defaults
 	private static int topWordsCount = 20;
 	private static int minWordLength = 3;
@@ -68,7 +66,7 @@ public class DisambiguatedTextMining {
 		System.out.println("\n\nWeighted frequency by term:\n");
 		Utils.printMap(document.getWeightedFrequencyByTerm());
 		
-		AttoDocumentAnalyser analyser = getDocumentsAnalyser();
+		getDocumentsAnalyser();
 		
 		// TODO Aggregate Documents
 		
@@ -85,16 +83,7 @@ public class DisambiguatedTextMining {
 	
 	private static ITermsDisambiguator getTermsDisambiguator()
 	{
-		ITermsDisambiguator dummyDisambiguator = new ITermsDisambiguator() {
-			@Override
-			public Map<String, Integer> getDisambiguatedTerms(
-					List<Entry<String, Integer>> terms) {
-				return Utils.entryListToMap(terms);
-			}
-		};
-		
 		return new TermsDisambiguator();
-		//return dummyDisambiguator;
 	}
 	
 	private static String[] getStopWords()
