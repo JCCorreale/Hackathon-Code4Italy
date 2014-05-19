@@ -18,4 +18,10 @@ public class Atto {
 	{
 		return obj instanceof Atto && ((Atto)obj).iri.equals(this.iri);
 	}
+	
+	@Override
+	public String toString()
+	{
+		return this.iri;
+	}
 }

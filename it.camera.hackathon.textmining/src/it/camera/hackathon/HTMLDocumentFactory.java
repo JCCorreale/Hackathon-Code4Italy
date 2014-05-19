@@ -12,7 +12,7 @@ public class HTMLDocumentFactory
 	public String[] getFilePaths()
 	{
 		String[] paths;
-		File htmlDir = new File("text" + File.separator + "html");
+		File htmlDir = new File("resources" + File.separator + "html");
 		File[] files = htmlDir.listFiles(new FileFilter() {
 			@Override
 			public boolean accept(File f) {

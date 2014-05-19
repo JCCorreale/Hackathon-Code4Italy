@@ -119,19 +119,35 @@ public class DocumentCollection implements IDocumentCollection {
 	@Override
 	public float getFrequenciesCosine(IDocument d1, IDocument d2) {
 		// TODO Auto-generated method stub
-		return 0;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public float getIDFCosine(IDocument d1, IDocument d2) {
 		// TODO Auto-generated method stub
-		return 0;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public float getTFIDFCosine(IDocument d1, IDocument d2) {
-		// TODO Auto-generated method stub
-		return 0;
+		float dotProdAcc = 0;
+		float d1NormAcc = 0;
+		float d2NormAcc = 0;
+		
+		for (ITerm term : this.allTerms)
+		{
+			float d1TfIdf = this.getTFIDF(term, d1);
+			float d2TfIdf = this.getTFIDF(term, d2);
+			
+			dotProdAcc += d1TfIdf * d2TfIdf;
+			d1NormAcc += (float)Math.pow(d1TfIdf, 2);
+			d2NormAcc += (float)Math.pow(d2TfIdf, 2);
+		}
+		
+		d1NormAcc = (float)Math.sqrt(d1NormAcc);
+		d2NormAcc = (float)Math.sqrt(d2NormAcc);
+		
+		return dotProdAcc / (d1NormAcc * d2NormAcc);
 	}
 
 	/**
