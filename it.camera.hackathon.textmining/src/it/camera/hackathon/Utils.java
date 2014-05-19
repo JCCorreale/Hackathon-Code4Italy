@@ -8,10 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.AbstractMap;
 import java.util.ArrayList;
-<<<<<<< HEAD
 import java.util.Collections;
-=======
->>>>>>> Added some clustering stuff.
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -70,7 +67,6 @@ public final class Utils {
 		return list;
 	}
 	
-<<<<<<< HEAD
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Map sortMapAscending(Map unsortMap) 
 	{	 
@@ -115,7 +111,8 @@ public final class Utils {
 			sortedMap.put(entry.getKey(), entry.getValue());
 		}
 		return sortedMap;
-=======
+	}
+	
 	public static class EntryValueComparator implements Comparator<Entry<?, ? extends Comparable>>
 	{
 		private boolean ascending;
@@ -134,6 +131,5 @@ public final class Utils {
 		public int compare(Entry<?, ? extends Comparable> entry1, Entry<?, ? extends Comparable> entry2) {
 			return entry1.getValue().compareTo(entry2.getValue()) * (ascending? 1 : -1);
 		}
->>>>>>> Added some clustering stuff.
 	}
 }

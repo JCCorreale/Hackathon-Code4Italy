@@ -18,6 +18,7 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
+import it.camera.opendata.model.Atto;
 
 public class TextMining {
 
@@ -85,18 +86,15 @@ public class TextMining {
 		AttoDocumentAnalyser analyser = getDocumentsAnalyser();
 		
 		Map<Atto, List<ITerm>> result = analyser.getData(documents);
-<<<<<<< HEAD
 		
 		// TODO Aggregate Documents
 		
 		//Map<Atto, List<ITerm>> attoTerms = analyser.getData(null); // TODO
 		
-		
 		//ValueComparator comparator =  new ValueComparator(attoTerms);
 		// prints the top words
 		//Utils.printMap(topWords);
-=======
-
+		
 		// prints top terms for each document
 		for (Entry<Atto, List<ITerm>> entry : result.entrySet())
 		{
@@ -108,7 +106,6 @@ public class TextMining {
 			
 			System.out.println(entry.getKey().toString() + " " + terms.toString());
 		}
->>>>>>> Added some clustering stuff.
 	}
 	
 	private static AttoDocumentAnalyser getDocumentsAnalyser()
