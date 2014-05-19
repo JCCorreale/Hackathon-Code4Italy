@@ -1,5 +1,7 @@
 package it.camera.hackathon.dictionary;
 
+import it.camera.hackathon.textmining.stemming.StemmingUtils;
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
@@ -7,13 +9,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Dictionary;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 public class SynonimsDictionary 
 {
 	private final static String definitionFile = "th_it/th_it_IT.dat";
-	private Dictionary<String, List<String>> dictionary = new Hashtable<String, List<String>>();
+	private Map<String, List<String>> dictionary = new HashMap<String, List<String>>();
 	
 	public SynonimsDictionary()
 	{
@@ -70,13 +74,29 @@ public class SynonimsDictionary
 	
 	public List<String> getSynonims(String wordToInspect)
 	{
-		return dictionary.get(wordToInspect);
+		// se trova la parola nel dizionario la restituisce
+		if(dictionary.containsKey(wordToInspect))
+		{
+			return dictionary.get(wordToInspect);
+		}
+		// altrimenti cerca parole con radice comune (tipo plurali o verbi coniugati)
+		else
+		{
+			for(String s : dictionary.keySet())
+			{
+				if(StemmingUtils.SameRoot(wordToInspect, s))
+					return dictionary.get(s);
+			}
+		}
+		
+		// se non trova risultati restituisce lista vuota
+		return new ArrayList<String>();
 	}
 	
 	public static void main(String[] args)
 	{
 		SynonimsDictionary d = new SynonimsDictionary();
-		for(String s : d.getSynonims("zuppo"))
+		for(String s : d.getSynonims("provati"))
 		{
 			System.out.println(s);
 		}

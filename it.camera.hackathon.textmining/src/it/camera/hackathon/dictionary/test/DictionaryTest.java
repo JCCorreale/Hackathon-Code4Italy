@@ -12,13 +12,13 @@ public class DictionaryTest
 	@Test
 	public void testSynonimsExists() 
 	{
-		assertNotNull(dict.getSynonims("a"));
+		assertNotNull(dict.getSynonims("prova"));
 	}
 	
 	@Test
-	public void testSynonimsExists2() 
+	public void testSynonimsExistsForPluralNoun() 
 	{
-		assertNotNull(dict.getSynonims("prova"));
+		assertNotNull(dict.getSynonims("prove"));
 	}
 
 	@Test
