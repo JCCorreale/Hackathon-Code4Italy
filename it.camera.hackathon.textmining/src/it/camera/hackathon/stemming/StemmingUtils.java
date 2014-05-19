@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.stemming;
+package it.camera.hackathon.stemming;
 
 public class StemmingUtils 
 {
@@ -12,6 +12,6 @@ public class StemmingUtils
 	
 	public static boolean SameRoot(String s1, String s2)
 	{
-		return Stem(s1).equals(Stem(s2));
+		return Stem(s1).equals(Stem(s2)) || Stem(s1).equals(s2) || s1.equals(Stem(s2));
 	}
 }

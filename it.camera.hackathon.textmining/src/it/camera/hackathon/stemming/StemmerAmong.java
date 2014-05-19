@@ -1,8 +1,8 @@
-package it.camera.hackathon.textmining.stemming;
+package it.camera.hackathon.stemming;
 
 import java.lang.reflect.Method;
 
-public class StemmerAmong
+class StemmerAmong
 {
     final int s_size; /* search string */
     final char[] s; /* search string */

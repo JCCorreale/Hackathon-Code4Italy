@@ -1,7 +1,7 @@
 package it.camera.hackathon;
 
+import it.camera.hackathon.stemming.StemmingUtils;
 import it.camera.hackathon.textmining.scraping.SynonimScraper;
-import it.camera.hackathon.textmining.stemming.StemmingUtils;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,7 +1,7 @@
-package it.camera.hackathon.textmining.stemming;
+package it.camera.hackathon.stemming;
 import java.lang.reflect.InvocationTargetException;
 
-public class Stemmer 
+class Stemmer 
 {
     protected Stemmer()
     {

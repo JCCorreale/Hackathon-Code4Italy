@@ -1,6 +1,6 @@
 package it.camera.hackathon.dictionary;
 
-import it.camera.hackathon.textmining.stemming.StemmingUtils;
+import it.camera.hackathon.stemming.StemmingUtils;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -8,16 +8,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Dictionary;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
 public class SynonimsDictionary 
 {
 	private final static String definitionFile = "th_it/th_it_IT.dat";
-	private Map<String, List<String>> dictionary = new HashMap<String, List<String>>();
+	private static Map<String, List<String>> dictionary = new HashMap<String, List<String>>();
 	
 	public SynonimsDictionary()
 	{
@@ -91,6 +89,11 @@ public class SynonimsDictionary
 		
 		// se non trova risultati restituisce lista vuota
 		return new ArrayList<String>();
+	}
+	
+	public boolean areSynonims(String s1, String s2)
+	{
+		return getSynonims(s1).contains(s2) && getSynonims(s2).contains(s1);
 	}
 	
 	public static void main(String[] args)

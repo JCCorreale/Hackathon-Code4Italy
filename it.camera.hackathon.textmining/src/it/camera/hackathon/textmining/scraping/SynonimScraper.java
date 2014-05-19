@@ -1,6 +1,6 @@
 package it.camera.hackathon.textmining.scraping;
 
-import it.camera.hackathon.textmining.stemming.StemmingUtils;
+import it.camera.hackathon.stemming.StemmingUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package it.camera.hackathon.textmining.stemming.test;
+package it.camera.hackathon.stemming.test;
 
 import static org.junit.Assert.*;
-import it.camera.hackathon.textmining.stemming.StemmingUtils;
+import it.camera.hackathon.stemming.StemmingUtils;
 
 import org.junit.Test;
 

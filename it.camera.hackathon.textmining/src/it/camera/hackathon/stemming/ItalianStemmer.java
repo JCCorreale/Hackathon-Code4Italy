@@ -1,6 +1,6 @@
-package it.camera.hackathon.textmining.stemming;
+package it.camera.hackathon.stemming;
 
-public class ItalianStemmer extends Stemmer
+class ItalianStemmer extends Stemmer
 {
 	private final static ItalianStemmer methodObject = new ItalianStemmer ();
 
