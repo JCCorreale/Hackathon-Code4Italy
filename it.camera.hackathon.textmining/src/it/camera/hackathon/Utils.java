@@ -1,7 +1,5 @@
 package it.camera.hackathon;
 
-import it.camera.hackathon.textmining.clustering.ITerm;
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -68,14 +66,14 @@ public final class Utils {
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Map sortMapAscending(Map unsortMap) 
+	public static Map sortMap(Map unsortedMap, final boolean ascending) 
 	{	 
-		List list = new LinkedList(unsortMap.entrySet());
+		List list = new LinkedList(unsortedMap.entrySet());
 
 		Collections.sort(list, new Comparator() {
 			public int compare(Object o1, Object o2) {
 				return ((Comparable) ((Map.Entry) (o1)).getValue())
-                                       .compareTo(((Map.Entry) (o2)).getValue());
+                                       .compareTo(((Map.Entry) (o2)).getValue()) * (ascending? 1 : -1);
 			}
 		});
  
@@ -89,7 +87,7 @@ public final class Utils {
 		return sortedMap;
 	}
 	
-	@SuppressWarnings({ "rawtypes", "unchecked" })
+	/*@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Map sortMapDescending(Map unsortMap) 
 	{	 
 		List list = new LinkedList(unsortMap.entrySet());
@@ -112,6 +110,20 @@ public final class Utils {
 		}
 		return sortedMap;
 	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static List sortList(List unsortedList, final boolean ascending) 
+	{
+		Collections.sort(unsortedList, new Comparator() 
+		{
+			public int compare(Object o1, Object o2) {
+				return ((Comparable) ((Entry) (o1)).getValue())
+                                       .compareTo(((Entry) (o2)).getValue()) * (ascending? 1 : -1);
+			}
+		});
+		return unsortedList;
+	}
+	*/
 	
 	public static class EntryValueComparator implements Comparator<Entry<?, ? extends Comparable>>
 	{
