@@ -1,7 +1,5 @@
 package it.camera.hackathon;
 
-import it.camera.hackathon.textmining.clustering.ITerm;
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -88,8 +86,6 @@ public final class Utils {
 			sortedMap.put(entry.getKey(), entry.getValue());
 		}
 		return sortedMap;
-	}
-		}
 	}
 	
 	public static class SymmetricMatrix
