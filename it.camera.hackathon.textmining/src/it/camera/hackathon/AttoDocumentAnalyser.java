@@ -50,23 +50,6 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		this.minTfIdf = minTfIdf;
 		this.maxTerms = maxTerms;
 	}
-	
-	private List<ITerm> getTFIDFSortedTerms(Map<ITerm, Float> tfIdfs) {
-		List<Entry<ITerm, Float>> termsTFIDF = new ArrayList<Entry<ITerm, Float>>();
-		termsTFIDF.addAll(tfIdfs.entrySet());
-		Collections.sort(termsTFIDF, new Utils.EntryValueComparator(false));
-
-		List<ITerm> terms = new ArrayList<ITerm>();
-		for (Entry<ITerm, Float> entry : termsTFIDF)
-		{
-			if (this.maxTerms >= 0 && terms.size() == this.maxTerms)
-				break;
-			
-			if (entry.getValue() > this.minTfIdf)
-				terms.add(entry.getKey());
-		}
-		return terms;
-	}
 
 	@Override
 	public Map<Atto, List<ITerm>> getData(Iterable<Entry<Atto, IDocument>> attoDoc) throws IllegalArgumentException 
@@ -78,8 +61,11 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		{
 			IDocument doc = ((AttoConDocumento)atto).getDocument();
 			// the TF-IDF for each term of the data set, calculated for the document doc
-			Map<ITerm, Float> tfIdfs = docs.getTFIDFByTerm(doc);
-			List<ITerm> sortedTerms = getTFIDFSortedTerms(tfIdfs);
+			Map<ITerm, Float> tfIdfs = Utils.sortMap(docs.getTFIDFByTerm(doc), false);
+			
+			List<ITerm> sortedTerms = new ArrayList<ITerm>();
+			sortedTerms.addAll(tfIdfs.keySet());
+
 			for (ITerm term : sortedTerms)
 			{
 				if (tfIdfs.get(term) > this.minTfIdf)
