@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.w3c.dom.stylesheets.DocumentStyle;
-
 import it.camera.hackathon.datasource.IDataSource;
 import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.IWordCountResult;

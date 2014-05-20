@@ -6,9 +6,7 @@ import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.opendata.model.Atto;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -51,6 +49,7 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		this.maxTerms = maxTerms;
 	}
 
+	@SuppressWarnings({ "unchecked" })
 	@Override
 	public Map<Atto, List<ITerm>> getData(Iterable<Entry<Atto, IDocument>> attoDoc) throws IllegalArgumentException 
 	{

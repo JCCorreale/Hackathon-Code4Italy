@@ -12,18 +12,43 @@ public class DictionaryTest
 	@Test
 	public void testSynonimsExists() 
 	{
-		assertNotNull(dict.getSynonims("prova"));
+		assertTrue(dict.getSynonims("prova").size() > 0);
 	}
 	
 	@Test
 	public void testSynonimsExistsForPluralNoun() 
 	{
-		assertNotNull(dict.getSynonims("prove"));
+		assertTrue(dict.getSynonims("prove").size() > 0);
+	}
+	
+	@Test
+	public void testSynonimsExistsForConiugatedVerb() 
+	{
+		assertTrue(dict.getSynonims("provammo").size() > 0);
+		assertTrue(dict.getSynonims("provarono").size() > 0);
+	}
+	
+	@Test
+	public void testSynonimsExistsForTruncatedTerms() 
+	{
+		assertTrue(dict.getSynonims("prov").size() > 0);
 	}
 
 	@Test
 	public void testSynonimsNoExists() 
 	{
-		assertNull(dict.getSynonims("asdgkdsa"));
+		assertTrue(dict.getSynonims("asdgkdsa").size() == 0);
+	}
+	
+	@Test
+	public void testAreSynonims()
+	{
+		assertTrue(dict.areSynonims("vacca", "mucca"));
+	}
+	
+	@Test
+	public void testArentSynonims()
+	{
+		assertFalse(dict.areSynonims("mucca", "toro"));
 	}
 }

@@ -95,13 +95,5 @@ public class SynonimsDictionary
 	{
 		return getSynonims(s1).contains(s2) && getSynonims(s2).contains(s1);
 	}
-	
-	public static void main(String[] args)
-	{
-		SynonimsDictionary d = new SynonimsDictionary();
-		for(String s : d.getSynonims("provati"))
-		{
-			System.out.println(s);
-		}
-	}
+
 }
