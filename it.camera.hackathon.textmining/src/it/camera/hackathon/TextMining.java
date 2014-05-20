@@ -123,8 +123,8 @@ public class TextMining {
 			}
 		};
 		
-		//return new TermsDisambiguator();
-		return dummyDisambiguator;
+		return new TermsDisambiguator();
+		//return dummyDisambiguator;
 	}
 	
 	private static String[] getStopWords()
