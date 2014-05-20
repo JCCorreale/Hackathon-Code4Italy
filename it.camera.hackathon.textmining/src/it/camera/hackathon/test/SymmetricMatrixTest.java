@@ -1,8 +1,8 @@
 package it.camera.hackathon.test;
 
 import static org.junit.Assert.*;
-import it.camera.hackathon.Utils.SymmetricMatrix;
-import it.camera.hackathon.Utils.SymmetricMatrix.IMatrixAction;
+import it.camera.hackathon.SymmetricMatrix;
+import it.camera.hackathon.SymmetricMatrix.IMatrixAction;
 
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ public class SymmetricMatrixTest {
 	public void testIterate()
 	{
 		final int rows = 4;
-		final SymmetricMatrix m = new SymmetricMatrix(rows);
+		final it.camera.hackathon.SymmetricMatrix m = new SymmetricMatrix(rows);
 
 		m.iterate(new IMatrixAction() {
 		
