@@ -1,13 +1,15 @@
 package it.camera.hackathon.textmining.clustering;
 
+import it.camera.hackathon.Utils.SymmetricMatrix;
+
 /**
- * Clusters the documents using the cosine distance and an agglomerative single link hierarchical clustering algorithm.
+ * Clusters the documents using an agglomerative hierarchical clustering algorithm.
  * @author JCC
  * 
  */
-public class CosineDocumentClusterer implements IDocumentClusterer {
+public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
 
-	public CosineDocumentClusterer()
+	public AgglomerativeDocumentClusterer()
 	{
 		
 	}
@@ -28,11 +30,14 @@ public class CosineDocumentClusterer implements IDocumentClusterer {
 	
 	private static class ProxymityMatrix
 	{
+		// TODO: Possono teoricamente esistere documenti perfettamente "allineati" (distanza coseno = 0),
+		// per cui l'implementazione fatta (che fissa il valore a 0) non è utilizzabile. Creare implementazione
+		// generale (diagonale principale qualsiasi) e ottimizzata (diagonale principale a default, non memorizzata).
 		private SymmetricMatrix matrix;
 		
 		public ProxymityMatrix()
 		{
-			this.matrix = null;
+			this.matrix = new SymmetricMatrix(0);
 		}
 		
 		public void addCluster(ICluster cluster)
@@ -50,28 +55,6 @@ public class CosineDocumentClusterer implements IDocumentClusterer {
 		{
 			// TODO
 			return null;
-		}
-		
-		private class SymmetricMatrix
-		{
-			private float[][] matrix;
-
-			// TODO Inizializzazione ed espansione/riduzione dinamica. NB: righe e colonne vanno di pari passo.
-			
-			// TODO Iteration?
-			
-			public float get(int r, int c)
-			{
-				if (r == c) return 0;
-				else if (c > r)
-				{
-					int tmp = c;
-					c = r;
-					r = tmp;
-				}
-				
-				return this.matrix[r][c];
-			}
 		}
 	}
 	
