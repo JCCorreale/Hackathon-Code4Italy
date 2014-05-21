@@ -1,5 +1,7 @@
 package it.camera.hackathon.textmining.clustering;
 
+import java.util.LinkedList;
+
 /**
  * A dendogram for an agglomerative algorithm.
  * @author JCC
@@ -7,7 +9,13 @@ package it.camera.hackathon.textmining.clustering;
  */
 public class Dendrogram
 {
-	public int height;
+	private int height;
+	private LinkedList<Node> topNodes;
+	
+	public Dendrogram()
+	{
+		this.topNodes = new LinkedList<Node>();
+	}
 	
 	/**
 	 * Adds the parent cluster linking it to the nodes corresponding to the left and right child nodes.
@@ -17,11 +25,47 @@ public class Dendrogram
 	 */
 	public void add(ICluster parent, ICluster left, ICluster right)
 	{
-		// TODO
+		if (parent == null)
+			throw new IllegalArgumentException("parent == null");
+		if (left == null ^ right == null)
+			throw new IllegalArgumentException("child nodes must be both defined or both undefined");
+		
+		if (left == null)
+		{
+			this.topNodes.add(new Node(parent));
+		}
+		else
+		{
+			Node leftNode = null, rightNode = null;
+			
+			for (Node n : this.topNodes)
+			{
+				if (n.cluster.equals(left))
+					leftNode = n;
+				if (n.cluster.equals(right))
+					rightNode = n;
+			}
+			
+			if (leftNode == null || rightNode == null)
+				throw new IllegalStateException("Given clusters not in this dendrogram");
+
+			this.topNodes.remove(leftNode);
+			this.topNodes.remove(rightNode);
+			
+			Node parentNode = new Node(parent, leftNode, rightNode);
+			this.topNodes.add(parentNode);
+		}
 	}
 	
+	/**
+	 * Used to add the leaves of the dendrogram, can be used only when the height is at most equal to 1.
+	 * @param cluster
+	 */
 	public void add(ICluster cluster)
 	{
+		if (height > 1)
+			throw new IllegalStateException("height > 1. Can't add new leaves.");
+		
 		add(cluster, null, null);
 	}
 	
@@ -36,10 +80,30 @@ public class Dendrogram
 		return this.getClustering(this.height);
 	}
 	
-	public static class Node
+	public int getHeight()
+	{
+		return this.height;
+	}
+	
+	private static class Node
 	{
 		public ICluster cluster;
 		public Node left;
 		public Node right;
+		
+		public Node(ICluster cluster, Node left, Node right) {
+			this.cluster = cluster;
+			this.left = left;
+			this.right = right;
+		}
+
+		public Node(ICluster cluster) {
+			this(cluster, null, null);
+		}
+		
+		public String toString()
+		{
+			return this.cluster.toString() + (this.left == null ? "" : ("(" + this.left.toString() + ", " + this.right.toString() + ")"));
+		}
 	}
 }

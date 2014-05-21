@@ -26,12 +26,12 @@ public class ProxymityMatrixTest {
 	{
 		m = new ProximityMatrix();
 		// based on an example of clustering of italian cities
-		ba = new DummyCluster();
-		fi = new DummyCluster();
-		mi = new DummyCluster();
-		na = new DummyCluster();
-		rm = new DummyCluster();
-		to = new DummyCluster();
+		ba = new DummyCluster("BA");
+		fi = new DummyCluster("FI");
+		mi = new DummyCluster("MI");
+		na = new DummyCluster("NA");
+		rm = new DummyCluster("RM");
+		to = new DummyCluster("TO");
 		
 		m.addClusters(ba, fi, mi, na, rm, to);
 		
@@ -119,20 +119,5 @@ public class ProxymityMatrixTest {
 		assertTrue(nearest[0].equals(to) || nearest[1].equals(to));
 		
 		System.out.println("\n***********************\n\nNearest cities distance:\n\n" + m.getClustersDistance(nearest[0], nearest[1]));
-	}
-	
-	private class DummyCluster implements ICluster
-	{
-		@Override
-		public Iterator<IDocument> iterator() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
-		@Override
-		public String toString()
-		{
-			return "";
-		}
 	}
 }
