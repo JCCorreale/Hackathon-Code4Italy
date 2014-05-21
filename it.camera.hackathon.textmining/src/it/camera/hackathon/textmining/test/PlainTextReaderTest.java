@@ -2,7 +2,6 @@ package it.camera.hackathon.textmining.test;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map.Entry;
 
@@ -59,7 +58,7 @@ public class PlainTextReaderTest
 	@Test
 	public void testWordCounter() throws IOException 
 	{
-		String text = StringUtils.readTextFile(filename, Charset.defaultCharset());
+		String text = StringUtils.readTextFile(filename);
 		
 		IWordCountResult result = wc.parse(text);
 		
@@ -72,7 +71,7 @@ public class PlainTextReaderTest
 	@Test
 	public void testTopWordsCount() throws IOException 
 	{
-		String text = StringUtils.readTextFile(filename, Charset.defaultCharset());
+		String text = StringUtils.readTextFile(filename);
 		
 		IWordCountResult result = wc.parse(text);
 		
