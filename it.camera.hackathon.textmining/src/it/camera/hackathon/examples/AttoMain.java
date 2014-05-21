@@ -1,6 +1,5 @@
 package it.camera.hackathon.examples;
 
-import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,11 +11,12 @@ import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.opendata.model.Atto;
 
-public class AttoMain {
-	
+public class AttoMain 
+{	
 	public static final String IRI = "http://dati.camera.it/ocd/attocamera.rdf/ac16_44";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Atto atto = new Atto(IRI);
 		AttoPreProcessor attoProcessor = new AttoPreProcessor();
 		

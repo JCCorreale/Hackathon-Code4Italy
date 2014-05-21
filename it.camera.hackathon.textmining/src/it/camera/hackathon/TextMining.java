@@ -114,17 +114,8 @@ public class TextMining {
 	}
 	
 	private static ITermsDisambiguator getTermsDisambiguator()
-	{
-		ITermsDisambiguator dummyDisambiguator = new ITermsDisambiguator() {
-			@Override
-			public Map<String, Integer> getDisambiguatedTerms(
-					List<Entry<String, Integer>> terms) {
-				return MapUtils.entryListToMap(terms);
-			}
-		};
-		
+	{	
 		return new TermsDisambiguator();
-		//return dummyDisambiguator;
 	}
 	
 	private static String[] getStopWords()

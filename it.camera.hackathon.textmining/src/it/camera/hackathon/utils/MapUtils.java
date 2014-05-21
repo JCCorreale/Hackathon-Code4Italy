@@ -78,6 +78,7 @@ public final class MapUtils
 	 * @param value
 	 * @return
 	 */
+	@SuppressWarnings("rawtypes")
 	public static Object getKeyByValue(Map<?,?> m, Object value)
 	{
 		for (Entry e : m.entrySet())
