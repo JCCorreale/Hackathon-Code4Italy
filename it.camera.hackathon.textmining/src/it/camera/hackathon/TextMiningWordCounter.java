@@ -10,8 +10,8 @@ import it.camera.hackathon.textmining.SingleDelimiterCharFilter;
 import it.camera.hackathon.textmining.StopWordFilter;
 import it.camera.hackathon.textmining.WordCounter;
 
-public class TextMiningWordCounter extends WordCounter {
-	
+public class TextMiningWordCounter extends WordCounter 
+{	
 	// STATIC FIELDS
 	
 	private static IWordComparer defaultWordComparer = new CaseInsensitiveWordComparer();
@@ -23,12 +23,17 @@ public class TextMiningWordCounter extends WordCounter {
 		return new SingleDelimiterCharFilter(delimiters);
 	}
 	
+
 	private static IWordFilter getWordFilter(String[] stopWords, int minLength) {
-		return new WordFilterWithCounter(
-				new CompoundWordFilter(
+		return new WordFilterWithCounter
+			(
+				new CompoundWordFilter
+				(
 					new StopWordFilter(stopWords, defaultWordComparer),
 					new LengthWordFilter(minLength),
-					new AlphabeticStringFilter()));
+					new AlphabeticStringFilter()
+				)
+			);
 	}
 	
 	// INSTANCE FIELDS

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import it.camera.hackathon.Utils;
+import it.camera.hackathon.utils.MapUtils;
 
 /**
  * Builds a Document that is stored in-memory.
@@ -156,7 +156,7 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 				map.put(term, getWeightedFrequency(term));
 			}
 			
-			return Utils.sortMap(map, false);
+			return MapUtils.sortMap(map, false);
 		}
 		
 		@Override

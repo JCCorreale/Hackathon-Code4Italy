@@ -4,6 +4,7 @@ import it.camera.hackathon.textmining.clustering.DocumentCollection;
 import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.ITerm;
+import it.camera.hackathon.utils.MapUtils;
 import it.camera.opendata.model.Atto;
 
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		{
 			IDocument doc = ((AttoConDocumento)atto).getDocument();
 			// the TF-IDF for each term of the data set, calculated for the document doc
-			Map<ITerm, Float> tfIdfs = Utils.sortMap(docs.getTFIDFByTerm(doc), false);
+			Map<ITerm, Float> tfIdfs = MapUtils.sortMap(docs.getTFIDFByTerm(doc), false);
 			
 			List<ITerm> sortedTerms = new ArrayList<ITerm>();
 			sortedTerms.addAll(tfIdfs.keySet());

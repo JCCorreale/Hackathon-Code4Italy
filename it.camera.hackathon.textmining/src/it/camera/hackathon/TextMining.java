@@ -16,6 +16,7 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
+import it.camera.hackathon.utils.MapUtils;
 import it.camera.opendata.model.Atto;
 
 public class TextMining {
@@ -28,6 +29,7 @@ public class TextMining {
 	private static float minTfIdf = 0.0f;
 	private static int maxTerms = 5; // -1 = no limit
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args)
 	{
 		String[] filenames = new HTMLDocumentFactory().getFilePaths();
@@ -65,7 +67,7 @@ public class TextMining {
 			
 			ITermsDisambiguator disambiguator = getTermsDisambiguator();
 			System.out.println("Performing term disambiguation");
-			topWords = Utils.mapToEntryList(disambiguator.getDisambiguatedTerms(topWords));
+			topWords = MapUtils.mapToEntryList(disambiguator.getDisambiguatedTerms(topWords));
 			
 			System.out.println("Creating document model");
 			// creates an IDocument instance from the retrieved data
@@ -117,7 +119,7 @@ public class TextMining {
 			@Override
 			public Map<String, Integer> getDisambiguatedTerms(
 					List<Entry<String, Integer>> terms) {
-				return Utils.entryListToMap(terms);
+				return MapUtils.entryListToMap(terms);
 			}
 		};
 		

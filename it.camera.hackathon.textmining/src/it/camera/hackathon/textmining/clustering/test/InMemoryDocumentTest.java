@@ -5,14 +5,11 @@ import it.camera.hackathon.textmining.clustering.*;
 
 import org.junit.Test;
 
-public class InMemoryDocumentTest {
-	
-	
-
+public class InMemoryDocumentTest 
+{
 	@Test
 	public void test() 
 	{
 		// TODO
 	}
-
 }

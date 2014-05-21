@@ -15,6 +15,7 @@ import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.Term;
+import it.camera.hackathon.utils.MapUtils;
 
 public class DisambiguatedTextMining 
 {
@@ -55,16 +56,16 @@ public class DisambiguatedTextMining
 //		}
 		
 		ITermsDisambiguator disambiguator = getTermsDisambiguator();
-		topWords = Utils.mapToEntryList(disambiguator.getDisambiguatedTerms(topWords));
+		topWords = MapUtils.mapToEntryList(disambiguator.getDisambiguatedTerms(topWords));
 		
 		// creates an IDocument instance from the retrieved data
 		IDocument document = buildDocument(topWords, counter.getAcceptedWordCount());
 		
 		// prints some stat about the document
 		System.out.println("\n\nFrequency by term:\n");
-		Utils.printMap(document.getFrequencyByTerm());
+		MapUtils.printMap(document.getFrequencyByTerm());
 		System.out.println("\n\nWeighted frequency by term:\n");
-		Utils.printMap(document.getWeightedFrequencyByTerm());
+		MapUtils.printMap(document.getWeightedFrequencyByTerm());
 		
 		getDocumentsAnalyser();
 		

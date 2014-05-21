@@ -4,27 +4,23 @@ import it.camera.hackathon.datasource.IDataSource;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.Reader;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
-public class TextFileDataSource implements IDataSource<String> {
+public class TextFileDataSource implements IDataSource<String> 
+{
 	
 	private File file;
 	
-	public TextFileDataSource(File file) {
+	public TextFileDataSource(File file) 
+	{
 		this.file = file;
 	}
 	
-	public TextFileDataSource(String filename) {
+	public TextFileDataSource(String filename) 
+	{
 		this(new File(filename));
 	}
 	
@@ -32,8 +28,8 @@ public class TextFileDataSource implements IDataSource<String> {
 	 * Returns null if any error occurs.
 	 */
 	@Override
-	public String getData() {
-		
+	public String getData() 
+	{
 		if (!file.exists())
 			throw new IllegalStateException("the given file does not exist");
 		

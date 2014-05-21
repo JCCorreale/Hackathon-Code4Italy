@@ -6,45 +6,49 @@ import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map.Entry;
 
-import it.camera.hackathon.Utils;
 import it.camera.hackathon.textmining.ICharFilter;
 import it.camera.hackathon.textmining.IWordComparer;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.IWordFilter;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.WordCounter;
+import it.camera.hackathon.utils.StringUtils;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class PlainTextReaderTest {
-
+public class PlainTextReaderTest 
+{
 	String filename = "resources/text" + File.separator + "PlainText";
 	
 	public static WordCounter wc = null;
 	
 	@BeforeClass
-	public static void setup() {
-		ICharFilter cf = new ICharFilter() {
-			
+	public static void setup() 
+	{
+		ICharFilter cf = new ICharFilter() 
+		{	
 			@Override
-			public boolean accept(Character value) {
+			public boolean accept(Character value) 
+			{
 				return Character.isAlphabetic(value);
 			}
 		};
 		
-		IWordFilter wf = new IWordFilter() {
-			
+		IWordFilter wf = new IWordFilter() 
+		{	
 			@Override
-			public boolean accept(String value) {
+			public boolean accept(String value) 
+			{
 				return true;
 			}
 		};
 		
-		IWordComparer comparator = new IWordComparer() {
-			
+		IWordComparer comparator = new IWordComparer() 
+		{
 			@Override
-			public boolean areEqualWords(String w1, String w2) {
+			public boolean areEqualWords(String w1, String w2) 
+			{
 				return w1.toLowerCase().equals(w2.toLowerCase());
 			}
 		};
@@ -55,7 +59,7 @@ public class PlainTextReaderTest {
 	@Test
 	public void testWordCounter() throws IOException 
 	{
-		String text = Utils.readTextFile(filename, Charset.defaultCharset());
+		String text = StringUtils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);
 		
@@ -68,7 +72,7 @@ public class PlainTextReaderTest {
 	@Test
 	public void testTopWordsCount() throws IOException 
 	{
-		String text = Utils.readTextFile(filename, Charset.defaultCharset());
+		String text = StringUtils.readTextFile(filename, Charset.defaultCharset());
 		
 		IWordCountResult result = wc.parse(text);
 		

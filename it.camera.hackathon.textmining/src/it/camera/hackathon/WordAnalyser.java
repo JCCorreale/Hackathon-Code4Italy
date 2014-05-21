@@ -3,8 +3,8 @@ package it.camera.hackathon;
 import java.util.List;
 import java.util.Map.Entry;
 
-public class WordAnalyser implements IWordAnalyser {
-
+public class WordAnalyser implements IWordAnalyser 
+{
 	@Override
 	public List<Entry<String, Integer>> getData(String args)
 			throws IllegalArgumentException {

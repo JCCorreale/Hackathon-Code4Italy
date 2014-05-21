@@ -1,4 +1,4 @@
-package it.camera.hackathon;
+package it.camera.hackathon.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package it.camera.hackathon.textmining.clustering;
 
-import it.camera.hackathon.SymmetricMatrix;
+import it.camera.hackathon.utils.SymmetricMatrix;
 
 /**
  * Clusters the documents using an agglomerative hierarchical clustering algorithm.
