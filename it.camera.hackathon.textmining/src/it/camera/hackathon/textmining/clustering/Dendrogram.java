@@ -5,7 +5,7 @@ package it.camera.hackathon.textmining.clustering;
  * @author JCC
  *
  */
-public class Dendogram
+public class Dendrogram
 {
 	public int height;
 	

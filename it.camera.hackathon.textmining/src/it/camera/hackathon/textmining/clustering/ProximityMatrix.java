@@ -76,6 +76,11 @@ public class ProximityMatrix
 		return clusters;
 	}
 	
+	public Iterable<ICluster> getClusters()
+	{
+		return this.clusterIndexes.keySet();
+	}
+	
 	@Override
 	public String toString()
 	{
