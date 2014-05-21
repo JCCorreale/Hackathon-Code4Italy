@@ -10,6 +10,17 @@ public class SymmetricMatrix
 
 	public SymmetricMatrix(int rows)
 	{
+		if (rows < 1) this.matrixRows = null;
+		else this.init(rows);
+	}
+	
+	public SymmetricMatrix()
+	{
+		this(0);
+	}
+	
+	private void init(int rows)
+	{
 		this.matrixRows = new float[rows - 1][];
 		for (int r = 0; r < this.matrixRows.length; r++)
 		{
@@ -17,14 +28,27 @@ public class SymmetricMatrix
 		}
 	}
 	
+	public int getRowsCount()
+	{
+		return this.matrixRows == null? 0 : this.matrixRows.length + 1;
+	}
+	
 	/**
-	 * 
+	 * The row is added at the "bottom" of the matrix.
 	 * @param data An array of n elements, n being the current number of rows in the matrix.
 	 */
 	public void add(float... data)
 	{
-		if (data.length != this.matrixRows.length + 1);
+		if (data.length != this.getRowsCount())
+			throw new IllegalArgumentException("The number of elements in the array must be equal to the current number of rows in the matrix.");
 		
+		if (this.matrixRows == null)
+		{
+			this.init(1);
+			return; // no value to copy in this case
+		}
+		
+		// copies the given values to the new row
 		this.matrixRows = Arrays.copyOf(this.matrixRows, this.matrixRows.length + 1);
 		this.matrixRows[this.matrixRows.length - 1] = new float[data.length];
 		for (int i = 0; i < data.length; i++) {
@@ -155,6 +179,9 @@ public class SymmetricMatrix
 	@Override
 	public String toString()
 	{
+		if (this.matrixRows == null)
+			return "[]";
+		
 		final StringBuilder sb = new StringBuilder();
 		final SymmetricMatrix m = this;
 		

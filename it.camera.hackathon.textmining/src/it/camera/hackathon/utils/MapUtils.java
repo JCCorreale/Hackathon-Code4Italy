@@ -71,4 +71,20 @@ public final class MapUtils
 		}
 		return sortedMap;
 	}
+	
+	/**
+	 * Returns the first occurence of a key related the given value, null if none is found.
+	 * @param m
+	 * @param value
+	 * @return
+	 */
+	public static Object getKeyByValue(Map<?,?> m, Object value)
+	{
+		for (Entry e : m.entrySet())
+		{
+			if (e.getValue().equals(value))
+				return e.getKey();
+		}
+		return null;
+	}
 }
