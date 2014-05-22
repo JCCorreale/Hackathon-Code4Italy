@@ -2,6 +2,7 @@ package it.camera.hackathon.textmining.clustering;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import it.camera.hackathon.utils.MapUtils;
 import it.camera.hackathon.utils.SymmetricMatrix;
@@ -44,6 +45,12 @@ public class ProximityMatrix
 		{
 			indexes[i] = this.clusterIndexes.get(clusters[i]);
 			this.clusterIndexes.remove(clusters[i]);
+			// decrements greater indexes
+			for (Entry<ICluster, Integer> entry : this.clusterIndexes.entrySet())
+			{
+				if (entry.getValue() > indexes[i])
+					this.clusterIndexes.put(entry.getKey(), entry.getValue() - 1);
+			}
 		}
 		this.matrix.remove(indexes);
 	}
@@ -79,6 +86,11 @@ public class ProximityMatrix
 	public Iterable<ICluster> getClusters()
 	{
 		return this.clusterIndexes.keySet();
+	}
+	
+	public int getClustersCount()
+	{
+		return this.clusterIndexes.size();
 	}
 	
 	@Override

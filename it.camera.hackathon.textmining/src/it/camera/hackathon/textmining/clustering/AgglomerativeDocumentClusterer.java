@@ -13,9 +13,10 @@ import java.util.Set;
  * @author JCC
  * 
  */
-public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
+public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer implements IDocumentClusterer {
 
-	private IProximityStrategy proximityStrategy; 
+	private IProximityStrategy proximityStrategy;
+	private IDocumentCollection documents;
 	
 	public AgglomerativeDocumentClusterer(IProximityStrategy proxymityStrategy)
 	{
@@ -56,7 +57,8 @@ public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
 		return d;
 	}
 	
-	private ICluster getMergedCluster(ICluster c1, ICluster c2)
+	@Override
+	protected ICluster getMergedCluster(ICluster c1, ICluster c2)
 	{
 		List<IDocument> documents = new ArrayList<IDocument>();
 		for (IDocument d : c1)
@@ -105,23 +107,8 @@ public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
 	
 	public Dendrogram getClusteringDendrogram(IDocumentCollection documents)
 	{
-		// 1. inizializza la matrice di prossimità con un cluster per ogni documento
-		ProximityMatrix m = this.initMatrix(documents);
-		Dendrogram dendrogram = this.initDendrogram(documents);
-		
-		for (int i = 0; i < documents.getDocumentsCount() - 1; i++)
-		{
-			// 2. cerca la coppia di cluster più vicini (single link - distanza punti più vicini)
-			ICluster[] nearestClusters = m.getNearestClusters();
-			// 3. merge dei cluster trovati
-			ICluster mergedCluster = this.mergeCluster(m, nearestClusters[0], nearestClusters[1]);
-			
-			dendrogram.add(mergedCluster, nearestClusters[0], nearestClusters[1]);
-			
-			// 4. procede dal punto 2 per (n-1) iterazioni (altezza dendogramma pari a n = numero di documenti)
-		}
-		
-		return dendrogram;
+		this.documents = documents;
+		return this.getClusteringDendrogram();
 	}
 	
 	@Override
@@ -131,5 +118,15 @@ public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
 	
 	public IClustering getClustering(IDocumentCollection documents, int dendrogramLevel) {
 		return this.getClustering(documents, dendrogramLevel);
+	}
+
+	@Override
+	protected ProximityMatrix initMatrix() {
+		return this.initMatrix(this.documents);
+	}
+
+	@Override
+	protected Dendrogram initDendrogram() {
+		return this.initDendrogram(this.documents);
 	}
 }

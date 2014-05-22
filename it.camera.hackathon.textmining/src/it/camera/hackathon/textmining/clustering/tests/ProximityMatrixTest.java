@@ -54,7 +54,7 @@ public class ProximityMatrixTest
 		m.setClustersDistance(na, rm, 219);
 		m.setClustersDistance(na, to, 869);
 		// RM
-		m.setClustersDistance(rm, to, 869);
+		m.setClustersDistance(rm, to, 669);
 		
 		//System.out.println("\n***********************\n\nFilled matrix:\n\n" + m);
 	}
@@ -80,7 +80,7 @@ public class ProximityMatrixTest
 		assertEquals(219, m.getClustersDistance(na, rm), 0.01);
 		assertEquals(869, m.getClustersDistance(na, to), 0.01);
 		// RM
-		assertEquals(869, m.getClustersDistance(rm, to), 0.01);
+		assertEquals(669, m.getClustersDistance(rm, to), 0.01);
 	}
 	
 	@Test
@@ -104,7 +104,7 @@ public class ProximityMatrixTest
 		assertEquals(219, m.getClustersDistance(rm, na), 0.01);
 		assertEquals(869, m.getClustersDistance(to, na), 0.01);
 		// RM
-		assertEquals(869, m.getClustersDistance(to, rm), 0.01);
+		assertEquals(669, m.getClustersDistance(to, rm), 0.01);
 	}
 	
 	@Test
@@ -117,5 +117,11 @@ public class ProximityMatrixTest
 		assertTrue(nearest[0].equals(to) || nearest[1].equals(to));
 		
 		System.out.println("\n***********************\n\nNearest cities distance:\n\n" + m.getClustersDistance(nearest[0], nearest[1]));
+	}
+	
+	@Test
+	public void getClustersCountTest()
+	{
+		assertEquals(6, m.getClustersCount());
 	}
 }

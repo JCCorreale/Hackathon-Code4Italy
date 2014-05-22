@@ -58,7 +58,8 @@ public class SymmetricMatrix
 
 	private boolean contains(int[] array, int r)
 	{
-		for (int v : array) if (v == r) return true; 
+		// in case the row/column with index 0 is removed, the corresponding value (-1) should be detected
+		for (int v : array) if (v == r || v == -1) return true; 
 		return false;
 	}
 	
