@@ -25,7 +25,7 @@ public class DendrogramTest {
 		
 		assertEquals(3, d.getHeight());
 		
-		System.out.println("\n\n****************************Dendrogram:\n\n" + d);
+		System.out.println("\n\n****************************\nDendrogram:\n\n" + d);
 	}
 
 }

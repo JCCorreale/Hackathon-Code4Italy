@@ -91,6 +91,14 @@ public class Dendrogram
 		return this.height;
 	}
 	
+	public String toString()
+	{
+		StringBuilder sb = new StringBuilder();
+		for (Node n : this.topNodes)
+			sb.append(n.toString() + "\n");
+		return sb.toString();
+	}
+	
 	private static class Node
 	{
 		public ICluster cluster;
