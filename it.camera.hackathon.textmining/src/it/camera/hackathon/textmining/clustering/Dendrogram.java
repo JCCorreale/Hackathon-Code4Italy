@@ -3,6 +3,8 @@ package it.camera.hackathon.textmining.clustering;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * A dendogram for an agglomerative algorithm.
@@ -75,41 +77,61 @@ public class Dendrogram
 			throw new IllegalStateException("height > 1. Can't add new leaves.");
 		
 		add(cluster, null, null);
-	}	
-
-	private IClustering buildClustering()
+	}
+	
+	private static IClustering buildClustering(List<Node> topNodes)
 	{
 		List<ICluster> clusters = new ArrayList<ICluster>();
-		
-		for (Node n : this.topNodes)
+		for (Node n : topNodes)
 		{
-			// TODO For each node, creates a cluster made up from all sub-cluster's documents and adds it to the list.
+			clusters.add(n.cluster);
 		}
-		
 		return new Clustering(clusters.toArray(new ICluster[0]));
 	}
 	
-	public IClustering getClustering(int level)
+	private static boolean checkTopNodes(int level, List<Node> currentTopNodes, List<Node> higherNodes)
 	{
+		for (Node n : currentTopNodes)
+		{
+			if (n.depth > level)
+				higherNodes.add(n);
+		}
+		return higherNodes.size() > 0;
+	}
+	
+	private static IClustering getClustering(int level, int height, List<Node> topNodes)
+	{
+		LinkedList<Node> currentTopNodes = new LinkedList<Node>(topNodes);
 		LinkedList<Node> higherNodes = new LinkedList<Node>();
 		
-		do
+		// nodes with depth > level are appended to the list (the list is not cleared)
+		while(checkTopNodes(level, currentTopNodes, higherNodes))
 		{
-			// takes the higher nodes
-			for (Node n : this.topNodes)
-			{
-				if (n.depth > height)
-					higherNodes.add(n);
-			}
-			// removes the higher nodes from the topNodes list
+			// removes the higher nodes from the topNodes list and inserts its child nodes
 			for (Node n : higherNodes)
 			{
-				this.topNodes.remove(n);
+				currentTopNodes.remove(n);
+				currentTopNodes.add(n.left);
+				currentTopNodes.add(n.right);
 			}
+			
+			higherNodes.clear();
 		}
-		while (!higherNodes.isEmpty());
 		
-		return this.buildClustering();
+		return buildClustering(currentTopNodes);
+	}
+	
+	/**
+	 * Must be 0 < level <= height.
+	 * @param level
+	 * @return
+	 */
+	public IClustering getClustering(int level)
+	{
+		if (level < 1 || level > height)
+			throw new IllegalArgumentException("Must be 0 < level <= height.");
+		
+		return getClustering(level, height, this.topNodes);
 	}
 	
 	public IClustering getClustering()
