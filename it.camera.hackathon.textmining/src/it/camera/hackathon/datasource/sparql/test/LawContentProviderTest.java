@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import java.util.Map.Entry;
 import java.util.Set;
-
 import it.camera.hackathon.Atto;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.sparql.LawContentProvider;
@@ -18,7 +17,7 @@ import org.junit.Test;
 
 public class LawContentProviderTest {
 	
-	private static final int LIMIT = 5;
+	private static final int LIMIT = 15;
 	
 	public static VirtuosoRawResultQueryEngine engine;
 	public static LawContentProvider lcp;
@@ -36,6 +35,9 @@ public class LawContentProviderTest {
 
 	@Test
 	public void test() {
+		System.out.println("STARTING TEST");
+		
+		long startTime = System.nanoTime();
 		Set<Entry<Atto, String>> res = lcp.getData(new LimitedQueryConfiguration(LIMIT));
 		
 		int i = 0;
@@ -44,7 +46,11 @@ public class LawContentProviderTest {
 			i++;
 		}
 		
+		System.out.println("Received " + i + " documents");
 		assertEquals(LIMIT, i);
+		long endTime = System.nanoTime();
+		
+		System.out.println("Finisced after " + (endTime - startTime)/100000 + "msec");
 	}
 
 }
