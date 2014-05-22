@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.clustering.test;
+package it.camera.hackathon.textmining.clustering.tests;
 
 import it.camera.hackathon.textmining.clustering.ICluster;
 import it.camera.hackathon.textmining.clustering.IDocument;

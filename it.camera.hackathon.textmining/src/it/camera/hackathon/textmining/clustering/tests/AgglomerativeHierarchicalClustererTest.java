@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.clustering.test;
+package it.camera.hackathon.textmining.clustering.tests;
 
 import static org.junit.Assert.*;
 

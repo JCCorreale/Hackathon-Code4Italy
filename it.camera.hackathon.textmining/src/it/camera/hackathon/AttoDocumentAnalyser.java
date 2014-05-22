@@ -5,7 +5,6 @@ import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.utils.MapUtils;
-import it.camera.opendata.model.Atto;
 
 import java.util.ArrayList;
 import java.util.HashMap;

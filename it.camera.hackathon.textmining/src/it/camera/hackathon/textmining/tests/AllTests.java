@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.test;
+package it.camera.hackathon.textmining.tests;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

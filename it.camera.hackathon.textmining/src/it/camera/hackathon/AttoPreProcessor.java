@@ -15,7 +15,6 @@ import it.camera.hackathon.parsing.LineValueHtmlParser;
 import it.camera.hackathon.parsing.StringParser;
 import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.clustering.IDocument;
-import it.camera.opendata.model.Atto;
 
 public class AttoPreProcessor implements IDataProvider<Entry<Atto, IDocument>, Atto> {
 

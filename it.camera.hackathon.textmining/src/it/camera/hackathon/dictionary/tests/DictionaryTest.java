@@ -1,4 +1,4 @@
-package it.camera.hackathon.dictionary.test;
+package it.camera.hackathon.dictionary.tests;
 
 import static org.junit.Assert.*;
 import it.camera.hackathon.dictionary.SynonimsDictionary;

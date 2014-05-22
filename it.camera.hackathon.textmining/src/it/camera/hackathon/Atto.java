@@ -1,13 +1,16 @@
-package it.camera.opendata.model;
+package it.camera.hackathon;
 
-public class Atto {
+public class Atto 
+{
 	private String iri;
 	
-	public String getIRI() {
+	public String getIRI() 
+	{
 		return iri;
 	}
 	
-	public Atto(String iri) {
+	public Atto(String iri) 
+	{
 		if(iri == null)
 			throw new IllegalArgumentException();
 		

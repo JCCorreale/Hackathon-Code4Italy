@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.test;
+package it.camera.hackathon.textmining.tests;
 
 import it.camera.hackathon.datasource.sparql.VirtuosoLawSource;
 import it.camera.hackathon.datasource.sparql.VirtuosoSingleResultDataProvider;

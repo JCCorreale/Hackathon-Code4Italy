@@ -1,4 +1,4 @@
-package it.camera.hackathon.test;
+package it.camera.hackathon.tests;
 
 import static org.junit.Assert.*;
 import it.camera.hackathon.TermsDisambiguator;

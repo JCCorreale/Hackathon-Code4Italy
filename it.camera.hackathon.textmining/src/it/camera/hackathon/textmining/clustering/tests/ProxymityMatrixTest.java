@@ -1,17 +1,15 @@
-package it.camera.hackathon.textmining.clustering.test;
+package it.camera.hackathon.textmining.clustering.tests;
 
 import static org.junit.Assert.*;
 
-import java.util.Iterator;
-
 import it.camera.hackathon.textmining.clustering.ICluster;
-import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.ProximityMatrix;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class ProxymityMatrixTest {
+public class ProxymityMatrixTest 
+{
 	
 	ProximityMatrix m;
 	ICluster ba;

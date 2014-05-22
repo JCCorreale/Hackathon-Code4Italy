@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.clustering.test;
+package it.camera.hackathon.textmining.clustering.tests;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

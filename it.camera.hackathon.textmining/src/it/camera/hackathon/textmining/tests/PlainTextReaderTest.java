@@ -1,4 +1,4 @@
-package it.camera.hackathon.textmining.test;
+package it.camera.hackathon.textmining.tests;
 
 import java.io.File;
 import java.io.IOException;

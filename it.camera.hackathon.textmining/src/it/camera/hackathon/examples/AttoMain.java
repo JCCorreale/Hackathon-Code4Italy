@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import it.camera.hackathon.Atto;
 import it.camera.hackathon.AttoDocumentAnalyser;
 import it.camera.hackathon.AttoPreProcessor;
 import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.ITerm;
-import it.camera.opendata.model.Atto;
 
 public class AttoMain 
 {	

@@ -1,4 +1,4 @@
-package it.camera.hackathon.stemming.test;
+package it.camera.hackathon.stemming.tests;
 
 import static org.junit.Assert.*;
 import it.camera.hackathon.stemming.StemmingUtils;
