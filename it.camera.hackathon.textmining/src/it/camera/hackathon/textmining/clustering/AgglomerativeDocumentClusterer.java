@@ -132,23 +132,4 @@ public class AgglomerativeDocumentClusterer implements IDocumentClusterer {
 	public IClustering getClustering(IDocumentCollection documents, int dendrogramLevel) {
 		return this.getClustering(documents, dendrogramLevel);
 	}
-	
-	private class Cluster implements ICluster
-	{
-		private Set<IDocument> documents;
-		
-		public Cluster(IDocument...documents)
-		{
-			if (documents.length < 1)
-				throw new IllegalArgumentException("documents.length < 1");
-			
-			for (IDocument d : documents)
-				this.documents.add(d);
-		}
-
-		@Override
-		public Iterator<IDocument> iterator() {
-			return this.documents.iterator();
-		}
-	}
 }

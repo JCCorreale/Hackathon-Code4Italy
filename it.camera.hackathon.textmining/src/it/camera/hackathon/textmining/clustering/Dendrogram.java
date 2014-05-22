@@ -1,6 +1,8 @@
 package it.camera.hackathon.textmining.clustering;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * A dendogram for an agglomerative algorithm.
@@ -73,12 +75,41 @@ public class Dendrogram
 			throw new IllegalStateException("height > 1. Can't add new leaves.");
 		
 		add(cluster, null, null);
+	}	
+
+	private IClustering buildClustering()
+	{
+		List<ICluster> clusters = new ArrayList<ICluster>();
+		
+		for (Node n : this.topNodes)
+		{
+			// TODO For each node, creates a cluster made up from all sub-cluster's documents and adds it to the list.
+		}
+		
+		return new Clustering(clusters.toArray(new ICluster[0]));
 	}
 	
 	public IClustering getClustering(int level)
 	{
-		// TODO
-		return null;
+		LinkedList<Node> higherNodes = new LinkedList<Node>();
+		
+		do
+		{
+			// takes the higher nodes
+			for (Node n : this.topNodes)
+			{
+				if (n.depth > height)
+					higherNodes.add(n);
+			}
+			// removes the higher nodes from the topNodes list
+			for (Node n : higherNodes)
+			{
+				this.topNodes.remove(n);
+			}
+		}
+		while (!higherNodes.isEmpty());
+		
+		return this.buildClustering();
 	}
 	
 	public IClustering getClustering()
