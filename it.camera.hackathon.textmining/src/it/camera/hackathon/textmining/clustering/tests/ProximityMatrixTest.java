@@ -8,7 +8,7 @@ import it.camera.hackathon.textmining.clustering.ProximityMatrix;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ProxymityMatrixTest 
+public class ProximityMatrixTest 
 {
 	
 	ProximityMatrix m;

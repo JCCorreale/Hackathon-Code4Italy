@@ -1,6 +1,7 @@
 package it.camera.hackathon.textmining.clustering;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -21,6 +22,8 @@ public class DocumentCollection implements IDocumentCollection {
 	private Set<IDocument> documents;
 	private SortedSet<ITerm> allTerms;
 	
+	// TODO Refactor constructors
+	
 	public DocumentCollection(IDocument... documents) {
 		if (documents.length < 1)
 			throw new IllegalArgumentException("documents.length < 1");
@@ -34,6 +37,39 @@ public class DocumentCollection implements IDocumentCollection {
 				this.allTerms.add(term);
 		}
 	}
+	
+//	public DocumentCollection(Iterable<IDocument>... documentsCollections)
+//	{
+//		for (Iterable<IDocument> documents : documentsCollections)
+//		{
+//			if (!documents.iterator().hasNext())
+//				throw new IllegalArgumentException("documents.length < 1");
+//			
+//			this.documents = new HashSet<IDocument>();
+//			this.allTerms = new TreeSet<ITerm>();
+//			for (IDocument doc : documents)
+//			{
+//				this.documents.add(doc);
+//				for (ITerm term : doc.getTerms())
+//					this.allTerms.add(term);
+//			}
+//		}
+//	}
+//	
+//	public DocumentCollection(Collection<IDocument> documents)
+//	{
+//		if (documents.size() < 1)
+//			throw new IllegalArgumentException("documents.length < 1");
+//		
+//		this.documents = new HashSet<IDocument>();
+//		this.allTerms = new TreeSet<ITerm>();
+//		for (IDocument doc : documents)
+//		{
+//			this.documents.add(doc);
+//			for (ITerm term : doc.getTerms())
+//				this.allTerms.add(term);
+//		}
+//	}
 	
 	@Override
 	public IDocument[] getContainingDocuments(ITerm term)

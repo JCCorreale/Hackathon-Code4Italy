@@ -5,10 +5,10 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ AgglomerativeHierarchicalClustererTest.class,
+@SuiteClasses({ AgglomerativeDocumentClustererTest.class,
 		DendrogramTest.class, DocumentBuilderTest.class,
 		DocumentCollectionTest.class, InMemoryDocumentBuilderTest.class,
-		ProxymityMatrixTest.class })
+		ProximityMatrixTest.class })
 public class AllTests {
 
 }

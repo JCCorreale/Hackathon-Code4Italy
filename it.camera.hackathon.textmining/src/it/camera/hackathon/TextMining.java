@@ -11,8 +11,16 @@ import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.TextFileDataSource;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
+import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
+import it.camera.hackathon.textmining.clustering.Dendrogram;
+import it.camera.hackathon.textmining.clustering.DocumentCollection;
+import it.camera.hackathon.textmining.clustering.IDistanceStrategy;
 import it.camera.hackathon.textmining.clustering.IDocument;
+import it.camera.hackathon.textmining.clustering.IDocumentCollection;
+import it.camera.hackathon.textmining.clustering.IProximityStrategy;
 import it.camera.hackathon.textmining.clustering.ITerm;
+import it.camera.hackathon.textmining.clustering.SingleLinkProximityStrategy;
+import it.camera.hackathon.textmining.clustering.TFIDFCosineDistanceStrategy;
 import it.camera.hackathon.utils.MapUtils;
 
 public class TextMining extends ITextMining
@@ -94,5 +102,26 @@ public class TextMining extends ITextMining
 			
 			System.out.println(entry.getKey().toString() + " " + terms.toString());
 		}
+		
+		/* CLUSTERING */
+		
+		System.out.println("\n\n***************************CLUSTERING\n\n");
+		
+		IDocumentCollection docsCollection;
+		List<IDocument> docsList = new ArrayList<IDocument>();
+		for (Entry<Atto, IDocument> entry : documents)
+		{
+			docsList.add(entry.getValue());
+		}
+		docsCollection = new DocumentCollection(docsList.toArray(new IDocument[0]));
+		
+		IDistanceStrategy distanceStrategy = new TFIDFCosineDistanceStrategy(docsCollection);
+		IProximityStrategy proximityStrategy = new SingleLinkProximityStrategy(distanceStrategy);
+		
+		AgglomerativeDocumentClusterer clusterer = new AgglomerativeDocumentClusterer(proximityStrategy);
+		
+		Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
+		
+		System.out.println(dendrogram);
 	}
 }

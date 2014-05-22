@@ -1,10 +1,10 @@
 package it.camera.hackathon.textmining.clustering;
 
-public class CosineDistanceStrategy implements IDistanceStrategy {
+public class TFIDFCosineDistanceStrategy implements IDistanceStrategy {
 
 	private IDocumentCollection documents;
 	
-	public CosineDistanceStrategy(IDocumentCollection documents) {
+	public TFIDFCosineDistanceStrategy(IDocumentCollection documents) {
 		this.documents = documents;
 	}
 
