@@ -15,6 +15,7 @@ public class Dendrogram
 	public Dendrogram()
 	{
 		this.topNodes = new LinkedList<Node>();
+		this.height = 0;
 	}
 	
 	/**
@@ -30,9 +31,11 @@ public class Dendrogram
 		if (left == null ^ right == null)
 			throw new IllegalArgumentException("child nodes must be both defined or both undefined");
 		
+		Node parentNode;
+		
 		if (left == null)
 		{
-			this.topNodes.add(new Node(parent));
+			this.topNodes.add(parentNode = new Node(parent));
 		}
 		else
 		{
@@ -52,9 +55,12 @@ public class Dendrogram
 			this.topNodes.remove(leftNode);
 			this.topNodes.remove(rightNode);
 			
-			Node parentNode = new Node(parent, leftNode, rightNode);
+			parentNode = new Node(parent, leftNode, rightNode);
 			this.topNodes.add(parentNode);
 		}
+		
+		if (parentNode.depth > this.height)
+			this.height = parentNode.depth;
 	}
 	
 	/**
@@ -90,11 +96,20 @@ public class Dendrogram
 		public ICluster cluster;
 		public Node left;
 		public Node right;
+		public int depth;
 		
 		public Node(ICluster cluster, Node left, Node right) {
 			this.cluster = cluster;
 			this.left = left;
 			this.right = right;
+			
+			if (left == null)
+				this.depth = 1;
+			else
+			{
+				int maxChildDepth = left.depth > right.depth ? left.depth : right.depth;
+				this.depth = maxChildDepth + 1;
+			}
 		}
 
 		public Node(ICluster cluster) {
