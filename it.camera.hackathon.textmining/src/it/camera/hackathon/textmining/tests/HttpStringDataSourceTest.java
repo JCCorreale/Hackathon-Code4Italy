@@ -2,12 +2,9 @@ package it.camera.hackathon.textmining.tests;
 
 import static org.junit.Assert.*;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource.HttpGetRequestConfiguration;
-import it.camera.hackathon.parsing.StringParser;
+import it.camera.hackathon.parsing.StringReceiver;
 import org.junit.Test;
 
 public class HttpStringDataSourceTest {
@@ -18,12 +15,9 @@ public class HttpStringDataSourceTest {
 	@Test
 	public void test() {
 		HttpGetDataSource<String> ds = null;
-		ds = new HttpGetDataSource<String>(urlString, new StringParser());
-
-		Map<String, String> params= new HashMap<String, String>();
-		Map<String, String> header = new HashMap<String, String>();
+		ds = new HttpGetDataSource<String>(urlString, new StringReceiver());
 		
-		String actual = ds.getData(new HttpGetRequestConfiguration(params, header));
+		String actual = ds.getData(HttpGetRequestConfiguration.getDefault());
 		
 		assertEquals(TEST, actual);
 	}

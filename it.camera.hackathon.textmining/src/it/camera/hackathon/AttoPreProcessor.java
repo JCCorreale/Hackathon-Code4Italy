@@ -12,7 +12,7 @@ import it.camera.hackathon.datasource.sparql.query.ActContentByDateQuery;
 import it.camera.hackathon.datasource.sparql.query.ActLastRevisionDateQuery;
 import it.camera.hackathon.datasource.sparql.query.Utils;
 import it.camera.hackathon.parsing.LineValueHtmlParser;
-import it.camera.hackathon.parsing.StringParser;
+import it.camera.hackathon.parsing.StringReceiver;
 import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.clustering.IDocument;
 
@@ -30,7 +30,7 @@ public class AttoPreProcessor implements IDataProvider<Entry<Atto, IDocument>, A
 		
 		// ottieni contentuto individuato da url
 		HttpGetRequestConfiguration req = new HttpGetRequestConfiguration(new HashMap<String, String>(), new HashMap<String, String>());
-		String content = new HttpGetDataSource<>(contentUrl, new StringParser()).getData(req);
+		String content = new HttpGetDataSource<>(contentUrl, new StringReceiver()).getData(req);
 		
 		// rimozione HTML
 		content = HtmlRemover.text(content);

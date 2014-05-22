@@ -1,6 +1,6 @@
 package it.camera.hackathon.datasource.remote;
 
-import it.camera.hackathon.parsing.IParser;
+import it.camera.hackathon.parsing.IStreamParser;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,10 +10,10 @@ import java.util.Map.Entry;
 
 public class HttpPostDataSource<T> extends HttpDataSource<T, HttpPostDataSource.HttpPostDataSourceConfiguration<T>> {
 
-	private IParser<T> parser;
+	private IStreamParser<T> parser;
 	private HttpURLConnection conn;
 	
-	public void HttpPostDataSourceConfiguration(HttpURLConnection conn, IParser<T> parser) {
+	public void HttpPostDataSourceConfiguration(HttpURLConnection conn, IStreamParser<T> parser) {
 		this.parser = parser;
 		this.conn = conn;
 	}

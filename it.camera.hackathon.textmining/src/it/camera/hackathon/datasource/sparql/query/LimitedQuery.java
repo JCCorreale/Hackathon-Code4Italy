@@ -2,7 +2,7 @@ package it.camera.hackathon.datasource.sparql.query;
 
 import it.camera.hackathon.datasource.sparql.IQuery;
 
-public class LimitedQuery implements IQuery {
+public class LimitedQuery implements ILimitedQuery {
 	private int offset = 0;
 	private int limit;
 	private IQuery query;

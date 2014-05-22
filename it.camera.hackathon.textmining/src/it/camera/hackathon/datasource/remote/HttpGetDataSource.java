@@ -1,21 +1,22 @@
 package it.camera.hackathon.datasource.remote;
 
-import it.camera.hackathon.parsing.IParser;
+import it.camera.hackathon.parsing.IStreamParser;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
 public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.HttpGetRequestConfiguration> {
 
-	IParser<T> parser;
+	IStreamParser<T> parser;
 	String baseUrl;
 	
-	public HttpGetDataSource(String baseUrl, IParser<T> parser) {
+	public HttpGetDataSource(String baseUrl, IStreamParser<T> parser) {
 		if(baseUrl == null)
 			throw new IllegalArgumentException();
 		
@@ -56,6 +57,10 @@ public class HttpGetDataSource<T> extends HttpDataSource<T, HttpGetDataSource.Ht
 	
 	public static class HttpGetRequestConfiguration {
 
+		public static HttpGetRequestConfiguration getDefault() {
+			return new HttpGetRequestConfiguration(new HashMap<String, String>(), new HashMap<String, String>());
+		}
+		
 		private Map<String, String> headerConf;
 		private Map<String, String> params;
 

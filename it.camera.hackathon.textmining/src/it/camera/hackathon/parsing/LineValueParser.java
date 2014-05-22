@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LineValueParser implements IParser<String[]> {
+public class LineValueParser implements IStreamParser<String[]> {
 
 	@Override
 	public String[] parse(InputStream is) throws IOException {

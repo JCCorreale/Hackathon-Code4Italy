@@ -3,7 +3,7 @@ package it.camera.hackathon.textmining.tests;
 import it.camera.hackathon.datasource.IDataProvider;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource.HttpGetRequestConfiguration;
-import it.camera.hackathon.parsing.StringParser;
+import it.camera.hackathon.parsing.StringReceiver;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +27,7 @@ public class HttpGetRequestTest {
 		
 		HttpGetRequestConfiguration conf = new HttpGetRequestConfiguration(params, headerConf);
 		
-		IDataProvider<String, HttpGetRequestConfiguration> ds = new HttpGetDataSource<String>(URL_TARGET, new StringParser());
+		IDataProvider<String, HttpGetRequestConfiguration> ds = new HttpGetDataSource<String>(URL_TARGET, new StringReceiver());
 		System.out.println("Received: '" + ds.getData(conf) + "'");
 	}
 

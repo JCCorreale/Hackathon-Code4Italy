@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class StringParser implements IParser<String> {
+public class StringReceiver implements IStreamParser<String> {
 
 	@Override
 	public String parse(InputStream is) throws IOException {
@@ -15,7 +15,7 @@ public class StringParser implements IParser<String> {
 		String html = "";
 		
 		while(line != null) {
-			html += line;
+			html += line + "\n";
 			line = read.readLine();
 		}
 		

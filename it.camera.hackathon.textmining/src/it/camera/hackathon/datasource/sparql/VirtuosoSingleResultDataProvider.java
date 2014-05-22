@@ -5,7 +5,7 @@ import java.util.Map;
 
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource.HttpGetRequestConfiguration;
-import it.camera.hackathon.parsing.IParser;
+import it.camera.hackathon.parsing.IStreamParser;
 import it.camera.hackathon.parsing.LineValueParser;
 
 public class VirtuosoSingleResultDataProvider implements ISparqlDataProvider<String> {
@@ -18,7 +18,7 @@ public class VirtuosoSingleResultDataProvider implements ISparqlDataProvider<Str
 		this.source = new HttpGetDataSource<String[]>(url, new LineValueParser());
 	}
 	
-	public VirtuosoSingleResultDataProvider(String url, IParser<String[]> parser, String requestedFormat) {
+	public VirtuosoSingleResultDataProvider(String url, IStreamParser<String[]> parser, String requestedFormat) {
 		this.source = new HttpGetDataSource<String[]>(url, parser);
 		this.format = requestedFormat;
 	}
