@@ -9,29 +9,38 @@ public class Atto
 {
 	private String iri;
 	
-	private String 	name;
-	private int 	legislature;
-	private Date 	revision;
-	private String 	contentIrl;
+	private String 	label;			// rdfs:label
+	private String	identifier; 	// dc:identifier
+	private String 	legislature;	// dc:title (of odc:rif_leg ?legislatura)
+	private Date 	revision;		// dc:date (of ocd:rif_versioneTestoAtto ?versionAtto)
+	private String 	contentUrl;		// <http://purl.org/dc/terms/isReferencedBy> (of ocd:rif_versioneTestoAtto ?versionAtto)
 	
 	public String getIRI() 
 	{
 		return iri;
-	}	
-
-	public String getName() {
-		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public String getIdentifier() {
+		return identifier;
 	}
 
-	public int getLegislature() {
+	public void setIdentifier(String identifier) {
+		this.identifier = identifier;
+	}
+
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
+	}
+
+	public String getLegislature() {
 		return legislature;
 	}
 
-	public void setLegislature(int legislature) {
+	public void setLegislature(String legislature) {
 		this.legislature = legislature;
 	}
 
@@ -44,11 +53,11 @@ public class Atto
 	}
 
 	public String getContentUrl() {
-		return contentIrl;
+		return contentUrl;
 	}
 
 	public void setContentUrl(String contentUrl) {
-		this.contentIrl = contentUrl;
+		this.contentUrl = contentUrl;
 	}
 	
 	public Atto(String iri) 
