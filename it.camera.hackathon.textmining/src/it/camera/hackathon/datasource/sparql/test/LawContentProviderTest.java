@@ -2,8 +2,11 @@ package it.camera.hackathon.datasource.sparql.test;
 
 import static org.junit.Assert.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map.Entry;
 import java.util.Set;
+
 import it.camera.hackathon.Atto;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.sparql.LawContentProvider;
@@ -50,7 +53,11 @@ public class LawContentProviderTest {
 		assertEquals(LIMIT, i);
 		long endTime = System.nanoTime();
 		
-		System.out.println("Finisced after " + (endTime - startTime)/100000 + "msec");
+		long elapsedTime = (endTime - startTime)/100000; // msec
+		
+		Date d = new Date(elapsedTime);
+		
+		System.out.println("Finisced after " + new SimpleDateFormat("m'min' s'sec' SS").format(d) + "msec");
 	}
 
 }
