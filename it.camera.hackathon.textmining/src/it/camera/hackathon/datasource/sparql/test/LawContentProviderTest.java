@@ -40,8 +40,10 @@ public class LawContentProviderTest {
 	public void test() {
 		System.out.println("STARTING TEST");
 		
-		long startTime = System.nanoTime();
+		long startTime = System.currentTimeMillis();
 		Set<Entry<Atto, String>> res = lcp.getData(new LimitedQueryConfiguration(LIMIT));
+		
+		System.out.println();
 		
 		int i = 0;
 		for(Entry<Atto, String> e : res) {
@@ -51,9 +53,9 @@ public class LawContentProviderTest {
 		
 		System.out.println("Received " + i + " documents");
 		assertEquals(LIMIT, i);
-		long endTime = System.nanoTime();
+		long endTime = System.currentTimeMillis();
 		
-		long elapsedTime = (endTime - startTime)/100000; // msec
+		long elapsedTime = endTime - startTime; // msec
 		
 		Date d = new Date(elapsedTime);
 		
