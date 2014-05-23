@@ -38,11 +38,12 @@ public class LawContentProvider implements IDataProvider<Set<Entry<Atto, String>
 		IParser<String, Iterable<Atto>> attiParser = new CsvToTypeParser<>(new CsvMapToAttoParser());
 		Iterable<Atto> atti = attiParser.parse(engine.run(new LimitedQuery(new LawsQuery(), cfg)));
 		
+		int i = 0;
 		Map<Atto, String> res = new HashMap<>();
 
 		engine.setRequestedFormat("text/html");
 		for(Atto atto : atti) {
-			System.out.println("Receiving Law: " + atto.getIRI());
+			System.out.println("Receiving Law(" + i++ + "): " + atto.getIRI());
 			
 			// Request last edit date
 			IQuery q = new ActLastRevisionDateQuery(atto.getIRI());
