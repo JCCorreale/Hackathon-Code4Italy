@@ -1,5 +1,8 @@
 package it.camera.hackathon.datasource.sparql;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -39,21 +42,42 @@ public class LawContentProvider implements IDataProvider<Set<Entry<Atto, String>
 
 		engine.setRequestedFormat("text/html");
 		for(Atto atto : atti) {
+			System.out.println("Receiving Law: " + atto.getIRI());
+			
 			// Request last edit date
 			IQuery q = new ActLastRevisionDateQuery(atto.getIRI());
 			String date = HtmlRemover.text(engine.run(q)).split(" ")[1];
+			setActDate(atto, date);
+			System.out.println("  Final revision: " + new SimpleDateFormat("dd/MM/YYYY").format(atto.getRevision()));
 			
+			// Request act content location
 			q = new ActContentByDateQuery(atto.getIRI(), date);
 			String contentUrl = HtmlRemover.text(engine.run(q)).split(" ")[1];
+			atto.setContentUrl(contentUrl);
+			System.out.println("  Content location: " + atto.getContentUrl());
 			
+			// Download act content
+			System.out.println("  Content: downloading");
 			HttpGetDataSource<String> ds = new HttpGetDataSource<String>(contentUrl, new HtmlRemoverFilterReceiver());
 			String content = ds.getData(HttpGetRequestConfiguration.getDefault());
+			System.out.println("  Content: download ended - received: \"" + content.substring(0, 30) + " [...]\"");
 			
 			res.put(atto, content);
 		}
 		engine.setRequestedFormat("text/csv");
 		
 		return res.entrySet();
+	}
+	
+	private void setActDate(Atto a, String d) {
+		try {
+			DateFormat df = new SimpleDateFormat("\"YYYYMMdd\"");
+			a.setRevision(df.parse(d));			
+		} catch (ParseException e) {
+			// Ignore error
+			System.err.println("Could not save act revision date - Illegal format exception");
+			e.printStackTrace();
+		}
 	}
 
 }
