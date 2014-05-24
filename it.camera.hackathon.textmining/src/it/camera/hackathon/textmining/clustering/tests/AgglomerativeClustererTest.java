@@ -117,7 +117,7 @@ public class AgglomerativeClustererTest {
 	private class DummyProximityStrategy implements IProximityStrategy
 	{
 		@Override
-		public float getDistance(ICluster c1, ICluster c2) 
+		public float getDissimilarity(ICluster c1, ICluster c2) 
 		{
 			return m.getClustersDistance(c1, c2);
 		}

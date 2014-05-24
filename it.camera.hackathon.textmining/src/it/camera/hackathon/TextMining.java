@@ -14,13 +14,13 @@ import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
 import it.camera.hackathon.textmining.clustering.DocumentCollection;
-import it.camera.hackathon.textmining.clustering.IDistanceStrategy;
+import it.camera.hackathon.textmining.clustering.IDissimilarityStrategy;
 import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.IProximityStrategy;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.SingleLinkProximityStrategy;
-import it.camera.hackathon.textmining.clustering.TFIDFCosineDistanceStrategy;
+import it.camera.hackathon.textmining.clustering.TFIDFCosineDissimilarityStrategy;
 import it.camera.hackathon.utils.MapUtils;
 
 public class TextMining extends ITextMining
@@ -115,7 +115,7 @@ public class TextMining extends ITextMining
 		}
 		docsCollection = new DocumentCollection(docsList.toArray(new IDocument[0]));
 		
-		IDistanceStrategy distanceStrategy = new TFIDFCosineDistanceStrategy(docsCollection);
+		IDissimilarityStrategy distanceStrategy = new TFIDFCosineDissimilarityStrategy(docsCollection);
 		IProximityStrategy proximityStrategy = new SingleLinkProximityStrategy(distanceStrategy);
 		
 		AgglomerativeDocumentClusterer clusterer = new AgglomerativeDocumentClusterer(proximityStrategy);

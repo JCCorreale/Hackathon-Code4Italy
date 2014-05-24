@@ -42,7 +42,7 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 			{
 				if (!c1.equals(c2))
 				{
-					matrix.setClustersDistance(c1, c2, this.proximityStrategy.getDistance(c1, c2));
+					matrix.setClustersDistance(c1, c2, this.proximityStrategy.getDissimilarity(c1, c2));
 				}
 			}
 		}
