@@ -1,7 +1,10 @@
 <html>
 <head>
+	<script type="text/javascript" src="./lib/evt.js" charset="utf-8"></script>
 	<script type="text/javascript" src="./lib/d3.v3.js" charset="utf-8"></script>
 	<script type="text/javascript" src="./lib/nv.d3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/nv-extensions.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/nv-extensions-model.js" charset="utf-8"></script>
 	<script type="text/javascript" src="./lib/chart-factory.js" charset="utf-8"></script>
 	<title>Example Cluster Info Chart</title>
 
@@ -19,11 +22,73 @@
 
 <div id="chart">
   <svg></svg>
+  <input type="button" class="push" value="Push" />
+  <input type="button" class="pop"  value="Pop"  />
 </div>
 
 	<script type="text/javascript" src="./data/chart-test.js" charset="utf-8"></script>
 	<script type="text/javascript">
+// ChartFactory.createLineChart(d3.select("#chart svg"), model);
+
+// model.series.push({
+//   "key": "Cluster 3",
+//   "values": [
+//     [0,3],
+//     [1,3],
+//     [2,3],
+//     [3,3],
+//     [4,3],
+//     [5,3]
+//   ]
+// });
+// ChartFactory.createLineChart(d3.select("#chart svg"), model);
+
+model = new nv.utils.model.UpdatableModel(model)
+
 ChartFactory.createLineChart(d3.select("#chart svg"), model);
+
+model.addSerie({
+  "key": "Cluster 3",
+  "values": [
+    [0,3],
+    [1,1],
+    [2,3],
+    [3,3],
+    [4,2],
+    [5,1]
+  ]
+});
+
+var series = [{key: "Cluster 1"}, {key: "Cluster 2"}, {key: "Cluster 3"}];
+var i = 4;
+d3.select('.push').on('click', function() {
+  s = {
+    "key": "Cluster " + i++,
+    "values": [
+      [0, Math.floor(Math.random() * 10)],
+      [1, Math.floor(Math.random() * 10)],
+      [2, Math.floor(Math.random() * 10)],
+      [3, Math.floor(Math.random() * 10)],
+      [4, Math.floor(Math.random() * 10)],
+      [5, Math.floor(Math.random() * 10)]
+    ]
+  };
+
+  series.push(s);
+  model.addSerie(s);
+  ChartFactory.createLineChart(d3.select("#chart svg"), model);
+})
+
+d3.select('.pop').on('click', function() {
+  if(series.length == 0)
+  	return
+
+  s = series.pop();
+
+  model.removeSerie(s);
+
+  ChartFactory.createLineChart(d3.select("#chart svg"), model);
+})
 	</script>
 </body>
 </html>

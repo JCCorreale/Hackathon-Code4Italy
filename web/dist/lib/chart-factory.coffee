@@ -1,8 +1,16 @@
-# dependencies: [d3, nv]
+# dependencies: [d3, nv, nv-extensions]
 
 ChartFactory = (() ->
 
-  @createLineChart = (target, model) ->
+  cf = createLineChart: (target, model) ->
+
+    #TODO chart update not working properly
+    # if(model.changed?)
+    #   model.changed.addHandler -> 
+    #     target.select(".nv-lineChart").remove()
+    #     cf.createLineChart target, model
+    #     return
+
     nv.addGraph(() ->
       chart = nv.models.lineChart()
         .x((d) -> d[0])
@@ -10,9 +18,12 @@ ChartFactory = (() ->
         .color(d3.scale.category10().range())
         .useInteractiveGuideline(true)
 
+      chart.margin({right: 50, bottom: 100})
+
       chart.xAxis
         .axisLabel('Periodo')
-        .tickFormat((d) -> return model.xAxisLabels[d]) #TODO generalizzare
+        .tickFormat((d) -> model.xAxisLabels[d]) #TODO generalizzare
+        .rotateLabels(45)
 
       chart.yAxis
         .axisLabel('Occorrenze')
@@ -23,10 +34,17 @@ ChartFactory = (() ->
         .transition().duration(500)
         .call(chart)
 
-      nv.utils.windowResize(chart.update)
+      nv.utils.events.windowResize.addHandler(chart.update)
+
+      #TODO not working
+      # nv.utils.events.windowResize.addHandler((e) ->
+      #   small = parseInt(target.style("width")) < 800
+        
+      #   chart.xAxis.rotateLabels(if small then 15 else 0)
+      # )
 
       return chart
     )
 
-  return @
+  return cf
 )()

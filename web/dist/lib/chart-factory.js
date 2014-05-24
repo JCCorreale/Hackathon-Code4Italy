@@ -2,22 +2,29 @@
 var ChartFactory;
 
 ChartFactory = (function() {
-  this.createLineChart = function(target, model) {
-    return nv.addGraph(function() {
-      var chart;
-      chart = nv.models.lineChart().x(function(d) {
-        return d[0];
-      }).y(function(d) {
-        return d[1];
-      }).color(d3.scale.category10().range()).useInteractiveGuideline(true);
-      chart.xAxis.axisLabel('Periodo').tickFormat(function(d) {
-        return model.xAxisLabels[d];
+  var cf;
+  cf = {
+    createLineChart: function(target, model) {
+      return nv.addGraph(function() {
+        var chart;
+        chart = nv.models.lineChart().x(function(d) {
+          return d[0];
+        }).y(function(d) {
+          return d[1];
+        }).color(d3.scale.category10().range()).useInteractiveGuideline(true);
+        chart.margin({
+          right: 50,
+          bottom: 100
+        });
+        chart.xAxis.axisLabel('Periodo').tickFormat(function(d) {
+          return model.xAxisLabels[d];
+        }).rotateLabels(45);
+        chart.yAxis.axisLabel('Occorrenze');
+        target.datum(model.series).transition().duration(500).call(chart);
+        nv.utils.events.windowResize.addHandler(chart.update);
+        return chart;
       });
-      chart.yAxis.axisLabel('Occorrenze');
-      target.datum(model.series).transition().duration(500).call(chart);
-      nv.utils.windowResize(chart.update);
-      return chart;
-    });
+    }
   };
-  return this;
+  return cf;
 })();
