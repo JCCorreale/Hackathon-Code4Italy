@@ -17,6 +17,7 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 
 	private IProximityStrategy proximityStrategy;
 	private IDocumentCollection documents;
+	private ProximityMatrix matrix;
 	
 	public AgglomerativeDocumentClusterer(IProximityStrategy proxymityStrategy)
 	{
@@ -25,13 +26,13 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 	
 	private ProximityMatrix initMatrix(IDocumentCollection documents)
 	{
-		ProximityMatrix m = new ProximityMatrix();
+		matrix = new ProximityMatrix();
 		Set<ICluster> clusters = new HashSet<ICluster>();
 		// adds a cluster for each documents
 		for (IDocument d : documents.getDocuments())
 		{
 			ICluster cluster;
-			m.addCluster(cluster = new Cluster(d));
+			matrix.addCluster(cluster = new Cluster(d));
 			clusters.add(cluster);
 		}
 		// calculates the distances
@@ -41,19 +42,19 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 			{
 				if (!c1.equals(c2))
 				{
-					m.setClustersDistance(c1, c2, this.proximityStrategy.getDistance(c1, c2));
+					matrix.setClustersDistance(c1, c2, this.proximityStrategy.getDistance(c1, c2));
 				}
 			}
 		}
 		
-		return m;
+		return matrix;
 	}
 	
-	private Dendrogram initDendrogram(IDocumentCollection documents)
+	private Dendrogram initDendrogram(ProximityMatrix matrix)
 	{
 		Dendrogram d = new Dendrogram();
-		for (IDocument doc : documents.getDocuments())
-			d.add(new Cluster(doc));
+		for (ICluster c : matrix.getClusters())
+			d.add(c);
 		return d;
 	}
 	
@@ -127,6 +128,6 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 
 	@Override
 	protected Dendrogram initDendrogram() {
-		return this.initDendrogram(this.documents);
+		return this.initDendrogram(this.matrix);
 	}
 }

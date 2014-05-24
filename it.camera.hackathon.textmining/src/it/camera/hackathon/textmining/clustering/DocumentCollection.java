@@ -183,7 +183,7 @@ public class DocumentCollection implements IDocumentCollection {
 		d1NormAcc = (float)Math.sqrt(d1NormAcc);
 		d2NormAcc = (float)Math.sqrt(d2NormAcc);
 		
-		return dotProdAcc / (d1NormAcc * d2NormAcc);
+		return (dotProdAcc / (d1NormAcc * d2NormAcc));
 	}
 
 	/**

@@ -1,6 +1,7 @@
 package it.camera.hackathon.textmining.clustering;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -14,7 +15,7 @@ public class Cluster implements ICluster
 		if (documents.length < 1)
 			throw new IllegalArgumentException("documents.length < 1");
 		
-		this.documents = new TreeSet<IDocument>();
+		this.documents = new HashSet<IDocument>();
 		
 		for (IDocument d : documents)
 			this.documents.add(d);
@@ -23,5 +24,11 @@ public class Cluster implements ICluster
 	@Override
 	public Iterator<IDocument> iterator() {
 		return this.documents.iterator();
+	}
+	
+	@Override
+	public String toString()
+	{
+		return this.documents.toString();
 	}
 }
