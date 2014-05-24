@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script type="text/javascript" src="./lib/d3.v3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/nv.d3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/chart-factory.js" charset="utf-8"></script>
+	<title>Example Cluster Info Chart</title>
+
+	<link href="./css/nv.d3.css" rel="stylesheet" type="text/css">
+	<style>
+
+	#chart svg {
+	  height: 400px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<div id="chart">
+  <svg></svg>
+</div>
+
+	<script type="text/javascript" src="./data/chart-test.js" charset="utf-8"></script>
+	<script type="text/javascript">
+ChartFactory.createLineChart(d3.select("#chart svg"), model);
+	</script>
+</body>
+</html>
