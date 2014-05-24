@@ -256,5 +256,11 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 			}
 			else throw new IllegalArgumentException("curFreq <= 1, use removeTerm() to perform this operation");
 		}
+		
+		@Override
+		public String toString()
+		{
+			return this.frequencies.toString();
+		}
 	}
 }

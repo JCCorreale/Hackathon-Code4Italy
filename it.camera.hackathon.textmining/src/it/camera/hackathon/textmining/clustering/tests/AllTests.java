@@ -5,8 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ AgglomerativeClustererTest.class,
-		AgglomerativeDocumentClustererTest.class, DendrogramTest.class,
+@SuiteClasses({ AgglomerativeClustererTest.class, DendrogramTest.class,
 		DocumentBuilderTest.class, DocumentCollectionTest.class,
 		InMemoryDocumentBuilderTest.class, ProximityMatrixTest.class })
 public class AllTests {

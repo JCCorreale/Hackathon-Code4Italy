@@ -70,7 +70,13 @@ public class SynonimsDictionary
 		}
 	}
 	
-	public List<String> getSynonims(String wordToInspect)
+	/**
+	 * 
+	 * @param wordToInspect
+	 * @param radix Indicates whether to perform a common-radix search.
+	 * @return
+	 */
+	public List<String> getSynonims(String wordToInspect, boolean compareRoots)
 	{
 		// se trova la parola nel dizionario la restituisce
 		if(dictionary.containsKey(wordToInspect))
@@ -78,7 +84,7 @@ public class SynonimsDictionary
 			return dictionary.get(wordToInspect);
 		}
 		// altrimenti cerca parole con radice comune (tipo plurali o verbi coniugati)
-		else
+		else if (compareRoots)
 		{
 			for(String s : dictionary.keySet())
 			{
@@ -89,6 +95,11 @@ public class SynonimsDictionary
 		
 		// se non trova risultati restituisce lista vuota
 		return new ArrayList<String>();
+	}
+	
+	public List<String> getSynonims(String wordToInspect)
+	{
+		return getSynonims(wordToInspect, true);
 	}
 	
 	public boolean areSynonims(String s1, String s2)

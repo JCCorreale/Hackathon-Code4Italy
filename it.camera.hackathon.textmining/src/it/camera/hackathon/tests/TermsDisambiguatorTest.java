@@ -1,7 +1,7 @@
 package it.camera.hackathon.tests;
 
 import static org.junit.Assert.*;
-import it.camera.hackathon.TermsDisambiguator;
+import it.camera.hackathon.OptimizedTermsDisambiguator;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import org.junit.Test;
 public class TermsDisambiguatorTest 
 {
 	private static List<Entry<String, Integer>> termsToTests = new ArrayList<Map.Entry<String,Integer>>();
-	private TermsDisambiguator td = new TermsDisambiguator();
+	private OptimizedTermsDisambiguator td = new OptimizedTermsDisambiguator();
 	
 	@BeforeClass
 	public static void setup() 

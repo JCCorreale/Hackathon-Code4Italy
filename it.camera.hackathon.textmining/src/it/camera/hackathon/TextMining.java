@@ -105,7 +105,7 @@ public class TextMining extends ITextMining
 		
 		/* CLUSTERING */
 		
-		System.out.println("\n\n***************************CLUSTERING\n\n");
+		System.out.println("\n\n*******************\n\nCLUSTERING\n\n");
 		
 		IDocumentCollection docsCollection;
 		List<IDocument> docsList = new ArrayList<IDocument>();

@@ -10,6 +10,8 @@ public class TFIDFCosineDistanceStrategy implements IDistanceStrategy {
 
 	@Override
 	public float getDistance(IDocument d1, IDocument d2) {
-		return this.documents.getTFIDFCosine(d1, d2); // TODO Cablato TFIDF
+		// the cosine is a SIMILARITY function, we want a DISSIMILARITY (distance) function
+		// TODO: the use of a proximity or distance function should be a parameter of the algorithm
+		return - this.documents.getTFIDFCosine(d1, d2);
 	}
 }
