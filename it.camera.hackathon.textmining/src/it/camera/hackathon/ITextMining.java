@@ -17,7 +17,7 @@ import java.util.Map.Entry;
 
 public abstract class ITextMining 
 {
-	protected static int topWordsCount = 10;
+	protected static int topWordsCount = 20;
 	protected static int minWordLength = 3;
 	protected static String delimiters = " ',;.:/()[]<>";
 	protected static String itaStopwordsPath = "stopwords/stopwords_ita";
