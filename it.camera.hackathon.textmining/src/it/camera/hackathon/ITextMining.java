@@ -17,6 +17,9 @@ import java.util.Map.Entry;
 
 public abstract class ITextMining 
 {
+	/**
+	 * Larger values provide a better clustering but worse top words, smaller values provide better top words but a worse clustering.
+	 */
 	protected static int topWordsCount = 20;
 	protected static int minWordLength = 3;
 	protected static String delimiters = " ',;.:/()[]<>";
@@ -37,16 +40,9 @@ public abstract class ITextMining
 
 	protected static ITermsDisambiguator getTermsDisambiguator() 
 	{
-//		return new ITermsDisambiguator() {
-//
-//			@Override
-//			public Map<String, Integer> getDisambiguatedTerms(
-//					List<Entry<String, Integer>> terms) {
-//				return MapUtils.entryListToMap(terms);
-//			}
-//			
-//		};
-		return new TermsDisambiguator();
+		//return TermsDisambiguatorFactory.getDummyDisambiguator();
+		//return TermsDisambiguatorFactory.getSimpleDisambiguator();
+		return TermsDisambiguatorFactory.getOptimizedDisambiguator();
 	}
 
 	protected static String[] getStopWords()

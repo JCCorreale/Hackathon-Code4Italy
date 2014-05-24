@@ -1,0 +1,55 @@
+#### TEST WITH 10 TOP WORDS ####
+
+Simple (10 Top Words)
+
+resources\html\PDL 1012-A.htm [sociali] [ammortizzatori] [parlamentari] [imposta] [municipale] 
+resources\html\PDL 2162-A-R.htm [locali] [agosto] [interno] [piano] [riequilibrio] 
+resources\html\PDL 1542-C-bis.htm [province] [comuni] [funzioni] [Corte] [Costituzionale] 
+resources\html\PDL 1248-A-R.htm [giugno] [adozione] [adottare] [politiche] [affari] 
+resources\html\PDL 1921-A-R.htm [sorveglianza] [magistrato] [penale] [presidente] [diritti] 
+resources\html\PDL 1327-A.htm [europea] [Unione] [direttiva] [SENATO] [RELAZIONE] 
+resources\html\PDL 1572-A.htm [finanziario] [Amministrazione] [Bilancio] [autonome] [riferire] 
+resources\html\PDL 676.htm [pagamento] [debiti] [economia] [somme] [liquidità] 
+resources\html\PDL 118-878-881-940-968-A.htm [violenza] [Convenzione] [donne] [maggio] [prevenzione] 
+resources\html\PDL 1885-A.htm [territorio] [Regione] [tutela] [Campania] [ambientale] 
+
+Optimized (10 Top Words)
+
+resources\html\PDL 676.htm [pagamento] [liquidità] [debiti] [economia] [somme] 
+resources\html\PDL 1885-A.htm [territorio] [Regione] [tutela] [Campania] [ambientale] 
+resources\html\PDL 1542-C-bis.htm [province] [comuni] [funzioni] [Corte] [Costituzionale] 
+resources\html\PDL 1572-A.htm [finanziario] [Amministrazione] [Bilancio] [autonome] [riferire] 
+resources\html\PDL 1327-A.htm [europea] [Unione] [direttiva] [SENATO] [RELAZIONE] 
+resources\html\PDL 118-878-881-940-968-A.htm [violenza] [Convenzione] [donne] [maggio] [prevenzione] 
+resources\html\PDL 1248-A-R.htm [giugno] [adozione] [adottare] [politiche] [affari] 
+resources\html\PDL 1012-A.htm [sociali] [ammortizzatori] [parlamentari] [imposta] [municipale] 
+resources\html\PDL 2162-A-R.htm [locali] [agosto] [interno] [piano] [riequilibrio] 
+resources\html\PDL 1921-A-R.htm [sorveglianza] [magistrato] [penale] [presidente] [diritti] 
+
+#### TEST WITH 20 TOP WORDS ####
+
+Simple (20 Top Words)
+
+resources\html\PDL 1012-A.htm [sociali] [ammortizzatori] [parlamentari] [imposta] [deroga] 
+resources\html\PDL 1327-A.htm [europea] [Unione] [direttiva] [infrazione] [obblighi] 
+resources\html\PDL 1921-A-R.htm [sorveglianza] [magistrato] [penale] [diritti] [detenuti] 
+resources\html\PDL 2162-A-R.htm [comune] [agosto] [interno] [riequilibrio] [Fondo] 
+resources\html\PDL 1572-A.htm [finanziario] [Amministrazione] [Bilancio] [autonome] [bilanci] 
+resources\html\PDL 118-878-881-940-968-A.htm [violenza] [Convenzione] [donne] [maggio] [prevenzione] 
+resources\html\PDL 1248-A-R.htm [adozione] [adottare] [politiche] [affari] [giugno] 
+resources\html\PDL 1542-C-bis.htm [comuni] [funzioni] [Corte] [Costituzionale] [province] 
+resources\html\PDL 676.htm [pagamento] [debiti] [somme] [liquidità] [risorse] 
+resources\html\PDL 1885-A.htm [territorio] [Regione] [tutela] [Campania] [ambientale]
+
+Optimized (20 Top Words)
+
+resources\html\PDL 1327-A.htm [europea] [direttiva] [Unione] [infrazione] [obblighi] 
+resources\html\PDL 2162-A-R.htm [società] [agosto] [interno] [riequilibrio] [comune] 
+resources\html\PDL 1248-A-R.htm [adozione] [adottare] [politiche] [affari] [giugno] 
+resources\html\PDL 1572-A.htm [finanziario] [Amministrazione] [Bilancio] [autonome] [bilanci] 
+resources\html\PDL 1542-C-bis.htm [comuni] [funzioni] [Corte] [Costituzionale] [province] 
+resources\html\PDL 1012-A.htm [sociali] [ammortizzatori] [parlamentari] [imposta] [deroga] 
+resources\html\PDL 1885-A.htm [territorio] [Regione] [tutela] [Campania] [ambientale] 
+resources\html\PDL 118-878-881-940-968-A.htm [violenza] [Convenzione] [donne] [maggio] [prevenzione] 
+resources\html\PDL 676.htm [pagamento] [liquidità] [debiti] [somme] [Amministrazioni] 
+resources\html\PDL 1921-A-R.htm [pena] [sorveglianza] [magistrato] [penale] [diritti] 
