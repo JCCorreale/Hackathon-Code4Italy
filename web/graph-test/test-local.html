@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript" src="./lib/evt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/d3.v3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./lib/nv.d3.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./lib/nv-extensions.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./lib/graph-ui.js" charset="utf-8"></script>
+	<title>Example Cluster Description Chart</title>
+
+	<style>
+
+	</style>
+
+</head>
+<body>
+
+<div id="graph"></div>
+
+	<script type="text/javascript" src="./data/graph-test.js" charset="utf-8"></script>
+	<script type="text/javascript">
+GraphUtils.resolveId(graphModel)
+
+graphUi = new GraphUi(d3.select("#graph"), graphModel, undefined, undefined, {windowResizeEvent: nv.utils.events.windowResize})
+// graphUi.start()
+	</script>
+</body>
+</html>
