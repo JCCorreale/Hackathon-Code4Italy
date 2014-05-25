@@ -1,22 +1,28 @@
 package it.camera.hackathon;
 
-import it.camera.hackathon.textmining.clustering.ITerm;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class ClusterDescriptor {
 
-	private List<String> terms;
-	private String label;
-	private Map<Date, Integer> occurrences;
-	
+	public int id;
+	public List<String> terms;
+	public Map<Date, Integer> occurrences;
+	public Set<Atto> atti;
 	
 	public ClusterDescriptor() {
 		this.terms = new ArrayList<String>();
 		this.occurrences = new HashMap<Date, Integer>();
+		this.atti = new HashSet<Atto>();
+	}
+	
+	public String getLabel()
+	{
+		return this.terms.get(0);
 	}
 }

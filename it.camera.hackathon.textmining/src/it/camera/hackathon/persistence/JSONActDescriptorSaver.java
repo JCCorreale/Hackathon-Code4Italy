@@ -45,6 +45,10 @@ public class JSONActDescriptorSaver extends BaseWriter<Entry<Atto, List<ITerm>>>
 	 * An array of terms which are part of the act, sorted by increasing relevance.
 	 */
 	public static final String termsKey = "terms";
+	/**
+	 * Ther URL of the act's content.
+	 */
+	public static final String contentUrlKey = "content_url";
 	
 	public JSONActDescriptorSaver(Writer writer)
 	{
@@ -67,7 +71,8 @@ public class JSONActDescriptorSaver extends BaseWriter<Entry<Atto, List<ITerm>>>
 			obj.put(iriKey, atto.getIRI());
 //			obj.put(legislaturaKey, atto.getLegislature());
 //			obj.put(labelKey, atto.getLabel());
-			obj.put(termsKey, JSONListSaver.getJSONArray(terms));
+			obj.put(termsKey, JSONCollectionSaver.getJSONArray(terms));
+			obj.put(contentUrlKey, atto.getContentUrl());
 		} 
 		catch (JSONException e) {
 			throw new IllegalStateException("JSON Error");

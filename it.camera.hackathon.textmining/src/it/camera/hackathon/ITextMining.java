@@ -27,8 +27,8 @@ public abstract class ITextMining
 	protected static String domainStopwordsPath = "stopwords/stopwords_domain";
 	protected static float minTfIdf = -1.0f;
 	protected static int maxTerms = 5;
-	protected static boolean doClustering = false;
-	protected static int downloadLimit = 1000;
+	protected static boolean doClustering = true;
+	protected static int downloadLimit = 20;
 
 	public ITextMining() 
 	{

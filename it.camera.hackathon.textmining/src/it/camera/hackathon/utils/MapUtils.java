@@ -108,4 +108,14 @@ public final class MapUtils
 		}
 		return null;
 	}
+	
+	public static <TK, TV> Map<TV, TK> getValueKeyMap(Map<TK, TV> map)
+	{
+		Map<TV, TK> newMap = new HashMap<TV, TK>();
+		for (Entry<TK, TV> entry : map.entrySet())
+		{
+			newMap.put(entry.getValue(), entry.getKey());
+		}
+		return newMap;
+	}
 }

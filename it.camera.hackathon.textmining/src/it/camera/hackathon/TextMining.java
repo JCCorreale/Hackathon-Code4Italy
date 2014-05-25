@@ -2,6 +2,8 @@ package it.camera.hackathon;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -45,9 +47,13 @@ public class TextMining extends ITextMining
 		
 		for (Entry<Atto, String> attoContent : attiContent)
 		{
+			Calendar cal = Calendar.getInstance();
+			cal.set(2013, Calendar.JANUARY, 1);
+			if (attoContent.getKey().getRevision().before(cal.getTime()))
+				continue;
+			
 			System.out.println("************************************************");
 //			System.out.println("Document " +  filename);
-			
 			
 			String label = attoContent.getKey().getIRI();
 			System.out.println("Atto: " + label);
@@ -136,8 +142,13 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
-
-			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2);
+			IClustering clustering = dendrogram.getClustering(); // TODO Height
+			
+			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser();
+			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)));
+			
+			// TODO Save clusters descriptors...
+			System.out.println("Clustering completed.");
 		}
 	}
 }

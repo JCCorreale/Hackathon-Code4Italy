@@ -1,18 +1,19 @@
 package it.camera.hackathon.persistence;
 
 import java.io.Writer;
+import java.util.Collection;
 import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class JSONListSaver extends BaseWriter<List<?>> {
+public class JSONCollectionSaver extends BaseWriter<Collection<?>> {
 
-	public JSONListSaver(Writer writer) {
+	public JSONCollectionSaver(Writer writer) {
 		super(writer);
 	}
 	
-	public static JSONArray getJSONArray(List<?> list)
+	public static JSONArray getJSONArray(Collection<?> list)
 	{
 		JSONArray array = new JSONArray();
 		for (Object o : list)
@@ -23,9 +24,9 @@ public class JSONListSaver extends BaseWriter<List<?>> {
 	}
 
 	@Override
-	public void save(List<?> list) {
+	public void save(Collection<?> list) {
 		try {
-			this.getJSONArray(list).write(super.getWriter());
+			getJSONArray(list).write(super.getWriter());
 		} catch (JSONException e) {
 			throw new IllegalStateException("JSON Error");
 		}
