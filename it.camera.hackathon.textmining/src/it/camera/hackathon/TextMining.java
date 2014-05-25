@@ -5,8 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import it.camera.hackathon.datasource.IDataSource;
+import it.camera.hackathon.datasource.remote.HttpGetDataSource;
+import it.camera.hackathon.datasource.sparql.LawContentProvider;
+import it.camera.hackathon.datasource.sparql.VirtuosoRawResultQueryEngine;
+import it.camera.hackathon.datasource.sparql.query.LimitedQuery.LimitedQueryConfiguration;
+import it.camera.hackathon.parsing.StringReceiver;
 import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.TextFileDataSource;
@@ -14,6 +20,7 @@ import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
 import it.camera.hackathon.textmining.clustering.DocumentCollection;
+import it.camera.hackathon.textmining.clustering.IClustering;
 import it.camera.hackathon.textmining.clustering.IDissimilarityStrategy;
 import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.IDocumentCollection;
@@ -28,17 +35,28 @@ public class TextMining extends ITextMining
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args)
 	{
-		String[] filenames = new HTMLDocumentFactory().getFilePaths();
+//		String[] filenames = new HTMLDocumentFactory().getFilePaths();
 		List<Entry<Atto, IDocument>> documents = new ArrayList<Entry<Atto, IDocument>>();
 		
-		for (String filename : filenames)
+		HttpGetDataSource<String> source = new HttpGetDataSource<String>("http://dati.camera.it/sparql", new StringReceiver());
+		VirtuosoRawResultQueryEngine engine = new VirtuosoRawResultQueryEngine(source, "text/csv");
+		LawContentProvider provider = new LawContentProvider(engine);
+		Set<Entry<Atto, String>> attiContent = provider.getData(new LimitedQueryConfiguration(downloadLimit));
+		
+		for (Entry<Atto, String> attoContent : attiContent)
 		{
 			System.out.println("************************************************");
-			System.out.println("Document " +  filename);
+//			System.out.println("Document " +  filename);
+			
+			
+			String label = attoContent.getKey().getIRI();
+			System.out.println("Atto: " + label);
 			
 			// gets the input
-			IDataSource<String> source = new TextFileDataSource(filename);
-			String html = source.getData();
+//			IDataSource<String> source = new TextFileDataSource(filename);
+//			String html = source.getData();
+			
+			String html = attoContent.getValue();
 			
 			// removes HTML
 			System.out.println("Removing HTML tags...");
@@ -68,9 +86,9 @@ public class TextMining extends ITextMining
 			System.out.println("Creating document model");
 			// creates an IDocument instance from the retrieved data
 			IDocument document = buildDocument(topWords, counter.getAcceptedWordCount());
-			documents.add(new AbstractMap.SimpleEntry(new Atto(filename), document));
+			documents.add(new AbstractMap.SimpleEntry(attoContent.getKey(), document));
 			
-			System.out.println("Document " + filename + " done.\n\n");
+			System.out.println("Document " + label + " done.\n\n");
 			
 			// prints some stat about the document
 //			System.out.println("\n\nFrequency by term:\n");
@@ -83,45 +101,43 @@ public class TextMining extends ITextMining
 		
 		Map<Atto, List<ITerm>> result = analyser.getData(documents);
 		
-		// TODO Aggregate Documents
-		
-		//Map<Atto, List<ITerm>> attoTerms = analyser.getData(null); // TODO
-		
-		//ValueComparator comparator =  new ValueComparator(attoTerms);
-		// prints the top words
-		//Utils.printMap(topWords);
-		
 		// prints top terms for each document
-		for (Entry<Atto, List<ITerm>> entry : result.entrySet())
+//		for (Entry<Atto, List<ITerm>> entry : result.entrySet())
+//		{
+//			StringBuilder terms = new StringBuilder();
+//			for (ITerm term : entry.getValue())
+//			{
+//				terms.append("[" + term + "] ");
+//			}
+//			
+//			System.out.println(entry.getKey().toString() + " " + terms.toString());
+//		}
+		
+		JSONAttiTopWordsPersister.saveAsSingleFile(result, "output/json/atti-terms.json");
+		
+		if (doClustering)
 		{
-			StringBuilder terms = new StringBuilder();
-			for (ITerm term : entry.getValue())
-			{
-				terms.append("[" + term + "] ");
-			}
+			/* CLUSTERING */
 			
-			System.out.println(entry.getKey().toString() + " " + terms.toString());
+			System.out.println("\n\n*******************\n\nCLUSTERING\n\n");
+			
+			IDocumentCollection docsCollection;
+			List<IDocument> docsList = new ArrayList<IDocument>();
+			for (Entry<Atto, IDocument> entry : documents)
+			{
+				docsList.add(entry.getValue());
+			}
+			docsCollection = new DocumentCollection(docsList.toArray(new IDocument[0]));
+			
+			IDissimilarityStrategy distanceStrategy = new TFIDFCosineDissimilarityStrategy(docsCollection);
+			IProximityStrategy proximityStrategy = new SingleLinkProximityStrategy(distanceStrategy);
+			
+			AgglomerativeDocumentClusterer clusterer = new AgglomerativeDocumentClusterer(proximityStrategy);
+			
+			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
+
+
+			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2);
 		}
-		
-		/* CLUSTERING */
-		
-		System.out.println("\n\n*******************\n\nCLUSTERING\n\n");
-		
-		IDocumentCollection docsCollection;
-		List<IDocument> docsList = new ArrayList<IDocument>();
-		for (Entry<Atto, IDocument> entry : documents)
-		{
-			docsList.add(entry.getValue());
-		}
-		docsCollection = new DocumentCollection(docsList.toArray(new IDocument[0]));
-		
-		IDissimilarityStrategy distanceStrategy = new TFIDFCosineDissimilarityStrategy(docsCollection);
-		IProximityStrategy proximityStrategy = new SingleLinkProximityStrategy(distanceStrategy);
-		
-		AgglomerativeDocumentClusterer clusterer = new AgglomerativeDocumentClusterer(proximityStrategy);
-		
-		Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
-		
-		System.out.println(dendrogram);
 	}
 }

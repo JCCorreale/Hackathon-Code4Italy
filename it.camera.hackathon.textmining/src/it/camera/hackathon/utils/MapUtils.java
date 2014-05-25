@@ -30,25 +30,45 @@ public final class MapUtils
 		}
 	}
 	
-	public static Map<String, Integer> entryListToMap(List<Entry<String, Integer>> list)
+	public static <TK, TV> Map<TK, TV> entryListToMap(List<Entry<TK, TV>> list)
 	{
-		Map<String, Integer> map = new HashMap<String, Integer>();
-		for (Entry<String, Integer> entry : list)
+		Map<TK, TV> map = new HashMap<TK, TV>();
+		for (Entry<TK, TV> entry : list)
 		{
 			map.put(entry.getKey(), entry.getValue());
 		}
 		return map;
 	}
 	
-	public static List<Entry<String, Integer>> mapToEntryList(Map<String, Integer> map)
+//	public static Map<String, Integer> entryListToMap(List<Entry<String, Integer>> list)
+//	{
+//		Map<String, Integer> map = new HashMap<String, Integer>();
+//		for (Entry<String, Integer> entry : list)
+//		{
+//			map.put(entry.getKey(), entry.getValue());
+//		}
+//		return map;
+//	}
+	
+	public static <TK, TV> List<Entry<TK, TV>> mapToEntryList(Map<TK, TV> map)
 	{
-		List<Entry<String, Integer>> list = new ArrayList<Entry<String, Integer>>();
-		for (String key : map.keySet())
+		List<Entry<TK, TV>> list = new ArrayList<Entry<TK, TV>>();
+		for (TK key : map.keySet())
 		{
-			list.add(new AbstractMap.SimpleEntry<String, Integer>(key, map.get(key)));
+			list.add(new AbstractMap.SimpleEntry<TK, TV>(key, map.get(key)));
 		}
 		return list;
 	}
+	
+//	public static List<Entry<String, Integer>> mapToEntryList(Map<String, Integer> map)
+//	{
+//		List<Entry<String, Integer>> list = new ArrayList<Entry<String, Integer>>();
+//		for (String key : map.keySet())
+//		{
+//			list.add(new AbstractMap.SimpleEntry<String, Integer>(key, map.get(key)));
+//		}
+//		return list;
+//	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Map sortMap(Map unsortedMap, final boolean ascending) 
