@@ -71,19 +71,27 @@ public class SymmetricMatrix
 	private int[] getRowsToSkip(int[] deletedRows)
 	{
 		int[] rowsToSkip = new int[deletedRows.length];
+		// initializes the array to a non-valid value
+		for (int i = 0; i < rowsToSkip.length; i++)
+			rowsToSkip[i] = -1;
 		int index = 0;
-		if (contains(deletedRows, 0))
+		// 0 but not 1 -> skip 0
+		if (contains(deletedRows, 0) && !contains(deletedRows, 1))
 		{
 			rowsToSkip[index] = 0;
 			index++;
 		}
-		if (contains(deletedRows, 1) && !contains(rowsToSkip, 0))
+		// 1 but not 0 -> skip 0
+		if (contains(deletedRows, 1) && !contains(deletedRows, 0))
 		{
 			rowsToSkip[index] = 0;
 			index++;
 		}
-		if (contains(deletedRows, 1))
+		// 1 and 0 -> skip 0 and 1
+		if (contains(deletedRows, 0) && contains(deletedRows, 1))
 		{
+			rowsToSkip[index] = 0;
+			index++;
 			rowsToSkip[index] = 1;
 			index++;
 		}
