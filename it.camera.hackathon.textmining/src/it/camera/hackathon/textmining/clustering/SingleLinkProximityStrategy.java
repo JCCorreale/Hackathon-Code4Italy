@@ -7,12 +7,12 @@ package it.camera.hackathon.textmining.clustering;
  */
 public class SingleLinkProximityStrategy extends BaseProxymityStrategy {
 
-	public SingleLinkProximityStrategy(IDistanceStrategy distanceStrategy) {
+	public SingleLinkProximityStrategy(IDissimilarityStrategy distanceStrategy) {
 		super(distanceStrategy);
 	}
 
 	@Override
-	public float getDistance(ICluster c1, ICluster c2) 
+	public float getDissimilarity(ICluster c1, ICluster c2) 
 	{
 		float minDistance = -1;
 		
@@ -20,7 +20,7 @@ public class SingleLinkProximityStrategy extends BaseProxymityStrategy {
 		{
 			for (IDocument doc2 : c2)
 			{
-				float docsDistance = this.getDistanceStrategy().getDistance(doc1, doc2);
+				float docsDistance = this.getDistanceStrategy().getDissimilarity(doc1, doc2);
 				
 				if (docsDistance < minDistance || minDistance < 0)
 					minDistance = docsDistance;

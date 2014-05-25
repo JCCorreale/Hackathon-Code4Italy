@@ -2,13 +2,13 @@ package it.camera.hackathon.textmining.clustering;
 
 public abstract class BaseProxymityStrategy implements IProximityStrategy
 {
-	private IDistanceStrategy distanceStrategy;
+	private IDissimilarityStrategy distanceStrategy;
 	
-	public BaseProxymityStrategy(IDistanceStrategy distanceStrategy) {
+	public BaseProxymityStrategy(IDissimilarityStrategy distanceStrategy) {
 		this.distanceStrategy = distanceStrategy;
 	}
 	
-	public IDistanceStrategy getDistanceStrategy()
+	public IDissimilarityStrategy getDistanceStrategy()
 	{
 		return this.distanceStrategy;
 	}

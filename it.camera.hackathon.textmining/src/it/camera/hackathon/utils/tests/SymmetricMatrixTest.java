@@ -140,4 +140,119 @@ public class SymmetricMatrixTest {
 		
 		System.out.println("******************************\n\nAfter a row is added:\n\n" + m);
 	}
+	
+	@Test
+	public void testRemoveRow0()
+	{
+		SymmetricMatrix m = new SymmetricMatrix(3);
+		
+		m.fill(new float[] {
+				10,
+				20, 30
+		});
+
+		System.out.println("Before:\n\n" + m);
+		
+		m.remove(0);
+		
+		System.out.println("After row 0 is removed:\n\n" + m);
+		
+		m = new SymmetricMatrix(6);
+		
+		m.fill(new float[] {
+				662,
+				877, 295,
+				255, 468, 754,
+				412, 268, 564, 219,
+				996, 400, 138, 869, 669
+		});
+	}
+	
+	@Test
+	public void testRemoveRow0And1()
+	{
+		SymmetricMatrix m = new SymmetricMatrix(6);
+		
+		m.fill(new float[] {
+				662,
+				877, 295,
+				255, 468, 754,
+				412, 268, 564, 219,
+				996, 400, 138, 869, 669
+		});
+		
+		System.out.println("Before:\n\n" + m);
+		
+		m.remove(0, 1);
+		
+		System.out.println("\n\nAfter row 0 and 1 are removed:\n\n" + m);
+	}
+	
+	@Test
+	public void testRemoveRow1AndMax()
+	{
+		SymmetricMatrix m = new SymmetricMatrix(6);
+		
+		m.fill(new float[] {
+				662,
+				877, 295,
+				255, 468, 754,
+				412, 268, 564, 219,
+				996, 400, 138, 869, 669
+		});
+		
+		System.out.println("Before:\n\n" + m);
+		
+		m.remove(1, 5);
+		
+		System.out.println("\n\nAfter row 1 and 5 are removed:\n\n" + m);
+	}
+	
+	private static SymmetricMatrix getCitiesExampleMatrix()
+	{
+		SymmetricMatrix m = new SymmetricMatrix(6);
+		
+		m.fill(new float[] {
+				662,
+				877, 295,
+				255, 468, 754,
+				412, 268, 564, 219,
+				996, 400, 138, 869, 669
+		});
+		
+		return m;
+	}
+	
+	@Test
+	public void testRemoveAllCombinations()
+	{
+		SymmetricMatrix m;
+		
+		for (int i = 0; i < 6; i++)
+		{
+			for (int j = 0; j < 6; j++)
+			{
+				if (i != j)
+				{
+					System.out.println("\n\n*******************\nRemoving rows " + i + " and " + j + "\n");
+					try 
+					{
+						m = getCitiesExampleMatrix();
+						System.out.println("Before removing " + i + " and " + j + "\n" + m + "\n");
+						
+						// TODO DEBUG
+						if (i == 1 && j == 2)
+							System.out.println("Stopped at " + i + "," + j + "\n");
+						
+						m.remove(i, j);
+						System.out.println("After removing " + i + " and " + j + "\n" + m + "\n");
+					}
+					catch (Exception e) {
+						System.err.println("Exception throw while removing rows " + i + " and " + j + "\n");
+						fail();
+					}
+				}
+			}
+		}
+	}
 }

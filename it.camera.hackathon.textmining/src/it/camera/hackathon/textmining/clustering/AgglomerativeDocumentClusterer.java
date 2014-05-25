@@ -42,7 +42,7 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 			{
 				if (!c1.equals(c2))
 				{
-					matrix.setClustersDistance(c1, c2, this.proximityStrategy.getDistance(c1, c2));
+					matrix.setClustersDistance(c1, c2, this.proximityStrategy.getDissimilarity(c1, c2));
 				}
 			}
 		}
@@ -69,42 +69,42 @@ public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer imple
 		return new Cluster(documents.toArray(new IDocument[0]));
 	}
 	
-	private ICluster mergeCluster(ProximityMatrix m, ICluster c1, ICluster c2)
-	{
-		// la matrice di prossimità si aggiorna sostituendo i due cluster con un nuovo cluster
-		
-		// stores distances between the given clusters and each other clusters
-		
-		Map<ICluster, Float> c1Distances = new HashMap<ICluster, Float>();
-		Map<ICluster, Float> c2Distances = new HashMap<ICluster, Float>();
-		
-		for (ICluster cluster : m.getClusters())
-		{
-			c1Distances.put(cluster, m.getClustersDistance(c1, cluster));
-			c2Distances.put(cluster, m.getClustersDistance(c2, cluster));
-		}
-		
-		// removes the clusters from the matrix
-		m.removeClusters(c1, c2);
-		
-		// generates the merged cluster and adds it to the matrix
-		ICluster mergedCluster = this.getMergedCluster(c1, c2);
-		m.addCluster(mergedCluster);
-		
-		// le distanze da tutti gli altri cluster sono date dalla minima delle distanze relative ai cluster precedenti
-		
-		// updates new cluster's distances
-		for (ICluster cluster : c1Distances.keySet())
-		{
-			float c1Distance = c1Distances.get(cluster);
-			float c2Distance = c2Distances.get(cluster);
-			float distance = c1Distance < c2Distance ? c1Distance : c2Distance;
-			
-			m.setClustersDistance(mergedCluster, c2, distance);
-		}
-		
-		return mergedCluster;
-	}
+//	private ICluster mergeCluster(ProximityMatrix m, ICluster c1, ICluster c2)
+//	{
+//		// la matrice di prossimità si aggiorna sostituendo i due cluster con un nuovo cluster
+//		
+//		// stores distances between the given clusters and each other clusters
+//		
+//		Map<ICluster, Float> c1Distances = new HashMap<ICluster, Float>();
+//		Map<ICluster, Float> c2Distances = new HashMap<ICluster, Float>();
+//		
+//		for (ICluster cluster : m.getClusters())
+//		{
+//			c1Distances.put(cluster, m.getClustersDistance(c1, cluster));
+//			c2Distances.put(cluster, m.getClustersDistance(c2, cluster));
+//		}
+//		
+//		// removes the clusters from the matrix
+//		m.removeClusters(c1, c2);
+//		
+//		// generates the merged cluster and adds it to the matrix
+//		ICluster mergedCluster = this.getMergedCluster(c1, c2);
+//		m.addCluster(mergedCluster);
+//		
+//		// le distanze da tutti gli altri cluster sono date dalla minima delle distanze relative ai cluster precedenti
+//		
+//		// updates new cluster's distances
+//		for (ICluster cluster : c1Distances.keySet())
+//		{
+//			float c1Distance = c1Distances.get(cluster);
+//			float c2Distance = c2Distances.get(cluster);
+//			float distance = c1Distance < c2Distance ? c1Distance : c2Distance;
+//			
+//			m.setClustersDistance(mergedCluster, c2, distance);
+//		}
+//		
+//		return mergedCluster;
+//	}
 	
 	public Dendrogram getClusteringDendrogram(IDocumentCollection documents)
 	{

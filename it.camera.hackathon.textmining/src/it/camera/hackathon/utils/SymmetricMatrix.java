@@ -56,36 +56,95 @@ public class SymmetricMatrix
 		}
 	}
 
-	private boolean contains(int[] array, int r)
+	private boolean contains(int[] array, int value)
 	{
-		// in case the row/column with index 0 is removed, the corresponding value (-1) should be detected
-		for (int v : array) if (v == r || v == -1) return true; 
+		for (int v : array)
+		{
+			if (v == value)
+			{
+				return true; 
+			}
+		}
 		return false;
 	}
 	
+	private int[] getRowsToSkip(int[] deletedRows)
+	{
+		int[] rowsToSkip = new int[deletedRows.length];
+		// initializes the array to a non-valid value
+		for (int i = 0; i < rowsToSkip.length; i++)
+			rowsToSkip[i] = -1;
+		int index = 0;
+		// 0 but not 1 -> skip 0
+		if (contains(deletedRows, 0) && !contains(deletedRows, 1))
+		{
+			rowsToSkip[index] = 0;
+			index++;
+		}
+		// 1 but not 0 -> skip 0
+		if (contains(deletedRows, 1) && !contains(deletedRows, 0))
+		{
+			rowsToSkip[index] = 0;
+			index++;
+		}
+		// 1 and 0 -> skip 0 and 1
+		if (contains(deletedRows, 0) && contains(deletedRows, 1))
+		{
+			rowsToSkip[index] = 0;
+			index++;
+			rowsToSkip[index] = 1;
+			index++;
+		}
+		while (index < rowsToSkip.length)
+		{
+			for (int deleted : deletedRows)
+			{
+				if (deleted != 0 && deleted != 1)
+				{
+					rowsToSkip[index] = deleted - 1;
+					index++;
+				}
+			}
+		}
+		
+		return rowsToSkip;
+	}
+	
+//	private boolean skipRow(int[] deletedRows, int currentRow)
+//	{
+//		return 	(currentRow != 0 && contains(deletedRows, currentRow + 1)) || 
+//				(contains(deletedRows, 0) && currentRow == 0) ||
+//				(contains(deletedRows, 1) && currentRow == 0) ||
+//				(contains(deletedRows, 1) && currentRow == 1);
+//	}
+	
 	public void remove(int... rows)
 	{
+		// TODO Handle case with two identical indexes
+		
 		// deletes the rows from the matrix
 		float[][] newMatrixRows = new float[this.matrixRows.length - rows.length][];
 		int newRowIndex = 0;
 		
-		// normalizes rows indexes
-		for (int j = 0; j < rows.length; j++)
-		{
-			rows[j] = rows[j] - 1;
-		}
+//		// normalizes rows indexes
+//		for (int j = 0; j < rows.length; j++)
+//		{
+//			rows[j] = rows[j] - 1;
+//		}
+		
+		int[] rowsToSkip = this.getRowsToSkip(rows);
 		
 		for (int r = 0; r < this.matrixRows.length; r++)
 		{
 			// skips deleted rows
-			if (contains(rows, r)) continue;
+			if (contains(rowsToSkip, r)) continue;
 			
 			List<Float> rowValues = new ArrayList<Float>();
 			// scans the original row, skipping values corresponding to deleted rows/columns
 			for (int c = 0; c < this.matrixRows[r].length; c++)
 			{
 				// the rows vector is normalized for ROWS
-				if (contains(rows, c - 1)) continue;
+				if (contains(rows, c)) continue;
 				else rowValues.add(this.matrixRows[r][c]);
 			}
 			// fills the new row
@@ -95,6 +154,13 @@ public class SymmetricMatrix
 				newMatrixRows[newRowIndex][i] = rowValues.get(i);
 			}
 			newRowIndex++;
+		}
+		
+		// TODO DEBUG
+		for (float[] row : newMatrixRows)
+		{
+			if (row == null)
+				throw new IllegalStateException();
 		}
 		
 		this.matrixRows = newMatrixRows;

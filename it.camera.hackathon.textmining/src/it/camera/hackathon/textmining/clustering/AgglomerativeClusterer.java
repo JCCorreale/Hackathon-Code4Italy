@@ -67,7 +67,7 @@ public abstract class AgglomerativeClusterer {
 			// 2. cerca la coppia di cluster più vicini (single link - distanza punti più vicini)
 			ICluster[] nearestClusters = m.getNearestClusters();
 			// TODO DEBUG
-			float dist = m.getClustersDistance(nearestClusters[0], nearestClusters[1]);
+			//float dist = m.getClustersDistance(nearestClusters[0], nearestClusters[1]);
 			// 3. merge dei cluster trovati
 			ICluster mergedCluster = this.mergeCluster(m, nearestClusters[0], nearestClusters[1]);
 			
