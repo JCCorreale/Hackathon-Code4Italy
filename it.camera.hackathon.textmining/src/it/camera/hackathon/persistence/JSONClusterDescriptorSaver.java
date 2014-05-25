@@ -1,5 +1,7 @@
 package it.camera.hackathon.persistence;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.Date;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -11,8 +13,12 @@ import org.json.JSONObject;
 import it.camera.hackathon.ClusterDescriptor;
 import it.camera.hackathon.utils.MapUtils;
 
-public class JSONClusterDescriptorSaver implements ISaver<ClusterDescriptor> {
+public class JSONClusterDescriptorSaver extends BaseWriter<ClusterDescriptor> {
 	
+	public JSONClusterDescriptorSaver(Writer writer) {
+		super(writer);
+	}
+
 	public static final String idKey = "id";
 	public static final String attoKey = "atti";
 	public static final String termsKey = "terms";
@@ -55,7 +61,8 @@ public class JSONClusterDescriptorSaver implements ISaver<ClusterDescriptor> {
 		
 		for (Entry<Date, Integer> entry : sortedOccurences.entrySet())
 		{
-			array.put(getValuePairJSONArray(counter, sortedOccurences.get(entry.getValue())));
+			array.put(getValuePairJSONArray(counter, sortedOccurences.get(entry.getKey())));
+			counter++;
 		}
 		
 		return array;

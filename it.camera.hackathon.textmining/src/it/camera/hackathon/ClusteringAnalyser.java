@@ -98,6 +98,7 @@ public class ClusteringAnalyser {
 			// TODO
 			
 			descriptors.add(descr);
+			descrId++;
 		}
 		
 		return descriptors;

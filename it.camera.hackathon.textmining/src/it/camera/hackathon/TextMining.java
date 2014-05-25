@@ -3,13 +3,11 @@ package it.camera.hackathon;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import it.camera.hackathon.datasource.IDataSource;
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.sparql.LawContentProvider;
 import it.camera.hackathon.datasource.sparql.VirtuosoRawResultQueryEngine;
@@ -17,7 +15,6 @@ import it.camera.hackathon.datasource.sparql.query.LimitedQuery.LimitedQueryConf
 import it.camera.hackathon.parsing.StringReceiver;
 import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.IWordCountResult;
-import it.camera.hackathon.textmining.TextFileDataSource;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
@@ -47,10 +44,10 @@ public class TextMining extends ITextMining
 		
 		for (Entry<Atto, String> attoContent : attiContent)
 		{
-			Calendar cal = Calendar.getInstance();
-			cal.set(2013, Calendar.JANUARY, 1);
-			if (attoContent.getKey().getRevision().before(cal.getTime()))
-				continue;
+//			Calendar cal = Calendar.getInstance();
+//			cal.set(2013, Calendar.JANUARY, 1);
+//			if (attoContent.getKey().getRevision().before(cal.getTime()))
+//				continue;
 			
 			System.out.println("************************************************");
 //			System.out.println("Document " +  filename);
@@ -147,7 +144,9 @@ public class TextMining extends ITextMining
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser();
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)));
 			
-			// TODO Save clusters descriptors...
+			// Saves clusters descriptors...
+			JSONClusterDescriptorsPersister.save(descriptors, "output/json/clusters");
+
 			System.out.println("Clustering completed.");
 		}
 	}

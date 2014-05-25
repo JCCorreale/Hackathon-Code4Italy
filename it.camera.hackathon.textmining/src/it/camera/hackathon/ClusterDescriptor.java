@@ -25,4 +25,10 @@ public class ClusterDescriptor {
 	{
 		return this.terms.get(0);
 	}
+	
+	@Override
+	public String toString()
+	{
+		return this.getLabel();
+	}
 }
