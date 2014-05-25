@@ -29,6 +29,6 @@ public class Cluster implements ICluster
 	@Override
 	public String toString()
 	{
-		return this.documents.toString();
+		return this.documents.toString().substring(0, 15); // TODO
 	}
 }
