@@ -68,12 +68,47 @@ public class SymmetricMatrix
 		return false;
 	}
 	
-	private boolean skipRow(int[] deletedRows, int currentRow)
+	private int[] getRowsToSkip(int[] deletedRows)
 	{
-		return 	contains(deletedRows, currentRow + 1) || 
-				(contains(deletedRows, 0) && currentRow == 0) ||
-				(contains(deletedRows, 1) && currentRow == 1);
+		int[] rowsToSkip = new int[deletedRows.length];
+		int index = 0;
+		if (contains(deletedRows, 0))
+		{
+			rowsToSkip[index] = 0;
+			index++;
+		}
+		if (contains(deletedRows, 1) && !contains(rowsToSkip, 0))
+		{
+			rowsToSkip[index] = 0;
+			index++;
+		}
+		if (contains(deletedRows, 1))
+		{
+			rowsToSkip[index] = 1;
+			index++;
+		}
+		while (index < rowsToSkip.length)
+		{
+			for (int deleted : deletedRows)
+			{
+				if (deleted != 0 && deleted != 1)
+				{
+					rowsToSkip[index] = deleted - 1;
+					index++;
+				}
+			}
+		}
+		
+		return rowsToSkip;
 	}
+	
+//	private boolean skipRow(int[] deletedRows, int currentRow)
+//	{
+//		return 	(currentRow != 0 && contains(deletedRows, currentRow + 1)) || 
+//				(contains(deletedRows, 0) && currentRow == 0) ||
+//				(contains(deletedRows, 1) && currentRow == 0) ||
+//				(contains(deletedRows, 1) && currentRow == 1);
+//	}
 	
 	public void remove(int... rows)
 	{
@@ -89,10 +124,12 @@ public class SymmetricMatrix
 //			rows[j] = rows[j] - 1;
 //		}
 		
+		int[] rowsToSkip = this.getRowsToSkip(rows);
+		
 		for (int r = 0; r < this.matrixRows.length; r++)
 		{
 			// skips deleted rows
-			if (skipRow(rows, r)) continue;
+			if (contains(rowsToSkip, r)) continue;
 			
 			List<Float> rowValues = new ArrayList<Float>();
 			// scans the original row, skipping values corresponding to deleted rows/columns
@@ -109,6 +146,13 @@ public class SymmetricMatrix
 				newMatrixRows[newRowIndex][i] = rowValues.get(i);
 			}
 			newRowIndex++;
+		}
+		
+		// TODO DEBUG
+		for (float[] row : newMatrixRows)
+		{
+			if (row == null)
+				throw new IllegalStateException();
 		}
 		
 		this.matrixRows = newMatrixRows;
