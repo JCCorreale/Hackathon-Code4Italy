@@ -43,7 +43,10 @@ public class JSONClusterDescriptorsPersister {
 				JSONObject seriesObject = new JSONObject();
 				seriesObject.put(seriesKey, JSONClusterDescriptorSaver.getSeriesJSONObject(cluster));
 				seriesObject.put(xAxisLabelsKey, JSONClusterDescriptorSaver.getXAxisLabelsJSONArray());
-				seriesObject.write(new FileWriter(path + File.separator + cluster.id + "-graph.json"));
+				FileWriter fw;
+				seriesObject.write(fw = new FileWriter(path + File.separator + cluster.id + "-graph.json"));
+				fw.flush();
+				fw.close();
 			}
 		}
 		catch (JSONException e) {

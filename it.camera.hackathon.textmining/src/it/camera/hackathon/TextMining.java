@@ -139,7 +139,7 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
-			IClustering clustering = dendrogram.getClustering(); // TODO Height
+			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2); // TODO Height
 			
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser();
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)));
