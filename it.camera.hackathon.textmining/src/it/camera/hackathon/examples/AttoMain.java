@@ -31,5 +31,4 @@ public class AttoMain
 		for(Entry<Atto, List<ITerm>> e : resMap.entrySet())
 			System.out.println(e.getKey().getIRI() + " - " + e.getValue());
 	}
-
 }

@@ -71,7 +71,7 @@ public class TextMining extends ITextMining
 			System.out.println("Removing HTML tags...");
 			String plainText = HtmlRemover.text(html);
 			
-			// counts the occurence
+			// counts the occurrences
 			System.out.println("Counting word occurences (may take a while!)... [" + plainText.length() + " characters]");
 			TextMiningWordCounter counter = buildWordCounter();
 			IWordCountResult result = counter.parse(plainText);
@@ -99,7 +99,7 @@ public class TextMining extends ITextMining
 			
 			System.out.println("Document " + label + " done.\n\n");
 			
-			// prints some stat about the document
+			// prints some stats about the document
 //			System.out.println("\n\nFrequency by term:\n");
 //			Utils.printMap(document.getFrequencyByTerm());
 //			System.out.println("\n\nWeighted frequency by term:\n");
@@ -122,8 +122,7 @@ public class TextMining extends ITextMining
 //			System.out.println(entry.getKey().toString() + " " + terms.toString());
 //		}
 		
-		// avoids overwriting atti-terms.json if clustering is performed (different top words amount considered)
-		if (!doClustering)
+		if (writeTopTerms)
 		{
 			JSONAttiTopWordsPersister.saveAsSingleFile(topWordsResult, "output/json/atti-terms.json");
 		}
@@ -149,13 +148,14 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
-			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2); // TODO Tune height
+			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
-			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxTerms);
-			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection);
+			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxClusterTerms);
+			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection, topWordsResult);
 			
 			// Saves clusters descriptors...
-			JSONClusterDescriptorsPersister.save(descriptors, "output/json/clusters");
+			if (writeClustering)
+				JSONClusterDescriptorsPersister.save(descriptors, "output/json/clusters");
 			
 			// Shows some info about the clustering
 			int docsCount = 0;
@@ -175,7 +175,7 @@ public class TextMining extends ITextMining
 				for (Atto atto : descr.atti)
 				{
 					System.out.println("\tAtto: " + atto.getIRI());
-					System.out.println("\t\t" +  topWordsResult.get(atto));;
+					System.out.println("\t\t" +  topWordsResult.get(atto));
 				}
 			}
 			
