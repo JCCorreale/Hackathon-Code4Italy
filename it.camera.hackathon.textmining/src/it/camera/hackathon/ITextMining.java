@@ -18,15 +18,86 @@ public abstract class ITextMining
 	/**
 	 * Larger values provide a better clustering but worse top words, smaller values provide better top words but a worse clustering.
 	 */
-	protected static int topWordsCount = 20;
+	protected static int topWordsCount = 2000;
 	protected static int minWordLength = 3;
 	protected static String delimiters = " ',;.:/()[]<>";
 	protected static String itaStopwordsPath = "stopwords/stopwords_ita";
 	protected static String domainStopwordsPath = "stopwords/stopwords_domain";
 	protected static float minTfIdf = -1.0f;
 	protected static int maxTerms = 5;
-	protected static boolean doClustering = false;
-	protected static int downloadLimit = 1000;
+	protected static boolean doClustering = true;
+	protected static int downloadLimit = 10;
+	protected static boolean writeTopTerms = false;
+	protected static boolean writeClustering = false;
+	
+	static
+	{
+//		setTopWordsConfig();
+//		setClusteringConfig();
+//		setTopWordsTestConfig();
+		setClusteringTestConfig();
+	}
+	
+	private static void setTopWordsConfig()
+	{
+		topWordsCount = 20;
+		minWordLength = 3;
+		delimiters = " ',;.:/()[]<>";
+		itaStopwordsPath = "stopwords/stopwords_ita";
+		domainStopwordsPath = "stopwords/stopwords_domain";
+		minTfIdf = -1.0f;
+		maxTerms = 5;
+		doClustering = true;
+		downloadLimit = 1000;
+		writeTopTerms = true;
+		writeClustering = false;
+	}
+	
+	private static void setClusteringConfig()
+	{
+		topWordsCount = 2000;
+		minWordLength = 3;
+		delimiters = " ',;.:/()[]<>";
+		itaStopwordsPath = "stopwords/stopwords_ita";
+		domainStopwordsPath = "stopwords/stopwords_domain";
+		minTfIdf = -1.0f;
+		maxTerms = 5;
+		doClustering = true;
+		downloadLimit = 1000;
+		writeTopTerms = false;
+		writeClustering = true;
+	}
+	
+	private static void setTopWordsTestConfig()
+	{
+		topWordsCount = 20;
+		minWordLength = 3;
+		delimiters = " ',;.:/()[]<>";
+		itaStopwordsPath = "stopwords/stopwords_ita";
+		domainStopwordsPath = "stopwords/stopwords_domain";
+		minTfIdf = -1.0f;
+		maxTerms = 5;
+		doClustering = true;
+		downloadLimit = 10;
+		writeTopTerms = false;
+		writeClustering = false;
+	}
+	
+	private static void setClusteringTestConfig()
+	{
+		topWordsCount = 2000;
+		minWordLength = 3;
+		delimiters = " ',;.:/()[]<>";
+		itaStopwordsPath = "stopwords/stopwords_ita";
+		domainStopwordsPath = "stopwords/stopwords_domain";
+		minTfIdf = -1.0f;
+		maxTerms = 5;
+		doClustering = true;
+		downloadLimit = 10;
+		writeTopTerms = false;
+		writeClustering = false;
+	}
+	
 
 	public ITextMining() 
 	{
@@ -35,7 +106,7 @@ public abstract class ITextMining
 	
 	protected static AttoDocumentAnalyser getDocumentsAnalyser() 
 	{
-		return new AttoDocumentAnalyser(minTfIdf, maxTerms);
+		return new AttoDocumentAnalyser(minTfIdf/*, maxTerms*/);
 	}
 
 	protected static ITermsDisambiguator getTermsDisambiguator() 

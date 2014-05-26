@@ -48,542 +48,11 @@ Receiving Law(9): http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
   Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012860
   Content: downloading
   Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(10): http://dati.camera.it/ocd/attocamera.rdf/ac17_1710
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011390
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(11): http://dati.camera.it/ocd/attocamera.rdf/ac17_1865
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014750
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(12): http://dati.camera.it/ocd/attocamera.rdf/ac17_1866
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014750
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(13): http://dati.camera.it/ocd/attocamera.rdf/ac17_1920
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016420
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(14): http://dati.camera.it/ocd/attocamera.rdf/ac17_1921
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016080
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(15): http://dati.camera.it/ocd/attocamera.rdf/ac17_1941
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015330
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(16): http://dati.camera.it/ocd/attocamera.rdf/ac17_2012
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018320
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(17): http://dati.camera.it/ocd/attocamera.rdf/ac17_2027
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016820
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(18): http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015990
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(19): http://dati.camera.it/ocd/attocamera.rdf/ac17_2096
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017040
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(20): http://dati.camera.it/ocd/attocamera.rdf/ac17_2149
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017680
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(21): http://dati.camera.it/ocd/attocamera.rdf/ac17_2157
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018300
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(22): http://dati.camera.it/ocd/attocamera.rdf/ac17_2162
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0019540
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(23): http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017410
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(24): http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018590
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(25): http://dati.camera.it/ocd/attocamera.rdf/ac17_1001
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005230
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(26): http://dati.camera.it/ocd/attocamera.rdf/ac17_1012
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005440
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(27): http://dati.camera.it/ocd/attocamera.rdf/ac17_1139
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0006830
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(28): http://dati.camera.it/ocd/attocamera.rdf/ac17_1197
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005560
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(29): http://dati.camera.it/ocd/attocamera.rdf/ac17_1247
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005840
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(30): http://dati.camera.it/ocd/attocamera.rdf/ac17_1248
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007541
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(31): http://dati.camera.it/ocd/attocamera.rdf/ac17_1309
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012430
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(32): http://dati.camera.it/ocd/attocamera.rdf/ac17_1310
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007890
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(33): http://dati.camera.it/ocd/attocamera.rdf/ac17_1326
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008200
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(34): http://dati.camera.it/ocd/attocamera.rdf/ac17_1327
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008210
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(35): http://dati.camera.it/ocd/attocamera.rdf/ac17_1328
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007040
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(36): http://dati.camera.it/ocd/attocamera.rdf/ac17_1363
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007491
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(37): http://dati.camera.it/ocd/attocamera.rdf/ac17_1417
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008520
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(38): http://dati.camera.it/ocd/attocamera.rdf/ac17_1458
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008820
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(39): http://dati.camera.it/ocd/attocamera.rdf/ac17_1544
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0009040
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(40): http://dati.camera.it/ocd/attocamera.rdf/ac17_1572
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010490
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(41): http://dati.camera.it/ocd/attocamera.rdf/ac17_1573
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010490
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(42): http://dati.camera.it/ocd/attocamera.rdf/ac17_1670
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012140
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(43): http://dati.camera.it/ocd/attocamera.rdf/ac17_1885
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015050
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(44): http://dati.camera.it/ocd/attocamera.rdf/ac17_204
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007060
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(45): http://dati.camera.it/ocd/attocamera.rdf/ac17_282
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010160
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(46): http://dati.camera.it/ocd/attocamera.rdf/ac17_331
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0001000
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(47): http://dati.camera.it/ocd/attocamera.rdf/ac17_544
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004680
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(48): http://dati.camera.it/ocd/attocamera.rdf/ac17_67
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0006820
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(49): http://dati.camera.it/ocd/attocamera.rdf/ac17_676
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0002880
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(50): http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004630
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(51): http://dati.camera.it/ocd/attocamera.rdf/ac17_734
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0001320
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(52): http://dati.camera.it/ocd/attocamera.rdf/ac17_841
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0002870
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(53): http://dati.camera.it/ocd/attocamera.rdf/ac17_875
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004720
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(54): http://dati.camera.it/ocd/attocamera.rdf/ac17_968
-  Final revision: 31/12/2013
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0003640
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(55): http://dati.camera.it/ocd/attocamera.rdf/ac17_2213
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018630
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-Receiving Law(56): http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B
-  Final revision: 30/12/2014
-  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0019370
-  Content: downloading
-  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
-Removing HTML tags...
-Counting word occurences (may take a while!)... [322514 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1574 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
-Removing HTML tags...
-Counting word occurences (may take a while!)... [142412 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1628 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1573
-Removing HTML tags...
-Counting word occurences (may take a while!)... [42952 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1573 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B
-Removing HTML tags...
-Counting word occurences (may take a while!)... [3304 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B
-Removing HTML tags...
-Counting word occurences (may take a while!)... [19003 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1572
-Removing HTML tags...
-Counting word occurences (may take a while!)... [42952 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1572 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_734
-Removing HTML tags...
-Counting word occurences (may take a while!)... [22032 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_734 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2096
-Removing HTML tags...
-Counting word occurences (may take a while!)... [2672 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2096 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_331
-Removing HTML tags...
-Counting word occurences (may take a while!)... [65749 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_331 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1670
-Removing HTML tags...
-Counting word occurences (may take a while!)... [62243 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1670 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B
-Removing HTML tags...
-Counting word occurences (may take a while!)... [7803 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2213
-Removing HTML tags...
-Counting word occurences (may take a while!)... [3833 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2213 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2149
-Removing HTML tags...
-Counting word occurences (may take a while!)... [38697 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2149 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_67
-Removing HTML tags...
-Counting word occurences (may take a while!)... [23626 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_67 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1417
-Removing HTML tags...
-Counting word occurences (may take a while!)... [59905 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1417 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1309
-Removing HTML tags...
-Counting word occurences (may take a while!)... [20452 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1309 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
-Removing HTML tags...
-Counting word occurences (may take a while!)... [327898 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1682 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1866
-Removing HTML tags...
-Counting word occurences (may take a while!)... [948405 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1866 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B
-Removing HTML tags...
-Counting word occurences (may take a while!)... [12997 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1865
-Removing HTML tags...
-Counting word occurences (may take a while!)... [948405 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1865 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B
-Removing HTML tags...
-Counting word occurences (may take a while!)... [22071 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1710
-Removing HTML tags...
-Counting word occurences (may take a while!)... [2282 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1710 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1012
-Removing HTML tags...
-Counting word occurences (may take a while!)... [8541 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1012 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2157
-Removing HTML tags...
-Counting word occurences (may take a while!)... [9143 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2157 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2012
-Removing HTML tags...
-Counting word occurences (may take a while!)... [80065 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2012 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1920
-Removing HTML tags...
-Counting word occurences (may take a while!)... [450254 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1920 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1197
-Removing HTML tags...
-Counting word occurences (may take a while!)... [58842 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1197 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1921
-Removing HTML tags...
-Counting word occurences (may take a while!)... [52109 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1921 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_968
-Removing HTML tags...
-Counting word occurences (may take a while!)... [16731 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_968 done.
-
-
 ************************************************
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1541
 Removing HTML tags...
 Counting word occurences (may take a while!)... [42277 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1541 done.
@@ -593,7 +62,7 @@ Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1541 done.
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1542
 Removing HTML tags...
 Counting word occurences (may take a while!)... [123794 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542 done.
@@ -603,8 +72,9 @@ Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542 done.
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1540
 Removing HTML tags...
 Counting word occurences (may take a while!)... [111275 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
+
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1540 done.
 
@@ -613,249 +83,105 @@ Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1540 done.
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B
 Removing HTML tags...
 Counting word occurences (may take a while!)... [237969 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
+
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
+Removing HTML tags...
+Counting word occurences (may take a while!)... [322514 characters]
+Retrieving the first 2000 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1574 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
+Removing HTML tags...
+Counting word occurences (may take a while!)... [142412 characters]
+Retrieving the first 2000 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1628 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
+Removing HTML tags...
+Counting word occurences (may take a while!)... [327898 characters]
+Retrieving the first 2000 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1682 done.
 
 
 ************************************************
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
 Removing HTML tags...
 Counting word occurences (may take a while!)... [75401 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1690 done.
 
 
 ************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1248
-Removing HTML tags...
-Counting word occurences (may take a while!)... [973575 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1248 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1247
-Removing HTML tags...
-Counting word occurences (may take a while!)... [4522 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1247 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1544
-Removing HTML tags...
-Counting word occurences (may take a while!)... [78466 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1544 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1458
-Removing HTML tags...
-Counting word occurences (may take a while!)... [60415 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1458 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1310
-Removing HTML tags...
-Counting word occurences (may take a while!)... [183879 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1310 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1001
-Removing HTML tags...
-Counting word occurences (may take a while!)... [18842 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1001 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2027
-Removing HTML tags...
-Counting word occurences (may take a while!)... [61517 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2027 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2162
-Removing HTML tags...
-Counting word occurences (may take a while!)... [161566 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2162 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_544
-Removing HTML tags...
-Counting word occurences (may take a while!)... [9578 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_544 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_875
-Removing HTML tags...
-Counting word occurences (may take a while!)... [10265 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_875 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_841
-Removing HTML tags...
-Counting word occurences (may take a while!)... [23428 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_841 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1139
-Removing HTML tags...
-Counting word occurences (may take a while!)... [67825 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1139 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1885
-Removing HTML tags...
-Counting word occurences (may take a while!)... [179840 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1885 done.
-
-
-************************************************
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B
 Removing HTML tags...
 Counting word occurences (may take a while!)... [2652 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B done.
 
 
 ************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1328
-Removing HTML tags...
-Counting word occurences (may take a while!)... [11412 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1328 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1363
-Removing HTML tags...
-Counting word occurences (may take a while!)... [9552 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1363 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_282
-Removing HTML tags...
-Counting word occurences (may take a while!)... [106412 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_282 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_676
-Removing HTML tags...
-Counting word occurences (may take a while!)... [322073 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_676 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1327
-Removing HTML tags...
-Counting word occurences (may take a while!)... [36316 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1327 done.
-
-
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_204
-Removing HTML tags...
-Counting word occurences (may take a while!)... [4674 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_204 done.
-
-
-************************************************
 Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44
 Removing HTML tags...
 Counting word occurences (may take a while!)... [11485 characters]
-Retrieving the first 20 top words...
+Retrieving the first 2000 top words...
 Performing term disambiguation
+
 Creating document model
 Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44 done.
 
 
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1326
-Removing HTML tags...
-Counting word occurences (may take a while!)... [49343 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1326 done.
 
 
-************************************************
-Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1941
-Removing HTML tags...
-Counting word occurences (may take a while!)... [40600 characters]
-Retrieving the first 20 top words...
-Performing term disambiguation
-Creating document model
-Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1941 done.
+*******************
+
+CLUSTERING
 
 
+Merged clusters (distance = 0.85523164):
+[{mercati=14, autonome=32, specifiche=24, neretto=2, alloggi=2, partizioni=2, chilometri=12, diffuse=2, ISTAT=6, trenta=6, decimali=2, XIV=2, vengono=2, LORENZIN=2, over=3, suddetti=6, detiene=2, Decorsi=2, sanitario=49, Aquila=3, autostradali=3, componenti=25, temporali=5, DISEGNO=14, chiunque=3, sviluppo=126, Dipartimento=48, conferimento=63, concessa=8, Gazzetta=16, parlamentari=4, talune=2, magistratura=8, imprese=38, limiti=54, afferenti=2, esperti=6, nonché=95, intercorrente=2, trasferito=38, concessionaria=7, terzi=3, accelerazione=5, SISTRI=36, vigente=73, ottobre=22, benefìci=3, consolare=2, temporanee=3, interministeriale=2, finanziarie=77, operino=6, distanze=10, Speciali=26, derivare=41, FEASR=2, telematico=2, Roma=3, Quadro=6, centottanta=2, CARROZZA=2, flessibile=6, interviene=4, diplomatica=2, essi=3, urgenti=24, comunitaria=2, quantitativamente=2, esse=3, uffici=19, assolve=2, qualsiasi=33, predispongono=2, debbano=4, aeroportuale=8, deroga=113, Art=4, interessate=38, coesione=250, transitoria=4, mediante=40, disaggregata=2, giugno=55, compresi=22, stabilizzazione=16, Difesa=9, risorse=69, SACCOMANNI=2, Nucleo=4, tipologie=4, essa=3, autovetture=13, penultimo=4, transfrontalieri=2, febbraio=28, concluse=2, interpreta=14, pecuniaria=2, tenuto=28, improrogabilmente=2, reclutamento=30, far=3, promuove=5, mantengono=2, graduatorie=36, precari=7, inefficienze=2, dovrebbe=5, periferiche=2, coloro=11, tracciabilità=27, III=7, investimenti=10, Taranto=10, internet=2, novanta=7, ultimi=7, disponibili=33, rifiuti=68, Qualora=14, giudiziaria=12, comunque=39, TRIGILIA=2, ILVA=10, tale=163, notoria=3, esigenze=18, BRAY=2, Agenzia=66, bancaria=2, esistenti=8, pediatri=2, nuove=17, audit=2, CANCELLIERI=3, ipotesi=65, statistico=24, consentire=72, sussiste=4, fonti=5, indisponibilità=3, XII=2, confermati=4, diversi=6, provvede=74, Resta=16, irrogazione=2, soprannumerarie=5, trasmessa=2, aventi=5, dirigenti=29, Ferma=9, mille=2, revisori=4, dotazione=65, rispettivi=23, alimentari=4, intendono=9, Presidenza=48, ORLANDO=2, estremamente=2, Agricoltura=2, urbani=3, pericolosi=30, determinato=236, luglio=87, avvalendosi=13, ARPA=5, spa=10, PARTECIPATE=6, amministrazioni=811, carico=794, ciascun=18, subentrano=2, chirurgia=2, Beneficenza=2, CONSOB=2, regolamentari=3, gas=2, quindici=2, atti=16, salve=47, parametrazione=6, FAVOREVOLE=13, auto=8, ALIA=2, ottimizzare=5, segretariato=2, autentica=6, Sentite=2, risparmi=3, donazione=7, spettante=5, implementazione=2, situazioni=4, avviene=4, appartenenti=19, spesa=211, Rossa=4, razionalizzazione=33, sindacali=10, paternità=2, medesimo=162, previa=33, attuativi=4, Forze=2, dovrebbero=2, ammesso=2, attraverso=30, costituzionali=13, società=903, istituzionali=6, restituite=2, vittime=2, vigenza=4, ricoperta=2, riassorbito=2, comitati=19, attuazione=151, convenzioni=8, triennale=12, intermediazione=5, trova=4, recante=13, riqualificazione=2, maggiori=49, dieci=3, Statte=2, regolamentati=19, aereo=2, producono=6, vuoti=2, europei=33, beneficienza=2, poteri=10, cessano=2, corruzione=5, altresì=18, contemperano=2, agonistica=2, Tavolo=4, annui=28, localizzate=2, esercita=4, alinea=5, maggio=32, mesi=11, Dette=5, LUPI=2, ZANONATO=2, finalità=56, relative=112, Polizia=6, vedano=6, titolari=7, volontario=19, vacanti=10, criminalità=2, computarsi=2, ambientale=29, ricorrano=13, calcolate=5, assorbimento=2, proroghe=46, sperimentale=5, culturali=17, benefici=5, Commissione=78, oneri=69, indipendenti=2, nazionali=10, lavoratori=21, decorrere=37, sovrannumero=2, VII=2, cinquemila=2, servizio=696, curino=2, rilasciata=14, lettere=2, regio=2, prefissati=2, Autorità=44, equiparati=2, iniziali=7, Associazione=2, assunzioni=96, viene=4, perseguimento=22, testuale=9, Anas=2, sequestro=6, gestori=3, funzioni=89, GIROLAMO=2, finanze=82, Corpo=31, vigore=196, interventi=27, sempre=4, evidenziate=2, stanziamenti=10, riorganizzazione=57, trasporti=45, soprannumero=10, rinegoziazione=3, indizione=3, nulli=8, demandano=2, iscritti=11, ampia=2, forestale=10, specialistica=2, concorrono=3, varianti=3, restando=42, anticipate=3, novembre=23, aziendali=7, condizioni=17, mancata=6, vettori=4, turn=4, Comunicato=1, riformulate=2, COMITATO=22, smaltimento=8, riduce=2, egli=2, tutte=8, arredati=2, Capo=21, clausole=11, assumere=84, sostituito=39, sottoscritto=6, consulenze=4, giuridica=2, accantonamento=6, BONINO=2, raccolgono=5, retroattiva=2, pianta=4, EFFICIENTAMENTO=2, taxi=2, ciò=8, articolazioni=5, anzianità=15, masserizie=6, quadriennio=3, sanzioni=14, potrebbe=2, comunali=2, recepimento=2, quali=36, emittenti=8, prioritaria=2, incide=3, procedure=94, Federazione=4, ottenuto=3, elettrocardiogramma=2, firmatarie=2, ripartite=2, scolastico=9, capoverso=4, scientifica=2, intermediari=2, azionarie=4, utenti=6, agosto=108, cessionaria=1, anzidette=1, Sogei=2, fuoco=29, asili=2, ivi=24, citati=4, Fondo=40, professori=2, AGEA=2, Corte=6, riguarda=7, rappresentanza=24, gennaio=45, dicembre=169, imprenditori=3, candidato=2, ulteriori=15, olimpico=2, carenze=4, recate=4, INPS=2, quarantacinque=4, previste=154, province=32, coniuge=4, assoggettabili=2, aerostazioni=2, Bolzano=10, aeromobili=3, assistiti=2, cartacee=1, usufruiscono=2, APPROVATO=13, Parlamento=5, internazionale=4, contrattuali=9, finalizzate=9, prevenire=2, Trento=10, partenariato=2, carcerario=2, protette=2, sufficienti=3, discariche=8, Aziende=24, soggetti=47, imprenditoriali=2, accedere=4, sub=2, resesi=2, richiamati=9, attingendo=8, concedente=2, soprannumerarietà=3, incomplete=1, odontoiatri=2, Costituzione=12, riassegnate=6, facenti=5, iscrizione=7, mobilità=23, DIA=2, nidi=2, imputabile=2, profili=18, successive=40, consuntivati=2, strumenti=11, affari=19, svincolata=2, XIII=2, conseguito=12, coinvolte=2, VIII=2, ALFANO=2, ripristinate=2, restino=1, territoriale=34, ove=21, ritardi=2, Croce=4, Guardia=1, sportiva=4, speleologico=2, assicurare=110, previgente=6, modificato=20, logistiche=2, ridurre=4, attuano=4, maternità=2, rurale=7, strumentali=24, privatizzata=4, telecomunicazioni=1, PARERE=32, sterili=2, sembrano=5, residente=2, Puglia=6, produttori=12, estranei=6, dodici=4, concorsi=44, risultino=2, introdotte=3, cessazioni=13, negoziale=2, assistenziali=7, rideterminati=2, contratti=96, provinciali=16, sessanta=10, anagrafica=3, Unioncamere=2, eccedentario=7, dirigenziale=42, derivino=2, assunzionali=17, contempo=3, lgs=8, laurea=12, settembre=42, Gabinetto=2, alcuna=6, talvolta=3, valorizzazione=2, adeguatamente=4, cofinanziati=5, valere=19, obiettivi=21, fattispecie=1, alpino=7, inserite=103, LETTA=2, riscontra=2, testimoni=3, funzionali=19, valutino=8, ospitante=2, avvalgono=4, spetta=7, prevedano=11, Ufficiale=17, Nascondi=1, ovvero=33, Direzione=9, dedicate=8, normativa=40, Club=2, cento=34, congedi=4, qualitativo=1, ragioneria=11, gode=4, detenuti=1, agricole=8, fabbisogno=70, predetto=42, città=5, triennio=5, Accordo=4, estero=58, compone=3, passaggio=15, anticorruzione=6, richiedono=2, comprovata=11, estesa=2, ambito=486, indeterminato=40, evitare=2, contiene=5, stipulati=14, personale=274, IPAB=8, parole=171, strategico=9, autorizzazione=116, regionale=21, digitale=6, DAMIANO=1, raccomanda=2, ricorda=2, purché=3, giorni=35, concorrenza=10, elevata=7, concorsuali=24, posti=31, inerenti=2, entrata=451, raccoglie=2, pesca=2, onnicomprensivo=4, soppresso=32, sentita=13, bilancio=355, delegificazione=3, societari=2, mare=32, umane=10, Antimafia=6, RSA=1, selettive=12, sino=10, somme=6, Conversione=40, recupero=8, eccedenze=5, conoscitive=2, marzo=99, derogatorio=4, eccedenza=13, caratterizzate=2, Governance=1, fenomeni=2, aprile=44, dipendenti=79, Governo=4, armate=1, LEGISLAZIONE=22, acquisita=2, percentuali=14, corrisposto=9, PERMANENTE=17, turismo=6, ridotte=6, italiane=5, appare=7, movimentazione=1, inclusi=11, contestuale=4, presidente=541, consorzi=2, infrastrutture=11, censite=4, capitoli=5, preventiva=4, entra=2, presso=49, universitaria=5, pensionistici=5, religione=2, princìpi=10, requisiti=20, trasparenza=19, vincitori=14, Aggiornamento=4, parentali=2, funzionari=2, presta=4, previdenziale=2, gradualmente=2, ruoli=25, pubblica=281, emocomponenti=7, Conferenza=4, strutturali=13, altra=2, congruità=3, immigrazione=2, cespiti=2, gravanti=2}]
+[{autonome=26, differenziate=4, visibile=4, Parma=5, monitoraggio=93, trenta=2, direttoriale=10, superiori=23, XIV=2, vengono=5, cumulabili=4, appaltanti=4, segnala=7, materiali=20, sanitario=19, suddetto=40, aziende=24, analitica=2, componenti=17, DISEGNO=16, semintegrali=2, ricollocato=6, tiene=3, aule=2, rosse=2, Dipartimento=6, dispositivi=7, numero=882, sprovviste=2, situate=2, Gazzetta=37, linee=7, parlamentari=5, divieto=16, imprese=6, giurisdizionale=6, limiti=33, afferenti=2, nonché=69, famiglie=11, liquidi=8, vigente=25, elettroniche=22, ottobre=22, benefìci=9, assegnate=32, orientamento=19, tecnici=49, finanziarie=47, interministeriale=5, penali=6, mutui=10, liceale=4, derivare=39, prestiti=3, minori=17, cereali=2, territorialmente=5, ortofrutticoli=3, telematica=13, diciotto=4, ricomprese=2, centottanta=2, alcolici=15, adeguamento=14, interviene=2, patrimoniali=2, urgenti=22, biologici=5, esse=3, predispongono=2, debbano=3, annualmente=20, web=2, autenticate=2, collochino=2, adibiti=4, imposte=28, esso=6, deroga=62, offerta=23, Art=10, punteggio=47, ATA=10, connettività=8, transitoria=3, mediante=38, istituzioni=118, yogurt=2, cotte=2, tengano=5, dovranno=3, giugno=36, compresi=12, ANVUR=12, risorse=72, SACCOMANNI=2, Friuli=4, ipotecaria=10, variazioni=9, carni=2, evolutivi=2, equamente=2, volti=25, europea=18, multimediali=4, artigianali=2, febbraio=23, edifici=16, agroalimentari=4, tenuto=21, pecuniarie=4, far=10, dispersione=45, piena=12, graduatorie=75, contadina=3, intervengono=3, contemplano=4, ministeriale=11, rispettivamente=20, dovrebbe=10, rischio=21, crude=2, comprende=5, immigrati=3, bonus=3, coloro=8, investimenti=9, merito=25, III=3, novanta=3, ultimi=11, vulcanologia=7, disponibili=29, politiche=19, secondaria=44, comunque=29, aree=22, gratuito=6, wireless=9, riporti=2, venti=4, etilico=8, esigenze=12, tali=69, infine=18, Agenzia=7, bancaria=4, nuova=40, Apertura=2, umanistica=2, Europa=11, affettività=2, laboratori=8, fonti=10, XII=2, diversi=6, fiscali=4, produttrici=2, premi=6, specializzandi=11, provvede=55, coreutica=19, trasmessa=2, dirigenti=63, alfabetizzazione=4, tutore=9, ufficiale=212, itinere=2, incidono=2, intermedi=8, alimentari=8, Presidenza=12, Finanziamenti=11, Agricoltura=8, avente=8, archeologico=5, luglio=67, apportare=91, carico=326, prevalgano=2, chirurgia=4, avvenire=4, disoccupazione=3, tributaria=5, parametri=5, regolamentari=4, quindici=4, atti=13, sovrapposizione=2, FAVOREVOLE=15, riflessi=3, istituti=53, intercompartimentale=4, previo=30, crediti=6, esubero=3, risparmi=6, costituzionale=14, avviene=4, spettanti=2, appartenenti=3, spesa=414, razionalizzazione=3, iscriversi=12, consapevole=10, Giulia=4, dovrebbero=4, attraverso=21, ammessi=19, attuativo=2, preselezione=2, valuti=20, piccola=3, convenzioni=13, attuazione=471, triennale=9, trova=2, chiedere=42, recante=19, vietata=10, sistema=148, inidoneo=46, emolumenti=2, maggiori=65, transitare=3, trovino=2, varie=3, FFO=4, immobiliari=5, conseguente=35, fondazioni=7, cessano=6, dissesto=2, altresì=32, ordinario=156, annui=7, frequentati=4, Venezia=4, quinquennio=3, alinea=15, edilizia=24, maggio=7, destinatari=6, Sperimentale=8, reca=10, mesi=16, assunzione=79, riparto=11, accisa=22, finalità=81, veterinaria=2, vulnerabilità=2, vedano=7, relative=108, connessi=10, tecnologica=15, cinematografiche=2, bandito=41, Giustizia=4, titolari=2, palestre=4, extracurricolare=2, scorrimenti=2, vacanti=14, Miglioramento=9, disturbi=4, subordinatamente=2, culturali=33, contenenti=15, Commissione=59, informatica=5, oneri=71, Ambiente=3, decorrere=71, Forum=4, uova=2, VII=2, sovrannumero=6, aliquote=14, catastale=10, Garante=4, tributi=2, interculturale=2, definitivamente=4, riformulare=3, utilizzo=82, extravergine=2, incompatibili=2, alta=35, viene=14, perseguimento=4, testuale=5, intenti=2, intendano=4, finanze=112, vigore=630, poter=2, sempre=6, interventi=50, attinenti=3, rilascio=9, detratto=2, stanziamenti=22, necessarie=13, abbandono=4, stipendiale=2, già=105, indizione=2, aziendale=2, consta=4, iscritti=34, orale=10, verdure=2, specialistica=20, restando=33, arti=5, Stampa=5, novembre=28, autoregolamentazione=2, mancata=2, chiusi=2, indirizzi=8, COMITATO=20, ristorazione=2, progetti=42, stagionali=2, sottoscritte=4, Capo=11, rimborso=6, sostituita=49, forestali=6, doveri=2, ospedaliere=3, Indicatore=4, pluriennali=4, riapre=2, Contenimento=2, appositi=15, ciò=3, durante=4, anzianità=4, epidemiologico=2, sanzioni=16, dati=11, paritarie=4, riferimento=160, rispondenti=2, quali=21, esposti=2, emittenti=4, belle=6, ottenuto=16, poiché=2, AFAM=9, scolastico=374, terreni=9, BES=4, musicale=30, vulcanica=3, scientifica=11, utenti=2, antincendio=2, siti=7, agosto=56, geografia=3, asili=2, ivi=20, bibite=4, Fondo=39, coperti=2, presentino=2, Corte=6, gennaio=51, centri=4, dicembre=101, borse=23, imprenditori=4, carenza=2, olimpico=2, ulteriori=17, occupazionali=2, candidati=22, internazionali=7, beni=13, messaggi=2, artistica=32, anidro=5, province=16, previsto=121, anagrafi=11, CCNL=8, Bolzano=7, raddoppiata=2, sigarette=19, sismica=3, economia=165, prioritariamente=9, piattaforme=2, Contestualmente=4, olografa=2, Parlamento=4, istruzione=1274, salute=50, ogni=64, Cassa=4, finalizzate=22, MIUR=2, VQR=2, prevenire=3, Trento=8, alunni=21, INVALSI=4, contenuti=36, psicomotoria=2, giovani=7, contrattuale=9, soggetti=28, autorizzatorio=14, profilo=48, regioni=58, odontoiatria=2, disciplinari=4, punita=2, Costituzione=15, ettolitro=15, iscrizione=31, mobilità=8, statali=37, definiti=100, successive=58, strumenti=16, bandiera=4, commissioni=19, XIII=2, obbligatoria=3, VIII=2, problematiche=3, immediata=2, bilingue=6, pensionamenti=2, ove=29, preselettiva=2, gassate=2, torna=2, quei=2, italofoni=2, sportiva=2, radiotelevisive=6, Trasporti=9, assicurare=37, modificato=15, Depositi=4, ridurre=4, docente=175, strumentali=5, accedervi=2, congiunti=4, tempi=4, residenti=2, PARERE=37, estranea=2, residui=3, sembrano=3, formativa=42, Consorzi=4, dodici=4, rideterminata=2, risultino=3, introdotte=6, cessazioni=3, negoziale=7, terapeutiche=2, provinciali=13, sessanta=10, assunzionali=13, permane=4, contempo=2, laurea=8, piano=33, energetico=7, settembre=24, valorizzazione=3, metodologiche=4, COM=2, sottocommissioni=6, riordino=6, concernenti=21, obiettivi=27, alcuni=3, rimodulabili=9, demanda=2, inserite=118, soddisfatta=2, professioni=3, ridefinisce=2, comporta=4, concorso=205, LETTA=2, funzionali=5, dovrà=2, Internet=2, nicotina=14, integrali=2, riassegnazione=4, linguistiche=2, spetta=4, prevedano=12, ovvero=13, geofisica=8, pubblicitarie=2, cento=20, montani=6, straniero=4, dimensionamento=7, fabbisogno=22, musei=16, agricole=25, predetto=36, Conseguentemente=2, orari=16, triennio=12, graduale=3, studentesche=4, digitali=20, proprietari=2, inidoneità=24, ITS=4, sottolinea=3, compatibili=2, cofinanziare=2, ambito=275, evitare=6, indeterminato=46, contiene=2, conoscenze=5, personale=510, regionali=31, apparecchiature=2, strategica=5, intervenire=4, criticità=4, prevalentemente=7, parole=188, quotidiana=2, valenza=2, Chiunque=2, trentennali=2, rivolti=3, reti=10, statutarie=2, purché=4, Cultura=7, Area=9, giorni=36, introduce=7, eccedano=3, rivedere=5, programmi=81, aspirante=19, fermo=330, minorenni=2, inerenti=6, posti=41, prodotti=23, entrata=242, riconducibili=2, destinati=39, monografico=2, soppresso=24, scaglioni=2, remunerate=3, concerne=2, delegificazione=4, rifiutare=2, trasferimenti=20, università=216, bambini=2, concorsuale=26, Bilancio=24, INGV=7, orizzontali=2, FOE=2, refezione=4, Strategia=2, artigianato=2, motoria=8, umane=3, sino=4, indetto=12, Conversione=46, efficientamento=5, sussistano=4, recupero=9, marzo=61, unificata=14, libri=18, fenomeni=4, media=4, Anagrafe=6, aprile=43, Governo=10, LEGISLAZIONE=17, serali=2, slovena=18, zuccheri=2, reggenza=3, turismo=3, birra=9, acquisiti=9, appare=7, presidente=187, infrastrutture=12, preventiva=2, Welfare=2, minuti=2, entra=2, pareggiati=2, appaiono=3, ricariche=12, scelgano=2, film=2, presso=35, princìpi=4, requisiti=13, vincitori=8, riduzione=52, preside=2, previdenziale=3, ridotta=4, provvisoria=2, studenti=100, pubblica=59, Conferenza=14, strutturali=5, biennio=6, altra=8, IRES=2, riassorbibile=2, giudicatrici=4}]
+
+
+Merged clusters (distance = 0.9063353):
+[{reato=1, eccedono=1, introdotto=3, provvede=1, rilevato=1, già=2, estranea=1, chilometri=3, inasprimento=2, dodici=1, poi=3, sospensione=23, unanimemente=1, nemmeno=1, Stampa=1, aperte=1, pericolosi=1, anticipata=1, risieda=1, patente=8, litro=2, ebbrezza=1, terze=2, eventualmente=1, associazioni=1, questioni=1, salvo=3, bevande=2, grammi=2, alcuni=2, controproducenti=1, Fiat=1, anch=1, parlamentari=2, atto=21, talune=1, limiti=6, riportare=3, BRUGGER=1, ottobre=3, ciò=1, confronto=3, punteggi=2, Nascondi=1, avviene=1, durante=3, ovvero=1, coinvolge=1, ore=2, emerso=1, Club=1, dimezzare=2, ottenere=2, sanzioni=12, ugualmente=1, Forze=1, dover=1, esame=5, attraverso=2, vieta=1, ZELLER=1, diciotto=1, tribunale=2, concordata=1, alcolici=4, end=1, sostanzialmente=1, oltremodo=1, posseduta=1, telefono=1, Automobile=1, gruppi=2, veicoli=9, agosto=3, esso=1, equità=1, Art=8, rivede=2, effetto=11, alcolemico=4, ivi=1, europei=1, parole=12, assunto=1, sopprime=1, week=1, immediatamente=1, sollevate=1, lesioni=2, amministrativo=2, approfondire=1, giorni=2, disegno=10, Presentata=1, Frontespizio=2, interamente=1, tenere=6, ordinario=11, previste=9, compreso=1, affitto=1, punti=7, alinea=1, tasso=4, violazioni=3, mesi=11, complicato=1, assunzione=3, Onorevoli=1, condizionata=1, stessa=1, preposte=1, riducendo=4, accessorie=4, raddoppiate=2, supera=3, soppresse=3, Relazione=2, inferiore=1, ogni=2, titolari=1, extracomunitari=1, approvato=2, portatile=1, neopatentati=1, molte=1, Progetto=2, appartenga=1, eccedenza=2, sostanze=3, qualora=5, giovani=2, genitori=1, novanta=2, stupefacenti=3, aprile=10, attuali=3, depenalizzazione=1, menzionato=1, Governo=4, incidentalità=1, locali=4, eccessive=1, abrogato=6, alcool=3, controversa=1, provoca=2, estive=1, incorso=1, sostituisce=2, lenti=1, pene=3, velocità=7, passa=4, infine=2, particolare=1, successive=5, decaduto=1, obbligando=2, somministrazione=2, notte=2, subìto=1, viene=1, strada=47, XVI=1, gestori=1, vacanze=1, informano=1, usando=1, promise=1, modifica=9, marginali=1, tipi=1, PDL=1, riduzione=5, oraria=1, Bravo=1, ricalcava=1, intrattenimento=3, attribuiscono=1, stradale=6, sottratti=1, spettacoli=1, persona=2}]
+[{autonome=13, medica=31, sindaco=2, addetti=1, CESARO=2, fittizia=5, consistono=1, ISTAT=2, trenta=12, TESTA=1, automezzi=5, LORENZIN=2, corpi=6, chilometro=1, pittogramma=2, suddetti=2, MARCHI=2, analitici=3, permanere=1, CONTE=1, autoveicoli=17, Decorsi=3, marciapiedi=1, componenti=3, sprovvisto=12, rimorchi=10, tiene=15, bombole=2, leggeri=1, autostradale=10, GIAMMANCO=1, Dipartimento=18, dispositivi=20, disponga=6, ANTONINO=2, irrogata=2, Gazzetta=1, parlamentari=2, convive=1, limiti=40, giurisdizionale=1, afferenti=1, nonché=61, interno=155, attrezzature=12, MARINI=1, terzi=3, liquidi=1, ottobre=9, doppia=3, ventuno=5, sedile=2, prefettura=2, anabbaglianti=1, finanziarie=18, preferibilmente=2, confezioni=5, ausiliario=3, sospeso=12, pianificati=1, TIDEI=1, esercitano=14, territorialmente=9, telematica=2, uniformano=2, flessibili=1, lucrative=2, applicano=159, diciotto=4, centottanta=3, automobilistico=4, essi=3, urgenti=1, restituzione=8, biologici=1, autostrade=10, comunitaria=10, visibilità=6, annualmente=10, eludano=1, quando=87, adibiti=9, istante=1, coincida=1, Art=108, traiettorie=1, desumersi=1, alcolemico=11, compatibilmente=3, cancelleria=3, superino=1, accertamento=236, mediante=6, centoventi=2, tonnellata=2, richieda=9, pertinenze=7, giugno=17, riposo=33, sessantesimo=3, gallerie=2, risorse=24, SIMONETTI=1, prefetto=20, ALBONETTI=1, REGUZZONI=1, FOTI=2, contemporaneamente=2, usarli=1, LULLI=4, LAURA=1, ABRIGNANI=1, violazione=197, autovetture=2, carrozzeria=1, ventiquattro=2, autosnodati=1, Comitato=9, temporaneamente=2, febbraio=3, pecuniaria=26, FONTANELLI=1, tenuto=13, mensili=2, ONLUS=2, ricollegabile=1, supera=17, definitivo=11, dilettantistiche=2, agevolazioni=2, MOFFA=1, Presidente=23, comunicata=10, rispettivamente=30, luci=5, coloro=3, mobili=4, III=2, novanta=7, ultimi=6, simulate=1, BRANDOLINI=2, BIASI=2, impianti=10, politiche=21, consentita=17, SEMPLIFICAZIONE=2, alcool=9, ventunesimo=1, Avverso=3, comunque=18, aree=6, VELO=5, categoria=67, venti=1, esigenze=3, tali=29, abitati=9, NARDUCCI=1, elettrica=6, concerto=57, orario=37, STRADA=25, ipotesi=169, metri=1, coincidente=1, statistici=11, strade=32, ricorrono=6, TELECOMUNICAZIONI=1, AETR=1, procinto=1, mucosa=2, familiari=2, provvede=28, abuso=6, Resta=2, ufficiali=5, esibiti=8, urbana=2, incorrano=5, MARCO=2, occorrenti=2, SIMEONI=2, SCHIRRU=3, circolazione=622, potenziamento=27, avente=2, risiede=1, determinati=10, competizioni=3, TERESA=1, luglio=5, ARGENTIN=1, affezione=2, tivo=1, affinché=2, muniti=10, ammessa=3, semaforici=5, guidino=1, LANDOLFI=1, grammi=10, terapeutico=1, Piano=3, dotazioni=5, regolamentari=1, gas=4, quindici=8, atti=3, SCANDROGLIO=1, disposta=34, psicotrope=8, animali=10, FERRARI=2, ottimizzare=1, Ferrovie=2, spese=19, appartenere=3, HOLZMANN=1, avviene=2, appartenenti=5, spettanti=3, disagiate=2, prezzi=2, anziani=1, BONAVITACOLA=1, medesimo=94, legati=1, tenga=4, TEMPESTINI=1, attraverso=13, impossibile=1, vittime=2, anatomiche=1, attuazione=93, Automobile=2, scostamenti=2, alterati=6, polizia=36, CARRA=6, recante=1, patologie=2, udienza=33, illeciti=5, vietata=5, CORRETTO=2, emolumenti=1, europeo=14, maggiori=20, demandare=1, dieci=7, BOFFA=3, sistemi=20, istruttori=5, produce=5, verifichino=1, altresì=15, barriere=6, ANNA=1, MONTAGNOLI=1, debitore=1, SAMPERI=2, immatricolati=6, notturna=4, BOVICELLI=1, MOLTENI=2, verificare=11, diciassette=1, imputato=5, esercita=7, MACCANTI=1, APRILE=15, richiesta=62, verificatasi=2, alinea=2, fasce=2, maggio=6, BRATTI=1, accessoria=42, BERNINI=1, mesi=31, assunzione=9, annuo=8, campioni=3, farmaceutici=20, tecnologici=1, preposti=1, scaduti=7, avanzata=4, concessionari=6, finalità=32, noleggio=8, relative=55, ritenere=4, impone=3, titolari=9, automatico=2, condizionale=4, connesse=7, titolare=75, ZUNINO=3, MARCHIONI=1, MARIANI=2, ambientale=2, autoambulanze=3, mera=2, autotrasporto=9, sostanze=16, velocipede=7, precedenti=11, riclassificazione=1, esclude=2, incidentalità=7, primi=4, locali=13, informatica=4, trasgressore=6, Commissioni=8, dipende=14, acquirente=12, decorrere=19, capisaldi=3, contenente=1, Garante=2, servizio=381, motivato=10, VENETO=2, conviventi=1, equiparate=1, CODURELLI=1, lettere=18, TESTONI=2, precursore=1, caratteristiche=15, prescritti=40, VANNUCCI=2, TOGNI=1, alta=2, prestabiliti=1, superalcoliche=4, sentenza=33, sottoporsi=7, COMAROLI=1, alcoliche=11, diciannovesimo=1, tributari=1, finanze=36, confisca=36, stipulazione=6, filoveicoli=1, vigore=58, sempre=29, interventi=28, ripetute=6, rilascio=56, CECCUZZI=1, trasmette=9, necessaria=7, marcatura=3, iscritte=3, POSTE=2, confiscati=3, LOVELLI=2, guida=446, Ciascun=9, elementi=3, ANAS=3, chiedono=1, recidiva=7, proveniente=1, giornaliero=8, integralmente=7, PIZZETTI=2, redatto=2, varianti=9, restando=4, novembre=6, derivi=5, pagamento=121, patente=388, RIGONI=1, condizioni=28, soltanto=18, mancata=3, indennizzi=1, zoofila=2, vettore=3, BORDO=3, FAVA=1, disabili=2, progetti=4, bevande=8, settimanale=6, autobus=2, stagionali=1, Capo=27, Trasmessa=5, sostituito=51, VELLA=1, COMMISSIONE=4, CARLUCCI=1, prescrizioni=6, sezione=21, viabilità=3, elettroveicoli=1, dismessi=1, dispone=26, finalizzati=12, sanzione=312, apposita=13, durante=16, MUNERATO=1, dati=15, potrebbe=1, REGIONALE=4, inquinanti=2, quali=29, PORCU=1, emanare=48, prioritaria=3, ZELLER=1, reiterazione=11, uso=131, procedure=21, ripartiti=2, scolastico=1, capoverso=17, motoveicoli=6, utenti=3, criteri=10, agosto=24, SARUBBI=2, maturata=1, ENZO=4, antisdrucciolevoli=1, sostitutiva=2, ivi=9, citati=6, presentino=1, rischi=2, gennaio=5, Salvo=24, centri=13, idonea=11, omessa=2, dicembre=12, ulteriore=39, olimpico=3, Procedimento=1, TORRISI=1, Frontespizio=2, Nazioni=1, svolto=7, internazionali=5, ciclomotori=25, previste=88, province=15, presieduto=1, quattordici=1, autoscuole=12, BARBARESCHI=1, neurochirurgia=1, APPROVATA=1, coniuge=1, anagrafe=6, detentiva=8, relazione=97, parcheggio=1, contestualmente=5, Bolzano=6, attribuiti=4, raddoppiata=11, avvenga=2, percorrenza=1, BARBIERI=2, revoca=103, presentata=4, Parlamento=9, BRIGANDÌ=1, ogni=41, verbalizzazione=1, Trento=6, soggetto=206, centocinquanta=2, BERRETTA=1, regioni=15, punito=12, concedente=1, elettronico=10, declassificazione=2, MISTRELLO=1, CASTIELLO=1, teorica=2, riassegnate=1, facenti=1, lenti=2, protezione=74, psichici=4, LAMORTE=1, protettivo=27, cose=18, velocità=16, BIASOTTI=1, MOTTA=3, iscrizioni=3, proiettori=1, successive=25, strumenti=10, esercente=1, TRAPPOLINO=1, tecniche=16, STASI=1, accoglimento=4, Rete=6, accumulatori=2, motocicli=6, sportivi=2, CROSIO=1, divenuti=5, deficienze=1, amministrativa=135, consorziate=1, stradale=82, docenti=2, sportive=4, novantesimo=2, FIANO=2, modificato=34, ridurre=2, strumentali=18, copia=27, centottantesimo=1, ducono=1, inserito=137, tempi=12, estranea=14, istituzionalmente=1, zero=2, fisici=9, dodici=6, ruote=6, aver=9, sospensione=163, risultino=1, residuo=7, produrre=7, GRIMOLDI=1, sessanta=24, ragguagliando=2, litro=10, locatario=1, casco=7, mezzi=24, simboli=1, sidecar=1, settembre=1, valorizzazione=2, RAISI=1, piani=1, diversamente=9, commetta=5, versino=2, desiderino=1, NIZZI=1, bretelle=2, visualizzare=4, valere=6, autoarticolati=1, fattispecie=1, rimodulabili=1, invernali=4, volontariato=4, registro=61, comporta=13, GAROFALO=1, DIVELLA=1, Spa=3, segnaletica=23, porre=7, multimodali=1, corrispondere=1, giubbotto=2, VERSACE=1, spetta=3, Nascondi=1, ovvero=57, ore=10, pedoni=6, normativa=27, Club=2, cento=40, insozzare=1, Modifica=20, ripreso=1, CALLEGARI=1, agricole=3, appartiene=7, Spazio=1, triennio=6, predetti=18, comportino=2, RONDINI=1, estero=12, comprovate=3, VANALLI=1, PRA=4, inidoneità=1, sospende=5, pedonali=5, riabilitativa=1, veicoli=152, compatibili=6, organi=47, ambito=59, contiene=2, VIOLA=3, competente=134, apparecchiature=4, apparecchi=5, biciclette=2, parole=102, opponente=1, riportata=3, Chiunque=21, GIACHETTI=1, immediatamente=6, sicurezza=304, TRASPORTI=88, tossicodipendente=1, reti=1, notificato=6, purché=5, giorni=73, cagionare=1, leggibilità=1, sottoponga=5, programmi=12, RIVOLTA=1, aspirante=3, fotometriche=1, intende=1, entrata=174, prodotti=25, COSIMI=1, sentita=20, immissione=5, BITONCI=1, ispettori=1, bambini=4, ibrida=6, mare=2, recarsi=3, somma=229, Introduzione=16, umane=13, soppresse=16, abbinate=2, centimetri=2, propedeuticità=1, genitore=3, sociali=24, sussistano=6, recupero=8, classificate=6, AMICO=1, retroriflettenti=2, avvertenze=1, neopatentati=1, Progetto=4, marzo=13, ciclistica=3, appartenga=8, trattenute=2, unificata=1, riservatezza=4, AMICI=1, media=3, fenomeni=1, affidato=11, stupefacenti=11, Governo=8, irrevocabili=6, tranvie=1, SERVODIO=1, provvisorio=11, CATANOSO=1, retribuita=2, impugnabile=1, PERMANENTE=6, agente=29, TULLO=2, doganale=1, patentino=1, didattico=5, pneumatici=9, fatti=2, FEDI=2, acquisiti=3, quadricicli=2, BERGAMINI=2, COSENZA=1, popolazione=1, intercorrere=1, DUSSIN=2, laterali=1, infrastrutture=69, declaratoria=1, motorizzazione=4, CHIAPPORI=1, arredi=3, somministrazione=20, presso=22, manutenzione=31, dissimulato=1, cronotachigrafo=2, antidroga=5, requisiti=13, tricicli=2, LANZARIN=1, parentale=1, macchine=6, inadempienze=3, luminosi=4, riduzione=81, funzionari=8, affluiscono=1, pregiudichino=1, GPL=3, ridotta=7, extraurbane=2, POLLEDRI=1, pubblica=28, ALLASIA=1, accensione=2, negativi=1, Conferenza=9, iscrive=1, strutturali=2, altra=3, biennio=7, CONI=2, tronchi=6}]
+
+
+Merged clusters (distance = 0.9092914):
+[{autonome=26, differenziate=4, visibile=4, Parma=5, monitoraggio=93, trenta=2, direttoriale=10, superiori=23, XIV=2, vengono=5, cumulabili=4, appaltanti=4, segnala=7, materiali=20, sanitario=19, suddetto=40, aziende=24, analitica=2, componenti=17, DISEGNO=16, semintegrali=2, ricollocato=6, tiene=3, aule=2, rosse=2, Dipartimento=6, dispositivi=7, numero=882, sprovviste=2, situate=2, Gazzetta=37, linee=7, parlamentari=5, divieto=16, imprese=6, giurisdizionale=6, limiti=33, afferenti=2, nonché=69, famiglie=11, liquidi=8, vigente=25, elettroniche=22, ottobre=22, benefìci=9, assegnate=32, orientamento=19, tecnici=49, finanziarie=47, interministeriale=5, penali=6, mutui=10, liceale=4, derivare=39, prestiti=3, minori=17, cereali=2, territorialmente=5, ortofrutticoli=3, telematica=13, diciotto=4, ricomprese=2, centottanta=2, alcolici=15, adeguamento=14, interviene=2, patrimoniali=2, urgenti=22, biologici=5, esse=3, predispongono=2, debbano=3, annualmente=20, web=2, autenticate=2, collochino=2, adibiti=4, imposte=28, esso=6, deroga=62, offerta=23, Art=10, punteggio=47, ATA=10, connettività=8, transitoria=3, mediante=38, istituzioni=118, yogurt=2, cotte=2, tengano=5, dovranno=3, giugno=36, compresi=12, ANVUR=12, risorse=72, SACCOMANNI=2, Friuli=4, ipotecaria=10, variazioni=9, carni=2, evolutivi=2, equamente=2, volti=25, europea=18, multimediali=4, artigianali=2, febbraio=23, edifici=16, agroalimentari=4, tenuto=21, pecuniarie=4, far=10, dispersione=45, piena=12, graduatorie=75, contadina=3, intervengono=3, contemplano=4, ministeriale=11, rispettivamente=20, dovrebbe=10, rischio=21, crude=2, comprende=5, immigrati=3, bonus=3, coloro=8, investimenti=9, merito=25, III=3, novanta=3, ultimi=11, vulcanologia=7, disponibili=29, politiche=19, secondaria=44, comunque=29, aree=22, gratuito=6, wireless=9, riporti=2, venti=4, etilico=8, esigenze=12, tali=69, infine=18, Agenzia=7, bancaria=4, nuova=40, Apertura=2, umanistica=2, Europa=11, affettività=2, laboratori=8, fonti=10, XII=2, diversi=6, fiscali=4, produttrici=2, premi=6, specializzandi=11, provvede=55, coreutica=19, trasmessa=2, dirigenti=63, alfabetizzazione=4, tutore=9, ufficiale=212, itinere=2, incidono=2, intermedi=8, alimentari=8, Presidenza=12, Finanziamenti=11, Agricoltura=8, avente=8, archeologico=5, luglio=67, apportare=91, carico=326, prevalgano=2, chirurgia=4, avvenire=4, disoccupazione=3, tributaria=5, parametri=5, regolamentari=4, quindici=4, atti=13, sovrapposizione=2, FAVOREVOLE=15, riflessi=3, istituti=53, intercompartimentale=4, previo=30, crediti=6, esubero=3, risparmi=6, costituzionale=14, avviene=4, spettanti=2, appartenenti=3, spesa=414, razionalizzazione=3, iscriversi=12, consapevole=10, Giulia=4, dovrebbero=4, attraverso=21, ammessi=19, attuativo=2, preselezione=2, valuti=20, piccola=3, convenzioni=13, attuazione=471, triennale=9, trova=2, chiedere=42, recante=19, vietata=10, sistema=148, inidoneo=46, emolumenti=2, maggiori=65, transitare=3, trovino=2, varie=3, FFO=4, immobiliari=5, conseguente=35, fondazioni=7, cessano=6, dissesto=2, altresì=32, ordinario=156, annui=7, frequentati=4, Venezia=4, quinquennio=3, alinea=15, edilizia=24, maggio=7, destinatari=6, Sperimentale=8, reca=10, mesi=16, assunzione=79, riparto=11, accisa=22, finalità=81, veterinaria=2, vulnerabilità=2, vedano=7, relative=108, connessi=10, tecnologica=15, cinematografiche=2, bandito=41, Giustizia=4, titolari=2, palestre=4, extracurricolare=2, scorrimenti=2, vacanti=14, Miglioramento=9, disturbi=4, subordinatamente=2, culturali=33, contenenti=15, Commissione=59, informatica=5, oneri=71, Ambiente=3, decorrere=71, Forum=4, uova=2, VII=2, sovrannumero=6, aliquote=14, catastale=10, Garante=4, tributi=2, interculturale=2, definitivamente=4, riformulare=3, utilizzo=82, extravergine=2, incompatibili=2, alta=35, viene=14, perseguimento=4, testuale=5, intenti=2, intendano=4, finanze=112, vigore=630, poter=2, sempre=6, interventi=50, attinenti=3, rilascio=9, detratto=2, stanziamenti=22, necessarie=13, abbandono=4, stipendiale=2, già=105, indizione=2, aziendale=2, consta=4, iscritti=34, orale=10, verdure=2, specialistica=20, restando=33, arti=5, Stampa=5, novembre=28, autoregolamentazione=2, mancata=2, chiusi=2, indirizzi=8, COMITATO=20, ristorazione=2, progetti=42, stagionali=2, sottoscritte=4, Capo=11, rimborso=6, sostituita=49, forestali=6, doveri=2, ospedaliere=3, Indicatore=4, pluriennali=4, riapre=2, Contenimento=2, appositi=15, ciò=3, durante=4, anzianità=4, epidemiologico=2, sanzioni=16, dati=11, paritarie=4, riferimento=160, rispondenti=2, quali=21, esposti=2, emittenti=4, belle=6, ottenuto=16, poiché=2, AFAM=9, scolastico=374, terreni=9, BES=4, musicale=30, vulcanica=3, scientifica=11, utenti=2, antincendio=2, siti=7, agosto=56, geografia=3, asili=2, ivi=20, bibite=4, Fondo=39, coperti=2, presentino=2, Corte=6, gennaio=51, centri=4, dicembre=101, borse=23, imprenditori=4, carenza=2, olimpico=2, ulteriori=17, occupazionali=2, candidati=22, internazionali=7, beni=13, messaggi=2, artistica=32, anidro=5, province=16, previsto=121, anagrafi=11, CCNL=8, Bolzano=7, raddoppiata=2, sigarette=19, sismica=3, economia=165, prioritariamente=9, piattaforme=2, Contestualmente=4, olografa=2, Parlamento=4, istruzione=1274, salute=50, ogni=64, Cassa=4, finalizzate=22, MIUR=2, VQR=2, prevenire=3, Trento=8, alunni=21, INVALSI=4, contenuti=36, psicomotoria=2, giovani=7, contrattuale=9, soggetti=28, autorizzatorio=14, profilo=48, regioni=58, odontoiatria=2, disciplinari=4, punita=2, Costituzione=15, ettolitro=15, iscrizione=31, mobilità=8, statali=37, definiti=100, successive=58, strumenti=16, bandiera=4, commissioni=19, XIII=2, obbligatoria=3, VIII=2, problematiche=3, immediata=2, bilingue=6, pensionamenti=2, ove=29, preselettiva=2, gassate=2, torna=2, quei=2, italofoni=2, sportiva=2, radiotelevisive=6, Trasporti=9, assicurare=37, modificato=15, Depositi=4, ridurre=4, docente=175, strumentali=5, accedervi=2, congiunti=4, tempi=4, residenti=2, PARERE=37, estranea=2, residui=3, sembrano=3, formativa=42, Consorzi=4, dodici=4, rideterminata=2, risultino=3, introdotte=6, cessazioni=3, negoziale=7, terapeutiche=2, provinciali=13, sessanta=10, assunzionali=13, permane=4, contempo=2, laurea=8, piano=33, energetico=7, settembre=24, valorizzazione=3, metodologiche=4, COM=2, sottocommissioni=6, riordino=6, concernenti=21, obiettivi=27, alcuni=3, rimodulabili=9, demanda=2, inserite=118, soddisfatta=2, professioni=3, ridefinisce=2, comporta=4, concorso=205, LETTA=2, funzionali=5, dovrà=2, Internet=2, nicotina=14, integrali=2, riassegnazione=4, linguistiche=2, spetta=4, prevedano=12, ovvero=13, geofisica=8, pubblicitarie=2, cento=20, montani=6, straniero=4, dimensionamento=7, fabbisogno=22, musei=16, agricole=25, predetto=36, Conseguentemente=2, orari=16, triennio=12, graduale=3, studentesche=4, digitali=20, proprietari=2, inidoneità=24, ITS=4, sottolinea=3, compatibili=2, cofinanziare=2, ambito=275, evitare=6, indeterminato=46, contiene=2, conoscenze=5, personale=510, regionali=31, apparecchiature=2, strategica=5, intervenire=4, criticità=4, prevalentemente=7, parole=188, quotidiana=2, valenza=2, Chiunque=2, trentennali=2, rivolti=3, reti=10, statutarie=2, purché=4, Cultura=7, Area=9, giorni=36, introduce=7, eccedano=3, rivedere=5, programmi=81, aspirante=19, fermo=330, minorenni=2, inerenti=6, posti=41, prodotti=23, entrata=242, riconducibili=2, destinati=39, monografico=2, soppresso=24, scaglioni=2, remunerate=3, concerne=2, delegificazione=4, rifiutare=2, trasferimenti=20, università=216, bambini=2, concorsuale=26, Bilancio=24, INGV=7, orizzontali=2, FOE=2, refezione=4, Strategia=2, artigianato=2, motoria=8, umane=3, sino=4, indetto=12, Conversione=46, efficientamento=5, sussistano=4, recupero=9, marzo=61, unificata=14, libri=18, fenomeni=4, media=4, Anagrafe=6, aprile=43, Governo=10, LEGISLAZIONE=17, serali=2, slovena=18, zuccheri=2, reggenza=3, turismo=3, birra=9, acquisiti=9, appare=7, presidente=187, infrastrutture=12, preventiva=2, Welfare=2, minuti=2, entra=2, pareggiati=2, appaiono=3, ricariche=12, scelgano=2, film=2, presso=35, princìpi=4, requisiti=13, vincitori=8, riduzione=52, preside=2, previdenziale=3, ridotta=4, provvisoria=2, studenti=100, pubblica=59, Conferenza=14, strutturali=5, biennio=6, altra=8, IRES=2, riassorbibile=2, giudicatrici=4}, {mercati=14, autonome=32, specifiche=24, neretto=2, alloggi=2, partizioni=2, chilometri=12, diffuse=2, ISTAT=6, trenta=6, decimali=2, XIV=2, vengono=2, LORENZIN=2, over=3, suddetti=6, detiene=2, Decorsi=2, sanitario=49, Aquila=3, autostradali=3, componenti=25, temporali=5, DISEGNO=14, chiunque=3, sviluppo=126, Dipartimento=48, conferimento=63, concessa=8, Gazzetta=16, parlamentari=4, talune=2, magistratura=8, imprese=38, limiti=54, afferenti=2, esperti=6, nonché=95, intercorrente=2, trasferito=38, concessionaria=7, terzi=3, accelerazione=5, SISTRI=36, vigente=73, ottobre=22, benefìci=3, consolare=2, temporanee=3, interministeriale=2, finanziarie=77, operino=6, distanze=10, Speciali=26, derivare=41, FEASR=2, telematico=2, Roma=3, Quadro=6, centottanta=2, CARROZZA=2, flessibile=6, interviene=4, diplomatica=2, essi=3, urgenti=24, comunitaria=2, quantitativamente=2, esse=3, uffici=19, assolve=2, qualsiasi=33, predispongono=2, debbano=4, aeroportuale=8, deroga=113, Art=4, interessate=38, coesione=250, transitoria=4, mediante=40, disaggregata=2, giugno=55, compresi=22, stabilizzazione=16, Difesa=9, risorse=69, SACCOMANNI=2, Nucleo=4, tipologie=4, essa=3, autovetture=13, penultimo=4, transfrontalieri=2, febbraio=28, concluse=2, interpreta=14, pecuniaria=2, tenuto=28, improrogabilmente=2, reclutamento=30, far=3, promuove=5, mantengono=2, graduatorie=36, precari=7, inefficienze=2, dovrebbe=5, periferiche=2, coloro=11, tracciabilità=27, III=7, investimenti=10, Taranto=10, internet=2, novanta=7, ultimi=7, disponibili=33, rifiuti=68, Qualora=14, giudiziaria=12, comunque=39, TRIGILIA=2, ILVA=10, tale=163, notoria=3, esigenze=18, BRAY=2, Agenzia=66, bancaria=2, esistenti=8, pediatri=2, nuove=17, audit=2, CANCELLIERI=3, ipotesi=65, statistico=24, consentire=72, sussiste=4, fonti=5, indisponibilità=3, XII=2, confermati=4, diversi=6, provvede=74, Resta=16, irrogazione=2, soprannumerarie=5, trasmessa=2, aventi=5, dirigenti=29, Ferma=9, mille=2, revisori=4, dotazione=65, rispettivi=23, alimentari=4, intendono=9, Presidenza=48, ORLANDO=2, estremamente=2, Agricoltura=2, urbani=3, pericolosi=30, determinato=236, luglio=87, avvalendosi=13, ARPA=5, spa=10, PARTECIPATE=6, amministrazioni=811, carico=794, ciascun=18, subentrano=2, chirurgia=2, Beneficenza=2, CONSOB=2, regolamentari=3, gas=2, quindici=2, atti=16, salve=47, parametrazione=6, FAVOREVOLE=13, auto=8, ALIA=2, ottimizzare=5, segretariato=2, autentica=6, Sentite=2, risparmi=3, donazione=7, spettante=5, implementazione=2, situazioni=4, avviene=4, appartenenti=19, spesa=211, Rossa=4, razionalizzazione=33, sindacali=10, paternità=2, medesimo=162, previa=33, attuativi=4, Forze=2, dovrebbero=2, ammesso=2, attraverso=30, costituzionali=13, società=903, istituzionali=6, restituite=2, vittime=2, vigenza=4, ricoperta=2, riassorbito=2, comitati=19, attuazione=151, convenzioni=8, triennale=12, intermediazione=5, trova=4, recante=13, riqualificazione=2, maggiori=49, dieci=3, Statte=2, regolamentati=19, aereo=2, producono=6, vuoti=2, europei=33, beneficienza=2, poteri=10, cessano=2, corruzione=5, altresì=18, contemperano=2, agonistica=2, Tavolo=4, annui=28, localizzate=2, esercita=4, alinea=5, maggio=32, mesi=11, Dette=5, LUPI=2, ZANONATO=2, finalità=56, relative=112, Polizia=6, vedano=6, titolari=7, volontario=19, vacanti=10, criminalità=2, computarsi=2, ambientale=29, ricorrano=13, calcolate=5, assorbimento=2, proroghe=46, sperimentale=5, culturali=17, benefici=5, Commissione=78, oneri=69, indipendenti=2, nazionali=10, lavoratori=21, decorrere=37, sovrannumero=2, VII=2, cinquemila=2, servizio=696, curino=2, rilasciata=14, lettere=2, regio=2, prefissati=2, Autorità=44, equiparati=2, iniziali=7, Associazione=2, assunzioni=96, viene=4, perseguimento=22, testuale=9, Anas=2, sequestro=6, gestori=3, funzioni=89, GIROLAMO=2, finanze=82, Corpo=31, vigore=196, interventi=27, sempre=4, evidenziate=2, stanziamenti=10, riorganizzazione=57, trasporti=45, soprannumero=10, rinegoziazione=3, indizione=3, nulli=8, demandano=2, iscritti=11, ampia=2, forestale=10, specialistica=2, concorrono=3, varianti=3, restando=42, anticipate=3, novembre=23, aziendali=7, condizioni=17, mancata=6, vettori=4, turn=4, Comunicato=1, riformulate=2, COMITATO=22, smaltimento=8, riduce=2, egli=2, tutte=8, arredati=2, Capo=21, clausole=11, assumere=84, sostituito=39, sottoscritto=6, consulenze=4, giuridica=2, accantonamento=6, BONINO=2, raccolgono=5, retroattiva=2, pianta=4, EFFICIENTAMENTO=2, taxi=2, ciò=8, articolazioni=5, anzianità=15, masserizie=6, quadriennio=3, sanzioni=14, potrebbe=2, comunali=2, recepimento=2, quali=36, emittenti=8, prioritaria=2, incide=3, procedure=94, Federazione=4, ottenuto=3, elettrocardiogramma=2, firmatarie=2, ripartite=2, scolastico=9, capoverso=4, scientifica=2, intermediari=2, azionarie=4, utenti=6, agosto=108, cessionaria=1, anzidette=1, Sogei=2, fuoco=29, asili=2, ivi=24, citati=4, Fondo=40, professori=2, AGEA=2, Corte=6, riguarda=7, rappresentanza=24, gennaio=45, dicembre=169, imprenditori=3, candidato=2, ulteriori=15, olimpico=2, carenze=4, recate=4, INPS=2, quarantacinque=4, previste=154, province=32, coniuge=4, assoggettabili=2, aerostazioni=2, Bolzano=10, aeromobili=3, assistiti=2, cartacee=1, usufruiscono=2, APPROVATO=13, Parlamento=5, internazionale=4, contrattuali=9, finalizzate=9, prevenire=2, Trento=10, partenariato=2, carcerario=2, protette=2, sufficienti=3, discariche=8, Aziende=24, soggetti=47, imprenditoriali=2, accedere=4, sub=2, resesi=2, richiamati=9, attingendo=8, concedente=2, soprannumerarietà=3, incomplete=1, odontoiatri=2, Costituzione=12, riassegnate=6, facenti=5, iscrizione=7, mobilità=23, DIA=2, nidi=2, imputabile=2, profili=18, successive=40, consuntivati=2, strumenti=11, affari=19, svincolata=2, XIII=2, conseguito=12, coinvolte=2, VIII=2, ALFANO=2, ripristinate=2, restino=1, territoriale=34, ove=21, ritardi=2, Croce=4, Guardia=1, sportiva=4, speleologico=2, assicurare=110, previgente=6, modificato=20, logistiche=2, ridurre=4, attuano=4, maternità=2, rurale=7, strumentali=24, privatizzata=4, telecomunicazioni=1, PARERE=32, sterili=2, sembrano=5, residente=2, Puglia=6, produttori=12, estranei=6, dodici=4, concorsi=44, risultino=2, introdotte=3, cessazioni=13, negoziale=2, assistenziali=7, rideterminati=2, contratti=96, provinciali=16, sessanta=10, anagrafica=3, Unioncamere=2, eccedentario=7, dirigenziale=42, derivino=2, assunzionali=17, contempo=3, lgs=8, laurea=12, settembre=42, Gabinetto=2, alcuna=6, talvolta=3, valorizzazione=2, adeguatamente=4, cofinanziati=5, valere=19, obiettivi=21, fattispecie=1, alpino=7, inserite=103, LETTA=2, riscontra=2, testimoni=3, funzionali=19, valutino=8, ospitante=2, avvalgono=4, spetta=7, prevedano=11, Ufficiale=17, Nascondi=1, ovvero=33, Direzione=9, dedicate=8, normativa=40, Club=2, cento=34, congedi=4, qualitativo=1, ragioneria=11, gode=4, detenuti=1, agricole=8, fabbisogno=70, predetto=42, città=5, triennio=5, Accordo=4, estero=58, compone=3, passaggio=15, anticorruzione=6, richiedono=2, comprovata=11, estesa=2, ambito=486, indeterminato=40, evitare=2, contiene=5, stipulati=14, personale=274, IPAB=8, parole=171, strategico=9, autorizzazione=116, regionale=21, digitale=6, DAMIANO=1, raccomanda=2, ricorda=2, purché=3, giorni=35, concorrenza=10, elevata=7, concorsuali=24, posti=31, inerenti=2, entrata=451, raccoglie=2, pesca=2, onnicomprensivo=4, soppresso=32, sentita=13, bilancio=355, delegificazione=3, societari=2, mare=32, umane=10, Antimafia=6, RSA=1, selettive=12, sino=10, somme=6, Conversione=40, recupero=8, eccedenze=5, conoscitive=2, marzo=99, derogatorio=4, eccedenza=13, caratterizzate=2, Governance=1, fenomeni=2, aprile=44, dipendenti=79, Governo=4, armate=1, LEGISLAZIONE=22, acquisita=2, percentuali=14, corrisposto=9, PERMANENTE=17, turismo=6, ridotte=6, italiane=5, appare=7, movimentazione=1, inclusi=11, contestuale=4, presidente=541, consorzi=2, infrastrutture=11, censite=4, capitoli=5, preventiva=4, entra=2, presso=49, universitaria=5, pensionistici=5, religione=2, princìpi=10, requisiti=20, trasparenza=19, vincitori=14, Aggiornamento=4, parentali=2, funzionari=2, presta=4, previdenziale=2, gradualmente=2, ruoli=25, pubblica=281, emocomponenti=7, Conferenza=4, strutturali=13, altra=2, congruità=3, immigrazione=2, cespiti=2, gravanti=2}]
+[{restanti=3, opportunità=28, NAPOLITANO=1, reati=3, trenta=2, XIV=2, segnala=4, sanitario=18, perseguiti=2, temporale=3, anticipazioni=8, DISEGNO=24, chiunque=1, favorevolmente=1, IMU=1, Gazzetta=8, verificato=3, parlamentari=2, Francia=2, voci=2, talune=1, succitati=4, imprese=1, afferenti=3, nonché=30, interno=61, vigente=197, ottobre=34, datori=2, pertinenti=1, assegnate=18, finanziarie=26, avvenuto=10, suscettibili=2, six=2, Missione=2, riscontrano=1, multilaterale=1, ricompresi=1, mal=1, Roma=1, interviene=1, essi=2, QUESTIONI=2, urgenti=17, quantitativamente=2, esse=1, addì=1, Nostrum=1, ATN=1, esso=1, Art=2, XVII=1, interessata=11, mediante=17, sospesa=1, compresa=1, extrasanitarie=9, Pil=7, annesse=1, giugno=13, comportano=3, ispirata=1, Difesa=2, risorse=121, SACCOMANNI=2, variazioni=7, futuro=1, Expo=2, circa=9, europea=13, febbraio=3, tautologica=1, incentivare=9, estorsive=3, far=3, umanitaria=2, Restano=1, inferiore=26, intervengono=3, approvato=7, accompagnati=7, prospettata=1, Lampedusa=1, Fiscal=1, III=2, investimenti=2, ispirino=1, politiche=7, ultima=2, fronteggiare=6, fornisce=5, comunque=7, venti=1, tale=27, esigenze=10, infine=3, adottare=3, reintrodurre=1, rotazione=5, retroattivamente=1, compensare=6, programmatici=4, maggiorazioni=15, rilevabile=3, premiali=1, fonti=4, afflusso=7, avvinti=1, XII=2, naufragi=1, diversi=1, fiscali=4, inasprimento=7, incidono=2, itinere=1, omogeneità=1, oralmente=1, rispettivi=6, dotazione=20, Presidenza=2, Agricoltura=1, nord=1, luglio=12, missioni=4, apportare=23, provvedimento=80, ciascun=20, tributaria=3, parametri=6, atti=9, disposte=3, sovrapposizione=2, FAVOREVOLE=17, demandata=2, tragici=1, crediti=1, spettante=2, originarie=1, appartenenti=1, spesa=123, razionalizzazione=1, conseguimento=1, medesimo=51, Spagna=2, previa=5, Forze=1, sospendono=3, automatismo=3, dovrebbero=2, sanzionatorie=1, esame=28, attraverso=6, costituzionali=2, istituzionali=1, vittime=3, massimizzazione=6, ricorre=1, attuazione=30, segnatamente=1, trova=1, recante=20, migranti=2, emana=1, scostamento=12, DELRIO=2, approfondita=1, immobiliari=6, aerei=1, pareri=1, altresì=8, DEF=2, erariali=1, precluso=1, certificazione=11, indefinito=1, stabilità=16, verificatasi=1, maggio=7, Tavoli=9, reca=5, mesi=1, intervenuta=3, annuo=4, illustrare=3, Guardasigilli=1, cosiddetta=2, complessivamente=11, contabili=4, emersione=2, scaduti=1, finalità=66, relative=26, Giustizia=2, dannoso=1, titolari=1, connesse=9, verificatisi=1, Documento=1, dequalificazione=1, culturali=2, Commissione=46, locali=32, esserlo=1, Ambiente=2, decorrere=6, VII=1, aliquote=8, servizio=23, lettere=1, prescritti=1, Tesoreria=3, riformulare=2, accoglienza=11, utilizzo=20, verticale=2, IRPEF=5, autonomie=7, demaniali=3, Associazione=2, viene=1, sentenza=4, riguardanti=8, correggono=2, PDL=1, two=1, vigore=45, sempre=6, interventi=10, attinenti=1, andrebbe=1, Compact=1, stanziamenti=5, incertezza=2, necessarie=6, iscritte=8, ignorare=1, allegata=11, nulli=3, presentano=16, concorrono=1, restando=8, Stampa=1, Molise=5, novembre=12, pagamento=32, analoga=1, desunta=1, eventuali=4, ante=1, mancata=2, accantonamenti=29, COMITATO=6, riduce=1, clausole=1, sostituito=1, immobili=3, innovazioni=1, derivante=27, sezione=9, preso=1, debba=1, pluriennali=1, condannati=1, essenziali=3, dispone=7, assumano=1, apposita=2, segretari=4, azzeramento=1, agevolata=5, conciliano=1, dati=3, Sezioni=1, comunali=7, misure=30, quali=7, brevi=2, Regolamento=2, procedure=8, ottenuto=2, netto=67, registrato=4, capoverso=3, criteri=2, ripartito=1, agosto=20, anzidetti=1, ivi=3, evince=1, Fondo=54, Corte=2, gennaio=1, centri=3, dicembre=18, miliardi=2, prendono=2, pignoramento=6, ulteriori=6, estinti=3, mafioso=3, INPS=3, redigerla=1, comunitari=1, dismissioni=6, province=6, previsto=23, solidarietà=19, relazione=49, Paesi=4, Bolzano=2, economia=35, prioritariamente=1, prevedendo=1, Parlamento=1, attribuito=9, Trento=2, NOTA=4, qualora=3, soggetti=7, casi=5, addizionale=12, ponga=2, svolgimento=30, Istituzioni=1, regioni=37, sussistono=1, estende=1, Costituzione=5, successiva=9, reperite=1, affari=8, strumenti=3, XIII=3, VIII=1, territoriali=5, gettito=51, modifica=6, ALFANO=2, problematiche=2, immediata=5, ritenersi=1, consuntivo=1, previgenti=1, entrambi=1, assicurare=21, Trasporti=1, indisponibili=7, via=14, nullità=3, telecomunicazioni=1, tempi=1, PARERE=34, residui=2, inseriti=12, AIR=1, Puglia=1, giudizi=7, introdotte=3, capienza=1, modificata=2, provinciali=4, possano=3, copertura=33, teso=7, indeboliscono=2, ancorché=1, settembre=4, valere=11, riordino=8, concernenti=5, eccessivo=1, alcuni=5, indipendentemente=1, rimodulabili=2, eccezionale=46, prosecuzione=7, LETTA=2, concorrente=1, spetti=1, dovrà=2, preambolo=2, riassegnazione=2, Raccolta=1, usura=6, Cancellieri=1, MELILLI=1, Nascondi=1, Ufficiale=9, Ragioneria=4, ovvero=16, patto=32, riconosciuti=13, Grecia=2, cento=15, miglioramento=30, stranieri=12, Unione=10, fabbisogno=15, esteri=4, migratorie=3, triennio=4, predette=20, Milano=1, virtuosità=2, scorso=2, compone=1, ambito=29, evitare=3, emergenziale=1, richiama=3, prorogato=8, criticità=1, parole=9, MISE=2, IRAP=5, regionale=16, immediatamente=1, raccomanda=1, settimana=1, ricorda=1, Cultura=1, contemplato=2, rateizzazioni=2, giorni=14, Amministrazioni=18, introduce=2, confluire=3, pack=3, notevolmente=1, debiti=31, affidata=1, positiva=2, riconducibile=1, inerenti=1, commessi=1, trasferimenti=1, poste=2, Bilancio=32, preesistenti=1, Bassi=1, risposte=1, navali=1, medio=4, somme=14, Conversione=20, spazi=2, sociali=2, riequilibrio=19, forfettario=8, recupero=5, programma=38, sprechi=2, Africa=1, marzo=7, provvisoriamente=1, venir=1, gestionale=4, acquisisca=6, aprile=8, armate=1, Governo=18, LEGISLAZIONE=11, riguardino=1, ridotti=4, PERMANENTE=16, lavori=1, turismo=3, rileva=2, sembrerebbe=1, contraddicendo=1, interlocuzione=1, invarianza=1, popolazione=9, Visto=1, umana=1, miri=1, stata=3, presidente=12, preventiva=1, Mare=2, capitoli=5, Portogallo=1, entra=2, presso=4, requisiti=4, riduzione=140, funzionari=3, Relatore=1, attualizzazione=1, farlo=1, pubblica=53, Conferenza=3, biennio=6, strutturale=4, immigrazione=25}]
+
+
+Merged clusters (distance = 0.911632):
+[{restanti=3, opportunità=28, NAPOLITANO=1, reati=3, trenta=2, XIV=2, segnala=4, sanitario=18, perseguiti=2, temporale=3, anticipazioni=8, DISEGNO=24, chiunque=1, favorevolmente=1, IMU=1, Gazzetta=8, verificato=3, parlamentari=2, Francia=2, voci=2, talune=1, succitati=4, imprese=1, afferenti=3, nonché=30, interno=61, vigente=197, ottobre=34, datori=2, pertinenti=1, assegnate=18, finanziarie=26, avvenuto=10, suscettibili=2, six=2, Missione=2, riscontrano=1, multilaterale=1, ricompresi=1, mal=1, Roma=1, interviene=1, essi=2, QUESTIONI=2, urgenti=17, quantitativamente=2, esse=1, addì=1, Nostrum=1, ATN=1, esso=1, Art=2, XVII=1, interessata=11, mediante=17, sospesa=1, compresa=1, extrasanitarie=9, Pil=7, annesse=1, giugno=13, comportano=3, ispirata=1, Difesa=2, risorse=121, SACCOMANNI=2, variazioni=7, futuro=1, Expo=2, circa=9, europea=13, febbraio=3, tautologica=1, incentivare=9, estorsive=3, far=3, umanitaria=2, Restano=1, inferiore=26, intervengono=3, approvato=7, accompagnati=7, prospettata=1, Lampedusa=1, Fiscal=1, III=2, investimenti=2, ispirino=1, politiche=7, ultima=2, fronteggiare=6, fornisce=5, comunque=7, venti=1, tale=27, esigenze=10, infine=3, adottare=3, reintrodurre=1, rotazione=5, retroattivamente=1, compensare=6, programmatici=4, maggiorazioni=15, rilevabile=3, premiali=1, fonti=4, afflusso=7, avvinti=1, XII=2, naufragi=1, diversi=1, fiscali=4, inasprimento=7, incidono=2, itinere=1, omogeneità=1, oralmente=1, rispettivi=6, dotazione=20, Presidenza=2, Agricoltura=1, nord=1, luglio=12, missioni=4, apportare=23, provvedimento=80, ciascun=20, tributaria=3, parametri=6, atti=9, disposte=3, sovrapposizione=2, FAVOREVOLE=17, demandata=2, tragici=1, crediti=1, spettante=2, originarie=1, appartenenti=1, spesa=123, razionalizzazione=1, conseguimento=1, medesimo=51, Spagna=2, previa=5, Forze=1, sospendono=3, automatismo=3, dovrebbero=2, sanzionatorie=1, esame=28, attraverso=6, costituzionali=2, istituzionali=1, vittime=3, massimizzazione=6, ricorre=1, attuazione=30, segnatamente=1, trova=1, recante=20, migranti=2, emana=1, scostamento=12, DELRIO=2, approfondita=1, immobiliari=6, aerei=1, pareri=1, altresì=8, DEF=2, erariali=1, precluso=1, certificazione=11, indefinito=1, stabilità=16, verificatasi=1, maggio=7, Tavoli=9, reca=5, mesi=1, intervenuta=3, annuo=4, illustrare=3, Guardasigilli=1, cosiddetta=2, complessivamente=11, contabili=4, emersione=2, scaduti=1, finalità=66, relative=26, Giustizia=2, dannoso=1, titolari=1, connesse=9, verificatisi=1, Documento=1, dequalificazione=1, culturali=2, Commissione=46, locali=32, esserlo=1, Ambiente=2, decorrere=6, VII=1, aliquote=8, servizio=23, lettere=1, prescritti=1, Tesoreria=3, riformulare=2, accoglienza=11, utilizzo=20, verticale=2, IRPEF=5, autonomie=7, demaniali=3, Associazione=2, viene=1, sentenza=4, riguardanti=8, correggono=2, PDL=1, two=1, vigore=45, sempre=6, interventi=10, attinenti=1, andrebbe=1, Compact=1, stanziamenti=5, incertezza=2, necessarie=6, iscritte=8, ignorare=1, allegata=11, nulli=3, presentano=16, concorrono=1, restando=8, Stampa=1, Molise=5, novembre=12, pagamento=32, analoga=1, desunta=1, eventuali=4, ante=1, mancata=2, accantonamenti=29, COMITATO=6, riduce=1, clausole=1, sostituito=1, immobili=3, innovazioni=1, derivante=27, sezione=9, preso=1, debba=1, pluriennali=1, condannati=1, essenziali=3, dispone=7, assumano=1, apposita=2, segretari=4, azzeramento=1, agevolata=5, conciliano=1, dati=3, Sezioni=1, comunali=7, misure=30, quali=7, brevi=2, Regolamento=2, procedure=8, ottenuto=2, netto=67, registrato=4, capoverso=3, criteri=2, ripartito=1, agosto=20, anzidetti=1, ivi=3, evince=1, Fondo=54, Corte=2, gennaio=1, centri=3, dicembre=18, miliardi=2, prendono=2, pignoramento=6, ulteriori=6, estinti=3, mafioso=3, INPS=3, redigerla=1, comunitari=1, dismissioni=6, province=6, previsto=23, solidarietà=19, relazione=49, Paesi=4, Bolzano=2, economia=35, prioritariamente=1, prevedendo=1, Parlamento=1, attribuito=9, Trento=2, NOTA=4, qualora=3, soggetti=7, casi=5, addizionale=12, ponga=2, svolgimento=30, Istituzioni=1, regioni=37, sussistono=1, estende=1, Costituzione=5, successiva=9, reperite=1, affari=8, strumenti=3, XIII=3, VIII=1, territoriali=5, gettito=51, modifica=6, ALFANO=2, problematiche=2, immediata=5, ritenersi=1, consuntivo=1, previgenti=1, entrambi=1, assicurare=21, Trasporti=1, indisponibili=7, via=14, nullità=3, telecomunicazioni=1, tempi=1, PARERE=34, residui=2, inseriti=12, AIR=1, Puglia=1, giudizi=7, introdotte=3, capienza=1, modificata=2, provinciali=4, possano=3, copertura=33, teso=7, indeboliscono=2, ancorché=1, settembre=4, valere=11, riordino=8, concernenti=5, eccessivo=1, alcuni=5, indipendentemente=1, rimodulabili=2, eccezionale=46, prosecuzione=7, LETTA=2, concorrente=1, spetti=1, dovrà=2, preambolo=2, riassegnazione=2, Raccolta=1, usura=6, Cancellieri=1, MELILLI=1, Nascondi=1, Ufficiale=9, Ragioneria=4, ovvero=16, patto=32, riconosciuti=13, Grecia=2, cento=15, miglioramento=30, stranieri=12, Unione=10, fabbisogno=15, esteri=4, migratorie=3, triennio=4, predette=20, Milano=1, virtuosità=2, scorso=2, compone=1, ambito=29, evitare=3, emergenziale=1, richiama=3, prorogato=8, criticità=1, parole=9, MISE=2, IRAP=5, regionale=16, immediatamente=1, raccomanda=1, settimana=1, ricorda=1, Cultura=1, contemplato=2, rateizzazioni=2, giorni=14, Amministrazioni=18, introduce=2, confluire=3, pack=3, notevolmente=1, debiti=31, affidata=1, positiva=2, riconducibile=1, inerenti=1, commessi=1, trasferimenti=1, poste=2, Bilancio=32, preesistenti=1, Bassi=1, risposte=1, navali=1, medio=4, somme=14, Conversione=20, spazi=2, sociali=2, riequilibrio=19, forfettario=8, recupero=5, programma=38, sprechi=2, Africa=1, marzo=7, provvisoriamente=1, venir=1, gestionale=4, acquisisca=6, aprile=8, armate=1, Governo=18, LEGISLAZIONE=11, riguardino=1, ridotti=4, PERMANENTE=16, lavori=1, turismo=3, rileva=2, sembrerebbe=1, contraddicendo=1, interlocuzione=1, invarianza=1, popolazione=9, Visto=1, umana=1, miri=1, stata=3, presidente=12, preventiva=1, Mare=2, capitoli=5, Portogallo=1, entra=2, presso=4, requisiti=4, riduzione=140, funzionari=3, Relatore=1, attualizzazione=1, farlo=1, pubblica=53, Conferenza=3, biennio=6, strutturale=4, immigrazione=25}, {autonome=26, differenziate=4, visibile=4, Parma=5, monitoraggio=93, trenta=2, direttoriale=10, superiori=23, XIV=2, vengono=5, cumulabili=4, appaltanti=4, segnala=7, materiali=20, sanitario=19, suddetto=40, aziende=24, analitica=2, componenti=17, DISEGNO=16, semintegrali=2, ricollocato=6, tiene=3, aule=2, rosse=2, Dipartimento=6, dispositivi=7, numero=882, sprovviste=2, situate=2, Gazzetta=37, linee=7, parlamentari=5, divieto=16, imprese=6, giurisdizionale=6, limiti=33, afferenti=2, nonché=69, famiglie=11, liquidi=8, vigente=25, elettroniche=22, ottobre=22, benefìci=9, assegnate=32, orientamento=19, tecnici=49, finanziarie=47, interministeriale=5, penali=6, mutui=10, liceale=4, derivare=39, prestiti=3, minori=17, cereali=2, territorialmente=5, ortofrutticoli=3, telematica=13, diciotto=4, ricomprese=2, centottanta=2, alcolici=15, adeguamento=14, interviene=2, patrimoniali=2, urgenti=22, biologici=5, esse=3, predispongono=2, debbano=3, annualmente=20, web=2, autenticate=2, collochino=2, adibiti=4, imposte=28, esso=6, deroga=62, offerta=23, Art=10, punteggio=47, ATA=10, connettività=8, transitoria=3, mediante=38, istituzioni=118, yogurt=2, cotte=2, tengano=5, dovranno=3, giugno=36, compresi=12, ANVUR=12, risorse=72, SACCOMANNI=2, Friuli=4, ipotecaria=10, variazioni=9, carni=2, evolutivi=2, equamente=2, volti=25, europea=18, multimediali=4, artigianali=2, febbraio=23, edifici=16, agroalimentari=4, tenuto=21, pecuniarie=4, far=10, dispersione=45, piena=12, graduatorie=75, contadina=3, intervengono=3, contemplano=4, ministeriale=11, rispettivamente=20, dovrebbe=10, rischio=21, crude=2, comprende=5, immigrati=3, bonus=3, coloro=8, investimenti=9, merito=25, III=3, novanta=3, ultimi=11, vulcanologia=7, disponibili=29, politiche=19, secondaria=44, comunque=29, aree=22, gratuito=6, wireless=9, riporti=2, venti=4, etilico=8, esigenze=12, tali=69, infine=18, Agenzia=7, bancaria=4, nuova=40, Apertura=2, umanistica=2, Europa=11, affettività=2, laboratori=8, fonti=10, XII=2, diversi=6, fiscali=4, produttrici=2, premi=6, specializzandi=11, provvede=55, coreutica=19, trasmessa=2, dirigenti=63, alfabetizzazione=4, tutore=9, ufficiale=212, itinere=2, incidono=2, intermedi=8, alimentari=8, Presidenza=12, Finanziamenti=11, Agricoltura=8, avente=8, archeologico=5, luglio=67, apportare=91, carico=326, prevalgano=2, chirurgia=4, avvenire=4, disoccupazione=3, tributaria=5, parametri=5, regolamentari=4, quindici=4, atti=13, sovrapposizione=2, FAVOREVOLE=15, riflessi=3, istituti=53, intercompartimentale=4, previo=30, crediti=6, esubero=3, risparmi=6, costituzionale=14, avviene=4, spettanti=2, appartenenti=3, spesa=414, razionalizzazione=3, iscriversi=12, consapevole=10, Giulia=4, dovrebbero=4, attraverso=21, ammessi=19, attuativo=2, preselezione=2, valuti=20, piccola=3, convenzioni=13, attuazione=471, triennale=9, trova=2, chiedere=42, recante=19, vietata=10, sistema=148, inidoneo=46, emolumenti=2, maggiori=65, transitare=3, trovino=2, varie=3, FFO=4, immobiliari=5, conseguente=35, fondazioni=7, cessano=6, dissesto=2, altresì=32, ordinario=156, annui=7, frequentati=4, Venezia=4, quinquennio=3, alinea=15, edilizia=24, maggio=7, destinatari=6, Sperimentale=8, reca=10, mesi=16, assunzione=79, riparto=11, accisa=22, finalità=81, veterinaria=2, vulnerabilità=2, vedano=7, relative=108, connessi=10, tecnologica=15, cinematografiche=2, bandito=41, Giustizia=4, titolari=2, palestre=4, extracurricolare=2, scorrimenti=2, vacanti=14, Miglioramento=9, disturbi=4, subordinatamente=2, culturali=33, contenenti=15, Commissione=59, informatica=5, oneri=71, Ambiente=3, decorrere=71, Forum=4, uova=2, VII=2, sovrannumero=6, aliquote=14, catastale=10, Garante=4, tributi=2, interculturale=2, definitivamente=4, riformulare=3, utilizzo=82, extravergine=2, incompatibili=2, alta=35, viene=14, perseguimento=4, testuale=5, intenti=2, intendano=4, finanze=112, vigore=630, poter=2, sempre=6, interventi=50, attinenti=3, rilascio=9, detratto=2, stanziamenti=22, necessarie=13, abbandono=4, stipendiale=2, già=105, indizione=2, aziendale=2, consta=4, iscritti=34, orale=10, verdure=2, specialistica=20, restando=33, arti=5, Stampa=5, novembre=28, autoregolamentazione=2, mancata=2, chiusi=2, indirizzi=8, COMITATO=20, ristorazione=2, progetti=42, stagionali=2, sottoscritte=4, Capo=11, rimborso=6, sostituita=49, forestali=6, doveri=2, ospedaliere=3, Indicatore=4, pluriennali=4, riapre=2, Contenimento=2, appositi=15, ciò=3, durante=4, anzianità=4, epidemiologico=2, sanzioni=16, dati=11, paritarie=4, riferimento=160, rispondenti=2, quali=21, esposti=2, emittenti=4, belle=6, ottenuto=16, poiché=2, AFAM=9, scolastico=374, terreni=9, BES=4, musicale=30, vulcanica=3, scientifica=11, utenti=2, antincendio=2, siti=7, agosto=56, geografia=3, asili=2, ivi=20, bibite=4, Fondo=39, coperti=2, presentino=2, Corte=6, gennaio=51, centri=4, dicembre=101, borse=23, imprenditori=4, carenza=2, olimpico=2, ulteriori=17, occupazionali=2, candidati=22, internazionali=7, beni=13, messaggi=2, artistica=32, anidro=5, province=16, previsto=121, anagrafi=11, CCNL=8, Bolzano=7, raddoppiata=2, sigarette=19, sismica=3, economia=165, prioritariamente=9, piattaforme=2, Contestualmente=4, olografa=2, Parlamento=4, istruzione=1274, salute=50, ogni=64, Cassa=4, finalizzate=22, MIUR=2, VQR=2, prevenire=3, Trento=8, alunni=21, INVALSI=4, contenuti=36, psicomotoria=2, giovani=7, contrattuale=9, soggetti=28, autorizzatorio=14, profilo=48, regioni=58, odontoiatria=2, disciplinari=4, punita=2, Costituzione=15, ettolitro=15, iscrizione=31, mobilità=8, statali=37, definiti=100, successive=58, strumenti=16, bandiera=4, commissioni=19, XIII=2, obbligatoria=3, VIII=2, problematiche=3, immediata=2, bilingue=6, pensionamenti=2, ove=29, preselettiva=2, gassate=2, torna=2, quei=2, italofoni=2, sportiva=2, radiotelevisive=6, Trasporti=9, assicurare=37, modificato=15, Depositi=4, ridurre=4, docente=175, strumentali=5, accedervi=2, congiunti=4, tempi=4, residenti=2, PARERE=37, estranea=2, residui=3, sembrano=3, formativa=42, Consorzi=4, dodici=4, rideterminata=2, risultino=3, introdotte=6, cessazioni=3, negoziale=7, terapeutiche=2, provinciali=13, sessanta=10, assunzionali=13, permane=4, contempo=2, laurea=8, piano=33, energetico=7, settembre=24, valorizzazione=3, metodologiche=4, COM=2, sottocommissioni=6, riordino=6, concernenti=21, obiettivi=27, alcuni=3, rimodulabili=9, demanda=2, inserite=118, soddisfatta=2, professioni=3, ridefinisce=2, comporta=4, concorso=205, LETTA=2, funzionali=5, dovrà=2, Internet=2, nicotina=14, integrali=2, riassegnazione=4, linguistiche=2, spetta=4, prevedano=12, ovvero=13, geofisica=8, pubblicitarie=2, cento=20, montani=6, straniero=4, dimensionamento=7, fabbisogno=22, musei=16, agricole=25, predetto=36, Conseguentemente=2, orari=16, triennio=12, graduale=3, studentesche=4, digitali=20, proprietari=2, inidoneità=24, ITS=4, sottolinea=3, compatibili=2, cofinanziare=2, ambito=275, evitare=6, indeterminato=46, contiene=2, conoscenze=5, personale=510, regionali=31, apparecchiature=2, strategica=5, intervenire=4, criticità=4, prevalentemente=7, parole=188, quotidiana=2, valenza=2, Chiunque=2, trentennali=2, rivolti=3, reti=10, statutarie=2, purché=4, Cultura=7, Area=9, giorni=36, introduce=7, eccedano=3, rivedere=5, programmi=81, aspirante=19, fermo=330, minorenni=2, inerenti=6, posti=41, prodotti=23, entrata=242, riconducibili=2, destinati=39, monografico=2, soppresso=24, scaglioni=2, remunerate=3, concerne=2, delegificazione=4, rifiutare=2, trasferimenti=20, università=216, bambini=2, concorsuale=26, Bilancio=24, INGV=7, orizzontali=2, FOE=2, refezione=4, Strategia=2, artigianato=2, motoria=8, umane=3, sino=4, indetto=12, Conversione=46, efficientamento=5, sussistano=4, recupero=9, marzo=61, unificata=14, libri=18, fenomeni=4, media=4, Anagrafe=6, aprile=43, Governo=10, LEGISLAZIONE=17, serali=2, slovena=18, zuccheri=2, reggenza=3, turismo=3, birra=9, acquisiti=9, appare=7, presidente=187, infrastrutture=12, preventiva=2, Welfare=2, minuti=2, entra=2, pareggiati=2, appaiono=3, ricariche=12, scelgano=2, film=2, presso=35, princìpi=4, requisiti=13, vincitori=8, riduzione=52, preside=2, previdenziale=3, ridotta=4, provvisoria=2, studenti=100, pubblica=59, Conferenza=14, strutturali=5, biennio=6, altra=8, IRES=2, riassorbibile=2, giudicatrici=4}, {mercati=14, autonome=32, specifiche=24, neretto=2, alloggi=2, partizioni=2, chilometri=12, diffuse=2, ISTAT=6, trenta=6, decimali=2, XIV=2, vengono=2, LORENZIN=2, over=3, suddetti=6, detiene=2, Decorsi=2, sanitario=49, Aquila=3, autostradali=3, componenti=25, temporali=5, DISEGNO=14, chiunque=3, sviluppo=126, Dipartimento=48, conferimento=63, concessa=8, Gazzetta=16, parlamentari=4, talune=2, magistratura=8, imprese=38, limiti=54, afferenti=2, esperti=6, nonché=95, intercorrente=2, trasferito=38, concessionaria=7, terzi=3, accelerazione=5, SISTRI=36, vigente=73, ottobre=22, benefìci=3, consolare=2, temporanee=3, interministeriale=2, finanziarie=77, operino=6, distanze=10, Speciali=26, derivare=41, FEASR=2, telematico=2, Roma=3, Quadro=6, centottanta=2, CARROZZA=2, flessibile=6, interviene=4, diplomatica=2, essi=3, urgenti=24, comunitaria=2, quantitativamente=2, esse=3, uffici=19, assolve=2, qualsiasi=33, predispongono=2, debbano=4, aeroportuale=8, deroga=113, Art=4, interessate=38, coesione=250, transitoria=4, mediante=40, disaggregata=2, giugno=55, compresi=22, stabilizzazione=16, Difesa=9, risorse=69, SACCOMANNI=2, Nucleo=4, tipologie=4, essa=3, autovetture=13, penultimo=4, transfrontalieri=2, febbraio=28, concluse=2, interpreta=14, pecuniaria=2, tenuto=28, improrogabilmente=2, reclutamento=30, far=3, promuove=5, mantengono=2, graduatorie=36, precari=7, inefficienze=2, dovrebbe=5, periferiche=2, coloro=11, tracciabilità=27, III=7, investimenti=10, Taranto=10, internet=2, novanta=7, ultimi=7, disponibili=33, rifiuti=68, Qualora=14, giudiziaria=12, comunque=39, TRIGILIA=2, ILVA=10, tale=163, notoria=3, esigenze=18, BRAY=2, Agenzia=66, bancaria=2, esistenti=8, pediatri=2, nuove=17, audit=2, CANCELLIERI=3, ipotesi=65, statistico=24, consentire=72, sussiste=4, fonti=5, indisponibilità=3, XII=2, confermati=4, diversi=6, provvede=74, Resta=16, irrogazione=2, soprannumerarie=5, trasmessa=2, aventi=5, dirigenti=29, Ferma=9, mille=2, revisori=4, dotazione=65, rispettivi=23, alimentari=4, intendono=9, Presidenza=48, ORLANDO=2, estremamente=2, Agricoltura=2, urbani=3, pericolosi=30, determinato=236, luglio=87, avvalendosi=13, ARPA=5, spa=10, PARTECIPATE=6, amministrazioni=811, carico=794, ciascun=18, subentrano=2, chirurgia=2, Beneficenza=2, CONSOB=2, regolamentari=3, gas=2, quindici=2, atti=16, salve=47, parametrazione=6, FAVOREVOLE=13, auto=8, ALIA=2, ottimizzare=5, segretariato=2, autentica=6, Sentite=2, risparmi=3, donazione=7, spettante=5, implementazione=2, situazioni=4, avviene=4, appartenenti=19, spesa=211, Rossa=4, razionalizzazione=33, sindacali=10, paternità=2, medesimo=162, previa=33, attuativi=4, Forze=2, dovrebbero=2, ammesso=2, attraverso=30, costituzionali=13, società=903, istituzionali=6, restituite=2, vittime=2, vigenza=4, ricoperta=2, riassorbito=2, comitati=19, attuazione=151, convenzioni=8, triennale=12, intermediazione=5, trova=4, recante=13, riqualificazione=2, maggiori=49, dieci=3, Statte=2, regolamentati=19, aereo=2, producono=6, vuoti=2, europei=33, beneficienza=2, poteri=10, cessano=2, corruzione=5, altresì=18, contemperano=2, agonistica=2, Tavolo=4, annui=28, localizzate=2, esercita=4, alinea=5, maggio=32, mesi=11, Dette=5, LUPI=2, ZANONATO=2, finalità=56, relative=112, Polizia=6, vedano=6, titolari=7, volontario=19, vacanti=10, criminalità=2, computarsi=2, ambientale=29, ricorrano=13, calcolate=5, assorbimento=2, proroghe=46, sperimentale=5, culturali=17, benefici=5, Commissione=78, oneri=69, indipendenti=2, nazionali=10, lavoratori=21, decorrere=37, sovrannumero=2, VII=2, cinquemila=2, servizio=696, curino=2, rilasciata=14, lettere=2, regio=2, prefissati=2, Autorità=44, equiparati=2, iniziali=7, Associazione=2, assunzioni=96, viene=4, perseguimento=22, testuale=9, Anas=2, sequestro=6, gestori=3, funzioni=89, GIROLAMO=2, finanze=82, Corpo=31, vigore=196, interventi=27, sempre=4, evidenziate=2, stanziamenti=10, riorganizzazione=57, trasporti=45, soprannumero=10, rinegoziazione=3, indizione=3, nulli=8, demandano=2, iscritti=11, ampia=2, forestale=10, specialistica=2, concorrono=3, varianti=3, restando=42, anticipate=3, novembre=23, aziendali=7, condizioni=17, mancata=6, vettori=4, turn=4, Comunicato=1, riformulate=2, COMITATO=22, smaltimento=8, riduce=2, egli=2, tutte=8, arredati=2, Capo=21, clausole=11, assumere=84, sostituito=39, sottoscritto=6, consulenze=4, giuridica=2, accantonamento=6, BONINO=2, raccolgono=5, retroattiva=2, pianta=4, EFFICIENTAMENTO=2, taxi=2, ciò=8, articolazioni=5, anzianità=15, masserizie=6, quadriennio=3, sanzioni=14, potrebbe=2, comunali=2, recepimento=2, quali=36, emittenti=8, prioritaria=2, incide=3, procedure=94, Federazione=4, ottenuto=3, elettrocardiogramma=2, firmatarie=2, ripartite=2, scolastico=9, capoverso=4, scientifica=2, intermediari=2, azionarie=4, utenti=6, agosto=108, cessionaria=1, anzidette=1, Sogei=2, fuoco=29, asili=2, ivi=24, citati=4, Fondo=40, professori=2, AGEA=2, Corte=6, riguarda=7, rappresentanza=24, gennaio=45, dicembre=169, imprenditori=3, candidato=2, ulteriori=15, olimpico=2, carenze=4, recate=4, INPS=2, quarantacinque=4, previste=154, province=32, coniuge=4, assoggettabili=2, aerostazioni=2, Bolzano=10, aeromobili=3, assistiti=2, cartacee=1, usufruiscono=2, APPROVATO=13, Parlamento=5, internazionale=4, contrattuali=9, finalizzate=9, prevenire=2, Trento=10, partenariato=2, carcerario=2, protette=2, sufficienti=3, discariche=8, Aziende=24, soggetti=47, imprenditoriali=2, accedere=4, sub=2, resesi=2, richiamati=9, attingendo=8, concedente=2, soprannumerarietà=3, incomplete=1, odontoiatri=2, Costituzione=12, riassegnate=6, facenti=5, iscrizione=7, mobilità=23, DIA=2, nidi=2, imputabile=2, profili=18, successive=40, consuntivati=2, strumenti=11, affari=19, svincolata=2, XIII=2, conseguito=12, coinvolte=2, VIII=2, ALFANO=2, ripristinate=2, restino=1, territoriale=34, ove=21, ritardi=2, Croce=4, Guardia=1, sportiva=4, speleologico=2, assicurare=110, previgente=6, modificato=20, logistiche=2, ridurre=4, attuano=4, maternità=2, rurale=7, strumentali=24, privatizzata=4, telecomunicazioni=1, PARERE=32, sterili=2, sembrano=5, residente=2, Puglia=6, produttori=12, estranei=6, dodici=4, concorsi=44, risultino=2, introdotte=3, cessazioni=13, negoziale=2, assistenziali=7, rideterminati=2, contratti=96, provinciali=16, sessanta=10, anagrafica=3, Unioncamere=2, eccedentario=7, dirigenziale=42, derivino=2, assunzionali=17, contempo=3, lgs=8, laurea=12, settembre=42, Gabinetto=2, alcuna=6, talvolta=3, valorizzazione=2, adeguatamente=4, cofinanziati=5, valere=19, obiettivi=21, fattispecie=1, alpino=7, inserite=103, LETTA=2, riscontra=2, testimoni=3, funzionali=19, valutino=8, ospitante=2, avvalgono=4, spetta=7, prevedano=11, Ufficiale=17, Nascondi=1, ovvero=33, Direzione=9, dedicate=8, normativa=40, Club=2, cento=34, congedi=4, qualitativo=1, ragioneria=11, gode=4, detenuti=1, agricole=8, fabbisogno=70, predetto=42, città=5, triennio=5, Accordo=4, estero=58, compone=3, passaggio=15, anticorruzione=6, richiedono=2, comprovata=11, estesa=2, ambito=486, indeterminato=40, evitare=2, contiene=5, stipulati=14, personale=274, IPAB=8, parole=171, strategico=9, autorizzazione=116, regionale=21, digitale=6, DAMIANO=1, raccomanda=2, ricorda=2, purché=3, giorni=35, concorrenza=10, elevata=7, concorsuali=24, posti=31, inerenti=2, entrata=451, raccoglie=2, pesca=2, onnicomprensivo=4, soppresso=32, sentita=13, bilancio=355, delegificazione=3, societari=2, mare=32, umane=10, Antimafia=6, RSA=1, selettive=12, sino=10, somme=6, Conversione=40, recupero=8, eccedenze=5, conoscitive=2, marzo=99, derogatorio=4, eccedenza=13, caratterizzate=2, Governance=1, fenomeni=2, aprile=44, dipendenti=79, Governo=4, armate=1, LEGISLAZIONE=22, acquisita=2, percentuali=14, corrisposto=9, PERMANENTE=17, turismo=6, ridotte=6, italiane=5, appare=7, movimentazione=1, inclusi=11, contestuale=4, presidente=541, consorzi=2, infrastrutture=11, censite=4, capitoli=5, preventiva=4, entra=2, presso=49, universitaria=5, pensionistici=5, religione=2, princìpi=10, requisiti=20, trasparenza=19, vincitori=14, Aggiornamento=4, parentali=2, funzionari=2, presta=4, previdenziale=2, gradualmente=2, ruoli=25, pubblica=281, emocomponenti=7, Conferenza=4, strutturali=13, altra=2, congruità=3, immigrazione=2, cespiti=2, gravanti=2}]
+[{Decisione=2, sindaco=1, contermini=1, NAPOLITANO=1, concessi=8, trenta=5, direttoriale=1, vengono=1, musica=5, corpi=1, cronoprogramma=1, decorsi=2, suddetto=2, turistici=3, infortunio=3, temporale=1, creativa=1, componenti=12, costituita=3, DISEGNO=3, chiunque=2, taluni=1, concessionario=2, sviluppo=215, Dipartimento=2, dispositivi=1, Gazzetta=3, Ebraismo=4, voci=2, parlamentari=2, imprese=10, afferenti=2, nonché=57, terzi=3, ottobre=5, benefìci=1, EFFICIENTI=2, monocratico=1, interministeriale=3, finanziarie=23, penali=2, giacenze=1, eseguite=1, avvenuto=1, Rajna=5, minore=11, lucrative=4, diciotto=1, Roma=3, alcolici=2, CARROZZA=2, diplomatica=1, essi=3, Museale=6, urgenti=45, militari=1, mirate=1, addì=1, contemporanei=6, intelligenti=1, accessibilità=1, laureati=2, Bibliografia=1, Riunite=2, esso=2, Art=1, instaurato=2, XVII=1, circuiti=1, produttivi=8, soci=5, alternativamente=1, mediante=29, transitoria=2, Augusto=2, istituzioni=18, Pio=5, affidamenti=4, comprese=6, scenico=1, dovranno=1, giugno=24, stabilizzazione=1, protocolli=1, risorse=29, SACCOMANNI=2, bimillenario=1, centenario=1, attrattività=2, variazioni=5, tipologie=2, essa=2, violazione=3, ventiquattro=1, industriali=2, Comitato=14, europea=21, cinquecento=2, artigianali=1, febbraio=4, Reggia=4, edifici=1, far=2, vitae=2, unificazione=1, geografiche=1, emergenti=2, piena=2, lubrificanti=3, paesaggistici=6, rispettivamente=5, mobili=1, coloro=1, prestati=1, internet=3, III=4, novanta=7, alimentata=1, disponibili=6, Qualora=2, degradati=2, tracciabili=2, inderogabili=7, alcool=2, Avverso=2, comunque=11, aree=22, venti=4, ambulante=2, trentacinque=2, etilico=2, Istituti=20, esigenze=2, BRAY=2, Dante=1, locati=3, Istituto=7, BiGLI=1, concorre=1, Agenzia=14, poeta=1, adottare=118, cessati=1, destinino=1, duplicazione=1, nuove=7, Ragusa=2, vacanze=2, Riconoscimento=1, ricapitalizzazione=2, alcun=2, Province=9, umanistica=2, delibere=2, sponsorizzazioni=6, cooperative=7, infiltrazioni=1, inventariazione=7, pregiudicare=1, pilotaggio=3, demo=1, diversi=1, produttrici=3, archeologici=22, provvede=37, Torre=4, diverse=3, Ottaviano=1, sopraggiunte=1, chilogrammi=1, Resta=1, illegittimo=4, digitalizzazione=12, aventi=12, Ercolano=6, Consulta=1, linguistica=2, sottoposta=4, Polo=6, fondo=156, mille=1, urbana=4, intermedi=3, modico=16, revisori=2, dotazione=47, Presidenza=1, determina=14, luglio=11, Fermo=6, letteraria=2, incompatibilità=2, postale=1, munito=1, servizi=18, apportare=14, associazioni=19, teatri=5, parametri=4, Stabia=1, modulazione=1, decisioni=5, quindici=1, atti=9, contraenti=2, animali=1, ALIA=2, soprintendenze=3, videogrammi=2, atte=2, disposti=5, ottimizzare=2, donazioni=8, lordi=1, Protocollo=1, stabiese=2, credito=24, liberali=9, implementazione=2, appartenenti=5, borboniche=4, spesa=350, razionalizzazione=3, sequestrati=6, sindacali=6, medesimo=36, previa=9, Fondazione=30, attuative=1, attraverso=13, Santa=1, mantiene=4, Firenze=1, ammesse=1, istituzionali=7, assunte=8, accelerare=8, triennale=1, livelli=3, recante=10, moratori=1, riuniti=1, riqualificazione=6, parzialmente=2, teatrali=2, maggiori=25, dieci=3, DELRIO=2, Portale=1, poteri=2, Soprintendente=3, fondazioni=34, coadiuvato=1, archivi=8, altresì=14, archivistico=2, certificazione=25, annui=8, audiovisive=6, cadrà=1, esercita=1, quinquennio=2, alinea=3, maggio=16, destinatari=1, etnoantropologico=4, mesi=13, ordinaria=6, Cecilia=1, sottoscrizione=7, Guardasigilli=1, cinquanta=3, annuale=7, tavolo=2, accisa=5, accessorio=11, relative=29, connessi=2, titolari=3, dettate=6, menzionati=1, criminalità=7, ambientale=5, esclusione=14, vietare=1, culturali=146, organizzazioni=27, Commissione=20, locali=6, oneri=38, indipendenti=3, decorrere=43, Forum=2, aliquote=4, cinquemila=1, bibliografica=5, rate=1, autonomia=11, abrogati=6, quantitativi=2, subordinata=6, paleografia=1, Accademia=2, definitivamente=6, utilizzo=55, rilasciato=3, motivata=2, antiche=1, fondatori=3, agenda=2, Mausoleo=1, Prefetti=4, coatta=1, portali=1, biblioteche=7, assunzioni=2, viene=2, perseguimento=4, forniture=2, manifestazioni=1, tutela=238, riguardanti=4, PDL=1, funzioni=31, finanze=43, collegati=10, vigore=94, interventi=34, SEDE=6, collegiali=3, necessarie=18, confiscati=7, soprannumero=2, dismesse=3, rinegoziazione=6, mancato=3, aziendale=3, professionali=3, proveniente=2, Trasmesso=1, attrarre=1, Stampa=1, novembre=17, coinvolgimento=28, eventuali=15, condizioni=13, tempistica=2, Esse=2, rubricato=2, azioni=12, asta=1, organismi=44, affluenza=3, nominale=3, Capo=7, rimborso=6, Pompei=29, immobili=8, pluriennale=1, sostituita=11, Soprintendenza=14, sottoscritto=2, Museo=6, derivante=34, accantonamento=2, malattia=2, fornite=2, riapre=2, tengono=2, raggiunto=2, quadrimestrale=1, straordinario=17, usi=1, apposita=25, finalizzato=18, sanzioni=2, convoca=1, SIAE=1, dati=4, eventi=3, Sezioni=4, progetto=180, quali=9, emittenti=2, depositate=1, procedure=16, diecimila=1, interconnessioni=2, sostenibilità=6, tattile=4, AFAM=1, scientifica=5, finora=2, ottanta=1, preveda=4, musicali=17, criteri=16, intervenga=1, antincendio=1, agosto=28, appropriatezza=1, sostitutiva=1, nulla=3, sito=33, ivi=4, ripartita=6, Shoah=4, Titolo=9, beneficiari=5, Corte=11, rischi=3, artisti=34, gennaio=30, pompeiana=2, coniugati=1, dicembre=31, banche=2, Sistema=13, previsionali=1, ulteriori=12, popolari=1, presieduta=2, ricorrenze=1, interamente=2, scolastiche=2, recitazione=5, viaggianti=1, beni=210, anidro=2, specificati=2, mafiose=1, Napoli=15, previsto=121, svolta=12, reperire=4, anagrafe=2, Caserta=6, monetazione=1, economia=200, intestate=1, ricerca=19, prioritariamente=5, sollecitazione=4, semestrale=2, presentata=8, APPROVATO=7, promosso=1, Parlamento=1, contrattuali=2, innovativi=6, provengono=2, imperatore=1, prevenire=1, urbanistica=3, elettronici=3, NOTA=1, Alta=1, partenariato=4, predeterminati=2, giovani=21, soggetti=25, quantificati=2, accedere=3, esenti=1, ciascuno=53, massime=3, dogane=2, Campania=4, riuso=2, committenza=1, estende=1, MAXXI=1, disciplinari=3, riassegnati=3, Costituzione=5, ettolitro=6, decisionale=3, pareggio=2, definite=5, statali=9, monumentali=2, esercenti=2, potenziali=1, successive=48, condanne=1, strumenti=3, affari=5, coinvolti=4, ricovero=1, territoriale=9, ove=6, entrambe=1, detengano=1, immediate=1, Unesco=11, bancari=4, inutilizzate=1, designati=4, assicurare=108, pervenire=4, strumentali=8, antimafia=1, rilancio=18, residenti=1, indisponibile=1, magistrati=1, caserme=1, architettonica=3, produttori=2, dodici=2, danza=3, Sindaci=2, Oli=3, effettuata=4, sola=4, sessanta=10, possano=2, circensi=1, locatario=2, dirigenziale=5, vie=2, assunzionali=2, promozione=141, interessi=33, settembre=9, valorizzazione=46, riproduzioni=2, versino=4, scheda=1, COM=2, coproduzioni=1, valere=8, concernenti=6, assenze=2, Direzioni=2, fonogrammi=2, volontariato=4, prosecuzione=17, LETTA=2, esterna=2, richiedere=3, rideterminazione=8, progettuale=3, dedicati=1, Raccolta=1, Spa=1, Cancellieri=1, riconosciuto=8, spetta=3, Ufficiale=4, Nascondi=1, Ragioneria=1, Centro=6, giacenti=3, ovvero=7, ore=2, cento=22, stranieri=3, uscite=1, musei=2, esteri=3, città=7, realizzazione=148, triennio=3, predetti=10, graduali=1, predisposti=1, digitali=14, carnevale=6, Ales=2, compatibili=7, comprovata=2, consultiva=4, osta=2, personale=212, videografiche=4, fonografica=4, regionali=11, competente=247, deliberando=2, contributi=18, statutari=7, parole=6, compositori=4, dispongano=1, stipulato=2, infrastrutturali=4, immediatamente=1, autoprodotte=1, giorni=29, procedere=8, prelievo=2, positiva=6, intende=5, interoperabilità=2, ponendo=1, entrata=153, bilancio=110, redigendo=1, università=15, concorsuale=2, trattative=2, mare=1, soppressi=4, artigianato=1, eleggibili=4, ripubblicazione=1, tradizionali=2, Decoro=2, umane=7, selettive=5, sino=1, somme=6, Conversione=30, lirici=2, recupero=9, eccedenze=2, marzo=14, filologica=2, domanda=5, aprile=14, Governo=3, interruzioni=2, corrisposti=1, predispone=5, bibliotecario=1, turismo=80, posteggio=5, rileva=1, italiane=3, Visto=1, sovrintende=1, forme=12, demanio=5, anatocistici=2, presidente=620, infrastrutture=5, capitoli=1, ricorrere=3, corrispondente=28, fattori=1, residenze=4, donante=1, promuovendo=7, entra=2, arredi=2, presso=13, Regione=7, Trattato=2, metalliche=1, pronunziarsi=1, riduzione=29, monete=2, farlo=1, meritevoli=1, storico=25, tirocinanti=6, cinema=9, Conferenza=5, informatizzazione=1, strutturali=8, altra=1, evidenziazione=1, pubblici=25, educative=1, rivenienti=1}]
+
+
+Merged clusters (distance = 0.9179366):
+[{Decisione=2, sindaco=1, contermini=1, NAPOLITANO=1, concessi=8, trenta=5, direttoriale=1, vengono=1, musica=5, corpi=1, cronoprogramma=1, decorsi=2, suddetto=2, turistici=3, infortunio=3, temporale=1, creativa=1, componenti=12, costituita=3, DISEGNO=3, chiunque=2, taluni=1, concessionario=2, sviluppo=215, Dipartimento=2, dispositivi=1, Gazzetta=3, Ebraismo=4, voci=2, parlamentari=2, imprese=10, afferenti=2, nonché=57, terzi=3, ottobre=5, benefìci=1, EFFICIENTI=2, monocratico=1, interministeriale=3, finanziarie=23, penali=2, giacenze=1, eseguite=1, avvenuto=1, Rajna=5, minore=11, lucrative=4, diciotto=1, Roma=3, alcolici=2, CARROZZA=2, diplomatica=1, essi=3, Museale=6, urgenti=45, militari=1, mirate=1, addì=1, contemporanei=6, intelligenti=1, accessibilità=1, laureati=2, Bibliografia=1, Riunite=2, esso=2, Art=1, instaurato=2, XVII=1, circuiti=1, produttivi=8, soci=5, alternativamente=1, mediante=29, transitoria=2, Augusto=2, istituzioni=18, Pio=5, affidamenti=4, comprese=6, scenico=1, dovranno=1, giugno=24, stabilizzazione=1, protocolli=1, risorse=29, SACCOMANNI=2, bimillenario=1, centenario=1, attrattività=2, variazioni=5, tipologie=2, essa=2, violazione=3, ventiquattro=1, industriali=2, Comitato=14, europea=21, cinquecento=2, artigianali=1, febbraio=4, Reggia=4, edifici=1, far=2, vitae=2, unificazione=1, geografiche=1, emergenti=2, piena=2, lubrificanti=3, paesaggistici=6, rispettivamente=5, mobili=1, coloro=1, prestati=1, internet=3, III=4, novanta=7, alimentata=1, disponibili=6, Qualora=2, degradati=2, tracciabili=2, inderogabili=7, alcool=2, Avverso=2, comunque=11, aree=22, venti=4, ambulante=2, trentacinque=2, etilico=2, Istituti=20, esigenze=2, BRAY=2, Dante=1, locati=3, Istituto=7, BiGLI=1, concorre=1, Agenzia=14, poeta=1, adottare=118, cessati=1, destinino=1, duplicazione=1, nuove=7, Ragusa=2, vacanze=2, Riconoscimento=1, ricapitalizzazione=2, alcun=2, Province=9, umanistica=2, delibere=2, sponsorizzazioni=6, cooperative=7, infiltrazioni=1, inventariazione=7, pregiudicare=1, pilotaggio=3, demo=1, diversi=1, produttrici=3, archeologici=22, provvede=37, Torre=4, diverse=3, Ottaviano=1, sopraggiunte=1, chilogrammi=1, Resta=1, illegittimo=4, digitalizzazione=12, aventi=12, Ercolano=6, Consulta=1, linguistica=2, sottoposta=4, Polo=6, fondo=156, mille=1, urbana=4, intermedi=3, modico=16, revisori=2, dotazione=47, Presidenza=1, determina=14, luglio=11, Fermo=6, letteraria=2, incompatibilità=2, postale=1, munito=1, servizi=18, apportare=14, associazioni=19, teatri=5, parametri=4, Stabia=1, modulazione=1, decisioni=5, quindici=1, atti=9, contraenti=2, animali=1, ALIA=2, soprintendenze=3, videogrammi=2, atte=2, disposti=5, ottimizzare=2, donazioni=8, lordi=1, Protocollo=1, stabiese=2, credito=24, liberali=9, implementazione=2, appartenenti=5, borboniche=4, spesa=350, razionalizzazione=3, sequestrati=6, sindacali=6, medesimo=36, previa=9, Fondazione=30, attuative=1, attraverso=13, Santa=1, mantiene=4, Firenze=1, ammesse=1, istituzionali=7, assunte=8, accelerare=8, triennale=1, livelli=3, recante=10, moratori=1, riuniti=1, riqualificazione=6, parzialmente=2, teatrali=2, maggiori=25, dieci=3, DELRIO=2, Portale=1, poteri=2, Soprintendente=3, fondazioni=34, coadiuvato=1, archivi=8, altresì=14, archivistico=2, certificazione=25, annui=8, audiovisive=6, cadrà=1, esercita=1, quinquennio=2, alinea=3, maggio=16, destinatari=1, etnoantropologico=4, mesi=13, ordinaria=6, Cecilia=1, sottoscrizione=7, Guardasigilli=1, cinquanta=3, annuale=7, tavolo=2, accisa=5, accessorio=11, relative=29, connessi=2, titolari=3, dettate=6, menzionati=1, criminalità=7, ambientale=5, esclusione=14, vietare=1, culturali=146, organizzazioni=27, Commissione=20, locali=6, oneri=38, indipendenti=3, decorrere=43, Forum=2, aliquote=4, cinquemila=1, bibliografica=5, rate=1, autonomia=11, abrogati=6, quantitativi=2, subordinata=6, paleografia=1, Accademia=2, definitivamente=6, utilizzo=55, rilasciato=3, motivata=2, antiche=1, fondatori=3, agenda=2, Mausoleo=1, Prefetti=4, coatta=1, portali=1, biblioteche=7, assunzioni=2, viene=2, perseguimento=4, forniture=2, manifestazioni=1, tutela=238, riguardanti=4, PDL=1, funzioni=31, finanze=43, collegati=10, vigore=94, interventi=34, SEDE=6, collegiali=3, necessarie=18, confiscati=7, soprannumero=2, dismesse=3, rinegoziazione=6, mancato=3, aziendale=3, professionali=3, proveniente=2, Trasmesso=1, attrarre=1, Stampa=1, novembre=17, coinvolgimento=28, eventuali=15, condizioni=13, tempistica=2, Esse=2, rubricato=2, azioni=12, asta=1, organismi=44, affluenza=3, nominale=3, Capo=7, rimborso=6, Pompei=29, immobili=8, pluriennale=1, sostituita=11, Soprintendenza=14, sottoscritto=2, Museo=6, derivante=34, accantonamento=2, malattia=2, fornite=2, riapre=2, tengono=2, raggiunto=2, quadrimestrale=1, straordinario=17, usi=1, apposita=25, finalizzato=18, sanzioni=2, convoca=1, SIAE=1, dati=4, eventi=3, Sezioni=4, progetto=180, quali=9, emittenti=2, depositate=1, procedure=16, diecimila=1, interconnessioni=2, sostenibilità=6, tattile=4, AFAM=1, scientifica=5, finora=2, ottanta=1, preveda=4, musicali=17, criteri=16, intervenga=1, antincendio=1, agosto=28, appropriatezza=1, sostitutiva=1, nulla=3, sito=33, ivi=4, ripartita=6, Shoah=4, Titolo=9, beneficiari=5, Corte=11, rischi=3, artisti=34, gennaio=30, pompeiana=2, coniugati=1, dicembre=31, banche=2, Sistema=13, previsionali=1, ulteriori=12, popolari=1, presieduta=2, ricorrenze=1, interamente=2, scolastiche=2, recitazione=5, viaggianti=1, beni=210, anidro=2, specificati=2, mafiose=1, Napoli=15, previsto=121, svolta=12, reperire=4, anagrafe=2, Caserta=6, monetazione=1, economia=200, intestate=1, ricerca=19, prioritariamente=5, sollecitazione=4, semestrale=2, presentata=8, APPROVATO=7, promosso=1, Parlamento=1, contrattuali=2, innovativi=6, provengono=2, imperatore=1, prevenire=1, urbanistica=3, elettronici=3, NOTA=1, Alta=1, partenariato=4, predeterminati=2, giovani=21, soggetti=25, quantificati=2, accedere=3, esenti=1, ciascuno=53, massime=3, dogane=2, Campania=4, riuso=2, committenza=1, estende=1, MAXXI=1, disciplinari=3, riassegnati=3, Costituzione=5, ettolitro=6, decisionale=3, pareggio=2, definite=5, statali=9, monumentali=2, esercenti=2, potenziali=1, successive=48, condanne=1, strumenti=3, affari=5, coinvolti=4, ricovero=1, territoriale=9, ove=6, entrambe=1, detengano=1, immediate=1, Unesco=11, bancari=4, inutilizzate=1, designati=4, assicurare=108, pervenire=4, strumentali=8, antimafia=1, rilancio=18, residenti=1, indisponibile=1, magistrati=1, caserme=1, architettonica=3, produttori=2, dodici=2, danza=3, Sindaci=2, Oli=3, effettuata=4, sola=4, sessanta=10, possano=2, circensi=1, locatario=2, dirigenziale=5, vie=2, assunzionali=2, promozione=141, interessi=33, settembre=9, valorizzazione=46, riproduzioni=2, versino=4, scheda=1, COM=2, coproduzioni=1, valere=8, concernenti=6, assenze=2, Direzioni=2, fonogrammi=2, volontariato=4, prosecuzione=17, LETTA=2, esterna=2, richiedere=3, rideterminazione=8, progettuale=3, dedicati=1, Raccolta=1, Spa=1, Cancellieri=1, riconosciuto=8, spetta=3, Ufficiale=4, Nascondi=1, Ragioneria=1, Centro=6, giacenti=3, ovvero=7, ore=2, cento=22, stranieri=3, uscite=1, musei=2, esteri=3, città=7, realizzazione=148, triennio=3, predetti=10, graduali=1, predisposti=1, digitali=14, carnevale=6, Ales=2, compatibili=7, comprovata=2, consultiva=4, osta=2, personale=212, videografiche=4, fonografica=4, regionali=11, competente=247, deliberando=2, contributi=18, statutari=7, parole=6, compositori=4, dispongano=1, stipulato=2, infrastrutturali=4, immediatamente=1, autoprodotte=1, giorni=29, procedere=8, prelievo=2, positiva=6, intende=5, interoperabilità=2, ponendo=1, entrata=153, bilancio=110, redigendo=1, università=15, concorsuale=2, trattative=2, mare=1, soppressi=4, artigianato=1, eleggibili=4, ripubblicazione=1, tradizionali=2, Decoro=2, umane=7, selettive=5, sino=1, somme=6, Conversione=30, lirici=2, recupero=9, eccedenze=2, marzo=14, filologica=2, domanda=5, aprile=14, Governo=3, interruzioni=2, corrisposti=1, predispone=5, bibliotecario=1, turismo=80, posteggio=5, rileva=1, italiane=3, Visto=1, sovrintende=1, forme=12, demanio=5, anatocistici=2, presidente=620, infrastrutture=5, capitoli=1, ricorrere=3, corrispondente=28, fattori=1, residenze=4, donante=1, promuovendo=7, entra=2, arredi=2, presso=13, Regione=7, Trattato=2, metalliche=1, pronunziarsi=1, riduzione=29, monete=2, farlo=1, meritevoli=1, storico=25, tirocinanti=6, cinema=9, Conferenza=5, informatizzazione=1, strutturali=8, altra=1, evidenziazione=1, pubblici=25, educative=1, rivenienti=1}, {autonome=26, differenziate=4, visibile=4, Parma=5, monitoraggio=93, trenta=2, direttoriale=10, superiori=23, XIV=2, vengono=5, cumulabili=4, appaltanti=4, segnala=7, materiali=20, sanitario=19, suddetto=40, aziende=24, analitica=2, componenti=17, DISEGNO=16, semintegrali=2, ricollocato=6, tiene=3, aule=2, rosse=2, Dipartimento=6, dispositivi=7, numero=882, sprovviste=2, situate=2, Gazzetta=37, linee=7, parlamentari=5, divieto=16, imprese=6, giurisdizionale=6, limiti=33, afferenti=2, nonché=69, famiglie=11, liquidi=8, vigente=25, elettroniche=22, ottobre=22, benefìci=9, assegnate=32, orientamento=19, tecnici=49, finanziarie=47, interministeriale=5, penali=6, mutui=10, liceale=4, derivare=39, prestiti=3, minori=17, cereali=2, territorialmente=5, ortofrutticoli=3, telematica=13, diciotto=4, ricomprese=2, centottanta=2, alcolici=15, adeguamento=14, interviene=2, patrimoniali=2, urgenti=22, biologici=5, esse=3, predispongono=2, debbano=3, annualmente=20, web=2, autenticate=2, collochino=2, adibiti=4, imposte=28, esso=6, deroga=62, offerta=23, Art=10, punteggio=47, ATA=10, connettività=8, transitoria=3, mediante=38, istituzioni=118, yogurt=2, cotte=2, tengano=5, dovranno=3, giugno=36, compresi=12, ANVUR=12, risorse=72, SACCOMANNI=2, Friuli=4, ipotecaria=10, variazioni=9, carni=2, evolutivi=2, equamente=2, volti=25, europea=18, multimediali=4, artigianali=2, febbraio=23, edifici=16, agroalimentari=4, tenuto=21, pecuniarie=4, far=10, dispersione=45, piena=12, graduatorie=75, contadina=3, intervengono=3, contemplano=4, ministeriale=11, rispettivamente=20, dovrebbe=10, rischio=21, crude=2, comprende=5, immigrati=3, bonus=3, coloro=8, investimenti=9, merito=25, III=3, novanta=3, ultimi=11, vulcanologia=7, disponibili=29, politiche=19, secondaria=44, comunque=29, aree=22, gratuito=6, wireless=9, riporti=2, venti=4, etilico=8, esigenze=12, tali=69, infine=18, Agenzia=7, bancaria=4, nuova=40, Apertura=2, umanistica=2, Europa=11, affettività=2, laboratori=8, fonti=10, XII=2, diversi=6, fiscali=4, produttrici=2, premi=6, specializzandi=11, provvede=55, coreutica=19, trasmessa=2, dirigenti=63, alfabetizzazione=4, tutore=9, ufficiale=212, itinere=2, incidono=2, intermedi=8, alimentari=8, Presidenza=12, Finanziamenti=11, Agricoltura=8, avente=8, archeologico=5, luglio=67, apportare=91, carico=326, prevalgano=2, chirurgia=4, avvenire=4, disoccupazione=3, tributaria=5, parametri=5, regolamentari=4, quindici=4, atti=13, sovrapposizione=2, FAVOREVOLE=15, riflessi=3, istituti=53, intercompartimentale=4, previo=30, crediti=6, esubero=3, risparmi=6, costituzionale=14, avviene=4, spettanti=2, appartenenti=3, spesa=414, razionalizzazione=3, iscriversi=12, consapevole=10, Giulia=4, dovrebbero=4, attraverso=21, ammessi=19, attuativo=2, preselezione=2, valuti=20, piccola=3, convenzioni=13, attuazione=471, triennale=9, trova=2, chiedere=42, recante=19, vietata=10, sistema=148, inidoneo=46, emolumenti=2, maggiori=65, transitare=3, trovino=2, varie=3, FFO=4, immobiliari=5, conseguente=35, fondazioni=7, cessano=6, dissesto=2, altresì=32, ordinario=156, annui=7, frequentati=4, Venezia=4, quinquennio=3, alinea=15, edilizia=24, maggio=7, destinatari=6, Sperimentale=8, reca=10, mesi=16, assunzione=79, riparto=11, accisa=22, finalità=81, veterinaria=2, vulnerabilità=2, vedano=7, relative=108, connessi=10, tecnologica=15, cinematografiche=2, bandito=41, Giustizia=4, titolari=2, palestre=4, extracurricolare=2, scorrimenti=2, vacanti=14, Miglioramento=9, disturbi=4, subordinatamente=2, culturali=33, contenenti=15, Commissione=59, informatica=5, oneri=71, Ambiente=3, decorrere=71, Forum=4, uova=2, VII=2, sovrannumero=6, aliquote=14, catastale=10, Garante=4, tributi=2, interculturale=2, definitivamente=4, riformulare=3, utilizzo=82, extravergine=2, incompatibili=2, alta=35, viene=14, perseguimento=4, testuale=5, intenti=2, intendano=4, finanze=112, vigore=630, poter=2, sempre=6, interventi=50, attinenti=3, rilascio=9, detratto=2, stanziamenti=22, necessarie=13, abbandono=4, stipendiale=2, già=105, indizione=2, aziendale=2, consta=4, iscritti=34, orale=10, verdure=2, specialistica=20, restando=33, arti=5, Stampa=5, novembre=28, autoregolamentazione=2, mancata=2, chiusi=2, indirizzi=8, COMITATO=20, ristorazione=2, progetti=42, stagionali=2, sottoscritte=4, Capo=11, rimborso=6, sostituita=49, forestali=6, doveri=2, ospedaliere=3, Indicatore=4, pluriennali=4, riapre=2, Contenimento=2, appositi=15, ciò=3, durante=4, anzianità=4, epidemiologico=2, sanzioni=16, dati=11, paritarie=4, riferimento=160, rispondenti=2, quali=21, esposti=2, emittenti=4, belle=6, ottenuto=16, poiché=2, AFAM=9, scolastico=374, terreni=9, BES=4, musicale=30, vulcanica=3, scientifica=11, utenti=2, antincendio=2, siti=7, agosto=56, geografia=3, asili=2, ivi=20, bibite=4, Fondo=39, coperti=2, presentino=2, Corte=6, gennaio=51, centri=4, dicembre=101, borse=23, imprenditori=4, carenza=2, olimpico=2, ulteriori=17, occupazionali=2, candidati=22, internazionali=7, beni=13, messaggi=2, artistica=32, anidro=5, province=16, previsto=121, anagrafi=11, CCNL=8, Bolzano=7, raddoppiata=2, sigarette=19, sismica=3, economia=165, prioritariamente=9, piattaforme=2, Contestualmente=4, olografa=2, Parlamento=4, istruzione=1274, salute=50, ogni=64, Cassa=4, finalizzate=22, MIUR=2, VQR=2, prevenire=3, Trento=8, alunni=21, INVALSI=4, contenuti=36, psicomotoria=2, giovani=7, contrattuale=9, soggetti=28, autorizzatorio=14, profilo=48, regioni=58, odontoiatria=2, disciplinari=4, punita=2, Costituzione=15, ettolitro=15, iscrizione=31, mobilità=8, statali=37, definiti=100, successive=58, strumenti=16, bandiera=4, commissioni=19, XIII=2, obbligatoria=3, VIII=2, problematiche=3, immediata=2, bilingue=6, pensionamenti=2, ove=29, preselettiva=2, gassate=2, torna=2, quei=2, italofoni=2, sportiva=2, radiotelevisive=6, Trasporti=9, assicurare=37, modificato=15, Depositi=4, ridurre=4, docente=175, strumentali=5, accedervi=2, congiunti=4, tempi=4, residenti=2, PARERE=37, estranea=2, residui=3, sembrano=3, formativa=42, Consorzi=4, dodici=4, rideterminata=2, risultino=3, introdotte=6, cessazioni=3, negoziale=7, terapeutiche=2, provinciali=13, sessanta=10, assunzionali=13, permane=4, contempo=2, laurea=8, piano=33, energetico=7, settembre=24, valorizzazione=3, metodologiche=4, COM=2, sottocommissioni=6, riordino=6, concernenti=21, obiettivi=27, alcuni=3, rimodulabili=9, demanda=2, inserite=118, soddisfatta=2, professioni=3, ridefinisce=2, comporta=4, concorso=205, LETTA=2, funzionali=5, dovrà=2, Internet=2, nicotina=14, integrali=2, riassegnazione=4, linguistiche=2, spetta=4, prevedano=12, ovvero=13, geofisica=8, pubblicitarie=2, cento=20, montani=6, straniero=4, dimensionamento=7, fabbisogno=22, musei=16, agricole=25, predetto=36, Conseguentemente=2, orari=16, triennio=12, graduale=3, studentesche=4, digitali=20, proprietari=2, inidoneità=24, ITS=4, sottolinea=3, compatibili=2, cofinanziare=2, ambito=275, evitare=6, indeterminato=46, contiene=2, conoscenze=5, personale=510, regionali=31, apparecchiature=2, strategica=5, intervenire=4, criticità=4, prevalentemente=7, parole=188, quotidiana=2, valenza=2, Chiunque=2, trentennali=2, rivolti=3, reti=10, statutarie=2, purché=4, Cultura=7, Area=9, giorni=36, introduce=7, eccedano=3, rivedere=5, programmi=81, aspirante=19, fermo=330, minorenni=2, inerenti=6, posti=41, prodotti=23, entrata=242, riconducibili=2, destinati=39, monografico=2, soppresso=24, scaglioni=2, remunerate=3, concerne=2, delegificazione=4, rifiutare=2, trasferimenti=20, università=216, bambini=2, concorsuale=26, Bilancio=24, INGV=7, orizzontali=2, FOE=2, refezione=4, Strategia=2, artigianato=2, motoria=8, umane=3, sino=4, indetto=12, Conversione=46, efficientamento=5, sussistano=4, recupero=9, marzo=61, unificata=14, libri=18, fenomeni=4, media=4, Anagrafe=6, aprile=43, Governo=10, LEGISLAZIONE=17, serali=2, slovena=18, zuccheri=2, reggenza=3, turismo=3, birra=9, acquisiti=9, appare=7, presidente=187, infrastrutture=12, preventiva=2, Welfare=2, minuti=2, entra=2, pareggiati=2, appaiono=3, ricariche=12, scelgano=2, film=2, presso=35, princìpi=4, requisiti=13, vincitori=8, riduzione=52, preside=2, previdenziale=3, ridotta=4, provvisoria=2, studenti=100, pubblica=59, Conferenza=14, strutturali=5, biennio=6, altra=8, IRES=2, riassorbibile=2, giudicatrici=4}, {restanti=3, opportunità=28, NAPOLITANO=1, reati=3, trenta=2, XIV=2, segnala=4, sanitario=18, perseguiti=2, temporale=3, anticipazioni=8, DISEGNO=24, chiunque=1, favorevolmente=1, IMU=1, Gazzetta=8, verificato=3, parlamentari=2, Francia=2, voci=2, talune=1, succitati=4, imprese=1, afferenti=3, nonché=30, interno=61, vigente=197, ottobre=34, datori=2, pertinenti=1, assegnate=18, finanziarie=26, avvenuto=10, suscettibili=2, six=2, Missione=2, riscontrano=1, multilaterale=1, ricompresi=1, mal=1, Roma=1, interviene=1, essi=2, QUESTIONI=2, urgenti=17, quantitativamente=2, esse=1, addì=1, Nostrum=1, ATN=1, esso=1, Art=2, XVII=1, interessata=11, mediante=17, sospesa=1, compresa=1, extrasanitarie=9, Pil=7, annesse=1, giugno=13, comportano=3, ispirata=1, Difesa=2, risorse=121, SACCOMANNI=2, variazioni=7, futuro=1, Expo=2, circa=9, europea=13, febbraio=3, tautologica=1, incentivare=9, estorsive=3, far=3, umanitaria=2, Restano=1, inferiore=26, intervengono=3, approvato=7, accompagnati=7, prospettata=1, Lampedusa=1, Fiscal=1, III=2, investimenti=2, ispirino=1, politiche=7, ultima=2, fronteggiare=6, fornisce=5, comunque=7, venti=1, tale=27, esigenze=10, infine=3, adottare=3, reintrodurre=1, rotazione=5, retroattivamente=1, compensare=6, programmatici=4, maggiorazioni=15, rilevabile=3, premiali=1, fonti=4, afflusso=7, avvinti=1, XII=2, naufragi=1, diversi=1, fiscali=4, inasprimento=7, incidono=2, itinere=1, omogeneità=1, oralmente=1, rispettivi=6, dotazione=20, Presidenza=2, Agricoltura=1, nord=1, luglio=12, missioni=4, apportare=23, provvedimento=80, ciascun=20, tributaria=3, parametri=6, atti=9, disposte=3, sovrapposizione=2, FAVOREVOLE=17, demandata=2, tragici=1, crediti=1, spettante=2, originarie=1, appartenenti=1, spesa=123, razionalizzazione=1, conseguimento=1, medesimo=51, Spagna=2, previa=5, Forze=1, sospendono=3, automatismo=3, dovrebbero=2, sanzionatorie=1, esame=28, attraverso=6, costituzionali=2, istituzionali=1, vittime=3, massimizzazione=6, ricorre=1, attuazione=30, segnatamente=1, trova=1, recante=20, migranti=2, emana=1, scostamento=12, DELRIO=2, approfondita=1, immobiliari=6, aerei=1, pareri=1, altresì=8, DEF=2, erariali=1, precluso=1, certificazione=11, indefinito=1, stabilità=16, verificatasi=1, maggio=7, Tavoli=9, reca=5, mesi=1, intervenuta=3, annuo=4, illustrare=3, Guardasigilli=1, cosiddetta=2, complessivamente=11, contabili=4, emersione=2, scaduti=1, finalità=66, relative=26, Giustizia=2, dannoso=1, titolari=1, connesse=9, verificatisi=1, Documento=1, dequalificazione=1, culturali=2, Commissione=46, locali=32, esserlo=1, Ambiente=2, decorrere=6, VII=1, aliquote=8, servizio=23, lettere=1, prescritti=1, Tesoreria=3, riformulare=2, accoglienza=11, utilizzo=20, verticale=2, IRPEF=5, autonomie=7, demaniali=3, Associazione=2, viene=1, sentenza=4, riguardanti=8, correggono=2, PDL=1, two=1, vigore=45, sempre=6, interventi=10, attinenti=1, andrebbe=1, Compact=1, stanziamenti=5, incertezza=2, necessarie=6, iscritte=8, ignorare=1, allegata=11, nulli=3, presentano=16, concorrono=1, restando=8, Stampa=1, Molise=5, novembre=12, pagamento=32, analoga=1, desunta=1, eventuali=4, ante=1, mancata=2, accantonamenti=29, COMITATO=6, riduce=1, clausole=1, sostituito=1, immobili=3, innovazioni=1, derivante=27, sezione=9, preso=1, debba=1, pluriennali=1, condannati=1, essenziali=3, dispone=7, assumano=1, apposita=2, segretari=4, azzeramento=1, agevolata=5, conciliano=1, dati=3, Sezioni=1, comunali=7, misure=30, quali=7, brevi=2, Regolamento=2, procedure=8, ottenuto=2, netto=67, registrato=4, capoverso=3, criteri=2, ripartito=1, agosto=20, anzidetti=1, ivi=3, evince=1, Fondo=54, Corte=2, gennaio=1, centri=3, dicembre=18, miliardi=2, prendono=2, pignoramento=6, ulteriori=6, estinti=3, mafioso=3, INPS=3, redigerla=1, comunitari=1, dismissioni=6, province=6, previsto=23, solidarietà=19, relazione=49, Paesi=4, Bolzano=2, economia=35, prioritariamente=1, prevedendo=1, Parlamento=1, attribuito=9, Trento=2, NOTA=4, qualora=3, soggetti=7, casi=5, addizionale=12, ponga=2, svolgimento=30, Istituzioni=1, regioni=37, sussistono=1, estende=1, Costituzione=5, successiva=9, reperite=1, affari=8, strumenti=3, XIII=3, VIII=1, territoriali=5, gettito=51, modifica=6, ALFANO=2, problematiche=2, immediata=5, ritenersi=1, consuntivo=1, previgenti=1, entrambi=1, assicurare=21, Trasporti=1, indisponibili=7, via=14, nullità=3, telecomunicazioni=1, tempi=1, PARERE=34, residui=2, inseriti=12, AIR=1, Puglia=1, giudizi=7, introdotte=3, capienza=1, modificata=2, provinciali=4, possano=3, copertura=33, teso=7, indeboliscono=2, ancorché=1, settembre=4, valere=11, riordino=8, concernenti=5, eccessivo=1, alcuni=5, indipendentemente=1, rimodulabili=2, eccezionale=46, prosecuzione=7, LETTA=2, concorrente=1, spetti=1, dovrà=2, preambolo=2, riassegnazione=2, Raccolta=1, usura=6, Cancellieri=1, MELILLI=1, Nascondi=1, Ufficiale=9, Ragioneria=4, ovvero=16, patto=32, riconosciuti=13, Grecia=2, cento=15, miglioramento=30, stranieri=12, Unione=10, fabbisogno=15, esteri=4, migratorie=3, triennio=4, predette=20, Milano=1, virtuosità=2, scorso=2, compone=1, ambito=29, evitare=3, emergenziale=1, richiama=3, prorogato=8, criticità=1, parole=9, MISE=2, IRAP=5, regionale=16, immediatamente=1, raccomanda=1, settimana=1, ricorda=1, Cultura=1, contemplato=2, rateizzazioni=2, giorni=14, Amministrazioni=18, introduce=2, confluire=3, pack=3, notevolmente=1, debiti=31, affidata=1, positiva=2, riconducibile=1, inerenti=1, commessi=1, trasferimenti=1, poste=2, Bilancio=32, preesistenti=1, Bassi=1, risposte=1, navali=1, medio=4, somme=14, Conversione=20, spazi=2, sociali=2, riequilibrio=19, forfettario=8, recupero=5, programma=38, sprechi=2, Africa=1, marzo=7, provvisoriamente=1, venir=1, gestionale=4, acquisisca=6, aprile=8, armate=1, Governo=18, LEGISLAZIONE=11, riguardino=1, ridotti=4, PERMANENTE=16, lavori=1, turismo=3, rileva=2, sembrerebbe=1, contraddicendo=1, interlocuzione=1, invarianza=1, popolazione=9, Visto=1, umana=1, miri=1, stata=3, presidente=12, preventiva=1, Mare=2, capitoli=5, Portogallo=1, entra=2, presso=4, requisiti=4, riduzione=140, funzionari=3, Relatore=1, attualizzazione=1, farlo=1, pubblica=53, Conferenza=3, biennio=6, strutturale=4, immigrazione=25}, {mercati=14, autonome=32, specifiche=24, neretto=2, alloggi=2, partizioni=2, chilometri=12, diffuse=2, ISTAT=6, trenta=6, decimali=2, XIV=2, vengono=2, LORENZIN=2, over=3, suddetti=6, detiene=2, Decorsi=2, sanitario=49, Aquila=3, autostradali=3, componenti=25, temporali=5, DISEGNO=14, chiunque=3, sviluppo=126, Dipartimento=48, conferimento=63, concessa=8, Gazzetta=16, parlamentari=4, talune=2, magistratura=8, imprese=38, limiti=54, afferenti=2, esperti=6, nonché=95, intercorrente=2, trasferito=38, concessionaria=7, terzi=3, accelerazione=5, SISTRI=36, vigente=73, ottobre=22, benefìci=3, consolare=2, temporanee=3, interministeriale=2, finanziarie=77, operino=6, distanze=10, Speciali=26, derivare=41, FEASR=2, telematico=2, Roma=3, Quadro=6, centottanta=2, CARROZZA=2, flessibile=6, interviene=4, diplomatica=2, essi=3, urgenti=24, comunitaria=2, quantitativamente=2, esse=3, uffici=19, assolve=2, qualsiasi=33, predispongono=2, debbano=4, aeroportuale=8, deroga=113, Art=4, interessate=38, coesione=250, transitoria=4, mediante=40, disaggregata=2, giugno=55, compresi=22, stabilizzazione=16, Difesa=9, risorse=69, SACCOMANNI=2, Nucleo=4, tipologie=4, essa=3, autovetture=13, penultimo=4, transfrontalieri=2, febbraio=28, concluse=2, interpreta=14, pecuniaria=2, tenuto=28, improrogabilmente=2, reclutamento=30, far=3, promuove=5, mantengono=2, graduatorie=36, precari=7, inefficienze=2, dovrebbe=5, periferiche=2, coloro=11, tracciabilità=27, III=7, investimenti=10, Taranto=10, internet=2, novanta=7, ultimi=7, disponibili=33, rifiuti=68, Qualora=14, giudiziaria=12, comunque=39, TRIGILIA=2, ILVA=10, tale=163, notoria=3, esigenze=18, BRAY=2, Agenzia=66, bancaria=2, esistenti=8, pediatri=2, nuove=17, audit=2, CANCELLIERI=3, ipotesi=65, statistico=24, consentire=72, sussiste=4, fonti=5, indisponibilità=3, XII=2, confermati=4, diversi=6, provvede=74, Resta=16, irrogazione=2, soprannumerarie=5, trasmessa=2, aventi=5, dirigenti=29, Ferma=9, mille=2, revisori=4, dotazione=65, rispettivi=23, alimentari=4, intendono=9, Presidenza=48, ORLANDO=2, estremamente=2, Agricoltura=2, urbani=3, pericolosi=30, determinato=236, luglio=87, avvalendosi=13, ARPA=5, spa=10, PARTECIPATE=6, amministrazioni=811, carico=794, ciascun=18, subentrano=2, chirurgia=2, Beneficenza=2, CONSOB=2, regolamentari=3, gas=2, quindici=2, atti=16, salve=47, parametrazione=6, FAVOREVOLE=13, auto=8, ALIA=2, ottimizzare=5, segretariato=2, autentica=6, Sentite=2, risparmi=3, donazione=7, spettante=5, implementazione=2, situazioni=4, avviene=4, appartenenti=19, spesa=211, Rossa=4, razionalizzazione=33, sindacali=10, paternità=2, medesimo=162, previa=33, attuativi=4, Forze=2, dovrebbero=2, ammesso=2, attraverso=30, costituzionali=13, società=903, istituzionali=6, restituite=2, vittime=2, vigenza=4, ricoperta=2, riassorbito=2, comitati=19, attuazione=151, convenzioni=8, triennale=12, intermediazione=5, trova=4, recante=13, riqualificazione=2, maggiori=49, dieci=3, Statte=2, regolamentati=19, aereo=2, producono=6, vuoti=2, europei=33, beneficienza=2, poteri=10, cessano=2, corruzione=5, altresì=18, contemperano=2, agonistica=2, Tavolo=4, annui=28, localizzate=2, esercita=4, alinea=5, maggio=32, mesi=11, Dette=5, LUPI=2, ZANONATO=2, finalità=56, relative=112, Polizia=6, vedano=6, titolari=7, volontario=19, vacanti=10, criminalità=2, computarsi=2, ambientale=29, ricorrano=13, calcolate=5, assorbimento=2, proroghe=46, sperimentale=5, culturali=17, benefici=5, Commissione=78, oneri=69, indipendenti=2, nazionali=10, lavoratori=21, decorrere=37, sovrannumero=2, VII=2, cinquemila=2, servizio=696, curino=2, rilasciata=14, lettere=2, regio=2, prefissati=2, Autorità=44, equiparati=2, iniziali=7, Associazione=2, assunzioni=96, viene=4, perseguimento=22, testuale=9, Anas=2, sequestro=6, gestori=3, funzioni=89, GIROLAMO=2, finanze=82, Corpo=31, vigore=196, interventi=27, sempre=4, evidenziate=2, stanziamenti=10, riorganizzazione=57, trasporti=45, soprannumero=10, rinegoziazione=3, indizione=3, nulli=8, demandano=2, iscritti=11, ampia=2, forestale=10, specialistica=2, concorrono=3, varianti=3, restando=42, anticipate=3, novembre=23, aziendali=7, condizioni=17, mancata=6, vettori=4, turn=4, Comunicato=1, riformulate=2, COMITATO=22, smaltimento=8, riduce=2, egli=2, tutte=8, arredati=2, Capo=21, clausole=11, assumere=84, sostituito=39, sottoscritto=6, consulenze=4, giuridica=2, accantonamento=6, BONINO=2, raccolgono=5, retroattiva=2, pianta=4, EFFICIENTAMENTO=2, taxi=2, ciò=8, articolazioni=5, anzianità=15, masserizie=6, quadriennio=3, sanzioni=14, potrebbe=2, comunali=2, recepimento=2, quali=36, emittenti=8, prioritaria=2, incide=3, procedure=94, Federazione=4, ottenuto=3, elettrocardiogramma=2, firmatarie=2, ripartite=2, scolastico=9, capoverso=4, scientifica=2, intermediari=2, azionarie=4, utenti=6, agosto=108, cessionaria=1, anzidette=1, Sogei=2, fuoco=29, asili=2, ivi=24, citati=4, Fondo=40, professori=2, AGEA=2, Corte=6, riguarda=7, rappresentanza=24, gennaio=45, dicembre=169, imprenditori=3, candidato=2, ulteriori=15, olimpico=2, carenze=4, recate=4, INPS=2, quarantacinque=4, previste=154, province=32, coniuge=4, assoggettabili=2, aerostazioni=2, Bolzano=10, aeromobili=3, assistiti=2, cartacee=1, usufruiscono=2, APPROVATO=13, Parlamento=5, internazionale=4, contrattuali=9, finalizzate=9, prevenire=2, Trento=10, partenariato=2, carcerario=2, protette=2, sufficienti=3, discariche=8, Aziende=24, soggetti=47, imprenditoriali=2, accedere=4, sub=2, resesi=2, richiamati=9, attingendo=8, concedente=2, soprannumerarietà=3, incomplete=1, odontoiatri=2, Costituzione=12, riassegnate=6, facenti=5, iscrizione=7, mobilità=23, DIA=2, nidi=2, imputabile=2, profili=18, successive=40, consuntivati=2, strumenti=11, affari=19, svincolata=2, XIII=2, conseguito=12, coinvolte=2, VIII=2, ALFANO=2, ripristinate=2, restino=1, territoriale=34, ove=21, ritardi=2, Croce=4, Guardia=1, sportiva=4, speleologico=2, assicurare=110, previgente=6, modificato=20, logistiche=2, ridurre=4, attuano=4, maternità=2, rurale=7, strumentali=24, privatizzata=4, telecomunicazioni=1, PARERE=32, sterili=2, sembrano=5, residente=2, Puglia=6, produttori=12, estranei=6, dodici=4, concorsi=44, risultino=2, introdotte=3, cessazioni=13, negoziale=2, assistenziali=7, rideterminati=2, contratti=96, provinciali=16, sessanta=10, anagrafica=3, Unioncamere=2, eccedentario=7, dirigenziale=42, derivino=2, assunzionali=17, contempo=3, lgs=8, laurea=12, settembre=42, Gabinetto=2, alcuna=6, talvolta=3, valorizzazione=2, adeguatamente=4, cofinanziati=5, valere=19, obiettivi=21, fattispecie=1, alpino=7, inserite=103, LETTA=2, riscontra=2, testimoni=3, funzionali=19, valutino=8, ospitante=2, avvalgono=4, spetta=7, prevedano=11, Ufficiale=17, Nascondi=1, ovvero=33, Direzione=9, dedicate=8, normativa=40, Club=2, cento=34, congedi=4, qualitativo=1, ragioneria=11, gode=4, detenuti=1, agricole=8, fabbisogno=70, predetto=42, città=5, triennio=5, Accordo=4, estero=58, compone=3, passaggio=15, anticorruzione=6, richiedono=2, comprovata=11, estesa=2, ambito=486, indeterminato=40, evitare=2, contiene=5, stipulati=14, personale=274, IPAB=8, parole=171, strategico=9, autorizzazione=116, regionale=21, digitale=6, DAMIANO=1, raccomanda=2, ricorda=2, purché=3, giorni=35, concorrenza=10, elevata=7, concorsuali=24, posti=31, inerenti=2, entrata=451, raccoglie=2, pesca=2, onnicomprensivo=4, soppresso=32, sentita=13, bilancio=355, delegificazione=3, societari=2, mare=32, umane=10, Antimafia=6, RSA=1, selettive=12, sino=10, somme=6, Conversione=40, recupero=8, eccedenze=5, conoscitive=2, marzo=99, derogatorio=4, eccedenza=13, caratterizzate=2, Governance=1, fenomeni=2, aprile=44, dipendenti=79, Governo=4, armate=1, LEGISLAZIONE=22, acquisita=2, percentuali=14, corrisposto=9, PERMANENTE=17, turismo=6, ridotte=6, italiane=5, appare=7, movimentazione=1, inclusi=11, contestuale=4, presidente=541, consorzi=2, infrastrutture=11, censite=4, capitoli=5, preventiva=4, entra=2, presso=49, universitaria=5, pensionistici=5, religione=2, princìpi=10, requisiti=20, trasparenza=19, vincitori=14, Aggiornamento=4, parentali=2, funzionari=2, presta=4, previdenziale=2, gradualmente=2, ruoli=25, pubblica=281, emocomponenti=7, Conferenza=4, strutturali=13, altra=2, congruità=3, immigrazione=2, cespiti=2, gravanti=2}]
+[{trasporti=1, rilancio=1, giugno=1, opportunità=1, vicepresidente=1, SACCOMANNI=1, beni=1, Trasmesso=1, alimentari=1, LORENZIN=1, ORLANDO=1, MODIFICATO=1, Stampa=1, soppresso=1, IDEM=1, luglio=1, università=1, mare=1, LUPI=1, DISEGNO=1, economia=4, ZANONATO=1, MAURO=1, APPROVATO=1, GIOVANNINI=1, istruzione=2, Conversione=1, salute=1, forestali=1, sociali=1, LETTA=1, stampate=2, ALIA=1, giustizia=1, BONINO=1, interno=2, culturali=1, politiche=3, Nascondi=1, MOAVERO=1, TRIGILIA=1, presidente=2, agricole=1, esteri=1, BRAY=1, infrastrutture=1, MILANESI=1, CARROZZA=1, autonomie=1, affari=3, venticinquesima=1, urgenti=1, giovanili=1, sport=1, ALFANO=1, CANCELLIERI=1, recante=1, territoriale=1, grassetto=1, agosto=2, PDL=1, GIROLAMO=1, finanze=1, territorio=2, KYENGE=1, regionali=1, XVII=1, pubblica=1, coesione=6, DELRIO=1, difesa=2, europei=1, parole=3, semplificazione=1}]
+
+
+Cluster [{autonome=13, medica=31, sindaco=2, addetti=1, CESARO=2, fittizia=5, consistono=1, ISTAT=2, trenta=12, TESTA=1, automezzi=5, LORENZIN=2, corpi=6, chilometro=1, pittogramma=2, suddetti=2, MARCHI=2, analitici=3, permanere=1, CONTE=1, autoveicoli=17, Decorsi=3, marciapiedi=1, componenti=3, sprovvisto=12, rimorchi=10, tiene=15, bombole=2, leggeri=1, autostradale=10, GIAMMANCO=1, Dipartimento=18, dispositivi=20, disponga=6, ANTONINO=2, irrogata=2, Gazzetta=1, parlamentari=2, convive=1, limiti=40, giurisdizionale=1, afferenti=1, nonché=61, interno=155, attrezzature=12, MARINI=1, terzi=3, liquidi=1, ottobre=9, doppia=3, ventuno=5, sedile=2, prefettura=2, anabbaglianti=1, finanziarie=18, preferibilmente=2, confezioni=5, ausiliario=3, sospeso=12, pianificati=1, TIDEI=1, esercitano=14, territorialmente=9, telematica=2, uniformano=2, flessibili=1, lucrative=2, applicano=159, diciotto=4, centottanta=3, automobilistico=4, essi=3, urgenti=1, restituzione=8, biologici=1, autostrade=10, comunitaria=10, visibilità=6, annualmente=10, eludano=1, quando=87, adibiti=9, istante=1, coincida=1, Art=108, traiettorie=1, desumersi=1, alcolemico=11, compatibilmente=3, cancelleria=3, superino=1, accertamento=236, mediante=6, centoventi=2, tonnellata=2, richieda=9, pertinenze=7, giugno=17, riposo=33, sessantesimo=3, gallerie=2, risorse=24, SIMONETTI=1, prefetto=20, ALBONETTI=1, REGUZZONI=1, FOTI=2, contemporaneamente=2, usarli=1, LULLI=4, LAURA=1, ABRIGNANI=1, violazione=197, autovetture=2, carrozzeria=1, ventiquattro=2, autosnodati=1, Comitato=9, temporaneamente=2, febbraio=3, pecuniaria=26, FONTANELLI=1, tenuto=13, mensili=2, ONLUS=2, ricollegabile=1, supera=17, definitivo=11, dilettantistiche=2, agevolazioni=2, MOFFA=1, Presidente=23, comunicata=10, rispettivamente=30, luci=5, coloro=3, mobili=4, III=2, novanta=7, ultimi=6, simulate=1, BRANDOLINI=2, BIASI=2, impianti=10, politiche=21, consentita=17, SEMPLIFICAZIONE=2, alcool=9, ventunesimo=1, Avverso=3, comunque=18, aree=6, VELO=5, categoria=67, venti=1, esigenze=3, tali=29, abitati=9, NARDUCCI=1, elettrica=6, concerto=57, orario=37, STRADA=25, ipotesi=169, metri=1, coincidente=1, statistici=11, strade=32, ricorrono=6, TELECOMUNICAZIONI=1, AETR=1, procinto=1, mucosa=2, familiari=2, provvede=28, abuso=6, Resta=2, ufficiali=5, esibiti=8, urbana=2, incorrano=5, MARCO=2, occorrenti=2, SIMEONI=2, SCHIRRU=3, circolazione=622, potenziamento=27, avente=2, risiede=1, determinati=10, competizioni=3, TERESA=1, luglio=5, ARGENTIN=1, affezione=2, tivo=1, affinché=2, muniti=10, ammessa=3, semaforici=5, guidino=1, LANDOLFI=1, grammi=10, terapeutico=1, Piano=3, dotazioni=5, regolamentari=1, gas=4, quindici=8, atti=3, SCANDROGLIO=1, disposta=34, psicotrope=8, animali=10, FERRARI=2, ottimizzare=1, Ferrovie=2, spese=19, appartenere=3, HOLZMANN=1, avviene=2, appartenenti=5, spettanti=3, disagiate=2, prezzi=2, anziani=1, BONAVITACOLA=1, medesimo=94, legati=1, tenga=4, TEMPESTINI=1, attraverso=13, impossibile=1, vittime=2, anatomiche=1, attuazione=93, Automobile=2, scostamenti=2, alterati=6, polizia=36, CARRA=6, recante=1, patologie=2, udienza=33, illeciti=5, vietata=5, CORRETTO=2, emolumenti=1, europeo=14, maggiori=20, demandare=1, dieci=7, BOFFA=3, sistemi=20, istruttori=5, produce=5, verifichino=1, altresì=15, barriere=6, ANNA=1, MONTAGNOLI=1, debitore=1, SAMPERI=2, immatricolati=6, notturna=4, BOVICELLI=1, MOLTENI=2, verificare=11, diciassette=1, imputato=5, esercita=7, MACCANTI=1, APRILE=15, richiesta=62, verificatasi=2, alinea=2, fasce=2, maggio=6, BRATTI=1, accessoria=42, BERNINI=1, mesi=31, assunzione=9, annuo=8, campioni=3, farmaceutici=20, tecnologici=1, preposti=1, scaduti=7, avanzata=4, concessionari=6, finalità=32, noleggio=8, relative=55, ritenere=4, impone=3, titolari=9, automatico=2, condizionale=4, connesse=7, titolare=75, ZUNINO=3, MARCHIONI=1, MARIANI=2, ambientale=2, autoambulanze=3, mera=2, autotrasporto=9, sostanze=16, velocipede=7, precedenti=11, riclassificazione=1, esclude=2, incidentalità=7, primi=4, locali=13, informatica=4, trasgressore=6, Commissioni=8, dipende=14, acquirente=12, decorrere=19, capisaldi=3, contenente=1, Garante=2, servizio=381, motivato=10, VENETO=2, conviventi=1, equiparate=1, CODURELLI=1, lettere=18, TESTONI=2, precursore=1, caratteristiche=15, prescritti=40, VANNUCCI=2, TOGNI=1, alta=2, prestabiliti=1, superalcoliche=4, sentenza=33, sottoporsi=7, COMAROLI=1, alcoliche=11, diciannovesimo=1, tributari=1, finanze=36, confisca=36, stipulazione=6, filoveicoli=1, vigore=58, sempre=29, interventi=28, ripetute=6, rilascio=56, CECCUZZI=1, trasmette=9, necessaria=7, marcatura=3, iscritte=3, POSTE=2, confiscati=3, LOVELLI=2, guida=446, Ciascun=9, elementi=3, ANAS=3, chiedono=1, recidiva=7, proveniente=1, giornaliero=8, integralmente=7, PIZZETTI=2, redatto=2, varianti=9, restando=4, novembre=6, derivi=5, pagamento=121, patente=388, RIGONI=1, condizioni=28, soltanto=18, mancata=3, indennizzi=1, zoofila=2, vettore=3, BORDO=3, FAVA=1, disabili=2, progetti=4, bevande=8, settimanale=6, autobus=2, stagionali=1, Capo=27, Trasmessa=5, sostituito=51, VELLA=1, COMMISSIONE=4, CARLUCCI=1, prescrizioni=6, sezione=21, viabilità=3, elettroveicoli=1, dismessi=1, dispone=26, finalizzati=12, sanzione=312, apposita=13, durante=16, MUNERATO=1, dati=15, potrebbe=1, REGIONALE=4, inquinanti=2, quali=29, PORCU=1, emanare=48, prioritaria=3, ZELLER=1, reiterazione=11, uso=131, procedure=21, ripartiti=2, scolastico=1, capoverso=17, motoveicoli=6, utenti=3, criteri=10, agosto=24, SARUBBI=2, maturata=1, ENZO=4, antisdrucciolevoli=1, sostitutiva=2, ivi=9, citati=6, presentino=1, rischi=2, gennaio=5, Salvo=24, centri=13, idonea=11, omessa=2, dicembre=12, ulteriore=39, olimpico=3, Procedimento=1, TORRISI=1, Frontespizio=2, Nazioni=1, svolto=7, internazionali=5, ciclomotori=25, previste=88, province=15, presieduto=1, quattordici=1, autoscuole=12, BARBARESCHI=1, neurochirurgia=1, APPROVATA=1, coniuge=1, anagrafe=6, detentiva=8, relazione=97, parcheggio=1, contestualmente=5, Bolzano=6, attribuiti=4, raddoppiata=11, avvenga=2, percorrenza=1, BARBIERI=2, revoca=103, presentata=4, Parlamento=9, BRIGANDÌ=1, ogni=41, verbalizzazione=1, Trento=6, soggetto=206, centocinquanta=2, BERRETTA=1, regioni=15, punito=12, concedente=1, elettronico=10, declassificazione=2, MISTRELLO=1, CASTIELLO=1, teorica=2, riassegnate=1, facenti=1, lenti=2, protezione=74, psichici=4, LAMORTE=1, protettivo=27, cose=18, velocità=16, BIASOTTI=1, MOTTA=3, iscrizioni=3, proiettori=1, successive=25, strumenti=10, esercente=1, TRAPPOLINO=1, tecniche=16, STASI=1, accoglimento=4, Rete=6, accumulatori=2, motocicli=6, sportivi=2, CROSIO=1, divenuti=5, deficienze=1, amministrativa=135, consorziate=1, stradale=82, docenti=2, sportive=4, novantesimo=2, FIANO=2, modificato=34, ridurre=2, strumentali=18, copia=27, centottantesimo=1, ducono=1, inserito=137, tempi=12, estranea=14, istituzionalmente=1, zero=2, fisici=9, dodici=6, ruote=6, aver=9, sospensione=163, risultino=1, residuo=7, produrre=7, GRIMOLDI=1, sessanta=24, ragguagliando=2, litro=10, locatario=1, casco=7, mezzi=24, simboli=1, sidecar=1, settembre=1, valorizzazione=2, RAISI=1, piani=1, diversamente=9, commetta=5, versino=2, desiderino=1, NIZZI=1, bretelle=2, visualizzare=4, valere=6, autoarticolati=1, fattispecie=1, rimodulabili=1, invernali=4, volontariato=4, registro=61, comporta=13, GAROFALO=1, DIVELLA=1, Spa=3, segnaletica=23, porre=7, multimodali=1, corrispondere=1, giubbotto=2, VERSACE=1, spetta=3, Nascondi=1, ovvero=57, ore=10, pedoni=6, normativa=27, Club=2, cento=40, insozzare=1, Modifica=20, ripreso=1, CALLEGARI=1, agricole=3, appartiene=7, Spazio=1, triennio=6, predetti=18, comportino=2, RONDINI=1, estero=12, comprovate=3, VANALLI=1, PRA=4, inidoneità=1, sospende=5, pedonali=5, riabilitativa=1, veicoli=152, compatibili=6, organi=47, ambito=59, contiene=2, VIOLA=3, competente=134, apparecchiature=4, apparecchi=5, biciclette=2, parole=102, opponente=1, riportata=3, Chiunque=21, GIACHETTI=1, immediatamente=6, sicurezza=304, TRASPORTI=88, tossicodipendente=1, reti=1, notificato=6, purché=5, giorni=73, cagionare=1, leggibilità=1, sottoponga=5, programmi=12, RIVOLTA=1, aspirante=3, fotometriche=1, intende=1, entrata=174, prodotti=25, COSIMI=1, sentita=20, immissione=5, BITONCI=1, ispettori=1, bambini=4, ibrida=6, mare=2, recarsi=3, somma=229, Introduzione=16, umane=13, soppresse=16, abbinate=2, centimetri=2, propedeuticità=1, genitore=3, sociali=24, sussistano=6, recupero=8, classificate=6, AMICO=1, retroriflettenti=2, avvertenze=1, neopatentati=1, Progetto=4, marzo=13, ciclistica=3, appartenga=8, trattenute=2, unificata=1, riservatezza=4, AMICI=1, media=3, fenomeni=1, affidato=11, stupefacenti=11, Governo=8, irrevocabili=6, tranvie=1, SERVODIO=1, provvisorio=11, CATANOSO=1, retribuita=2, impugnabile=1, PERMANENTE=6, agente=29, TULLO=2, doganale=1, patentino=1, didattico=5, pneumatici=9, fatti=2, FEDI=2, acquisiti=3, quadricicli=2, BERGAMINI=2, COSENZA=1, popolazione=1, intercorrere=1, DUSSIN=2, laterali=1, infrastrutture=69, declaratoria=1, motorizzazione=4, CHIAPPORI=1, arredi=3, somministrazione=20, presso=22, manutenzione=31, dissimulato=1, cronotachigrafo=2, antidroga=5, requisiti=13, tricicli=2, LANZARIN=1, parentale=1, macchine=6, inadempienze=3, luminosi=4, riduzione=81, funzionari=8, affluiscono=1, pregiudichino=1, GPL=3, ridotta=7, extraurbane=2, POLLEDRI=1, pubblica=28, ALLASIA=1, accensione=2, negativi=1, Conferenza=9, iscrive=1, strutturali=2, altra=3, biennio=7, CONI=2, tronchi=6}, {reato=1, eccedono=1, introdotto=3, provvede=1, rilevato=1, già=2, estranea=1, chilometri=3, inasprimento=2, dodici=1, poi=3, sospensione=23, unanimemente=1, nemmeno=1, Stampa=1, aperte=1, pericolosi=1, anticipata=1, risieda=1, patente=8, litro=2, ebbrezza=1, terze=2, eventualmente=1, associazioni=1, questioni=1, salvo=3, bevande=2, grammi=2, alcuni=2, controproducenti=1, Fiat=1, anch=1, parlamentari=2, atto=21, talune=1, limiti=6, riportare=3, BRUGGER=1, ottobre=3, ciò=1, confronto=3, punteggi=2, Nascondi=1, avviene=1, durante=3, ovvero=1, coinvolge=1, ore=2, emerso=1, Club=1, dimezzare=2, ottenere=2, sanzioni=12, ugualmente=1, Forze=1, dover=1, esame=5, attraverso=2, vieta=1, ZELLER=1, diciotto=1, tribunale=2, concordata=1, alcolici=4, end=1, sostanzialmente=1, oltremodo=1, posseduta=1, telefono=1, Automobile=1, gruppi=2, veicoli=9, agosto=3, esso=1, equità=1, Art=8, rivede=2, effetto=11, alcolemico=4, ivi=1, europei=1, parole=12, assunto=1, sopprime=1, week=1, immediatamente=1, sollevate=1, lesioni=2, amministrativo=2, approfondire=1, giorni=2, disegno=10, Presentata=1, Frontespizio=2, interamente=1, tenere=6, ordinario=11, previste=9, compreso=1, affitto=1, punti=7, alinea=1, tasso=4, violazioni=3, mesi=11, complicato=1, assunzione=3, Onorevoli=1, condizionata=1, stessa=1, preposte=1, riducendo=4, accessorie=4, raddoppiate=2, supera=3, soppresse=3, Relazione=2, inferiore=1, ogni=2, titolari=1, extracomunitari=1, approvato=2, portatile=1, neopatentati=1, molte=1, Progetto=2, appartenga=1, eccedenza=2, sostanze=3, qualora=5, giovani=2, genitori=1, novanta=2, stupefacenti=3, aprile=10, attuali=3, depenalizzazione=1, menzionato=1, Governo=4, incidentalità=1, locali=4, eccessive=1, abrogato=6, alcool=3, controversa=1, provoca=2, estive=1, incorso=1, sostituisce=2, lenti=1, pene=3, velocità=7, passa=4, infine=2, particolare=1, successive=5, decaduto=1, obbligando=2, somministrazione=2, notte=2, subìto=1, viene=1, strada=47, XVI=1, gestori=1, vacanze=1, informano=1, usando=1, promise=1, modifica=9, marginali=1, tipi=1, PDL=1, riduzione=5, oraria=1, Bravo=1, ricalcava=1, intrattenimento=3, attribuiscono=1, stradale=6, sottratti=1, spettacoli=1, persona=2}]

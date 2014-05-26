@@ -29,7 +29,8 @@ public class ClusteringAnalyser {
 	}
 
 	@SuppressWarnings("unchecked")
-	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti, IDocumentCollection documents)
+	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti, 
+			IDocumentCollection documents, Map<Atto, List<ITerm>> topWordsResult)
 	{
 		Set<ClusterDescriptor> descriptors = new HashSet<ClusterDescriptor>();
 		
@@ -49,7 +50,9 @@ public class ClusteringAnalyser {
 			// adds unsorted top terms to the map
 			for (IDocument doc : c)
 			{
-				descr.atti.add(atti.get(doc));
+				// gets the act related to this document
+				Atto atto = atti.get(doc);
+				
 				for (ITerm term : doc.getTerms())
 				{
 					if (!topTerms.containsKey(term.toString())) {

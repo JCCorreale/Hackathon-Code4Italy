@@ -36,17 +36,17 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 	}
 	
 	private float minTfIdf;
-	private int maxTerms;
+//	private int maxTerms;
 	
 	/**
 	 * 
 	 * @param minTfIdf
 	 * @param maxTerms -1 = no limit
 	 */
-	public AttoDocumentAnalyser(float minTfIdf, int maxTerms) 
+	public AttoDocumentAnalyser(float minTfIdf/*, int maxTerms*/) 
 	{
 		this.minTfIdf = minTfIdf;
-		this.maxTerms = maxTerms;
+//		this.maxTerms = maxTerms;
 	}
 
 	@SuppressWarnings({ "unchecked" })
@@ -69,8 +69,8 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 			{
 				if (tfIdfs.get(term) > this.minTfIdf)
 					attoTerms.get(atto).add(term);
-				if (attoTerms.get(atto).size() == this.maxTerms)
-					break;
+//				if (attoTerms.get(atto).size() == this.maxTerms)
+//					break;
 			}
 		}
 		return attoTerms;
