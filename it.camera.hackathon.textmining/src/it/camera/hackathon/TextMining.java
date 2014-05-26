@@ -112,7 +112,7 @@ public class TextMining extends ITextMining
 		
 		AttoDocumentAnalyser analyser = getDocumentsAnalyser();
 		
-		Map<Atto, List<ITerm>> result = analyser.getData(documents);
+		Map<Atto, List<ITerm>> topWordsResult = analyser.getData(documents);
 		
 		// prints top terms for each document
 //		for (Entry<Atto, List<ITerm>> entry : result.entrySet())
@@ -129,7 +129,7 @@ public class TextMining extends ITextMining
 		// avoids overwriting atti-terms.json if clustering is performed (different top words amount considered)
 		if (!doClustering)
 		{
-			JSONAttiTopWordsPersister.saveAsSingleFile(result, "output/json/atti-terms.json");
+			JSONAttiTopWordsPersister.saveAsSingleFile(topWordsResult, "output/json/atti-terms.json");
 		}
 		
 		if (doClustering)
@@ -171,8 +171,17 @@ public class TextMining extends ITextMining
 			
 			System.out.println("\n\nTotal documents: " + docsCount);
 			System.out.println("Total clusters: " + clustering.getClustersCount());
-
-			// TODO Print representatives and topwords for each document for each cluster
+			System.out.println("\n\n");
+			
+			for (ClusterDescriptor descr : descriptors)
+			{
+				System.out.println("Cluster " + descr);
+				for (Atto atto : descr.atti)
+				{
+					System.out.println("\tAtto: " + atto.getLabel());
+					System.out.println("\t\t" +  topWordsResult.get(atto));;
+				}
+			}
 			
 			System.out.println("Clustering completed.");
 		}
