@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Hackathon Code4Italy - Text Miner</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<!-- BOOTSTRAP -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="/lib/evt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/lib/d3.v3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/lib/nv.d3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/lib/nv-extensions.js" charset="utf-8"></script>
+
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+			<div class="row title">
+				<div class="col-md-9 .col-md-offset-3"><h1>Code4Italy @Montecitorio<small class="subtitle">Text Mining</small></h1></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="nav nav-pills nav-stacked admin-menu">
+						<li class="active"><a href="/index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+						<li><a href="/atti/index.php"><span class="glyphicon glyphicon-book"></span>Leggi</a></li>
+						<li><a href="/temi/index.php"><span class="glyphicon glyphicon-tag"></span>Temi</a></li>
+						<li><a href="/dati/index.html"><span class="glyphicon glyphicon-list-alt"></span>Dati</a></li>
+						<li><a href="/info/index.html"><span class="glyphicon glyphicon-info-sign"></span>Info</a></li>
+					</ul>
+				</div>
+				<div class="col-md-9 well admin-content" id="home">
+					<div class="row-fluid selection">
+							<div class="buttons row-fluid">
+								<div class="col-xs-6 text-center">
+									<a href="/atti/index.php">
+										<div class="button panel panel-default">
+											<img src="/img/law.png" class="img-responsive" />
+											Esplora Leggi
+										</div>
+									</a>
+								</div>
+								<div class="col-xs-6 text-center">
+									<a href="/temi/index.php">
+									<div class="button panel panel-default">
+										<img src="/img/category.png" class="img-responsive" />
+										Esplora Temi
+									</div>
+									</a>
+								</div>
+							</div>
+					</div>
+					<div class="row-fluid text-justify" style="padding: 10px; clear: both">
+<p>Realizzato durante l'hackathon Code4Italy@Montecitorio, questo progetto, si pone l'obiettivo di estrarre i concetti dalle leggi sfruttando i Linked Open Data della Camera dei Deputati. Il sistema di data mining è stato interamente sviluppato da zero durante questo evento ed ha permesso di ottenere una categorizzazione delle leggi oltre che l'estrazione dei concetti chiave dai testi integrali.</p>
+
+<p>Il software sviluppato analizza una collezione di documenti (in particolare Atti della Camera dei Deputati) al fine di individuare gli argomenti trattati da ciascuno di questi. Utilizzando questa informazione in combinazione agli OpenData della camera, è possibile effettuare interessanti ricerche, mettendo in risalto le tematiche più affrontate in una legislatura, in un certo periodo di tempo o in relazione ad un particolare deputato o senatore.</p>
+
+<p>Il software processa i dati applicando tecniche di information retrieval come stemming, individuazione e disambiguazione dei sinonimi e utilizza indici standard come Term Frequency (TF) e Inverse Document Frequency (IDF). E' utilizzato un algoritmo di clustering non supervisionato per evidenziare l'andamento nel tempo delle tematiche trattate.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="footer navbar-fixed-bottom">
+		<div class="container" class="text-center">
+			<div>
+				<a href="http://dati.camera.it/it/hackathon/"><img src="/img/code4italy.jpg" class="text-center" /></a>
+				<p class="text-center">Text Mining - a data mining project by <b>Thierry Spetebroot</b>, <b>Jean Claude Correale</b>, <b>Alessandro Colace</b></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
