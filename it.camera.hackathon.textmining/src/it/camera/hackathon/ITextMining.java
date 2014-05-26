@@ -24,7 +24,14 @@ public abstract class ITextMining
 	protected static String itaStopwordsPath = "stopwords/stopwords_ita";
 	protected static String domainStopwordsPath = "stopwords/stopwords_domain";
 	protected static float minTfIdf = -1.0f;
-	protected static int maxTerms = 5;
+	/**
+	 * Also affects the number of terms considered by the clustering analyzer (input).
+	 */
+	protected static int maxActTerms = 5;
+	/**
+	 * Number of terms in the output of the clustering analyzer.
+	 */
+	protected static int maxClusterTerms = 5;
 	protected static boolean doClustering = true;
 	protected static int downloadLimit = 10;
 	protected static boolean writeTopTerms = false;
@@ -33,9 +40,9 @@ public abstract class ITextMining
 	static
 	{
 //		setTopWordsConfig();
-//		setClusteringConfig();
+		setClusteringConfig();
 //		setTopWordsTestConfig();
-		setClusteringTestConfig();
+//		setClusteringTestConfig();
 	}
 	
 	private static void setTopWordsConfig()
@@ -46,7 +53,8 @@ public abstract class ITextMining
 		itaStopwordsPath = "stopwords/stopwords_ita";
 		domainStopwordsPath = "stopwords/stopwords_domain";
 		minTfIdf = -1.0f;
-		maxTerms = 5;
+		maxActTerms = 5;
+		maxClusterTerms = 5;
 		doClustering = true;
 		downloadLimit = 1000;
 		writeTopTerms = true;
@@ -61,7 +69,8 @@ public abstract class ITextMining
 		itaStopwordsPath = "stopwords/stopwords_ita";
 		domainStopwordsPath = "stopwords/stopwords_domain";
 		minTfIdf = -1.0f;
-		maxTerms = 5;
+		maxActTerms = 50;
+		maxClusterTerms = 5;
 		doClustering = true;
 		downloadLimit = 1000;
 		writeTopTerms = false;
@@ -76,7 +85,8 @@ public abstract class ITextMining
 		itaStopwordsPath = "stopwords/stopwords_ita";
 		domainStopwordsPath = "stopwords/stopwords_domain";
 		minTfIdf = -1.0f;
-		maxTerms = 5;
+		maxActTerms = 5;
+		maxClusterTerms = 5;
 		doClustering = true;
 		downloadLimit = 10;
 		writeTopTerms = false;
@@ -91,7 +101,8 @@ public abstract class ITextMining
 		itaStopwordsPath = "stopwords/stopwords_ita";
 		domainStopwordsPath = "stopwords/stopwords_domain";
 		minTfIdf = -1.0f;
-		maxTerms = 5;
+		maxActTerms = 50;
+		maxClusterTerms = 5;
 		doClustering = true;
 		downloadLimit = 10;
 		writeTopTerms = false;
@@ -106,7 +117,7 @@ public abstract class ITextMining
 	
 	protected static AttoDocumentAnalyser getDocumentsAnalyser() 
 	{
-		return new AttoDocumentAnalyser(minTfIdf/*, maxTerms*/);
+		return new AttoDocumentAnalyser(minTfIdf, maxActTerms);
 	}
 
 	protected static ITermsDisambiguator getTermsDisambiguator() 

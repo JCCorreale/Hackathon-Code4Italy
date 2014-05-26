@@ -148,9 +148,9 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
-			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2); // TODO Tune height
+			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
-			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxTerms);
+			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxClusterTerms);
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection, topWordsResult);
 			
 			// Saves clusters descriptors...
@@ -175,7 +175,7 @@ public class TextMining extends ITextMining
 				for (Atto atto : descr.atti)
 				{
 					System.out.println("\tAtto: " + atto.getIRI());
-					System.out.println("\t\t" +  topWordsResult.get(atto));;
+					System.out.println("\t\t" +  topWordsResult.get(atto));
 				}
 			}
 			

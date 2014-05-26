@@ -25,11 +25,10 @@ public class AttoMain
 		HashMap<Atto, IDocument> map = new HashMap<>();
 		map.put(entry.getKey(), entry.getValue());
 		
-		AttoDocumentAnalyser analyser = new AttoDocumentAnalyser(2.5F/*, 5*/);
+		AttoDocumentAnalyser analyser = new AttoDocumentAnalyser(2.5F, 5);
 		Map<Atto, List<ITerm>> resMap = analyser.getData(map.entrySet());
 		
 		for(Entry<Atto, List<ITerm>> e : resMap.entrySet())
 			System.out.println(e.getKey().getIRI() + " - " + e.getValue());
 	}
-
 }

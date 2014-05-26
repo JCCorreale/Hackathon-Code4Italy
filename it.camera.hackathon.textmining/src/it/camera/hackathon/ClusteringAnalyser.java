@@ -46,30 +46,34 @@ public class ClusteringAnalyser {
 			descr.id = descrId;
 			descr.cluster = c;
 			
-			Map<String, Float> topTerms = new HashMap<String, Float>();
-			// adds unsorted top terms to the map
+			Map<String, Integer> topTerms = new HashMap<String, Integer>();
+			
+			// for each document in the cluster, gets the corresponding act
 			for (IDocument doc : c)
 			{
-				// gets the act related to this document
 				Atto atto = atti.get(doc);
-				
-				for (ITerm term : doc.getTerms())
+				// adds the act to the cluster descriptor
+				descr.atti.add(atto);
+				// for each act, scans the top words and inserts the corresponding term to the topTerms map
+				List<ITerm> attoTopWords = topWordsResult.get(atto);
+				// adds terms to the topTerms map, with the corresponding score
+				for (int i = 0; i < attoTopWords.size(); i++)
 				{
-					if (!topTerms.containsKey(term.toString())) {
-						topTerms.put(term.toString(), documents.getTFIDF(term, doc));
-					}
-					else {
-						topTerms.put(term.toString(), topTerms.get(term.toString()) + documents.getTFIDF(term, doc));
-					}
+					String term = attoTopWords.get(i).toString();
+					int score = attoTopWords.size() - i;
+					if (!topTerms.containsKey(term))
+						topTerms.put(term, score);
+					else
+						topTerms.put(term, topTerms.get(term) + score);
+					
 				}
 			}
 			
-			// sorts the top terms
 			topTerms = MapUtils.sortMapByValue(topTerms, false);
 			
 			// adds top terms to the cluster descriptor
 			int counter = 0;
-			for (Entry<String, Float> entry : topTerms.entrySet())
+			for (Entry<String, Integer> entry : topTerms.entrySet())
 			{
 				if (counter >= maxTerms)
 					break;
@@ -95,15 +99,26 @@ public class ClusteringAnalyser {
 			Calendar date = Calendar.getInstance();
 			date.setTime(startDate.getTime());
 			
+			System.out.println("\n\nChecking revisions for documents in cluster " + c);
+			System.out.println("From " + date.getTime() + " to " + endDate.getTime() + "\n\n");
+			
 			// counts occurrences for each period (starting from January 2013)
 			while (date.before(endDate))
 			{
+				System.out.println("Acts before date " + date.getTime());
+				
 				int count = 0;
 				for (Atto atto : attiByDate)
 				{
 					if (atto.getRevision().before(date.getTime()) && atto.getRevision().after(startDate.getTime()))
+					{
+						System.out.println("Act " + atto + " revision = " + atto.getRevision());
 						count++;
+					}
 				}
+				
+				System.out.println(count + " documents found before date " + date.getTime());
+				System.out.println();
 				
 				// adds occurrences count for this date
 				descr.occurrences.put(date.getTime(), count);
