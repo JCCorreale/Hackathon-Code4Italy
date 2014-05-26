@@ -1,6 +1,6 @@
 <?php
-$content = file_get_contents('./../data/atti.json');
-$atti = json_decode($content, true);
+$content = file_get_contents('./../data/clusters-index.json');
+$clusters = json_decode($content, true);
 ?>
 
 <html>
@@ -28,6 +28,7 @@ $atti = json_decode($content, true);
 	<script type="text/javascript" src="/lib/d3.v3.js" charset="utf-8"></script>
 	<script type="text/javascript" src="/lib/nv.d3.js" charset="utf-8"></script>
 	<script type="text/javascript" src="/lib/nv-extensions.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/lib/jquery.tagcloud.js" charset="utf-8"></script>
 
 	<script type="text/javascript" src="/lib/selectize.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="/css/selectize.css">
@@ -46,8 +47,8 @@ $atti = json_decode($content, true);
 				<div class="col-md-3">
 					<ul class="nav nav-pills nav-stacked admin-menu">
 						<li><a href="/index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-						<li class="active"><a href="/atti/index.php"><span class="glyphicon glyphicon-book"></span>Leggi</a></li>
-						<li><a href="/temi/index.php"><span class="glyphicon glyphicon-tag"></span>Temi</a></li>
+						<li><a href="/atti/index.php"><span class="glyphicon glyphicon-book"></span>Leggi</a></li>
+						<li class="active"><a href="/temi/index.php"><span class="glyphicon glyphicon-tag"></span>Temi</a></li>
 						<li><a href="/dati/index.html"><span class="glyphicon glyphicon-list-alt"></span>Dati</a></li>
 						<li><a href="/info/index.html"><span class="glyphicon glyphicon-info-sign"></span>Info</a></li>
 					</ul>
@@ -68,15 +69,15 @@ $atti = json_decode($content, true);
 								{field: 'label', direction: 'asc'}
 							],
 							options: [
-								<?php
+							<?php
 $terms = array();
 
-$lenAtti = count($atti);
-for($i = 0; $i < $lenAtti; $i++) {
-	$atto = $atti[$i];
-	$len = count($atto["terms"]);
+$lenClusters = count($clusters);
+for($i = 0; $i < $lenClusters; $i++) {
+	$cluster = $clusters[$i];
+	$len = count($cluster["terms"]);
 	for($j = 0; $j < $len; $j++) {
-		$term = ucfirst($atto["terms"][$j]);
+		$term = ucfirst($cluster["terms"][$j]);
 		if(!in_array($term, $terms))
 			array_push($terms, $term);
 	}
@@ -91,7 +92,7 @@ for($j = 1; $j < $len; $j++) {
 	echo ", { label: \"".$terms[$j]."\"}";
 }
 
-								?>
+							?>
 
 							],
 							render: {
@@ -121,26 +122,27 @@ for($j = 1; $j < $len; $j++) {
 					</div>
 					<div class="laws">
 <?php
-$lenAtti = count($atti);
-for($i = 0; $i < $lenAtti; $i++) {
-	$atto = $atti[$i];
-?>
-<?php
+$lenClusters = count($clusters);
+for($i = 0; $i < $lenClusters; $i++) {
+	$cluster = $clusters[$i];
+
 						echo '<div class="law panel panel-default';
 
-						$len = count($atto["terms"]);
+						$len = count($cluster["terms"]);
 						for($j = 0; $j < $len; $j++)
-							echo " ".$atto["terms"][$j];
+							echo " ".$cluster["terms"][$j];
 
 						echo '">';
 ?>
 							<div class="panel-body">
-								<?php echo '<a href="/atti/details.php?id='.$atto["atto"].'">' ?><h4><span class="glyphicon glyphicon-share"></span><?php echo $atto['label']; ?></h4></a>
+								<?php echo '<a href="/temi/details.php?id='.$cluster["id"].'">' ?><h4><span class="glyphicon glyphicon-share"></span>Tema <?php echo $cluster['id']; ?></h4></a>
+								<div class="tagcloud">
 <?php
-	$len = count($atto["terms"]);
+	$len = count($cluster["terms"]);
 	for($j = 0; $j < $len; $j++)
-		echo "<span class=\"label label-primary\">".$atto["terms"][$j]."</span>";
+		echo "<a href=\"\" rel=\"".(rand()&9 + 1)."\">".$cluster["terms"][$j]."</a> ";
 ?>
+								</div>
 							</div>
 						</div>
 							
@@ -160,6 +162,15 @@ for($i = 0; $i < $lenAtti; $i++) {
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+$.fn.tagcloud.defaults = {
+  size: {start: 14, end: 18, unit: 'pt'},
+  color: {start: '#cde', end: '#f52'}
+};
 
+$(function() {
+  $('#home .tagcloud a').tagcloud();
+});
+	</script>
 </body>
 </html>
