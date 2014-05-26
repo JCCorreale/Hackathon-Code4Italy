@@ -1,13 +1,9 @@
 package it.camera.hackathon;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.PrintStream;
 import java.util.AbstractMap;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -164,10 +160,7 @@ public class TextMining extends ITextMining
 			// Shows some info about the clustering
 			int docsCount = 0;
 			for (ICluster cluster : clustering)
-			{
-				for (IDocument doc : cluster)
-					docsCount++;
-			}
+				docsCount += cluster.count();
 			
 			System.out.println("\n\nTotal documents: " + docsCount);
 			System.out.println("Total clusters: " + clustering.getClustersCount());

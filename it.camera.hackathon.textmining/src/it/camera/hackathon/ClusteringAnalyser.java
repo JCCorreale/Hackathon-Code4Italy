@@ -7,7 +7,6 @@ import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.utils.MapUtils;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -19,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class ClusteringAnalyser {
 	
@@ -30,6 +28,7 @@ public class ClusteringAnalyser {
 		this.topTermsCount = topTermsCount;
 	}
 
+	@SuppressWarnings("unchecked")
 	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti, IDocumentCollection documents)
 	{
 		Set<ClusterDescriptor> descriptors = new HashSet<ClusterDescriptor>();

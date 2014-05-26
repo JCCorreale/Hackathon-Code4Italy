@@ -1,12 +1,10 @@
 package it.camera.hackathon.textmining.clustering;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.TreeSet;
 
-public class Cluster implements ICluster
+public class Cluster extends ICluster
 {
 	private Set<IDocument> documents;
 	
@@ -22,7 +20,8 @@ public class Cluster implements ICluster
 	}
 
 	@Override
-	public Iterator<IDocument> iterator() {
+	public Iterator<IDocument> iterator()
+	{
 		return this.documents.iterator();
 	}
 	
