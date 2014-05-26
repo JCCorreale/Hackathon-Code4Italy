@@ -1,10 +1,8 @@
 package it.camera.hackathon.textmining.clustering;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Cluster implements ICluster
 {
@@ -19,6 +17,10 @@ public class Cluster implements ICluster
 		
 		for (IDocument d : documents)
 			this.documents.add(d);
+	}
+
+	public int getDocumentsCount() {
+		return this.documents.size();
 	}
 
 	@Override

@@ -4,7 +4,6 @@ import it.camera.hackathon.textmining.clustering.ICluster;
 import it.camera.hackathon.textmining.clustering.IDocument;
 
 import java.util.Iterator;
-import java.util.Set;
 
 class DummyCluster implements ICluster
 {
@@ -24,5 +23,11 @@ class DummyCluster implements ICluster
 	public String toString()
 	{
 		return this.name;
+	}
+
+	@Override
+	public int getDocumentsCount() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

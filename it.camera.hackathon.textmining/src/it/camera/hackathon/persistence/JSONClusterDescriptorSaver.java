@@ -55,7 +55,7 @@ public class JSONClusterDescriptorSaver extends BaseWriter<ClusterDescriptor> {
 		JSONArray array = new JSONArray();
 		
 		// sorts the occurences by date
-		Map<Date, Integer> sortedOccurences = MapUtils.sortMap(occurrences, true);
+		Map<Date, Integer> sortedOccurences = MapUtils.sortMapByKey(occurrences, true);
 		
 		int counter = 0;
 		

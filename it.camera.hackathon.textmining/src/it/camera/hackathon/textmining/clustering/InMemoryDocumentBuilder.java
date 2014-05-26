@@ -156,7 +156,7 @@ public class InMemoryDocumentBuilder implements IDocumentBuilder
 				map.put(term, getWeightedFrequency(term));
 			}
 			
-			return MapUtils.sortMap(map, false);
+			return MapUtils.sortMapByValue(map, false);
 		}
 		
 		@Override

@@ -160,7 +160,13 @@ public class TextMining extends ITextMining
 			// Shows some info about the clustering
 			int docsCount = 0;
 			for (ICluster cluster : clustering)
+<<<<<<< HEAD
+				docsCount += cluster.count();
+=======
+			{
 				docsCount += cluster.getDocumentsCount();
+			}
+>>>>>>> Generated new JSON output both for topwords & clusters.
 			
 			float docsCheckSum = 0;
 			

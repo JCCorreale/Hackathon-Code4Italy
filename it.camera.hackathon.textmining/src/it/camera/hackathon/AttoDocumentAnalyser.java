@@ -60,7 +60,7 @@ public class AttoDocumentAnalyser implements IAttoDocumentAnalyser {
 		{
 			IDocument doc = ((AttoConDocumento)atto).getDocument();
 			// the TF-IDF for each term of the data set, calculated for the document doc
-			Map<ITerm, Float> tfIdfs = MapUtils.sortMap(docs.getTFIDFByTerm(doc), false);
+			Map<ITerm, Float> tfIdfs = MapUtils.sortMapByValue(docs.getTFIDFByTerm(doc), false);
 			
 			List<ITerm> sortedTerms = new ArrayList<ITerm>();
 			sortedTerms.addAll(tfIdfs.keySet());

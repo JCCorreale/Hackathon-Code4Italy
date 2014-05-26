@@ -1,11 +1,8 @@
 package it.camera.hackathon.textmining.clustering;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -13,8 +10,8 @@ import java.util.Set;
  * @author JCC
  * 
  */
-public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer implements IDocumentClusterer {
-
+public class AgglomerativeDocumentClusterer extends AgglomerativeClusterer implements IDocumentClusterer
+{
 	private IProximityStrategy proximityStrategy;
 	private IDocumentCollection documents;
 	private ProximityMatrix matrix;

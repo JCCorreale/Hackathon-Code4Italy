@@ -1,15 +1,9 @@
 package it.camera.hackathon.textmining.clustering.tests;
 
-import static org.junit.Assert.*;
 import it.camera.hackathon.textmining.clustering.AgglomerativeClusterer;
-import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
-import it.camera.hackathon.textmining.clustering.DocumentCollection;
 import it.camera.hackathon.textmining.clustering.ICluster;
-import it.camera.hackathon.textmining.clustering.IDocumentBuilder;
-import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.IProximityStrategy;
-import it.camera.hackathon.textmining.clustering.InMemoryDocumentBuilder;
 import it.camera.hackathon.textmining.clustering.ProximityMatrix;
 
 import org.junit.Before;

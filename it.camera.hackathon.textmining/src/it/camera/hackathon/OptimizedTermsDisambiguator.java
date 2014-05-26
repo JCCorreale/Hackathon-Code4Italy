@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.Map.Entry;
-import java.util.SortedSet;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 public class OptimizedTermsDisambiguator implements ITermsDisambiguator 
 {
@@ -29,9 +27,6 @@ public class OptimizedTermsDisambiguator implements ITermsDisambiguator
 		{
 			String mainTerm = null;
 			String search = null;
-			
-			if (e.getKey().equals("pena"))
-				System.out.println("");
 			
 			// gets all known words that may have the same root as the current term
 			String stem = StemmingUtils.Stem(e.getKey());

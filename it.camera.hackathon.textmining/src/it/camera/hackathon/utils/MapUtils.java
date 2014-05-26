@@ -70,8 +70,42 @@ public final class MapUtils
 //		return list;
 //	}
 	
+	/**
+	 * Sorts the map by key.
+	 * @param unsortedMap
+	 * @param ascending
+	 * @return
+	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Map sortMap(Map unsortedMap, final boolean ascending) 
+	public static Map sortMapByKey(Map unsortedMap, final boolean ascending) 
+	{	 
+		List list = new LinkedList(unsortedMap.entrySet());
+
+		Collections.sort(list, new Comparator() {
+			public int compare(Object o1, Object o2) {
+				return ((Comparable) ((Map.Entry) (o1)).getKey())
+                                       .compareTo(((Map.Entry) (o2)).getKey()) * (ascending? 1 : -1);
+			}
+		});
+ 
+		// ricreo la mappa dalla lista (la LinkedHashMap preserva l'ordine d'inserimento)
+		Map sortedMap = new LinkedHashMap();
+		for (Iterator it = list.iterator(); it.hasNext();) 
+		{
+			Map.Entry entry = (Map.Entry) it.next();
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+		return sortedMap;
+	}
+	
+	/**
+	 * Sorts the map by value.
+	 * @param unsortedMap
+	 * @param ascending
+	 * @return
+	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static Map sortMapByValue(Map unsortedMap, final boolean ascending) 
 	{	 
 		List list = new LinkedList(unsortedMap.entrySet());
 

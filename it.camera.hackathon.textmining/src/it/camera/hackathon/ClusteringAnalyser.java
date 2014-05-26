@@ -3,34 +3,36 @@ package it.camera.hackathon;
 import it.camera.hackathon.textmining.clustering.ICluster;
 import it.camera.hackathon.textmining.clustering.IClustering;
 import it.camera.hackathon.textmining.clustering.IDocument;
+import it.camera.hackathon.textmining.clustering.IDocumentCollection;
 import it.camera.hackathon.textmining.clustering.ITerm;
+import it.camera.hackathon.utils.MapUtils;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class ClusteringAnalyser {
 	
-	private int topTermsCount;
+	private int maxTerms;
 
-	public ClusteringAnalyser(int topTermsCount) 
+	public ClusteringAnalyser(int maxTerms) 
 	{
-		this.topTermsCount = topTermsCount;
+		this.maxTerms = maxTerms;
 	}
 
-	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti)
+	@SuppressWarnings("unchecked")
+	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti, IDocumentCollection documents)
 	{
 		Set<ClusterDescriptor> descriptors = new HashSet<ClusterDescriptor>();
-
+		
 		int descrId = 0;
 		
 		// scans all clusters
@@ -41,32 +43,32 @@ public class ClusteringAnalyser {
 			ClusterDescriptor descr = new ClusterDescriptor();
 			// sets a progressive id for the cluster
 			descr.id = descrId;
+			descr.cluster = c;
 			
-			// stores top term sorted by frequency (descending)
-			TreeSet<Entry<String, Integer>> topTermsSet = new TreeSet<Entry<String, Integer>>(new Comparator<Entry<String, Integer>>() {
-				@Override
-				public int compare(Entry<String, Integer> e1, Entry<String, Integer> e2) {
-					return -e1.getValue().compareTo(e2.getValue());
-				}
-			});
-			
-			// adds all related acts to this cluster descriptor and stores the sorted top terms
+			Map<String, Float> topTerms = new HashMap<String, Float>();
+			// adds unsorted top terms to the map
 			for (IDocument doc : c)
 			{
 				descr.atti.add(atti.get(doc));
 				for (ITerm term : doc.getTerms())
 				{
-					// TODO Usare TF-IDF (serve DocumentCollection)
-					Entry<String, Integer> entry;
-					topTermsSet.add(entry = new AbstractMap.SimpleEntry(term.toString(), doc.getFrequency(term)));
+					if (!topTerms.containsKey(term.toString())) {
+						topTerms.put(term.toString(), documents.getTFIDF(term, doc));
+					}
+					else {
+						topTerms.put(term.toString(), topTerms.get(term.toString()) + documents.getTFIDF(term, doc));
+					}
 				}
 			}
 			
-			// Adds top terms to the act
+			// sorts the top terms
+			topTerms = MapUtils.sortMapByValue(topTerms, false);
+			
+			// adds top terms to the cluster descriptor
 			int counter = 0;
-			for (Entry<String, Integer> entry : topTermsSet)
+			for (Entry<String, Float> entry : topTerms.entrySet())
 			{
-				if (counter > topTermsCount)
+				if (counter >= maxTerms)
 					break;
 				descr.terms.add(entry.getKey());
 				counter++;
