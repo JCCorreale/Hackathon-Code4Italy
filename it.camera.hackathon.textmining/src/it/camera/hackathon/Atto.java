@@ -68,9 +68,15 @@ public class Atto
 		this.iri = iri;
 	}
 	
+	@Override
 	public boolean equals(Object obj)
 	{
 		return obj instanceof Atto && ((Atto)obj).iri.equals(this.iri);
+	}
+	
+	public int hashCode()
+	{
+		return this.iri.hashCode();
 	}
 	
 	@Override

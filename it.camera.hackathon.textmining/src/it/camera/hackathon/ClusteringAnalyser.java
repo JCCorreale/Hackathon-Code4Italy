@@ -21,11 +21,11 @@ import java.util.Set;
 
 public class ClusteringAnalyser {
 	
-	private int topTermsCount;
+	private int maxTerms;
 
-	public ClusteringAnalyser(int topTermsCount) 
+	public ClusteringAnalyser(int maxTerms) 
 	{
-		this.topTermsCount = topTermsCount;
+		this.maxTerms = maxTerms;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -43,6 +43,7 @@ public class ClusteringAnalyser {
 			ClusterDescriptor descr = new ClusterDescriptor();
 			// sets a progressive id for the cluster
 			descr.id = descrId;
+			descr.cluster = c;
 			
 			Map<String, Float> topTerms = new HashMap<String, Float>();
 			// adds unsorted top terms to the map
@@ -67,7 +68,7 @@ public class ClusteringAnalyser {
 			int counter = 0;
 			for (Entry<String, Float> entry : topTerms.entrySet())
 			{
-				if (counter == topTermsCount)
+				if (counter >= maxTerms)
 					break;
 				descr.terms.add(entry.getKey());
 				counter++;

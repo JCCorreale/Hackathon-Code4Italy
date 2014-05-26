@@ -1,5 +1,7 @@
 package it.camera.hackathon;
 
+import it.camera.hackathon.textmining.clustering.ICluster;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -10,6 +12,7 @@ import java.util.Set;
 
 public class ClusterDescriptor {
 
+	public ICluster cluster;
 	public int id;
 	public List<String> terms;
 	public Map<Date, Integer> occurrences;

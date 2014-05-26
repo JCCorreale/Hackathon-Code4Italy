@@ -18,14 +18,14 @@ public abstract class ITextMining
 	/**
 	 * Larger values provide a better clustering but worse top words, smaller values provide better top words but a worse clustering.
 	 */
-	protected static int topWordsCount = 1000;  
+	protected static int topWordsCount = 20;
 	protected static int minWordLength = 3;
 	protected static String delimiters = " ',;.:/()[]<>";
 	protected static String itaStopwordsPath = "stopwords/stopwords_ita";
 	protected static String domainStopwordsPath = "stopwords/stopwords_domain";
 	protected static float minTfIdf = -1.0f;
 	protected static int maxTerms = 5;
-	protected static boolean doClustering = true;
+	protected static boolean doClustering = false;
 	protected static int downloadLimit = 1000;
 
 	public ITextMining() 

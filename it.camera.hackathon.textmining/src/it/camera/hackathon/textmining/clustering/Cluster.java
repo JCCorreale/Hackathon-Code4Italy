@@ -20,8 +20,17 @@ public class Cluster extends ICluster
 	}
 
 	@Override
+<<<<<<< HEAD
 	public Iterator<IDocument> iterator()
 	{
+=======
+	public int getDocumentsCount() {
+		return this.documents.size();
+	}
+
+	@Override
+	public Iterator<IDocument> iterator() {
+>>>>>>> Generated new JSON output both for topwords & clusters.
 		return this.documents.iterator();
 	}
 	

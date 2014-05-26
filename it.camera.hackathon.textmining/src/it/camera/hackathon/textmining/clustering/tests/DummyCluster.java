@@ -24,4 +24,10 @@ class DummyCluster extends ICluster
 	{
 		return this.name;
 	}
+
+	@Override
+	public int getDocumentsCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

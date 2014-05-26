@@ -27,3 +27,835 @@ Receiving Law(5): http://dati.camera.it/ocd/attocamera.rdf/ac17_1542
   Final revision: 31/12/2013
   Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014020
   Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(6): http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011720
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(7): http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010440
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(8): http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011440
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(9): http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012860
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(10): http://dati.camera.it/ocd/attocamera.rdf/ac17_1710
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011390
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(11): http://dati.camera.it/ocd/attocamera.rdf/ac17_1865
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014750
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(12): http://dati.camera.it/ocd/attocamera.rdf/ac17_1866
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014750
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(13): http://dati.camera.it/ocd/attocamera.rdf/ac17_1920
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016420
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(14): http://dati.camera.it/ocd/attocamera.rdf/ac17_1921
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016080
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(15): http://dati.camera.it/ocd/attocamera.rdf/ac17_1941
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015330
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(16): http://dati.camera.it/ocd/attocamera.rdf/ac17_2012
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018320
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(17): http://dati.camera.it/ocd/attocamera.rdf/ac17_2027
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0016820
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(18): http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015990
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(19): http://dati.camera.it/ocd/attocamera.rdf/ac17_2096
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017040
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(20): http://dati.camera.it/ocd/attocamera.rdf/ac17_2149
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017680
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(21): http://dati.camera.it/ocd/attocamera.rdf/ac17_2157
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018300
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(22): http://dati.camera.it/ocd/attocamera.rdf/ac17_2162
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0019540
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(23): http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0017410
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(24): http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018590
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(25): http://dati.camera.it/ocd/attocamera.rdf/ac17_1001
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005230
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(26): http://dati.camera.it/ocd/attocamera.rdf/ac17_1012
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005440
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(27): http://dati.camera.it/ocd/attocamera.rdf/ac17_1139
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0006830
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(28): http://dati.camera.it/ocd/attocamera.rdf/ac17_1197
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005560
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(29): http://dati.camera.it/ocd/attocamera.rdf/ac17_1247
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0005840
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(30): http://dati.camera.it/ocd/attocamera.rdf/ac17_1248
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007541
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(31): http://dati.camera.it/ocd/attocamera.rdf/ac17_1309
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012430
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(32): http://dati.camera.it/ocd/attocamera.rdf/ac17_1310
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007890
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(33): http://dati.camera.it/ocd/attocamera.rdf/ac17_1326
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008200
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(34): http://dati.camera.it/ocd/attocamera.rdf/ac17_1327
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008210
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(35): http://dati.camera.it/ocd/attocamera.rdf/ac17_1328
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007040
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(36): http://dati.camera.it/ocd/attocamera.rdf/ac17_1363
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007491
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(37): http://dati.camera.it/ocd/attocamera.rdf/ac17_1417
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008520
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(38): http://dati.camera.it/ocd/attocamera.rdf/ac17_1458
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008820
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(39): http://dati.camera.it/ocd/attocamera.rdf/ac17_1544
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0009040
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(40): http://dati.camera.it/ocd/attocamera.rdf/ac17_1572
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010490
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(41): http://dati.camera.it/ocd/attocamera.rdf/ac17_1573
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010490
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(42): http://dati.camera.it/ocd/attocamera.rdf/ac17_1670
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012140
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(43): http://dati.camera.it/ocd/attocamera.rdf/ac17_1885
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0015050
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(44): http://dati.camera.it/ocd/attocamera.rdf/ac17_204
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0007060
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(45): http://dati.camera.it/ocd/attocamera.rdf/ac17_282
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010160
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(46): http://dati.camera.it/ocd/attocamera.rdf/ac17_331
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0001000
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(47): http://dati.camera.it/ocd/attocamera.rdf/ac17_544
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004680
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(48): http://dati.camera.it/ocd/attocamera.rdf/ac17_67
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0006820
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(49): http://dati.camera.it/ocd/attocamera.rdf/ac17_676
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0002880
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(50): http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004630
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(51): http://dati.camera.it/ocd/attocamera.rdf/ac17_734
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0001320
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(52): http://dati.camera.it/ocd/attocamera.rdf/ac17_841
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0002870
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(53): http://dati.camera.it/ocd/attocamera.rdf/ac17_875
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0004720
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(54): http://dati.camera.it/ocd/attocamera.rdf/ac17_968
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0003640
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(55): http://dati.camera.it/ocd/attocamera.rdf/ac17_2213
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0018630
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(56): http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B
+  Final revision: 30/12/2014
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0019370
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
+Removing HTML tags...
+Counting word occurences (may take a while!)... [322514 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1574 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
+Removing HTML tags...
+Counting word occurences (may take a while!)... [142412 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1628 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1573
+Removing HTML tags...
+Counting word occurences (may take a while!)... [42952 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1573 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [3304 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_204-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [19003 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_331-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1572
+Removing HTML tags...
+Counting word occurences (may take a while!)... [42952 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1572 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_734
+Removing HTML tags...
+Counting word occurences (may take a while!)... [22032 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_734 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2096
+Removing HTML tags...
+Counting word occurences (may take a while!)... [2672 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2096 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_331
+Removing HTML tags...
+Counting word occurences (may take a while!)... [65749 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_331 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1670
+Removing HTML tags...
+Counting word occurences (may take a while!)... [62243 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1670 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [7803 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_282-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2213
+Removing HTML tags...
+Counting word occurences (may take a while!)... [3833 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2213 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2149
+Removing HTML tags...
+Counting word occurences (may take a while!)... [38697 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2149 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_67
+Removing HTML tags...
+Counting word occurences (may take a while!)... [23626 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_67 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1417
+Removing HTML tags...
+Counting word occurences (may take a while!)... [59905 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1417 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1309
+Removing HTML tags...
+Counting word occurences (may take a while!)... [20452 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1309 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
+Removing HTML tags...
+Counting word occurences (may take a while!)... [327898 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1682 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1866
+Removing HTML tags...
+Counting word occurences (may take a while!)... [948405 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1866 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [12997 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1865
+Removing HTML tags...
+Counting word occurences (may take a while!)... [948405 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1865 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [22071 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_676-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1710
+Removing HTML tags...
+Counting word occurences (may take a while!)... [2282 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1710 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1012
+Removing HTML tags...
+Counting word occurences (may take a while!)... [8541 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1012 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2157
+Removing HTML tags...
+Counting word occurences (may take a while!)... [9143 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2157 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2012
+Removing HTML tags...
+Counting word occurences (may take a while!)... [80065 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2012 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1920
+Removing HTML tags...
+Counting word occurences (may take a while!)... [450254 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1920 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1197
+Removing HTML tags...
+Counting word occurences (may take a while!)... [58842 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1197 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1921
+Removing HTML tags...
+Counting word occurences (may take a while!)... [52109 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1921 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_968
+Removing HTML tags...
+Counting word occurences (may take a while!)... [16731 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_968 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1541
+Removing HTML tags...
+Counting word occurences (may take a while!)... [42277 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1541 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1542
+Removing HTML tags...
+Counting word occurences (may take a while!)... [123794 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1540
+Removing HTML tags...
+Counting word occurences (may take a while!)... [111275 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1540 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [237969 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
+Removing HTML tags...
+Counting word occurences (may take a while!)... [75401 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1690 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1248
+Removing HTML tags...
+Counting word occurences (may take a while!)... [973575 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1248 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1247
+Removing HTML tags...
+Counting word occurences (may take a while!)... [4522 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1247 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1544
+Removing HTML tags...
+Counting word occurences (may take a while!)... [78466 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1544 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1458
+Removing HTML tags...
+Counting word occurences (may take a while!)... [60415 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1458 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1310
+Removing HTML tags...
+Counting word occurences (may take a while!)... [183879 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1310 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1001
+Removing HTML tags...
+Counting word occurences (may take a while!)... [18842 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1001 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2027
+Removing HTML tags...
+Counting word occurences (may take a while!)... [61517 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2027 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_2162
+Removing HTML tags...
+Counting word occurences (may take a while!)... [161566 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_2162 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_544
+Removing HTML tags...
+Counting word occurences (may take a while!)... [9578 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_544 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_875
+Removing HTML tags...
+Counting word occurences (may take a while!)... [10265 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_875 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_841
+Removing HTML tags...
+Counting word occurences (may take a while!)... [23428 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_841 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1139
+Removing HTML tags...
+Counting word occurences (may take a while!)... [67825 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1139 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1885
+Removing HTML tags...
+Counting word occurences (may take a while!)... [179840 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1885 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [2652 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1328
+Removing HTML tags...
+Counting word occurences (may take a while!)... [11412 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1328 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1363
+Removing HTML tags...
+Counting word occurences (may take a while!)... [9552 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1363 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_282
+Removing HTML tags...
+Counting word occurences (may take a while!)... [106412 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_282 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_676
+Removing HTML tags...
+Counting word occurences (may take a while!)... [322073 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_676 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1327
+Removing HTML tags...
+Counting word occurences (may take a while!)... [36316 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1327 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_204
+Removing HTML tags...
+Counting word occurences (may take a while!)... [4674 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_204 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44
+Removing HTML tags...
+Counting word occurences (may take a while!)... [11485 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1326
+Removing HTML tags...
+Counting word occurences (may take a while!)... [49343 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1326 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1941
+Removing HTML tags...
+Counting word occurences (may take a while!)... [40600 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1941 done.
+
+

@@ -149,9 +149,9 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
-			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
+			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight() / 2); // TODO Tune height
 			
-			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(topWordsCount);
+			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxTerms);
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection);
 			
 			// Saves clusters descriptors...
@@ -161,22 +161,32 @@ public class TextMining extends ITextMining
 			int docsCount = 0;
 			for (ICluster cluster : clustering)
 				docsCount += cluster.count();
+				docsCount += cluster.getDocumentsCount();
 			
-			System.out.println("\n\nTotal documents: " + docsCount);
-			System.out.println("Total clusters: " + clustering.getClustersCount());
-			System.out.println("\n\n");
+			float docsCheckSum = 0;
 			
 			for (ClusterDescriptor descr : descriptors)
 			{
-				System.out.println("Cluster " + descr);
+				int clusterDocsCount = descr.cluster.getDocumentsCount();
+				docsCheckSum += clusterDocsCount;
+				
+				System.out.println("Cluster [" + descr + "]");
+				System.out.println("(" + clusterDocsCount + "/" + docsCount + " documents)");
+				
 				for (Atto atto : descr.atti)
 				{
-					System.out.println("\tAtto: " + atto.getLabel());
+					System.out.println("\tAtto: " + atto.getIRI());
 					System.out.println("\t\t" +  topWordsResult.get(atto));;
 				}
 			}
 			
-			System.out.println("Clustering completed.");
+			System.out.println("\n\n");
+			System.out.println("Total documents: " + docsCount);
+			System.out.println("Total clusters: " + clustering.getClustersCount());
+			System.out.println("Docs checksum: " + docsCheckSum + "/" + docsCount);
+			System.out.println("Average documents per cluster: " +  (((float)docsCount) / descriptors.size()));
+			
+			System.out.println("\n\nClustering completed.");
 		}
 	}
 }
