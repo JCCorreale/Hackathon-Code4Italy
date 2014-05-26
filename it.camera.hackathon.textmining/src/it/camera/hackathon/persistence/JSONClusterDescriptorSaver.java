@@ -2,7 +2,10 @@ package it.camera.hackathon.persistence;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -83,15 +86,16 @@ public class JSONClusterDescriptorSaver extends BaseWriter<ClusterDescriptor> {
 		return obj;
 	}
 	
-	public static JSONArray getXAxisLabelsJSONArray()
+	public static JSONArray getXAxisLabelsJSONArray(List<Date> dates)
 	{
 		JSONArray array = new JSONArray();
-		array.put("Gen, Feb '13");
-		array.put("Mar, Apr '13");
-		array.put("May, Jun '13");
-		array.put("Jul, Aug '13");
-		array.put("Sep, Oct '13");
-		array.put("Nov, Dec '13");
+		// TODO Localize
+		for (Date date : dates)
+		{
+			Calendar calendar = Calendar.getInstance();
+			calendar.setTime(date);
+			array.put(new SimpleDateFormat("MM yyyy").format(date));
+		}
 		return array;
 	}
 

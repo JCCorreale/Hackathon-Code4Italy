@@ -4,10 +4,16 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import it.camera.hackathon.datasource.remote.HttpGetDataSource;
 import it.camera.hackathon.datasource.sparql.LawContentProvider;
@@ -48,12 +54,32 @@ public class TextMining extends ITextMining
 		LawContentProvider provider = new LawContentProvider(engine);
 		Set<Entry<Atto, String>> attiContent = provider.getData(new LimitedQueryConfiguration(downloadLimit));
 		
+		SortedSet<Atto> sortedActs = new TreeSet<Atto>(new Comparator<Atto>() {
+			@Override
+			public int compare(Atto arg0, Atto arg1) {
+				if (arg0.equals(arg1))
+					return 0;
+				return arg0.getRevision().before(arg1.getRevision()) ? -1 : 1;
+			}
+		});
+		
+		
 		for (Entry<Atto, String> attoContent : attiContent)
 		{
-//			Calendar cal = Calendar.getInstance();
+//			Calendar cal = Calendar.getInstance();WW
 //			cal.set(2013, Calendar.JANUARY, 1);
 //			if (attoContent.getKey().getRevision().before(cal.getTime()))
 //				continue;
+			
+			// skips acts with date before March 15 2013 (beginning of the XVII Italian legislature)
+			Calendar actDate = Calendar.getInstance();
+			Calendar minDate = Calendar.getInstance();
+			actDate.setTime(attoContent.getKey().getRevision());
+			minDate.set(2013, Calendar.MARCH, 15);
+			if (actDate.before(minDate))
+				continue;
+			
+			sortedActs.add(attoContent.getKey());
 			
 			System.out.println("************************************************");
 //			System.out.println("Document " +  filename);
@@ -105,6 +131,10 @@ public class TextMining extends ITextMining
 //			System.out.println("\n\nWeighted frequency by term:\n");
 //			Utils.printMap(document.getWeightedFrequencyByTerm());
 		}
+		
+		System.out.println("\n\n****************** Atti by date ******************");
+		for (Atto atto : sortedActs)
+			System.out.println(atto.getIRI() + " " + atto.getRevision());
 		
 		AttoDocumentAnalyser analyser = getDocumentsAnalyser();
 		
@@ -178,6 +208,51 @@ public class TextMining extends ITextMining
 					System.out.println("\t\t" +  topWordsResult.get(atto));
 				}
 			}
+			
+			Map<Date, Integer> actsCountByDate = null;
+			
+			// prints the histogram of acts by period
+			for (ClusterDescriptor descr : descriptors)
+			{
+				if (actsCountByDate == null)
+				{
+					// initializes the map
+					actsCountByDate = new HashMap<Date, Integer>();
+					for (Date date : descr.occurrences.keySet())
+						actsCountByDate.put(date, 0);
+				}
+				
+				for (Date descrDate : descr.occurrences.keySet())
+				{
+					// TODO Ottimizzare (per qualche motivo non funzionava usando la get...)
+					for (Date mapDate : actsCountByDate.keySet())
+					{
+						if (descrDate.equals(mapDate))
+						{
+							// increases the counter
+							actsCountByDate.put(mapDate, actsCountByDate.get(mapDate) + descr.occurrences.get(descrDate));
+							break;
+						}
+					}
+				}
+			}
+			
+			int actsByDateChecksum = 0;
+			for (Entry<Date, Integer> entry : actsCountByDate.entrySet())
+			{
+				actsByDateChecksum += entry.getValue();
+			}
+			
+			System.out.println("\n\nActs by date checksum: " + actsByDateChecksum + "/" + docsCount);
+			if (actsByDateChecksum != docsCount)
+				throw new IllegalStateException("actsByDateChecksum != docsCount");
+			
+			System.out.println("\n\nGlobal Acts Histogram:");
+			for (Entry<Date, Integer> entry : actsCountByDate.entrySet())
+			{
+				System.out.println(entry.getKey() + " " + entry.getValue());
+			}
+			
 			
 			System.out.println("\n\n");
 			System.out.println("Total documents: " + docsCount);

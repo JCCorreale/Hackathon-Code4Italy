@@ -55,7 +55,7 @@ public abstract class ITextMining
 		minTfIdf = -1.0f;
 		maxActTerms = 5;
 		maxClusterTerms = 5;
-		doClustering = true;
+		doClustering = false;
 		downloadLimit = 1000;
 		writeTopTerms = true;
 		writeClustering = false;
@@ -106,7 +106,7 @@ public abstract class ITextMining
 		doClustering = true;
 		downloadLimit = 10;
 		writeTopTerms = false;
-		writeClustering = false;
+		writeClustering = true;
 	}
 	
 

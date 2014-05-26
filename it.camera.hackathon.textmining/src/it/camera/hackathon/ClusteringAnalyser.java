@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class ClusteringAnalyser {
 	
@@ -27,6 +29,60 @@ public class ClusteringAnalyser {
 	{
 		this.maxTerms = maxTerms;
 	}
+	
+	private Date[] getMinMaxDates(Map<IDocument, Atto> atti)
+	{
+		if (atti.size() < 1) throw new IllegalArgumentException("atti.size() < 1");
+		
+		Date minDate = null;
+		Date maxDate = null;
+		
+		for (Entry<IDocument, Atto> entry : atti.entrySet())
+		{
+			Atto atto = entry.getValue();
+			Date attoDate = atto.getRevision();
+			if (minDate == null)
+				minDate = attoDate;
+			if (maxDate == null)
+				maxDate = attoDate;
+			
+			if (attoDate.before(minDate))
+				minDate = attoDate;
+			if (attoDate.after(maxDate))
+				maxDate = attoDate;
+		}
+	
+		return new Date[] { minDate, maxDate };
+	}
+	
+	private List<Date> getDatePeriods(Date minDate, Date maxDate, int monthsStep)
+	{
+		if (minDate.equals(maxDate))
+			throw new IllegalArgumentException("minDate.equals(maxDate)");
+		if (minDate.after(maxDate))
+			throw new IllegalArgumentException("minDate.after(maxDate)");
+		
+		List<Date> dates = new ArrayList<Date>();
+		Calendar min = Calendar.getInstance();
+		min.setTime(minDate);
+		min.set(Calendar.HOUR_OF_DAY, 0);
+		min.set(Calendar.MINUTE, 0);
+		min.set(Calendar.SECOND, 0);
+		Calendar tmp = Calendar.getInstance();
+		tmp.setTime(maxDate);
+		tmp.set(Calendar.HOUR_OF_DAY, 0);
+		tmp.set(Calendar.MINUTE, 0);
+		tmp.set(Calendar.SECOND, 0);
+		// adds 1 day to avoid problem with the time of day
+		tmp.add(Calendar.DATE, 1);
+		while (tmp.after(min))
+		{
+			dates.add(tmp.getTime());
+			tmp.add(Calendar.MONTH, -monthsStep);
+		}
+		Collections.reverse(dates);
+		return dates;
+	}
 
 	@SuppressWarnings("unchecked")
 	public Set<ClusterDescriptor> getClusterDescriptors(IClustering clustering, Map<IDocument, Atto> atti, 
@@ -35,6 +91,10 @@ public class ClusteringAnalyser {
 		Set<ClusterDescriptor> descriptors = new HashSet<ClusterDescriptor>();
 		
 		int descrId = 0;
+		
+		// gets global info about acts' dates
+		Date[] minMaxDates = this.getMinMaxDates(atti);
+		List<Date> dates = this.getDatePeriods(minMaxDates[0], minMaxDates[1], 1);
 		
 		// scans all clusters
 		for (ICluster c : clustering)
@@ -81,50 +141,63 @@ public class ClusteringAnalyser {
 				counter++;
 			}
 			
-			// sorts atti by date
-			List<Atto> attiByDate = new ArrayList<Atto>(descr.atti);
-			Collections.sort(attiByDate, new Comparator<Atto>() {
-				@Override
-				public int compare(Atto a1, Atto a2) {
-					return a1.getRevision().compareTo(a2.getRevision());
-				}
-			});
+			/* ATTI BY DATE */
 			
-			Calendar startDate = Calendar.getInstance();
-			startDate.set(2013, Calendar.JANUARY, 1);
-			Calendar endDate = Calendar.getInstance();
-			//endDate.set(2014, Calendar.JANUARY, 1);
-			endDate.setTime(new Date());
-			
-			Calendar date = Calendar.getInstance();
-			date.setTime(startDate.getTime());
-			
-			System.out.println("\n\nChecking revisions for documents in cluster " + c);
-			System.out.println("From " + date.getTime() + " to " + endDate.getTime() + "\n\n");
-			
-			// counts occurrences for each period (starting from January 2013)
-			while (date.before(endDate))
+			// initializes the set of dates and the descriptor map
+			TreeSet<Date> datesSet = new TreeSet<Date>();
+			for (Date date : dates)
 			{
-				System.out.println("Acts before date " + date.getTime());
-				
-				int count = 0;
-				for (Atto atto : attiByDate)
-				{
-					if (atto.getRevision().before(date.getTime()) && atto.getRevision().after(startDate.getTime()))
-					{
-						System.out.println("Act " + atto + " revision = " + atto.getRevision());
-						count++;
-					}
-				}
-				
-				System.out.println(count + " documents found before date " + date.getTime());
-				System.out.println();
-				
-				// adds occurrences count for this date
-				descr.occurrences.put(date.getTime(), count);
-				
-				date.add(Calendar.MONTH, 2);
+				datesSet.add(date);
+				descr.occurrences.put(date, 0);
 			}
+			
+			// updates the counter for each date entry
+			for (Atto atto : descr.atti)
+			{
+				// finds the nearest greater date
+				Date ngDate = datesSet.ceiling(atto.getRevision());
+				if (ngDate == null)
+					throw new IllegalArgumentException("ngDate == null");
+				descr.occurrences.put(ngDate, descr.occurrences.get(ngDate) + 1);
+			}
+			
+//			System.out.println("\n\nChecking revisions for documents in cluster " + c);
+//			System.out.println("From " + date.getTime() + " to " + lastDate.getTime());
+//			System.out.println("Total acts: " + attiByDate.size());
+//			
+//			for (Atto atto : attiByDate)
+//			{
+//				System.out.print("\t" + atto.getIRI());
+//				System.out.println(" " + atto.getRevision());
+//			}
+//			System.out.println("\n\n");
+//			
+//			// init
+//			
+//			// counts occurrences for each period
+//			while (date.before(lastDate))
+//			{
+//				System.out.println("Acts between date " + firstDate.getTime() + " and date " + date.getTime());
+//				
+//				int count = 0;
+//				for (Atto atto : attiByDate)
+//				{
+//					if (atto.getRevision().before(date.getTime()) && atto.getRevision().after(firstDate.getTime()))
+//					{
+//						System.out.println("Act " + atto + " revision = " + atto.getRevision());
+//						count++;
+//					}
+//				}
+//				
+//				System.out.println(count + " documents found before date " + date.getTime());
+//				System.out.println();
+//				
+//				// adds occurrences count for this date
+//				descr.occurrences.put(date.getTime(), count);
+//				
+//				firstDate.setTime(date.getTime());
+//				date.add(Calendar.MONTH, 2);
+//			}
 			
 			descriptors.add(descr);
 			descrId++;

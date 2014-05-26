@@ -72,7 +72,8 @@ public class LawContentProvider implements IDataProvider<Set<Entry<Atto, String>
 	
 	private void setActDate(Atto a, String d) {
 		try {
-			DateFormat df = new SimpleDateFormat("\"YYYYMMdd\"");
+			// The correct string is "yyyyMMdd". Do not change it. No, it's not equal to "YYYYMMdd".
+			DateFormat df = new SimpleDateFormat("\"yyyyMMdd\"");
 			a.setRevision(df.parse(d));			
 		} catch (ParseException e) {
 			// Ignore error

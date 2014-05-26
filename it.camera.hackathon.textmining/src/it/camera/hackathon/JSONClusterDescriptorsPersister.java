@@ -7,7 +7,11 @@ import it.camera.hackathon.utils.FileUtils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,9 +47,12 @@ public class JSONClusterDescriptorsPersister {
 		{
 			for (ClusterDescriptor cluster : clusters)
 			{
+				List<Date> dates = new ArrayList<Date>(cluster.occurrences.keySet());
+				Collections.sort(dates);
+				
 				JSONObject seriesObject = new JSONObject();
 				seriesObject.put(seriesKey, JSONClusterDescriptorSaver.getSeriesJSONObject(cluster));
-				seriesObject.put(xAxisLabelsKey, JSONClusterDescriptorSaver.getXAxisLabelsJSONArray());
+				seriesObject.put(xAxisLabelsKey, JSONClusterDescriptorSaver.getXAxisLabelsJSONArray(dates));
 				FileWriter fw;
 				seriesObject.write(fw = new FileWriter(path + File.separator + cluster.id + "-graph.json"));
 				fw.flush();
