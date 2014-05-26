@@ -2,6 +2,7 @@ package it.camera.hackathon;
 
 import it.camera.hackathon.persistence.JSONClusterDescriptorCollectionSaver;
 import it.camera.hackathon.persistence.JSONClusterDescriptorSaver;
+import it.camera.hackathon.utils.FileUtils;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -25,6 +26,8 @@ public class JSONClusterDescriptorsPersister {
 		String indexFileName = path + File.separator + "clusters-index.json";
 		final String seriesKey = "series";
 		final String xAxisLabelsKey = "xAxisLabels";
+		
+		FileUtils.clearDirectory(path);
 		
 		// saves the index
 		try 

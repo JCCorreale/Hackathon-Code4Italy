@@ -3,6 +3,7 @@ package it.camera.hackathon;
 import it.camera.hackathon.persistence.JSONActDescriptorCollectionSaver;
 import it.camera.hackathon.persistence.JSONActDescriptorSaver;
 import it.camera.hackathon.textmining.clustering.ITerm;
+import it.camera.hackathon.utils.FileUtils;
 import it.camera.hackathon.utils.MapUtils;
 
 import java.io.BufferedWriter;
@@ -35,18 +36,7 @@ public class JSONAttiTopWordsPersister {
 		if (!dir.exists() || !dir.isDirectory())
 			throw new IllegalArgumentException("!dir.exists() || !dir.isDirectory()");
 		
-		// clears the directory
-		for (File f : dir.listFiles(new FileFilter() {
-
-			@Override
-			public boolean accept(File arg0) {
-				return arg0.isFile();
-			}
-			
-		}))
-		{
-			f.delete();
-		}
+		FileUtils.clearDirectory(dir);
 		
 		try
 		{

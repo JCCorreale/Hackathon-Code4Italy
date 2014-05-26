@@ -28,7 +28,7 @@ public abstract class ITextMining
 	protected static float minTfIdf = -1.0f;
 	protected static int maxTerms = 5;
 	protected static boolean doClustering = true;
-	protected static int downloadLimit = 10;
+	protected static int downloadLimit = 1000;
 
 	public ITextMining() 
 	{
