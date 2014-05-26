@@ -1,5 +1,10 @@
 package it.camera.hackathon;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.PrintStream;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -28,13 +33,17 @@ import it.camera.hackathon.textmining.clustering.IProximityStrategy;
 import it.camera.hackathon.textmining.clustering.ITerm;
 import it.camera.hackathon.textmining.clustering.SingleLinkProximityStrategy;
 import it.camera.hackathon.textmining.clustering.TFIDFCosineDissimilarityStrategy;
+import it.camera.hackathon.utils.LogFileAndConsoleOutputStream;
 import it.camera.hackathon.utils.MapUtils;
 
 public class TextMining extends ITextMining
 {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException
 	{
+		// redirects stdout to file
+		System.setOut(new PrintStream(new LogFileAndConsoleOutputStream("output/log.txt")));
+		
 //		String[] filenames = new HTMLDocumentFactory().getFilePaths();
 		List<Entry<Atto, IDocument>> documents = new ArrayList<Entry<Atto, IDocument>>();
 		
@@ -147,22 +156,24 @@ public class TextMining extends ITextMining
 			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(topWordsCount);
-			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)));
+			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection);
 			
 			// Saves clusters descriptors...
 			JSONClusterDescriptorsPersister.save(descriptors, "output/json/clusters");
 			
-			// Does some tests about the clustering
+			// Shows some info about the clustering
 			int docsCount = 0;
 			for (ICluster cluster : clustering)
 			{
 				for (IDocument doc : cluster)
 					docsCount++;
 			}
-
+			
+			System.out.println("\n\nTotal documents: " + docsCount);
 			System.out.println("Total clusters: " + clustering.getClustersCount());
-			System.out.println("Total documents: " + docsCount);
 
+			// TODO Print representatives and topwords for each document for each cluster
+			
 			System.out.println("Clustering completed.");
 		}
 	}

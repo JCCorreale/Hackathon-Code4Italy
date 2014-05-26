@@ -1,0 +1,192 @@
+Receiving Law(0): http://dati.camera.it/ocd/attocamera.rdf/ac16_44
+  Final revision: 31/12/2008
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=16&codice=16PDL0002960
+  Content: downloading
+  Content: download ended - received: "Frontespizio Relazione Progett [...]"
+Receiving Law(1): http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B
+  Final revision: 04/01/2010
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=16&codice=16PDL0037450
+  Content: downloading
+  Content: download ended - received: "Frontespizio Progetto di Legge [...]"
+Receiving Law(2): http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0008961
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(3): http://dati.camera.it/ocd/attocamera.rdf/ac17_1540
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0009030
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(4): http://dati.camera.it/ocd/attocamera.rdf/ac17_1541
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0009050
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(5): http://dati.camera.it/ocd/attocamera.rdf/ac17_1542
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0014020
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(6): http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011720
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(7): http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0010440
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(8): http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0011440
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+Receiving Law(9): http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
+  Final revision: 31/12/2013
+  Content location: http://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=17&codice=17PDL0012860
+  Content: downloading
+  Content: download ended - received: "Nascondi n. pagina Stampa PDL  [...]"
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44
+Removing HTML tags...
+Counting word occurences (may take a while!)... [11485 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1690
+Removing HTML tags...
+Counting word occurences (may take a while!)... [75401 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1690 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1574
+Removing HTML tags...
+Counting word occurences (may take a while!)... [322514 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1574 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1541
+Removing HTML tags...
+Counting word occurences (may take a while!)... [42277 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1541 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [2652 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1248-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B
+Removing HTML tags...
+Counting word occurences (may take a while!)... [237969 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac16_44-B done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1628
+Removing HTML tags...
+Counting word occurences (may take a while!)... [142412 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1628 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1542
+Removing HTML tags...
+Counting word occurences (may take a while!)... [123794 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1542 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1682
+Removing HTML tags...
+Counting word occurences (may take a while!)... [327898 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1682 done.
+
+
+************************************************
+Atto: http://dati.camera.it/ocd/attocamera.rdf/ac17_1540
+Removing HTML tags...
+Counting word occurences (may take a while!)... [111275 characters]
+Retrieving the first 20 top words...
+Performing term disambiguation
+Creating document model
+Document http://dati.camera.it/ocd/attocamera.rdf/ac17_1540 done.
+
+
+
+
+*******************
+
+CLUSTERING
+
+
+Merged clusters (distance = 0.8037196):
+[{rifiuti=68, dicembre=169, amministrazioni=217, attuazione=68, risorse=69, agosto=108, servizio=86, personale=175, vigore=70, entrata=73, presidente=94, pubblica=206, nonché=91, parole=162, marzo=99, società=71, luglio=87, procedure=73}]
+[{dicembre=101, scolastico=248, decorrere=66, risorse=72, spesa=81, istruzione=672, personale=108, vigore=68, entrata=70, studenti=93, parole=175, luglio=67, università=186, istituzioni=110}]
+
+
+Merged clusters (distance = 0.866802):
+[{Governo=4, locali=4, strada=25, CAMERA=5, disegno=4, modifica=4, previste=5, sanzioni=6, sospensione=6, Art=8, punti=7, parole=12, patente=7, tasso=4, velocità=6, stradale=6, mesi=10, successive=5, aprile=10}]
+[{somma=62, sanzione=179, TRASPORTI=88, guida=276, veicoli=152, sospensione=66, Art=108, circolazione=62, amministrativa=97, infrastrutture=69, violazione=143, pagamento=76, parole=96, patente=156, stradale=78, applicano=76}]
+
+
+Merged clusters (distance = 0.92531383):
+[{dicembre=101, scolastico=248, decorrere=66, risorse=72, spesa=81, istruzione=672, personale=108, vigore=68, entrata=70, studenti=93, parole=175, luglio=67, università=186, istituzioni=110}, {rifiuti=68, dicembre=169, amministrazioni=217, attuazione=68, risorse=69, agosto=108, servizio=86, personale=175, vigore=70, entrata=73, presidente=94, pubblica=206, nonché=91, parole=162, marzo=99, società=71, luglio=87, procedure=73}]
+[{Bilancio=32, ottobre=34, Commissione=46, locali=25, DISEGNO=24, regioni=21, PARERE=34, recante=20, risorse=65, debiti=31, agosto=20, riduzione=21, Conversione=20, pubblica=31, misure=22, nonché=28, interno=29, Fondo=39, immigrazione=25}]
+
+
+Merged clusters (distance = 0.9306907):
+[{Bilancio=32, ottobre=34, Commissione=46, locali=25, DISEGNO=24, regioni=21, PARERE=34, recante=20, risorse=65, debiti=31, agosto=20, riduzione=21, Conversione=20, pubblica=31, misure=22, nonché=28, interno=29, Fondo=39, immigrazione=25}, {dicembre=101, scolastico=248, decorrere=66, risorse=72, spesa=81, istruzione=672, personale=108, vigore=68, entrata=70, studenti=93, parole=175, luglio=67, università=186, istituzioni=110}, {rifiuti=68, dicembre=169, amministrazioni=217, attuazione=68, risorse=69, agosto=108, servizio=86, personale=175, vigore=70, entrata=73, presidente=94, pubblica=206, nonché=91, parole=162, marzo=99, società=71, luglio=87, procedure=73}]
+[{urgenti=43, provvede=31, valorizzazione=46, economia=81, turismo=80, decorrere=43, beni=135, finanze=43, vigore=42, interventi=34, progetto=87, entrata=42, presidente=32, realizzazione=32, nonché=43, successive=38, fondazioni=34, culturali=115}]
+
+
+Merged clusters (distance = 0.93729067):
+[{urgenti=43, provvede=31, valorizzazione=46, economia=81, turismo=80, decorrere=43, beni=135, finanze=43, vigore=42, interventi=34, progetto=87, entrata=42, presidente=32, realizzazione=32, nonché=43, successive=38, fondazioni=34, culturali=115}, {Bilancio=32, ottobre=34, Commissione=46, locali=25, DISEGNO=24, regioni=21, PARERE=34, recante=20, risorse=65, debiti=31, agosto=20, riduzione=21, Conversione=20, pubblica=31, misure=22, nonché=28, interno=29, Fondo=39, immigrazione=25}, {dicembre=101, scolastico=248, decorrere=66, risorse=72, spesa=81, istruzione=672, personale=108, vigore=68, entrata=70, studenti=93, parole=175, luglio=67, università=186, istituzioni=110}, {rifiuti=68, dicembre=169, amministrazioni=217, attuazione=68, risorse=69, agosto=108, servizio=86, personale=175, vigore=70, entrata=73, presidente=94, pubblica=206, nonché=91, parole=162, marzo=99, società=71, luglio=87, procedure=73}]
+[{disposizione=27, sicurezza=35, servizi=32, penale=60, dicembre=28, applicazione=24, vigili=25, risorse=35, ambito=27, Corpo=33, pubblica=35, protezione=57, bilancio=27, civile=30, Fondo=42, particolare=53, persona=25, violenza=68}]
+
+
+Cluster [{somma=62, sanzione=179, TRASPORTI=88, guida=276, veicoli=152, sospensione=66, Art=108, circolazione=62, amministrativa=97, infrastrutture=69, violazione=143, pagamento=76, parole=96, patente=156, stradale=78, applicano=76}, {Governo=4, locali=4, strada=25, CAMERA=5, disegno=4, modifica=4, previste=5, sanzioni=6, sospensione=6, Art=8, punti=7, parole=12, patente=7, tasso=4, velocità=6, stradale=6, mesi=10, successive=5, aprile=10}]
+Cluster [{DEPUTATI=4, Senato=5, CAMERA=4, politiche=3, economia=2, agosto=2, GIROLAMO=1, KYENGE=1, territorio=1, regionali=1, XVII=1, presidente=2, pubblica=1, difesa=1, DELRIO=1, coesione=1, europei=1, parole=3, semplificazione=1, affari=3}]
+Cluster [{sindaco=125, metropolitano=78, Città=158, provincia=151, Province=64, organi=50, funzioni=125, statuto=78, popolazione=117, Art=57, vigore=46, unioni=97, presidente=59, Comuni=194, metropolitana=136, comune=96}]
+Cluster [{armi=49, sicurezza=17, Nazioni=14, Trattato=61, Segretariato=15, internazionale=35, convenzionali=21, intervento=46, Unione=16, commercio=20, livello=32, normativo=13, Unite=14, ATT=29, europea=20, affari=14}]
+Cluster [{Bilancio=32, ottobre=34, Commissione=46, locali=25, DISEGNO=24, regioni=21, PARERE=34, recante=20, risorse=65, debiti=31, agosto=20, riduzione=21, Conversione=20, pubblica=31, misure=22, nonché=28, interno=29, Fondo=39, immigrazione=25}, {urgenti=43, provvede=31, valorizzazione=46, economia=81, turismo=80, decorrere=43, beni=135, finanze=43, vigore=42, interventi=34, progetto=87, entrata=42, presidente=32, realizzazione=32, nonché=43, successive=38, fondazioni=34, culturali=115}, {dicembre=101, scolastico=248, decorrere=66, risorse=72, spesa=81, istruzione=672, personale=108, vigore=68, entrata=70, studenti=93, parole=175, luglio=67, università=186, istituzioni=110}, {rifiuti=68, dicembre=169, amministrazioni=217, attuazione=68, risorse=69, agosto=108, servizio=86, personale=175, vigore=70, entrata=73, presidente=94, pubblica=206, nonché=91, parole=162, marzo=99, società=71, luglio=87, procedure=73}, {disposizione=27, sicurezza=35, servizi=32, penale=60, dicembre=28, applicazione=24, vigili=25, risorse=35, ambito=27, Corpo=33, pubblica=35, protezione=57, bilancio=27, civile=30, Fondo=42, particolare=53, persona=25, violenza=68}]
+
+
+Total documents: 10
+Total clusters: 5
+Clustering completed.
