@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Cluster extends ICluster
+public class Cluster implements ICluster
 {
 	private Set<IDocument> documents;
 	
@@ -19,18 +19,12 @@ public class Cluster extends ICluster
 			this.documents.add(d);
 	}
 
-	@Override
-<<<<<<< HEAD
-	public Iterator<IDocument> iterator()
-	{
-=======
 	public int getDocumentsCount() {
 		return this.documents.size();
 	}
 
 	@Override
 	public Iterator<IDocument> iterator() {
->>>>>>> Generated new JSON output both for topwords & clusters.
 		return this.documents.iterator();
 	}
 	

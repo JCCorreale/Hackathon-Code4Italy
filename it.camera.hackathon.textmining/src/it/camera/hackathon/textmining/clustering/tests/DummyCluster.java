@@ -5,7 +5,7 @@ import it.camera.hackathon.textmining.clustering.IDocument;
 
 import java.util.Iterator;
 
-class DummyCluster extends ICluster
+class DummyCluster implements ICluster
 {
 	private String name;
 	
