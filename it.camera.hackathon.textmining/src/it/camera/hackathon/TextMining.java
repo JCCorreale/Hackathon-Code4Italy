@@ -19,6 +19,7 @@ import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
 import it.camera.hackathon.textmining.clustering.DocumentCollection;
+import it.camera.hackathon.textmining.clustering.ICluster;
 import it.camera.hackathon.textmining.clustering.IClustering;
 import it.camera.hackathon.textmining.clustering.IDissimilarityStrategy;
 import it.camera.hackathon.textmining.clustering.IDocument;
@@ -116,7 +117,11 @@ public class TextMining extends ITextMining
 //			System.out.println(entry.getKey().toString() + " " + terms.toString());
 //		}
 		
-		JSONAttiTopWordsPersister.saveAsSingleFile(result, "output/json/atti-terms.json");
+		// avoids overwriting atti-terms.json if clustering is performed (different top words amount considered)
+		if (!doClustering)
+		{
+			JSONAttiTopWordsPersister.saveAsSingleFile(result, "output/json/atti-terms.json");
+		}
 		
 		if (doClustering)
 		{
@@ -141,11 +146,22 @@ public class TextMining extends ITextMining
 
 			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
-			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser();
+			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(topWordsCount);
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)));
 			
 			// Saves clusters descriptors...
 			JSONClusterDescriptorsPersister.save(descriptors, "output/json/clusters");
+			
+			// Does some tests about the clustering
+			int docsCount = 0;
+			for (ICluster cluster : clustering)
+			{
+				for (IDocument doc : cluster)
+					docsCount++;
+			}
+
+			System.out.println("Total clusters: " + clustering.getClustersCount());
+			System.out.println("Total documents: " + docsCount);
 
 			System.out.println("Clustering completed.");
 		}

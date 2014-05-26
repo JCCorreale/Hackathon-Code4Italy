@@ -23,7 +23,12 @@ public class ClusterDescriptor {
 	
 	public String getLabel()
 	{
-		return this.terms.get(0);
+		StringBuilder sb = new StringBuilder();
+		for (String term : this.terms)
+		{
+			sb.append(term + " ");
+		}
+		return sb.toString();
 	}
 	
 	@Override
