@@ -1,0 +1,48 @@
+.laws span, .nav span, #home table td span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.nav {
+	margin-bottom: 10px;
+}
+
+.title .subtitle {
+	margin-left: 10px;
+}
+
+.logo {
+	padding: 50px;
+}
+
+
+.footer img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#home .selection .buttons {
+	min-height: 230px;
+}
+
+#home .selection .button {
+	padding-bottom: 5px;
+	margin: 5px;
+	font-size: 1.5em;
+}
+
+#home .selection .button:hover {
+	background-color: #f9f9f9;
+	cursor: pointer;
+}
+
+#home .label-wrapper {
+	padding: 5px;
+}
+
+#home .table-label {
+	font-weight: bold;
+	vertical-align: top;
+}

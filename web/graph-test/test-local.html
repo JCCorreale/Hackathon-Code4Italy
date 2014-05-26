@@ -8,7 +8,15 @@
 	<title>Example Cluster Description Chart</title>
 
 	<style>
+#graph {
+  width: 100%;
+  height: 100%;
+}
 
+svg path {
+  fill: none;
+  stroke: #000000;
+}
 	</style>
 
 </head>
@@ -20,7 +28,14 @@
 	<script type="text/javascript">
 GraphUtils.resolveId(graphModel)
 
-graphUi = new GraphUi(d3.select("#graph"), graphModel, undefined, undefined, {windowResizeEvent: nv.utils.events.windowResize})
+graphUi = new GraphUi(d3.select("#graph"), graphModel, undefined, undefined, {windowResizedEvent: nv.utils.events.windowResize})
+
+
+
+// graphModel.nodes.push({ "id": 7, "type": "term", "name": "Finanze", "x": 0, "y": 0, "weight": 5, "index": 6 })
+// graphModel.links.push({ "source": graphModel.nodes[0], "target": graphModel.nodes[6] })
+
+// graphUi.update()
 // graphUi.start()
 	</script>
 </body>

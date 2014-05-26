@@ -31,13 +31,14 @@ class SvgUtils
 		svg.append("defs").append "marker"
 		    .attr "id", "arrow"
 		    .attr "viewBox", "0 -5 10 10"
-		    .attr "refX", 20
+		    .attr "refX", 18
 		    .attr "refY", -1.5
-		    .attr "markerWidth", 6
-		    .attr "markerHeight", 6
+		    .attr "markerWidth", 16
+		    .attr "markerHeight", 16
 		    .attr "orient", "auto"
 		  .append "path"
-		    .attr("d", "M0,-5L10,0L0,5");
+		    .attr("d", "M0,-5L10,0L0,5")
+		    .attr "style", "stroke:#a3a3a3"
 		@arrowDefined = true
 		return
 
@@ -88,13 +89,13 @@ NodeDrawer = new Drawer(
 	injectFn: (selection, data, layout) -> 
 		#node
 		@nodesSelection = selection.append 'circle'
-		  .attr 'r', 8
+		  .attr 'r', (d) -> if d.type == "atto" then 25 else 15
 		  .attr 'class', 'node'
 		  .call layout.drag # draggable
 
 		#label
 		@labelsSelection = selection.append 'text'
-		   .attr 'x', 15
+		   .attr 'x', (d) -> if d.type == "atto" then 28 else 18
 		   .attr 'y', '.30em'
 		   .text (d) -> d.name
 		   .attr 'class', 'node-label'
@@ -120,8 +121,8 @@ class GraphUi
 	@defaults = 
 		width:			 960,
 		height:			 500,
-		linkDistance:	 60,
-		charge:			-300
+		linkDistance:	 160,
+		charge:			-600
 
 	_tick = (evt) ->
 		@nodeDrawer.update()
@@ -181,6 +182,7 @@ class GraphUi
 			  .attr 'height', _height
 
 			_layout.size [_width, _height]
+			_layout.start()
 			return
 
 

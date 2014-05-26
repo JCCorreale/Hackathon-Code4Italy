@@ -1,0 +1,44 @@
+indice dettagli atti:
+atti-info.json
+[
+	{atto: Iri, label: string, iniziativa: string, date: string}
+]
+
+indice atto-termini (riferimento al cluster in cui ricade?):
+atti-terms.json
+[
+	{id: int, atto: Iri, terms: string[]}
+]
+
+indice cluster:
+clusters.json
+[
+	{id: int, label: string, terms: string[]}
+]
+
+grafico occorrenze atti-periodo per cluster
+<id-cluster>-graph.json
+{
+	"series": [
+		{
+			"key": "label cluster",
+			"values": [
+				[0, 1] // periodo, occorrenze
+			]
+		}
+	],
+	"xAxisLabels": [
+		"label periodo"
+	]
+}
+
+grafo cluster-term / atti-term
+<id-cluster>-terms.json, <id-atto>-terms.json
+{
+	nodes: [
+		{id: int, name: string, type: string}
+	],
+	links: [
+		{source: id, target: id}
+	]
+}

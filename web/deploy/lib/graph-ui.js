@@ -43,7 +43,7 @@ SvgUtils = (function() {
     if (this.arrowDefined) {
       return;
     }
-    svg.append("defs").append("marker").attr("id", "arrow").attr("viewBox", "0 -5 10 10").attr("refX", 20).attr("refY", -1.5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto").append("path").attr("d", "M0,-5L10,0L0,5");
+    svg.append("defs").append("marker").attr("id", "arrow").attr("viewBox", "0 -5 10 10").attr("refX", 18).attr("refY", -1.5).attr("markerWidth", 16).attr("markerHeight", 16).attr("orient", "auto").append("path").attr("d", "M0,-5L10,0L0,5").attr("style", "stroke:#a3a3a3");
     this.arrowDefined = true;
   };
 
@@ -90,8 +90,20 @@ NodeDrawer = new Drawer({
     this.labelsSelection.attr('transform', SvgUtils.transform);
   },
   injectFn: function(selection, data, layout) {
-    this.nodesSelection = selection.append('circle').attr('r', 8).attr('class', 'node').call(layout.drag);
-    this.labelsSelection = selection.append('text').attr('x', 15).attr('y', '.30em').text(function(d) {
+    this.nodesSelection = selection.append('circle').attr('r', function(d) {
+      if (d.type === "atto") {
+        return 25;
+      } else {
+        return 15;
+      }
+    }).attr('class', 'node').call(layout.drag);
+    this.labelsSelection = selection.append('text').attr('x', function(d) {
+      if (d.type === "atto") {
+        return 28;
+      } else {
+        return 18;
+      }
+    }).attr('y', '.30em').text(function(d) {
       return d.name;
     }).attr('class', 'node-label');
   }
@@ -113,8 +125,8 @@ GraphUi = (function() {
   GraphUi.defaults = {
     width: 960,
     height: 500,
-    linkDistance: 60,
-    charge: -300
+    linkDistance: 160,
+    charge: -600
   };
 
   _tick = function(evt) {
@@ -164,6 +176,7 @@ GraphUi = (function() {
       _height = parseInt(target.style('height'), 10);
       _svg.attr('width', _width).attr('height', _height);
       _layout.size([_width, _height]);
+      _layout.start();
     };
     if (opt.windowResizedEvent != null) {
       opt.windowResizedEvent.addHandler(_resize);
