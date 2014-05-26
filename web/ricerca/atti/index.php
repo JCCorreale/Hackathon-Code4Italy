@@ -55,7 +55,6 @@ $atti = json_decode($content, true);
 				<div class="col-md-9 well admin-content" id="home">
 					<div class="search">
 						<div class="control-group">
-							<label for="select">Ricerca:</label>
 							<select id="select" class="searchbar" placeholder="Ricerca..."></select>
 						</div>
 						<script>
@@ -70,14 +69,14 @@ $atti = json_decode($content, true);
 							],
 							options: [
 								<?php
-$terms = []
+$terms = array();
 
 $lenAtti = count($atti);
 for($i = 0; $i < $lenAtti; $i++) {
 	$atto = $atti[$i];
 	$len = count($atto["terms"]);
 	for($j = 0; $j < $len; $j++) {
-		$term = ucfirst($atto[$j]);
+		$term = ucfirst($atto["terms"][$j]);
 		if(!in_array($term, $terms))
 			array_push($terms, $term);
 	}
@@ -93,6 +92,7 @@ for($j = 1; $j < $len; $j++) {
 }
 
 								?>
+
 							],
 							render: {
 								item: function(item, escape) {
@@ -102,8 +102,19 @@ for($j = 1; $j < $len; $j++) {
 									return '<div>' + item.label + '</div>';
 								}
 							},
-							onChange: function(value) {
-								d3.selectAll('.'+value).classed('hidden', function(d) { return !d3.select(this).classed('hidden'); });
+							onChange: function(values) {
+								if(values == null || values.length == 0) {
+									d3.selectAll('.law').classed('hidden', false);
+									return;
+								}
+
+								d3.selectAll('.law').classed('hidden', true);
+
+								for (var i = values.length - 1; i >= 0; i--) {
+									var value = values[i];
+
+									d3.selectAll('.law.'+value).classed('hidden', false);
+								};
 							}
 						});
 						</script>
@@ -115,7 +126,7 @@ for($i = 0; $i < $lenAtti; $i++) {
 	$atto = $atti[$i];
 ?>
 <?php
-						echo '<div class="panel panel-default';
+						echo '<div class="law panel panel-default';
 
 						$len = count($atto["terms"]);
 						for($j = 0; $j < $len; $j++)
@@ -149,5 +160,6 @@ for($i = 0; $i < $lenAtti; $i++) {
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
