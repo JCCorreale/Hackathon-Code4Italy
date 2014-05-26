@@ -29,6 +29,8 @@ $atti = json_decode($content, true);
 	<script type="text/javascript" src="/lib/nv.d3.js" charset="utf-8"></script>
 	<script type="text/javascript" src="/lib/nv-extensions.js" charset="utf-8"></script>
 
+	<script type="text/javascript" src="/lib/selectize.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="/css/selectize.css">
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/footer.css">
@@ -51,14 +53,87 @@ $atti = json_decode($content, true);
 					</ul>
 				</div>
 				<div class="col-md-9 well admin-content" id="home">
+					<div class="search">
+						<div class="control-group">
+							<select id="select" class="searchbar" placeholder="Ricerca..."></select>
+						</div>
+						<script>
+						$('#select').selectize({
+							persist: false,
+							maxItems: null,
+							valueField: 'label',
+							labelField: 'label',
+							searchField: ['label'],
+							sortField: [
+								{field: 'label', direction: 'asc'}
+							],
+							options: [
+								<?php
+$terms = array();
+
+$lenAtti = count($atti);
+for($i = 0; $i < $lenAtti; $i++) {
+	$atto = $atti[$i];
+	$len = count($atto["terms"]);
+	for($j = 0; $j < $len; $j++) {
+		$term = ucfirst($atto["terms"][$j]);
+		if(!in_array($term, $terms))
+			array_push($terms, $term);
+	}
+
+}
+
+$len = count($terms);
+if($len > 0)
+	echo "{ label: \"".$terms[0]."\"}";
+
+for($j = 1; $j < $len; $j++) {
+	echo ", { label: \"".$terms[$j]."\"}";
+}
+
+								?>
+
+							],
+							render: {
+								item: function(item, escape) {
+									return '<div>' + item.label + '</div>';
+								},
+								option: function(item, escape)  {
+									return '<div>' + item.label + '</div>';
+								}
+							},
+							onChange: function(values) {
+								if(values == null || values.length == 0) {
+									d3.selectAll('.law').classed('hidden', false);
+									return;
+								}
+
+								d3.selectAll('.law').classed('hidden', true);
+
+								for (var i = values.length - 1; i >= 0; i--) {
+									var value = values[i];
+
+									d3.selectAll('.law.'+value).classed('hidden', false);
+								};
+							}
+						});
+						</script>
+					</div>
 					<div class="laws">
 <?php
 $lenAtti = count($atti);
 for($i = 0; $i < $lenAtti; $i++) {
 	$atto = $atti[$i];
 ?>
+<?php
+						echo '<div class="law panel panel-default';
 
-						<div class="panel panel-default">
+						$len = count($atto["terms"]);
+						for($j = 0; $j < $len; $j++)
+							echo " ".$atto["terms"][$j];
+
+						echo '">';
+?>
 							<div class="panel-body">
 								<?php echo '<a href="/atti/details.php?id='.$atto["atto"].'">' ?><h4><span class="glyphicon glyphicon-share"></span><?php echo $atto['label']; ?></h4></a>
 <?php
@@ -85,5 +160,6 @@ for($i = 0; $i < $lenAtti; $i++) {
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
