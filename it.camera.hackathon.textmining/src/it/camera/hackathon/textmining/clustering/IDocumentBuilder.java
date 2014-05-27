@@ -9,6 +9,11 @@ public interface IDocumentBuilder
 	 * @param term
 	 */
 	public void addTerm(ITerm term);
+	/**
+	 * Increases the frequency of the given value if the term is already defined.
+	 * @param term
+	 * @param frequency
+	 */
 	public void addTerm(ITerm term, int frequency);
 	public void addTerm(String term);
 	public void addTerm(String term, int frequency);

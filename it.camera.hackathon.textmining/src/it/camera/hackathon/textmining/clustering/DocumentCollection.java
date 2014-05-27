@@ -3,6 +3,7 @@ package it.camera.hackathon.textmining.clustering;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -213,6 +214,52 @@ public class DocumentCollection implements IDocumentCollection {
 		return (float)(
 				Math.log(1 + tf) *
 				Math.log(n / df));
+	}
+	
+	@Override
+	public float[] getDocumentsTFIDFCentroid(Iterable<IDocument> documents) {
+		List<float[]> documentsVectors = new ArrayList<float[]>();
+		float[] centroidVector = ClusteringUtils.getMeanVector(documentsVectors);
+		return centroidVector;
+	}
+
+	@Override
+	public float[] getDocumentTFIDFVector(IDocument doc) {
+		float[] vector = new float[this.allTerms.size()];
+		int index = 0;
+		for (ITerm term : this.allTerms)
+		{
+			vector[index] = this.getTFIDF(term, doc);
+			index++;
+		}
+		return vector;
+	}
+
+	@Override
+	public int getVectorPosition(ITerm term) {
+		Iterator<ITerm> iterator = this.allTerms.iterator();
+		int position = 0;
+		while (iterator.hasNext())
+		{
+			if (iterator.next().equals(term))
+				return position;
+			position++;
+		}
+		return position;
+	}
+
+	@Override
+	public ITerm getVectorTerm(int position) {
+		Iterator<ITerm> iterator = this.allTerms.iterator();
+		int counter = 0;
+		while (iterator.hasNext())
+		{
+			ITerm term = iterator.next();
+			if (counter == position)
+				return term;
+			counter++;
+		}
+		return null;
 	}
 	
 	@Override

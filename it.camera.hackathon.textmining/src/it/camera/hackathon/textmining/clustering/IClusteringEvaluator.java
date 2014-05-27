@@ -2,13 +2,10 @@ package it.camera.hackathon.textmining.clustering;
 
 public interface IClusteringEvaluator {
 
-	public float getCoesion(ICluster c);
-	
-	public float getSeparation(ICluster c1, ICluster c2);
-	
-	public float getTotalSeparation(IClustering c);
-	
-	public float getTotalCoesion(IClustering c);
-	
-	public float getSilhouette(ICluster c);
+	/**
+	 * Returns a score representing the quality of this cluster according to the policy of the specific implementation.
+	 * @param clustering
+	 * @return
+	 */
+	public float getClusteringScore(IClustering clustering);
 }

@@ -178,6 +178,10 @@ public class TextMining extends ITextMining
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
 
+			// TODO Invoca con diverse altezze finché e utilizza l'evaluator per determinare quella migliore
+			// (nota: verificare che la funzione possa essere invocata più volte sullo stesso dendrogramma,
+			// ad esempio restituitendo una copia anziché alterare quello originale).
+			
 			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxClusterTerms);
@@ -252,7 +256,6 @@ public class TextMining extends ITextMining
 			{
 				System.out.println(entry.getKey() + " " + entry.getValue());
 			}
-			
 			
 			System.out.println("\n\n");
 			System.out.println("Total documents: " + docsCount);
