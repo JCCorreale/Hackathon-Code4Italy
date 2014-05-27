@@ -7,13 +7,27 @@ package it.camera.hackathon.textmining.clustering;
  */
 public class CosineClusteringEvaluator implements IClusteringEvaluator {
 
-	public CosineClusteringEvaluator() {
-		// TODO Auto-generated constructor stub
+	private IDocumentCollection documents;
+	
+	public CosineClusteringEvaluator(IDocumentCollection documents) {
+		this.documents = documents;
 	}
 
 	@Override
 	public float getClusteringScore(IClustering clustering) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		float sum = 0;
+		
+		for (ICluster c : clustering)
+		{
+			float[] centroid = this.documents.getDocumentsTFIDFCentroid(c);
+			for (IDocument d : c)
+			{
+				float[] docArray = this.documents.getDocumentTFIDFVector(d);
+				sum += ClusteringUtils.getCosine(docArray, docArray);
+			}
+		}
+		
+		return sum;
 	}
 }

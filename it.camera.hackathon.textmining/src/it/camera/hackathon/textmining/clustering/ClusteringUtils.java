@@ -55,7 +55,6 @@ public final class ClusteringUtils {
 		}
 	}
 	
-
 	public static float[] getMeanVector(Collection<float[]> vectors) {
 		
 		float[] meanVector = null;

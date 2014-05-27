@@ -182,6 +182,8 @@ public class TextMining extends ITextMining
 			// (nota: verificare che la funzione possa essere invocata più volte sullo stesso dendrogramma,
 			// ad esempio restituitendo una copia anziché alterare quello originale).
 			
+			
+			
 			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxClusterTerms);
