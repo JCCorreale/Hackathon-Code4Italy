@@ -219,6 +219,10 @@ public class DocumentCollection implements IDocumentCollection {
 	@Override
 	public float[] getDocumentsTFIDFCentroid(Iterable<IDocument> documents) {
 		List<float[]> documentsVectors = new ArrayList<float[]>();
+		// calculates the vector for each document
+		for (IDocument d : documents)
+			documentsVectors.add(this.getDocumentTFIDFVector(d));
+		// calculates the centroid as the mean of documents' vectors
 		float[] centroidVector = ClusteringUtils.getMeanVector(documentsVectors);
 		return centroidVector;
 	}

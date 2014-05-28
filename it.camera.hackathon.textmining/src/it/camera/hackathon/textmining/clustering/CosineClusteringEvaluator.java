@@ -20,11 +20,19 @@ public class CosineClusteringEvaluator implements IClusteringEvaluator {
 		
 		for (ICluster c : clustering)
 		{
+			// TODO Improve this policy
+			// clusters with a single documents (outliers) give a penalty
+			if (c.getDocumentsCount() == 1)
+			{
+				sum -= 0.5f;
+				continue;
+			}
+			
 			float[] centroid = this.documents.getDocumentsTFIDFCentroid(c);
 			for (IDocument d : c)
 			{
 				float[] docArray = this.documents.getDocumentTFIDFVector(d);
-				sum += ClusteringUtils.getCosine(docArray, docArray);
+				sum += ClusteringUtils.getCosine(docArray, centroid);
 			}
 		}
 		
