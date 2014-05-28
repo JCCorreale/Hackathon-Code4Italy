@@ -15,7 +15,7 @@ import org.junit.Test;
 public class DocumentCollectionTest 
 {
 	@Test
-	public void test() 
+	public void testAddTerm() 
 	{
 		IDocumentBuilder b1 = new InMemoryDocumentBuilder();
 		IDocumentBuilder b2 = new InMemoryDocumentBuilder();

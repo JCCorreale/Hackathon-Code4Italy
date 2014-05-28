@@ -34,6 +34,34 @@ public interface IDocumentCollection
 	public float getTFIDFCosine(IDocument d1, IDocument d2);
 	
 	/**
+	 * Returns a vector representing the TFIDF value of the centroid of a set of documents.
+	 * @param documents
+	 * @return
+	 */
+	public float[] getDocumentsTFIDFCentroid(Iterable<IDocument> documents);
+	
+	/**
+	 * Returns a vector representing the TFIDF values of a document in this collection.
+	 * @param doc
+	 * @return
+	 */
+	public float[] getDocumentTFIDFVector(IDocument doc);
+	
+	/**
+	 * Returns the position of the given term in the vector returned by this collection.
+	 * @param term
+	 * @return
+	 */
+	public int getVectorPosition(ITerm term);
+	
+	/**
+	 * Returns the term at the given position in the vector returned by this collection.
+	 * @param position
+	 * @return
+	 */
+	public ITerm getVectorTerm(int position);
+	
+	/**
 	 * Si definisce idf(t) = log10[N/df(t)], dove
 	 * N è il numero di documenti nel dataset
 	 * df(t) = è il numero di documenti nel dataset che contengono il termine t

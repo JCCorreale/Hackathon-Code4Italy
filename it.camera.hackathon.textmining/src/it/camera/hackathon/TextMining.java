@@ -24,10 +24,12 @@ import it.camera.hackathon.textmining.HtmlRemover;
 import it.camera.hackathon.textmining.IWordCountResult;
 import it.camera.hackathon.textmining.TopWordsCountAnalyzer;
 import it.camera.hackathon.textmining.clustering.AgglomerativeDocumentClusterer;
+import it.camera.hackathon.textmining.clustering.CosineClusteringEvaluator;
 import it.camera.hackathon.textmining.clustering.Dendrogram;
 import it.camera.hackathon.textmining.clustering.DocumentCollection;
 import it.camera.hackathon.textmining.clustering.ICluster;
 import it.camera.hackathon.textmining.clustering.IClustering;
+import it.camera.hackathon.textmining.clustering.IClusteringEvaluator;
 import it.camera.hackathon.textmining.clustering.IDissimilarityStrategy;
 import it.camera.hackathon.textmining.clustering.IDocument;
 import it.camera.hackathon.textmining.clustering.IDocumentCollection;
@@ -177,9 +179,53 @@ public class TextMining extends ITextMining
 			AgglomerativeDocumentClusterer clusterer = new AgglomerativeDocumentClusterer(proximityStrategy);
 			
 			Dendrogram dendrogram = clusterer.getClusteringDendrogram(docsCollection);
-
-			IClustering clustering = dendrogram.getClustering(dendrogram.getHeight()); // TODO Tune height
 			
+			System.out.println("\n\nEvaluating best clustering:");
+			
+			IClusteringEvaluator evaluator = new CosineClusteringEvaluator(docsCollection);
+			Map<IClustering, Float> clusteringScores = new HashMap<IClustering, Float>();
+			
+			IClustering clustering;
+			float maxScore = 0;
+
+			for (int h = 1; h <= dendrogram.getHeight(); h++)
+			{
+				clustering = dendrogram.getClustering(h);
+				
+				// TODO Remove outliers
+				
+				float score = evaluator.getClusteringScore(clustering);
+				
+				System.out.println("\nClustering for h = " + h + " (" + clustering.getClustersCount() + " clusters)");
+				System.out.println(clustering);
+				System.out.println("Score = " + score);
+				
+				clusteringScores.put(clustering, score);
+			}
+			
+			clustering = null;
+			
+			for (IClustering c : clusteringScores.keySet())
+			{
+				float clusteringScore = clusteringScores.get(c);
+				
+				if (clustering == null)
+				{
+					clustering = c;
+					maxScore = clusteringScore;
+				}
+				
+				if (clusteringScore > maxScore)
+				{
+					clustering = c;
+					maxScore = clusteringScore;
+				}
+			}
+			
+			System.out.println("\n\nSelected clustering: " + clustering);
+			System.out.println("Documents: " + clustering.getClustersCount());
+			System.out.println("Score: " + maxScore);
+
 			ClusteringAnalyser clusterAnalyser = new ClusteringAnalyser(maxClusterTerms);
 			Set<ClusterDescriptor> descriptors = clusterAnalyser.getClusterDescriptors(clustering, MapUtils.getValueKeyMap(MapUtils.entryListToMap(documents)), docsCollection, topWordsResult);
 			
@@ -252,7 +298,6 @@ public class TextMining extends ITextMining
 			{
 				System.out.println(entry.getKey() + " " + entry.getValue());
 			}
-			
 			
 			System.out.println("\n\n");
 			System.out.println("Total documents: " + docsCount);
