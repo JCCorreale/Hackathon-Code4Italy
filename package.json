@@ -1,0 +1,40 @@
+{
+  "name": "Hackathon-Code4Italy",
+  "version": "0.0.0",
+  "description": "Italian laws text mining project - based on the Linked Open Data of the Camera dei Deputati",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JCCorreale/Hackathon-Code4Italy.git"
+  },
+  "keywords": [
+    "text",
+    "mining",
+    "code4italy"
+  ],
+  "author": "Thierry Spetebroot, Jean Claude Correale, Alessandro Colace",
+  "license": "CC-BY",
+  "bugs": {
+    "url": "https://github.com/JCCorreale/Hackathon-Code4Italy/issues"
+  },
+  "homepage": "https://github.com/JCCorreale/Hackathon-Code4Italy",
+  "dependencies": {
+    "gulp-clean": "^0.3.0",
+    "gulp-ftp": "^0.3.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-prompt": "^0.1.1",
+    "gulp": "^3.6.2",
+    "gulp-util": "^2.2.14",
+    "gulp-fn": "git://github.com/ThierrySpetebroot/gulp-fn.git",
+    "event-stream": "^3.1.5"
+  },
+  "devDependencies": {
+    "gulp-debug": "^0.3.0"
+  }
+}
