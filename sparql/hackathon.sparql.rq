@@ -1,0 +1,87 @@
+# ottengo tutti i descrittori dei testi degli atti
+SELECT DISTINCT ?atto, ?dataTestoAtto, ?iriTestoAtto
+WHERE {
+	# Tutti i disegni di leggi che sono diventati definitivi (iter terminato)
+	?s <http://dati.camera.it/ocd/lavoriPreparatori> ?o; a ocd:legge. ?o ocd:rif_attoCamera ?atto.
+
+	# Tutti gli atti con associato un testo in versione HTML
+	?atto a ocd:atto; ocd:rif_versioneTestoAtto ?descrTestoAtto.
+
+	# Tutti i descrittori dei testi degli atti
+	?descrTestoAtto dc:date ?dataTestoAtto.
+
+	# URI HTML testo atto
+	?descrTestoAtto <http://purl.org/dc/terms/isReferencedBy> ?iriTestoAtto.
+}
+LIMIT 100
+
+SELECT DISTINCT ?atto, ?iriTestoAtto
+WHERE {
+	# Tutti i disegni di leggi che sono diventati definitivi (iter terminato)
+	?s <http://dati.camera.it/ocd/lavoriPreparatori> ?o; a ocd:legge. ?o ocd:rif_attoCamera ?atto.
+
+	?descrTestoAtto dc:date {
+		# MAX dataTestoAtto of descrTestoAtto
+		SELECT ( MAX(?dataTestoAtto) AS ?maxTestoAtto )
+		WHERE {
+			# Tutti gli atti con associato un testo in versione HTML
+			?atto a ocd:atto; ocd:rif_versioneTestoAtto ?descrTestoAtto2.
+
+			# Tutti i descrittori dei testi degli atti
+			?descrTestoAtto2 dc:date ?dataTestoAtto.			
+		}
+	}.
+
+	# URI HTML testo atto
+	?descrTestoAtto <http://purl.org/dc/terms/isReferencedBy> ?iriTestoAtto.
+}
+
+# ultima modifica effettuata per ogni atto
+SELECT ?atto, ( MAX(?dataTestoAtto) AS ?lastEdit )
+WHERE {
+	# Tutti gli atti con associato un testo in versione HTML
+	?atto a ocd:atto; ocd:rif_versioneTestoAtto ?descrTestoAtto.
+
+	# Tutti i descrittori dei testi degli atti
+	?descrTestoAtto dc:date ?dataTestoAtto.
+}
+GROUP BY ?atto
+
+
+
+# Tutti gli atti divenuti legge e con contenuto in HTML
+SELECT ?atto
+WHERE {
+	# Tutti i disegni di leggi che sono diventati definitivi (iter terminato)
+	?s <http://dati.camera.it/ocd/lavoriPreparatori> ?o; a ocd:legge. ?o ocd:rif_attoCamera ?atto.
+
+	# Tutti gli atti con associato un testo in versione HTML
+	?atto a ocd:atto; ocd:rif_versioneTestoAtto ?descrTestoAtto.
+}
+
+
+# Dato uno specifico atto trovo l'ultima modifica eseguita
+# input <ATTO>, iri di uno specifico atto
+# output: <MAX_DATE>, ultima modifica di un <ATTO>
+SELECT ( MAX(?dataTestoAtto) AS ?lastEdit )
+WHERE {
+	# Tutti i descrittori dell'atto richiesto
+	<ATTO> ocd:rif_versioneTestoAtto ?descrTestoAtto.
+
+	# Tutti i descrittori dei testi degli atti
+	?descrTestoAtto dc:date ?dataTestoAtto.
+}
+
+# Dato uno specifico atto trovo il contenuto relativo alla modifica eseguita nella data specificata
+# input <ATTO>, iri di uno specifico atto
+# input <MAX_DATE>, data dell'ultima modifica di <ATTO> (vedi query precedente) 
+# output <FINAL_CONTENT>, iri contenuto finale dell'atto
+SELECT ?finalContent
+WHERE {
+	<ATTO> ocd:rif_versioneTestoAtto ?descrTestoAtto.
+
+	?descrTestoAtto dc:date <MAX_DATE>.
+
+	?descrTestoAtto <http://purl.org/dc/terms/isReferencedBy> ?finalContent.
+}
+
