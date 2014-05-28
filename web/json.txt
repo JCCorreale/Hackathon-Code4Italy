@@ -1,3 +1,5 @@
+Struttura dei file JSON utilizzati:
+
 indice dettagli atti:
 atti-info.json
 [
