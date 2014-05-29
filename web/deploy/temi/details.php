@@ -123,7 +123,6 @@ for ($i=0; $i < $len; $i++) {
 	<script type="text/javascript">
 d3.json(<?php echo "\"/data/".$clusterId."-graph.json\"" ?>, function(error, model) {
   model.series.key = "Tema " + <?php echo $clusterId; ?>;
-  model.series = [model.series]; // quickfix (missing array in model - json)
 
   model.xAxisLabels = ["Gen '13", "Feb '13", "Mar '13", "Apr '13", "May '13", "Jun '13", "Jul '13", "Aug '13", "Sep '13", "Oct '13", "Nov '13", "Dec '13"]
 
