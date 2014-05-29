@@ -43,7 +43,7 @@ public class JSONAttiTopWordsPersister {
 			{
 	
 				String filename = path + File.separator + attoTermsPrefix + counter + jsonExtension;
-				JSONActDescriptorSaver saver = new JSONActDescriptorSaver(new BufferedWriter(new FileWriter(filename)));
+				JSONActDescriptorSaver saver = new JSONActDescriptorSaver(WritersFactory.newUTF8FileWriter(filename));
 				saver.save(entry);
 				
 				counter++;
@@ -59,7 +59,7 @@ public class JSONAttiTopWordsPersister {
 	{
 		try
 		{
-			JSONActDescriptorCollectionSaver saver = new JSONActDescriptorCollectionSaver(new BufferedWriter(new FileWriter(filename)));
+			JSONActDescriptorCollectionSaver saver = new JSONActDescriptorCollectionSaver(WritersFactory.newUTF8FileWriter(filename));
 			saver.save(MapUtils.mapToEntryList(atti));
 		}
 		catch (IOException e)

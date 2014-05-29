@@ -83,6 +83,11 @@ public class ProximityMatrix
 		return clusters;
 	}
 	
+	public int getClusterIndex(ICluster cluster)
+	{
+		return this.clusterIndexes.get(cluster);
+	}
+	
 	public Iterable<ICluster> getClusters()
 	{
 		return this.clusterIndexes.keySet();
