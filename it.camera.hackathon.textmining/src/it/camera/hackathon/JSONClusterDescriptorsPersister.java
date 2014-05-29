@@ -5,14 +5,19 @@ import it.camera.hackathon.persistence.JSONClusterDescriptorSaver;
 import it.camera.hackathon.utils.FileUtils;
 
 import java.io.File;
-import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -36,25 +41,25 @@ public class JSONClusterDescriptorsPersister {
 		// saves the index
 		try 
 		{
-			JSONClusterDescriptorCollectionSaver saver = new JSONClusterDescriptorCollectionSaver(new FileWriter(indexFileName));
+			JSONClusterDescriptorCollectionSaver saver = new JSONClusterDescriptorCollectionSaver(WritersFactory.newUTF8FileWriter(indexFileName));
 			saver.save(clusters);
-		} 
+		}
 		catch (IOException e) {
 			throw new IllegalStateException("IO Error");
 		}
 		
-		try
-		{
+		try {
 			for (ClusterDescriptor cluster : clusters)
 			{
 				List<Date> dates = new ArrayList<Date>(cluster.occurrences.keySet());
 				Collections.sort(dates);
-				
+				JSONArray seriesArray = new JSONArray();
 				JSONObject seriesObject = new JSONObject();
 				seriesObject.put(seriesKey, JSONClusterDescriptorSaver.getSeriesJSONObject(cluster));
 				seriesObject.put(xAxisLabelsKey, JSONClusterDescriptorSaver.getXAxisLabelsJSONArray(dates));
-				FileWriter fw;
-				seriesObject.write(fw = new FileWriter(path + File.separator + cluster.id + "-graph.json"));
+				seriesArray.put(seriesObject);
+				Writer fw;
+				seriesArray.write(fw = WritersFactory.newUTF8FileWriter(path + File.separator + cluster.id + "-graph.json"));
 				fw.flush();
 				fw.close();
 			}

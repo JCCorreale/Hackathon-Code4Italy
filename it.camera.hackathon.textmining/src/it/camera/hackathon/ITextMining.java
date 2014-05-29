@@ -39,8 +39,8 @@ public abstract class ITextMining
 	
 	static
 	{
-//		setTopWordsConfig();
-		setClusteringConfig();
+		setTopWordsConfig();
+//		setClusteringConfig();
 //		setTopWordsTestConfig();
 //		setClusteringTestConfig();
 	}
