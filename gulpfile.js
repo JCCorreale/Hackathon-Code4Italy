@@ -2,7 +2,7 @@ var
   es 		= require('event-stream'),
 
   gulp 		= require('gulp'),
-  fn		= require('gulp-fn'),
+//  fn		= require('gulp-fn'),
   util		= require('gulp-util'),
   clean		= require('gulp-clean'),
 

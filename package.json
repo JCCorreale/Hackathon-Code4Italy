@@ -31,7 +31,6 @@
     "gulp-prompt": "^0.1.1",
     "gulp": "^3.6.2",
     "gulp-util": "^2.2.14",
-    "gulp-fn": "git://github.com/ThierrySpetebroot/gulp-fn.git",
     "event-stream": "^3.1.5"
   },
   "devDependencies": {
