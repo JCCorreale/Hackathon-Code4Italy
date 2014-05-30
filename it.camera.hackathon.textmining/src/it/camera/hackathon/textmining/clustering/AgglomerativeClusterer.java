@@ -73,7 +73,7 @@ public abstract class AgglomerativeClusterer {
 			ICluster mergedCluster = this.mergeCluster(m, nearestClusters[0], nearestClusters[1]);
 			
 			System.out.println("\n\n" + m);
-			System.out.println("\n\nMerging clusters (distance = " + dist + "):\n" + nearestClusters[0] + "\n" + nearestClusters[1]/* + "\nto:\n" + mergedCluster*/ + "\n\n");
+			System.out.println("\n\nMerging clusters (distance = " + dist + "):\n" + nearestClusters[0] + "\n" + nearestClusters[1]/* + "\nto:\n" + mergedCluster*/);
 			System.out.println("Indexes: " + c1Index + " " + c2Index);
 			
 			dendrogram.add(mergedCluster, nearestClusters[0], nearestClusters[1]);

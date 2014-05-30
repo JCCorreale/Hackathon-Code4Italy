@@ -53,13 +53,14 @@ public class JSONClusterDescriptorsPersister {
 			{
 				List<Date> dates = new ArrayList<Date>(cluster.occurrences.keySet());
 				Collections.sort(dates);
-				JSONArray seriesArray = new JSONArray();
 				JSONObject seriesObject = new JSONObject();
-				seriesObject.put(seriesKey, JSONClusterDescriptorSaver.getSeriesJSONObject(cluster));
+				JSONObject singleSerieObject = JSONClusterDescriptorSaver.getSeriesJSONObject(cluster);
+				JSONArray seriesArray = new JSONArray();
+				seriesArray.put(singleSerieObject);
+				seriesObject.put(seriesKey, seriesArray);
 				seriesObject.put(xAxisLabelsKey, JSONClusterDescriptorSaver.getXAxisLabelsJSONArray(dates));
-				seriesArray.put(seriesObject);
 				Writer fw;
-				seriesArray.write(fw = WritersFactory.newUTF8FileWriter(path + File.separator + cluster.id + "-graph.json"));
+				seriesObject.write(fw = WritersFactory.newUTF8FileWriter(path + File.separator + cluster.id + "-graph.json"));
 				fw.flush();
 				fw.close();
 			}
