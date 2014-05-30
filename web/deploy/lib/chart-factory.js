@@ -20,7 +20,7 @@ ChartFactory = (function() {
           return model.xAxisLabels[d];
         }).rotateLabels(45);
         chart.yAxis.axisLabel('Occorrenze');
-        target.datum(model.series).transition().duration(500).call(chart);
+        target.datum(model).transition().duration(500).call(chart);
         nv.utils.events.windowResize.addHandler(chart.update);
         return chart;
       });
