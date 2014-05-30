@@ -5,6 +5,7 @@ This project comes with a build system script (gulpfile.js) suited to deploy aut
 2. open a node terminal
 3. go into the project root (this folder)
 4. run 'npm install'
+5. copy the folder in node_modules-patches into node_modules (will overwrite 2 files in the gulp-ftp dependency)
 
 # usage
 The build system script offers different tasks:
