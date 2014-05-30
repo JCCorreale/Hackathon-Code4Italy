@@ -29,8 +29,9 @@ var
   path_tmp			= "./tmp/",
   path_website		= "./web/deploy/",
 
+  path_remote_output = "/",
   path_local_data_output  = path_website + path_data_output,
-  path_remote_data_output = "/" + path_data_output,
+  path_remote_data_output = path_remote_output + path_data_output,
 
   file_data_attiInfo = "./web/deploy/data/atti-info.json",
   file_data_attiTerms = path_data_input + "atti-terms.json",
@@ -133,6 +134,7 @@ gulp.task('deploy-all', ['build-data-and-ask-ftp-password'], function() {
 	  .pipe(ftp({
             host: ftp_host,
             user: ftp_user,
-            pass: ftp_password
+            pass: ftp_password,
+            remotePath: path_remote_output
         }));
 });
