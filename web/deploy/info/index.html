@@ -50,8 +50,107 @@
 				</div>
 				<div class="col-md-9 well admin-content" id="home">
 					<div class="row-fluid">
-						<h1>In costruzione...</h1>
-					</div>
+<p>
+<big>Progetto <i>"Text Mining: Estrazione dei contenuti dagli atti della Camera dei Deputati"</i></big><br/>sviluppato durante l'<a href="http://dati.camera.it/it/hackathon/">hackathon Code4Italy @Montecitorio</a>.
+</p>
+<p>
+A cura di <i>Jean Claude Correale, Thierry Spetebroot e Alessandro Colace</i>.
+</p>
+<p>
+<b>Licenza</b>: <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>
+<b>Codice sorgente</b>: <a href="https://github.com/JCCorreale/Hackathon-Code4Italy">repository Hackathon-Code4Italy @ GitHub</a> 
+</p>
+<h2>Introduzione</h2>
+<p>
+Il software sviluppato analizza una collezione di documenti (in particolare Atti della Camera dei Deputati) al fine di individuare gli argomenti trattati da ciascuno di questi. Utilizzando questa informazione in combinazione agli OpenData della camera, è potenzialmente possibile effettuare interessanti ricerche, mettendo in risalto le tematiche più affrontate in una legislatura, in un certo periodo di tempo o in relazione ad un particolare deputato o senatore.
+</p>
+<p>
+Il software processa i dati applicando tecniche di <i>information retrieval</i> come <i>stemming</i>, individuazione e disambiguazione dei sinonimi e utilizza indici standard come <i>Term Frequency</i> (TF) e <i>Inverse Document Frequency</i> (IDF). E' utilizzato un algoritmo di clustering non supervisionato per evidenziare l'andamento nel tempo delle tematiche trattate.
+</p>
+<h2>Obiettivi</h2>
+<p>
+Durante l’hackathon Code4Italy @Montecitorio si è scelto di sviluppare una infrastruttura al fine di ampliare i dati offerti dalla Camera dei Deputati attraverso i Linked Open Data che ne descrivono l’organico e l’iter parlamentare.
+</p>
+<p>
+Per essendo molto completi dal punto di vista della descrizione delle attività parlamentari i dati offerti non permettono al momento di risalire alle tematiche trattate nel processo legislativo.
+</p>
+<p>
+A tal proposito si è pertanto deciso di offrire un servizio che permetta di descrivere gli atti della Camera analizzandone i testi per ottenere i concetti principali ad essi correlati attraverso un processo automatizzato.
+</p>
+<p>
+Si è voluto infine raggruppare gli atti fra loro correlati identificando tematiche analizzando i risultati ottenuti al passo precedente.
+</p>
+<p>
+I risultati così ottenuti permetterebbero così di effettuare ricerche semplificate negli atti presenti nell’iter della Camera e di presentarli in una forma più accessibile grazie all’utilizzo di keyword che ne riassumano le tematiche chiave che li contraddistinguono.
+</p>
+<h2>Progetto</h2>
+<p>
+Al fine di realizzare gli obietti preposti si è scelto di implementatare una applicazione ad hoc per il dominio della Camera dei Deputati. L’applicativo Java proposto è difatti specializzato nell’analisi di testi giuridico-normativi e si pone l’obiettivo di differenziarsi da servizi general purpose attualmente esistenti in quanto espressamente calibrato per estrarre risultati da tali contenuti.
+</p>
+<p>
+Ciò nonostante l’infrastruttura proposta è caratterizzata da una struttura facilmente rapportabile a domini più generali e rappresenta uno dei pochi esempi di applicativi per l’analisi di testi completamente open source (specialmente se si considerano le applicazioni legate alla lingua italiana).
+Inoltre, a differenza di altri servizi free analoghi, quanto proposto non ha vincoli di utilizzo; è infatti possibile analizzare testi di lunghezza arbitraria e i risultati non sono limitati in alcun modo.
+</p>
+<p>
+A questa applicazione, essenziale per la risoluzione degli obiettivi preposti, è stato affiancato un ulteriore servizio per la presentazione dei risultati ottenuti.
+</p>
+<p>
+Attraverso il portale web offerto è possibile visualizzare i risultati del processo di analisi dei singoli atti visualizzandone la scheda dedicata: saranno visualizzati gli open data in forma semplificata e le keyword associate all’atto selezionato.
+</p>
+<p>
+Allo stesso modo è possibile esplorare le tematiche ottenute dal processo di clustering.
+Per ogni tematica sono visualizzabili i concetti che la definiscono e gli atti associati alla stessa. I risultati saranno presentati attraverso un grafico dove è possibile riscontrare quanto una tematica è stata affrontata durante il tempo analizzato (occorrenze in un periodo di tempo).
+</p>
+<p>
+Questa web app rappresenta ovviamente solo un semplice caso d’uso che impiega il sistema di analisi dei testi degli atti della Camera ed i suoi risultati; questo sistema rappresenta infatti una base su cui costruire ulteriori servizi quali l’analisi delle tematiche affrontate in una legislatura o da parte di uno specifico partito piuttosto che quanto sottoscritto da specifiche personalità.
+</p>
+<h2>Data Mining</h2>
+L’estrazione di parole chiave dagli atti della Camera avviene secondo una sequenza di operazioni che può essere così schematizzata:
+<ol>
+<li><b>recupero dei dati</b>: utilizzando gli OpenData della Camera si recuperano i testi degli atti da analizzare (in formato HTML);</li>
+<li><b>pre-processing dei dati</b>: i documenti scaricati vengono convertiti in testo non formattato attraverso la rimozione dei tag HTML; viene calcolata la frequenza di ciascun termine presente nel testo; sinonimi e termini che condividono una stessa radice vengono ricondotti a singoli concetti;</li>
+<li><b>top terms analysis</b>: vengono individuati i termini più frequenti rispetto all’intera collezione di documenti, usando come criterio l’indice TF-IDF (<i>Terms Frequency - Inverse Document Frequency</i>), uno standard de facto in <i>information retrieval</i>;</li>
+<li><b>clustering</b>: i documenti vengono tra loro raggruppati in modo automatico in <i>clusters</i>, in base alla loro similarità (sempre valutata utilizzando l’indice TF-IDF).</li>
+</ol>
+<h3>1. Recupero dei dati</h3>
+<p>
+Si sono considerati, a titolo esemplificativo, solamente gli atti prodotti nella 13° Legislatura. Gli URL dai quali è possibile scaricare i singoli atti vengono ottenuti mediante query SPARQL inoltrate all’<a href="http://dati.camera.it/sparql">endpoint SPARQL</a> offerto dal <a href="http://dati.camera.it">portale dati della Camera dei Deputati</a>. Si procede quindi al download del documento HTML corrispondente all’ultima versione disponibile dell’atto stesso. Ai fini di questo esempio, si sono considerati solo gli atti che abbiano terminato il loro iter parlamentare.
+</p>
+<h3>2. Pre-processing dei dati</h3>
+<p>La prima operazione da effettuarsi richiede la rimozione dei tag HTML dal testo scaricato, in modo da rendere possibile l’analisi successiva. Il documento viene quindi analizzato evitando di considerare segni di punteggiatura e dati numerici e contando il numero di occorrenze di ciascun termine.</p>
+<h4>Stop words</h4>
+<p>
+Le <i>stop words</i> rappresentano termini intrinsecamente frequenti (come articoli e congiunzioni), che non sono significative ai fini del conteggio. Si sono utilizzate due liste di <i>stop words</i>, una rappresentata da un elenco standard relativo alla lingua italiana ed una definita appositamente in base a parole chiave molto frequenti nel dominio di riferimento (parole come “comma” o “atto”).
+</p>
+<h4>Disambiguazione</h4>
+<p>
+Onde evitare che le keyword estratte contenessero termini simili, si è implementato un semplice sistema di disambiguazione, che rileva parole con radice comune (effettuando ciò che in <i>information retrieval</i> è noto come <i>stemming</i>) ed i sinonimi, riconducendoli a singoli concetti. Un singolo termine è scelto come rappresentativo del concetto e la sua frequenza è calcolata come somma delle frequenze di tutti i termini riconducibili a tale concetto.
+</p>
+<h3>3. Top terms analysis</h3>
+<p>
+In <i>information retrieval</i>, la rilevanza di un termine all’interno di un documento cresce con la frequenza del termine all’interno del documento e decresce con la presenza del termine stesso all’interno degli altri documenti esaminati. Ciò riflette il fatto che un termine è tanto più rilevante per un documento quanto più lo caratterizza, ovvero lo distingue dagli altri documenti. L’indice più utilizzato per valutare questi fattori è TF-IDF (<i>Terms Frequency - Inverse Document Frequency</i>).
+</p>
+<p>
+Maggiori informazioni sull’indice TF-IDF: <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition)">http://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition)</a>.
+</p>
+<h3>4. Clustering</h3>
+<p>
+Il raggruppamento dei documenti in <i>clusters</i> è affidato ad un algoritmo di clustering gerarchico agglomerativo. L’approccio di questi algoritmi consiste nel confrontare fra loro gruppi di documenti accorpando successivamente quelli tra loro più “vicini”. L’idea di “vicinanza” fra i documenti è rappresentata dalla cosiddetta <i>distanza coseno</i> (<a href="http://en.wikipedia.org/wiki/Cosine_similarity">http://en.wikipedia.org/wiki/Cosine_similarity</a>), calcolata in base ad una rappresentazione dei documenti recuperati che sfrutta l’indice TF-IDF sopraccitato. La definizione di “prossimità” tra i <i>clusters</i> utilizza l’approccio <i>single link</i>, ovvero la distanza tra due cluster è data dalla distanza dei due documenti tra loro più vicini appartenenti ai due cluster. La soluzione sviluppata è in grado di generare diversi possibili schemi di clustering e di valutare il migliore fra loro in modo automatico.
+</p>
+<h2>Sviluppi futuri</h2>
+<p>
+Il sistema proposto è caratterizzato da ampie possibilità di espansione.
+</p>
+<p>
+Si prevede infatti di migliorare i risultati del processo di estrazione delle keyword dai testi attraverso l’identificazione di concetti grazie a <i>WordNet</i> e algoritmi specifici.
+</p>
+<p>
+Si vuole inoltre raffinare il processo di clustering offrendo la possibilità di rapportare i cluster generati automaticamente a <i>tassonomie</i> definite a priori.
+</p>
+<p>
+Infine, considerando i soli risultati del processo di analisi, è possibile offrire ulteriori servizi complementari a quelli offerti dall’attuale web app per fini statistici / descrittivi oltre che per garantire una maggior accessibilità dei dati seguendo le necessità emerse anche da altre proposte presentate durante l’hackathon.
+</p>
+			</div>
 				</div>
 			</div>
 		</div>
